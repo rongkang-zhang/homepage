@@ -1,5 +1,66 @@
 /*-- scss:defaults --*/
 
-$imperial-blue: #023a75ff;
+$imperial-blue: #023A75;
+$grape: #B38CB4;
+$brick: #FC440F;
+$orange: #FF8600;
+$yellow: #FFE66D;
+$air-blue: #6CA6C1;
 
 $navbar-background: $imperial-blue;
+
+.horizontal-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    &__item {
+        margin-right: 0.5rem;
+        font-weight: bold;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.75rem;
+        &--orange {
+            background-color: $orange;
+            color: white;
+        }
+        &--yellow {
+            background-color: $yellow;
+        }
+        &--blue {
+            background-color: $air-blue;
+        }
+    }
+}
+
+// badges for teaching topics
+.badge {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grape-badge {
+    @extend .badge;
+    background-color: $grape;
+    color: white;
+
+}
+.orange-badge p {
+    @extend .badge;
+    background-color: $orange;
+    color: black;
+    text-decoration-color: black;
+    text-emphasis-color: black;
+    accent-color: black;
+    border: 1px solid #00297A;
+    
+}
+.yellow-badge {
+    @extend .badge;
+    background-color: $yellow;
+    color: black;
+
+}
+.blue-badge {
+    @extend .badge;
+    background-color: $air-blue;
+    color: black;
+
+}

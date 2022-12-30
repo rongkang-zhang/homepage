@@ -7,6 +7,13 @@ title: "👩‍🏫 Teaching"
 ## Biomedical Research DS stream Workshops
 `November - December` | [🔗 Materials](https://github.com/valegiunchiglia/Biomedical_Research_DS_stream)
 
+<ul class="horizontal-list">
+    <li class="horizontal-list__item horizontal-list__item--orange">Statistics</li>
+    <li class="horizontal-list__item horizontal-list__item--yellow">R</li>
+    <li class="horizontal-list__item horizontal-list__item--blue">ML</li>
+</ul>
+
+
 (Ongoing)
 
 Interactive workshops on a variety of topics in Biomedical Data Science for the MRes Biomedical Research from Imperial College London.
@@ -15,6 +22,7 @@ Topics covered so far: Model Validation and Performance & Univariate Statistics.
 
 ## Introduction to Computational Methods for the Brain Sciences 
 `November` | [🔗 Materials](https://github.com/valegiunchiglia/MSc-TranslationalNeuroscience-Module3)
+
 I designed the learning materials and assisted in the teaching of all workshops.
 Generally speaking, the content included hands-on training in data cleaning, pre-processing and wrangling and applied statistical techniques (i.e. Regression, ANOVA).
 More specifically to brain sciences, I designed materials for analysing structural and functional MRI data (i.e. volumetric measures, resting-state, task-fMRI and graph theory). 
