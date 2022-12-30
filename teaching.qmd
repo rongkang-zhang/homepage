@@ -1,0 +1,40 @@
+---
+title: "👩‍🏫 Teaching"
+---
+
+# 2022-23
+
+## Biomedical Research DS stream Workshops
+`November - December` | [🔗 Materials](https://github.com/valegiunchiglia/Biomedical_Research_DS_stream)
+
+(Ongoing)
+
+Interactive workshops on a variety of topics in Biomedical Data Science for the MRes Biomedical Research from Imperial College London.
+
+Topics covered so far: Model Validation and Performance & Univariate Statistics.
+
+## Introduction to Computational Methods for the Brain Sciences 
+`November` | [🔗 Materials](https://github.com/valegiunchiglia/MSc-TranslationalNeuroscience-Module3)
+I designed the learning materials and assisted in the teaching of all workshops.
+Generally speaking, the content included hands-on training in data cleaning, pre-processing and wrangling and applied statistical techniques (i.e. Regression, ANOVA).
+More specifically to brain sciences, I designed materials for analysing structural and functional MRI data (i.e. volumetric measures, resting-state, task-fMRI and graph theory). 
+Other more advanced workshops that I also created involved hands-on introduction to supervised and unsupervised Machine Learning and NLP.
+All workshops materials were shared as Jupyter notebooks.
+
+## Pre-material of the MSc Translational Neuroscience 
+`October` | [🔗 Materials](https://github.com/valegiunchiglia/MSc-Neuroscience-Python-Course-Development)
+
+Coding pre-material of the MSc Translational Neuroscience at Imperial College London.
+It is an introduction to programming in Python and statistics, aimed to provide students the necessary foundation to smooothly complete the programming modules that the course offers and to bridge the gap between students with low and high coding literacy.
+It contains introductory Jupyter notebooks on all-things Python, including functions, loops, arrays, strings, lists, dictionaries, dataframes, basic statistics (i.e. correlations, t-tests, linear regressions, non-parametric tests) and plotting (both seaborn and matplotlib).
+
+# Earlier work
+
+## Data Science Helper Team
+`October 20 - May 21` | [🔗 Materials](https://github.com/valegiunchiglia/DS_sessions)
+
+As a lab scientist, what would you do if you need to analyse the data you have collected but you have never done it before?
+The DS helper team, which is a **student-led activity** organised within the MRes in Biomedical Research, is **here to help you**.
+The project is characterised by different forms of peer-to-peer learning, whose aim is to create an open, friendly, instructive environment where students can reach out in case of issues with data science related topics and can learn some data science if interested.
+
+[Read more](https://blogs.imperial.ac.uk/learning-and-teaching/2021/04/30/student-driven-peer-learning-in-biomedical-data-science/)
