@@ -24,6 +24,8 @@ website:
         href: https://github.com/valegiunchiglia/
       - icon: twitter
         href: https://twitter.com/valegiunca/
+      - icon: envelope
+        href: "mailto:v.giunchiglia20@imperial.ac.uk"
 
 format:
   html:

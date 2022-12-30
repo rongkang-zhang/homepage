@@ -13,6 +13,10 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/valentina-giunchiglia-b59747150/
+    - icon: envelope
+      text: Reach me per email
+      href: "mailto:v.giunchiglia20@imperial.ac.uk"
+      
 ---
 
 I am a PhD candidate for the [MRC MultiSci Program](https://www.imperial.ac.uk/multisci-mrc-dtp/) specialising in Artificial Intelligence and Computational Neuroscience.
@@ -23,6 +27,15 @@ of pyschobiology, social science, digital pathology, computational neuroscience,
 
 I enjoy teaching, both inside and [outside](https://girlswhoml.com/) academic environments.
 You can check out a detailed list in my [Teaching page](/teaching.qmd).
+
+
+### Topics of interest
+
+- Explainable AI
+- Graph Neural Networks (GNNs)
+- Mathematical Modelling
+- Computational Neuroscience
+
 
 ### Further links
 
