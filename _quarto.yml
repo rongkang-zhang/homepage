@@ -15,8 +15,8 @@ website:
         href: publications.qmd
       - text: Teaching
         href: teaching.qmd
-      - text: Talks
-        href: talks.qmd
+      - text: Outreach
+        href: outreach.qmd
       - text: CV
         href: curriculum.qmd
     right:
