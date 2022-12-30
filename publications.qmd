@@ -2,12 +2,10 @@
 title: "📣 Publications"
 ---
 
-## Published
-
-Delacher, M., Imbusch, C.D., Hotz-Wagenblatt, A., Mallm, J.P., Bauer, K., Simon, M., Riegel, D., Rendeiro, A.F., Bittner, S., Sanderink, L., Pant, A., Schmidleithner, L., Braband, K.L., Echtenachter, B., Fischer, A., **Giunchiglia, V.**, _et al._
-"Precursors for nonlymphoid-tissue Treg cells reside in secondary lymphoid organs and are programmed by the transcriptor factor BATF."
-_Cell Immunity, 2020, 52(2), 295-312. Cit. 82._ 
-[[Link]](https://doi.org/10.1016/j.immuni.2019.12.002)
+Isberg OG, **Giunchiglia V**, _et al._
+"Automated Cancer Diagnostics via Analysis of Optical and Chemical Images by Deep and Shallow Learning." 
+_Metabolites_. 2022; 12(5):455.
+[[Link]](https://doi.org/10.3390/metabo12050455)
 
 ---
 
@@ -25,41 +23,9 @@ _Mol Psychiatry_ 27, 2255– 2263 (2022).
 
 ---
 
-Isberg OG, **Giunchiglia V**, _et al._
-"Automated Cancer Diagnostics via Analysis of Optical and Chemical Images by Deep and Shallow Learning." 
-_Metabolites_. 2022; 12(5):455.
-[[Link]](https://doi.org/10.3390/metabo12050455)
-
-<br>
-
-## Under review
-
-**Giunchiglia, V.** \*, Shukla CV.\*, _et al._
-"Towards Training GNNs using Explanation Directed Message Passing." 
-_LOG Conference_ (Under Review)
-
----
-
-**Giunchiglia, V.**, _et al._
-"An explainable recurrent neural network to find translatable predictors of Alzheimer’s clinical status”
-_Scientific Reports_ (Under Review).
-
----
-
-**Giunchiglia, V.**, _et al._
-"WSIQC: whole slide images pre-processing pipeline for artifact removal and quality control. "
-_Medical Image Analysis_(Under Review).
-
----
-
-Kurtin LD., **Giunchiglia, V.**, _et al._
-"Moving from phenomenological to predictive modelling: Progress and pitfalls of modelling brain stimulation in-silico."
-_NeuroImage_ (Under Review)
-
----
-
-Manghi, P., Schiffer, L., Golzato, D., Wokaty, J., Beghini, F., Mirzaji, C., Oh, S., Tuz, SDG., Bonetti, A., D’Amato, G., Azhar, R., Piccinno, G., Eckenrode, K., Zohra, F., **Giunchiglia, V.** _et al._
-"Meta-analysis of 20,533 human metagenomes from diverse populations in curatedMetagenomicData 3 defines an index of oral to gut microbial introgression and microbiome associations with age, sex, BMI, and health outcomes."
-_Nature Communications_ (Under Review).
+Delacher, M., Imbusch, C.D., Hotz-Wagenblatt, A., Mallm, J.P., Bauer, K., Simon, M., Riegel, D., Rendeiro, A.F., Bittner, S., Sanderink, L., Pant, A., Schmidleithner, L., Braband, K.L., Echtenachter, B., Fischer, A., **Giunchiglia, V.**, _et al._
+"Precursors for nonlymphoid-tissue Treg cells reside in secondary lymphoid organs and are programmed by the transcriptor factor BATF."
+_Cell Immunity, 2020, 52(2), 295-312. Cit. 82._ 
+[[Link]](https://doi.org/10.1016/j.immuni.2019.12.002)
 
 ---
