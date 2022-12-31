@@ -3,9 +3,13 @@
 $imperial-blue: #023A75;
 $grape: #B38CB4;
 $brick: #FC440F;
+$coral: #F67E7D;
 $orange: #FF8600;
 $yellow: #FFE66D;
+$canary: #FFFD82;
 $air-blue: #6CA6C1;
+$teal-blue: #437C90;
+$seaweed: #177E89;
 
 $navbar-background: $imperial-blue;
 
@@ -27,6 +31,27 @@ $navbar-background: $imperial-blue;
         }
         &--blue {
             background-color: $air-blue;
+        }
+        &--imperial-blue {
+            background-color: $imperial-blue;
+            color: white;
+        }
+        &--grape {
+            background-color: $grape;
+        }
+        &--coral {
+            background-color: $coral;
+        }
+        &--canary {
+            background-color: $canary;
+        }
+        &--seaweed {
+            background-color: $seaweed;
+            color: white;
+        }
+        &--teal {
+            background-color: $teal-blue;
+            color: white;
         }
     }
 }
