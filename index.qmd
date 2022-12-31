@@ -2,7 +2,7 @@
 title: "Valentina Giunchiglia"
 about:
   template: trestles
-  image: assets/profile-picture.jpg
+  image: assets/pictures/profile-picture.jpg
   links:
     - icon: twitter
       text: Twitter

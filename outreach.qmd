@@ -21,7 +21,7 @@ The goal of the event was to present the research conducted at Imperial College 
 <!-- <div style="text-align:center">
 <img src="http://www.tedxunihd.de/images/team/valle.png" width="50%">
 </div> -->
-[![](/assets/tedx-uni-heidelberg-logo.png)](http://www.tedxunihd.de/about.html)
+[![](/assets/pictures/tedx-uni-heidelberg-logo.png)](http://www.tedxunihd.de/about.html)
 :::
 ::: {.g-col-12 .g-col-md-7}
 <p style="font-size:1.5rem"> TEDx UniHeidelberg </p>
@@ -39,7 +39,7 @@ TED is a nonprofit organization devoted to Ideas Worth Spreading. The main theme
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-5}
-[![](/assets/data-engineering-meetup.webp)](https://www.meetup.com/data-engineering-europe/events/283988630/)
+[![](/assets/pictures/data-engineering-meetup.webp)](https://www.meetup.com/data-engineering-europe/events/283988630/)
 :::
 ::: {.g-col-12 .g-col-md-7}
 <p style="font-size:1.5rem"> Inspiring Women in Data </p>
@@ -50,7 +50,7 @@ QuantumBlack invited me as speakers for a Data Engineering meetup event. I gave 
 :::
 
 ::: {.g-col-12 .g-col-md-5}
-[![](/assets/icdss-spotlight.png)](https://imperialdatasoc.co.uk/ds-spotlight-valentina-giunchiglia/)
+[![](/assets/pictures/icdss-spotlight.png)](https://imperialdatasoc.co.uk/ds-spotlight-valentina-giunchiglia/)
 :::
 ::: {.g-col-12 .g-col-md-7}
 <p style="font-size:1.5rem"> Imperial College Data Science Society </p>
