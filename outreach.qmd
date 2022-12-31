@@ -18,6 +18,17 @@ The goal of the event was to present the research conducted at Imperial College 
 :::
 
 ::: {.g-col-12 .g-col-md-5}
+[![](/assets/pictures/DS_helper_logo_H_mini.png)](https://github.com/valegiunchiglia/DS_sessions/)
+:::
+::: {.g-col-12 .g-col-md-7}
+<p style="font-size:1.5rem"> Data Science Helper Team </p>
+
+`2020-09 – 2021-06`
+
+I organised the data science helper team with the aim to helps students with data science related questions. The activity consisted of lectures, a discussion forum and clinic sessions, where students could get in touch with research project's specific questions. More details in the teaching tab.
+:::
+
+::: {.g-col-12 .g-col-md-5}
 <!-- <div style="text-align:center">
 <img src="http://www.tedxunihd.de/images/team/valle.png" width="50%">
 </div> -->
