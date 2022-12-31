@@ -27,13 +27,13 @@ I enjoy teaching, both inside and [outside](https://girlswhoml.com/) academic en
 You can check out a detailed list in my [Teaching page](/teaching.qmd).
 
 
-### Topics of interest
+### Key topics
 
+- Computational Modelling
+- Machine Learning
 - Explainable AI
-- Graph Neural Networks (GNNs)
-- Mathematical Modelling
-- Computational Neuroscience
-
+- Graph ML
+- Cognitive Neuroscience
 
 ### Further links
 
