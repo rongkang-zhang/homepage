@@ -1,2 +1,4 @@
 /.quarto/
 /_extensions
+/.luarc.json
+/**/.DS_Store
