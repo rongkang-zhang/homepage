@@ -35,6 +35,12 @@ You can check out a detailed list in my [Teaching page](/teaching.qmd).
 - Graph ML
 - Cognitive Neuroscience
 
+### Education
+
+- MRes Biomedical Research (Data Science) - Imperial College London
+- MA Health Humanities - UCL
+- BSc Molecular Biotechnology - Heidelberg University
+
 ### Further links
 
 <table width="60%" align="center">
