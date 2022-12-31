@@ -2,17 +2,4 @@
 title: "📜 Curriculum Vitae"
 ---
 
-<!-- > [{{< fa download >}} Download CV](/assets/CV.pdf) &emsp; Latest update: September 2022 -->
-
-<!-- ![](/assets/languages-skills.png) -->
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-5 .g-start-md-1}
-![](/assets/languages-bars.png)
-:::
-::: {.g-col-12 .g-col-md-5 .g-start-md-6}
-![](/assets/skills-bars.png)
-:::
-
-:::
+> [{{< fa download >}} Download CV](/assets/CV.pdf) &emsp; Latest update: September 2022
