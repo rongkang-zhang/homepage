@@ -5,7 +5,7 @@ title: "👩‍🏫 Teaching"
 # 2022-23
 
 ## Biomedical Research DS stream Workshops
-`November - December` | [🔗 Materials](https://github.com/valegiunchiglia/Biomedical_Research_DS_stream)
+`November - December 22` | **Master's** | [🔗 Materials](https://github.com/valegiunchiglia/Biomedical_Research_DS_stream)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--teal">Statistics</li>
@@ -21,7 +21,7 @@ Interactive workshops on a variety of topics in Biomedical Data Science for the 
 Topics covered so far: Model Validation and Performance & Univariate Statistics.
 
 ## Introduction to Computational Methods for the Brain Sciences 
-`November` | [🔗 Materials](https://github.com/valegiunchiglia/MSc-TranslationalNeuroscience-Module3)
+`November 22` | **Master's** | [🔗 Materials](https://github.com/valegiunchiglia/MSc-TranslationalNeuroscience-Module3)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--yellow">Python</li>
@@ -39,7 +39,7 @@ Other more advanced workshops that I also created involved hands-on introduction
 All workshops materials were shared as Jupyter notebooks.
 
 ## Pre-material of the MSc Translational Neuroscience 
-`October` | [🔗 Materials](https://github.com/valegiunchiglia/MSc-Neuroscience-Python-Course-Development)
+`October 22` | **Master's** | [🔗 Materials](https://github.com/valegiunchiglia/MSc-Neuroscience-Python-Course-Development)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--yellow">Python</li>
@@ -65,7 +65,7 @@ Teaching of lectures on functional and structural MRI, voxel based morphometry a
 # 2020-21
 
 ## Data Science Helper Team
-`October 20 - May 21` | [🔗 Materials](https://github.com/valegiunchiglia/DS_sessions)
+`October 20 - May 21` | **Master's** | [🔗 Materials](https://github.com/valegiunchiglia/DS_sessions)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--blue">R</li>
@@ -84,8 +84,7 @@ The project is characterised by different forms of peer-to-peer learning, whose 
 # 2019
 
 ## Cancer Mehtylome Analysis
-
-`April - August 19` | [🔗 Materials](https://github.com/datascience-mobi/05-cancer-genomics)
+`April - August 19` | **Bachelor** | [🔗 Materials](https://github.com/datascience-mobi/05-cancer-genomics)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--blue">R</li>
