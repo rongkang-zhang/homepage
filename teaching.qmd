@@ -53,13 +53,15 @@ It contains introductory Jupyter notebooks on all-things Python, including funct
 # 2021-22
 
 ## Brain imaging
-`January - February 22` | **Master's**
+`January - February 22` | **Master's** | [🔗 Materials](/assets/slides/2022-brain-imaging/)
 
 <ul class="horizontal-list">
     <li class="horizontal-list__item horizontal-list__item--imperial-blue">Brain image analysis</li>
 </ul>
 
 Teaching of lectures on functional and structural MRI, voxel based morphometry and diffusion tensor imaging. Teaching assistant in the workshops on the practical application of the concepts taught in the lectures.
+
+The lecture slides were prepared with the help from Amy Jolly and Richard Daws.
 
 
 # 2020-21
