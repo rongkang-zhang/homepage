@@ -19,11 +19,9 @@ about:
       
 ---
 
-I am a PhD candidate for the [MRC MultiSci Program](https://www.imperial.ac.uk/multisci-mrc-dtp/) specialising in Artificial Intelligence and Computational Neuroscience.
+I am a first year PhD student funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), specialising in Artificial Intelligence and Computational Neuroscience.
 
-I am a multidisciplinary researcher with broad interests. 
-I started my academic career in bioinformatics, but since then I have delved in the fields
-of pyschobiology, social science, digital pathology, computational neuroscience, and more recently graph machine learning.
+My research interests focus in building top-down and bottom-up computational models of the brain to better understand and treat different neurodegenerative diseases (e.g. Multiple Sclerosis, Parkinson’s or Alzheimer’s). I am interested in working on research projects that cross the boundaries between artificial intelligence (AI) and the clinics, with the aim of making AI actually applicable in clinical practice. I work on data-centric and explainable AI, with a special interest towards graph machine learning. 
 
 I enjoy teaching, both inside and [outside](https://girlswhoml.com/) academic environments.
 You can check out a detailed list in my [Teaching page](/teaching.qmd).
