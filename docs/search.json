@@ -1,17 +1,24 @@
 [
   {
+    "objectID": "curriculum.html",
+    "href": "curriculum.html",
+    "title": "📜 Curriculum Vitae",
+    "section": "",
+    "text": "Download CV   Latest update: September 2022"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Valentina Giunchiglia",
     "section": "",
-    "text": "I am a first year PhD student funded by the Medical Research Council, specialising in Artificial Intelligence and Computational Neuroscience.\nMy research interests focus in building top-down and bottom-up computational models of the brain to better understand and treat different neurodegenerative diseases (e.g. Multiple Sclerosis, Parkinson’s or Alzheimer’s). I am interested in working on research projects that cross the boundaries between artificial intelligence (AI) and the clinics, with the aim of making AI actually applicable in clinical practice. I work on data-centric and explainable AI, with a special interest towards graph machine learning.\nI enjoy teaching, both inside and outside academic environments. You can check out a detailed list in my Teaching page.\n\nKey topics\n\nComputational Modelling\nMachine Learning\nExplainable AI\nGraph ML\nCognitive Neuroscience\n\n\n\nFurther links"
+    "text": "I am a first year PhD student funded by the Medical Research Council, specialising in Artificial Intelligence and Computational Neuroscience.\nMy research interests focus on building top-down and bottom-up computational models of the brain to better understand and treat different neurodegenerative diseases (e.g. Multiple Sclerosis, Parkinson’s or Alzheimer’s). I am interested in working on research projects that cross the boundaries between artificial intelligence (AI) and the clinics, with the aim of making AI actually applicable in clinical practice. I work on data-centric and explainable AI, with a special interest towards graph machine learning.\nI enjoy teaching, both inside and outside academic environments. You can check out a detailed list in my Teaching page.\n\nKey topics\n\nComputational Modelling\nMachine Learning\nExplainable AI\nGraph ML\nCognitive Neuroscience\n\n\n\nEducation\n\nMRes Biomedical Research (Data Science) - Imperial College London\nMA Health Humanities - UCL\nBSc Molecular Biotechnology - Heidelberg University\n\n\n\nFurther links"
   },
   {
     "objectID": "outreach.html",
     "href": "outreach.html",
     "title": "🎙 Outreach",
     "section": "",
-    "text": "Networking event\n\n2021-09\nThe goal of the event was to present the research conducted at Imperial College London to current and incoming students (undergraduates and masters). This event aims to inspire students in their career path in academia and related fields and in their choice of PhD topics, and to introduce them to potential research that can be completed while being at Imperial.\n\n\n\n\n\n\n\n\n\n\n\nTEDx Heidelberg\n\n2018-06\nTED is a nonprofit organization devoted to Ideas Worth Spreading. The main theme of the event was “doubt and dare”. Specifically, to doubt not only the opinions of others, but also their own, to try to look at things differently and consider other people’s opinions."
+    "text": "Networking event\n\n2021-09\nThe goal of the event was to present the research conducted at Imperial College London to current and incoming students (undergraduates and masters). This event aims to inspire students in their career path in academia and related fields and in their choice of PhD topics, and to introduce them to potential research that can be completed while being at Imperial.\n\n\n\n\n\n\n\n\n\n\nData Science Helper Team\n\n2020-09 – 2021-06\nI organised the data science helper team with the aim to helps students with data science related questions. The activity consisted of lectures, a discussion forum and clinic sessions, where students could get in touch with research project’s specific questions. More details in the teaching tab.\n\n\n\n\n\n\n\n\n\n\n\nTEDx UniHeidelberg\n\n2018-06\nTED is a nonprofit organization devoted to Ideas Worth Spreading. The main theme of the event was “doubt and dare”. Specifically, to doubt not only the opinions of others, but also their own, to try to look at things differently and consider other people’s opinions."
   },
   {
     "objectID": "outreach.html#invited-speaker",
@@ -32,13 +39,27 @@
     "href": "teaching.html",
     "title": "👩‍🏫 Teaching",
     "section": "",
-    "text": "November - December | 🔗 Materials\n\n\nStatistics\n\n\nR\n\n\nML\n\n\n(Ongoing)\nInteractive workshops on a variety of topics in Biomedical Data Science for the MRes Biomedical Research from Imperial College London.\nTopics covered so far: Model Validation and Performance & Univariate Statistics.\n\n\n\nNovember | 🔗 Materials\n\n\nPython\n\n\nML\n\n\nStatistics\n\n\nBrain image analysis\n\n\nNLP\n\n\nGraph Theory\n\n\nI designed the learning materials and assisted in the teaching of all workshops. Generally speaking, the content included hands-on training in data cleaning, pre-processing and wrangling and applied statistical techniques (i.e. Regression, ANOVA). More specifically to brain sciences, I designed materials for analysing structural and functional MRI data (i.e. volumetric measures, resting-state, task-fMRI and graph theory). Other more advanced workshops that I also created involved hands-on introduction to supervised and unsupervised Machine Learning and NLP. All workshops materials were shared as Jupyter notebooks.\n\n\n\nOctober | 🔗 Materials\n\n\nPython\n\n\nCoding pre-material of the MSc Translational Neuroscience at Imperial College London. It is an introduction to programming in Python and statistics, aimed to provide students the necessary foundation to smooothly complete the programming modules that the course offers and to bridge the gap between students with low and high coding literacy. It contains introductory Jupyter notebooks on all-things Python, including functions, loops, arrays, strings, lists, dictionaries, dataframes, basic statistics (i.e. correlations, t-tests, linear regressions, non-parametric tests) and plotting (both seaborn and matplotlib)."
+    "text": "November - December 22 | Master’s | 🔗 Materials\n\n\nStatistics\n\n\nR\n\n\nML\n\n\n(Ongoing)\nInteractive workshops on a variety of topics in Biomedical Data Science for the MRes Biomedical Research from Imperial College London.\nTopics covered so far: Model Validation and Performance & Univariate Statistics.\n\n\n\nNovember 22 | Master’s | 🔗 Materials\n\n\nPython\n\n\nML\n\n\nStatistics\n\n\nBrain image analysis\n\n\nNLP\n\n\nGraph Theory\n\n\nI designed the learning materials and assisted in the teaching of all workshops. Generally speaking, the content included hands-on training in data cleaning, pre-processing and wrangling and applied statistical techniques (i.e. Regression, ANOVA). More specifically to brain sciences, I designed materials for analysing structural and functional MRI data (i.e. volumetric measures, resting-state, task-fMRI and graph theory). Other more advanced workshops that I also created involved hands-on introduction to supervised and unsupervised Machine Learning and NLP. All workshops materials were shared as Jupyter notebooks.\n\n\n\nOctober 22 | Master’s | 🔗 Materials\n\n\nPython\n\n\nCoding pre-material of the MSc Translational Neuroscience at Imperial College London. It is an introduction to programming in Python and statistics, aimed to provide students the necessary foundation to smooothly complete the programming modules that the course offers and to bridge the gap between students with low and high coding literacy. It contains introductory Jupyter notebooks on all-things Python, including functions, loops, arrays, strings, lists, dictionaries, dataframes, basic statistics (i.e. correlations, t-tests, linear regressions, non-parametric tests) and plotting (both seaborn and matplotlib)."
+  },
+  {
+    "objectID": "teaching.html#brain-imaging",
+    "href": "teaching.html#brain-imaging",
+    "title": "👩‍🏫 Teaching",
+    "section": "Brain imaging",
+    "text": "Brain imaging\nJanuary - February 22 | Master’s | 🔗 Materials\n\n\nBrain image analysis\n\n\nTeaching of lectures on functional and structural MRI, voxel based morphometry and diffusion tensor imaging. Teaching assistant in the workshops on the practical application of the concepts taught in the lectures.\nThe lecture slides were prepared with the help from Amy Jolly and Richard Daws."
   },
   {
     "objectID": "teaching.html#data-science-helper-team",
     "href": "teaching.html#data-science-helper-team",
     "title": "👩‍🏫 Teaching",
     "section": "Data Science Helper Team",
-    "text": "Data Science Helper Team\nOctober 20 - May 21 | 🔗 Materials\n\n\nR\n\n\nStatistics\n\n\nAs a lab scientist, what would you do if you need to analyse the data you have collected but you have never done it before? The DS helper team, which is a student-led activity organised within the MRes in Biomedical Research, is here to help you. The project is characterised by different forms of peer-to-peer learning, whose aim is to create an open, friendly, instructive environment where students can reach out in case of issues with data science related topics and can learn some data science if interested.\nRead more"
+    "text": "Data Science Helper Team\nOctober 20 - May 21 | Master’s | 🔗 Materials\n\n\nR\n\n\nStatistics\n\n\nML\n\n\nAs a lab scientist, what would you do if you need to analyse the data you have collected but you have never done it before? The DS helper team, which is a student-led activity organised within the MRes in Biomedical Research, is here to help you. The project is characterised by different forms of peer-to-peer learning, whose aim is to create an open, friendly, instructive environment where students can reach out in case of issues with data science related topics and can learn some data science if interested.\nRead more"
+  },
+  {
+    "objectID": "teaching.html#cancer-mehtylome-analysis",
+    "href": "teaching.html#cancer-mehtylome-analysis",
+    "title": "👩‍🏫 Teaching",
+    "section": "Cancer Mehtylome Analysis",
+    "text": "Cancer Mehtylome Analysis\nApril - August 19 | Bachelor | 🔗 Materials\n\n\nR\n\n\nStatistics\n\n\n5 groups of 4 students were tasked with identifying differentially methylateed regions (DMRs) between groups of samples and interpreting the sequence context of these regions. Reducing the dimensionality of the methylation whilst enriching for functionally relevant regions is vital, especially when working with constrained computational resources."
   }
 ]
