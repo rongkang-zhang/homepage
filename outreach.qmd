@@ -21,10 +21,10 @@ The goal of the event was to present the research conducted at Imperial College 
 <!-- <div style="text-align:center">
 <img src="http://www.tedxunihd.de/images/team/valle.png" width="50%">
 </div> -->
-[![](http://www.tedxunihd.de/images/logo/logo.png)](http://www.tedxunihd.de/about.html)
+[![](/assets/tedx-uni-heidelberg-logo.png)](http://www.tedxunihd.de/about.html)
 :::
 ::: {.g-col-12 .g-col-md-7}
-<p style="font-size:1.5rem"> TEDx Heidelberg </p>
+<p style="font-size:1.5rem"> TEDx UniHeidelberg </p>
 
 `2018-06`
 
