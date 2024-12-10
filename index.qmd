@@ -16,7 +16,7 @@ about:
     - icon: envelope
       text: Reach me per email
       href: "mailto:v.giunchiglia20@imperial.ac.uk"
-      
+
 ---
 
 I am a second-year PhD student jointly affiliated with Imperial College London and Harvard University funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), under the supervision of Prof. [Marinka Zitnik](https://zitniklab.hms.harvard.edu/) and Prof. Adam Hampshire. 
@@ -45,17 +45,25 @@ You can check out a detailed list in my [Teaching page](/teaching.qmd).
 - BSc Molecular Biotechnology - Heidelberg University
 
 ### Further links
-
 <table width="60%" align="center">
     <tr>
         <td>
-            <a href="https://scholar.google.com/citations?user=p87Sl34AAAAJ&hl=en"> {{< ai google-scholar size=2x >}} </a>
+            <a href="https://scholar.google.com/citations?user=p87Sl34AAAAJ&hl=en">
+                <img src="/assets/pictures/gs.png" alt="Google Scholar" width="40">
+            </a>
         </td>
         <td>
-            <a href="https://www.researchgate.net/profile/Valentina-Giunchiglia"> {{< ai researchgate size=2x >}} </a>
+            <a href="https://www.researchgate.net/profile/Valentina-Giunchiglia">
+                <img src="/assets/pictures/researchgate.png" alt="ResearchGate" width="40">
+            </a>
         </td>
         <td>
-            <a href="https://orcid.org/0000-0002-2165-7840"> {{< ai orcid size=2x >}} </a>
+            <a href="https://orcid.org/0000-0002-2165-7840">
+                <img src="/assets/pictures/ORCID_iD.png" alt="ORCID" width="40">
+            </a>
         </td>
     </tr>
 </table>
+
+
+

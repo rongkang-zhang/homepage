@@ -2,4 +2,4 @@
 title: "📜 Curriculum Vitae"
 ---
 
-> [{{< fa download >}} Download CV](/assets/CV.pdf) &emsp; Latest update: November 2024
+> [Download CV](/assets/CV.pdf) &emsp; Latest update: November 2024
