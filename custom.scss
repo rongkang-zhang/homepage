@@ -55,3 +55,9 @@ $navbar-background: $imperial-blue;
         }
     }
 }
+
+.wide-grid {
+    max-width: 1200px; /* Set a custom width, larger than default */
+    width: 100%;
+    margin: 0 auto;    /* Center the grid */
+  }

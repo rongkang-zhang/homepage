@@ -19,23 +19,24 @@ about:
       
 ---
 
-I am a first year PhD student funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), specialising in Artificial Intelligence and Computational Neuroscience.
+I am a second-year PhD student jointly affiliated with Imperial College London and Harvard University funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), under the supervision of Prof. [Marinka Zitnik](https://zitniklab.hms.harvard.edu/) and Prof. Adam Hampshire. 
 
-My research interests focus on building top-down and bottom-up computational models of the brain to better understand and treat different neurodegenerative diseases (e.g. Multiple Sclerosis, Parkinson’s or Alzheimer’s). 
-I am interested in working on research projects that cross the boundaries between artificial intelligence (AI) and the clinics, with the aim of making AI actually applicable in clinical practice. 
-I work on data-centric and explainable AI, with a special interest towards graph machine learning. 
+My work lies at the intersection of artificial intelligence, biology, and health, with a focus on neuroscience. I am interested in a holistic study of diseases across multiple levels — from cellular and genetic to brain structure and clinical phenotypes — to drive advancements in **precision medicine**. To achieve this, I work on research spanning bioinformatics, artificial intelligence, and clinical and behavioural analysis,  with the aim to gain expertise that enables me to leverage diverse data types and insights for precision medicine. Specifically, I am focused on developing **multimodal foundation models** that integrate diverse data types to effectively capture the complexity of diseases while embedding context-aware knowledge. 
+
+My long-term research goal is to investigate diseases using multimodal data (e.g., imaging, omics, and electronic health records) to capture diverse disease characteristics and identify precise, clinically applicable treatments. 
 
 I enjoy teaching, both inside and [outside](https://girlswhoml.com/) academic environments.
-You can check out a detailed list in my [Teaching page](/teaching.qmd).
+You can check out a detailed list in my [Teaching page](/teaching.qmd). 
+
+*I am always happy to supervise students (both in more clinical and more AI focused projects) from Imperial College London, King's College London and Harvard University. If you are interested in working with me and want to discuss potential projects, you can contact me at v.giunchiglia20@imperial.ac.uk.*
 
 
 ### Key topics
 
+- Biomedical Informatics
 - Computational Modelling
+- Computational Neuroscience
 - Machine Learning
-- Explainable AI
-- Graph ML
-- Cognitive Neuroscience
 
 ### Education
 

@@ -1,0 +1,31 @@
+/* Increase the width of the main content area */
+.main-container {
+    max-width: 90%; /* Adjust percentage as needed */
+    margin: 0 auto;
+    padding-left: 2%; /* Optional padding */
+    padding-right: 2%;
+  }
+  
+  /* Reduce padding for images, if necessary */
+  img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+/* Ensure the figure and text are stacked and centered */
+.g-col-md-6, .g-col-md-6 {
+    display: flex;
+    align-items: center;     /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    flex-direction: column;  /* Stack content vertically */
+    height: 100%;            /* Ensure the height is consistent for alignment */
+    text-align: left;      /* Center-align text */
+  }
+  
+  /* Ensure images are responsive */
+  .g-col-md-6 img {
+    max-width: 100%;
+    max-height: 200px; /* Optional: Adjust height based on your layout */
+    margin-bottom: 10px; /* Space between the image and the text */
+  }

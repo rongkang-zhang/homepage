@@ -7,6 +7,28 @@ title: "🎙 Outreach"
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-5}
+[![](/assets/pictures/logml.jpeg)](https://www.logml.ai/)
+:::
+::: {.g-col-12 .g-col-md-7}
+<p style="font-size:1.5rem"> London Geometry and Machine Learning Summer School </p>
+
+`2022-ongoing`
+
+LOGML (London Geometry and Machine Learning) aims to bring together mathematicians and computer scientists to work together on a variety of problems at the intersection of geometry and machine learning. There will be a selection of group projects, each overseen by an experienced mentor, talks by leading figures in the field, a variety of social events and a company networking night.
+:::
+
+::: {.g-col-12 .g-col-md-5}
+[![](/assets/pictures/brainn.png)](https://cyprusconferences.org/brainnss/index.php/program/)
+:::
+::: {.g-col-12 .g-col-md-7}
+<p style="font-size:1.5rem"> BRAINN Summer School Neuroscience Workshop </p>
+
+`2024-08`
+
+Hosted by the University of Cyprus on 8-12 July 2024, the BRAINN Summer School offers a unique opportunity for both students and researchers from Cyprus and around the globe to delve into the fascinating world of neuroimaging, neurocognitive assessment, neurocognitive treatment, and non-invasive brain stimulation. Workshop on online neuropsychological assessment methods: remote assessment of cognitive performance and mental health using the Cognitron platform. Hands-on training in collecting and analysing data from online assessment. 
+:::
+
+::: {.g-col-12 .g-col-md-5}
 [![](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F147494634%2F169300409815%2F1%2Foriginal.20210911-175847?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C6912%2C3456&s=0a4e2fb1eba694effe3f91264ca819ad)](https://www.eventbrite.co.uk/e/networking-event-tickets-169755464163)
 :::
 ::: {.g-col-12 .g-col-md-7}
@@ -48,6 +70,17 @@ TED is a nonprofit organization devoted to Ideas Worth Spreading. The main theme
 ## Invited Speaker
 
 ::: {.grid}
+
+::: {.g-col-12 .g-col-md-5}
+[![](/assets/pictures/ectrims.png)](https://ectrims.eu/msmilan2023/)
+:::
+::: {.g-col-12 .g-col-md-7}
+<p style="font-size:1.5rem"> ECTRIMS </p>
+
+`2023-10`
+
+I was invited to present my work on the detection of motor and cognitive impairment from online cognitive assessments of people with Multiple Sclerosis. 
+:::
 
 ::: {.g-col-12 .g-col-md-5}
 [![](/assets/pictures/data-engineering-meetup.webp)](https://www.meetup.com/data-engineering-europe/events/283988630/)
