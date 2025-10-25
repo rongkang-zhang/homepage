@@ -5,8 +5,8 @@ project:
     - "*.qmd"
 
 website:
-  title: "Valentina Giunchiglia"
-  description: "Cognition, Imaging, Machine Learning"
+  title: "Rong-Kang Zhang"
+  description: "Higher category"
   navbar:
     background: "#023a75ff"
     foreground: "#ffffffff"
@@ -25,6 +25,8 @@ website:
       - icon: twitter
         href: https://twitter.com/valegiunca/
       - icon: envelope
+        href: "mailto:v.giunchiglia20@imperial.ac.uk"
+      - icon: Zhihu (知乎)
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
 
 format:
