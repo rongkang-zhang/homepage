@@ -33,7 +33,7 @@ format:
   html:
     theme: 
       - cosmo
-      - custom-1.scss
+      - custom.scss
     toc: true
     linkcolor: black
 
