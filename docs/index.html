@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Valentina Giunchiglia</title>
+<title>Rong-Kang Zhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Valentina Giunchiglia</span>
+    <span class="navbar-title">Rong-Kang Zhang</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -123,6 +152,11 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:v.giunchiglia20@imperial.ac.uk"> <i class="bi bi-Zhihu (知乎)" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -151,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
   rounded " style="width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Valentina Giunchiglia</h1>
+<h1 class="title">Rong-Kang Zhang</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -178,6 +212,17 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <p>I am a second-year PhD student jointly affiliated with Imperial College London and Harvard University funded by the <a href="https://www.imperial.ac.uk/multisci-mrc-dtp/">Medical Research Council</a>, under the supervision of Prof.&nbsp;<a href="https://zitniklab.hms.harvard.edu/">Marinka Zitnik</a> and Prof.&nbsp;Adam Hampshire.</p>
+<blockquote class="blockquote">
+<p>Research interests:</p>
+<ul>
+<li>Symmetric monoidal <span class="math inline">\((\infin, n)\)</span> category</li>
+<li>Grothendieck toposes</li>
+<li>Extended TQFT</li>
+<li>Higher category</li>
+<li>Chiral representation theory</li>
+<li>Topological order</li>
+</ul>
+</blockquote>
 <p>My work lies at the intersection of artificial intelligence, biology, and health, with a focus on neuroscience. I am interested in a holistic study of diseases across multiple levels — from cellular and genetic to brain structure and clinical phenotypes — to drive advancements in <strong>precision medicine</strong>. To achieve this, I work on research spanning bioinformatics, artificial intelligence, and clinical and behavioural analysis, with the aim to gain expertise that enables me to leverage diverse data types and insights for precision medicine. Specifically, I am focused on developing <strong>multimodal foundation models</strong> that integrate diverse data types to effectively capture the complexity of diseases while embedding context-aware knowledge.</p>
 <p>My long-term research goal is to investigate diseases using multimodal data (e.g., imaging, omics, and electronic health records) to capture diverse disease characteristics and identify precise, clinically applicable treatments.</p>
 <p>I enjoy teaching, both inside and <a href="https://girlswhoml.com/">outside</a> academic environments. You can check out a detailed list in my <a href="./teaching.html">Teaching page</a>.</p>
@@ -185,10 +230,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-topics" class="level3">
 <h3 data-anchor-id="key-topics">Key topics</h3>
 <ul>
-<li>Biomedical Informatics</li>
-<li>Computational Modelling</li>
-<li>Computational Neuroscience</li>
-<li>Machine Learning</li>
+<li>Higher category theory</li>
 </ul>
 </section>
 <section id="education" class="level3">
