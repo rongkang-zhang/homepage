@@ -1,0 +1,89 @@
+/*-- scss:defaults --*/
+@import "quarto-sass/academic";   // 先继承 Quarto 变量池
+
+/* ================ 1. 语义化变量（保持你的品牌色） ================ */
+$imperial-blue: #023A75;
+$grape: #B38CB4;
+$brick: #FC440F;
+$coral: #F67E7D;
+$orange: #FF8600;
+$yellow: #FFE66D;
+$canary: #FFFD82;
+$air-blue: #6CA6C1;
+$teal-blue: #437C90;
+$seaweed: #177E89;
+
+/* 学术半饱和 + 灰阶系统 */
+$primary:        $imperial-blue;
+$primary-soft:   lighten($primary, 10%);
+$bg-light:       #fafbfc;
+$bg-dark:        #1e1f20;
+$text-main:      #212529;
+$text-muted:     #6c757d;
+
+/* ================ 2. CSS 自定义属性（支持一键明暗） ================ */
+:root {
+  --bg-color:   #{$bg-light};
+  --text-color: #{$text-main};
+  --card-bg:    #{rgba(white, 0.85)};
+}
+[data-theme="dark"] {
+  --bg-color:   #{$bg-dark};
+  --text-color: #e9ecef;
+  --card-bg:    #{rgba($bg-dark, 0.6)};
+}
+
+/* ================ 3. 数学导航胶囊（流体字号 + 半饱和背景） ================ */
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); // 大屏18px→手机14px
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: 2rem;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba($primary, 0.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: $primary-soft;
+      color: white;
+      border-color: $primary;
+    }
+
+    // 各颜色变体：背景 12 % 透明度，保留原色可读性
+    &--orange { background: rgba($orange, 0.12); color: $orange; }
+    &--yellow { background: rgba($yellow, 0.12); color: darken($yellow, 15%); }
+    &--blue   { background: rgba($air-blue, 0.12); color: $air-blue; }
+    &--imperial-blue { background: rgba($imperial-blue, 0.12); color: $imperial-blue; }
+    &--grape  { background: rgba($grape, 0.12); color: $grape; }
+    &--coral  { background: rgba($coral, 0.12); color: $coral; }
+    &--canary { background: rgba($canary, 0.12); color: darken($canary, 20%); }
+    &--seaweed { background: rgba($seaweed, 0.12); color: $seaweed; }
+    &--teal   { background: rgba($teal-blue, 0.12); color: $teal-blue; }
+  }
+}
+
+/* ================ 4. 流体容器（长公式/交换图不溢出） ================ */
+.wide-grid {
+  --gap: clamp(1rem, 2vw, 2rem);
+  display: grid;
+  gap: var(--gap);
+  padding: var(--gap);
+  max-width: min(90vw, 1400px);
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* 数学长图横向滚动保护 */
+.math-wide {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
