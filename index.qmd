@@ -9,22 +9,19 @@ about:
       href: https://www.zhihu.com/people/shokatsu-ei/posts
     - icon: twitter
       text: Twitter
-      href: https://twitter.com/valegiunca/
+      href: https://x.com/ShokatsuEi
     - icon: github
       text: Github
-      href: https://github.com/valegiunchiglia/
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/valentina-giunchiglia-b59747150/
+      href: https://github.com/rongkang-zhang
     - icon: envelope
       text: Reach me per email
-      href: "mailto:v.giunchiglia20@imperial.ac.uk"
+      href: "mailto:rongkang2025@gmail.com"
 
 ---
 
+# Education
 
-
-I am a second-year PhD student jointly affiliated with Imperial College London and Harvard University funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), under the supervision of Prof. [Marinka Zitnik](https://zitniklab.hms.harvard.edu/) and Prof. Adam Hampshire. 
+* Bachelor of Science in Physics, July 2025
 
 > Research interests:
 >
@@ -34,46 +31,4 @@ I am a second-year PhD student jointly affiliated with Imperial College London a
 > * Higher category
 > * Chiral representation theory
 > * Topological order
-
-My work lies at the intersection of artificial intelligence, biology, and health, with a focus on neuroscience. I am interested in a holistic study of diseases across multiple levels — from cellular and genetic to brain structure and clinical phenotypes — to drive advancements in **precision medicine**. To achieve this, I work on research spanning bioinformatics, artificial intelligence, and clinical and behavioural analysis,  with the aim to gain expertise that enables me to leverage diverse data types and insights for precision medicine. Specifically, I am focused on developing **multimodal foundation models** that integrate diverse data types to effectively capture the complexity of diseases while embedding context-aware knowledge. 
-
-My long-term research goal is to investigate diseases using multimodal data (e.g., imaging, omics, and electronic health records) to capture diverse disease characteristics and identify precise, clinically applicable treatments. 
-
-I enjoy teaching, both inside and [outside](https://girlswhoml.com/) academic environments.
-You can check out a detailed list in my [Teaching page](/teaching.qmd). 
-
-*I am always happy to supervise students (both in more clinical and more AI focused projects) from Imperial College London, King's College London and Harvard University. If you are interested in working with me and want to discuss potential projects, you can contact me at v.giunchiglia20@imperial.ac.uk.*
-
-
-### Key topics
-
-- Higher category theory
-
-### Education
-
-- MRes Biomedical Research (Data Science) - Imperial College London
-- MA Health Humanities - UCL
-- BSc Molecular Biotechnology - Heidelberg University
-
-### Further links
-<table width="60%" align="center">
-    <tr>
-        <td>
-            <a href="https://scholar.google.com/citations?user=p87Sl34AAAAJ&hl=en">
-                <img src="/assets/pictures/gs.png" alt="Google Scholar" width="40">
-            </a>
-        </td>
-        <td>
-            <a href="https://www.researchgate.net/profile/Valentina-Giunchiglia">
-                <img src="/assets/pictures/researchgate.png" alt="ResearchGate" width="40">
-            </a>
-        </td>
-        <td>
-            <a href="https://orcid.org/0000-0002-2165-7840">
-                <img src="/assets/pictures/ORCID_iD.png" alt="ORCID" width="40">
-            </a>
-        </td>
-    </tr>
-</table>
-
-
+> * Applied category theory in quantum science, theoretical computer science and theoretical physics
