@@ -5,9 +5,6 @@ project:
     - "*.qmd"
     - "expository-notes/**/*.qmd"
 
-execute:
-  cache: false
-
 website:
   title: "Rong-Kang Zhang"
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
