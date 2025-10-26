@@ -1,7 +1,7 @@
 ---
 title: "Expository Notes by Subjects"
 listing:
-  contents: "*/note.qmd"   # 把各科目入口抓过来当卡片
+  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
   type: table
   sort: "title"
 ---
