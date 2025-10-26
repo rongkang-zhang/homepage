@@ -16,19 +16,20 @@ about:
     - icon: envelope
       text: Reach me per email
       href: "mailto:rongkang2025@gmail.com"
-
 ---
 
-# Education
+**Education and degrees**
 
-* Bachelor of Science in Physics, July 2025
+Bachelor of Science in Physics, July 2025
 
-> Research interests:
->
-> * Symmetric monoidal $(\infty, n)$ category
-> * Grothendieck toposes
-> * Extended TQFT
-> * Higher category
-> * Chiral representation theory
-> * Topological order
-> * Applied category theory in quantum science, theoretical computer science and theoretical physics
+**Research interests**
+
+* Symmetric monoidal $(\infty, n)$ category
+* Grothendieck toposes
+* Extended TQFT
+* Higher category
+* Chiral representation theory
+* Topological order
+* Applied category theory in quantum science, theoretical computer science and theoretical physics
+
+I wrote notes on various topics, please refer to "Expository Notes".
