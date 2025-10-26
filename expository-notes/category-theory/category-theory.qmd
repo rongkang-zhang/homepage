@@ -4,4 +4,53 @@ date: 2025-10-20
 description: "用 representable functor 的观点把 Yoneda 引理压缩成三句话，附手写示意图。"
 ---
 
-你的正文，MathJax 公式照常写。
+Definition (Index set $\left(A_i\right)_{i \in I}$ )
+$A: I \rightarrow X, i \mapsto A_i$
+Definition (Product over the index set $\left(A_i\right)_{i \in I}$ )
+
+$$
+\prod_{i \in I} A_i:=\left\{a: I \rightarrow \bigcup_{i \in I} A_i \mid \forall i \in I, a(i) \in A_i\right\}
+$$
+
+
+Definition (Semigroup $(S, *)$ )
+
+$$
+*: S \times S \rightarrow S
+$$
+
+- Axiom 1 (Closure)
+
+$$
+\forall a, b \in S, a * b \in S
+$$
+
+- Axiom 2 (Associativity)
+
+$$
+\forall a, b, c \in S,(a * b) * c=a *(b * c)
+$$
+
+
+Example (Semigroup)
+
+$$
+(\mathbb{N},+), \mathbb{N}=\{1,2,3, \ldots\}, 0 \notin \mathbb{N}
+$$
+
+
+Definition (Commutative semigroup)
+
+$$
+\forall a, b \in S, a * b=b * a
+$$
+
+
+Definition (Non-commutative semigroup)
+
+$$
+\left\{\begin{array}{l}
+\forall a, b, c \in S,(a * b) * c=a *(b * c) \\
+\exists x, y \in S, x * y \neq y * x
+\end{array}\right.
+$$

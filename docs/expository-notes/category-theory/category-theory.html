@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -182,7 +211,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>你的正文，MathJax 公式照常写。</p>
+<p>Definition (Index set <span class="math inline">\(\left(A_i\right)_{i \in I}\)</span> ) <span class="math inline">\(A: I \rightarrow X, i \mapsto A_i\)</span> Definition (Product over the index set <span class="math inline">\(\left(A_i\right)_{i \in I}\)</span> )</p>
+<p><span class="math display">\[
+\prod_{i \in I} A_i:=\left\{a: I \rightarrow \bigcup_{i \in I} A_i \mid \forall i \in I, a(i) \in A_i\right\}
+\]</span></p>
+<p>Definition (Semigroup <span class="math inline">\((S, *)\)</span> )</p>
+<p><span class="math display">\[
+*: S \times S \rightarrow S
+\]</span></p>
+<ul>
+<li>Axiom 1 (Closure)</li>
+</ul>
+<p><span class="math display">\[
+\forall a, b \in S, a * b \in S
+\]</span></p>
+<ul>
+<li>Axiom 2 (Associativity)</li>
+</ul>
+<p><span class="math display">\[
+\forall a, b, c \in S,(a * b) * c=a *(b * c)
+\]</span></p>
+<p>Example (Semigroup)</p>
+<p><span class="math display">\[
+(\mathbb{N},+), \mathbb{N}=\{1,2,3, \ldots\}, 0 \notin \mathbb{N}
+\]</span></p>
+<p>Definition (Commutative semigroup)</p>
+<p><span class="math display">\[
+\forall a, b \in S, a * b=b * a
+\]</span></p>
+<p>Definition (Non-commutative semigroup)</p>
+<p><span class="math display">\[
+\left\{\begin{array}{l}
+\forall a, b, c \in S,(a * b) * c=a *(b * c) \\
+\exists x, y \in S, x * y \neq y * x
+\end{array}\right.
+\]</span></p>
 
 
 
