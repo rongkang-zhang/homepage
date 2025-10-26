@@ -12,7 +12,7 @@ website:
     foreground: "#ffffffff"
     left:
       - text: Expository Notes
-        href: expository-notes/_index.qmd
+        href: expository-notes/index.html
       - text: Publications
         href: publications.qmd
       - text: Teaching

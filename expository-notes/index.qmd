@@ -1,0 +1,9 @@
+---
+title: "Expository Notes by Subject"
+listing:
+  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
+  type: grid
+  sort: "title"
+---
+
+Pick a subject below to see the full list of notes.
