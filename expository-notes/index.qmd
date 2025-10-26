@@ -11,8 +11,8 @@ Pick a subject below to see the full list of notes.
 
 # Expository Notes
 
-| Overall category                            | Core topic                       | Topics covered                                | Expository notes                              | Textbooks refered                         |
-| ------------------------------------------- | -------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
-| 数理逻辑&算子代数<br>（Mathematical logic） | 数理逻辑<br />Mathematical logic | Category theory<br />Mathematical logic<br /> | [Category Theory](category-theory/index.html) | Categories for the working mathematicians |
+| Overall category                            | Core topic                       | Topics covered                                | Expository notes on website                   | Textbooks refered                         | Overleaf electric notes |
+| ------------------------------------------- | -------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- | ----------------------- |
+| 数理逻辑&算子代数<br>（Mathematical logic） | 数理逻辑<br />Mathematical logic | Category theory<br />Mathematical logic<br /> | [Category Theory](category-theory/index.html) | Categories for the working mathematicians |                         |
 
 - [Category Theory](category-theory/index.html)
