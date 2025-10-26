@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "expository-notes/**/*.qmd"
 
 website:
   title: "Rong-Kang Zhang"
