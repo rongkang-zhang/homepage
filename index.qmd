@@ -4,6 +4,9 @@ about:
   template: trestles
   image: assets/pictures/profile-picture.jpg
   links:
+    - icon: zhihu
+      text: 知乎
+      href: https://www.zhihu.com/people/shokatsu-ei/posts
     - icon: twitter
       text: Twitter
       href: https://twitter.com/valegiunca/
@@ -18,6 +21,8 @@ about:
       href: "mailto:v.giunchiglia20@imperial.ac.uk"
 
 ---
+
+
 
 I am a second-year PhD student jointly affiliated with Imperial College London and Harvard University funded by the [Medical Research Council](https://www.imperial.ac.uk/multisci-mrc-dtp/), under the supervision of Prof. [Marinka Zitnik](https://zitniklab.hms.harvard.edu/) and Prof. Adam Hampshire. 
 
