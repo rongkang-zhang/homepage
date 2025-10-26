@@ -6,10 +6,15 @@ toc: true
 toc-depth: 3
 ---
 
+# Category theory
+
+## Introduction
+
+### Natural transformation
+
 Definition (Index set $\left(A_i\right)_{i \in I}$ )
 $A: I \rightarrow X, i \mapsto A_i$
 Definition (Product over the index set $\left(A_i\right)_{i \in I}$ )
-
 $$
 \prod_{i \in I} A_i:=\left\{a: I \rightarrow \bigcup_{i \in I} A_i \mid \forall i \in I, a(i) \in A_i\right\}
 $$
