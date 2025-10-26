@@ -2,6 +2,8 @@
 title: "Category Theory"
 date: 2025-10-26
 description: "Yoneda Lemma & all that jazz"
+toc: true
+toc-depth: 3
 ---
 
 Definition (Index set $\left(A_i\right)_{i \in I}$ )
