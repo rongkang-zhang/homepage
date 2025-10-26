@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-10-20">
+<meta name="description" content="用 representable functor 的观点把 Yoneda 引理压缩成三句话，附手写示意图。">
 
-<title>📣 Main Publications – Rong-Kang Zhang</title>
+<title>Yoneda Lemma 的三句话证明 – Rong-Kang Zhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-baf1d9e9fac49179cdfd042faae6fda4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-baf1d9e9fac49179cdfd042faae6fda4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +72,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rong-Kang Zhang</span>
     </a>
   </div>
@@ -93,23 +94,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./expository-notes/_index.qmd"> 
+    <a class="nav-link" href="../../expository-notes/_index.qmd"> 
 <span class="menu-text">Expository Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./outreach.html"> 
+    <a class="nav-link" href="../../outreach.html"> 
 <span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./curriculum.html"> 
+    <a class="nav-link" href="../../curriculum.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -142,25 +143,36 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">📣 Main Publications</h1>
+<h1 class="title">Yoneda Lemma 的三句话证明</h1>
+</div>
+
+<div>
+  <div class="description">
+    用 representable functor 的观点把 Yoneda 引理压缩成三句话，附手写示意图。
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 20, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -170,100 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Check my <a href="https://scholar.google.com/citations?user=p87Sl34AAAAJ&amp;hl=it&amp;oi=ao">Google Scholar</a> for the full list of publications</p>
-<p><br></p>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://zitniklab.hms.harvard.edu/projects/KGARevion/"><img src=".\assets/pictures/KGARevion.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Su, X., Wang, Y., Gao, S., Liu, X., .<strong>Giunchiglia, V..</strong>, et al.&nbsp;(2024). Knowledge Graph Based Agent for Complex, Knowledge-Intensive QA in Medicine.<a href="https://arxiv.org/abs/2410.04660">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.cell.com/cell/fulltext/S0092-8674(24)01070-5"><img src=".\assets/pictures/aiagents.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Gao, S., Fang, A.*, Huang, Y*, <strong>Giunchiglia, V.*</strong>, Noori, A.*, et al.&nbsp;(2024). Empowering biomedical discovery with ai agents. Cell, 187(22), 6125-6151.<a href="https://www.cell.com/cell/fulltext/S0092-8674(24)01070-5">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.medrxiv.org/content/10.1101/2024.09.28.24314472v1"><img src=".\assets/pictures/onlinebio.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Del Giovane, M., <strong>Giunchiglia, V.</strong>, et al.&nbsp;(2024). Remote cognitive tests predict neurodegenerative biomarkers in the Insight 46 cohort. medRxiv, 2024-09.<a href="https://www.medrxiv.org/content/10.1101/2024.09.28.24314472v1">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.medrxiv.org/content/10.1101/2024.09.19.24313984v1"><img src=".\assets/pictures/online46.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Cai, Z.*, <strong>Giunchiglia, V.*</strong>, Street, R.*, et al.&nbsp;(2024). Online46: online cognitive assessments in elderly cohorts-the British 1946 birth cohort case study. medRxiv, 2024-09.<a href="https://www.medrxiv.org/content/10.1101/2024.09.19.24313984v1">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00087/119148"><img src=".\assets/pictures/biobank-neural.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><strong>Giunchiglia, V.</strong>, et al.&nbsp;Neural correlates of cognitive ability and visuo-motor speed: validation of IDoCT on UK Biobank Data. Imaging Neuroscience, 2: 1-25 (2024) <a href="https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00087/119148">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.nature.com/articles/s41746-024-01327-x"><img src=".\assets/pictures/idoct-summary.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><strong>Giunchiglia, V.</strong>, et al.&nbsp;An iterative approach for estimating domain specific cognitive abilities from large scale online cognitive data. npj Nature Digital Health (2024) <a href="https://www.nature.com/articles/s41746-024-01327-x">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2311330"><img src=".\assets/pictures/nejmoa2311330_f2.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Hampshire, A., Azor, A., Atchison, C., Trender, W., Hellyer, P. J., <strong>Giunchiglia, V.</strong>, et al.(2024). Cognition and memory after Covid-19 in a large community sample. New England Journal of Medicine, 390(9), 806-818. <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2311330">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.medrxiv.org/content/10.1101/2024.10.21.24315765.abstract"><img src=".\assets/pictures/cosmos.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Rida, L., Ioannidis, K., Chamberlain, S. R., Grant, J. E., Hellyer, P., <strong>Giunchiglia, V.</strong>, et al.&nbsp;(2024). Validation of the Comprehensive Online Sleep Monitoring Scale (COSMOS) in a Large Population Sample. medRxiv, 2024-10. <a href="https://www.medrxiv.org/content/10.1101/2024.10.21.24315765.abstract">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(23)00263-8/fulltext"><img src=".\assets/pictures/covid.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Cheetham, N. J., Penfold, R., <strong>Giunchiglia, V.</strong>, et al.&nbsp;(2023). The effects of COVID-19 on cognitive performance in a community-based cohort: a COVID symptom study biobank prospective cohort study. EClinicalMedicine, 62. <a href="https://www.sciencedirect.com/science/article/pii/S105381192300188X">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://www.sciencedirect.com/science/article/pii/S105381192300188X"><img src=".\assets/pictures/brainsim.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Kurtin, D. L., <strong>Giunchiglia, V.</strong>, et al.&nbsp;(2023). Moving from phenomenological to predictive modelling: Progress and pitfalls of modelling brain stimulation in-silico. Neuroimage, 272, 120042. <a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(23)00263-8/fulltext">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://arxiv.org/abs/2211.16731"><img src=".\assets/pictures/gnn-explanation-paper-figure.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><strong>Giunchiglia, V.</strong>, Shukla, C.V., Gonzalez, G. and Agarwal, C., “Towards Training GNNs using Explanation Directed Message Passing.” <em>arXiv preprint</em> 2022, arXiv:2211.16731. <a href="https://arxiv.org/abs/2211.16731">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://doi.org/10.3390/metabo12050455"><img src=".\assets/pictures/metabolites-paper-figure.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Isberg OG, <strong>Giunchiglia V</strong>, <em>et al.</em> “Automated Cancer Diagnostics via Analysis of Optical and Chemical Images by Deep and Shallow Learning.” <em>Metabolites</em>. 2022; 12(5):455. <a href="https://doi.org/10.3390/metabo12050455">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://link.springer.com/chapter/10.1007/978-981-16-6486-1_3"><img src=".\assets/pictures/caring-frontline-covid-figure.png" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Lewis-Jackson, S., Iob, E , <strong>Giunchiglia, V.</strong>, <em>et al.</em> “Policies and politics: an analysis of the public policies aimed at the reorganization of healthcare delivery during the COVID-19 pandemic”. In Caring on the Frontline during COVID-19 (pp.&nbsp;39-64). <em>Palgrave Macmillan, Singapore.</em> <a href="https://link.springer.com/chapter/10.1007/978-981-16-6486-1_3">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://doi.org/10.1038/s41380-022-01478-x"><img src=".\assets/pictures/molecular-psychiatry-paper-figure.webp" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Iob, E., Lacey, R., <strong>Giunchiglia, V.</strong>, <em>et al.</em> “Adverse childhood experiences and severity levels of inflammation and depression from childhood to young adulthood: a longitudinal cohort study.” <em>Mol Psychiatry</em> 27, 2255– 2263 (2022). <a href="https://doi.org/10.1038/s41380-022-01478-x">[Link]</a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="https://doi.org/10.1016/j.immuni.2019.12.002"><img src=".\assets/pictures/cell-paper-figure.jpg" class="img-fluid"></a></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p>Delacher, M., Imbusch, C.D., Hotz-Wagenblatt, A., Mallm, J.P., Bauer, K., Simon, M., Riegel, D., Rendeiro, A.F., Bittner, S., Sanderink, L., Pant, A., Schmidleithner, L., Braband, K.L., Echtenachter, B., Fischer, A., <strong>Giunchiglia, V.</strong>, <em>et al.</em> “Precursors for nonlymphoid-tissue Treg cells reside in secondary lymphoid organs and are programmed by the transcriptor factor BATF.” <em>Cell Immunity</em>, 2020, 52(2), 295-312. Cit. 82. <a href="https://doi.org/10.1016/j.immuni.2019.12.002">[Link]</a></p>
-</div>
-</div>
+<p>你的正文，MathJax 公式照常写。</p>
 
 
 

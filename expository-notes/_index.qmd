@@ -1,0 +1,11 @@
+---
+title: "Expository Notes"
+listing:
+  contents: "*/_index.qmd"   # 把各子科目的索引页当成卡片抓过来
+  type: grid
+  sort: "title"
+---
+
+## 按科目浏览
+
+点击下列卡片进入对应科目的笔记列表。

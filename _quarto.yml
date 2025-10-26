@@ -6,11 +6,13 @@ project:
 
 website:
   title: "Rong-Kang Zhang"
-  description: "Higher category"
+  description: "Higher category | Grothendieck toposes | Chiral representation theory"
   navbar:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
+      - text: Expository Notes
+        href: expository-notes/_index.qmd
       - text: Publications
         href: publications.qmd
       - text: Teaching

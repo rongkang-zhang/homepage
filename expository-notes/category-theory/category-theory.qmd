@@ -1,0 +1,7 @@
+---
+title: "Yoneda Lemma 的三句话证明"
+date: 2025-10-20
+description: "用 representable functor 的观点把 Yoneda 引理压缩成三句话，附手写示意图。"
+---
+
+你的正文，MathJax 公式照常写。
