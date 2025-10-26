@@ -1,9 +1,13 @@
 ---
-title: "Expository Notes by Subject"
+title: "Expository Notes by Subjects"
 listing:
-  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
-  type: grid
+  contents: "*/note.qmd"   # 把各科目入口抓过来当卡片
+  type: table
   sort: "title"
 ---
 
 Pick a subject below to see the full list of notes.
+
+# Expository Notes
+
+- [Category Theory](category-theory/index.html)

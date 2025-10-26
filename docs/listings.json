@@ -2,13 +2,7 @@
   {
     "listing": "/expository-notes/index.html",
     "items": [
-      "/expository-notes/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/expository-notes/category-theory/index.html",
-    "items": [
-      "/expository-notes/category-theory/category-theory.html"
+      "/expository-notes/category-theory/note.html"
     ]
   }
 ]

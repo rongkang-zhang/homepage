@@ -1,8 +1,0 @@
----
-title: "Category Theory"
-listing:
-  contents: "*.qmd"         # 只列同级具体笔记
-  sort: date desc
----
-
-All category-theory notes.

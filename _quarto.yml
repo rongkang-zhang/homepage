@@ -6,7 +6,7 @@ project:
     - "expository-notes/**/*.qmd"
 
 website:
-  title: "Rong-Kang Zhang"
+  title: "Rong-Kang Zhang - CV"
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
   navbar:
     background: "#023a75ff"
