@@ -23,7 +23,7 @@ I am a second-year PhD student jointly affiliated with Imperial College London a
 
 > Research interests:
 >
-> * Symmetric monoidal $(\infin, n)$ category
+> * Symmetric monoidal $(\infty, n)$ category
 > * Grothendieck toposes
 > * Extended TQFT
 > * Higher category
