@@ -5,6 +5,9 @@ project:
     - "*.qmd"
     - "expository-notes/**/*.qmd"
 
+execute:
+  cache: false
+
 website:
   title: "Rong-Kang Zhang"
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
@@ -29,7 +32,7 @@ website:
         href: https://twitter.com/valegiunca/
       - icon: envelope
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
-      - icon: Zhihu (知乎)
+      - icon: globe
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
 
 format:
