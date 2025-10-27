@@ -31,6 +31,8 @@ Bachelor of Science in Physics, July 2025
 * Chiral representation theory
 * Topological order
 * Quantum geometric representation theory
+* Spectral algebraic geometry
+* Higher algebraic stacks/Higher geometry/Motivic homotopy theory
 * Holographic entanglement entropy
 * Applied category theory in quantum science, theoretical computer science and theoretical physics
 
