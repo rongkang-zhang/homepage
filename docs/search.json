@@ -70,25 +70,11 @@
     "text": "Invited Speaker\n\n\n\n\n\n\nECTRIMS\n\n2023-10\nI was invited to present my work on the detection of motor and cognitive impairment from online cognitive assessments of people with Multiple Sclerosis.\n\n\n\n\n\n\nInspiring Women in Data\n\n2022-03\nQuantumBlack invited me as speakers for a Data Engineering meetup event. I gave a talk on how to use multimodal data to establish the best predictors of Alzheimer’s progression, and discussed more broadly the potential and limitations of AI, and of its applicability in clinical practice.\n\n\n\n\n\n\nImperial College Data Science Society\n\n2021-11\nArtificial Intelligence (AI) provides powerful tools that can be applied in many different fields and that are capable of solving complex problems, even beyond what we could have imagined many years ago. In biomedical research, AI algorithms can be used to reach diagnosis, predict disease progression and patients’ survival, recommend patients’ treatments and much more, which is all fascinating. But the question is: will these algorithms be ever applied in clinical practice and, in turn, improve people lives?\n\n\n\n\n\n\nPsychobiology: looking at the bigger picture\n\n2020-11\nThe aim of the talk was to describe the potential of interdisciplinary research that crosses the boundaries of social and biological sciences, with a special focus on the field of psychobiology"
   },
   {
-    "objectID": "expository-notes/index.html",
-    "href": "expository-notes/index.html",
-    "title": "Expository Notes by Subjects",
+    "objectID": "extemporaneous-blackboard-reconstruction/index.html",
+    "href": "extemporaneous-blackboard-reconstruction/index.html",
+    "title": "Rong-Kang Zhang",
     "section": "",
-    "text": "Pick a subject below to see the full list of notes.\n\nExpository Notes\n\n\n\nOverall category\nTopics covered\nOnline expository notes\nTextbooks refered\nElectronic notes compiled in Overleaf\nSolution manuals I wrote\n\n\n\n\n数理逻辑Mathematical logic\nCategory theoryMathematical logicEnriched category theoryMonoidal categoriesApplied category theoryTensor categoriesFunsion categoriesBraided/Ribbon categoriesUnitary modular tensor categoryFrobenius algbebrasHopf algebrasQuantum groupsCategorical logic\nCategory Theory\nCategories for the working mathematicians\n\n\n\n\n\n\nCategory Theory\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nOct 26, 2025\n\n\nCategory Theory\n\n\n \n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "curriculum.html",
-    "href": "curriculum.html",
-    "title": "📜 Curriculum Vitae",
-    "section": "",
-    "text": "Download CV   Latest update: November 2024"
-  },
-  {
-    "objectID": "conferences-attended/index.html",
-    "href": "conferences-attended/index.html",
-    "title": "Conferences Attended",
-    "section": "",
-    "text": "Pick a subject below to see the full list of notes.\n\nExpository Notes\n\nBefore I had mastered sufficient knowledge, I frequently attended conferences domestically and at abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.\n\n\nQuantum and Cosmology 2023\nQuantum simulation with ultra-cold atoms 2024\n\n\n\n\nYear\nLocation\nOrganizer\nType\nAttendance Dates\nConference Name\nConference Theme\n\n\n\n\n2024\nKyoto\nYITP\nLong-term workshop and winter school\nJanuary 29–March 1, 2024\nQuantum Gravity and Cosmology 2024 (GC2024)\nInflation/PBH/dark matter\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+    "text": "title: “Extemporaneous Blackboard Reconstruction and Derivation from Memory - No Notes, No References (on YouTube)” author: “Rong-Kang Zhang” listing: contents: “*/index.qmd” # 把各科目入口抓过来当卡片 type: table sort: “title”\nCategory theory"
   },
   {
     "objectID": "expository-notes/category-theory/index.html",
@@ -103,6 +89,27 @@
     "title": "Category Theory",
     "section": "",
     "text": "Definition (Index set \\(\\left(A_i\\right)_{i \\in I}\\) ) \\(A: I \\rightarrow X, i \\mapsto A_i\\) Definition (Product over the index set \\(\\left(A_i\\right)_{i \\in I}\\) ) \\[\n\\prod_{i \\in I} A_i:=\\left\\{a: I \\rightarrow \\bigcup_{i \\in I} A_i \\mid \\forall i \\in I, a(i) \\in A_i\\right\\}\n\\]\nDefinition (Semigroup \\((S, *)\\) )\n\\[\n*: S \\times S \\rightarrow S\n\\]\n\nAxiom 1 (Closure)\n\n\\[\n\\forall a, b \\in S, a * b \\in S\n\\]\n\nAxiom 2 (Associativity)\n\n\\[\n\\forall a, b, c \\in S,(a * b) * c=a *(b * c)\n\\]\nExample (Semigroup)\n\\[\n(\\mathbb{N},+), \\mathbb{N}=\\{1,2,3, \\ldots\\}, 0 \\notin \\mathbb{N}\n\\]\nDefinition (Commutative semigroup)\n\\[\n\\forall a, b \\in S, a * b=b * a\n\\]\nDefinition (Non-commutative semigroup)\n\\[\n\\left\\{\\begin{array}{l}\n\\forall a, b, c \\in S,(a * b) * c=a *(b * c) \\\\\n\\exists x, y \\in S, x * y \\neq y * x\n\\end{array}\\right.\n\\] 查看是否更新"
+  },
+  {
+    "objectID": "conferences-attended/index.html",
+    "href": "conferences-attended/index.html",
+    "title": "Conferences Attended",
+    "section": "",
+    "text": "Pick a subject below to see the full list of notes.\n\nExpository Notes\n\nBefore I had mastered sufficient knowledge, I frequently attended conferences domestically and at abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.\n\n\nQuantum and Cosmology 2023\nQuantum simulation with ultra-cold atoms 2024\n\n\n\n\nYear\nLocation\nOrganizer\nType\nAttendance Dates\nConference Name\nConference Theme\n\n\n\n\n2024\nKyoto\nYITP\nLong-term workshop and winter school\nJanuary 29–March 1, 2024\nQuantum Gravity and Cosmology 2024 (GC2024)\nInflation/PBH/dark matter\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "curriculum.html",
+    "href": "curriculum.html",
+    "title": "📜 Curriculum Vitae",
+    "section": "",
+    "text": "Download CV   Latest update: November 2024"
+  },
+  {
+    "objectID": "expository-notes/index.html",
+    "href": "expository-notes/index.html",
+    "title": "Expository Notes by Subjects",
+    "section": "",
+    "text": "Pick a subject below to see the full list of notes.\n\nExpository Notes\n\n\n\nOverall category\nTopics covered\nOnline expository notes\nTextbooks refered\nElectronic notes compiled in Overleaf\nSolution manuals I wrote\n\n\n\n\n数理逻辑Mathematical logic\nCategory theoryMathematical logicEnriched category theoryMonoidal categoriesApplied category theoryTensor categoriesFunsion categoriesBraided/Ribbon categoriesUnitary modular tensor categoryFrobenius algbebrasHopf algebrasQuantum groupsCategorical logic\nCategory Theory\nCategories for the working mathematicians\n\n\n\n\n\n\nCategory Theory\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nOct 26, 2025\n\n\nCategory Theory\n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
