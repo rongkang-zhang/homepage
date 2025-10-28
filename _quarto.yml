@@ -14,6 +14,8 @@ website:
     left:
       - text: Expository Notes
         href: expository-notes/index.html
+      - text: Conferences Attended
+        href: conferences-attended/index.html
       - text: Publications
         href: publications.qmd
       - text: Teaching
