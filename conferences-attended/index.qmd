@@ -1,0 +1,18 @@
+---
+title: "Conferences Attended"
+author: "Rong-Kang Zhang"
+listing:
+  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
+  type: table
+  sort: "title"
+---
+
+Pick a subject below to see the full list of notes.
+
+# Expository Notes
+
+| Overall category                 | Topics covered                                               | Online expository notes                       | Textbooks refered                         | Electronic notes compiled in Overleaf | Solution manuals I wrote |
+| -------------------------------- | ------------------------------------------------------------ | --------------------------------------------- | ----------------------------------------- | ------------------------------------- | ------------------------ |
+| 数理逻辑<br />Mathematical logic | Category theory<br />Mathematical logic<br />Enriched category theory<br />Monoidal categories<br />Applied category theory<br />Tensor categories<br />Funsion categories<br />Braided/Ribbon categories<br />Unitary modular tensor category<br />Frobenius algbebras<br />Hopf algebras<br />Quantum groups<br />Categorical logic | [Category Theory](category-theory/index.html) | Categories for the working mathematicians |                                       |                          |
+
+- [Category Theory](category-theory/index.html)

@@ -35,6 +35,9 @@ Bachelor of Science in Physics, July 2025
 * Higher algebraic stacks/Higher geometry/Motivic homotopy theory
 * Holographic entanglement entropy
 * Applied category theory in quantum science, theoretical computer science and theoretical physics
+* Algebraic quantum field theory
+* Conformal field theory
+* von Neumann algegras
 
 > * I wrote notes on various topics, please refer to "Expository Notes"[Expository Notes](/expository-notes/index.html). in top menu.
 >
