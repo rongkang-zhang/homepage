@@ -24,20 +24,39 @@ Bachelor of Science in Physics, July 2025
 
 **Research interests**
 
-* Symmetric monoidal $(\infty, n)$ category
-* Grothendieck toposes
-* Extended TQFT
 * Higher category theory
-* Chiral representation theory
-* Topological order
-* Quantum geometric representation theory
-* Spectral algebraic geometry
-* Higher algebraic stacks/Higher geometry/Motivic homotopy theory
-* Holographic entanglement entropy
-* Applied category theory in quantum science, theoretical computer science and theoretical physics
-* Algebraic quantum field theory
-* Conformal field theory
-* von Neumann algegras
+
+  * Symmetric monoidal $(\infty, n)$ category
+  * Grothendieck toposes
+  * Extended TQFT
+  * Higher algebraic stacks/Higher geometry/Motivic homotopy theory
+
+* Operator algebras
+
+  * von Neumann algegras
+  * Algebraic quantum field theory
+  * Conformal field theory
+  * Topological order
+
+* Derived algebraic geometry
+
+  * Spectral algebraic geometry
+
+* Representation theory
+
+  * Chiral representation theory
+  * Quantum geometric representation theory
+
+* Holographic duality
+
+  * Higher category in holographic duality
+  * HaPPY model
+  * Holographic entanglement entropy
+
+  * Quantum information in holographic duality
+
+* Applied category theory
+  * Applied category theory in quantum error correction, theoretical computer science and theoretical physics
 
 > * I wrote notes on various topics, please refer to "Expository Notes"[Expository Notes](/expository-notes/index.html). in top menu.
 >
