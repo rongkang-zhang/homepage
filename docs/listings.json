@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/extemporaneous-reconstruction/index.html",
+    "items": []
+  },
+  {
     "listing": "/conferences-attended/index.html",
     "items": []
   },
@@ -8,9 +12,5 @@
     "items": [
       "/expository-notes/category-theory/index.html"
     ]
-  },
-  {
-    "listing": "/extemporaneous-reconstruction/index.html",
-    "items": []
   }
 ]
