@@ -14,7 +14,7 @@ website:
     left:
       - text: Expository Notes
         href: expository-notes/index.html
-      - html : <span>Extemporaneous<br>Reconstruction</span>
+      - text: "Extemporaneous<br>Reconstruction"
         href: extemporaneous-reconstruction/index.qmd
       - text: Conferences Attended
         href: conferences-attended/index.html
