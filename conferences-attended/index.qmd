@@ -11,6 +11,8 @@ Pick a subject below to see the full list of notes.
 
 # Expository Notes
 
+> Before I had mastered sufficient knowledge, I frequently attended conferences at home and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
+
 * Quantum and Cosmology 2023
 * Quantum simulation with ultra-cold atoms 2024
 
