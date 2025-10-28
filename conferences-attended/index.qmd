@@ -11,13 +11,13 @@ Pick a subject below to see the full list of notes.
 
 # Expository Notes
 
-> Before I had mastered sufficient knowledge, I frequently attended conferences at home and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
+> Before I had mastered sufficient knowledge, I frequently attended conferences domestically and at abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
 
 * Quantum and Cosmology 2023
 * Quantum simulation with ultra-cold atoms 2024
 
-| Overall category                 | Topics covered                                               | Online expository notes                       | Textbooks refered                         | Electronic notes compiled in Overleaf | Solution manuals I wrote |
-| -------------------------------- | ------------------------------------------------------------ | --------------------------------------------- | ----------------------------------------- | ------------------------------------- | ------------------------ |
-| 数理逻辑<br />Mathematical logic | Category theory<br />Mathematical logic<br />Enriched category theory<br />Monoidal categories<br />Applied category theory<br />Tensor categories<br />Funsion categories<br />Braided/Ribbon categories<br />Unitary modular tensor category<br />Frobenius algbebras<br />Hopf algebras<br />Quantum groups<br />Categorical logic | [Category Theory](category-theory/index.html) | Categories for the working mathematicians |                                       |                          |
 
-- [Category Theory](category-theory/index.html)
+
+| Year | Location | Organizer | Type                                 | Attendance Dates         | Conference Name                                              | Conference Theme          |
+| ---- | -------- | --------- | ------------------------------------ | ------------------------ | ------------------------------------------------------------ | ------------------------- |
+| 2024 | Kyoto    | YITP      | Long-term workshop and winter school | January 29–March 1, 2024 | [Quantum Gravity and Cosmology 2024 (GC2024)](https://www2.yukawa.kyoto-u.ac.jp/~gc2024/index.php) | Inflation/PBH/dark matter |
