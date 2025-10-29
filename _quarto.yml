@@ -18,7 +18,7 @@ website:
             - text: Overview
               href: expository-notes/index.html
             - text: Category theory
-              href: category-theroy/index.html
+              href: expository-notes/category-theory/index.html
       - text: "Extemporaneous<br>Reconstruction"
         icon: lightning
         href: extemporaneous-reconstruction/index.qmd
