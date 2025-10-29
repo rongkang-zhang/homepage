@@ -27,8 +27,6 @@ website:
         href: publications.qmd
       - text: Outreach
         href: outreach.qmd
-      - text: CV
-        href: curriculum.qmd
     right:
       - icon: github
         href: https://github.com/valegiunchiglia/
