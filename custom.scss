@@ -154,14 +154,14 @@ $navbar-background: $imperial-blue;
 
 /* ---- 用来表示参加过的会议的Type, Role时所使用的方框标签---- */
 
-/* ---- 会议类型（同一蓝色系，饱和度递减）---- */
-.tag-workshop       { background: #419fff; color: #fff; } /* 饱和度 100% */
-.tag-seminar        { background: #589fff; color: #fff; } /* 90% */
-.tag-conference     { background: #72aeff; color: #fff; } /* 80% */
-.tag-winter-school  { background: #8bbcff; color: #000; } /* 70% 文字转黑 */
-.tag-summer-school  { background: #a5cbff; color: #000; } /* 60% */
+/* ===== 全系蓝色阶梯 ===== */
+.tag-workshop       { background: #1e4d8b; color: #fff; }   /* H210 S70 L35 最深 */
+.tag-seminar        { background: #2f5b9c; color: #fff; }   /* H212 S60 L42 */
+.tag-conference     { background: #4069ad; color: #fff; }   /* H214 S52 L49 */
+.tag-winter-school  { background: #5177be; color: #fff; }   /* H216 S45 L56 */
+.tag-summer-school  { background: #6285cf; color: #fff; }   /* H218 S38 L63 最浅 */
 
-/* ---- 角色（同一紫系，明暗区分）---- */
-.tag-speaker        { background: #777fff; color: #fff; } /* 主紫 */
-.tag-poster-presenter { background: #589fff; color: #fff; } /* 同 seminar 蓝 */
-.tag-participant    { background: #c4c7ff; color: #000; } /* 最浅 */
+/* ===== 角色（同色系，但整体再降一档亮度）===== */
+.tag-speaker           { background: #183d72; color: #fff; } /* 比 workshop 再暗 5% */
+.tag-poster-presenter  { background: #294b83; color: #fff; } /* 与 seminar 同级 */
+.tag-participant       { background: #7a9fcc; color: #000; } /* 轻雾蓝，文字黑 */
