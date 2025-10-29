@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -391,7 +391,7 @@ window.Quarto = {
   <li><a href="#expository-notes" id="toc-expository-notes" class="nav-link active" data-scroll-target="#expository-notes">Expository Notes</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -480,7 +480,7 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table">
+<table class="quarto-listing-table table table-striped">
 <thead>
 <tr>
 
@@ -502,7 +502,7 @@ window.Quarto = {
 
 <tr data-index="0" data-listing-date-sort="1761408000000" data-listing-file-modified-sort="1761500630315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
-<span class="listing-date">Oct 26, 2025</span>
+<span class="listing-date">2025-10</span>
 </td>
 <td>
 <a href="../expository-notes/category-theory/index.html" class="title listing-title">Category Theory</a>

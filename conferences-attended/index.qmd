@@ -3,6 +3,7 @@ title: "Conferences Attended"
 subtitle: "2019-2025"
 date: last-modified
 description: "Conferences I've ever attended"
+toc: false
 ---
 
 > Before I had mastered sufficient knowledge, I frequently attended conferences domestically and at abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
@@ -10,8 +11,6 @@ description: "Conferences I've ever attended"
 <!-- 手工表格可保留，也可删掉，让 listing 自动生成 -->
 * Quantum and Cosmology 2023
 * Quantum simulation with ultra-cold atoms 2024
-
-# Conferences Attended
 
 | Year | Location | Organizer | Type                                 | Attendance Dates         | Conference Name                                              | Conference Theme          |
 | ---- | -------- | --------- | ------------------------------------ | ------------------------ | ------------------------------------------------------------ | ------------------------- |
