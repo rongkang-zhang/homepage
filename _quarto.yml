@@ -14,7 +14,9 @@ website:
     left:
       - text: Expository<br>Notes
         icon: journal-text
-        href: expository-notes/index.html
+        menu:
+            - text: Category theory
+              href: expository-notes/index.html
       - text: "Extemporaneous<br>Reconstruction"
         icon: lightning
         href: extemporaneous-reconstruction/index.qmd
@@ -23,8 +25,6 @@ website:
         href: conferences-attended/index.html
       - text: Publications
         href: publications.qmd
-      - text: Teaching
-        href: teaching.qmd
       - text: Outreach
         href: outreach.qmd
       - text: CV

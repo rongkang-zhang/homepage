@@ -61,3 +61,81 @@ $navbar-background: $imperial-blue;
     width: 100%;
     margin: 0 auto;    /* Center the grid */
   }
+
+/* 下面都是navbar导航栏的格式设置 */
+
+/* 使得鼠标放置到navbar导航栏中对应栏目的时候，下拉菜单自动显示 */
+
+/* custom.scss 末尾追加 */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 可选：让顶级按钮同时可点 */
+.navbar .nav-item.dropdown > .nav-link {
+  pointer-events: auto;
+}
+
+/* 改字体、字号、字重 */
+
+/* 下拉菜单整体 */
+.navbar .dropdown-menu {
+  font-family: "Fira Sans", sans-serif;   /* 自定义字体 */
+  font-size: 0.9rem;                      /* 比导航栏小一点 */
+  font-weight: 400;
+}
+
+/* 改文字颜色 + 悬停背景 */
+
+/* 单条链接 */
+.navbar .dropdown-item {
+  color: #2c3e50;                 /* 正常文字色 */
+  padding: 0.4rem 1.2rem;         /* 上下宽松一点 */
+
+  &:hover, &:focus {
+    color: #ffffff;               /* 悬停文字变白 */
+    background-color: $imperial-blue; /* 用你自己定义的 SCSS 变量 */
+  }
+}
+
+/*  改下拉框宽度、圆角、阴影 */
+
+.navbar .dropdown-menu {
+  min-width: 12rem;        /* 默认 160 px，可再加大 */
+  border-radius: 0.375rem; /* 圆角 */
+  border: none;            /* 去掉默认边框 */
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); /* 卡片阴影 */
+}
+
+/* navbar导航栏中的下拉菜单设置为圆角之后，鼠标放到子栏目时圆角消失，使得保持显示为圆角 */
+
+/* 下拉框整体圆角 */
+.navbar .dropdown-menu {
+  border-radius: 0.375rem;
+  overflow: hidden;            /* 关键：把子项的染色区域裁成圆角 */
+}
+
+/* 第一个子项 */
+.navbar .dropdown-item:first-child {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+/* 最后一个子项 */
+.navbar .dropdown-item:last-child {
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+/* 悬停时继续保留这些圆角 */
+.navbar .dropdown-item:first-child:hover,
+.navbar .dropdown-item:first-child:focus {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.navbar .dropdown-item:last-child:hover,
+.navbar .dropdown-item:last-child:focus {
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
