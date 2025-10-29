@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-categories','listing-role','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-categories"],
+      searchColumns: ["listing-date","listing-categories","listing-role","listing-type"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -327,6 +327,10 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-expositorybrnotes">    
         <li>
     <a class="dropdown-item" href="../expository-notes/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../category-theroy/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
@@ -380,20 +384,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#expository-notes" id="toc-expository-notes" class="nav-link active" data-scroll-target="#expository-notes">Expository Notes</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -403,7 +399,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -470,9 +466,6 @@ window.Quarto = {
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
     </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -485,30 +478,44 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+
+<th>
+Categories
+</th>
+
+<th>
+role
+</th>
+
+<th>
+Description
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1761408000000" data-listing-file-modified-sort="1761500630315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">2025-10</span>
-</td>
+<tr data-index="0" data-listing-date-sort="1761408000000" data-listing-file-modified-sort="1761752678131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../expository-notes/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-date">2025-10</span>
+</td>
+<td>
+<span class="listing-categories">&nbsp;</span>
+</td>
+<td>
+<span class="listing-role">&nbsp;</span>
+</td>
+<td>
+<span class="listing-description">Yoneda Lemma &amp; all that jazz</span>
 </td>
 
 </tr>

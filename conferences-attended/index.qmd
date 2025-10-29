@@ -2,15 +2,16 @@
 title: "Conferences Attended"
 date: last-modified
 toc: false
-categories: [Quantum Gravity, Cosmology, Quantum Simulation, Particle Physics, Quantum Information, String Theory, Quantum Field Theory, Holography]
-page-layout: full 
+categories: [Quantum Gravity, Cosmology, Quantum Simulation, Particle Physics, Quantum Information, String Theory, Quantum Field Theory, Holography, Non-equilibrium Quantum Dynamics]
+page-layout: full
 ---
 
 > Before I had mastered sufficient knowledge, I frequently attended conferences domestically and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue an academic career; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
 
 | Year | Date                  | Title and Link                                               | Role                                                         | Type                                                         | Location       | Organizer                                       | Topics                                                |
 | ---- | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | ----------------------------------------------- | ----------------------------------------------------- |
-| 2024 | Apr 22 - Apr 25, 2024 | [Quantum Simulation with Ultracold Atoms and Molecules (QSUAM2024)](https://www2.yukawa.kyoto-u.ac.jp/~ultracold2023/index.php) | <span class="tag tag-poster-presenter">Poster Presenter</span> | <span class="tag tag-workshop">Workshop</span>               | Kyoto, Japan   | YITP, Kyoto University                          | Quantum Simulation                                    |
+| 2024 | Sep 30 – Oct 4, 2024  | [Focus Week on Non-equilibrium Quantum Dynamics](https://indico.ipmu.jp/event/432/) | <span class="tag tag-participant">Participant</span>         | <span class="tag tag-workshop">Workshop</span>               | Tokyo, Japan   | Kavli IPMU, UTokyo                              | Non-equilibrium Quantum Dynamics                      |
+|      | Apr 22 - Apr 25, 2024 | [Quantum Simulation with Ultracold Atoms and Molecules (QSUAM2024)](https://www2.yukawa.kyoto-u.ac.jp/~ultracold2023/index.php) | <span class="tag tag-poster-presenter">Poster Presenter</span> | <span class="tag tag-workshop">Workshop</span>               | Kyoto, Japan   | YITP, Kyoto University                          | Quantum Simulation                                    |
 |      | Jan 29 – Mar 1, 2024  | [Quantum Gravity and Cosmology 2024 (GC2024)](https://www2.yukawa.kyoto-u.ac.jp/~gc2024/index.php ) | <span class="tag tag-participant">Participant</span>         | <span class="tag tag-workshop">Workshop</span><br><span class="tag tag-winter-school">Winter School</span> | Kyoto, Japan   | YITP, Kyoto University                          | Cosmology;<br>Quantum Gravity                         |
 | 2023 | October 17 – 19, 2023 | [The 5th International Symposium on Quantum Physics and Quantum Information Science (QPQIS2023)](http://qpqis.baqis.ac.cn/2023) | <span class="tag tag-poster-presenter">Poster Presenter</span> | <span class="tag tag-conference">Conference</span>           | Beijing, China | Beijing Academy of Quantum Information Sciences | Quantum Information                                   |
 |      | August 21–27, 2023    | [The 3rd Frontier Summer Lectures of Strings, Fields and Holography](https://yauc.seu.edu.cn/2023/0506/c27640a444373/page.htm) | <span class="tag tag-participant">Participant</span>         | <span class="tag tag-summer-school">Summer School</span>     | Nanjing, China | Shing-Tung Yau Center, Southeast University     | String Theory;<br>Quantum Field Theory;<br>Holography |

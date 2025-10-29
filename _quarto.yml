@@ -15,8 +15,10 @@ website:
       - text: Expository<br>Notes
         icon: journal-text
         menu:
-            - text: Category theory
+            - text: Overview
               href: expository-notes/index.html
+            - text: Category theory
+              href: category-theroy/index.html
       - text: "Extemporaneous<br>Reconstruction"
         icon: lightning
         href: extemporaneous-reconstruction/index.qmd

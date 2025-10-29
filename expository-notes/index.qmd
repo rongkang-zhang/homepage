@@ -1,15 +1,20 @@
 ---
 title: "Expository Notes by Subjects"
 author: "Rong-Kang Zhang"
+page-layout: full
+toc: false
+categories: false
 listing:
   contents: "*/index.qmd"
   type: table
   sort: "date desc"
   date-format: "YYYY-MM"
-  categories: true
-  filter-ui: [date, categories]
+  categories: false
+  filter-ui: [date, categories, role, type]
+  sort-ui: true
   table-striped: true
   page-size: 12
+  fields: [title, date, categories, role, description]
 ---
 
 Pick a subject below to see the full list of notes.
