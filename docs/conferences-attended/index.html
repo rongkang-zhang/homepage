@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Rong-Kang Zhang">
+<meta name="dcterms.date" content="2025-10-29">
+<meta name="description" content="Conferences I’ve ever attended">
 
 <title>Conferences Attended – Rong-Kang Zhang</title>
 <style>
@@ -87,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -384,14 +385,8 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#expository-notes" id="toc-expository-notes" class="nav-link active" data-scroll-target="#expository-notes">Expository Notes</a></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -399,19 +394,25 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Conferences Attended</h1>
+<p class="subtitle lead">2019-2025</p>
 </div>
 
+<div>
+  <div class="description">
+    Conferences I’ve ever attended
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Rong-Kang Zhang </p>
-          </div>
-  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 29, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -421,12 +422,10 @@ window.Quarto = {
 </header>
 
 
-<p>Pick a subject below to see the full list of notes.</p>
-<section id="expository-notes" class="level1">
-<h1>Expository Notes</h1>
 <blockquote class="blockquote">
 <p>Before I had mastered sufficient knowledge, I frequently attended conferences domestically and at abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue scholarship; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.</p>
 </blockquote>
+<!-- 手工表格可保留，也可删掉，让 listing 自动生成 -->
 <ul>
 <li>Quantum and Cosmology 2023</li>
 <li>Quantum simulation with ultra-cold atoms 2024</li>
@@ -458,7 +457,6 @@ window.Quarto = {
 
 
 
-</section>
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
@@ -467,7 +465,7 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table caption-top">
+<table class="quarto-listing-table table table-striped caption-top">
 <tbody class="list">
 </tbody>
 </table>

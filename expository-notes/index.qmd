@@ -2,9 +2,15 @@
 title: "Expository Notes by Subjects"
 author: "Rong-Kang Zhang"
 listing:
-  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
+listing:
+  contents: "*/index.qmd"
   type: table
-  sort: "title"
+  sort: "date desc"
+  date-format: "YYYY-MM"
+  categories: true
+  filter-ui: [date, categories]
+  table-striped: true
+  page-size: 12
 ---
 
 Pick a subject below to see the full list of notes.
