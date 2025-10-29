@@ -12,11 +12,14 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
-      - text: Expository Notes
+      - text: Expository<br>Notes
+        icon: journal-text
         href: expository-notes/index.html
       - text: "Extemporaneous<br>Reconstruction"
+        icon: lightning
         href: extemporaneous-reconstruction/index.qmd
-      - text: Conferences Attended
+      - text: Conferences<br>Attended
+        icon: calendar-event
         href: conferences-attended/index.html
       - text: Publications
         href: publications.qmd

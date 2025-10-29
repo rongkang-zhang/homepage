@@ -1,19 +1,12 @@
 ---
-title: "Expository Notes by Subjects"
+title: "Extemporaneous Blackboard Reconstruction"
 author: "Rong-Kang Zhang"
 listing:
-  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
+  contents: "topic-*.qmd"
   type: table
   sort: "title"
 ---
 
-title: "Extemporaneous Blackboard Reconstruction and Derivation from Memory - No Notes, No References (on YouTube)"
-author: "Rong-Kang Zhang"
-listing:
-  contents: "*/index.qmd"   # 把各科目入口抓过来当卡片
-  type: table
-  sort: "title"
-
-
+# Extemporaneous Blackboard Reconstruction and Derivation from Memory - No Notes, No References (on YouTube)
 
 Category theory
