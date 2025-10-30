@@ -6,7 +6,7 @@ categories: [Quantum Gravity, Cosmology, Quantum Simulation, Particle Physics, Q
 page-layout: full
 ---
 
-> Before I had mastered sufficient knowledge, I frequently attended conferences domestically and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue an academic career; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
+> Before mastering sufficient knowledge, I frequently attended conferences domestically and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue an academic career; since graduation I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
 
 | Year | Date                  | Title and Link                                               | Role                                                         | Type                                                         | Location       | Organizer                                       | Topics                                                |
 | ---- | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | ----------------------------------------------- | ----------------------------------------------------- |
