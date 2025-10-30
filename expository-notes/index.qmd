@@ -9,13 +9,13 @@ listing:
   contents: "*/index.qmd"
   type: table
   sort: "date desc"
-  date-format: "YYYY-MM"
+  date-format: "YYYY-MM-DD"
   categories: false
-  filter-ui: [date, categories, role, type]
+  filter-ui: [title, date, categories, author, description, file-modified]
   sort-ui: true
   table-striped: true
-  fields: [title, date, categories, role, description] 
+  page-size: 20
+  fields: [title, date, categories, author, description, file-modified]
 ---
 
-> Below is a concise overview of all subjects.
-> Click any entry to browse the full set of notes.
+> Below is a concise overview of all subjects. Click any entry to browse the full set of notes.

@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-categories','listing-role','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-categories','listing-author','listing-description','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-categories","listing-role","listing-type"],
+      searchColumns: ["listing-title","listing-date","listing-categories","listing-author","listing-description","listing-file-modified"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -450,6 +450,9 @@ window.Quarto = {
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
     </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -474,11 +477,15 @@ Categories
 </th>
 
 <th>
-role
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
 </th>
 
 <th>
 Description
+</th>
+
+<th>
+Modified
 </th>
 
 </tr>
@@ -490,16 +497,19 @@ Description
 <a href="../expository-notes/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
 <td>
-<span class="listing-date">2025-10</span>
+<span class="listing-date">2025-10-26</span>
 </td>
 <td>
 <span class="listing-categories">&nbsp;</span>
 </td>
 <td>
-<span class="listing-role">&nbsp;</span>
+<span class="listing-author">&nbsp;</span>
 </td>
 <td>
 <span class="listing-description">Yoneda Lemma &amp; all that jazz</span>
+</td>
+<td>
+<span class="listing-file-modified">2025-10-29</span>
 </td>
 
 </tr>
