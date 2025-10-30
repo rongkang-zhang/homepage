@@ -1,3 +1,5 @@
+date: last-modified
+
 project:
   type: website
   output-dir: docs
@@ -38,6 +40,10 @@ website:
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
       - icon: globe
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
+  page-footer:
+      left: |
+        Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).
+        <br>© 2025 Rong-Kang Zhang · Last updated: {{< meta date >}}
 
 format:
   html:

@@ -14,6 +14,7 @@ toc-location: left
 number-sections: true
 toc-depth: 6
 code-tools: true
+code-fold: false
 bibliography: refs.bib
 csl: ../../american-mathematical-society.csl
 ---
