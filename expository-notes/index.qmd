@@ -18,4 +18,5 @@ listing:
   fields: [title, date, categories, author, description, file-modified]
 ---
 
-> Below is a concise overview of all subjects. Click any entry to browse the full set of notes.
+> Below is a concise overview of all subjects. Click any entry to browse the full set of notes on this site.
+
