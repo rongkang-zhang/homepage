@@ -14,5 +14,8 @@ listing:
   filter-ui: [date, categories, role, type]
   sort-ui: true
   table-striped: true
-  fields: [title, date, categories, role, description]
+  fields: [title, date, categories, role, description] 
 ---
+
+> Below is a concise overview of all subjects.
+> Click any entry to browse the full set of notes.
