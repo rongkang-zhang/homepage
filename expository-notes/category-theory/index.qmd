@@ -1,8 +1,8 @@
 ---
 title: "Category Theory"
-Core References: "Mac Lane 1998"
+core-references: "Mac Lane 1998"
 date: last-modified
-weight: 10
+weight: 999999
 author: "Rong-Kang Zhang"
 categories:
   - Mathematical Logic
