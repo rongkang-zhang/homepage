@@ -1,9 +1,10 @@
 ---
 title: "Expository Notes by Subjects"
 author: "Rong-Kang Zhang"
+date: last-modified
 page-layout: full
 toc: false
-categories: false
+categories: [Category Theory]
 listing:
   contents: "*/index.qmd"
   type: table
@@ -13,16 +14,5 @@ listing:
   filter-ui: [date, categories, role, type]
   sort-ui: true
   table-striped: true
-  page-size: 12
   fields: [title, date, categories, role, description]
 ---
-
-Pick a subject below to see the full list of notes.
-
-# Expository Notes
-
-| Overall category                 | Topics covered                                               | Online expository notes                       | Textbooks refered                         | Electronic notes compiled in Overleaf | Solution manuals I wrote |
-| -------------------------------- | ------------------------------------------------------------ | --------------------------------------------- | ----------------------------------------- | ------------------------------------- | ------------------------ |
-| 数理逻辑<br />Mathematical logic | Category theory<br />Mathematical logic<br />Enriched category theory<br />Monoidal categories<br />Applied category theory<br />Tensor categories<br />Funsion categories<br />Braided/Ribbon categories<br />Unitary modular tensor category<br />Frobenius algbebras<br />Hopf algebras<br />Quantum groups<br />Categorical logic | [Category Theory](category-theory/index.html) | Categories for the working mathematicians |                                       |                          |
-
-- [Category Theory](category-theory/index.html)
