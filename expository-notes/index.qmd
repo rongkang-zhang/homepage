@@ -4,7 +4,7 @@ author: "Rong-Kang Zhang"
 date: last-modified
 page-layout: full
 toc: false
-categories: [Category Theory]
+sort: ["categories asc", "date desc"]
 listing:
   contents: "*/index.qmd"
   type: table
