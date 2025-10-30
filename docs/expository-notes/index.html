@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-categories','listing-author','listing-description','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-Core References','listing-Last-Modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-categories","listing-author","listing-description","listing-file-modified"],
+      searchColumns: ["listing-title","listing-Core References","listing-Last-Modified","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -441,12 +441,6 @@ window.Quarto = {
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -469,47 +463,33 @@ window.Quarto = {
 </th>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+Core References
 </th>
 
 <th>
-Categories
+Last-Modified
 </th>
 
 <th>
 <a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
 </th>
 
-<th>
-Description
-</th>
-
-<th>
-Modified
-</th>
-
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1761408000000" data-listing-file-modified-sort="1761752678131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1761792663000" data-listing-file-modified-sort="1761792663747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../expository-notes/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
 <td>
-<span class="listing-date">2025-10-26</span>
+<span class="listing-Core References">Mac Lane 1998</span>
 </td>
 <td>
-<span class="listing-categories">&nbsp;</span>
+<span class="listing-Last-Modified">last-modified</span>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-description">Yoneda Lemma &amp; all that jazz</span>
-</td>
-<td>
-<span class="listing-file-modified">2025-10-29</span>
+<span class="listing-author">Rong-Kang Zhang</span>
 </td>
 
 </tr>

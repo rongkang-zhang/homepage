@@ -1,12 +1,24 @@
 ---
 title: "Category Theory"
-date: 2025-10-26
-description: "Yoneda Lemma & all that jazz"
+Core References: "Mac Lane 1998"
+date: last-modified
+Last-Modified: last-modified
+author: "Rong-Kang Zhang"
+categories: [Category Theory]
+keywords: [Natural Transformation]
 toc: true
-toc-depth: 4
+toc-title: "Contents"
+toc-location: left
+number-sections: true
+toc-depth: 6
+code-tools: true
+bibliography: refs.bib
+csl: ../../american-mathematical-society.csl
 ---
 
 # Category theory
+
+See [@maclane1998]
 
 ## Introduction
 
