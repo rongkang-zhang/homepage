@@ -4,14 +4,13 @@ author: "Rong-Kang Zhang"
 date: last-modified
 page-layout: full
 toc: false
-sort: ["categories asc", "date desc"]
 listing:
   contents: "*/index.qmd"
   type: table
-  sort: "date desc"
   date-format: "YYYY-MM-DD"
   categories: false
   filter-ui: [title, Core References, categories, file-modified, author]
+  sort: ["file-modified desc", "weight desc", "title asc"]
   sort-ui: true
   table-striped: true
   page-size: 20
