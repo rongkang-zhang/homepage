@@ -1,5 +1,5 @@
 ---
-title: "Expository Notes by Subjects"
+title: "Expository Study Notes by Subjects"
 author: "Rong-Kang Zhang"
 date: last-modified
 page-layout: full

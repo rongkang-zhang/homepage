@@ -5,7 +5,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "expository-notes/**/*.qmd"
+    - "expository-study-notes/**/*.qmd"
 
 website:
   title: "Rong-Kang Zhang"
@@ -14,14 +14,14 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
-      - text: Expository<br>Notes
+      - text: Expository<br>Study Notes
         icon: journal-text
         menu:
             - text: Overview
-              href: expository-notes/index.html
+              href: expository-study-notes/index.html
             - text: Category theory
-              href: expository-notes/category-theory/index.html
-      - text: "Extemporaneous<br>Reconstruction"
+              href: expository-study-notes/category-theory/index.html
+      - text: "Extemporaneous<br>Reconstruction Talks"
         icon: lightning
         href: extemporaneous-reconstruction/index.qmd
       - text: Conferences<br>Attended

@@ -60,7 +60,7 @@ Bachelor of Science in Physics, July 2025
 * Applied category theory
   * Applied category theory in quantum error correction, theoretical computer science and theoretical physics
 
-> * I wrote notes on various topics, please refer to "Expository Notes"[Expository Notes](/expository-notes/index.html). in top menu.
+> * I wrote notes on various topics, please refer to "Expository Study Notes"[Expository Study Notes](/expository-study-notes/index.html). in top menu.
 >
 > * I wrote solution manuals to various textbooks, please refer to "Solution Manuals".
 > * I wrote study notes using Overleaf, please refer to "Study Notes".
