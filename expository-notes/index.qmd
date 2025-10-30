@@ -11,11 +11,11 @@ listing:
   sort: "date desc"
   date-format: "YYYY-MM-DD"
   categories: false
-  filter-ui: [title, Core References, Last-Modified, author]
+  filter-ui: [title, Core References, categories, file-modified, author]
   sort-ui: true
   table-striped: true
   page-size: 20
-  fields: [title, Core References, Last-Modified, author]
+  fields: [title, Core References, categories, file-modified, author]
 ---
 
 > Below is a concise overview of all subjects. Click any entry to browse the full set of notes on this site.

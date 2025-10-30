@@ -2,9 +2,10 @@
 title: "Category Theory"
 Core References: "Mac Lane 1998"
 date: last-modified
-Last-Modified: last-modified
 author: "Rong-Kang Zhang"
-categories: [Category Theory]
+categories:
+  - Mathematical Logic
+  - Category Theory
 keywords: [Natural Transformation]
 toc: true
 toc-title: "Contents"

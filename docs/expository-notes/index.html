@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-Core References','listing-Last-Modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-Core References','listing-categories','listing-file-modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-Core References","listing-Last-Modified","listing-author"],
+      searchColumns: ["listing-title","listing-Core References","listing-categories","listing-file-modified","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -467,7 +467,11 @@ Core References
 </th>
 
 <th>
-Last-Modified
+Categories
+</th>
+
+<th>
+Modified
 </th>
 
 <th>
@@ -478,7 +482,7 @@ Last-Modified
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1761792663000" data-listing-file-modified-sort="1761792663747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="TWF0aGVtYXRpY2FsJTIwTG9naWMlMkNDYXRlZ29yeSUyMFRoZW9yeQ==" data-listing-date-sort="1761793960000" data-listing-file-modified-sort="1761793960815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../expository-notes/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
@@ -486,7 +490,10 @@ Last-Modified
 <span class="listing-Core References">Mac Lane 1998</span>
 </td>
 <td>
-<span class="listing-Last-Modified">last-modified</span>
+<span class="listing-categories">Mathematical Logic, Category Theory</span>
+</td>
+<td>
+<span class="listing-file-modified">2025-10-30</span>
 </td>
 <td>
 <span class="listing-author">Rong-Kang Zhang</span>

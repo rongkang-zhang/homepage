@@ -1,5 +1,7 @@
 ---
 title: "Rong-Kang Zhang"
+author: "Rong-Kang Zhang"
+page-layout: full
 about:
   template: trestles
   image: assets/pictures/profile-picture.jpg
