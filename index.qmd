@@ -1,5 +1,6 @@
 ---
 title: "Rong-Kang Zhang"
+subtitle: "Physics BSc | Into higher category theory and its emerging role in mathematical physics."
 author: "Rong-Kang Zhang"
 page-layout: full
 about:
