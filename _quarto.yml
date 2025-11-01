@@ -30,8 +30,6 @@ website:
       - text: Conferences<br>Attended
         icon: calendar-event
         href: conferences-attended/index.html
-      - text: Outreach
-        href: outreach.qmd
     right:
       - icon: github
         href: https://github.com/valegiunchiglia/
