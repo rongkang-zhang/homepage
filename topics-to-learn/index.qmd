@@ -1,0 +1,19 @@
+---
+title Conferences Attended
+author Rong-Kang Zhang
+date last-modified
+toc false
+categories [Quantum Gravity, Cosmology, Quantum Simulation, Particle Physics, Quantum Information, String Theory, Quantum Field Theory, Holography, Non-equilibrium Quantum Dynamics]
+page-layout full
+---
+
+ Before mastering sufficient knowledge, I frequently attended conferences domestically and abroad as an undergraduate, which only served to broaden my academic horizons and strengthen my determination to pursue an academic career. Since graduation, I have devoted myself to the study of foundational and advanced topics in mathematics and physics.
+
+ Year  Date                   Title and Link                                                Role                                                          Type                                                          Location        Organizer                                        Topics                                                
+ ----  ---------------------  ------------------------------------------------------------  ------------------------------------------------------------  ------------------------------------------------------------  --------------  -----------------------------------------------  ----------------------------------------------------- 
+ 2024  Sep 30 – Oct 4, 2024   [Focus Week on Non-equilibrium Quantum Dynamics](httpsindico.ipmu.jpevent432)  span class=tag tag-participantParticipantspan          span class=tag tag-workshopWorkshopspan                Tokyo, Japan    Kavli IPMU, UTokyo                               Non-equilibrium Quantum Dynamics                      
+       Apr 22 - Apr 25, 2024  [Quantum Simulation with Ultracold Atoms and Molecules (QSUAM2024)](httpswww2.yukawa.kyoto-u.ac.jp~ultracold2023index.php)  span class=tag tag-poster-presenterPoster Presenterspan  span class=tag tag-workshopWorkshopspan                Kyoto, Japan    YITP, Kyoto University                           Quantum Simulation                                    
+       Jan 29 – Mar 1, 2024   [Quantum Gravity and Cosmology 2024 (GC2024)](httpswww2.yukawa.kyoto-u.ac.jp~gc2024index.php )  span class=tag tag-participantParticipantspan          span class=tag tag-workshopWorkshopspanbrspan class=tag tag-winter-schoolWinter Schoolspan  Kyoto, Japan    YITP, Kyoto University                           • Cosmologybr• Quantum Gravity                         
+ 2023  Oct 17 – 19, 2023  [The 5th International Symposium on Quantum Physics and Quantum Information Science (QPQIS2023)](httpqpqis.baqis.ac.cn2023)  span class=tag tag-poster-presenterPoster Presenterspan  span class=tag tag-conferenceConferencespan            Beijing, China  Beijing Academy of Quantum Information Sciences  Quantum Information                                   
+       Aug 21–27, 2023     [The 3rd Frontier Summer Lectures of Strings, Fields and Holography](httpsyauc.seu.edu.cn20230506c27640a444373page.htm)  span class=tag tag-participantParticipantspan          span class=tag tag-summer-schoolSummer Schoolspan      Nanjing, China  Shing-Tung Yau Center, Southeast University      • String Theorybr• Quantum Field Theorybr• Holography 
+       Jun 18 - Jul 14, 2023  [Peking University Summer School International 2023 on Fundamental Physics](httpswww.isd.pku.edu.cncnnewsdetail.phpid=127)  span class=tag tag-participantParticipantspan          span class=tag tag-summer-schoolSummer Schoolspan      Beijing, China  School of Physics, Peking University             Particle Physics                                      
