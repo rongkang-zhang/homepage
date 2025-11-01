@@ -69,3 +69,5 @@ Bachelor of Science in Physics, July 2025
 > * I wrote study notes using Overleaf, please refer to "Study Notes".
 > * I read lots of textbooks, please refer to "Reading List".
 > * I wrote study notes on Zhihu, please refer to "Zhihu".
+
+Columns to be built, conference talks, upcoming conferences and planned visits, poster presentations, presentations and talks
