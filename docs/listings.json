@@ -1,12 +1,12 @@
 [
   {
+    "listing": "/extemporaneous-reconstruction/index.html",
+    "items": []
+  },
+  {
     "listing": "/expository-study-notes/index.html",
     "items": [
       "/expository-study-notes/category-theory/index.html"
     ]
-  },
-  {
-    "listing": "/extemporaneous-reconstruction/index.html",
-    "items": []
   }
 ]

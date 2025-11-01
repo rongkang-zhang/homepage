@@ -24,14 +24,12 @@ website:
       - text: "Extemporaneous<br>Reconstruction Talks"
         icon: lightning
         href: extemporaneous-reconstruction/index.qmd
-      - text: "Topics to Learn"
+      - text: "Topics to<br>Learn"
         icon : list-check
         href: topics-to-learn/index.html
       - text: Conferences<br>Attended
         icon: calendar-event
         href: conferences-attended/index.html
-      - text: Publications
-        href: publications.qmd
       - text: Outreach
         href: outreach.qmd
     right:
