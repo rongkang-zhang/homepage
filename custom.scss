@@ -154,12 +154,11 @@ $navbar-background: $imperial-blue;
 
 /* ---- 用来表示参加过的会议的Type, Role时所使用的方框标签---- */
 
-/* ===== 全系蓝色阶梯 ===== */
+/* ===== 会议类型（去掉 seminar 后的 4 阶均匀蓝梯）===== */
 .tag-workshop       { background: #1e4d8b; color: #fff; }   /* H210 S70 L35 最深 */
-.tag-seminar        { background: #2f5b9c; color: #fff; }   /* H212 S60 L42 */
-.tag-conference     { background: #4069ad; color: #fff; }   /* H214 S52 L49 */
-.tag-winter-school  { background: #5177be; color: #fff; }   /* H216 S45 L56 */
-.tag-summer-school  { background: #6285cf; color: #fff; }   /* H218 S38 L63 最浅 */
+.tag-conference     { background: #385e9e; color: #fff; }   /* H213 S58 L44 */
+.tag-winter-school  { background: #5270b1; color: #fff; }   /* H216 S48 L53 */
+.tag-summer-school  { background: #6c82c4; color: #fff; }   /* H219 S38 L63 最浅 */
 
 /* ===== 角色（同色系，但整体再降一档亮度）===== */
 .tag-speaker           { background: #183d72; color: #fff; } /* 比 workshop 再暗 5% */
