@@ -14,7 +14,7 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
-      - text: Expository<br>Study Notes
+      - text: Expository<br>Study Notes<small class="ms-1">▼</small>
         icon: journal-text
         menu:
             - text: Overview

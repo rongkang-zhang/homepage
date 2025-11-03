@@ -1194,16 +1194,27 @@ $navbar-background: $imperial-blue;
 
 /* ---- 用来表示参加过的会议的Type, Role时所使用的方框标签---- */
 
-/* ===== 全系蓝色阶梯 ===== */
-.tag-workshop       { background: #1e4d8b; color: #fff; }   / H210 S70 L35 最深 /
-.tag-conference     { background: #385e9e; color: #fff; }   / H213 S58 L44 /
-.tag-winter-school  { background: #5270b1; color: #fff; }   / H216 S48 L53 /
-.tag-summer-school  { background: #6c82c4; color: #fff; }   / H219 S38 L62 最浅 */
+/* ===== 会议类型（去掉 seminar 后的 4 阶均匀蓝梯）===== */
+.tag-workshop       { background: #1e4d8b; color: #fff; }   /* H210 S70 L35 最深 */
+.tag-conference     { background: #385e9e; color: #fff; }   /* H213 S58 L44 */
+.tag-winter-school  { background: #5270b1; color: #fff; }   /* H216 S48 L53 */
+.tag-summer-school  { background: #6c82c4; color: #fff; }   /* H219 S38 L63 最浅 */
 
 /* ===== 角色（同色系，但整体再降一档亮度）===== */
 .tag-speaker           { background: #183d72; color: #fff; } /* 比 workshop 再暗 5% */
 .tag-poster-presenter  { background: #294b83; color: #fff; } /* 与 seminar 同级 */
 .tag-participant       { background: #7a9fcc; color: #000; } /* 轻雾蓝，文字黑 */
+
+/* Markdown表格斑马纹以及悬停高亮 */
+/* 斑马纹 + 悬停高亮 */
+table tbody tr:nth-child(even) { background:#f7f7f7; }
+table tbody tr:hover           { background:#fffbe6; }
+/* 防止超宽溢出 */
+.page-layout.full table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
 // Heading font size customization
 $h1-font-size: 2rem !default;
@@ -1224,9 +1235,9 @@ $font-size-root: 17px !default;
 // Disable smooth scrolling
 $enable-smooth-scroll: false !default;
 
-// quarto-scss-analysis-annotation { "origin": "cosmo (builtin theme)" }
+// quarto-scss-analysis-annotation { "origin": "darkly (builtin theme)" }
 
-$theme: "cosmo" !default;
+$theme: "darkly" !default;
 
 //
 // Color system
@@ -1234,64 +1245,179 @@ $theme: "cosmo" !default;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-200: #ebebeb !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #373a3c !default;
-$gray-900: #212529 !default;
+$gray-600: #888 !default;
+$gray-700: #444 !default;
+$gray-800: #303030 !default;
+$gray-900: #222 !default;
 $black:    #000 !default;
 
-$blue:    #2780e3 !default;
+$blue:    #375a7f !default;
 $indigo:  #6610f2 !default;
-$purple:  #613d7c !default;
+$purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #ff0039 !default;
-$orange:  #f0ad4e !default;
-$yellow:  #ff7518 !default;
-$green:   #3fb618 !default;
+$red:     #e74c3c !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f39c12 !default;
+$green:   #00bc8c !default;
 $teal:    #20c997 !default;
-$cyan:    #9954bb !default;
+$cyan:    #3498db !default;
+
+// Body
+
+$body-bg:                   $gray-900 !default;
+$body-color:                $white !default;
+@function body-mix($weight) {
+    @return mix($body-bg, $body-color, $weight);
+}
 
 $primary:       $blue !default;
-$secondary:     $gray-800 !default;
+$secondary:     body-mix(85%) !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+// This is inconsistent with Bootstrap semantics. That is, $dark
+// should actually be a light color in a dark mode setting, :shrug:
+// https://github.com/thomaspark/bootswatch/issues/989
+$light:         body-mix(65%) !default;
+$dark:          body-mix(95%) !default;
 
-$min-contrast-ratio:   2.6 !default;
+$min-contrast-ratio:   1.9 !default;
 
-// Options
+// Links
 
-$enable-rounded: false !default;
-
-// Body
-
-$body-color:    $gray-800 !default;
+$link-color:                $success !default;
 
 // Fonts
 
 // stylelint-disable-next-line value-keyword-case
-$font-family-sans-serif:    "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$headings-font-weight:      400 !default;
+$font-family-sans-serif:      Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$h1-font-size:                3rem !default;
+$h2-font-size:                2.5rem !default;
+$h3-font-size:                2rem !default;
+$text-muted:                  body-mix(75%) !default;
+
+// Tables
+
+$table-border-color:          body-mix(85%) !default;
+
+$table-bg-scale:              0% !default;
+
+// Forms
+
+$input-bg:                          $body-color !default;
+$input-color:                       body-mix(95%) !default;
+$input-border-color:                $body-bg !default;
+$input-group-addon-color:           body-mix(65%) !default;
+$input-group-addon-bg:              body-mix(85%) !default;
+$input-placeholder-color:           body-mix(75%) !default;
+
+$form-check-input-bg:                     $body-color !default;
+$form-check-input-border:                 none !default;
+
+$form-select-disabled-color:        body-mix(75%) !default;
+
+$form-file-button-color:          $input-group-addon-color !default;
+$form-file-button-bg:             $input-group-addon-bg !default;
+$form-file-button-hover-bg:       darken($form-file-button-bg, 5%) !default;
+
+// Dropdowns
+
+$dropdown-bg:                       $body-bg !default;
+$dropdown-border-color:             body-mix(85%) !default;
+$dropdown-divider-bg:               body-mix(85%) !default;
+$dropdown-link-color:               $body-color !default;
+$dropdown-link-hover-color:         $body-color !default;
+$dropdown-link-hover-bg:            $primary !default;
+
+// Navs
+
+$nav-link-padding-x:                2rem !default;
+$nav-link-disabled-color:           body-mix(65%) !default;
+$nav-tabs-border-color:             body-mix(85%) !default;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color transparent !default;
+$nav-tabs-link-active-color:        $body-color !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent !default;
 
 // Navbar
 
-$navbar-dark-hover-color:       rgba($white, 1) !default;
-$navbar-light-hover-color:      rgba($black, .9) !default;
+$navbar-padding-y:                  1rem !default;
+$navbar-dark-color:                rgba($body-color, .6) !default;
+$navbar-dark-hover-color:          $body-color !default;
+$navbar-light-color:                rgba($body-bg, .7) !default;
+$navbar-light-hover-color:          $body-bg !default;
+$navbar-light-active-color:         $body-bg !default;
+$navbar-light-toggler-border-color: rgba($body-bg, .1) !default;
 
-// Alerts
+// Pagination
 
-$alert-border-width:            0 !default;
+$pagination-color:                  $body-color !default;
+$pagination-bg:                     $success !default;
+$pagination-border-width:           0 !default;
+$pagination-border-color:           transparent !default;
+$pagination-hover-color:            $body-color !default;
+$pagination-hover-bg:               lighten($success, 10%) !default;
+$pagination-hover-border-color:     transparent !default;
+$pagination-active-bg:              $pagination-hover-bg !default;
+$pagination-active-border-color:    transparent !default;
+$pagination-disabled-color:         $body-color !default;
+$pagination-disabled-bg:            darken($success, 15%) !default;
+$pagination-disabled-border-color:  transparent !default;
+
+// Cards
+
+$card-cap-bg:                       body-mix(85%) !default;
+$card-bg:                           body-mix(95%) !default;
+
+// Popovers
+
+$popover-bg:                        body-mix(95%) !default;
+$popover-header-bg:                 body-mix(85%) !default;
+
+// Toasts
+
+$toast-background-color:            body-mix(85%) !default;
+$toast-header-background-color:     body-mix(95%) !default;
+
+// Modals
+
+$modal-content-bg:                  body-mix(95%) !default;
+$modal-content-border-color:        body-mix(85%) !default;
+$modal-header-border-color:         body-mix(85%) !default;
 
 // Progress bars
 
-$progress-height:               .5rem !default;
+$progress-bg:                       body-mix(85%) !default;
+
+// List group
+
+$list-group-color:                  $body-color !default;
+$list-group-bg:                     body-mix(95%) !default;
+$list-group-border-color:           body-mix(85%) !default;
+$list-group-hover-bg:               body-mix(85%) !default;
+$list-group-action-hover-color:     $list-group-color !default;
+$list-group-action-active-bg:       $body-bg !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .375rem !default;
+$breadcrumb-padding-x:              .75rem !default;
+$breadcrumb-bg:                     body-mix(85%) !default;
+$breadcrumb-border-radius:          .25rem !default;
+
+// Close
+
+$btn-close-color:            $body-color !default;
+$btn-close-opacity:          .4 !default;
+$btn-close-hover-opacity:    1 !default;
+
+// Code
+
+$pre-color:                         inherit !default;
 
 
 
@@ -1332,8 +1458,8 @@ $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
 
-$btn-code-copy-color: #5E5E5E !default;
-$btn-code-copy-color-active: #4758AB !default;
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -13059,34 +13185,86 @@ main.quarto-banner-title-block > section:first-child > h4 {
 
 // Variables
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" !default;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" !default;
 @if $web-font-path {
   @import url($web-font-path);
 }
 
 // Typography
 
-body {
-  -webkit-font-smoothing: antialiased;
+.blockquote {
+  &-footer {
+    color: body-mix(75%);
+  }
+}
+
+// Forms
+
+@include color-mode(dark) {
+  .input-group-text {
+    // color: $body-color;
+  }
+}
+
+.form-floating {
+  > label,
+  > .form-control:focus ~ label,
+  > .form-control:not(:placeholder-shown) ~ label {
+    color: $input-placeholder-color;
+  }
+}
+
+// Navs
+
+.nav-tabs,
+.nav-pills {
+  .nav-link,
+  .nav-link.active,
+  .nav-link.active:focus,
+  .nav-link.active:hover,
+  .nav-item.open .nav-link,
+  .nav-item.open .nav-link:focus,
+  .nav-item.open .nav-link:hover {
+    color: $body-color;
+  }
+}
+
+.breadcrumb a {
+  color: $body-color;
+}
+
+.pagination {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 // Indicators
 
-.badge {
-  &.bg-light {
-    color: $dark;
+.alert {
+  color: $body-color;
+  border: none;
+
+  a,
+  .alert-link {
+    color: $body-color;
+    text-decoration: underline;
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      @if $enable-gradients {
+        background: $value linear-gradient(180deg, mix($body-color, $value, 15%), $value) repeat-x;
+      } @else {
+        background-color: $value;
+      }
+    }
   }
 }
 
-// Progress bars
-
-.progress {
-  @include box-shadow(none);
-
-  .progress-bar {
-    font-size: 8px;
-    line-height: 8px;
-  }
+.tooltip {
+  --bs-tooltip-bg: var(--bs-tertiary-bg);
+  --bs-tooltip-color: var(--bs-emphasis-color);
 }
 
 

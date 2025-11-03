@@ -164,3 +164,49 @@ $navbar-background: $imperial-blue;
 .tag-speaker           { background: #183d72; color: #fff; } /* 比 workshop 再暗 5% */
 .tag-poster-presenter  { background: #294b83; color: #fff; } /* 与 seminar 同级 */
 .tag-participant       { background: #7a9fcc; color: #000; } /* 轻雾蓝，文字黑 */
+
+/* Markdown表格斑马纹以及悬停高亮，悬停的时候，选中行的背景颜色为淡蓝色 */
+/* 斑马纹 + 悬停高亮 */
+/* 斑马纹保持原样 */
+table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+/* 把悬停时的淡黄换成淡蓝 */
+table tbody tr:hover td {          /* 必须写 td，否则会被单元格原有背景挡住 */
+  background: #e6f0ff !important;  /* 0–5% 透明度的蓝，与白色对比柔和 */
+  color: inherit;                  /* 文字颜色不变 */
+}
+
+/* 如果您还想让整行边框也微亮，可加 */
+table tbody tr:hover {
+  outline: 1px solid #c2d8f0;
+  outline-offset: -1px;
+}
+
+/* 外链图标 */
+/* 外链图标 - 去除图标下划线版 */
+.main a[href^="http"],
+.content a[href^="http"],
+#quarto-document-content a[href^="http"] {
+  /* 保证整条链接只有一条连续下划线 */
+  text-underline-offset: 0.15em;   /* 可选：微调线与文字距离 */
+}
+
+/* 关键：让伪元素成为独立 inline-block → 不再被画分段线 */
+.main a[href^="http"]:after,
+.content a[href^="http"]:after,
+#quarto-document-content a[href^="http"]:after {
+  content: "⧉";
+  font-size: 0.8em;
+  margin-left: 3px;
+  display: inline-block;     /* ← 核心一行，去掉图标下划线 */
+  text-decoration: none;     /* 兼容旧浏览器 */
+  color: inherit;
+}
+
+/* 导航栏继续禁用 */
+.navbar a[href^="http"]:after,
+.nav a[href^="http"]:after {
+  content: none !important;
+}
