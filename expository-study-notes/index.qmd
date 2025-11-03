@@ -17,5 +17,5 @@ listing:
   page-size: 20
 ---
 
-> Below is a concise overview of all subjects. Click any entry to browse the full set of notes on this site.
+> Below is a concise overview of all subjects. Click any entry to browse the full set of notes on this site, or download the PDFs compiled with Overleaf.
 
