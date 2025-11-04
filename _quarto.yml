@@ -51,10 +51,7 @@ format:
        dark:  [darkly, custom.scss]
     toc: true
     linkcolor: blue
-    icon:
-       source: assets/icons
-       name: "zhihu"
-       file: "zhihu.svg"
+    font-awesome: true
     resources:
         - assets/icons/zhihu.svg
 

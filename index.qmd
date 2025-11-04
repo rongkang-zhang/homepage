@@ -7,7 +7,7 @@ about:
   template: trestles
   image: assets/pictures/profile-picture.jpg
   links:
-    - icon: assets/icons/zhihu
+    - icon: pencil
       text: 知乎
       href: https://www.zhihu.com/people/shokatsu-ei/posts
     - icon: twitter
