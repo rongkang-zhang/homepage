@@ -24,7 +24,7 @@ about:
 > I’m multilingual, with proficiency in Russian (intermediate/B1), Japanese (conversational/B1), Italian (basic/A2), English (fluent/C1), and Chinese (native/C2).
 
 - *Gap-year self-study* (2025 – present)  
-  Higher category theory • Operator algebras • Derived algebraic geometry • QFT
+  Higher category theory • Operator algebras • Derived algebraic geometry • Extended TQFT
 
 - Bachelor of Science in Physics, [Tongji University](https://www.topuniversities.com/universities/tongji-university), Shanghai, China, July 2025
 
