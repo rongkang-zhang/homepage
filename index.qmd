@@ -5,7 +5,7 @@ author: "Rong-Kang Zhang"
 page-layout: full
 about:
   template: trestles
-  image: assets/pictures/profile-picture.jpg
+  image: assets/pictures/profile-picture.png
   links:
     - icon: pencil
       text: 知乎
@@ -23,9 +23,10 @@ about:
 
 > I’m multilingual, with proficiency in Russian (intermediate/B1), Japanese (conversational/B1), Italian (basic/A2), English (fluent/C1), and Chinese (native/C2).
 
-**Education and degrees**
+- *Gap-year self-study* (2025 – present)  
+  Higher category theory • Operator algebras • Derived algebraic geometry • QFT
 
-Bachelor of Science in Physics, [Tongji University](https://www.topuniversities.com/universities/tongji-university), Shanghai, China, July 2025
+- Bachelor of Science in Physics, [Tongji University](https://www.topuniversities.com/universities/tongji-university), Shanghai, China, July 2025
 
 **Research interests**
 
