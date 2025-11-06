@@ -44,6 +44,10 @@ about:
   * Grothendieck toposes
   * Extended TQFT
   * Higher algebraic stacks/Higher geometry/Motivic homotopy theory
+  * Categorical logic
+  * Axiomatic cohesion
+  * Cohesive higher toposes
+  * internal logic of higher toposes
 
 * Operator algebras
 
