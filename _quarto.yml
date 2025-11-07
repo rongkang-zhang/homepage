@@ -11,8 +11,7 @@ website:
   title: "Rong-Kang Zhang"
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
   # ==========  1. 右上角 “编辑 / 提 Issue” 按钮  ==========
-  repo-url: https://github.com/valegiunchiglia          # ← 新增
-  issue-url: https://github.com/valegiunchiglia/issues  # ← 新增
+  issue-url: https://github.com/rongkang-zhang/homepage/issues
   # ==========  2. 社交分享卡片  ==========
   twitter-card: true            # ← 新增
   open-graph: true              # ← 新增
@@ -48,12 +47,18 @@ website:
         href: https://twitter.com/valegiunca/
       - icon: envelope
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
+      # ← 新增 Cookie Policy 常驻入口
+      - text: Cookie Policy
+        href: cookie-policy.html
+        icon: shield-check
       - icon: globe
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
   page-footer:
       left: |
-        Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).
-        <br>© 2025 Rong-Kang Zhang · Last updated: {{< meta date >}}
+        Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).<br>
+        © 2025 Rong-Kang Zhang · Last updated: {{< meta date >}} ·
+        <a href="cookie-policy.html">Cookie Policy</a> ·
+        <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a>
 
 format:
   html:

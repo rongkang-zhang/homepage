@@ -1,0 +1,33 @@
+---
+title: "Cookie Policy"
+date: last-modified   # ← 让 Quarto 替本页生成 last-modified
+toc: false
+---
+
+## Cookie Policy  
+
+### 1. What are cookies?  
+Cookies are small text files placed on your device when you visit a website. They are widely used to make websites work, or work more efficiently, as well as to provide reporting information.
+
+### 2. Cookies we use  
+| Category | Purpose | Lifespan | Provider |
+|----------|---------|----------|----------|
+| **Necessary** | Remembers your consent choice for 12 months | 12 months | This site (Quarto) |
+| **Analytical** | Google Analytics 4 (measurement ID: G-DDVX87V0F2) | 26 months | Google* |
+
+\*Google Analytics 4 is configured with IP anonymisation and **does not collect any data that can identify an individual**.
+
+### 3. Legal basis  
+We load analytical cookies only if you give explicit consent via the banner. Consent is recorded in your browser and can be withdrawn at any time (see section 5).
+
+### 4. Data collected  
+Page URL, anonymised IP prefix, browser type, timestamp, approximate geographic region (city-level).  
+**We do NOT capture names, emails, or precise locations.**
+
+### 5. Managing / withdrawing consent  
+- Click “Change cookie preferences” in the footer at any time;  
+- Or set your browser to block third-party cookies—site functionality will remain unchanged.
+
+### 6. Contact  
+For any questions regarding this policy, please email  
+[rongkang2025@gmail.com](mailto:rongkang2025@gmail.com)
