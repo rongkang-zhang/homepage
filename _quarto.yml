@@ -41,6 +41,8 @@ website:
         icon: calendar-event
         href: conferences-attended/index.html
     right:
+      - text: '<img src="https://plausible.io/rongkang-zhang.github.io/badge.svg" alt="online"/>'
+        href: stats.html
       - icon: github
         href: https://github.com/valegiunchiglia/
       - icon: twitter
@@ -62,14 +64,18 @@ website:
 
 format:
   html:
-    theme: 
-       light: [cosmo, custom.scss]
-       dark:  [darkly, custom.scss]
+    theme:
+      light: [cosmo, custom.scss]
+      dark:  [darkly, custom.scss]
     toc: true
     linkcolor: blue
     font-awesome: true
     resources:
-        - assets/icons/zhihu.svg
+      - assets/icons/zhihu.svg
+    include-in-header:
+      - text: |
+          <script defer data-domain="rongkang-zhang.github.io"
+            src="https://plausible.io/js/pa-g76JDngLNFkvHnG9rcqYF.js"></script>
 
 
 
