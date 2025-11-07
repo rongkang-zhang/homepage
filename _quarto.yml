@@ -10,6 +10,17 @@ project:
 website:
   title: "Rong-Kang Zhang"
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
+  # ==========  1. 右上角 “编辑 / 提 Issue” 按钮  ==========
+  repo-url: https://github.com/valegiunchiglia          # ← 新增
+  issue-url: https://github.com/valegiunchiglia/issues  # ← 新增
+  # ==========  2. 社交分享卡片  ==========
+  twitter-card: true            # ← 新增
+  open-graph: true              # ← 新增
+  # 1200×630 最佳；如放在 static/ 就写 /static/og.png
+  image: assets/pictures/profile-picture.png      # ← 新增（文件需自己放）
+  # ==========  3. GA + GDPR 横幅  ==========
+  google-analytics: "G-DDVX87V0F2" # ← 改为你自己的 GA4 测量 ID
+  cookie-consent: true           # ← 新增
   navbar:
     background: "#023a75ff"
     foreground: "#ffffffff"

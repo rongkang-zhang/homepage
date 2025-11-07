@@ -11,12 +11,22 @@ keywords: [Natural Transformation]
 toc: true
 toc-title: "Contents"
 toc-location: left
+anchor-sections: true      # 各级标题左侧出现段落锚点
+smooth-scroll: true        # 锚点跳转时平滑滚动
+highlight-style: dracula    # 代码高亮配色
 number-sections: true
 toc-depth: 6
 code-tools: true
 code-fold: false
 bibliography: refs.bib
 csl: ../../american-mathematical-society.csl
+eq-prefix: "Eq."
+fig-prefix: "Fig."
+tbl-prefix: "Tbl."
+crossref:
+  fig-title: "Figure"         # caption 前缀
+  tbl-title: "Table"
+  eq-title: "Equation"
 ---
 
 # Category theory
