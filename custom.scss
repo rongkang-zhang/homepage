@@ -217,3 +217,79 @@ table tbody tr:hover {
   .navbar { background-color: $navbar-background !important; }
   .tag-workshop { background: lighten(#1e4d8b, 10%); }
 }
+
+/* 防止深色模式下horizontal-list太亮 */
+[data-bs-theme="dark"] {
+  .horizontal-list__item {
+    filter: brightness(.9);
+  }
+}
+
+/*-- scss:defaults –- 追加竖向列表 --*/
+
+/*-- scss:defaults –- 宽度自适应的竖向列表 --*/
+
+/*-- 1. 新增帝国蓝衍生变量 --*/
+$imperial-blue: #023A75;            // 原色 H210 S97 L29
+
+$ib-dk20:  darken($imperial-blue, 20%);   // 最深背景
+$ib-dk10:  darken($imperial-blue, 10%);   // 次深
+$ib-lt10:  lighten($imperial-blue, 10%);  // 次浅
+$ib-lt20:  lighten($imperial-blue, 20%);  // 最浅
+
+$coastal-mist: #c2d8f0;               // 原表格描边色，用作极浅底
+$gold-pop:     #ffc966;               // 单点高亮色（暖橙黄）
+
+/*-- 2. 竖向列表（宽度自适应）-- */
+.vertical-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        display: inline-block;
+        width: fit-content;
+        font-weight: bold;
+        padding: 0.4rem 0.75rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.5rem;
+        transition: background-color .2s ease, color .2s ease;
+
+        /* 新配色：深→浅→亮 交替 */
+        &--alpha  { background-color: $ib-dk20; color: #fff; }
+        &--beta   { background-color: $ib-dk10; color: #fff; }
+        &--gamma  { background-color: $imperial-blue; color: #fff; }
+        &--delta  { background-color: $ib-lt10; }
+        &--epsilon{ background-color: $ib-lt20; }
+        &--zeta   { background-color: $coastal-mist; }
+        &--eta    { background-color: $gold-pop; color: #1a1a1a; }
+        &--theta  { background-color: $seaweed; color: #fff; } // 原 seaweed 保留作点缀
+
+        &:hover,
+        &:focus {
+            filter: brightness(1.1);
+        }
+    }
+
+    &--compact {
+        column-width: 10rem;
+        column-gap: 0.6rem;
+        .vertical-list__item {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+/*-- 3. 深色模式 --*/
+[data-bs-theme="dark"] {
+    .vertical-list__item {
+        filter: brightness(.9);
+        /* 亮底标签翻黑字，保证对比度 */
+        &--delta,
+        &--epsilon,
+        &--zeta,
+        &--eta { color: #0d1117; }
+    }
+}

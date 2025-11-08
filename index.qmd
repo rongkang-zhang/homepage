@@ -29,6 +29,40 @@ about:
 > - English (fluent/C1)
 > - Chinese (native/C2)
 
+<!-- 纯 Markdown 语法 -->
+<ul class="horizontal-list">
+  <li class="horizontal-list__item horizontal-list__item--orange">Workshop</li>create<br>
+  <li class="horizontal-list__item horizontal-list__item--yellow">Conference</li>
+  <li class="horizontal-list__item horizontal-list__item--blue">Winter School</li>
+</ul>
+
+<ul class="vertical-list">
+  <li class="vertical-list__item vertical-list__item--alpha">
+    Deep Sea
+  </li>
+  <li class="vertical-list__item vertical-list__item--beta">
+    Royal
+  </li>
+  <li class="vertical-list__item vertical-list__item--gamma">
+    Imperial
+  </li>
+  <li class="vertical-list__item vertical-list__item--delta">
+    Cobalt
+  </li><br>
+  <li class="vertical-list__item vertical-list__item--epsilon">
+    Periwinkle
+  </li>
+  <li class="vertical-list__item vertical-list__item--zeta">
+    Mist
+  </li>
+  <li class="vertical-list__item vertical-list__item--eta">
+    Gold Accent
+  </li>
+  <li class="vertical-list__item vertical-list__item--theta">
+    Seaweed
+  </li>
+</ul>
+
 **Education and degrees**
 
 - Gap-year self-study (Aug 2025 – present)  
