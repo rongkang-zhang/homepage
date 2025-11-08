@@ -1,8 +1,8 @@
 ---
 title: "Extemporaneous Blackboard Reconstruction"
 author: "Rong-Kang Zhang"
+contents: "*/index.qmd"
 listing:
-  contents: "topic-*.qmd"
   type: table
   sort: "title"
 ---

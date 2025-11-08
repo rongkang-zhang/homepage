@@ -27,14 +27,9 @@ crossref:
   fig-title: "Figure"         # caption 前缀
   tbl-title: "Table"
   eq-title: "Equation"
-include-in-header:
-  - text: |
-      <meta http-equiv="Content-Security-Policy" content="*">
 ---
 
 # Category theory
-
-![](https://ga-realtime-badge.vercel.app/badge?gaid=G-DDVX87V0F2)
 
 See [@maclane1998]
 
@@ -93,6 +88,6 @@ $$
 $$
 查看是否更新
 
-<!-- 最小可工作计数器 -->
-<div id="counter" class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e"></div>
-<script src="https://apps.elfsight.com/p/e8acae18-17ad-46a6-8af3-37507af65c1e.js" defer></script>
+<!-- Elfsight Visitor Counter | Light -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e" data-elfsight-app-lazy></div>
