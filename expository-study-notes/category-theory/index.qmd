@@ -27,6 +27,10 @@ crossref:
   fig-title: "Figure"         # caption 前缀
   tbl-title: "Table"
   eq-title: "Equation"
+format:
+  html:
+    filters:
+      - _extensions/latex-environment/_extensions/latex-environment/latex-environment.lua
 ---
 
 # Category theory
@@ -36,6 +40,13 @@ See [@maclane1998]
 ## Introduction
 
 ### Natural transformation
+
+See @eq-gauss and @thm-fubini.
+
+::: {.theorem #fubini name="Fubini"}
+Let $f \in L^1(X\times Y)$. Then
+$$ \int_X\!\int_Y f(x,y)\,dy\,dx = \int_Y\!\int_X f(x,y)\,dx\,dy. $$
+:::
 
 ::: {.definition #def-group}
 A **group** is a set $G$ with a binary operation $\cdot$ satisfying:
@@ -124,3 +135,113 @@ $$
 <!-- Elfsight Visitor Counter | Light -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e" data-elfsight-app-lazy></div>
+
+## ① 图标墙（50+ 学术图标）
+
+<p class="icon-wall">
+<i class="ai ai-orcid"></i>
+<i class="ai ai-arxiv"></i>
+<i class="ai ai-google-scholar"></i>
+<i class="ai ai-researchgate"></i>
+<i class="ai ai-mendeley"></i>
+<i class="ai ai-scopus"></i>
+<i class="ai ai-zotero"></i>
+<i class="ai ai-overleaf"></i>
+<i class="ai ai-doi"></i>
+<i class="ai ai-crossref"></i>
+<i class="ai ai-ieee"></i>
+<i class="ai ai-springer"></i>
+<i class="ai ai-elsevier"></i>
+<i class="ai ai-wiley"></i>
+<i class="ai ai-ssrn"></i>
+<i class="ai ai-biorxiv"></i>
+<i class="ai ai-psyarxiv"></i>
+<i class="ai ai-coursera"></i>
+<i class="ai ai-moodle"></i>
+<i class="ai ai-datacite"></i>
+<i class="ai ai-zenodo"></i>
+<i class="ai ai-figshare"></i>
+<i class="ai ai-open-access"></i>
+<i class="ai ai-closed-access"></i>
+<i class="ai ai-open-data"></i>
+<i class="ai ai-preregistered"></i>
+<i class="ai ai-protocols"></i>
+<i class="ai ai-publons"></i>
+<i class="ai ai-researcherid"></i>
+<i class="ai ai-impactstory"></i>
+<i class="ai ai-semantic-scholar"></i>
+<i class="ai ai-inspire"></i>
+<i class="ai ai-mathoverflow"></i>
+<i class="ai ai-stackoverflow"></i>
+<i class="ai ai-github"></i>
+<i class="ai ai-gitlab"></i>
+<i class="ai ai-hal"></i>
+<i class="ai ai-nakala"></i>
+<i class="ai ai-openedition"></i>
+<i class="ai ai-philpapers"></i>
+<i class="ai ai-piazza"></i>
+<i class="ai ai-sci-hub"></i>
+<i class="ai ai-viaf"></i>
+<i class="ai ai-arxiv" title="arXiv preprint"></i>
+</p>
+
+## ② 定理环境大合集
+
+::: {.axiom #ax1 name="皮亚诺公理"}
+自然数集 $\mathbb N$ 存在且唯一。
+:::
+见 @axm-ax1。
+
+::: {.definition #def1 name="群"}
+一个集合 $G$ 配备二元运算 $*$ 满足封闭性、结合律、单位元、逆元。
+:::
+见 @def-def1。
+
+::: {.lemma #lem1 name="费马小引理"}
+若 $p$ 是素数，则 $a^{p-1}\equiv 1\pmod p$。
+:::
+见 @lem-lem1。
+
+::: {.proposition #prop1 name="命题示例"}
+连续函数在闭区间上必取最值。
+:::
+见 @prop-prop1。
+
+::: {.theorem #thm1 name="主定理"}
+对任意右三角形，有 $$ a^{2}+b^{2}=c^{2}. $$ {#eq-pyth}
+:::
+见 @thm-thm1 与 @eq-pyth。
+
+::: {.corollary #cor1 name="直接推论"}
+斜边 $c=\sqrt{a^{2}+b^{2}}$。
+:::
+见 @cor-cor1。
+
+::: {.conjecture #conj1 name="哥德巴赫猜想"}
+每个大于 2 的偶数都可写成两个素数之和。
+:::
+见 @conj-conj1。
+
+::: {.example #ex1 name="具体例子"}
+取 $a=3,b=4$，则 $c=5$。
+:::
+见 @exm-ex1。
+
+::: {.remark #rem1 name="注记"}
+上述证明可推广到任意希尔伯特空间。
+:::
+见 @rem-rem1。
+
+::: {.assumption #ass1 name="基本假设"}
+市场完全有效且不存在摩擦。
+:::
+见 @asm-ass1。
+
+::: {.assertion #assr1 name="断言"}
+本系统对所有输入皆停机。
+:::
+见 @assr-assr1。
+
+::: {.proof}
+留作习题，略。
+:::
