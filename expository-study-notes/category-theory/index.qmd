@@ -27,6 +27,9 @@ crossref:
   fig-title: "Figure"         # caption 前缀
   tbl-title: "Table"
   eq-title: "Equation"
+include-in-header:
+  - text: |
+      <meta http-equiv="Content-Security-Policy" content="*">
 ---
 
 # Category theory
@@ -90,10 +93,6 @@ $$
 $$
 查看是否更新
 
-<!-- 实时访客计数器 -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e" data-elfsight-app-lazy></div>
-
-<!-- SeeTheStats 公开面板 -->
-<iframe src="https://www.seethestats.com/site/rongkang-zhang.github.io/homepage"
-        width="100%" height="800" frameborder="0"></iframe>
+<!-- 最小可工作计数器 -->
+<div id="counter" class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e"></div>
+<script src="https://apps.elfsight.com/p/e8acae18-17ad-46a6-8af3-37507af65c1e.js" defer></script>

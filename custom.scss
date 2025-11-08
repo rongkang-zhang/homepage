@@ -210,3 +210,10 @@ table tbody tr:hover {
 .nav a[href^="http"]:after {
   content: none !important;
 }
+
+/* 深色模式专用变量，避免深色模式下链接高亮太亮看不清 */
+[data-bs-theme="dark"] {
+  $navbar-background: darken($imperial-blue, 15%);
+  .navbar { background-color: $navbar-background !important; }
+  .tag-workshop { background: lighten(#1e4d8b, 10%); }
+}
