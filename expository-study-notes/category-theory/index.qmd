@@ -37,6 +37,39 @@ See [@maclane1998]
 
 ### Natural transformation
 
+::: {.definition #def-group}
+A **group** is a set $G$ with a binary operation $\cdot$ satisfying:
+1. Associativity: $(a\cdot b)\cdot c=a\cdot(b\cdot c)$;
+2. Identity: $\exists e\in G$ such that $e\cdot a=a\cdot e=a$;
+3. Inverses: $\forall a\in G\ \exists a^{-1}\in G$ such that $a\cdot a^{-1}=a^{-1}\cdot a=e$.
+:::
+
+::: {.example #ex-integers}
+The set $\mathbb Z$ with addition is a group.
+:::
+
+::: {.lemma #lem-product}
+The product of two integers is even if at least one factor is even.
+:::
+
+::: {.theorem #thm-primes}
+There are infinitely many prime numbers.
+:::
+
+::: {.proof}
+Assume finitely many primes $p_1,\dots,p_n$.  
+Consider $P=p_1\cdots p_n+1$.  
+$P>1$ has a prime divisor $p$, but $p$ divides neither $P-1$ nor $1$, contradiction.
+:::
+
+::: {.corollary #cor-next-prime}
+For every integer $n\ge 2$ there exists a prime $p>n$.
+:::
+
+::: {.remark #rem-euclid}
+Euclid's proof is constructive: it gives an upper bound on the next prime.
+:::
+
 Definition (Index set $\left(A_i\right)_{i \in I}$ )
 $A: I \rightarrow X, i \mapsto A_i$
 Definition (Product over the index set $\left(A_i\right)_{i \in I}$ )

@@ -293,3 +293,57 @@ $gold-pop:     #ffc966;               // 单点高亮色（暖橙黄）
         &--eta { color: #0d1117; }
     }
 }
+
+/* ---------------------------------------------------
+   数学环境「景观化」主题
+   灵感：Pennisetum 观赏草分区 [^18^][^19^]
+----------------------------------------------------*/
+
+// 1. 植物系配色（轻雾背景 + 饱和左侧）
+$grass-green: #66bb6a;   // 定理主色
+$grass-gold: #ffa726;    // 引理/推论
+$grass-blue: #42a5f5;    // 定义
+$grass-mint: #26c6da;    // 例子
+$grass-lavender: #ab47bc;// 备注
+$grass-silver: #b0bec5;  // 证明
+
+// 2. 通用卡片 mixin
+@mixin math-block($accent) {
+  margin: 1.2rem 0;
+  padding: .8rem 1rem .8rem 1.6rem;
+  border-left: 6px solid $accent;
+  background: linear-gradient(120deg, rgba($accent,.06) 0%, rgba($accent,.02) 100%);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  position: relative;
+  // 右上角小标签
+  &::before {
+    content: "";
+    position: absolute;
+    top: .6rem; right: .8rem;
+    width: 10px; height: 10px;
+    background: $accent;
+    border-radius: 50%;
+    opacity: .35;
+  }
+}
+
+/* 3. 七类环境依次调用 */
+.definition { @include math-block($grass-blue); }
+.example    { @include math-block($grass-mint); }
+.lemma      { @include math-block($grass-gold); }
+.theorem    { @include math-block($grass-green); }
+.corollary  { @include math-block($grass-gold); }
+.remark     { @include math-block($grass-lavender); }
+.proof      { @include math-block($grass-silver); font-style: italic; }
+
+/* 4. 深色模式：降低饱和度 & 提高对比 */
+[data-bs-theme="dark"] {
+  .definition { border-left-color: lighten($grass-blue,12%); }
+  .example    { border-left-color: lighten($grass-mint,12%); }
+  .lemma      { border-left-color: lighten($grass-gold,12%); }
+  .theorem    { border-left-color: lighten($grass-green,12%); }
+  .corollary  { border-left-color: lighten($grass-gold,12%); }
+  .remark     { border-left-color: lighten($grass-lavender,12%); }
+  .proof      { border-left-color: lighten($grass-silver,12%); }
+}
