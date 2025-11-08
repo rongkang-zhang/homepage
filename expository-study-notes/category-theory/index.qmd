@@ -27,10 +27,12 @@ crossref:
   fig-title: "Figure"         # caption 前缀
   tbl-title: "Table"
   eq-title: "Equation"
-format:
-  html:
-    filters:
-      - _extensions/latex-environment/_extensions/latex-environment/latex-environment.lua
+filters:
+  - latex-environment
+  - diagram          # 关键：启用 diagram 过滤器
+environments:                 # 把 div 转成 LaTeX 环境
+  framedshaded: framedshaded  # 左边是 div-class，右边是环境名
+  lrbox: lrbox
 ---
 
 # Category theory
@@ -136,112 +138,167 @@ $$
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-e8acae18-17ad-46a6-8af3-37507af65c1e" data-elfsight-app-lazy></div>
 
-## ① 图标墙（50+ 学术图标）
+{{< ai academia >}}
+{{< ai academia-square >}}
+{{< ai acclaim >}}
+{{< ai acclaim-square >}}
+{{< ai acm >}}
+{{< ai acm-square >}}
+{{< ai acmdl >}}
+{{< ai acmdl-square >}}
+★ {{< ai ads >}}
+★ {{< ai ads-square >}}
+{{< ai africarxiv >}}
+{{< ai africarxiv-square >}}
+{{< ai archive >}}
+{{< ai archive-square >}}
+★ {{< ai arxiv >}}
+★ {{< ai arxiv-square >}}
+{{< ai biorxiv >}}
+{{< ai biorxiv-square >}}
+{{< ai ceur >}}
+{{< ai ceur-square >}}
+{{< ai ciencia-vitae >}}
+{{< ai ciencia-vitae-square >}}
+{{< ai clarivate >}}
+{{< ai clarivate-square >}}
+{{< ai closed-access >}}
+{{< ai closed-access-square >}}
+{{< ai conversation >}}
+{{< ai conversation-square >}}
+{{< ai coursera >}}
+{{< ai coursera-square >}}
+{{< ai crossref >}}
+{{< ai crossref-square >}}
+{{< ai cv >}}
+{{< ai cv-square >}}
+{{< ai datacite >}}
+{{< ai datacite-square >}}
+{{< ai dataverse >}}
+{{< ai dataverse-square >}}
+★ {{< ai dblp >}}
+★ {{< ai dblp-square >}}
+{{< ai depsy >}}
+{{< ai depsy-square >}}
+★ {{< ai doi >}}
+★ {{< ai doi-square >}}
+{{< ai dryad >}}
+{{< ai dryad-square >}}
+{{< ai elsevier >}}
+{{< ai elsevier-square >}}
+{{< ai figshare >}}
+{{< ai figshare-square >}}
+★ {{< ai google-scholar >}}
+★ {{< ai google-scholar-square >}}
+{{< ai hal >}}
+{{< ai hal-square >}}
+{{< ai hypothesis >}}
+{{< ai hypothesis-square >}}
+{{< ai ideas-repec >}}
+{{< ai ideas-repec-square >}}
+{{< ai ieee >}}
+{{< ai ieee-square >}}
+{{< ai impactstory >}}
+{{< ai impactstory-square >}}
+{{< ai inaturalist >}}
+{{< ai inaturalist-square >}}
+{{< ai inpn >}}
+{{< ai inpn-square >}}
+★ {{< ai inspire >}}
+★ {{< ai inspire-square >}}
+{{< ai isidore >}}
+{{< ai isidore-square >}}
+★ {{< ai jstor >}}
+★ {{< ai jstor-square >}}
+{{< ai lattes >}}
+{{< ai lattes-square >}}
+★ {{< ai mathoverflow >}}
+★ {{< ai mathoverflow-square >}}
+★ {{< ai mendeley >}}
+★ {{< ai mendeley-square >}}
+{{< ai moodle >}}
+{{< ai moodle-square >}}
+{{< ai mtmt >}}
+{{< ai mtmt-square >}}
+{{< ai nakala >}}
+{{< ai nakala-square >}}
+{{< ai obp >}}
+{{< ai obp-square >}}
+{{< ai open-access >}}
+{{< ai open-access-square >}}
+{{< ai open-data >}}
+{{< ai open-data-square >}}
+{{< ai open-materials >}}
+{{< ai open-materials-square >}}
+{{< ai openedition >}}
+{{< ai openedition-square >}}
+★ {{< ai orcid >}}
+★ {{< ai orcid-square >}}
+★ {{< ai osf >}}
+★ {{< ai osf-square >}}
+★ {{< ai overleaf >}}
+★ {{< ai overleaf-square >}}
+{{< ai philpapers >}}
+{{< ai philpapers-square >}}
+{{< ai piazza >}}
+{{< ai piazza-square >}}
+{{< ai preregistered >}}
+{{< ai preregistered-square >}}
+{{< ai protocols >}}
+{{< ai protocols-square >}}
+{{< ai psyarxiv >}}
+{{< ai psyarxiv-square >}}
+★ {{< ai publons >}}
+★ {{< ai publons-square >}}
+★ {{< ai pubmed >}}
+★ {{< ai pubmed-square >}}
+★ {{< ai pubpeer >}}
+★ {{< ai pubpeer-square >}}
+★ {{< ai researcherid >}}
+★ {{< ai researcherid-square >}}
+★ {{< ai researchgate >}}
+★ {{< ai researchgate-square >}}
+{{< ai ror >}}
+{{< ai ror-square >}}
+{{< ai sci-hub >}}
+{{< ai sci-hub-square >}}
+★ {{< ai scirate >}}
+★ {{< ai scirate-square >}}
+★ {{< ai scopus >}}
+★ {{< ai scopus-square >}}
+★ {{< ai semantic-scholar >}}
+★ {{< ai semantic-scholar-square >}}
+★ {{< ai springer >}}
+★ {{< ai springer-square >}}
+★ {{< ai ssrn >}}
+★ {{< ai ssrn-square >}}
+★ {{< ai stackoverflow >}}
+★ {{< ai stackoverflow-square >}}
+★ {{< ai zenodo >}}
+★ {{< ai zenodo-square >}}
+★ {{< ai zotero >}}
+★ {{< ai zotero-square >}}
 
-<p class="icon-wall">
-<i class="ai ai-orcid"></i>
-<i class="ai ai-arxiv"></i>
-<i class="ai ai-google-scholar"></i>
-<i class="ai ai-researchgate"></i>
-<i class="ai ai-mendeley"></i>
-<i class="ai ai-scopus"></i>
-<i class="ai ai-zotero"></i>
-<i class="ai ai-overleaf"></i>
-<i class="ai ai-doi"></i>
-<i class="ai ai-crossref"></i>
-<i class="ai ai-ieee"></i>
-<i class="ai ai-springer"></i>
-<i class="ai ai-elsevier"></i>
-<i class="ai ai-wiley"></i>
-<i class="ai ai-ssrn"></i>
-<i class="ai ai-biorxiv"></i>
-<i class="ai ai-psyarxiv"></i>
-<i class="ai ai-coursera"></i>
-<i class="ai ai-moodle"></i>
-<i class="ai ai-datacite"></i>
-<i class="ai ai-zenodo"></i>
-<i class="ai ai-figshare"></i>
-<i class="ai ai-open-access"></i>
-<i class="ai ai-closed-access"></i>
-<i class="ai ai-open-data"></i>
-<i class="ai ai-preregistered"></i>
-<i class="ai ai-protocols"></i>
-<i class="ai ai-publons"></i>
-<i class="ai ai-researcherid"></i>
-<i class="ai ai-impactstory"></i>
-<i class="ai ai-semantic-scholar"></i>
-<i class="ai ai-inspire"></i>
-<i class="ai ai-mathoverflow"></i>
-<i class="ai ai-stackoverflow"></i>
-<i class="ai ai-github"></i>
-<i class="ai ai-gitlab"></i>
-<i class="ai ai-hal"></i>
-<i class="ai ai-nakala"></i>
-<i class="ai ai-openedition"></i>
-<i class="ai ai-philpapers"></i>
-<i class="ai ai-piazza"></i>
-<i class="ai ai-sci-hub"></i>
-<i class="ai ai-viaf"></i>
-<i class="ai ai-arxiv" title="arXiv preprint"></i>
-</p>
+## 物理推导
 
-## ② 定理环境大合集
-
-::: {.axiom #ax1 name="皮亚诺公理"}
-自然数集 $\mathbb N$ 存在且唯一。
+::: {.framedshaded}
+真空中的麦克斯韦方程组（微分形式）
+\[
+\begin{aligned}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0}, \\
+\nabla \cdot \mathbf{B} &= 0, \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}, \\
+\nabla \times \mathbf{B} &= \mu_0\mathbf{J} + \mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}.
+\end{aligned}
+\]
 :::
-见 @axm-ax1。
 
-::: {.definition #def1 name="群"}
-一个集合 $G$ 配备二元运算 $*$ 满足封闭性、结合律、单位元、逆元。
+::: {.lrbox options="\linewidth"}
+这里放入你希望先保存到盒子再复用的内容，例如一张 TikZ 图或复杂表格。
 :::
-见 @def-def1。
 
-::: {.lemma #lem1 name="费马小引理"}
-若 $p$ 是素数，则 $a^{p-1}\equiv 1\pmod p$。
-:::
-见 @lem-lem1。
+导出 PDF 时，上方两段会被分别包裹为  
+\begin{framedshaded} … \end{framedshaded}  
+\begin{lrbox} … \end{lrbox}  
 
-::: {.proposition #prop1 name="命题示例"}
-连续函数在闭区间上必取最值。
-:::
-见 @prop-prop1。
-
-::: {.theorem #thm1 name="主定理"}
-对任意右三角形，有 $$ a^{2}+b^{2}=c^{2}. $$ {#eq-pyth}
-:::
-见 @thm-thm1 与 @eq-pyth。
-
-::: {.corollary #cor1 name="直接推论"}
-斜边 $c=\sqrt{a^{2}+b^{2}}$。
-:::
-见 @cor-cor1。
-
-::: {.conjecture #conj1 name="哥德巴赫猜想"}
-每个大于 2 的偶数都可写成两个素数之和。
-:::
-见 @conj-conj1。
-
-::: {.example #ex1 name="具体例子"}
-取 $a=3,b=4$，则 $c=5$。
-:::
-见 @exm-ex1。
-
-::: {.remark #rem1 name="注记"}
-上述证明可推广到任意希尔伯特空间。
-:::
-见 @rem-rem1。
-
-::: {.assumption #ass1 name="基本假设"}
-市场完全有效且不存在摩擦。
-:::
-见 @asm-ass1。
-
-::: {.assertion #assr1 name="断言"}
-本系统对所有输入皆停机。
-:::
-见 @assr-assr1。
-
-::: {.proof}
-留作习题，略。
-:::
+而在 HTML 里它们只是带对应 class 的 `<div>`，方便你自行加 CSS。

@@ -1,5 +1,9 @@
 date: last-modified
 
+execute:
+  echo: true
+  eval: true        # 关键：让过滤器（diagram 等）真正执行
+
 project:
   type: website
   output-dir: docs
@@ -55,6 +59,8 @@ website:
         icon: shield-check
       - icon: globe
         href: "mailto:v.giunchiglia20@imperial.ac.uk"
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/你的ID"
   page-footer:
       left: |
         Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).<br>
@@ -74,4 +80,5 @@ format:
       method: mathjax
       url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     filters:
-      - _extensions/latex-environment/_extensions/latex-environment/latex-environment.lua
+      - latex-environment          # ← 只用短名，其余不动
+      - diagram
