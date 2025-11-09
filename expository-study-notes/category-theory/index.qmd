@@ -31,20 +31,26 @@ filters:
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua
 environments:                 # 把 div 转成 LaTeX 环境
   framedshaded: framedshaded  # 左边是 div-class，右边是环境名
   lrbox: lrbox
+tikz:
+  cache: false
+  save-tex: true  # Enable saving intermediate .tex files
+  tex-dir: tikz-tex  # Optional: Specify directory to save .tex files
 ---
 
 # Category theory
+
+```{.python include="demo.py"}
+```
 
 See [@maclane1998]
 
 ## Introduction
 
 ### Natural transformation
-
-See @eq-gauss and @thm-fubini.
 
 ::: {.theorem #fubini name="Fubini"}
 Let $f \in L^1(X\times Y)$. Then
