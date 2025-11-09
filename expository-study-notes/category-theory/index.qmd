@@ -28,8 +28,8 @@ crossref:
   tbl-title: "Table"
   eq-title: "Equation"
 filters:
-  - latex-environment
-  - diagram          # 关键：启用 diagram 过滤器
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
 environments:                 # 把 div 转成 LaTeX 环境
   framedshaded: framedshaded  # 左边是 div-class，右边是环境名
   lrbox: lrbox
