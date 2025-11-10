@@ -110,7 +110,7 @@ format:
 **Mood:** {{< fa face-smile >}} calm
 :::
 
-这段文字出现时触发 intro 层。 @cr-intro
+这段文字出现时触发 intro 层。 [@cr-intro]{scale-by=".5" pan-to="50%,50%"}
 
 ::: {#cr-intro .fade-in}
 ![](pictures/1.png){width=100%}
