@@ -294,6 +294,12 @@ $$
 ★ {{< ai zotero >}}
 ★ {{< ai zotero-square >}}
 
+| 表情 | 图标 |
+|---|---|
+| smile | {{< fa face-smile >}} |
+| grin  | {{< fa face-grin-beam >}} |
+| sad   | {{< fa face-frown >}} |
+
 ## 物理推导
 
 ::: {.framedshaded}

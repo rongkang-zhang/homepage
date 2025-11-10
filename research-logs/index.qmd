@@ -26,6 +26,88 @@ format:
 
 * list1
 * list 2
+
+| 表情 | 图标 |
+|---|---|
+| smile | {{< fa face-smile >}} |
+| grin | {{< fa face-grin-beam >}} |
+| laugh | {{< fa face-laugh-squint >}} |
+| wink | {{< fa face-grin-wink >}} |
+| happy-cry | {{< fa face-grin-tears >}} |
+| sad | {{< fa face-frown >}} |
+| cry | {{< fa face-sad-cry >}} |
+| tired | {{< fa face-dizzy >}} |
+| sleepy | {{< fa face-meh >}} |
+| yawn | {{< fa face-yawn >}} |
+| neutral | {{< fa face-meh-blank >}} |
+| thinking | {{< fa face-meh >}} |
+| worried | {{< fa face-frown-open >}} |
+| shocked | {{< fa face-surprise >}} |
+| angry | {{< fa face-angry >}} |
+| grimace | {{< fa face-grimace >}} |
+| kiss | {{< fa face-kiss-wink-heart >}} |
+| nerd | {{< fa face-grin-beam-sweat >}} |
+| sweat | {{< fa face-grin-sweat >}} |
+| cool | {{< fa face-sunglasses >}} |
+| tongue | {{< fa face-grin-tongue >}} |
+| tongue-wink | {{< fa face-grin-tongue-wink >}} |
+| eye-roll | {{< fa face-rolling-eyes >}} |
+| blush | {{< fa face-smile-blush >}} |
+| innocent | {{< fa face-smile halo >}} |
+| devil | {{< fa face-grin-devil >}} |
+| zipper | {{< fa face-zipper >}} |
+| mask | {{< fa face-medical-mask >}} |
+| thermometer | {{< fa face-thermometer >}} |
+| head-bandage | {{< fa face-head-bandage >}} |
+| hushed | {{< fa face-hushed >}} |
+| confused | {{< fa face-confused >}} |
+| exhausted | {{< fa face-tired >}} |
+| party | {{< fa face-party >}} |
+| raised-eyebrow | {{< fa face-raised-eyebrow >}} |
+| slight-smile | {{< fa face-smile slight >}} |
+| slight-frown | {{< fa face-frown slight >}} |
+| smile-open | {{< fa face-smile-open >}} |
+| frown-open | {{< fa face-frown-open >}} |
+| grimace | {{< fa face-grimace >}} |
+| wide-grin | {{< fa face-grin-wide >}} |
+| beam-sweat | {{< fa face-grin-beam-sweat >}} |
+| squint-tears | {{< fa face-squint-tears >}} |
+| star-struck | {{< fa face-grin-stars >}} |
+| heart-eyes | {{< fa face-grin-hearts >}} |
+| cheeky | {{< fa face-grin-tongue-squint >}} |
+| upside-down | {{< fa face-grin-upsidedown >}} |
+| cowboy | {{< fa face-cowboy >}} |
+| disguised | {{< fa face-disguise >}} |
+| lying | {{< fa face-lying >}} |
+| pleading | {{< fa face-pleading >}} |
+| holding-back-tears | {{< fa face-holding-back-tears >}} |
+| saluting | {{< fa face-saluting >}} |
+
+| 😊 happy        | `{{< fa face-grin-beam >}}`        |
+| 🙂 calm         | `{{< fa face-smile >}}`            |
+| 😕 puzzled      | `{{< fa face-meh >}}`              |
+| 😴 sleepy       | `{{< fa face-dizzy >}}`            |
+| 🤯 mind-blown   | `{{< fa face-surprise >}}`         |
+| 😅 rush         | `{{< fa face-grin-sweat >}}`       |
+| ❌ blocked      | `{{< fa circle-xmark >}}`          |
+| 😃 excited      | `{{< fa face-grin-wide >}}`        |
+| 😍 love         | `{{< fa face-grin-hearts >}}`      |
+| 🙃 upside-down  | `{{< fa face-grin-upsidedown >}}`  |
+| 🥱 yawn         | `{{< fa face-yawn >}}`             |
+| 😎 cool         | `{{< fa face-sunglasses >}}`       |
+| 🤔 thinking     | `{{< fa face-thinking >}}`         |
+| 😠 angry        | `{{< fa face-angry >}}`            |
+| 😵 dizzy        | `{{< fa face-dizzy >}}`            |
+| 🤐 zip          | `{{< fa face-zipper >}}`           |
+| 🤗 hug          | `{{< fa face-holding-heart >}}`    |
+| 🥳 party        | `{{< fa face-party >}}`            |
+| 😇 halo         | `{{< fa face-smile-halo >}}`       |
+| 🤥 lie          | `{{< fa face-lying >}}`            |
+
+<!-- 今日示例 -->
+**Focus:** Quarto Closeread extension  
+**Tomorrow:** review Zhihu category-theory post; update Mathpix subscription  
+**Mood:** {{< fa face-smile >}} calm
 :::
 
 这段文字出现时触发 intro 层。 @cr-intro

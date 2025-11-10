@@ -82,6 +82,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -271,16 +273,16 @@ cookieconsent.run({
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: #003366;
+          --cr-narrative-border-radius: 16px;
 --cr-narrative-font-size: 0.95rem;
---cr-narrative-overlay-max-width: 480px;
---cr-narrative-outer-margin: 2rem;
---cr-narrative-font-family: “LXGW WenKai”, sans-serif;
---cr-section-background-color: #eef5ff;
 --cr-narrative-overlay-min-width: 260px;
+--cr-section-background-color: #eef5ff;
 --cr-narrative-sidebar-width: 1fr;
---cr-narrative-border-radius: 16px;
+--cr-narrative-text-color-overlay: #003366;
+--cr-narrative-font-family: “LXGW WenKai”, sans-serif;
 --cr-narrative-background-color-overlay: #d6e9ff;
+--cr-narrative-outer-margin: 2rem;
+--cr-narrative-overlay-max-width: 480px;
         }
       </style>
     
@@ -322,6 +324,256 @@ cookieconsent.run({
 <li>list1</li>
 <li>list 2</li>
 </ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>表情</th>
+<th>图标</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>smile</td>
+<td><p><i class="fa-solid fa-face-smile" aria-label="face-smile"></i></p></td>
+</tr>
+<tr class="even">
+<td>grin</td>
+<td><p><i class="fa-solid fa-face-grin-beam" aria-label="face-grin-beam"></i></p></td>
+</tr>
+<tr class="odd">
+<td>laugh</td>
+<td><p><i class="fa-solid fa-face-laugh-squint" aria-label="face-laugh-squint"></i></p></td>
+</tr>
+<tr class="even">
+<td>wink</td>
+<td><p><i class="fa-solid fa-face-grin-wink" aria-label="face-grin-wink"></i></p></td>
+</tr>
+<tr class="odd">
+<td>happy-cry</td>
+<td><p><i class="fa-solid fa-face-grin-tears" aria-label="face-grin-tears"></i></p></td>
+</tr>
+<tr class="even">
+<td>sad</td>
+<td><p><i class="fa-solid fa-face-frown" aria-label="face-frown"></i></p></td>
+</tr>
+<tr class="odd">
+<td>cry</td>
+<td><p><i class="fa-solid fa-face-sad-cry" aria-label="face-sad-cry"></i></p></td>
+</tr>
+<tr class="even">
+<td>tired</td>
+<td><p><i class="fa-solid fa-face-dizzy" aria-label="face-dizzy"></i></p></td>
+</tr>
+<tr class="odd">
+<td>sleepy</td>
+<td><p><i class="fa-solid fa-face-meh" aria-label="face-meh"></i></p></td>
+</tr>
+<tr class="even">
+<td>yawn</td>
+<td><p><i class="fa-solid fa-face-yawn" aria-label="face-yawn"></i></p></td>
+</tr>
+<tr class="odd">
+<td>neutral</td>
+<td><p><i class="fa-solid fa-face-meh-blank" aria-label="face-meh-blank"></i></p></td>
+</tr>
+<tr class="even">
+<td>thinking</td>
+<td><p><i class="fa-solid fa-face-meh" aria-label="face-meh"></i></p></td>
+</tr>
+<tr class="odd">
+<td>worried</td>
+<td><p><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i></p></td>
+</tr>
+<tr class="even">
+<td>shocked</td>
+<td><p><i class="fa-solid fa-face-surprise" aria-label="face-surprise"></i></p></td>
+</tr>
+<tr class="odd">
+<td>angry</td>
+<td><p><i class="fa-solid fa-face-angry" aria-label="face-angry"></i></p></td>
+</tr>
+<tr class="even">
+<td>grimace</td>
+<td><p><i class="fa-solid fa-face-grimace" aria-label="face-grimace"></i></p></td>
+</tr>
+<tr class="odd">
+<td>kiss</td>
+<td><p><i class="fa-solid fa-face-kiss-wink-heart" aria-label="face-kiss-wink-heart"></i></p></td>
+</tr>
+<tr class="even">
+<td>nerd</td>
+<td><p><i class="fa-solid fa-face-grin-beam-sweat" aria-label="face-grin-beam-sweat"></i></p></td>
+</tr>
+<tr class="odd">
+<td>sweat</td>
+<td><p><i class="fa-solid fa-face-grin-sweat" aria-label="face-grin-sweat"></i></p></td>
+</tr>
+<tr class="even">
+<td>cool</td>
+<td><p><i class="fa-solid fa-face-sunglasses" aria-label="face-sunglasses"></i></p></td>
+</tr>
+<tr class="odd">
+<td>tongue</td>
+<td><p><i class="fa-solid fa-face-grin-tongue" aria-label="face-grin-tongue"></i></p></td>
+</tr>
+<tr class="even">
+<td>tongue-wink</td>
+<td><p><i class="fa-solid fa-face-grin-tongue-wink" aria-label="face-grin-tongue-wink"></i></p></td>
+</tr>
+<tr class="odd">
+<td>eye-roll</td>
+<td><p><i class="fa-solid fa-face-rolling-eyes" aria-label="face-rolling-eyes"></i></p></td>
+</tr>
+<tr class="even">
+<td>blush</td>
+<td><p><i class="fa-solid fa-face-smile-blush" aria-label="face-smile-blush"></i></p></td>
+</tr>
+<tr class="odd">
+<td>innocent</td>
+<td><p><i class="fa-face-smile fa-halo" aria-label="halo"></i></p></td>
+</tr>
+<tr class="even">
+<td>devil</td>
+<td><p><i class="fa-solid fa-face-grin-devil" aria-label="face-grin-devil"></i></p></td>
+</tr>
+<tr class="odd">
+<td>zipper</td>
+<td><p><i class="fa-solid fa-face-zipper" aria-label="face-zipper"></i></p></td>
+</tr>
+<tr class="even">
+<td>mask</td>
+<td><p><i class="fa-solid fa-face-medical-mask" aria-label="face-medical-mask"></i></p></td>
+</tr>
+<tr class="odd">
+<td>thermometer</td>
+<td><p><i class="fa-solid fa-face-thermometer" aria-label="face-thermometer"></i></p></td>
+</tr>
+<tr class="even">
+<td>head-bandage</td>
+<td><p><i class="fa-solid fa-face-head-bandage" aria-label="face-head-bandage"></i></p></td>
+</tr>
+<tr class="odd">
+<td>hushed</td>
+<td><p><i class="fa-solid fa-face-hushed" aria-label="face-hushed"></i></p></td>
+</tr>
+<tr class="even">
+<td>confused</td>
+<td><p><i class="fa-solid fa-face-confused" aria-label="face-confused"></i></p></td>
+</tr>
+<tr class="odd">
+<td>exhausted</td>
+<td><p><i class="fa-solid fa-face-tired" aria-label="face-tired"></i></p></td>
+</tr>
+<tr class="even">
+<td>party</td>
+<td><p><i class="fa-solid fa-face-party" aria-label="face-party"></i></p></td>
+</tr>
+<tr class="odd">
+<td>raised-eyebrow</td>
+<td><p><i class="fa-solid fa-face-raised-eyebrow" aria-label="face-raised-eyebrow"></i></p></td>
+</tr>
+<tr class="even">
+<td>slight-smile</td>
+<td><p><i class="fa-face-smile fa-slight" aria-label="slight"></i></p></td>
+</tr>
+<tr class="odd">
+<td>slight-frown</td>
+<td><p><i class="fa-face-frown fa-slight" aria-label="slight"></i></p></td>
+</tr>
+<tr class="even">
+<td>smile-open</td>
+<td><p><i class="fa-solid fa-face-smile-open" aria-label="face-smile-open"></i></p></td>
+</tr>
+<tr class="odd">
+<td>frown-open</td>
+<td><p><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i></p></td>
+</tr>
+<tr class="even">
+<td>grimace</td>
+<td><p><i class="fa-solid fa-face-grimace" aria-label="face-grimace"></i></p></td>
+</tr>
+<tr class="odd">
+<td>wide-grin</td>
+<td><p><i class="fa-solid fa-face-grin-wide" aria-label="face-grin-wide"></i></p></td>
+</tr>
+<tr class="even">
+<td>beam-sweat</td>
+<td><p><i class="fa-solid fa-face-grin-beam-sweat" aria-label="face-grin-beam-sweat"></i></p></td>
+</tr>
+<tr class="odd">
+<td>squint-tears</td>
+<td><p><i class="fa-solid fa-face-squint-tears" aria-label="face-squint-tears"></i></p></td>
+</tr>
+<tr class="even">
+<td>star-struck</td>
+<td><p><i class="fa-solid fa-face-grin-stars" aria-label="face-grin-stars"></i></p></td>
+</tr>
+<tr class="odd">
+<td>heart-eyes</td>
+<td><p><i class="fa-solid fa-face-grin-hearts" aria-label="face-grin-hearts"></i></p></td>
+</tr>
+<tr class="even">
+<td>cheeky</td>
+<td><p><i class="fa-solid fa-face-grin-tongue-squint" aria-label="face-grin-tongue-squint"></i></p></td>
+</tr>
+<tr class="odd">
+<td>upside-down</td>
+<td><p><i class="fa-solid fa-face-grin-upsidedown" aria-label="face-grin-upsidedown"></i></p></td>
+</tr>
+<tr class="even">
+<td>cowboy</td>
+<td><p><i class="fa-solid fa-face-cowboy" aria-label="face-cowboy"></i></p></td>
+</tr>
+<tr class="odd">
+<td>disguised</td>
+<td><p><i class="fa-solid fa-face-disguise" aria-label="face-disguise"></i></p></td>
+</tr>
+<tr class="even">
+<td>lying</td>
+<td><p><i class="fa-solid fa-face-lying" aria-label="face-lying"></i></p></td>
+</tr>
+<tr class="odd">
+<td>pleading</td>
+<td><p><i class="fa-solid fa-face-pleading" aria-label="face-pleading"></i></p></td>
+</tr>
+<tr class="even">
+<td>holding-back-tears</td>
+<td><p><i class="fa-solid fa-face-holding-back-tears" aria-label="face-holding-back-tears"></i></p></td>
+</tr>
+<tr class="odd">
+<td>saluting</td>
+<td><p><i class="fa-solid fa-face-saluting" aria-label="face-saluting"></i></p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block"><span id="lb1-1">😊 happy | <code></code> |</span><br>
+<span id="lb1-2">🙂 calm | <code></code> |</span><br>
+<span id="lb1-3">😕 puzzled | <code></code> |</span><br>
+<span id="lb1-4">😴 sleepy | <code></code> |</span><br>
+<span id="lb1-5">🤯 mind-blown | <code></code> |</span><br>
+<span id="lb1-6">😅 rush | <code></code> |</span><br>
+<span id="lb1-7">❌ blocked | <code></code> |</span><br>
+<span id="lb1-8">😃 excited | <code></code> |</span><br>
+<span id="lb1-9">😍 love | <code></code> |</span><br>
+<span id="lb1-10">🙃 upside-down | <code></code> |</span><br>
+<span id="lb1-11">🥱 yawn | <code></code> |</span><br>
+<span id="lb1-12">😎 cool | <code></code> |</span><br>
+<span id="lb1-13">🤔 thinking | <code></code> |</span><br>
+<span id="lb1-14">😠 angry | <code></code> |</span><br>
+<span id="lb1-15">😵 dizzy | <code></code> |</span><br>
+<span id="lb1-16">🤐 zip | <code></code> |</span><br>
+<span id="lb1-17">🤗 hug | <code></code> |</span><br>
+<span id="lb1-18">🥳 party | <code></code> |</span><br>
+<span id="lb1-19">😇 halo | <code></code> |</span><br>
+<span id="lb1-20">🤥 lie | <code></code> |</span></div>
+<!-- 今日示例 -->
+<p><strong>Focus:</strong> Quarto Closeread extension<br>
+<strong>Tomorrow:</strong> review Zhihu category-theory post; update Mathpix subscription<br>
+<strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-intro">
@@ -340,7 +592,7 @@ cookieconsent.run({
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="1.5" data-focus-on="cr-fig-trial" data-pan-to="50%,50%">
+<div class="trigger new-trigger" data-focus-on="cr-fig-trial" data-scale-by="1.5" data-pan-to="50%,50%">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -366,7 +618,7 @@ cookieconsent.run({
 <p>生成虚拟时间序列，并高亮关键代码行：</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-highlight="3-4" data-transition="0.7s" data-focus-on="code">
+<div class="trigger new-trigger" data-focus-on="code" data-transition="0.7s" data-highlight="3-4">
 <div class="narrative">
 
 </div>
