@@ -21,9 +21,26 @@ format:
 
 ::: {.cr-section}
 
+::: {focus-on="cr-intro"}
+> Create something here
+
+* list1
+* list 2
+:::
+
 这段文字出现时触发 intro 层。 @cr-intro
 
-::: {#cr-intro .zoom-to-2 .fade-in}
+::: {#cr-intro .fade-in}
+![](pictures/1.png){width=100%}
+:::
+
+:::
+
+::: {.cr-section}
+
+这段文字出现时触发 intro 层。 [@cr-fig-trial]{pan-to="50%,50%" scale-by="1.5"}
+
+::: {#cr-fig-trial .zoom-to-2 .fade-out}
 ![](pictures/1.png){width=100%}
 :::
 
