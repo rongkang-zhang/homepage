@@ -13,6 +13,7 @@ project:
 
 website:
   title: "Rong-Kang Zhang"
+  favicon: assets/pictures/web-logo-7.png
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
   # ==========  1. 右上角 “编辑 / 提 Issue” 按钮  ==========
   issue-url: https://github.com/rongkang-zhang/homepage/issues
@@ -25,6 +26,7 @@ website:
   google-analytics: "G-DDVX87V0F2" # ← 改为你自己的 GA4 测量 ID
   cookie-consent: true           # ← 新增
   navbar:
+    logo: "assets/pictures/web-logo-7.png"
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
