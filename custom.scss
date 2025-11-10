@@ -373,3 +373,52 @@ $grass-silver: #b0bec5;  // 证明
   border-radius: 12px !important;        /* 可选，与条块圆角一致 */
   margin-right: 1rem !important;         /* 可选，留一点呼吸感 */
 }
+
+/* 暗色下的表格斑马纹 */
+
+/* 1. 浅色模式：用帝国蓝 5% 透明度做偶数纹 */
+table tbody tr:nth-child(even) {
+  background: rgba($imperial-blue, .05);
+}
+
+/* 2. 暗色模式：把透明度降到 8% 并稍微压暗主色 */
+/* 2. 暗色模式：先提亮 20 % 再降透明度 → 淡蓝条纹 */
+[data-bs-theme="dark"] table tbody tr:nth-child(even) {
+  background: rgba(lighten($imperial-blue, 20%), .80);
+}
+
+/* 3. 悬停高亮同理，暗色模式用更柔和的蓝灰 */
+table tbody tr:hover td {
+  background: #e6f0ff !important;
+}
+[data-bs-theme="dark"] table tbody tr:hover td {
+  background: rgba($air-blue, .15) !important;
+}
+
+/* 1. 定义变量（帝国蓝本身 + 同色相亮 24 % 的浅蓝） */
+:root {
+  --link-color: #{$imperial-blue};                // 浅色模式保持原色
+  --link-hover: #{$orange};                       // 悬停高亮
+}
+[data-bs-theme="dark"] {
+  --link-color: #{lighten($imperial-blue, 80%)};  // 暗色模式同色相提亮
+  --link-hover: #{lighten($coral, 15%)};         // 悬停继续用暖色
+}
+
+/* 2. 一次性应用到所有 <a> */
+a {
+  color: var(--link-color);
+  transition: color .25s ease;
+}
+a:hover { color: var(--link-hover); }
+
+/* 暗色模式下的链接颜色 */
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #f0e68c;          /* 浅黄色，可换成 #ffff99 等 */
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #fffacd;          /* 悬停时更亮一点 */
+  }
+}

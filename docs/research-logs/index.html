@@ -148,11 +148,15 @@ cookieconsent.run({
 <link rel="stylesheet" href="..\site_libs\quarto-contrib\quarto-project\qmd-lab\closeread\closeread.css">
 <meta property="og:title" content="Research Log · 2025-11 – Rong-Kang Zhang">
 <meta property="og:description" content="Scrollytelling with Closeread">
-<meta property="og:image" content="pictures/1.png">
+<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/research-logs/pictures/1.png">
 <meta property="og:site_name" content="Rong-Kang Zhang">
+<meta property="og:image:height" content="829">
+<meta property="og:image:width" content="820">
 <meta name="twitter:title" content="Research Log · 2025-11 – Rong-Kang Zhang">
 <meta name="twitter:description" content="Scrollytelling with Closeread">
-<meta name="twitter:image" content="pictures/1.png">
+<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/research-logs/pictures/1.png">
+<meta name="twitter:image-height" content="829">
+<meta name="twitter:image-width" content="820">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -163,11 +167,11 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../" class="navbar-brand navbar-brand-logo">
     <img src="../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo light-content">
     <img src="../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../">
     <span class="navbar-title">Rong-Kang Zhang</span>
     </a>
   </div>
@@ -252,7 +256,6 @@ cookieconsent.run({
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -277,16 +280,16 @@ cookieconsent.run({
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-overlay: #d6e9ff;
+          --cr-narrative-sidebar-width: 1fr;
 --cr-section-background-color: #eef5ff;
---cr-narrative-overlay-max-width: 480px;
---cr-narrative-outer-margin: 2rem;
---cr-narrative-font-size: 0.95rem;
---cr-narrative-font-family: “LXGW WenKai”, sans-serif;
---cr-narrative-sidebar-width: 1fr;
 --cr-narrative-text-color-overlay: #003366;
 --cr-narrative-border-radius: 16px;
+--cr-narrative-outer-margin: 2rem;
+--cr-narrative-background-color-overlay: #d6e9ff;
+--cr-narrative-font-family: “LXGW WenKai”, sans-serif;
+--cr-narrative-font-size: 0.95rem;
 --cr-narrative-overlay-min-width: 260px;
+--cr-narrative-overlay-max-width: 480px;
         }
       </style>
     
@@ -580,7 +583,7 @@ cookieconsent.run({
 <strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by=".5" data-pan-to="50%,50%" data-focus-on="cr-intro">
+<div class="trigger new-trigger" data-pan-to="50%,50%" data-scale-by=".5" data-focus-on="cr-intro">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -596,7 +599,7 @@ cookieconsent.run({
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-pan-to="50%,50%" data-scale-by="1.5" data-focus-on="cr-fig-trial">
+<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="50%,50%" data-focus-on="cr-fig-trial">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -622,7 +625,7 @@ cookieconsent.run({
 <p>生成虚拟时间序列，并高亮关键代码行：</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-highlight="3-4" data-transition="0.7s" data-focus-on="code">
+<div class="trigger new-trigger" data-transition="0.7s" data-focus-on="code" data-highlight="3-4">
 <div class="narrative">
 
 </div>
@@ -865,7 +868,7 @@ cookieconsent.run({
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/rongkang-zhang\.github\.io\/homepage\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1196,7 +1199,7 @@ cookieconsent.run({
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 10, 2025 · <a href="cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 10, 2025 · <a href="cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
 </div>   
     <div class="nav-footer-center">
 
