@@ -28,7 +28,7 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
-      - text: Expository<br>Study Notes<small class="ms-1">▼</small>
+      - text: Expository<br>Study Notes
         icon: journal-text
         menu:
             - text: Overview
@@ -44,7 +44,7 @@ website:
       - text: Conferences, Workshops<br>& Schools Attended
         icon: calendar-event
         href: conferences-attended/index.html
-      - text: Research Logs
+      - text: Research<br>Logs
         icon: calendar-event
         href: research-logs/index.html
     right:

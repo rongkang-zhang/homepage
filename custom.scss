@@ -357,3 +357,19 @@ $grass-silver: #b0bec5;  // 证明
 
 .theorem { border-left: 5px solid $grass-green; }
 .definition { border-left: 5px solid $grass-blue; }
+
+/* sticky 块阴影 */
+
+:root {
+  --cr-narrative-box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+/* 目录颜色设置 */
+.quarto-sidebar,
+.quarto-sidebar .sidebar-menu,
+.quarto-sidebar .toc-title {
+  background-color: #d6e9ff !important;   /* 与 narrative-overlay 同色 */
+  color: #003366 !important;             /* 与 narrative-text 同色 */
+  border-radius: 12px !important;        /* 可选，与条块圆角一致 */
+  margin-right: 1rem !important;         /* 可选，留一点呼吸感 */
+}

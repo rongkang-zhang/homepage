@@ -102,7 +102,7 @@
     "href": "research-logs/index.html",
     "title": "Research Log · 2025-11",
     "section": "",
-    "text": "我们想知道「随着正文推进，右侧图像如何变化」。@intro\n\n\n\n\n【Sticky 1】\n这里是介绍性文字，滚动到下一触发点时会高亮第 2 段。\n\n\n\n\n@intro\n\n\n\n\n\n\n\n提出两条假设：@hypo\n\n\n\n\n\n触发器语法足够简单\n\n参数组合可满足常见叙事需求\n\n\n\n\n\n@hypo"
+    "text": "这段文字出现时触发 intro 层。"
   },
   {
     "objectID": "research-logs/index.html#数据模拟",
@@ -112,11 +112,18 @@
     "text": "2.1 数据模拟"
   },
   {
-    "objectID": "research-logs/index.html#可视化",
-    "href": "research-logs/index.html#可视化",
+    "objectID": "research-logs/index.html#可视化-整体",
+    "href": "research-logs/index.html#可视化-整体",
     "title": "Research Log · 2025-11",
-    "section": "2.2 可视化",
-    "text": "2.2 可视化"
+    "section": "2.2 可视化-整体",
+    "text": "2.2 可视化-整体"
+  },
+  {
+    "objectID": "research-logs/index.html#可视化-放大",
+    "href": "research-logs/index.html#可视化-放大",
+    "title": "Research Log · 2025-11",
+    "section": "2.3 可视化-放大",
+    "text": "2.3 可视化-放大"
   },
   {
     "objectID": "research-logs/index.html#表格淡入",
@@ -126,24 +133,24 @@
     "text": "3.1 表格淡入"
   },
   {
-    "objectID": "research-logs/index.html#交叉高亮",
-    "href": "research-logs/index.html#交叉高亮",
+    "objectID": "research-logs/index.html#模型输出",
+    "href": "research-logs/index.html#模型输出",
     "title": "Research Log · 2025-11",
-    "section": "3.2 交叉高亮",
-    "text": "3.2 交叉高亮"
+    "section": "3.2 模型输出",
+    "text": "3.2 模型输出"
   },
   {
-    "objectID": "research-logs/index.html#讨论",
-    "href": "research-logs/index.html#讨论",
+    "objectID": "research-logs/index.html#细节放大",
+    "href": "research-logs/index.html#细节放大",
     "title": "Research Log · 2025-11",
-    "section": "4.1 讨论",
-    "text": "4.1 讨论"
+    "section": "4.1 细节放大",
+    "text": "4.1 细节放大"
   },
   {
-    "objectID": "research-logs/index.html#结论",
-    "href": "research-logs/index.html#结论",
+    "objectID": "research-logs/index.html#未来工作",
+    "href": "research-logs/index.html#未来工作",
     "title": "Research Log · 2025-11",
-    "section": "4.2 结论",
-    "text": "4.2 结论"
+    "section": "4.2 未来工作",
+    "text": "4.2 未来工作"
   }
 ]
