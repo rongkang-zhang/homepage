@@ -32,7 +32,6 @@ filters:
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua
-  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/lightbox/lightbox.lua
 environments:                 # 把 div 转成 LaTeX 环境
   framedshaded: framedshaded  # 左边是 div-class，右边是环境名
   lrbox: lrbox
@@ -48,7 +47,7 @@ lightbox:
   css-class: "my-css-class"
 ---
 
-![Picture 1](./pictures/1.png){.lightbox}
+![Picture 1](./pictures/1.png)
 
 # Category theory
 
