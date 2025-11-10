@@ -100,43 +100,50 @@
   {
     "objectID": "research-logs/index.html",
     "href": "research-logs/index.html",
-    "title": "Closeread 全参数速览",
+    "title": "Research Log · 2025-11",
     "section": "",
-    "text": "Hello World! Please read my Closeread story below.\n```"
+    "text": "我们想知道「随着正文推进，右侧图像如何变化」。@intro\n\n\n\n\n【Sticky 1】\n这里是介绍性文字，滚动到下一触发点时会高亮第 2 段。\n\n\n\n\n@intro\n\n\n\n\n\n\n\n提出两条假设：@hypo\n\n\n\n\n\n触发器语法足够简单\n\n参数组合可满足常见叙事需求\n\n\n\n\n\n@hypo"
   },
   {
-    "objectID": "research-logs/index.html#滚动-1-行号高亮",
-    "href": "research-logs/index.html#滚动-1-行号高亮",
-    "title": "Closeread 全参数速览",
-    "section": "滚动 1 · 行号高亮",
-    "text": "滚动 1 · 行号高亮"
+    "objectID": "research-logs/index.html#数据模拟",
+    "href": "research-logs/index.html#数据模拟",
+    "title": "Research Log · 2025-11",
+    "section": "2.1 数据模拟",
+    "text": "2.1 数据模拟"
   },
   {
-    "objectID": "research-logs/index.html#滚动-2-缩放平移",
-    "href": "research-logs/index.html#滚动-2-缩放平移",
-    "title": "Closeread 全参数速览",
-    "section": "滚动 2 · 缩放+平移",
-    "text": "滚动 2 · 缩放+平移"
+    "objectID": "research-logs/index.html#可视化",
+    "href": "research-logs/index.html#可视化",
+    "title": "Research Log · 2025-11",
+    "section": "2.2 可视化",
+    "text": "2.2 可视化"
   },
   {
-    "objectID": "research-logs/index.html#滚动-3-整表淡入",
-    "href": "research-logs/index.html#滚动-3-整表淡入",
-    "title": "Closeread 全参数速览",
-    "section": "滚动 3 · 整表淡入",
-    "text": "滚动 3 · 整表淡入"
+    "objectID": "research-logs/index.html#表格淡入",
+    "href": "research-logs/index.html#表格淡入",
+    "title": "Research Log · 2025-11",
+    "section": "3.1 表格淡入",
+    "text": "3.1 表格淡入"
   },
   {
-    "objectID": "research-logs/index.html#滚动-4-交叉高亮",
-    "href": "research-logs/index.html#滚动-4-交叉高亮",
-    "title": "Closeread 全参数速览",
-    "section": "滚动 4 · 交叉高亮",
-    "text": "滚动 4 · 交叉高亮"
+    "objectID": "research-logs/index.html#交叉高亮",
+    "href": "research-logs/index.html#交叉高亮",
+    "title": "Research Log · 2025-11",
+    "section": "3.2 交叉高亮",
+    "text": "3.2 交叉高亮"
   },
   {
-    "objectID": "research-logs/index.html#滚动-5-字体颜色覆盖",
-    "href": "research-logs/index.html#滚动-5-字体颜色覆盖",
-    "title": "Closeread 全参数速览",
-    "section": "滚动 5 · 字体+颜色覆盖",
-    "text": "滚动 5 · 字体+颜色覆盖"
+    "objectID": "research-logs/index.html#讨论",
+    "href": "research-logs/index.html#讨论",
+    "title": "Research Log · 2025-11",
+    "section": "4.1 讨论",
+    "text": "4.1 讨论"
+  },
+  {
+    "objectID": "research-logs/index.html#结论",
+    "href": "research-logs/index.html#结论",
+    "title": "Research Log · 2025-11",
+    "section": "4.2 结论",
+    "text": "4.2 结论"
   }
 ]

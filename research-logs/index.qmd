@@ -1,112 +1,147 @@
 ---
-title: "Closeread 全参数速览"
-subtitle: "零图片版，复制即可运行"
+title: "Research Log · 2025-11"
+subtitle: "Scrollytelling with Closeread"
 format:
   closeread-html:
+    toc: true                           # ← 目录开关
+    toc-depth: 3
+    toc-title: "目录"
     cr-style:
-      narrative-overlay-max-width: 380px
-      narrative-font-size: 1.05rem
-      section-background-color: "#fafafa"
-      narrative-background-color-overlay: darkslategrey
+      section-background-color: "#f6f7f8"
+      narrative-overlay-max-width: 460px
+      narrative-overlay-min-width: 260px
+      narrative-font-size: 1.1rem
+      narrative-font-family: "\"LXGW WenKai\", sans-serif"
+      narrative-border-radius: 8px
+      narrative-background-color-overlay: darkslategray
       narrative-text-color-overlay: "#e2e2e2"
+      narrative-outer-margin: 3rem
+      narrative-sidebar-width: 1fr
+      poem-font-family: "\"LXGW WenKai\", serif"
 ---
 
-Hello World! Please read my Closeread story below.
-
+# 1 研究背景
 :::{.cr-section}
 
-Closeread enables scrollytelling.
+## 1.1 问题提出
+我们想知道「随着正文推进，右侧图像如何变化」。@intro
 
-Draw your readers attention with focus effects. @cr-features
-
-:::{#cr-features}
-1. Highlighting
-2. Zooming
-3. Panning
+:::{#intro}
+**【Sticky 1】**  
+这里是介绍性文字，滚动到下一触发点时会高亮第 2 段。
 :::
 
+[@intro]{highlight="2" transition=0.6s}
+
+## 1.2 目标与假设
+提出两条假设：@hypo
+
+:::{#hypo}
+1. 触发器语法足够简单  
+2. 参数组合可满足常见叙事需求
 :::
 
-<!-- 第一章：纯文字 + 行号高亮 -->
+[@hypo]{highlight="1-2" transition=0.5s}
+:::
+
+# 2 方法
 :::{.cr-section}
 
-## 滚动 1 · 行号高亮
-这段文字滚到中央时，右侧代码块会高亮第 3-5 行：@step1
+## 2.1 数据模拟
+生成虚拟时间序列：@code
 
-:::{#step1}
+:::{#code}
 ```{.python lineno="True"}
-def fib(n):
-    if n < 2: return 1
-    a, b = 1, 1
-    for i in range(2, n+1):
-        a, b = b, a+b
-    return b
+import numpy as np, pandas as pd
+ts = pd.Series(np.random.randn(100),
+               index=pd.date_range('2025', periods=100))
+ts.cumsum().plot()
 ```
 :::
 
-[@step1]{highlight="3-5" transition=0.8s}
+[@code]{highlight="3-4" transition=0.7s}
+
+## 2.2 可视化
+同一张图，先整体再放大细节：@fig
+
+:::{#fig}
+![](https://via.placeholder.com/900x400?text=TimeSeries_Placeholder){#ts-fig}
 :::
 
-<!-- 第二章：占位图 + 缩放 + 平移 -->
+[@fig]{scale-by=1.0}          <!-- 初始 -->
+[@fig]{scale-by=2.0 pan-to="30%,0" transition=1s}
+:::
+
+# 3 结果
 :::{.cr-section}
 
-## 滚动 2 · 缩放+平移
-现在我们给图片加镜头语言，滚到此处时放大 1.8 倍并右移：@step2
+## 3.1 表格淡入
+关键指标如下：@tbl
 
-:::{#step2}
-![](https://via.placeholder.com/800x400?text=800x400+Placeholder){#holder}
+:::{#tbl}
+| 指标        | 2024  | 2025 |
+|-------------|-------|------|
+| 均值        | 0.02  | 0.05 |
+| 标准差      | 1.00  | 0.98 |
 :::
 
-[@step2]{scale-by=1.8 pan-to="35%,0" transition=1s}
-:::
+[@tbl]{fade-in transition=0.8s}
 
-<!-- 第三章：表格 + 淡入 -->
-:::{.cr-section}
+## 3.2 交叉高亮
+同一模型，不同行解读：@model
 
-## 滚动 3 · 整表淡入
-下面的内嵌表格会在文字到达视口中央时淡入：@step3
-
-:::{#step3}
-| 指标 | 2022 | 2023 |
-|------|------|------|
-| 访问量 | 12 k | 18 k |
-| 停留时长 | 65 s | 81 s |
-:::
-
-[@step3]{fade-in transition=1.2s}
-:::
-
-<!-- 第四章：代码输出 + 交叉高亮 -->
-:::{.cr-section}
-
-## 滚动 4 · 交叉高亮
-同一代码块，不同触发点高亮不同行：@step4-1 → @step4-2
-
-:::{#step4}
-```r
-1  library(ggplot2)
-2  df <- mtcars
-3  p <- ggplot(df, aes(wt, mpg)) +
-4      geom_point() +
-5      geom_smooth()
-6  print(p)
+:::{#model}
+```{.python lineno="True"}
+model = sm.OLS(y, X).fit()
+print(model.summary())
 ```
 :::
 
-[@step4-1]{highlight="1-2" transition=0.6s}  
-[@step4-2]{highlight="3-5" transition=0.6s}
+[@model]{highlight="1" transition=0.4s}  
+[@model]{highlight="2" transition=0.4s}
 :::
 
-<!-- 第五章：多列布局 + 字体覆盖 -->
+# 4 讨论 & 结论
 :::{.cr-section}
 
-## 滚动 5 · 字体+颜色覆盖
-通过 `cr-style` 把当前叙事块改成“浅底深字”并缩小字号：@step5
+## 4.1 讨论
+综合以上结果……@disc
 
-:::{#step5 style="font-size:0.95em; color:#333; background:#fff;"}
-这段文字块使用行内 style 覆盖，演示局部微调能力。
+:::{#disc}
+**【Sticky Final】**  
+Scrollytelling 让线性叙事与交互探索自然结合。
 :::
 
-[@step5]{fade-in}
+[@disc]{fade-in transition=1.2s}
+
+## 4.2 结论
+- 触发器语法简洁  
+- 参数可组合  
+- 适合 research log 场景
 :::
 ```
+
+---
+
+### 三、语法快问快答
+
+1. **叙事区域 vs 粘性块**  
+   - `.cr-section` = 滚动轴（读者正常浏览）  
+   - `:::{#id}` 内部 = 粘性轴（position:sticky，停留右侧或全屏）
+
+2. **触发器怎么写**  
+   - 行尾：`文字 @id`  
+   - 单独行：`[@id]{highlight="2-4" scale-by=1.8 transition=0.8s}`  
+   - 必须和某个 `#id` 完全同名，否则事件无人接收。
+
+3. **事件连接参数**  
+   本次示例已把 6 个官方参数全部用了一遍，可直接复制改值。
+
+4. **目录能加吗？**  
+   - 只要在 YAML 写 `toc: true`，Quarto 会自动把 `##` / `###` 收入侧边目录，和 closeread 无冲突。
+
+5. **宽度设置规则**  
+   - `narrative-overlay-max-width` 官方建议 **420-480 px** 较舒服 ，示例用 460 px；  
+   - 移动端会自动收缩到 `min-width`（260 px），再大可能挤占 sticky 空间。
+
+把文件丢进 GitHub Desktop → commit → push，即可得到带目录、可滚动、多镜头语言的 research log 页面。祝玩得开心！
