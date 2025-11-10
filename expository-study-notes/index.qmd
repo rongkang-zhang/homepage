@@ -17,5 +17,5 @@ listing:
   page-size: 20
 ---
 
-> Below is a concise overview of all subjects. Click any entry to browse the full set of notes on this site, or download the PDFs compiled with Overleaf.
-
+> The following section presents a synoptic index of all thematic areas. Each hyperlinked entry leads to the complete set of lecture notes hosted on this repository; ancillary PDFs generated via Overleaf are likewise available for download.  
+> All materials are open-access and version-controlled through GitHub/Quarto.
