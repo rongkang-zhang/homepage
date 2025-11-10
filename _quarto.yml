@@ -44,6 +44,9 @@ website:
       - text: Conferences, Workshops<br>& Schools Attended
         icon: calendar-event
         href: conferences-attended/index.html
+      - text: Research Logs
+        icon: calendar-event
+        href: research-logs/index.html
     right:
       - text: '<img src="https://plausible.io/rongkang-zhang.github.io/badge.svg" alt="online"/>'
         href: stats.html

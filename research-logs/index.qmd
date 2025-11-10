@@ -1,0 +1,112 @@
+---
+title: "Closeread 全参数速览"
+subtitle: "零图片版，复制即可运行"
+format:
+  closeread-html:
+    cr-style:
+      narrative-overlay-max-width: 380px
+      narrative-font-size: 1.05rem
+      section-background-color: "#fafafa"
+      narrative-background-color-overlay: darkslategrey
+      narrative-text-color-overlay: "#e2e2e2"
+---
+
+Hello World! Please read my Closeread story below.
+
+:::{.cr-section}
+
+Closeread enables scrollytelling.
+
+Draw your readers attention with focus effects. @cr-features
+
+:::{#cr-features}
+1. Highlighting
+2. Zooming
+3. Panning
+:::
+
+:::
+
+<!-- 第一章：纯文字 + 行号高亮 -->
+:::{.cr-section}
+
+## 滚动 1 · 行号高亮
+这段文字滚到中央时，右侧代码块会高亮第 3-5 行：@step1
+
+:::{#step1}
+```{.python lineno="True"}
+def fib(n):
+    if n < 2: return 1
+    a, b = 1, 1
+    for i in range(2, n+1):
+        a, b = b, a+b
+    return b
+```
+:::
+
+[@step1]{highlight="3-5" transition=0.8s}
+:::
+
+<!-- 第二章：占位图 + 缩放 + 平移 -->
+:::{.cr-section}
+
+## 滚动 2 · 缩放+平移
+现在我们给图片加镜头语言，滚到此处时放大 1.8 倍并右移：@step2
+
+:::{#step2}
+![](https://via.placeholder.com/800x400?text=800x400+Placeholder){#holder}
+:::
+
+[@step2]{scale-by=1.8 pan-to="35%,0" transition=1s}
+:::
+
+<!-- 第三章：表格 + 淡入 -->
+:::{.cr-section}
+
+## 滚动 3 · 整表淡入
+下面的内嵌表格会在文字到达视口中央时淡入：@step3
+
+:::{#step3}
+| 指标 | 2022 | 2023 |
+|------|------|------|
+| 访问量 | 12 k | 18 k |
+| 停留时长 | 65 s | 81 s |
+:::
+
+[@step3]{fade-in transition=1.2s}
+:::
+
+<!-- 第四章：代码输出 + 交叉高亮 -->
+:::{.cr-section}
+
+## 滚动 4 · 交叉高亮
+同一代码块，不同触发点高亮不同行：@step4-1 → @step4-2
+
+:::{#step4}
+```r
+1  library(ggplot2)
+2  df <- mtcars
+3  p <- ggplot(df, aes(wt, mpg)) +
+4      geom_point() +
+5      geom_smooth()
+6  print(p)
+```
+:::
+
+[@step4-1]{highlight="1-2" transition=0.6s}  
+[@step4-2]{highlight="3-5" transition=0.6s}
+:::
+
+<!-- 第五章：多列布局 + 字体覆盖 -->
+:::{.cr-section}
+
+## 滚动 5 · 字体+颜色覆盖
+通过 `cr-style` 把当前叙事块改成“浅底深字”并缩小字号：@step5
+
+:::{#step5 style="font-size:0.95em; color:#333; background:#fff;"}
+这段文字块使用行内 style 覆盖，演示局部微调能力。
+:::
+
+[@step5]{fade-in}
+:::
+```
