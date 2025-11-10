@@ -13,6 +13,7 @@ project:
 
 website:
   title: "Rong-Kang Zhang"
+  site-url: "https://rongkang-zhang.github.io/homepage/"
   favicon: assets/pictures/web-logo-7.png
   description: "Higher category | Grothendieck toposes | Chiral representation theory"
   # ==========  1. 右上角 “编辑 / 提 Issue” 按钮  ==========
@@ -27,6 +28,8 @@ website:
   cookie-consent: true           # ← 新增
   navbar:
     logo: "assets/pictures/web-logo-7.png"
+    logo-alt: "Site logo"
+    logo-href: "/"                     # 点击 logo 回到首页
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
@@ -67,11 +70,12 @@ website:
       - text: "{{< ai orcid >}}"
         href: "https://orcid.org/你的ID"
   page-footer:
-      left: |
-        Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).<br>
-        © 2025 Rong-Kang Zhang · Last updated: {{< meta date >}} ·
-        <a href="cookie-policy.html">Cookie Policy</a> ·
-        <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a>
+    left: |
+      <img src="assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">
+      Made with [Quarto](https://quarto.org/ ) and managed via [Git](https://git-scm.com/ ) & [GitHub Desktop](https://desktop.github.com/ ).<br>
+      © 2025 Rong-Kang Zhang · Last updated: {{< meta date >}} ·
+      <a href="cookie-policy.html">Cookie Policy</a> ·
+      <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a>
 
 format:
   html:
