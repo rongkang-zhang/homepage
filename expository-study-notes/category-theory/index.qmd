@@ -29,10 +29,12 @@ csl: ../../american-mathematical-society.csl
 eq-prefix: "Eq."
 fig-prefix: "Fig."
 tbl-prefix: "Tbl."
+thm-prefix: "Thm."
 crossref:
   fig-title: "Figure"         # caption 前缀
   tbl-title: "Table"
   eq-title: "Equation"
+  thm-title: "Theorem"
 filters:
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
   - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
@@ -41,6 +43,14 @@ filters:
 environments:                 # 把 div 转成 LaTeX 环境
   framedshaded: framedshaded  # 左边是 div-class，右边是环境名
   lrbox: lrbox
+  theorem: theorem
+  lemma: lemma
+  definition: definition
+  proposition: proposition
+  corollary: corollary
+  remark: remark
+  example: example
+  proof: proof
 tikz:
   cache: false
   save-tex: true  # Enable saving intermediate .tex files
@@ -53,17 +63,106 @@ lightbox:
   css-class: "my-css-class"
 ---
 
+# Category Theory
+
+:::{#thm-yoneda .theorem}
+Yoneda Lemma: ...
+:::
+See Thm. @thm-yoneda.
+
+:::{#thm-yoneda .theorem}
+For any locally small category $\mathcal{C}$ and any object $A \in \mathcal{C}$，the functor
+$\mathcal{C}(A, -)$ preserves limits.
+:::
+
+See **Thm. @thm-yoneda**.
+
+:::{#lem-mono .lemma}
+Every full and faithful functor reflects isomorphisms.
+:::
+
+See **Lem. @lem-mono**.
+
+:::{#def-adj .definition}
+An **adjunction** consists of a pair of functors
+$L \colon \mathcal{C} \rightleftarrows \mathcal{D} \colon R$
+together with a natural isomorphism
+$\mathcal{D}(LA, B) \cong \mathcal{C}(A, RB)$.
+:::
+
+See **Def. @def-adj**.
+
+:::{#cor-yoneda .corollary}
+Any functor category $[\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ is complete.
+:::
+
+See **Cor. @cor-yoneda**.
+
+:::{#prop-reflect .proposition}
+Left adjoints preserve colimits.
+:::
+
+See **Prop. @prop-reflect**.
+
+:::{#rem-yoneda .remark}
+The Yoneda embedding is not surjective on objects in general.
+:::
+
+See **Rem. @rem-yoneda**.
+
+:::{#ex-yoneda .example}
+The functor $\mathbf{Set}(1, -)$ is naturally isomorphic to the identity.
+:::
+
+See **Ex. @ex-yoneda**.
+
+$$
+\begin{split}
+\lim_{x \to 0} \frac{\sin x}{x} &= 1 \\
+&= \lim_{x \to 0} \frac{\tan x}{x}
+\end{split}
+$$
+
+\begin{equation}
+\label{eq:lim}
+\begin{split}
+\lim_{x \to 0} \frac{\sin x}{x} &= 1 \\
+&= \lim_{x \to 0} \frac{\tan x}{x}
+\end{split}
+\end{equation}
+
+@eq:lim
+
+$$\label{eq:adj}
+L \dashv R
+$$
+
+See Eq. @eq:adj .
+
 ![Picture 1](./pictures/1.png)
 
 # Category theory
 
+
+
 ```{.python include="demo.py"}
 ```
 
+:::{#thm-yoneda .theorem}
+For any locally small category $\mathcal{C}$ and any object $A \in \mathcal{C}$，
+the functor $\mathcal{C}(A, -)$ preserves limits.
+:::
+
+See Thm. @thm-yoneda.
+
 See [@maclane1998]
 
-$$ \label{eq:adj} L \dashv R $$
-See Eq. @eq:adj 。
+\begin{equation}
+{#eq:adj .equation}
+L \dashv R
+\end{equation}
+
+
 
 ## Introduction
 
