@@ -43,6 +43,9 @@ website:
       - text: "Extemporaneous<br>Reconstruction Talks"
         icon: lightning
         href: extemporaneous-reconstruction-talks/index.qmd
+      - text: "Notes on Committed Sustained Research Projects"
+        icon: lightning
+        href: notes-on-committed-sustained-research-projects/20251110-now-a-topos-theoretic-bridge-for-holographic-entanglement-entropy/index.qmd
       - text: Learning&nbsp;<small>▼</small>
         icon: book
         menu:
