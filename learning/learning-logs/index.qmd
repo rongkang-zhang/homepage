@@ -5,8 +5,7 @@ date: last-modified
 toc: false
 categories: [Category Theory]
 page-layout: full
-bibliography: ../expository-study-notes/category-theory/refs.bib
-csl: ../american-mathematical-society.csl
+csl: ../../american-mathematical-society.csl
 ---
 
 | Overall Category                            | Topics Covered                                               | References Adopted |

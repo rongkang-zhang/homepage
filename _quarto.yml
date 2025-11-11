@@ -33,7 +33,7 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
-      - text: Expository<br>Study Notes
+      - text: Expository<br>Study Notes&nbsp;<small>▼</small>
         icon: journal-text
         menu:
             - text: Overview
@@ -43,6 +43,17 @@ website:
       - text: "Extemporaneous<br>Reconstruction Talks"
         icon: lightning
         href: extemporaneous-reconstruction-talks/index.qmd
+      - text: Learning&nbsp;<small>▼</small>
+        icon: book
+        menu:
+            - text: Topics to Learn
+              href: topics-to-learn/index.html
+            - text: Learning Progress
+              href: learning-progress/index.html
+            - text: Learning Logs
+              href: learning-logs/index.html
+            - text: List of Textbooks I've Studied
+              href: list-of-textbooks-i've-studied/index.html
       - text: "Topics to<br>Learn"
         icon : list-check
         href: topics-to-learn/index.html
