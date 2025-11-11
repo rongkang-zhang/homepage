@@ -13,7 +13,7 @@ abstract: >
   Functors enter next as structure-preserving translations between categories,
   preparing the ground for natural transformations—"maps of functors" whose
   commutative-diagram discipline is illustrated with explicit calculations.
-  The Yoneda Lemma is then derived step-by-step, showing how every object
+  The Yoneda Lemma is then derived step-by-step, showing how every fobject
   lives vicariously through its representable functor and why "proof by
   probing" becomes a legitimate strategy.
   With this embedding tool in hand I explore limits and colimits
@@ -89,118 +89,65 @@ lightbox:
 
 # Category Theory
 
+## Code Examples
+
+### Haskell Implementation
 ```{.haskell include="categoryDemo.hs"}
 ```
 
-:::{#thm-yoneda .theorem}
-For any locally small category $\mathcal{C}$ and any object $A \in \mathcal{C}$，the functor
-$\mathcal{C}(A, -)$ preserves limits.
-:::
-
-See Thm. @thm-yoneda.
-
-:::{#lem-mono .lemma}
-Every full and faithful functor reflects isomorphisms.
-:::
-
-See **Lem. @lem-mono**.
-
-:::{#def-adj .definition}
-An **adjunction** consists of a pair of functors
-$L \colon \mathcal{C} \rightleftarrows \mathcal{D} \colon R$
-together with a natural isomorphism
-$\mathcal{D}(LA, B) \cong \mathcal{C}(A, RB)$.
-:::
-
-See **Def. @def-adj**.
-
-:::{#cor-yoneda .corollary}
-Any functor category $[\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ is complete.
-:::
-
-See **Cor. @cor-yoneda**.
-
-:::{#prop-reflect .proposition}
-Left adjoints preserve colimits.
-:::
-
-See **Prop. @prop-reflect**.
-
-:::{#cor-yoneda .corollary}
-Any functor category $[\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ is complete.
-:::
-See **Cor. @cor-yoneda**.
-
-:::{#ex-yoneda .example}
-The functor $\mathbf{Set}(1, -)$ is naturally isomorphic to the identity.
-:::
-See **Ex. @ex-yoneda**.
-
-\begin{equation}
-\label{eq:adj}
-L \dashv R
-\end{equation}
-See Eq. @eq:adj.
-
-:::{#rem-yoneda .remark}
-The Yoneda embedding is not surjective on objects in general.
-:::
-
-See **Rem. @rem-yoneda**.
-
-:::{#ex-yoneda .example}
-The functor $\mathbf{Set}(1, -)$ is naturally isomorphic to the identity.
-:::
-
-See **Ex. @ex-yoneda**.
-
-$$
-\begin{split}
-\lim_{x \to 0} \frac{\sin x}{x} &= 1 \\
-&= \lim_{x \to 0} \frac{\tan x}{x}
-\end{split}
-$$
-
-\begin{equation}
-\label{eq:lim}
-\begin{split}
-\lim_{x \to 0} \frac{\sin x}{x} &= 1 \\
-&= \lim_{x \to 0} \frac{\tan x}{x}
-\end{split}
-\end{equation}
-
-@eq:lim
-
-$$\label{eq:adj}
-L \dashv R
-$$
-
-See Eq. @eq:adj .
-
-![Picture 1](./pictures/1.png)
-
-# Category theory
-
-
-
+### Python Implementation
 ```{.python include="demo.py"}
 ```
 
+## Foundational Definitions & Theorems
+
+### Theorem: Hom-Functor Preserves Limits
 :::{#thm-yoneda .theorem}
-For any locally small category $\mathcal{C}$ and any object $A \in \mathcal{C}$，
-the functor $\mathcal{C}(A, -)$ preserves limits.
+For any locally small category $\mathcal{C}$ and any object $A \in \mathcal{C}$, the functor $\mathcal{C}(A, -)$ preserves limits.
+:::
+See **Thm. @thm-yoneda** [@maclane1998].
+
+### Lemma: Full & Faithful Functors Reflect Isomorphisms
+:::{#lem-mono .lemma}
+Every full and faithful functor reflects isomorphisms.
+:::
+See **Lem. @lem-mono** .
+
+### Definition: Adjunction
+:::{#def-adj .definition}
+An **adjunction** consists of a pair of functors $L \colon \mathcal{C} \rightleftarrows \mathcal{D} \colon R$ together with a natural isomorphism $\mathcal{D}(LA, B) \cong \mathcal{C}(A, RB)$.
 :::
 
-See Thm. @thm-yoneda.
+### Corollary: Completeness of Functor Categories
+:::{#cor-yoneda .corollary}
+Any functor category $[\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ is complete.
+:::
+See **Cor. @cor-yoneda** .
 
-See [@maclane1998]
+### Proposition: Left Adjoints Preserve Colimits
+:::{#prop-reflect .proposition}
+Left adjoints preserve colimits.
+:::
+See **Prop. @prop-reflect** [@maclane1998].
 
-\begin{equation}
-{#eq:adj .equation}
-L \dashv R
-\end{equation}
+## Examples & Remarks
 
+### Example: Yoneda Embedding for Sets
+:::{#ex-yoneda .example}
+The functor $\mathbf{Set}(1, -)$ is naturally isomorphic to the identity.
+:::
+See **Ex. @ex-yoneda** .
 
+### Remark: Non-Surjectivity of Yoneda Embedding
+:::{#rem-yoneda .remark}
+The Yoneda embedding is not surjective on objects in general.
+:::
+See **Rem. @rem-yoneda**.
+
+## Figures
+
+![Picture 1: Illustration of category theory concept.](./pictures/1.png){#fig:picture1}
+See **Fig. @fig:picture1**.
 
 ## Introduction
 
