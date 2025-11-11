@@ -1,0 +1,46 @@
+---
+title: "Extemporaneous Reconstruction Talks by Subjects"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+abstract: >
+  "Extemporaneous Reconstruction by Subjects" is anchored in Kawahigashi's maxim:
+  authentic mastery of a mathematical subject is measured by one's ability
+  to reconstruct its entire core ex tempore,
+  armed only with the internal skeleton of the theory.
+  The channel focuses on pure mathematics
+  (category theory, algebraic topology, real and complex analysis, number theory)
+  and releases unscripted white-board videos
+  in which the author, without notes or prior drafting, rebuilds the edifice from scratch.
+  Each reconstruction begins with minimal axiomatic or intuitive premises,
+  ascends through sequentially layered concepts,
+  and foregrounds the motivation behind every choice
+  (e.g., why associativity of morphisms is non-negotiable,
+  or why the Yoneda lemma functions as a bridge between objects and functors).
+  Hidden proof-scaffolding—auxiliary lemmas, counter-examples,
+  the dialectic of concrete instances and abstract generalisation—
+  is made visible in real time,
+  capturing the authentic dynamics of mathematical cognition:
+  hesitation, clarification, and the gradual crystallisation of logical structure.
+  For advanced learners the series models "deep learning",
+  demonstrating how to internalise mathematics as a connected network
+  rather than a list of facts;
+  for educators and researchers it opens a window onto the epistemology of reconstruction,
+  revealing how experts retrieve, organise and communicate knowledge under immediacy constraints
+  while mirroring the inherent aesthetic of the discipline.
+  Ultimately the channel enacts the conviction that mathematical knowledge
+  is not merely learned but re-created through active engagement
+  with its foundational framework—the very engine of mathematical invention.
+page-layout: full
+listing:
+  contents: "*/index.qmd"
+  type: table
+  date-format: "YYYY-MM-DD"
+  categories: false
+  fields: [title, file-modified]
+  filter-ui: [title, file-modified] # 让用户可以按难度筛选
+  sort: ["weight desc", "title asc"]
+  sort-ui: true
+  table-striped: true
+  page-size: 20
+---

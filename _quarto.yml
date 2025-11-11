@@ -42,7 +42,7 @@ website:
               href: expository-study-notes/category-theory/index.html
       - text: "Extemporaneous<br>Reconstruction Talks"
         icon: lightning
-        href: extemporaneous-reconstruction/index.qmd
+        href: extemporaneous-reconstruction-talks/index.qmd
       - text: "Topics to<br>Learn"
         icon : list-check
         href: topics-to-learn/index.html

@@ -199,7 +199,7 @@ cookieconsent.run({
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../extemporaneous-reconstruction/index.html"> <i class="bi bi-lightning" role="img">
+    <a class="nav-link" href="../extemporaneous-reconstruction-talks/index.html"> <i class="bi bi-lightning" role="img">
 </i> 
 <span class="menu-text">Extemporaneous<br>Reconstruction Talks</span></a>
   </li>  
@@ -281,16 +281,16 @@ cookieconsent.run({
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-background-color-overlay: #d6e9ff;
---cr-narrative-overlay-max-width: 480px;
---cr-narrative-overlay-min-width: 260px;
---cr-section-background-color: #eef5ff;
---cr-narrative-text-color-overlay: #003366;
+          --cr-section-background-color: #eef5ff;
 --cr-narrative-font-family: “LXGW WenKai”, sans-serif;
+--cr-narrative-sidebar-width: 1fr;
+--cr-narrative-text-color-overlay: #003366;
+--cr-narrative-overlay-max-width: 480px;
+--cr-narrative-font-size: 0.95rem;
+--cr-narrative-background-color-overlay: #d6e9ff;
+--cr-narrative-overlay-min-width: 260px;
 --cr-narrative-border-radius: 16px;
 --cr-narrative-outer-margin: 2rem;
---cr-narrative-font-size: 0.95rem;
---cr-narrative-sidebar-width: 1fr;
         }
       </style>
     
@@ -584,7 +584,7 @@ cookieconsent.run({
 <strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-intro" data-pan-to="50%,50%" data-scale-by=".5">
+<div class="trigger new-trigger" data-scale-by=".5" data-focus-on="cr-intro" data-pan-to="50%,50%">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -600,7 +600,7 @@ cookieconsent.run({
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-fig-trial" data-pan-to="50%,50%" data-scale-by="1.5">
+<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="50%,50%" data-focus-on="cr-fig-trial">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -626,7 +626,7 @@ cookieconsent.run({
 <p>生成虚拟时间序列，并高亮关键代码行：</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="code" data-transition="0.7s" data-highlight="3-4">
+<div class="trigger new-trigger" data-transition="0.7s" data-highlight="3-4" data-focus-on="code">
 <div class="narrative">
 
 </div>
