@@ -5,31 +5,29 @@ date: last-modified
 weight: 7
 author: "Rong-Kang Zhang"
 abstract: >
-  This paper presents a comprehensive, interdisciplinary exploration of category theory,
-  covering foundational definitions, core theorems, and cross-domain applications
-  in mathematics and computer science.
-  It begins with the formalization of categories—defined by a class of objects,
-  disjoint sets of morphisms between object pairs, and an associative composition
-  operation with unique identity morphisms—with emphasis on locally small categories
-  and constructions like dual categories.
-  Key concepts include natural transformations, framed as "morphisms of functors"
-  that consist of object-specific components satisfying commutative diagram conditions,
-  enabling consistent transformations between functors while preserving categorical structure.
-  The Yoneda Lemma is highlighted as a central result, linking representable functors
-  to natural transformations and enabling the embedding of categories into functor categories.
-  Adjoint functors, a cornerstone of categorical relationships, are rigorously defined
-  via natural bijections between hom-sets, with concrete examples including free group
-  constructions and Stone–Čech compactification as manifestations of "optimal solutions"
-  with universal properties.
-  The document further explores limits and colimits, subobjects, pullbacks, and exponential objects,
-  leading to discussions of Cartesian closed categories and Heyting algebras.
-  Integrating interdisciplinary perspectives, it connects category theory to computer science:
-  treating data types as algebras for endofunctors and computational processes as coalgebras,
-  while explaining how equivalence theorems often arise from adjoint functor-induced
-  subcategory equivalences.
-  Rigorous definitions, theorems, and examples are complemented by logical derivations,
-  aligning with foundational texts such as Mac Lane’s *Categories for the Working Mathematician*
-  and educational resources from Algant CNRS and Trinity College Dublin.
+  These notes follow a textbook-style roadmap through category theory,
+  moving from concrete definitions to abstract machinery and onward to cross-domain applications.
+  I open with the core anatomy of a category: objects, hom-sets, associative composition
+  and identity arrows; emphasis is placed on locally-small categories and the dual-category
+  trick that instantly doubles one’s supply of examples.
+  Functors enter next as structure-preserving translations between categories,
+  preparing the ground for natural transformations—"maps of functors" whose
+  commutative-diagram discipline is illustrated with explicit calculations.
+  The Yoneda Lemma is then derived step-by-step, showing how every object
+  lives vicariously through its representable functor and why "proof by
+  probing" becomes a legitimate strategy.
+  With this embedding tool in hand I explore limits and colimits
+  (products, equalizers, pull-/push-outs) and spell out their universal
+  properties diagram-by-diagram; adjoint functors appear soon after as
+  "optimal solution providers", exemplified by free groups and the
+  Stone–Čech compactification.
+  A final chapter bridges to computer science: algebraic data types as
+  algebras for endofunctors, concurrent processes as coalgebras, and
+  how monadic composition captures side effects—culminating in the
+  Beck-style monadicity theorem.
+  Throughout, definitions, theorems and exercises alternate with
+  motivational remarks, mirroring the rhythm of a lecture course and
+  keeping the abstract landscape navigable.
 categories:
   - Mathematical Logic
   - Category Theory
