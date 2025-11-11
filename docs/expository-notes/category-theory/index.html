@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2025-11-11">
 <meta name="keywords" content="Natural Transformation, Functor, Adjoint Functor, Limits">
 
-<title>Category Theory – Rong-Kang Zhang</title>
+<title>Category Theory – Rong-KangZhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,9 +103,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-49a824ff064150fa59632921ab93e189.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-478599713a046a9e77e9acea15774936.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c10aac9ff417b9cd9fe853fb399d8831.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-478599713a046a9e77e9acea15774936.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a5d616a64781a5e7fa5b2e03aac50ee9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-eb29b2b302de054cad96c1a3b139f53d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a5d616a64781a5e7fa5b2e03aac50ee9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
@@ -196,16 +196,16 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Category Theory – Rong-Kang Zhang">
+<meta property="og:title" content="Category Theory – Rong-KangZhang">
 <meta property="og:description" content="These notes follow a textbook-style roadmap through category theory, moving from concrete definitions to abstract machinery and onward to cross-domain applications. I open with the core anatomy of a category: objects, hom-sets, associative composition and identity arrows; emphasis is placed on locally-small categories and the dual-category trick that instantly doubles one’s supply of examples. Functors enter next as structure-preserving translations between categories, preparing the ground for natural transformations—“maps of functors” whose commutative-diagram discipline is illustrated with explicit calculations. The Yoneda Lemma is then derived step-by-step, showing how every fobject lives vicariously through its representable functor and why “proof by probing” becomes a legitimate strategy. With this embedding tool in hand I explore limits and colimits (products, equalizers, pull-/push-outs) and spell out their universal properties diagram-by-diagram; adjoint functors appear soon after as “optimal solution providers”, exemplified by free groups and the Stone–Čech compactification. A final chapter bridges to computer science: algebraic data types as algebras for endofunctors, concurrent processes as coalgebras, and how monadic composition captures side effects—culminating in the Beck-style monadicity theorem. Throughout, definitions, theorems and exercises alternate with motivational remarks, mirroring the rhythm of a lecture course and keeping the abstract landscape navigable.">
-<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/expository-study-notes/category-theory/pictures/1.png">
-<meta property="og:site_name" content="Rong-Kang Zhang">
+<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/expository-notes/category-theory/pictures/1.png">
+<meta property="og:site_name" content="Rong-Kang<br>Zhang">
 <meta property="og:image:alt" content="Picture 1: Illustration of category theory concept.">
 <meta property="og:image:height" content="1032">
 <meta property="og:image:width" content="1086">
-<meta name="twitter:title" content="Category Theory – Rong-Kang Zhang">
+<meta name="twitter:title" content="Category Theory – Rong-KangZhang">
 <meta name="twitter:description" content="These notes follow a textbook-style roadmap through category theory, moving from concrete definitions to abstract machinery and onward to cross-domain applications. I open with the core anatomy of a category: objects, hom-sets, associative composition and identity arrows; emphasis is placed on locally-small categories and the dual-category trick that instantly doubles one’s supply of examples. Functors enter next as structure-preserving translations between categories, preparing the ground for natural transformations—“maps of functors” whose commutative-diagram discipline is illustrated with explicit calculations. The Yoneda Lemma is then derived step-by-step, showing how every fobject lives vicariously through its representable functor and why “proof by probing” becomes a legitimate strategy. With this embedding tool in hand I explore limits and colimits (products, equalizers, pull-/push-outs) and spell out their universal properties diagram-by-diagram; adjoint functors appear soon after as “optimal solution providers”, exemplified by free groups and the Stone–Čech compactification. A final chapter bridges to computer science: algebraic data types as algebras for endofunctors, concurrent processes as coalgebras, and how monadic composition captures side effects—culminating in the Beck-style monadicity theorem. Throughout, definitions, theorems and exercises alternate with motivational remarks, mirroring the rhythm of a lecture course and keeping the abstract landscape navigable.">
-<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/expository-study-notes/category-theory/pictures/1.png">
+<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/expository-notes/category-theory/pictures/1.png">
 <meta name="twitter:image:alt" content="Picture 1: Illustration of category theory concept.">
 <meta name="twitter:image-height" content="1032">
 <meta name="twitter:image-width" content="1086">
@@ -386,7 +386,7 @@ window.Quarto = {
     <img src="../../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../">
-    <span class="navbar-title">Rong-Kang Zhang</span>
+    <span class="navbar-title">Rong-Kang<br>Zhang</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -396,32 +396,40 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-expositorybrstudy-notesnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-expositorybrnotesnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-journal-text" role="img">
 </i> 
- <span class="menu-text">Expository<br>Study Notes&nbsp;<small>▼</small></span>
+ <span class="menu-text">Expository<br>Notes&nbsp;<small>▼</small></span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-expositorybrstudy-notesnbspsmall▼small">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-expositorybrnotesnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../expository-study-notes/index.html">
+    <a class="dropdown-item" href="../../expository-notes/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../expository-study-notes/category-theory/index.html">
+    <a class="dropdown-item" href="../../expository-notes/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../extemporaneous-reconstruction-talks/index.html"> <i class="bi bi-lightning" role="img">
+    <a class="nav-link" href="../../extemporaneous-talks/index.html"> <i class="bi bi-lightning" role="img">
 </i> 
-<span class="menu-text">Extemporaneous<br>Reconstruction Talks</span></a>
+<span class="menu-text">Extemporaneous<br>Talks&nbsp;<small>▼</small></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../notes-on-committed-sustained-research-projects/20251110-now-a-topos-theoretic-bridge-for-holographic-entanglement-entropy/index.html"> <i class="bi bi-lightning" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-span-stylecolorc7254eresearchnbspsmall▼smallspan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-list-check" role="img">
 </i> 
-<span class="menu-text">Notes on Committed Sustained Research Projects</span></a>
+ <span class="menu-text"><span style="color:#c7254e">Research&nbsp;<small>▼</small></span></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-span-stylecolorc7254eresearchnbspsmall▼smallspan">    
+        <li>
+    <a class="dropdown-item" href="../../research/1/index.html">
+ <span class="dropdown-text">1-20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-learningnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-book" role="img">
@@ -448,14 +456,9 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../topics-to-learn/index.html"> <i class="bi bi-list-check" role="img">
+    <a class="nav-link" href="../../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
-<span class="menu-text">Topics to<br>Learn</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../conferences-attended/index.html"> <i class="bi bi-calendar-event" role="img">
-</i> 
-<span class="menu-text">Conferences, Workshops<br>&amp; Schools Attended</span></a>
+<span class="menu-text">Conferences<br>Attended</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../research-logs/index.html"> <i class="bi bi-calendar-event" role="img">

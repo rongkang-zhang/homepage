@@ -553,3 +553,13 @@ a:hover { color: var(--link-hover); }
     border-bottom: 1px solid rgba(107, 114, 128, 0.2);
     padding-bottom: 4px;
 }
+
+/* 导航文字更小更紧凑 */
+.navbar-nav .nav-link {
+  font-size: 0.9rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+/* 下拉菜单同宽，防止超长 */
+.dropdown-menu { min-width: 12rem; }
+
