@@ -2,6 +2,16 @@
 title: "Expository Study Notes by Subjects"
 author: "Rong-Kang Zhang"
 date: last-modified
+abstract: >
+  This page presents a synoptic index of expository study notes produced during
+  my self-study of foundational and frontier topics in mathematics and
+  theoretical physics.  The notes are arranged by subject area and each
+  hyperlinked entry provides a self-contained exposition aimed at advanced
+  undergraduates or beginning graduate students who wish to master the material
+  in a systematic manner.  All resources are open-access: the web versions can
+  be read online directly, while ancillary PDFs compiled via Overleaf are
+  available for download.  Both formats are version-controlled through
+  GitHub/Quarto to ensure continuous updating and public traceability.
 page-layout: full
 toc: false
 listing:
