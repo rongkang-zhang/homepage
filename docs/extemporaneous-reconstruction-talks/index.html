@@ -91,9 +91,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-categories','listing-core-references','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-file-modified"],
+      searchColumns: ["listing-title","listing-categories","listing-core-references","listing-file-modified"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -517,6 +517,14 @@ window.Quarto = {
 </th>
 
 <th>
+Categories
+</th>
+
+<th>
+core-references
+</th>
+
+<th>
 Modified
 </th>
 
@@ -527,6 +535,12 @@ Modified
 <tr data-index="0" data-categories="TWF0aGVtYXRpY2FsJTIwTG9naWMlMkNDYXRlZ29yeSUyMFRoZW9yeQ==" data-listing-date-sort="1762874389000" data-listing-file-modified-sort="1762874389614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../extemporaneous-reconstruction-talks/category-theory/index.html" class="title listing-title">Category Theory</a>
+</td>
+<td>
+<span class="listing-categories">Mathematical Logic, Category Theory</span>
+</td>
+<td>
+<span class="listing-core-references">Mac Lane 1998; Awodey 2010</span>
 </td>
 <td>
 <span class="listing-file-modified">2025-11-11</span>
