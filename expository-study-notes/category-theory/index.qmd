@@ -4,6 +4,32 @@ core-references: "Mac Lane 1998"
 date: last-modified
 weight: 7
 author: "Rong-Kang Zhang"
+abstract: >
+  This paper presents a comprehensive, interdisciplinary exploration of category theory,
+  covering foundational definitions, core theorems, and cross-domain applications
+  in mathematics and computer science.
+  It begins with the formalization of categories—defined by a class of objects,
+  disjoint sets of morphisms between object pairs, and an associative composition
+  operation with unique identity morphisms—with emphasis on locally small categories
+  and constructions like dual categories.
+  Key concepts include natural transformations, framed as "morphisms of functors"
+  that consist of object-specific components satisfying commutative diagram conditions,
+  enabling consistent transformations between functors while preserving categorical structure.
+  The Yoneda Lemma is highlighted as a central result, linking representable functors
+  to natural transformations and enabling the embedding of categories into functor categories.
+  Adjoint functors, a cornerstone of categorical relationships, are rigorously defined
+  via natural bijections between hom-sets, with concrete examples including free group
+  constructions and Stone–Čech compactification as manifestations of "optimal solutions"
+  with universal properties.
+  The document further explores limits and colimits, subobjects, pullbacks, and exponential objects,
+  leading to discussions of Cartesian closed categories and Heyting algebras.
+  Integrating interdisciplinary perspectives, it connects category theory to computer science:
+  treating data types as algebras for endofunctors and computational processes as coalgebras,
+  while explaining how equivalence theorems often arise from adjoint functor-induced
+  subcategory equivalences.
+  Rigorous definitions, theorems, and examples are complemented by logical derivations,
+  aligning with foundational texts such as Mac Lane’s *Categories for the Working Mathematician*
+  and educational resources from Algant CNRS and Trinity College Dublin.
 categories:
   - Mathematical Logic
   - Category Theory
@@ -103,6 +129,22 @@ Left adjoints preserve colimits.
 :::
 
 See **Prop. @prop-reflect**.
+
+:::{#cor-yoneda .corollary}
+Any functor category $[\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ is complete.
+:::
+See **Cor. @cor-yoneda**.
+
+:::{#ex-yoneda .example}
+The functor $\mathbf{Set}(1, -)$ is naturally isomorphic to the identity.
+:::
+See **Ex. @ex-yoneda**.
+
+\begin{equation}
+\label{eq:adj}
+L \dashv R
+\end{equation}
+See Eq. @eq:adj.
 
 :::{#rem-yoneda .remark}
 The Yoneda embedding is not surjective on objects in general.
@@ -431,3 +473,113 @@ $$
 \begin{lrbox} … \end{lrbox}  
 
 而在 HTML 里它们只是带对应 class 的 `<div>`，方便你自行加 CSS。
+
+# Category Theory
+
+## 1. Foundational Definitions of Categories
+
+:::{#def-category .definition}
+A **category** $\mathcal{C}$ consists of the following data:
+1. A class $\text{ob}(\mathcal{C})$ whose elements are called *objects*;
+2. For every pair of objects $A, B \in \text{ob}(\mathcal{C})$, a set $\text{hom}_{\mathcal{C}}(A, B)$ 
+   (called *morphisms* from $A$ to $B$);
+3. For every triple of objects $A, B, C \in \text{ob}(\mathcal{C})$, a composition function:
+   $$\text{hom}_{\mathcal{C}}(A, B) \times \text{hom}_{\mathcal{C}}(B, C) \to \text{hom}_{\mathcal{C}}(A, C), 
+   \quad (f, g) \mapsto g \circ f$$
+satisfying three axioms:
+- (Disjointness) Morphism sets are disjoint (each morphism uniquely determines its domain and codomain);
+- (Associativity) For all $f \in \text{hom}(A,B)$, $g \in \text{hom}(B,C)$, $h \in \text{hom}(C,D)$, 
+  $(h \circ g) \circ f = h \circ (g \circ f)$;
+- (Identity) For every object $A$, there exists a unique *identity morphism* $\text{id}_A \in \text{hom}(A,A)$ 
+  such that $f \circ \text{id}_A = f$ (for all $f \in \text{hom}(A,B)$) and $\text{id}_A \circ g = g$ 
+  (for all $g \in \text{hom}(C,A)$).
+:::
+
+See **Def. @def-category**. For context on "locally small categories" (where $\text{hom}_{\mathcal{C}}(A,B)$ 
+is a set for all $A,B$) and "small categories" (where $\text{ob}(\mathcal{C})$ is a set), refer to [@algant2019].
+
+
+## 2. Dual Categories and Isomorphisms
+
+:::{#def-dual-category .definition}
+The **dual category** $\mathcal{C}^{\text{op}}$ of a category $\mathcal{C}$ has:
+- The same objects as $\mathcal{C}$ (i.e., $\text{ob}(\mathcal{C}^{\text{op}}) = \text{ob}(\mathcal{C})$);
+- Morphisms $\text{hom}_{\mathcal{C}^{\text{op}}}(A, B) = \text{hom}_{\mathcal{C}}(B, A)$ 
+  (all morphisms are reversed);
+- Composition $\circ_{\text{op}}$ defined by $f \circ_{\text{op}} g = g \circ f$ 
+  (where $\circ$ is composition in $\mathcal{C}$).
+:::
+
+See **Def. @def-dual-category**. This construction embodies the *duality principle*: any theorem about $\mathcal{C}$ 
+translates to a theorem about $\mathcal{C}^{\text{op}}$ by reversing morphisms (e.g., "products in $\mathcal{C}$" 
+become "coproducts in $\mathcal{C}^{\text{op}}$").
+
+:::{#def-isomorphism .definition}
+A morphism $f \in \text{hom}_{\mathcal{C}}(A, B)$ is an **isomorphism** if there exists a morphism 
+$g \in \text{hom}_{\mathcal{C}}(B, A)$ (called its *inverse*) such that $g \circ f = \text{id}_A$ 
+and $f \circ g = \text{id}_B$. If such an $f$ exists, $A$ and $B$ are *isomorphic* (written $A \cong B$).
+:::
+
+See **Def. @def-isomorphism**. The inverse of an isomorphism is unique (Exercise: Prove this using identity 
+morphism properties [@algant2019]).
+
+
+## 3. Natural Transformations (Morphisms of Functors)
+
+:::{#def-natural-transformation .definition}
+Let $F, G: \mathcal{C} \to \mathcal{D}$ be two functors between categories $\mathcal{C}$ and $\mathcal{D}$. 
+A **natural transformation** $\eta: F \Rightarrow G$ consists of:
+1. For every object $X \in \text{ob}(\mathcal{C})$, a *component morphism* $\eta_X \in \text{hom}_{\mathcal{D}}(F(X), G(X))$;
+2. A commutativity condition: For every morphism $f \in \text{hom}_{\mathcal{C}}(X, Y)$ in $\mathcal{C}$, 
+   the diagram
+   $$\begin{CD}
+   F(X) @>{\eta_X}>> G(X) \\
+   @V{F(f)}VV @VV{G(f)}V \\
+   F(Y) @>{\eta_Y}>> G(Y)
+   \end{CD}$$
+   commutes (i.e., $\eta_Y \circ F(f) = G(f) \circ \eta_X$).
+:::
+
+See **Def. @def-natural-transformation**. Examples include the double dual transformation for vector spaces 
+(associating each vector space $V$ to its double dual $V^{**}$) and the Hurewicz homomorphism in 
+algebraic topology [@naturaltrans2025].
+
+
+## 4. Adjoint Functors and Universal Properties
+
+:::{#def-adjunction .definition}
+An **adjunction** between categories $\mathcal{C}$ and $\mathcal{D}$ consists of:
+1. A pair of functors $F: \mathcal{D} \to \mathcal{C}$ (left adjoint) and $G: \mathcal{C} \to \mathcal{D}$ 
+   (right adjoint);
+2. For all $C \in \text{ob}(\mathcal{C})$ and $D \in \text{ob}(\mathcal{D})$, a natural bijection
+   $$\text{hom}_{\mathcal{C}}(F(D), C) \cong \text{hom}_{\mathcal{D}}(D, G(C)).$$
+Naturality means the bijection is consistent across all objects $C$ (via functors $\mathcal{C}(F(-), C)$ 
+and $\mathcal{D}(-, G(C))$) and $D$ (via functors $\mathcal{C}(F(D), -)$ and $\mathcal{D}(D, G(-))$). 
+We write $F \dashv G$.
+:::
+
+See **Def. @def-adjunction**. Adjunctions generalize "weak equivalences" between categories and arise from 
+universal constructions:
+- **Algebra**: The free group functor $F: \text{Set} \to \text{Grp}$ (associating a set to its free group) 
+  is left adjoint to the forgetful functor $G: \text{Grp} \to \text{Set}$ [@adjoint2025];
+- **Topology**: The Stone–Čech compactification functor is left adjoint to the inclusion functor of 
+  compact Hausdorff spaces into topological spaces [@adjoint2025].
+
+
+## 5. Computer Science Applications
+
+Category theory provides a foundational framework for computer science, as highlighted in [@tcd2014]:
+- **Algebraic Data Types**: Many data types (e.g., lists, trees) are *algebras for endofunctors* 
+  (functors from a category to itself);
+- **Computational Processes**: Dynamical systems and concurrent processes are modeled as 
+  *coalgebras for endofunctors*;
+- **Foundational Structures**: Cartesian closed categories (with exponential objects) correspond to 
+  typed λ-calculi, the basis of functional programming.
+
+:::{#ex-list-algebra .example}
+The list data type (over a set $X$) is an algebra for the endofunctor $F(Y) = 1 + X \times Y$ 
+(where $1$ is the terminal object). The algebra structure maps $\text{inl}(\star)$ to the empty list 
+and $\text{inr}(x, y)$ to the list $x :: y$ (cons operation).
+:::
+
+See **Ex. @ex-list-algebra**.
