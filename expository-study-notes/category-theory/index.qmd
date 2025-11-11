@@ -91,6 +91,9 @@ lightbox:
 
 # Category Theory
 
+```{.haskell include="categoryDemo.hs"}
+```
+
 :::{#thm-yoneda .theorem}
 Yoneda Lemma: ...
 :::
