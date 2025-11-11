@@ -422,3 +422,7 @@ a:hover { color: var(--link-hover); }
     color: #fffacd;          /* 悬停时更亮一点 */
   }
 }
+
+.my-css-class {
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}

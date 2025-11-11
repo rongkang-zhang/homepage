@@ -83,11 +83,15 @@ format:
       light: [cosmo, custom.scss]
       dark:  [darkly, custom.scss]
     toc: true
+    code-overflow: wrap       # 长代码自动折行，避免横向滚动条
+    link-external-newwindow: true # 外链默认新标签打开
     linkcolor: blue
     font-awesome: true
     html-math-method:
       method: mathjax
       url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     filters:
-      - latex-environment          # ← 只用短名，其余不动
-      - diagram
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua

@@ -2,6 +2,14 @@
 title: "Conferences, Workshops & Schools Attended"
 author: "Rong-Kang Zhang"
 date: last-modified
+abstract: >
+  This page records the conferences, workshops and summer/winter schools that I
+  have attended since my undergraduate years. The events cover a broad spectrum
+  of fundamental physics and mathematics—ranging from quantum gravity and
+  holography to non-equilibrium quantum dynamics and condensed-matter theory.
+  My roles have varied from participant to poster presenter, and the list
+  reflects my ongoing effort to broaden my academic horizon and to stay at the
+  forefront of interdisciplinary research.
 toc: false
 categories:
   - "Quantum Gravity"

@@ -7,7 +7,11 @@ author: "Rong-Kang Zhang"
 categories:
   - Mathematical Logic
   - Category Theory
-keywords: [Natural Transformation]
+keywords:                 # 推荐：一行一个，版本控制 diff 更清晰
+  - Natural Transformation
+  - Functor
+  - Adjoint Functor
+  - Limits
 toc: true
 toc-title: "Contents"
 toc-location: left
@@ -15,9 +19,11 @@ anchor-sections: true      # 各级标题左侧出现段落锚点
 smooth-scroll: true        # 锚点跳转时平滑滚动
 highlight-style: dracula    # 代码高亮配色
 number-sections: true
-toc-depth: 6
+secnumdepth: 3        # 编号也到 subsubsection
+toc-depth: 5
 code-tools: true
-code-fold: false
+code-fold: true
+code-overflow: wrap
 bibliography: refs.bib
 csl: ../../american-mathematical-society.csl
 eq-prefix: "Eq."
@@ -55,6 +61,9 @@ lightbox:
 ```
 
 See [@maclane1998]
+
+$$ \label{eq:adj} L \dashv R $$
+See Eq. @eq:adj 。
 
 ## Introduction
 

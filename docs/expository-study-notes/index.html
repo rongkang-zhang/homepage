@@ -49,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ffcb3724634b8a49638947f7c9c12f0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-2a32a685633e49bb9408850660b86294.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-ffcb3724634b8a49638947f7c9c12f0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-85a511b60b55e6ee5acba1d9153b17be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f0a6c74142c4aa18b1abb41b0faa1bff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-85a511b60b55e6ee5acba1d9153b17be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -535,7 +535,7 @@ Modified
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="TWF0aGVtYXRpY2FsJTIwTG9naWMlMkNDYXRlZ29yeSUyMFRoZW9yeQ==" data-listing-date-sort="1762776595000" data-listing-file-modified-sort="1762776595396" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="815" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="TWF0aGVtYXRpY2FsJTIwTG9naWMlMkNDYXRlZ29yeSUyMFRoZW9yeQ==" data-listing-date-sort="1762837664000" data-listing-file-modified-sort="1762837664444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="823" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../expository-study-notes/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
@@ -546,7 +546,7 @@ Modified
 <span class="listing-categories">Mathematical Logic, Category Theory</span>
 </td>
 <td>
-<span class="listing-file-modified">2025-11-10</span>
+<span class="listing-file-modified">2025-11-11</span>
 </td>
 <td>
 <span class="listing-author">Rong-Kang Zhang</span>
@@ -658,6 +658,11 @@ Modified
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
