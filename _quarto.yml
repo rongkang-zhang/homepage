@@ -34,48 +34,46 @@ website:
     foreground: "#ffffffff"
     left:
       - text: Expository<br>Notes&nbsp;<small>▼</small>
-        icon: journal-text
+        icon: "bi-file-earmark-text"
         menu:
             - text: Overview
               href: expository-notes/index.html
             - text: Category theory
               href: expository-notes/category-theory/index.html
       - text: Extemporaneous<br>Talks&nbsp;<small>▼</small>
-        icon: lightning
-        href: extemporaneous-talks/index.qmd
-      - text: <span style='color:#c7254e'>Research&nbsp;<small>▼</small></span>
-        icon: list-check
+        icon: "bi-lightning"
+        menu:
+            - text: Overview
+              href: extemporaneous-talks/index.html
+            - text: Category theory
+              href: extemporaneous-talks/category-theory/index.html
+      - text: Research&nbsp;<small>▼</small>
+        icon: "bi-infinity"
         menu:
             - text: Overview
               href: research/index.html
             - text: 1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy
               href: research/1/index.html
-      - text: Learning&nbsp;<small>▼</small>
-        icon: book
+      - text: Learning
+        icon: "bi-book-half"
         href: learning/index.html
       - text: Conferences
-        icon: calendar-event
+        icon: "bi-calendar-event"
         href: conferences/index.html
-      - text: Research<br>Logs
-        icon: calendar-event
-        href: research-logs/index.html
     right:
-      - text: '<img src="https://plausible.io/rongkang-zhang.github.io/badge.svg" alt="online"/>'
-        href: stats.html
       - icon: github
-        href: https://github.com/valegiunchiglia/
-      - icon: twitter
-        href: https://twitter.com/valegiunca/
+        href: https://github.com/rongkang-zhang
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/my-orcid?orcid=0009-0002-1334-733X"
+      - text: 知乎
+        href: https://www.zhihu.com/people/shokatsu-ei
       - icon: envelope
-        href: "mailto:v.giunchiglia20@imperial.ac.uk"
-      # ← 新增 Cookie Policy 常驻入口
-      - text: Cookie Policy
+        href: "mailto:rongkang2025@gmail.com"
+      - icon: globe
+        href: https://rongkang-zhang.github.io/homepage/
+      - text: Cookie
         href: cookie-policy.html
         icon: shield-check
-      - icon: globe
-        href: "mailto:v.giunchiglia20@imperial.ac.uk"
-      - text: "{{< ai orcid >}}"
-        href: "https://orcid.org/你的ID"
   page-footer:
     left: |
       <img src="/assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/index.html</loc>
-    <lastmod>2025-11-12T17:28:03.224Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/solutions/index.html</loc>
+    <lastmod>2025-11-12T19:19:45.498Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/preliminaries/index.html</loc>
-    <lastmod>2025-11-12T18:11:14.411Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/results/index.html</loc>
+    <lastmod>2025-11-12T19:15:55.403Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/motivation/index.html</loc>
-    <lastmod>2025-11-12T18:13:32.631Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/objectives/index.html</loc>
+    <lastmod>2025-11-12T19:15:41.339Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/literature-notes/index.html</loc>
-    <lastmod>2025-11-12T18:16:05.896Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/methodology/index.html</loc>
+    <lastmod>2025-11-12T19:15:24.467Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/background/index.html</loc>
-    <lastmod>2025-11-12T18:15:59.863Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/index.html</loc>
+    <lastmod>2025-11-12T19:14:38.669Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research-logs/index.html</loc>
-    <lastmod>2025-11-10T12:23:13.630Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/abstract/index.html</loc>
+    <lastmod>2025-11-12T19:14:58.651Z</lastmod>
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/index.html</loc>
@@ -30,15 +30,19 @@
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/extemporaneous-talks/category-theory/index.html</loc>
-    <lastmod>2025-11-12T17:03:05.022Z</lastmod>
+    <lastmod>2025-11-12T19:13:28.796Z</lastmod>
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/expository-notes/category-theory/index.html</loc>
-    <lastmod>2025-11-12T17:04:35.149Z</lastmod>
+    <lastmod>2025-11-12T19:12:13.231Z</lastmod>
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/conferences/index.html</loc>
     <lastmod>2025-11-11T04:57:51.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rongkang-zhang.github.io/homepage/codelab/index.html</loc>
+    <lastmod>2025-11-12T19:16:38.579Z</lastmod>
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/cookie-policy.html</loc>
@@ -54,26 +58,26 @@
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/learning/index.html</loc>
-    <lastmod>2025-11-12T17:11:45.812Z</lastmod>
+    <lastmod>2025-11-12T19:13:55.163Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/abstract/index.html</loc>
-    <lastmod>2025-11-12T18:15:54.054Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/background/index.html</loc>
+    <lastmod>2025-11-12T19:15:11.898Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/index.html</loc>
-    <lastmod>2025-11-12T18:15:47.133Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/literature-notes/index.html</loc>
+    <lastmod>2025-11-12T19:15:17.659Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/methodology/index.html</loc>
-    <lastmod>2025-11-12T18:16:15.550Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/motivation/index.html</loc>
+    <lastmod>2025-11-12T19:15:34.227Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/objectives/index.html</loc>
-    <lastmod>2025-11-12T18:13:47.262Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/preliminaries/index.html</loc>
+    <lastmod>2025-11-12T19:15:48.272Z</lastmod>
   </url>
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/results/index.html</loc>
-    <lastmod>2025-11-12T18:14:03.462Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/index.html</loc>
+    <lastmod>2025-11-12T17:28:03.224Z</lastmod>
   </url>
 </urlset>

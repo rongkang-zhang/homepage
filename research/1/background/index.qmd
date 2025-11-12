@@ -6,7 +6,7 @@ date: last-modified
 toc: false
 categories: [Category Theory]
 page-layout: full
-bibliography: ../refs.bib
+bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl
 weight: 2
 ---

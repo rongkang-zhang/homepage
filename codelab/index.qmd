@@ -1,5 +1,5 @@
 ---
-title: "Research Log · 2025-11"
+title: "MathPhysCS CodeLab"
 subtitle: "Scrollytelling with Closeread"
 format:
   closeread-html:

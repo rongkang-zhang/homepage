@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-10">
+<meta name="author" content="Rong-Kang Zhang">
+<meta name="dcterms.date" content="2025-11-13">
 
-<title>Research Log · 2025-11 – Rong-KangZhang</title>
+<title>Self-Worked Solution Manuals – Rong-KangZhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -67,6 +33,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/pictures/web-logo-7.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -76,15 +44,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d7a9fb5fdc7bcacc0a7dd1bec5b6520.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
-<script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
-<script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
-<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1e5af35948cd8a272dcb148a28d7eaae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-abee91cb64b3cf5b9aec0931ad531262.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1e5af35948cd8a272dcb148a28d7eaae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -114,6 +81,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-categories','listing-file-modified','listing-author',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-categories","listing-file-modified","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DDVX87V0F2"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -141,26 +137,208 @@ cookieconsent.run({
 });
 </script> 
   
-<meta cr-debug-mode="false">
-<meta cr-remove-header-space="false">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<link rel="stylesheet" href="..\site_libs\quarto-contrib\quarto-project\qmd-lab\closeread\closeread.css">
-<meta property="og:title" content="Research Log · 2025-11 – Rong-KangZhang">
-<meta property="og:description" content="Scrollytelling with Closeread">
-<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/research-logs/pictures/1.png">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Self-Worked Solution Manuals – Rong-KangZhang">
+<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/solutions/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
-<meta property="og:image:height" content="829">
-<meta property="og:image:width" content="820">
-<meta name="twitter:title" content="Research Log · 2025-11 – Rong-KangZhang">
-<meta name="twitter:description" content="Scrollytelling with Closeread">
-<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/research-logs/pictures/1.png">
-<meta name="twitter:image-height" content="829">
-<meta name="twitter:image-width" content="820">
+<meta name="twitter:title" content="Self-Worked Solution Manuals – Rong-KangZhang">
+<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/solutions/assets/pictures/profile-picture.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -198,18 +376,30 @@ cookieconsent.run({
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../extemporaneous-talks/index.html"> <i class="bi bi-lightning" role="img">
-</i> 
-<span class="menu-text">Extemporaneous<br>Talks&nbsp;<small>▼</small></span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-span-stylecolorc7254eresearchnbspsmall▼smallspan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-extemporaneousbrtalksnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-lightning" role="img">
+</i> 
+ <span class="menu-text">Extemporaneous<br>Talks&nbsp;<small>▼</small></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-extemporaneousbrtalksnbspsmall▼small">    
+        <li>
+    <a class="dropdown-item" href="../extemporaneous-talks/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../extemporaneous-talks/category-theory/index.html">
+ <span class="dropdown-text">Category theory</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-researchnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-list-check" role="img">
 </i> 
- <span class="menu-text"><span style="color:#c7254e">Research&nbsp;<small>▼</small></span></span>
+ <span class="menu-text">Research&nbsp;<small>▼</small></span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-span-stylecolorc7254eresearchnbspsmall▼smallspan">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-researchnbspsmall▼small">    
         <li>
     <a class="dropdown-item" href="../research/index.html">
  <span class="dropdown-text">Overview</span></a>
@@ -223,17 +413,12 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../learning/index.html"> <i class="bi bi-book" role="img">
 </i> 
-<span class="menu-text">Learning&nbsp;<small>▼</small></span></a>
+<span class="menu-text">Learning</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
 <span class="menu-text">Conferences</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../research-logs/index.html" aria-current="page"> <i class="bi bi-calendar-event" role="img">
-</i> 
-<span class="menu-text">Research<br>Logs</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -282,51 +467,34 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Content</h2>
-   
-  <ul>
-  <li><a href="#方法" id="toc-方法" class="nav-link active" data-scroll-target="#方法">2 方法</a></li>
-  <li><a href="#结果" id="toc-结果" class="nav-link" data-scroll-target="#结果">3 结果</a></li>
-  <li><a href="#讨论-展望" id="toc-讨论-展望" class="nav-link" data-scroll-target="#讨论-展望">4 讨论 &amp; 展望</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-      <!-- user-provided yaml closeread style options -->
-      <style>
-        :root {
-          --cr-narrative-outer-margin: 2rem;
---cr-narrative-overlay-min-width: 260px;
---cr-narrative-background-color-overlay: #d6e9ff;
---cr-narrative-font-family: “LXGW WenKai”, sans-serif;
---cr-section-background-color: #eef5ff;
---cr-narrative-overlay-max-width: 480px;
---cr-narrative-font-size: 0.95rem;
---cr-narrative-text-color-overlay: #003366;
---cr-narrative-border-radius: 16px;
---cr-narrative-sidebar-width: 1fr;
-        }
-      </style>
     
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research Log · 2025-11</h1>
-<p class="subtitle lead">Scrollytelling with Closeread</p>
-</div>
+<h1 class="title">Self-Worked Solution Manuals</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Category Theory</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rong-Kang Zhang </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 10, 2025</p>
+      <p class="date">November 13, 2025</p>
     </div>
   </div>
   
@@ -338,483 +506,46 @@ cookieconsent.run({
 </header>
 
 
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-intro">
-<div class="narrative">
-<blockquote class="blockquote">
-<p>Create something here</p>
-</blockquote>
-<ul>
-<li>list1</li>
-<li>list 2</li>
-</ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped caption-top">
 <thead>
 <tr class="header">
-<th>表情</th>
-<th>图标</th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">Categories</th>
+<th data-quarto-table-cell-role="th">Modified</th>
+<th data-quarto-table-cell-role="th">Author</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td>smile</td>
-<td><p><i class="fa-solid fa-face-smile" aria-label="face-smile"></i></p></td>
-</tr>
-<tr class="even">
-<td>grin</td>
-<td><p><i class="fa-solid fa-face-grin-beam" aria-label="face-grin-beam"></i></p></td>
-</tr>
-<tr class="odd">
-<td>laugh</td>
-<td><p><i class="fa-solid fa-face-laugh-squint" aria-label="face-laugh-squint"></i></p></td>
-</tr>
-<tr class="even">
-<td>wink</td>
-<td><p><i class="fa-solid fa-face-grin-wink" aria-label="face-grin-wink"></i></p></td>
-</tr>
-<tr class="odd">
-<td>happy-cry</td>
-<td><p><i class="fa-solid fa-face-grin-tears" aria-label="face-grin-tears"></i></p></td>
-</tr>
-<tr class="even">
-<td>sad</td>
-<td><p><i class="fa-solid fa-face-frown" aria-label="face-frown"></i></p></td>
-</tr>
-<tr class="odd">
-<td>cry</td>
-<td><p><i class="fa-solid fa-face-sad-cry" aria-label="face-sad-cry"></i></p></td>
-</tr>
-<tr class="even">
-<td>tired</td>
-<td><p><i class="fa-solid fa-face-dizzy" aria-label="face-dizzy"></i></p></td>
-</tr>
-<tr class="odd">
-<td>sleepy</td>
-<td><p><i class="fa-solid fa-face-meh" aria-label="face-meh"></i></p></td>
-</tr>
-<tr class="even">
-<td>yawn</td>
-<td><p><i class="fa-solid fa-face-yawn" aria-label="face-yawn"></i></p></td>
-</tr>
-<tr class="odd">
-<td>neutral</td>
-<td><p><i class="fa-solid fa-face-meh-blank" aria-label="face-meh-blank"></i></p></td>
-</tr>
-<tr class="even">
-<td>thinking</td>
-<td><p><i class="fa-solid fa-face-meh" aria-label="face-meh"></i></p></td>
-</tr>
-<tr class="odd">
-<td>worried</td>
-<td><p><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i></p></td>
-</tr>
-<tr class="even">
-<td>shocked</td>
-<td><p><i class="fa-solid fa-face-surprise" aria-label="face-surprise"></i></p></td>
-</tr>
-<tr class="odd">
-<td>angry</td>
-<td><p><i class="fa-solid fa-face-angry" aria-label="face-angry"></i></p></td>
-</tr>
-<tr class="even">
-<td>grimace</td>
-<td><p><i class="fa-solid fa-face-grimace" aria-label="face-grimace"></i></p></td>
-</tr>
-<tr class="odd">
-<td>kiss</td>
-<td><p><i class="fa-solid fa-face-kiss-wink-heart" aria-label="face-kiss-wink-heart"></i></p></td>
-</tr>
-<tr class="even">
-<td>nerd</td>
-<td><p><i class="fa-solid fa-face-grin-beam-sweat" aria-label="face-grin-beam-sweat"></i></p></td>
-</tr>
-<tr class="odd">
-<td>sweat</td>
-<td><p><i class="fa-solid fa-face-grin-sweat" aria-label="face-grin-sweat"></i></p></td>
-</tr>
-<tr class="even">
-<td>cool</td>
-<td><p><i class="fa-solid fa-face-sunglasses" aria-label="face-sunglasses"></i></p></td>
-</tr>
-<tr class="odd">
-<td>tongue</td>
-<td><p><i class="fa-solid fa-face-grin-tongue" aria-label="face-grin-tongue"></i></p></td>
-</tr>
-<tr class="even">
-<td>tongue-wink</td>
-<td><p><i class="fa-solid fa-face-grin-tongue-wink" aria-label="face-grin-tongue-wink"></i></p></td>
-</tr>
-<tr class="odd">
-<td>eye-roll</td>
-<td><p><i class="fa-solid fa-face-rolling-eyes" aria-label="face-rolling-eyes"></i></p></td>
-</tr>
-<tr class="even">
-<td>blush</td>
-<td><p><i class="fa-solid fa-face-smile-blush" aria-label="face-smile-blush"></i></p></td>
-</tr>
-<tr class="odd">
-<td>innocent</td>
-<td><p><i class="fa-face-smile fa-halo" aria-label="halo"></i></p></td>
-</tr>
-<tr class="even">
-<td>devil</td>
-<td><p><i class="fa-solid fa-face-grin-devil" aria-label="face-grin-devil"></i></p></td>
-</tr>
-<tr class="odd">
-<td>zipper</td>
-<td><p><i class="fa-solid fa-face-zipper" aria-label="face-zipper"></i></p></td>
-</tr>
-<tr class="even">
-<td>mask</td>
-<td><p><i class="fa-solid fa-face-medical-mask" aria-label="face-medical-mask"></i></p></td>
-</tr>
-<tr class="odd">
-<td>thermometer</td>
-<td><p><i class="fa-solid fa-face-thermometer" aria-label="face-thermometer"></i></p></td>
-</tr>
-<tr class="even">
-<td>head-bandage</td>
-<td><p><i class="fa-solid fa-face-head-bandage" aria-label="face-head-bandage"></i></p></td>
-</tr>
-<tr class="odd">
-<td>hushed</td>
-<td><p><i class="fa-solid fa-face-hushed" aria-label="face-hushed"></i></p></td>
-</tr>
-<tr class="even">
-<td>confused</td>
-<td><p><i class="fa-solid fa-face-confused" aria-label="face-confused"></i></p></td>
-</tr>
-<tr class="odd">
-<td>exhausted</td>
-<td><p><i class="fa-solid fa-face-tired" aria-label="face-tired"></i></p></td>
-</tr>
-<tr class="even">
-<td>party</td>
-<td><p><i class="fa-solid fa-face-party" aria-label="face-party"></i></p></td>
-</tr>
-<tr class="odd">
-<td>raised-eyebrow</td>
-<td><p><i class="fa-solid fa-face-raised-eyebrow" aria-label="face-raised-eyebrow"></i></p></td>
-</tr>
-<tr class="even">
-<td>slight-smile</td>
-<td><p><i class="fa-face-smile fa-slight" aria-label="slight"></i></p></td>
-</tr>
-<tr class="odd">
-<td>slight-frown</td>
-<td><p><i class="fa-face-frown fa-slight" aria-label="slight"></i></p></td>
-</tr>
-<tr class="even">
-<td>smile-open</td>
-<td><p><i class="fa-solid fa-face-smile-open" aria-label="face-smile-open"></i></p></td>
-</tr>
-<tr class="odd">
-<td>frown-open</td>
-<td><p><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i></p></td>
-</tr>
-<tr class="even">
-<td>grimace</td>
-<td><p><i class="fa-solid fa-face-grimace" aria-label="face-grimace"></i></p></td>
-</tr>
-<tr class="odd">
-<td>wide-grin</td>
-<td><p><i class="fa-solid fa-face-grin-wide" aria-label="face-grin-wide"></i></p></td>
-</tr>
-<tr class="even">
-<td>beam-sweat</td>
-<td><p><i class="fa-solid fa-face-grin-beam-sweat" aria-label="face-grin-beam-sweat"></i></p></td>
-</tr>
-<tr class="odd">
-<td>squint-tears</td>
-<td><p><i class="fa-solid fa-face-squint-tears" aria-label="face-squint-tears"></i></p></td>
-</tr>
-<tr class="even">
-<td>star-struck</td>
-<td><p><i class="fa-solid fa-face-grin-stars" aria-label="face-grin-stars"></i></p></td>
-</tr>
-<tr class="odd">
-<td>heart-eyes</td>
-<td><p><i class="fa-solid fa-face-grin-hearts" aria-label="face-grin-hearts"></i></p></td>
-</tr>
-<tr class="even">
-<td>cheeky</td>
-<td><p><i class="fa-solid fa-face-grin-tongue-squint" aria-label="face-grin-tongue-squint"></i></p></td>
-</tr>
-<tr class="odd">
-<td>upside-down</td>
-<td><p><i class="fa-solid fa-face-grin-upsidedown" aria-label="face-grin-upsidedown"></i></p></td>
-</tr>
-<tr class="even">
-<td>cowboy</td>
-<td><p><i class="fa-solid fa-face-cowboy" aria-label="face-cowboy"></i></p></td>
-</tr>
-<tr class="odd">
-<td>disguised</td>
-<td><p><i class="fa-solid fa-face-disguise" aria-label="face-disguise"></i></p></td>
-</tr>
-<tr class="even">
-<td>lying</td>
-<td><p><i class="fa-solid fa-face-lying" aria-label="face-lying"></i></p></td>
-</tr>
-<tr class="odd">
-<td>pleading</td>
-<td><p><i class="fa-solid fa-face-pleading" aria-label="face-pleading"></i></p></td>
-</tr>
-<tr class="even">
-<td>holding-back-tears</td>
-<td><p><i class="fa-solid fa-face-holding-back-tears" aria-label="face-holding-back-tears"></i></p></td>
-</tr>
-<tr class="odd">
-<td>saluting</td>
-<td><p><i class="fa-solid fa-face-saluting" aria-label="face-saluting"></i></p></td>
-</tr>
+<tbody class="list">
 </tbody>
 </table>
-<div class="line-block"><span id="lb1-1">😊 happy | <code></code> |</span><br>
-<span id="lb1-2">🙂 calm | <code></code> |</span><br>
-<span id="lb1-3">😕 puzzled | <code></code> |</span><br>
-<span id="lb1-4">😴 sleepy | <code></code> |</span><br>
-<span id="lb1-5">🤯 mind-blown | <code></code> |</span><br>
-<span id="lb1-6">😅 rush | <code></code> |</span><br>
-<span id="lb1-7">❌ blocked | <code></code> |</span><br>
-<span id="lb1-8">😃 excited | <code></code> |</span><br>
-<span id="lb1-9">😍 love | <code></code> |</span><br>
-<span id="lb1-10">🙃 upside-down | <code></code> |</span><br>
-<span id="lb1-11">🥱 yawn | <code></code> |</span><br>
-<span id="lb1-12">😎 cool | <code></code> |</span><br>
-<span id="lb1-13">🤔 thinking | <code></code> |</span><br>
-<span id="lb1-14">😠 angry | <code></code> |</span><br>
-<span id="lb1-15">😵 dizzy | <code></code> |</span><br>
-<span id="lb1-16">🤐 zip | <code></code> |</span><br>
-<span id="lb1-17">🤗 hug | <code></code> |</span><br>
-<span id="lb1-18">🥳 party | <code></code> |</span><br>
-<span id="lb1-19">😇 halo | <code></code> |</span><br>
-<span id="lb1-20">🤥 lie | <code></code> |</span></div>
-<!-- 今日示例 -->
-<p><strong>Focus:</strong> Quarto Closeread extension<br>
-<strong>Tomorrow:</strong> review Zhihu category-theory post; update Mathpix subscription<br>
-<strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-scale-by=".5" data-pan-to="50%,50%" data-focus-on="cr-intro">
-<div class="narrative">
-<p>这段文字出现时触发 intro 层。</p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-intro" class="fade-in sticky">
-<p><img src="pictures/1.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-</div>
-</div>
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="50%,50%" data-focus-on="cr-fig-trial">
-<div class="narrative">
-<p>这段文字出现时触发 intro 层。</p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-fig-trial" class="zoom-to-2 fade-out sticky">
-<p><img src="pictures/1.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-</div>
-</div>
-<section id="方法" class="level1">
-<h1>2 方法</h1>
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<section id="数据模拟" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="数据模拟">2.1 数据模拟</h2>
-</section>
-<div class="trigger new-trigger" data-focus-on="code">
-<div class="narrative">
-<p>生成虚拟时间序列，并高亮关键代码行：</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-transition="0.7s" data-highlight="3-4" data-focus-on="code">
-<div class="narrative">
-
-</div>
-</div>
-<section id="可视化-整体" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="可视化-整体">2.2 可视化-整体</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>先给出全图，观察趋势：<span class="citation" data-cites="fig">@fig</span></p>
-</div>
-</div>
-<div class="trigger">
-<div id="fig" class="narrative">
-<p><img src="pictures/2.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span data-scale-by="1.0"><span class="citation" data-cites="fig">@fig</span></span></p>
-</div>
-</div>
-<section id="可视化-放大" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="可视化-放大">2.3 可视化-放大</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>滚动到此处时放大 2 倍并右移，聚焦峰值区域：<span class="citation" data-cites="fig">@fig</span></p>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span data-scale-by="2.0" data-pan-to="35%,0" data-transition="1s"><span class="citation" data-cites="fig">@fig</span></span></p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="code" class="sticky">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-lineno="True"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np, pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ts <span class="op">=</span> pd.Series(np.random.randn(<span class="dv">100</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>               index<span class="op">=</span>pd.date_range(<span class="st">'2025'</span>, periods<span class="op">=</span><span class="dv">100</span>))</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>ts.cumsum().plot()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="结果" class="level1">
-<h1>3 结果</h1>
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<section id="表格淡入" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="表格淡入">3.1 表格淡入</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>关键指标如下，表格随滚动显现：<span class="citation" data-cites="tbl">@tbl</span></p>
-</div>
-</div>
-<div class="trigger">
-<div id="tbl" class="narrative">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>指标</th>
-<th>2024</th>
-<th>2025</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>均值</td>
-<td>0.02</td>
-<td>0.05</td>
-</tr>
-<tr class="even">
-<td>标准差</td>
-<td>1.00</td>
-<td>0.98</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span class="citation" data-cites="tbl">[@tbl]</span>{fade-in transition=0.8s}</p>
-</div>
-</div>
-<section id="模型输出" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="模型输出">3.2 模型输出</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>同一脚本，不同行交叉高亮：<span class="citation" data-cites="model">@model</span></p>
-</div>
-</div>
-<div class="trigger">
-<div id="model" class="narrative">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-lineno="True"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sm.OLS(y, X).fit()</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.summary())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span data-highlight="1" data-transition="0.4s"><span class="citation" data-cites="model">@model</span></span> <span data-highlight="2" data-transition="0.4s"><span class="citation" data-cites="model">@model</span></span></p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-
-</div>
-</div>
-</div>
-</section>
-<section id="讨论-展望" class="level1">
-<h1>4 讨论 &amp; 展望</h1>
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<section id="细节放大" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="细节放大">4.1 细节放大</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>继续滚动，右侧切换到更高分辨率截图：<span class="citation" data-cites="fig3">@fig3</span></p>
-</div>
-</div>
-<div class="trigger">
-<div id="fig3" class="narrative">
-<p><img src="pictures/3.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span class="citation" data-cites="fig3">[@fig3]</span>{fade-in transition=0.9s}</p>
-</div>
-</div>
-<section id="未来工作" class="level2 narrative trigger">
-<h2 class="narrative anchored" data-anchor-id="未来工作">4.2 未来工作</h2>
-</section>
-<div class="trigger">
-<div class="narrative">
-<p>最后给出总结图，并轻微放大收尾：<span class="citation" data-cites="fig4">@fig4</span></p>
-</div>
-</div>
-<div class="trigger">
-<div id="fig4" class="narrative">
-<p><img src="pictures/4.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-<div class="trigger">
-<div class="narrative">
-<p><span class="citation" data-cites="fig4">[@fig4]</span>{scale-by=1.1 fade-in transition=1.2s}</p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-
-</div>
-</div>
-</div>
-
-
-</section>
-
-</main> <!-- /main -->
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -900,6 +631,11 @@ cookieconsent.run({
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1217,11 +953,11 @@ cookieconsent.run({
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 10, 2025 · <a href="../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 13, 2025 · <a href="../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

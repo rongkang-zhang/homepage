@@ -1,8 +1,19 @@
 [
   {
-    "listing": "/research/index.html",
+    "listing": "/solutions/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/1/index.html",
     "items": [
-      "/research/1/index.html"
+      "/research/1/abstract/index.html",
+      "/research/1/background/index.html",
+      "/research/1/motivation/index.html",
+      "/research/1/objectives/index.html",
+      "/research/1/methodology/index.html",
+      "/research/1/preliminaries/index.html",
+      "/research/1/results/index.html",
+      "/research/1/literature-notes/index.html"
     ]
   },
   {
@@ -18,16 +29,9 @@
     ]
   },
   {
-    "listing": "/research/1/index.html",
+    "listing": "/research/index.html",
     "items": [
-      "/research/1/abstract/index.html",
-      "/research/1/background/index.html",
-      "/research/1/motivation/index.html",
-      "/research/1/objectives/index.html",
-      "/research/1/methodology/index.html",
-      "/research/1/preliminaries/index.html",
-      "/research/1/results/index.html",
-      "/research/1/literature-notes/index.html"
+      "/research/1/index.html"
     ]
   }
 ]

@@ -49,7 +49,7 @@ toc-depth: 5
 code-tools: true
 code-fold: true
 code-overflow: wrap
-bibliography: refs.bib
+bibliography: ../../refs.bib
 csl: ../../american-mathematical-society.csl
 eq-prefix: "Eq."
 fig-prefix: "Fig."

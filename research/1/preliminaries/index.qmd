@@ -6,7 +6,7 @@ date: last-modified
 toc: false
 categories: [AdS/CFT Duality, Holographic Principle]
 page-layout: full
-bibliography: ../refs.bib
+bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl
 weight: 6
 ---

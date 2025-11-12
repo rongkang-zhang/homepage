@@ -7,7 +7,6 @@ categories:
   - Topos Theory
   - Holographic Entanglement Entropy
 page-layout: full
-bibliography: refs.bib
 csl: ../../american-mathematical-society.csl
 listing:
   contents: "*/index.qmd"

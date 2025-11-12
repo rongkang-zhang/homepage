@@ -10,4 +10,6 @@ core-references:
 categories:
   - Mathematical Logic
   - Category Theory
+bibliography: ../../refs.bib
+csl: ../../american-mathematical-society.csl
 ---
