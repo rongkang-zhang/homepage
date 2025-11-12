@@ -4,7 +4,14 @@ subtitle: A Topos-Theoretic Bridge for Holographic Entanglement Entropy
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
-categories: [Category Theory]
+categories: [AdS/CFT Duality, Holographic Principle]
 page-layout: full
-csl: ../../american-mathematical-society.csl
+bibliography: ../refs.bib
+csl: ../../../american-mathematical-society.csl
 ---
+
+# Holographic Principle
+
+The holographic principle was first articulated in the context of black-hole unitarity by 't Hooft (1993) [@thooft1993dimensional].
+
+# Holographic Duality
