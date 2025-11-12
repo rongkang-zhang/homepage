@@ -72,7 +72,7 @@ website:
       - icon: globe
         href: https://rongkang-zhang.github.io/homepage/
       - text: Cookie
-        href: cookie-policy.html
+        href: cookie.html
         icon: shield-check
   page-footer:
     left: |
