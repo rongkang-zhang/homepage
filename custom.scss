@@ -554,7 +554,7 @@ a:hover { color: var(--link-hover); }
     padding-bottom: 4px;
 }
 
-/*-- scss:defaults --*/
+/*-- scss:defaults，导航栏高度还有滑动页面导航栏收纳效果 --*/
 $navbar-height: 60px;          // 栏高 50 px
 
 /*-- scss:rules --*/
@@ -573,4 +573,109 @@ $navbar-height: 60px;          // 栏高 50 px
 
 .dropdown-menu {
   min-width: 12rem;            // 下拉菜单宽度不变
+}
+
+/*-- 导航栏字体设置 --*/
+
+/*-- 1. 加载字体 --*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fira+Code&display=swap');
+
+/*-- 2. 导航栏统一用 Fira Sans --*/
+.navbar {
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: .4px;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 1.05rem;          // 比默认略大
+}
+
+/*-- 导航栏背景颜色渐变设置，底部还有一条橙线 --*/
+/*-- 3. 帝国蓝 → 深海蓝渐变 --*/
+.navbar {
+  background: linear-gradient(135deg, $imperial-blue 0%, darken($imperial-blue,12%) 100%);
+  border-bottom: 2px solid $orange;   // 1 px 太细，2 px 存在感更好
+}
+
+/*-- 导航栏悬停效果 --*/
+/*-- 4. 普通态：圆角药丸 + 微阴影 --*/
+.navbar-nav .nav-link {
+  border-radius: 1rem;
+  padding: .45rem 1rem;
+  transition: all .25s ease-in-out;
+  box-shadow: 0 0 0 0 transparent;
+}
+/*-- 5. 悬停：背景高亮 + 阴影抬起 --*/
+.navbar-nav .nav-link:hover {
+  background: rgba(white,.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,.12);
+}
+/*-- 6. 活跃页：橙色底线 + 白字 --*/
+.navbar-nav .nav-link.active {
+  color: white !important;
+  background: rgba(white,.1);
+  box-shadow: 0 0 0 2px $orange inset;
+}
+
+/*-- 导航栏下拉菜单效果的调整 --*/
+/*-- 7. 下拉整体：圆角 + 阴影 + 淡入 --*/
+.navbar .dropdown-menu {
+  background: #fff;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  animation: fadeIn .2s ease;
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+
+/*-- 8. 下拉项：左右 padding 放大 & 彩色悬停 --*/
+.dropdown-item {
+  padding: .4rem 1.2rem;
+  border-radius: .25rem;
+  transition: background .2s;
+}
+.dropdown-item:hover {
+  background: $air-blue;
+  color: white;
+}
+
+/*-- 9. 搜索框圆角 + 聚焦高亮 --*/
+.navbar .quarto-search-input {
+  border-radius: 1rem;
+  border: 1px solid rgba(white,.3);
+  background: rgba(white,.12);
+  color: white;
+}
+.navbar .quarto-search-input::placeholder { color: rgba(white,.65); }
+.navbar .quarto-search-input:focus {
+  background: rgba(white,.2);
+  border-color: $orange;
+  box-shadow: 0 0 0 3px rgba($orange,.25);
+}
+
+/*-- 10. 读者模式按钮靠右 & 图标化 --*/
+.navbar .reader-mode-toggle {
+  margin-left: auto;          // 靠最右
+  font-size: 1.2rem;
+  color: rgba(white,.8);
+  border: 1px solid rgba(white,.4);
+  border-radius: 50%;
+  width: 2rem; height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .reader-mode-toggle:hover {
+  color: white;
+  border-color: white;
+}
+
+/*-- 12. 汉堡图标三条杠加粗 & 彩色 --*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border-color: rgba(white,.5);
+  border-radius: .25rem;
 }

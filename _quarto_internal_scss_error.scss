@@ -1205,16 +1205,398 @@ $navbar-background: $imperial-blue;
 .tag-poster-presenter  { background: #294b83; color: #fff; } /* 与 seminar 同级 */
 .tag-participant       { background: #7a9fcc; color: #000; } /* 轻雾蓝，文字黑 */
 
-/* Markdown表格斑马纹以及悬停高亮 */
+/* Markdown表格斑马纹以及悬停高亮，悬停的时候，选中行的背景颜色为淡蓝色 */
 /* 斑马纹 + 悬停高亮 */
-table tbody tr:nth-child(even) { background:#f7f7f7; }
-table tbody tr:hover           { background:#fffbe6; }
-/* 防止超宽溢出 */
-.page-layout.full table {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
+/* 斑马纹保持原样 */
+table tbody tr:nth-child(even) {
+  background: #f7f7f7;
 }
+
+/* 把悬停时的淡黄换成淡蓝 */
+table tbody tr:hover td {          /* 必须写 td，否则会被单元格原有背景挡住 */
+  background: #e6f0ff !important;  /* 0–5% 透明度的蓝，与白色对比柔和 */
+  color: inherit;                  /* 文字颜色不变 */
+}
+
+/* 如果您还想让整行边框也微亮，可加 */
+table tbody tr:hover {
+  outline: 1px solid #c2d8f0;
+  outline-offset: -1px;
+}
+
+/* 外链图标 */
+/* 外链图标 - 去除图标下划线版 */
+.main a[href^="http"],
+.content a[href^="http"],
+#quarto-document-content a[href^="http"] {
+  /* 保证整条链接只有一条连续下划线 */
+  text-underline-offset: 0.15em;   /* 可选：微调线与文字距离 */
+}
+
+/* 关键：让伪元素成为独立 inline-block → 不再被画分段线 */
+.main a[href^="http"]:after,
+.content a[href^="http"]:after,
+#quarto-document-content a[href^="http"]:after {
+  content: "⧉";
+  font-size: 0.8em;
+  margin-left: 3px;
+  display: inline-block;     /* ← 核心一行，去掉图标下划线 */
+  text-decoration: none;     /* 兼容旧浏览器 */
+  color: inherit;
+}
+
+/* 导航栏继续禁用 */
+.navbar a[href^="http"]:after,
+.nav a[href^="http"]:after {
+  content: none !important;
+}
+
+/* 深色模式专用变量，避免深色模式下链接高亮太亮看不清 */
+[data-bs-theme="dark"] {
+  $navbar-background: darken($imperial-blue, 15%);
+  .navbar { background-color: $navbar-background !important; }
+  .tag-workshop { background: lighten(#1e4d8b, 10%); }
+}
+
+/* 防止深色模式下horizontal-list太亮 */
+[data-bs-theme="dark"] {
+  .horizontal-list__item {
+    filter: brightness(.9);
+  }
+}
+
+/*-- scss:defaults –- 追加竖向列表 --*/
+
+/*-- scss:defaults –- 宽度自适应的竖向列表 --*/
+
+/*-- 1. 新增帝国蓝衍生变量 --*/
+$imperial-blue: #023A75;            // 原色 H210 S97 L29
+
+$ib-dk20:  darken($imperial-blue, 20%);   // 最深背景
+$ib-dk10:  darken($imperial-blue, 10%);   // 次深
+$ib-lt10:  lighten($imperial-blue, 10%);  // 次浅
+$ib-lt20:  lighten($imperial-blue, 20%);  // 最浅
+
+$coastal-mist: #c2d8f0;               // 原表格描边色，用作极浅底
+$gold-pop:     #ffc966;               // 单点高亮色（暖橙黄）
+
+/*-- 2. 竖向列表（宽度自适应）-- */
+.vertical-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        display: inline-block;
+        width: fit-content;
+        font-weight: bold;
+        padding: 0.4rem 0.75rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.5rem;
+        transition: background-color .2s ease, color .2s ease;
+
+        /* 新配色：深→浅→亮 交替 */
+        &--alpha  { background-color: $ib-dk20; color: #fff; }
+        &--beta   { background-color: $ib-dk10; color: #fff; }
+        &--gamma  { background-color: $imperial-blue; color: #fff; }
+        &--delta  { background-color: $ib-lt10; }
+        &--epsilon{ background-color: $ib-lt20; }
+        &--zeta   { background-color: $coastal-mist; }
+        &--eta    { background-color: $gold-pop; color: #1a1a1a; }
+        &--theta  { background-color: $seaweed; color: #fff; } // 原 seaweed 保留作点缀
+
+        &:hover,
+        &:focus {
+            filter: brightness(1.1);
+        }
+    }
+
+    &--compact {
+        column-width: 10rem;
+        column-gap: 0.6rem;
+        .vertical-list__item {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+/*-- 3. 深色模式 --*/
+[data-bs-theme="dark"] {
+    .vertical-list__item {
+        filter: brightness(.9);
+        /* 亮底标签翻黑字，保证对比度 */
+        &--delta,
+        &--epsilon,
+        &--zeta,
+        &--eta { color: #0d1117; }
+    }
+}
+
+/* ---------------------------------------------------
+   数学环境「景观化」主题
+   灵感：Pennisetum 观赏草分区 [^18^][^19^]
+----------------------------------------------------*/
+
+// 1. 植物系配色（轻雾背景 + 饱和左侧）
+$grass-green: #66bb6a;   // 定理主色
+$grass-gold: #ffa726;    // 引理/推论
+$grass-blue: #42a5f5;    // 定义
+$grass-mint: #26c6da;    // 例子
+$grass-lavender: #ab47bc;// 备注
+$grass-silver: #b0bec5;  // 证明
+
+// 2. 通用卡片 mixin
+@mixin math-block($accent) {
+  margin: 1.2rem 0;
+  padding: .8rem 1rem .8rem 1.6rem;
+  border-left: 6px solid $accent;
+  background: linear-gradient(120deg, rgba($accent,.06) 0%, rgba($accent,.02) 100%);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  position: relative;
+  // 右上角小标签
+  &::before {
+    content: "";
+    position: absolute;
+    top: .6rem; right: .8rem;
+    width: 10px; height: 10px;
+    background: $accent;
+    border-radius: 50%;
+    opacity: .35;
+  }
+}
+
+/* 3. 七类环境依次调用 */
+.definition { @include math-block($grass-blue); }
+.example    { @include math-block($grass-mint); }
+.lemma      { @include math-block($grass-gold); }
+.theorem    { @include math-block($grass-green); }
+.corollary  { @include math-block($grass-gold); }
+.remark     { @include math-block($grass-lavender); }
+.proof      { @include math-block($grass-silver); font-style: italic; }
+
+/* 4. 深色模式：降低饱和度 & 提高对比 */
+[data-bs-theme="dark"] {
+  .definition { border-left-color: lighten($grass-blue,12%); }
+  .example    { border-left-color: lighten($grass-mint,12%); }
+  .lemma      { border-left-color: lighten($grass-gold,12%); }
+  .theorem    { border-left-color: lighten($grass-green,12%); }
+  .corollary  { border-left-color: lighten($grass-gold,12%); }
+  .remark     { border-left-color: lighten($grass-lavender,12%); }
+  .proof      { border-left-color: lighten($grass-silver,12%); }
+}
+
+/* 图标墙并排显示 */
+.icon-wall .ai {
+  font-size: 1.5rem;
+  margin: 0 .25rem;
+  color: $imperial-blue;   // 与你主色调保持一致
+}
+
+.theorem { border-left: 5px solid $grass-green; }
+.definition { border-left: 5px solid $grass-blue; }
+
+/* sticky 块阴影 */
+
+:root {
+  --cr-narrative-box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+/* 目录颜色设置 */
+.quarto-sidebar,
+.quarto-sidebar .sidebar-menu,
+.quarto-sidebar .toc-title {
+  background-color: #d6e9ff !important;   /* 与 narrative-overlay 同色 */
+  color: #003366 !important;             /* 与 narrative-text 同色 */
+  border-radius: 12px !important;        /* 可选，与条块圆角一致 */
+  margin-right: 1rem !important;         /* 可选，留一点呼吸感 */
+}
+
+/* 暗色下的表格斑马纹 */
+
+/* 1. 浅色模式：用帝国蓝 5% 透明度做偶数纹 */
+table tbody tr:nth-child(even) {
+  background: rgba($imperial-blue, .05);
+}
+
+/* 2. 暗色模式：把透明度降到 8% 并稍微压暗主色 */
+/* 2. 暗色模式：先提亮 20 % 再降透明度 → 淡蓝条纹 */
+[data-bs-theme="dark"] table tbody tr:nth-child(even) {
+  background: rgba(lighten($imperial-blue, 20%), .80);
+}
+
+/* 3. 悬停高亮同理，暗色模式用更柔和的蓝灰 */
+table tbody tr:hover td {
+  background: #e6f0ff !important;
+}
+[data-bs-theme="dark"] table tbody tr:hover td {
+  background: rgba($air-blue, .15) !important;
+}
+
+/* 1. 定义变量（帝国蓝本身 + 同色相亮 24 % 的浅蓝） */
+:root {
+  --link-color: #{$imperial-blue};                // 浅色模式保持原色
+  --link-hover: #{$orange};                       // 悬停高亮
+}
+[data-bs-theme="dark"] {
+  --link-color: #{lighten($imperial-blue, 80%)};  // 暗色模式同色相提亮
+  --link-hover: #{lighten($coral, 15%)};         // 悬停继续用暖色
+}
+
+/* 2. 一次性应用到所有 <a> */
+a {
+  color: var(--link-color);
+  transition: color .25s ease;
+}
+a:hover { color: var(--link-hover); }
+
+/* 暗色模式下的链接颜色 */
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #f0e68c;          /* 浅黄色，可换成 #ffff99 等 */
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #fffacd;          /* 悬停时更亮一点 */
+  }
+}
+
+/* lightbox拓展的阴影设置 */
+.my-css-class {
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+/* 数学环境背景设置 */
+
+/* --- 基础卡片样式 (所有环境共享) --- */
+.theorem, .lemma, .definition, .proposition, .corollary, .remark, .example, .proof {
+    /* 基础布局 */
+    padding: 14px 20px;
+    margin: 12px 0;
+    border-radius: 0px; /* 关键：设置为0px，实现方角 */
+    
+    /* 卡片效果：清新的背景和明显的阴影 */
+    background-color: #fafafa; /* 清新的淡灰色背景 */
+    border: 1px solid #f0f0f0; /* 极细的边框，增强轮廓 */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.08); /* 增强阴影，提升层次感 */
+    
+    /* 字体和排版 */
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.65;
+    position: relative;
+}
+
+/* --- 各环境独立样式 (清新鲜艳的科技风配色) --- */
+
+/* Theorem (定理): 明亮科技蓝 */
+.theorem {
+    border-left: 4px solid #3b82f6; /* 鲜艳的蓝色 */
+}
+.theorem h3 {
+    color: #3b82f6;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2); /* 同色系分隔线 */
+    padding-bottom: 4px;
+}
+
+/* Lemma (引理): 清新浅蓝色 */
+.lemma {
+    border-left: 4px solid #60a5fa; /* 清新的浅蓝色 */
+}
+.lemma h3 {
+    color: #60a5fa;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Definition (定义): 鲜亮青色 */
+.definition {
+    border-left: 4px solid #22d3ee; /* 鲜亮的青色 */
+}
+.definition h3 {
+    color: #22d3ee;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Proposition (命题): 神秘紫色 */
+.proposition {
+    border-left: 4px solid #8b5cf6; /* 神秘的紫色 */
+}
+.proposition h3 {
+    color: #8b5cf6;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Corollary (推论): 活力橙色 */
+.corollary {
+    border-left: 4px solid #f97316; /* 活力的橙色 */
+}
+.corollary h3 {
+    color: #f97316;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(249, 115, 22, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Remark (备注): 醒目的红色 */
+.remark {
+    border-left: 4px solid #ef4444; /* 鲜艳的红色 */
+}
+.remark h3 {
+    color: #ef4444;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Example (示例): 柔和的粉色 */
+.example {
+    border-left: 4px solid #f472b6; /* 柔和的粉色 */
+}
+.example h3 {
+    color: #f472b6;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(244, 114, 182, 0.2);
+    padding-bottom: 4px;
+}
+
+/* Proof (证明): 沉稳的灰色 */
+.proof {
+    border-left: 4px solid #6b7280; /* 沉稳的中灰色 */
+}
+.proof h3 {
+    color: #6b7280;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+    padding-bottom: 4px;
+}
+
+/*-- scss:defaults，导航栏高度还有滑动页面导航栏收纳效果 --*/
+$navbar-height: 60px;          // 栏高 50 px
+
 
 // Heading font size customization
 $h1-font-size: 2rem !default;
@@ -1464,7 +1846,7 @@ $btn-code-copy-color-active: #ffa07a !default;
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
 $code-copy-selector: "div.code-copy-outer-scaffold:hover > " !default;
-$code-white-space: pre !default;
+$code-white-space: pre-wrap !default;
 $tbl-cap-location: top !default;
 $sidebar-bg: if(variable-exists(body-bg), $body-bg, #fff) !default;
 $navbar-fg: #ffffffff !default;
@@ -13270,5 +13652,126 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
 
 // quarto-scss-analysis-annotation { "origin": null }
 
+.navbar {
+  min-height: $navbar-height;  // 整栏至少 50 px
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;           // 保持原有字号
+  line-height: 1.4;            // 默认行间距（多行不会撑开）
+  padding-top:    calc((#{$navbar-height} - 1.4em) / 2);
+  padding-bottom: calc((#{$navbar-height} - 1.4em) / 2);
+  padding-left:   0.6rem;      // 你原来的左右间距
+  padding-right:  0.6rem;
+}
+
+.dropdown-menu {
+  min-width: 12rem;            // 下拉菜单宽度不变
+}
+
+/*-- 导航栏字体设置 --*/
+
+/*-- 1. 加载字体 --*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fira+Code&display=swap');
+
+/*-- 2. 导航栏统一用 Fira Sans --*/
+.navbar {
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: .4px;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 1.05rem;          // 比默认略大
+}
+
+/*-- 导航栏背景颜色渐变设置，底部还有一条橙线 --*/
+/*-- 3. 帝国蓝 → 深海蓝渐变 --*/
+.navbar {
+  background: linear-gradient(135deg, $imperial-blue 0%, darken($imperial-blue,12%) 100%);
+  border-bottom: 2px solid $orange;   // 1 px 太细，2 px 存在感更好
+}
+
+/*-- 导航栏悬停效果 --*/
+/*-- 4. 普通态：圆角药丸 + 微阴影 --*/
+.navbar-nav .nav-link {
+  border-radius: 1rem;
+  padding: .45rem 1rem;
+  transition: all .25s ease-in-out;
+  box-shadow: 0 0 0 0 transparent;
+}
+/*-- 5. 悬停：背景高亮 + 阴影抬起 --*/
+.navbar-nav .nav-link:hover {
+  background: rgba(white,.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,.12);
+}
+/*-- 6. 活跃页：橙色底线 + 白字 --*/
+.navbar-nav .nav-link.active {
+  color: white !important;
+  background: rgba(white,.1);
+  box-shadow: 0 0 0 2px $orange inset;
+}
+
+/*-- 导航栏下拉菜单效果的调整 --*/
+/*-- 7. 下拉整体：圆角 + 阴影 + 淡入 --*/
+.navbar .dropdown-menu {
+  background: #fff;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  animation: fadeIn .2s ease;
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+
+/*-- 8. 下拉项：左右 padding 放大 & 彩色悬停 --*/
+.dropdown-item {
+  padding: .4rem 1.2rem;
+  border-radius: .25rem;
+  transition: background .2s;
+}
+.dropdown-item:hover {
+  background: $air-blue;
+  color: white;
+}
+
+/*-- 9. 搜索框圆角 + 聚焦高亮 --*/
+.navbar .quarto-search-input {
+  border-radius: 1rem;
+  border: 1px solid rgba(white,.3);
+  background: rgba(white,.12);
+  color: white;
+}
+.navbar .quarto-search-input::placeholder { color: rgba(white,.65); }
+.navbar .quarto-search-input:focus {
+  background: rgba(white,.2);
+  border-color: $orange;
+  box-shadow: 0 0 0 3px rgba($orange,.25);
+}
+
+/*-- 10. 读者模式按钮靠右 & 图标化 --*/
+.navbar .reader-mode-toggle {
+  margin-left: auto;          // 靠最右
+  font-size: 1.2rem;
+  color: rgba(white,.8);
+  border: 1px solid rgba(white,.4);
+  border-radius: 50%;
+  width: 2rem; height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .reader-mode-toggle:hover {
+  color: white;
+  border-color: white;
+}
+
+/*-- 12. 汉堡图标三条杠加粗 & 彩色 --*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border-color: rgba(white,.5);
+  border-radius: .25rem;
+}
 
 // quarto-scss-analysis-annotation { "origin": null }
