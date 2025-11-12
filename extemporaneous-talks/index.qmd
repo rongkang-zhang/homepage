@@ -37,8 +37,8 @@ listing:
   type: table
   date-format: "YYYY-MM-DD"
   categories: false
-  fields: [title, categories, core-references, file-modified]
-  filter-ui: [title, categories, core-references, file-modified]
+  fields: [title, categories, core-references, file-modified, author]
+  filter-ui: [title, categories, core-references, file-modified, author]
   sort: ["weight desc", "title asc"]
   sort-ui: true
   table-striped: true

@@ -1,9 +1,12 @@
 ---
 title: "Category Theory"
+subtitle: "Extemporaneous Construction Talks on Category Theory"
 author: "Rong-Kang Zhang"
 date: last-modified
 weight: 10
-core-references: "Mac Lane 1998; Awodey 2010"
+core-references:
+  - Mac Lane 1998
+  - Awodey 2010
 categories:
   - Mathematical Logic
   - Category Theory

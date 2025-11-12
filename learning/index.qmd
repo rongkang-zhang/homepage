@@ -1,13 +1,14 @@
 ---
-title: "Topics to Learn"
+title: "Topics to Learn & Learning Progress"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
 categories: [Category Theory]
 page-layout: full
-csl: ../../american-mathematical-society.csl
+bibliography: refs.bib
+csl: ../american-mathematical-society.csl
 ---
 
 | Overall Category                            | Topics Covered                                               | References Adopted |
 | ------------------------------------------- | ------------------------------------------------------------ | ------------------ |
-| Mathematical Logic<br>and Beyond | • Category Theory<br>• Topos Theory<br>• Higher topos theory | @maclane1998       |
+| Mathematical Logic<br>and Beyond | • Category Theory<br>• Topos Theory<br>• Higher topos theory | [@maclane1998]       |

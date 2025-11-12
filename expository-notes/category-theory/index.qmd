@@ -1,9 +1,10 @@
 ---
 title: "Category Theory"
+subtitle: "Expository Study Notes on Category Theory"
+author: "Rong-Kang Zhang"
 core-references: "Mac Lane 1998"
 date: last-modified
 weight: 7
-author: "Rong-Kang Zhang"
 abstract: >
   These notes follow a textbook-style roadmap through category theory,
   moving from concrete definitions to abstract machinery and onward to cross-domain applications.
