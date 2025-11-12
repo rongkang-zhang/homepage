@@ -319,15 +319,15 @@ cookieconsent.run({
       <style>
         :root {
           --cr-narrative-outer-margin: 2rem;
---cr-narrative-font-family: “LXGW WenKai”, sans-serif;
---cr-narrative-font-size: 0.95rem;
---cr-narrative-overlay-max-width: 480px;
 --cr-narrative-background-color-overlay: #d6e9ff;
---cr-narrative-text-color-overlay: #003366;
+--cr-narrative-overlay-max-width: 480px;
+--cr-narrative-font-size: 0.95rem;
 --cr-narrative-border-radius: 16px;
---cr-narrative-sidebar-width: 1fr;
---cr-section-background-color: #eef5ff;
+--cr-narrative-font-family: “LXGW WenKai”, sans-serif;
 --cr-narrative-overlay-min-width: 260px;
+--cr-narrative-sidebar-width: 1fr;
+--cr-narrative-text-color-overlay: #003366;
+--cr-section-background-color: #eef5ff;
         }
       </style>
     
@@ -621,7 +621,7 @@ cookieconsent.run({
 <strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-pan-to="50%,50%" data-focus-on="cr-intro" data-scale-by=".5">
+<div class="trigger new-trigger" data-scale-by=".5" data-focus-on="cr-intro" data-pan-to="50%,50%">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -637,7 +637,7 @@ cookieconsent.run({
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-pan-to="50%,50%" data-focus-on="cr-fig-trial" data-scale-by="1.5">
+<div class="trigger new-trigger" data-scale-by="1.5" data-focus-on="cr-fig-trial" data-pan-to="50%,50%">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>

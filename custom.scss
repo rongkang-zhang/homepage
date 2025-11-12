@@ -13,6 +13,20 @@ $seaweed: #177E89;
 
 $navbar-background: $imperial-blue;
 
+/*  导航栏/链接/数学等所有变量先一次性声明 */
+$navbar-height: 60px;
+$grass-green: #66bb6a;
+$grass-gold: #ffa726;
+$grass-blue: #42a5f5;
+$grass-mint: #26c6da;
+$grass-lavender: #ab47bc;
+$grass-silver: #b0bec5;
+
+/*  深色模式仅覆盖「已存在变量」或写普通 CSS，深色模式下的导航栏设置  */
+[data-bs-theme="dark"] .navbar {
+  background: linear-gradient(135deg, darken($imperial-blue,10%) 0%, darken($teal-blue,10%) 100%);
+}
+
 .horizontal-list {
     list-style-type: none;
     padding-left: 0;
