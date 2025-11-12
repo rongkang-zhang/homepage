@@ -3,13 +3,10 @@
     "listing": "/research/index.html",
     "items": [
       "/research/1/index.html",
-      "/research/1/abstract/index.html"
-    ]
-  },
-  {
-    "listing": "/expository-notes/index.html",
-    "items": [
-      "/expository-notes/category-theory/index.html"
+      "/research/1/abstract/index.html",
+      "/research/1/background/index.html",
+      "/research/1/literature-notes/index.html",
+      "/research/1/preliminaries/index.html"
     ]
   },
   {
@@ -19,9 +16,18 @@
     ]
   },
   {
+    "listing": "/expository-notes/index.html",
+    "items": [
+      "/expository-notes/category-theory/index.html"
+    ]
+  },
+  {
     "listing": "/research/1/index.html",
     "items": [
-      "/research/1/abstract/index.html"
+      "/research/1/abstract/index.html",
+      "/research/1/background/index.html",
+      "/research/1/literature-notes/index.html",
+      "/research/1/preliminaries/index.html"
     ]
   }
 ]

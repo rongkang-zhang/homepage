@@ -10,4 +10,10 @@ listing:
   contents: "*/index.qmd"
 ---
 
-[查看摘要](abstract/index.qmd)
+* [Abstract](abstract/index.qmd)
+
+* [Background](background/index.qmd)
+
+* [Preliminaries](preliminaries/index.qmd)
+
+* [Literature Notes](literature-notes/index.qmd)

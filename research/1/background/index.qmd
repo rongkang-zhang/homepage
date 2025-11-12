@@ -1,0 +1,10 @@
+---
+title: "Background"
+subtitle: A Topos-Theoretic Bridge for Holographic Entanglement Entropy
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+categories: [Category Theory]
+page-layout: full
+csl: ../../american-mathematical-society.csl
+---
