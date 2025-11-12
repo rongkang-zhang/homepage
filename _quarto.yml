@@ -86,10 +86,10 @@ website:
         href: "https://orcid.org/你的ID"
   page-footer:
     left: |
-      <img src="assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">
-      Made with [Quarto](https://quarto.org/ ) and managed via [Git](https://git-scm.com/ ) & [GitHub Desktop](https://desktop.github.com/ ).<br>
+      <img src="/assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">
+      Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).<br>
       © 2025 Rong-Kang Zhang · Last updated: {{< meta date >}} ·
-      <a href="cookie-policy.html">Cookie Policy</a> ·
+      <a href="/cookie-policy.html">Cookie Policy</a> ·
       <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a>
 
 format:

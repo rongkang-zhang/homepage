@@ -1853,9 +1853,9 @@ $title-banner-color: null !default;
 $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
-$code-block-bg: #282a36 !default;
-$btn-code-copy-color: #6272a4 !default;
-$btn-code-copy-color-active: #50fa7b !default;
+
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -13786,6 +13786,18 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
 .navbar-toggler {
   border-color: rgba(white,.5);
   border-radius: .25rem;
+}
+
+/* 仅对参考文献列表生效，其余位置保持原样 */
+#refs a[href^="http"]:after,
+.references a[href^="http"]:after,
+div.csl-entry a[href^="http"]:after {
+  content: "⧉";
+  display: inline-block;     /* 关键：让宽度参与断行 */
+  width: 0.6em;              /* 给图标留够位置 */
+  margin-left: 17px;
+  text-decoration: none;
+  color: inherit;
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
