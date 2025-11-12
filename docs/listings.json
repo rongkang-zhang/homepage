@@ -22,8 +22,12 @@
     "items": [
       "/research/1/abstract/index.html",
       "/research/1/background/index.html",
-      "/research/1/literature-notes/index.html",
-      "/research/1/preliminaries/index.html"
+      "/research/1/motivation/index.html",
+      "/research/1/objectives/index.html",
+      "/research/1/methodology/index.html",
+      "/research/1/preliminaries/index.html",
+      "/research/1/results/index.html",
+      "/research/1/literature-notes/index.html"
     ]
   }
 ]

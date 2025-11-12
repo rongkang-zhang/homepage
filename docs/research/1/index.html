@@ -91,9 +91,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-file-modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-file-modified","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -510,121 +510,152 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762921993000" data-listing-file-modified-sort="1762921993254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../../research/1/abstract/index.html" class="no-external">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped">
+<thead>
+<tr>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../research/1/abstract/index.html" class="no-external">Abstract</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../research/1/abstract/index.html" class="no-external">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</a>
-</div>
-<div class="delink listing-description"><a href="../../research/1/abstract/index.html" class="no-external">
+<th>
+Modified
+</th>
 
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../research/1/abstract/index.html" class="no-external">
-<div class="listing-date">
-Nov 12, 2025
-</div>
-<div class="listing-author">
-Rong-Kang Zhang
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762954042000" data-listing-file-modified-sort="1762954042364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../../research/1/background/index.html" class="no-external">
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</tr>
+</thead>
+<tbody class="list">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../research/1/background/index.html" class="no-external">Background</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../research/1/background/index.html" class="no-external">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</a>
-</div>
-<div class="delink listing-description"><a href="../../research/1/background/index.html" class="no-external">
+<tr data-index="0" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762971354000" data-listing-file-modified-sort="1762971354054" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Abstract" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/abstract/index.html" class="title listing-title">Abstract</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
 
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../research/1/background/index.html" class="no-external">
-<div class="listing-date">
-Nov 12, 2025
-</div>
-<div class="listing-author">
-Rong-Kang Zhang
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762954063000" data-listing-file-modified-sort="1762954063635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../../research/1/literature-notes/index.html" class="no-external">
+</tr>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<tr data-index="1" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762971359000" data-listing-file-modified-sort="1762971359863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Background" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/background/index.html" class="title listing-title">Background</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../research/1/literature-notes/index.html" class="no-external">Literature Notes</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../research/1/literature-notes/index.html" class="no-external">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</a>
-</div>
-<div class="delink listing-description"><a href="../../research/1/literature-notes/index.html" class="no-external">
+</tr>
 
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../research/1/literature-notes/index.html" class="no-external">
-<div class="listing-date">
-Nov 12, 2025
-</div>
-<div class="listing-author">
-Rong-Kang Zhang
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762956102000" data-listing-file-modified-sort="1762956102599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19">
-<div class="thumbnail"><a href="../../research/1/preliminaries/index.html" class="no-external">
+<tr data-index="2" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762971212000" data-listing-file-modified-sort="1762971212631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Motivation" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/motivation/index.html" class="title listing-title">Motivation</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../research/1/preliminaries/index.html" class="no-external">Preliminaries</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../research/1/preliminaries/index.html" class="no-external">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</a>
-</div>
-<div class="delink listing-description"><a href="../../research/1/preliminaries/index.html" class="no-external">
-The holographic principle was first articulated in the context of black-hole unitarity by ’t Hooft (1993) <span class="citation" data-cites="thooft1993dimensional">(Hooft 1993)</span>.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../research/1/preliminaries/index.html" class="no-external">
-<div class="listing-date">
-Nov 12, 2025
-</div>
-<div class="listing-author">
-Rong-Kang Zhang
-</div>
-</a>
-</div>
-</div>
-</div>
+<tr data-index="3" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762971227000" data-listing-file-modified-sort="1762971227262" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Objectives" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/objectives/index.html" class="title listing-title">Objectives</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762971375000" data-listing-file-modified-sort="1762971375550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Methodology" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/methodology/index.html" class="title listing-title">Methodology</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762971074000" data-listing-file-modified-sort="1762971074411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Preliminaries" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/preliminaries/index.html" class="title listing-title">Preliminaries</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-categories="QWRTJTJGQ0ZUJTIwRHVhbGl0eSUyQ0hvbG9ncmFwaGljJTIwUHJpbmNpcGxl" data-listing-date-sort="1762971243000" data-listing-file-modified-sort="1762971243462" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Results" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/results/index.html" class="title listing-title">Results</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762971365000" data-listing-file-modified-sort="1762971365896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Literature Notes" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../research/1/literature-notes/index.html" class="title listing-title">Literature Notes</a>
+</td>
+<td>
+<span class="listing-file-modified">2025-11-13</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

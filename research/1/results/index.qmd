@@ -1,5 +1,5 @@
 ---
-title: "Preliminaries"
+title: "Results"
 subtitle: A Topos-Theoretic Bridge for Holographic Entanglement Entropy
 author: "Rong-Kang Zhang"
 date: last-modified
@@ -8,7 +8,7 @@ categories: [AdS/CFT Duality, Holographic Principle]
 page-layout: full
 bibliography: ../refs.bib
 csl: ../../../american-mathematical-society.csl
-weight: 6
+weight: 7
 ---
 
 # Holographic Principle

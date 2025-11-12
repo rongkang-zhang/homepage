@@ -7,9 +7,19 @@ categories:
   - Topos Theory
   - Holographic Entanglement Entropy
 page-layout: full
+bibliography: refs.bib
 csl: ../../american-mathematical-society.csl
 listing:
   contents: "*/index.qmd"
+  type: table
+  date-format: "YYYY-MM-DD"
+  categories: false
+  fields: [title, file-modified, author]
+  filter-ui: [title, file-modified, author]
+  sort: ["weight asc", "title asc", "file-modified desc"]
+  sort-ui: true
+  table-striped: true
+  page-size: 20
 ---
 
 * [Abstract](abstract/index.qmd)
