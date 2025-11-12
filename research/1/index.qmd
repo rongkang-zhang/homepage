@@ -3,7 +3,9 @@ title: "A Topos-Theoretic Bridge for Holographic Entanglement Entropy"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
-categories: [Topos Theory, Holographic Entanglement Entropy]
+categories:
+  - Topos Theory
+  - Holographic Entanglement Entropy
 page-layout: full
 csl: ../../american-mathematical-society.csl
 listing:

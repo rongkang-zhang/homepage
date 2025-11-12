@@ -3,14 +3,20 @@ title: "Notes on Committed Substainded Research Projects"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
-categories: [Topos Theory, Holographic Entanglement Entropy]
+categories:
+  - Topos Theory
+  - Holographic Entanglement Entropy
 page-layout: full
-csl: ../../american-mathematical-society.csl
+csl: ../american-mathematical-society.csl
 listing:
-  contents: "*/index.qmd"
+  contents: "1/index.qmd"
   type: table
   date-format: "YYYY-MM-DD"
   categories: false
+  fields: [title, categories, file-modified, author]
+  filter-ui: [title, categories, file-modified, author]
+  sort: ["weight desc", "title asc", "file-modified desc"]
+  sort-ui: true
   table-striped: true
   page-size: 20
 ---
