@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rongkang-zhang.github.io/homepage/research/1/index.html</loc>
-    <lastmod>2025-11-11T16:04:39.113Z</lastmod>
+    <loc>https://rongkang-zhang.github.io/homepage/research/index.html</loc>
+    <lastmod>2025-11-12T04:36:55.072Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/abstract/index.html</loc>
+    <lastmod>2025-11-12T04:33:13.254Z</lastmod>
   </url>
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/learning/topics-to-learn/index.html</loc>
@@ -51,5 +55,9 @@
   <url>
     <loc>https://rongkang-zhang.github.io/homepage/research-logs/index.html</loc>
     <lastmod>2025-11-10T12:23:13.630Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rongkang-zhang.github.io/homepage/research/1/index.html</loc>
+    <lastmod>2025-11-12T04:54:40.721Z</lastmod>
   </url>
 </urlset>

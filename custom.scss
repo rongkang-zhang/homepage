@@ -554,12 +554,23 @@ a:hover { color: var(--link-hover); }
     padding-bottom: 4px;
 }
 
-/* 导航文字更小更紧凑 */
-.navbar-nav .nav-link {
-  font-size: 0.9rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-}
-/* 下拉菜单同宽，防止超长 */
-.dropdown-menu { min-width: 12rem; }
+/*-- scss:defaults --*/
+$navbar-height: 60px;          // 栏高 50 px
 
+/*-- scss:rules --*/
+.navbar {
+  min-height: $navbar-height;  // 整栏至少 50 px
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;           // 保持原有字号
+  line-height: 1.4;            // 默认行间距（多行不会撑开）
+  padding-top:    calc((#{$navbar-height} - 1.4em) / 2);
+  padding-bottom: calc((#{$navbar-height} - 1.4em) / 2);
+  padding-left:   0.6rem;      // 你原来的左右间距
+  padding-right:  0.6rem;
+}
+
+.dropdown-menu {
+  min-width: 12rem;            // 下拉菜单宽度不变
+}

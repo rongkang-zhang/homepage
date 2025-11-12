@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/1/index.html",
+      "/research/1/abstract/index.html"
+    ]
+  },
+  {
     "listing": "/expository-notes/index.html",
     "items": [
       "/expository-notes/category-theory/index.html"
@@ -9,6 +16,12 @@
     "listing": "/extemporaneous-talks/index.html",
     "items": [
       "/extemporaneous-talks/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/research/1/index.html",
+    "items": [
+      "/research/1/abstract/index.html"
     ]
   }
 ]

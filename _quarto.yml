@@ -46,8 +46,10 @@ website:
       - text: <span style='color:#c7254e'>Research&nbsp;<small>▼</small></span>
         icon: list-check
         menu:
-            - text: 1-20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy
-              href: research/1/index.qmd
+            - text: Overview
+              href: research/index.html
+            - text: 1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy
+              href: research/1/index.html
       - text: Learning&nbsp;<small>▼</small>
         icon: book
         menu:
@@ -59,7 +61,7 @@ website:
               href: learning-logs/index.html
             - text: List of Textbooks I've Studied
               href: list-of-textbooks-i've-studied/index.html
-      - text: Conferences<br>Attended
+      - text: Conferences
         icon: calendar-event
         href: conferences/index.html
       - text: Research<br>Logs

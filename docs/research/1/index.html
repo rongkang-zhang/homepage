@@ -9,7 +9,7 @@
 <meta name="author" content="Rong-Kang Zhang">
 <meta name="dcterms.date" content="2025-11-12">
 
-<title>Topics to Learn – Rong-KangZhang</title>
+<title>A Topos-Theoretic Bridge for Holographic Entanglement Entropy – Rong-KangZhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/pictures/web-logo-7.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -47,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-392e0d770eaba8f702b06d559ac26c97.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be387102a964d6fc4e5a90b6fd3f6144.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-392e0d770eaba8f702b06d559ac26c97.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b0e576605bff52e8e7ed21c97e7dfb22.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-f05e48d28bb5b3bb7df232d8b2aec300.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-b0e576605bff52e8e7ed21c97e7dfb22.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -79,6 +81,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DDVX87V0F2"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -107,11 +138,42 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<meta property="og:title" content="Topics to Learn – Rong-KangZhang">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="A Topos-Theoretic Bridge for Holographic Entanglement Entropy – Rong-KangZhang">
+<meta property="og:description" content="Higher category | Grothendieck toposes | Chiral representation theory">
 <meta property="og:image" content="https://rongkang-zhang.github.io/homepage/research/1/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
-<meta name="twitter:title" content="Topics to Learn – Rong-KangZhang">
+<meta name="twitter:title" content="A Topos-Theoretic Bridge for Holographic Entanglement Entropy – Rong-KangZhang">
+<meta name="twitter:description" content="Higher category | Grothendieck toposes | Chiral representation theory">
 <meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/research/1/assets/pictures/profile-picture.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -329,8 +391,12 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-stylecolorc7254eresearchnbspsmall▼smallspan">    
         <li>
+    <a class="dropdown-item" href="../../research/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../research/1/index.html">
- <span class="dropdown-text">1-20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy</span></a>
+ <span class="dropdown-text">1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy</span></a>
   </li>  
     </ul>
   </li>
@@ -362,7 +428,7 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
-<span class="menu-text">Conferences<br>Attended</span></a>
+<span class="menu-text">Conferences</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../research-logs/index.html"> <i class="bi bi-calendar-event" role="img">
@@ -423,9 +489,10 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Topics to Learn</h1>
+<h1 class="title">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Category Theory</div>
+    <div class="quarto-category">Topos Theory</div>
+    <div class="quarto-category">Holographic Entanglement Entropy</div>
   </div>
   </div>
 
@@ -455,31 +522,44 @@ cookieconsent.run({
 </header>
 
 
-<table class="caption-top table">
-<colgroup>
-<col style="width: 35%">
-<col style="width: 49%">
-<col style="width: 14%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Overall Category</th>
-<th>Topics Covered</th>
-<th>References Adopted</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mathematical Logic<br>and Beyond</td>
-<td>• Category Theory<br>• Topos Theory<br>• Higher topos theory</td>
-<td><span class="citation" data-cites="maclane1998">@maclane1998</span></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../../research/1/abstract/index.html">查看摘要</a></p>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Q2F0ZWdvcnklMjBUaGVvcnk=" data-listing-date-sort="1762921993000" data-listing-file-modified-sort="1762921993254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../../research/1/abstract/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../research/1/abstract/index.html" class="no-external">Abstract</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../research/1/abstract/index.html" class="no-external">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</a>
+</div>
+<div class="delink listing-description"><a href="../../research/1/abstract/index.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../research/1/abstract/index.html" class="no-external">
+<div class="listing-date">
+Nov 12, 2025
+</div>
+<div class="listing-author">
+Rong-Kang Zhang
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
