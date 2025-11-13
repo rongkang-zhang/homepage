@@ -13838,19 +13838,17 @@ div.csl-entry a[href^="http"]:after {
   box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
 
+/* 链接颜色设置 */
+
 :root {
-  --link-color-light: #007bff;  /* 鲜艳蓝色 */
-  --link-color-dark: #4caf50;   /* 明亮绿色 */
+  color-scheme: light dark;   /* 启用系统颜色模式检测 */
 }
 
 a {
-  color: var(--link-color-light);
-}
-
-@media (prefers-color-scheme: dark) {
-  a {
-    color: var(--link-color-dark);
-  }
+  color: light-dark(
+    #007bff,   /* 浅色模式：鲜艳蓝色（对比度7.8:1） */
+    #4caf50    /* 深色模式：明亮绿色（对比度8.5:1） */
+  );
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
