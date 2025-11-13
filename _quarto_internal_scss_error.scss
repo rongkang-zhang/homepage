@@ -13800,4 +13800,42 @@ div.csl-entry a[href^="http"]:after {
   color: inherit;
 }
 
+/* =========  1. 字体系统  ========= */
+:root {
+  --bs-font-sans-serif: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --nav-font-size: 0.95rem;          /* 15–16 px 区间，阅读最舒适 */
+  --nav-font-weight: 500;            /* 500 比 400 更精神，又不会太粗 */
+}
+
+/* 英文字体优先 Inter，无则降级；中文自动调用系统苹方/思源 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* =========  2. 颜色变量（自动随主题翻转） ========= */
+[data-bs-theme="light"] {
+  --nav-bg: #ffffffee;               /* 纯白 → 轻微玻璃 */
+  --nav-text: #1f1f1f;
+  --nav-text-hover: #c7254e;         /* 保持个人品牌色 */
+  --nav-accent-bg: rgba(199,37,78,.08);
+}
+[data-bs-theme="dark"] {
+  --nav-bg: #0d1117ee;               /* GitHub 暗夜灰 */
+  --nav-text: #c9d1d9;
+  --nav-text-hover: #f67e7d;         /* 提高 10 % 亮度，避免过暗 */
+  --nav-accent-bg: rgba(246,126,125,.12);
+}
+
+/* =========  4. 文字颜色 & 悬停动画 ========= */
+.navbar-nav .nav-link {
+  color: var(--nav-text) !important;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  transition: all .25s ease-in-out;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--nav-text-hover) !important;
+  background: var(--nav-accent-bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
 // quarto-scss-analysis-annotation { "origin": null }
