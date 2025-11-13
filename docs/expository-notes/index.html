@@ -1056,10 +1056,63 @@ Lane, S. M. (1998), <em>Categories for the working mathematician</em>, Graduate 
 
 <div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-<p><a href="#top" aria-label="Back to top" class="back-to-top"> <i class="bi bi-arrow-up-circle"></i> </a></p>
-</div>
+      &nbsp;
+    </div>
   </div>
 </footer>
+<!-- 回到顶部悬浮按钮 -->
+<a href="#top" class="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up-circle-fill"></i>
+  <span class="btn-text">Top</span>
+</a>
+<style>
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #fff;
+  background: linear-gradient(135deg, #42a5f5 0%, #177e89 100%);
+  border-radius: 50rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  text-decoration: none; /* 去掉下划线 */
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.3);
+}
+.back-to-top .btn-text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.back-to-top i {
+  font-size: 1.8rem;   /* 再放大一圈 */
+}
+</style>
+<script>
+const toTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  toTop.classList.toggle('show', window.scrollY > 300);
+});
+toTop.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+</script>
 
 
 

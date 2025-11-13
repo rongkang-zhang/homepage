@@ -87,9 +87,10 @@ format:
       light: [cosmo, custom.scss]
       dark:  [darkly, custom.scss]
     toc: true
+    toc-location: right           # 目录放右侧，正文更宽
     code-overflow: wrap       # 长代码自动折行，避免横向滚动条
     link-external-newwindow: true # 外链默认新标签打开
-    linkcolor: blue
+    # linkcolor: blue
     font-awesome: true
     html-math-method:
       method: mathjax

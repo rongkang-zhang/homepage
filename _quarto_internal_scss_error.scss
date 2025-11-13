@@ -3976,7 +3976,7 @@ $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, remo
 $pre-bg:                            $code-bg  !default;
 $pre-color:                         $body-emphasis-color !default;
 $pre-line-height:                   $line-height-base !default;
-$link-color: blue;
+
 
 
 
@@ -13836,6 +13836,21 @@ div.csl-entry a[href^="http"]:after {
   color: var(--nav-text-hover) !important;
   background: var(--nav-accent-bg);
   box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+:root {
+  --link-color-light: #007bff;  /* 鲜艳蓝色 */
+  --link-color-dark: #4caf50;   /* 明亮绿色 */
+}
+
+a {
+  color: var(--link-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--link-color-dark);
+  }
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
