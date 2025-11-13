@@ -14,6 +14,8 @@ abstract: >
   GitHub/Quarto to ensure continuous updating and public traceability.
 page-layout: full
 toc: false
+bibliography: ../refs.bib
+csl: ../american-mathematical-society.csl
 listing:
   contents: "*/index.qmd"
   type: table
@@ -26,6 +28,10 @@ listing:
   table-striped: true
   page-size: 20
 ---
+
+| Overall Category                            | Topics Covered                                               | References Adopted |
+| ------------------------------------------- | ------------------------------------------------------------ | ------------------ |
+| Mathematical Logic<br>and Beyond | • Category Theory<br>• Topos Theory<br>• Higher topos theory | [@maclane1998]       |
 
 > The following section presents a synoptic index of all thematic areas. Each hyperlinked entry leads to the complete set of lecture notes hosted on this repository; ancillary PDFs generated via Overleaf are likewise available for download.  
 > All materials are open-access and version-controlled through GitHub/Quarto.

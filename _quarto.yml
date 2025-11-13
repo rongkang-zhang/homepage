@@ -54,6 +54,13 @@ website:
               href: solutions/index.html
             - text: Category theory
               href: solutions/category-theory/index.html
+      - text: CodeLab&nbsp;<small>▼</small>
+        icon: "bi-code-slash"
+        menu:
+            - text: Overview
+              href: codelab/index.html
+            - text: Category theory
+              href: codelab/category-theory/index.html
       - text: Research&nbsp;<small>▼</small>
         icon: "bi-infinity"
         menu:
@@ -61,9 +68,6 @@ website:
               href: research/index.html
             - text: 1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy
               href: research/1/index.html
-      - text: Learning
-        icon: "bi-book-half"
-        href: learning/index.html
       - text: Conferences
         icon: "bi-calendar-event"
         href: conferences/index.html

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rong-Kang Zhang">
-<meta name="dcterms.date" content="2025-11-11">
+<meta name="dcterms.date" content="2025-11-13">
 
 <title>Expository Study Notes by Subjects – Rong-KangZhang</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -411,6 +431,23 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-codelabnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">CodeLab&nbsp;<small>▼</small></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-codelabnbspsmall▼small">    
+        <li>
+    <a class="dropdown-item" href="../codelab/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../codelab/category-theory/index.html">
+ <span class="dropdown-text">Category theory</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-researchnbspsmall▼small" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-infinity" role="img">
 </i> 
@@ -427,11 +464,6 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../learning/index.html"> <i class="bi bi-book-half" role="img">
-</i> 
-<span class="menu-text">Learning</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
@@ -473,7 +505,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 11, 2025</p>
+      <p class="date">November 13, 2025</p>
     </div>
   </div>
   
@@ -491,10 +523,32 @@ window.Quarto = {
 </header>
 
 
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 49%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Overall Category</th>
+<th>Topics Covered</th>
+<th>References Adopted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mathematical Logic<br>and Beyond</td>
+<td>• Category Theory<br>• Topos Theory<br>• Higher topos theory</td>
+<td><span class="citation" data-cites="maclane1998">(<a href="#ref-maclane1998" role="doc-biblioref">Lane 1998</a>)</span></td>
+</tr>
+</tbody>
+</table>
 <blockquote class="blockquote">
 <p>The following section presents a synoptic index of all thematic areas. Each hyperlinked entry leads to the complete set of lecture notes hosted on this repository; ancillary PDFs generated via Overleaf are likewise available for download.<br>
 All materials are open-access and version-controlled through GitHub/Quarto.</p>
 </blockquote>
+
 
 
 
@@ -569,7 +623,11 @@ Modified
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-maclane1998" class="csl-entry" role="listitem">
+Lane, S. M. (1998), <em>Categories for the working mathematician</em>, Graduate texts in mathematics, New York, NY: Springer-Verlag. <a href="https://doi.org/10.1007/978-1-4757-4721-8">https://doi.org/10.1007/978-1-4757-4721-8</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -992,7 +1050,7 @@ Modified
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 11, 2025 · <a href="../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 13, 2025 · <a href="../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
 </div>   
     <div class="nav-footer-center">
 

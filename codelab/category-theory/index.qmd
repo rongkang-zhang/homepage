@@ -1,0 +1,212 @@
+---
+title: "Category Theory"
+subtitle: "MathPhysCS CodeLab on Category Theory"
+format:
+  closeread-html:
+    toc: true
+    toc-depth: 5
+    toc-title: "Content"
+    cr-style:
+      section-background-color: "#eef5ff"          # 天空灰白
+      narrative-overlay-max-width: 480px
+      narrative-overlay-min-width: 260px
+      narrative-font-size: 0.95rem
+      narrative-font-family: "\"LXGW WenKai\", sans-serif"
+      narrative-border-radius: 16px
+      narrative-background-color-overlay: "#d6e9ff" # 极浅天蓝条
+      narrative-text-color-overlay: "#003366"       # 深海蓝字
+      narrative-outer-margin: 2rem
+      narrative-sidebar-width: 1fr
+---
+
+::: {.cr-section}
+
+::: {focus-on="cr-intro"}
+> Create something here
+
+* list1
+* list 2
+
+| 表情 | 图标 |
+|---|---|
+| smile | {{< fa face-smile >}} |
+| grin | {{< fa face-grin-beam >}} |
+| laugh | {{< fa face-laugh-squint >}} |
+| wink | {{< fa face-grin-wink >}} |
+| happy-cry | {{< fa face-grin-tears >}} |
+| sad | {{< fa face-frown >}} |
+| cry | {{< fa face-sad-cry >}} |
+| tired | {{< fa face-dizzy >}} |
+| sleepy | {{< fa face-meh >}} |
+| yawn | {{< fa face-yawn >}} |
+| neutral | {{< fa face-meh-blank >}} |
+| thinking | {{< fa face-meh >}} |
+| worried | {{< fa face-frown-open >}} |
+| shocked | {{< fa face-surprise >}} |
+| angry | {{< fa face-angry >}} |
+| grimace | {{< fa face-grimace >}} |
+| kiss | {{< fa face-kiss-wink-heart >}} |
+| nerd | {{< fa face-grin-beam-sweat >}} |
+| sweat | {{< fa face-grin-sweat >}} |
+| cool | {{< fa face-sunglasses >}} |
+| tongue | {{< fa face-grin-tongue >}} |
+| tongue-wink | {{< fa face-grin-tongue-wink >}} |
+| eye-roll | {{< fa face-rolling-eyes >}} |
+| blush | {{< fa face-smile-blush >}} |
+| innocent | {{< fa face-smile halo >}} |
+| devil | {{< fa face-grin-devil >}} |
+| zipper | {{< fa face-zipper >}} |
+| mask | {{< fa face-medical-mask >}} |
+| thermometer | {{< fa face-thermometer >}} |
+| head-bandage | {{< fa face-head-bandage >}} |
+| hushed | {{< fa face-hushed >}} |
+| confused | {{< fa face-confused >}} |
+| exhausted | {{< fa face-tired >}} |
+| party | {{< fa face-party >}} |
+| raised-eyebrow | {{< fa face-raised-eyebrow >}} |
+| slight-smile | {{< fa face-smile slight >}} |
+| slight-frown | {{< fa face-frown slight >}} |
+| smile-open | {{< fa face-smile-open >}} |
+| frown-open | {{< fa face-frown-open >}} |
+| grimace | {{< fa face-grimace >}} |
+| wide-grin | {{< fa face-grin-wide >}} |
+| beam-sweat | {{< fa face-grin-beam-sweat >}} |
+| squint-tears | {{< fa face-squint-tears >}} |
+| star-struck | {{< fa face-grin-stars >}} |
+| heart-eyes | {{< fa face-grin-hearts >}} |
+| cheeky | {{< fa face-grin-tongue-squint >}} |
+| upside-down | {{< fa face-grin-upsidedown >}} |
+| cowboy | {{< fa face-cowboy >}} |
+| disguised | {{< fa face-disguise >}} |
+| lying | {{< fa face-lying >}} |
+| pleading | {{< fa face-pleading >}} |
+| holding-back-tears | {{< fa face-holding-back-tears >}} |
+| saluting | {{< fa face-saluting >}} |
+
+| 😊 happy        | `{{< fa face-grin-beam >}}`        |
+| 🙂 calm         | `{{< fa face-smile >}}`            |
+| 😕 puzzled      | `{{< fa face-meh >}}`              |
+| 😴 sleepy       | `{{< fa face-dizzy >}}`            |
+| 🤯 mind-blown   | `{{< fa face-surprise >}}`         |
+| 😅 rush         | `{{< fa face-grin-sweat >}}`       |
+| ❌ blocked      | `{{< fa circle-xmark >}}`          |
+| 😃 excited      | `{{< fa face-grin-wide >}}`        |
+| 😍 love         | `{{< fa face-grin-hearts >}}`      |
+| 🙃 upside-down  | `{{< fa face-grin-upsidedown >}}`  |
+| 🥱 yawn         | `{{< fa face-yawn >}}`             |
+| 😎 cool         | `{{< fa face-sunglasses >}}`       |
+| 🤔 thinking     | `{{< fa face-thinking >}}`         |
+| 😠 angry        | `{{< fa face-angry >}}`            |
+| 😵 dizzy        | `{{< fa face-dizzy >}}`            |
+| 🤐 zip          | `{{< fa face-zipper >}}`           |
+| 🤗 hug          | `{{< fa face-holding-heart >}}`    |
+| 🥳 party        | `{{< fa face-party >}}`            |
+| 😇 halo         | `{{< fa face-smile-halo >}}`       |
+| 🤥 lie          | `{{< fa face-lying >}}`            |
+
+<!-- 今日示例 -->
+**Focus:** Quarto Closeread extension  
+**Tomorrow:** review Zhihu category-theory post; update Mathpix subscription  
+**Mood:** {{< fa face-smile >}} calm
+:::
+
+这段文字出现时触发 intro 层。 [@cr-intro]{scale-by=".5" pan-to="50%,50%"}
+
+::: {#cr-intro .fade-in}
+![](pictures/1.png){width=100%}
+:::
+
+:::
+
+::: {.cr-section}
+
+这段文字出现时触发 intro 层。 [@cr-fig-trial]{pan-to="50%,50%" scale-by="1.5"}
+
+::: {#cr-fig-trial .zoom-to-2 .fade-out}
+![](pictures/1.png){width=100%}
+:::
+
+:::
+
+# 2 方法
+:::{.cr-section}
+
+## 2.1 数据模拟
+生成虚拟时间序列，并高亮关键代码行：@code
+
+:::{#code}
+```{.python lineno="True"}
+import numpy as np, pandas as pd
+ts = pd.Series(np.random.randn(100),
+               index=pd.date_range('2025', periods=100))
+ts.cumsum().plot()
+```
+:::
+
+[@code]{highlight="3-4" transition=0.7s}
+
+## 2.2 可视化-整体
+先给出全图，观察趋势：@fig
+
+:::{#fig}
+![](pictures/2.png){width=100%}
+:::
+
+[@fig]{scale-by=1.0}
+
+## 2.3 可视化-放大
+滚动到此处时放大 2 倍并右移，聚焦峰值区域：@fig
+
+[@fig]{scale-by=2.0 pan-to="35%,0" transition=1s}
+:::
+
+# 3 结果
+:::{.cr-section}
+
+## 3.1 表格淡入
+关键指标如下，表格随滚动显现：@tbl
+
+:::{#tbl}
+| 指标        | 2024  | 2025 |
+|-------------|-------|------|
+| 均值        | 0.02  | 0.05 |
+| 标准差      | 1.00  | 0.98 |
+:::
+
+[@tbl]{fade-in transition=0.8s}
+
+## 3.2 模型输出
+同一脚本，不同行交叉高亮：@model
+
+:::{#model}
+```{.python lineno="True"}
+model = sm.OLS(y, X).fit()
+print(model.summary())
+```
+:::
+
+[@model]{highlight="1" transition=0.4s}
+[@model]{highlight="2" transition=0.4s}
+:::
+
+# 4 讨论 & 展望
+:::{.cr-section}
+
+## 4.1 细节放大
+继续滚动，右侧切换到更高分辨率截图：@fig3
+
+:::{#fig3}
+![](pictures/3.png){width=100%}
+:::
+
+[@fig3]{fade-in transition=0.9s}
+
+## 4.2 未来工作
+最后给出总结图，并轻微放大收尾：@fig4
+
+:::{#fig4}
+![](pictures/4.png){width=100%}
+:::
+
+[@fig4]{scale-by=1.1 fade-in transition=1.2s}
+:::
