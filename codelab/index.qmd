@@ -3,15 +3,13 @@ title: "MathPhysCS CodeLab"
 author: "Rong-Kang Zhang"
 date: last-modified
 abstract: >
-  This page presents a synoptic index of expository study notes produced during
-  my self-study of foundational and frontier topics in mathematics and
-  theoretical physics.  The notes are arranged by subject area and each
-  hyperlinked entry provides a self-contained exposition aimed at advanced
-  undergraduates or beginning graduate students who wish to master the material
-  in a systematic manner.  All resources are open-access: the web versions can
-  be read online directly, while ancillary PDFs compiled via Overleaf are
-  available for download.  Both formats are version-controlled through
-  GitHub/Quarto to ensure continuous updating and public traceability.
+  A running index of my <em>CodeLab</em> experiments created while
+  learning core and frontier topics in mathematics and physics.
+  Each entry links to a self-contained, reproducible notebook
+  (R / Python / Julia) that mixes exposition with runnable code:
+  theory $\rightarrow$ derivation $\rightarrow$ plots.
+  All notebooks are rendered live with Quarto, versioned on GitHub,
+  and additionally compiled to PDF for offline reading.
 page-layout: full
 toc: false
 listing:
@@ -19,13 +17,47 @@ listing:
   type: table
   date-format: "YYYY-MM-DD"
   categories: false
-  fields: [title, core-references, categories, file-modified, author]
-  filter-ui: [title, core-references, categories, file-modified, author]
-  sort: ["weight desc", "title asc", "file-modified desc"]
+  fields:
+    - "title"
+    - "core-references"
+    - "categories"
+    - "file-modified"
+    - "author"
+  filter-ui:
+    - "title"
+    - "core-references"
+    - "categories"
+    - "file-modified"
+    - "author"
+  sort:
+    - "weight asc"
+    - "title asc"
+    - "file-modified desc"
   sort-ui: true
   table-striped: true
   page-size: 20
 ---
 
-> The following section presents a synoptic index of all thematic areas. Each hyperlinked entry leads to the complete set of lecture notes hosted on this repository; ancillary PDFs generated via Overleaf are likewise available for download.  
-> All materials are open-access and version-controlled through GitHub/Quarto.
+> A live table of **runnable experiments** (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.  
+> Click any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.
+
+::: {.callout-note appearance="simple" icon="true"}
+### Navigate & Run
+
+Click any row to open the live notebook.  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rongkang-zhang/homepage/HEAD?urlpath=lab)  
+PDFs are auto-built on [Overleaf](https://www.overleaf.com/read/your-project) and synced back to GitHub for full reproducibility.
+:::
+
+::: {#lab-table}
+:::
+
+<script>
+/* 让表格行可点击 = 直达 notebook */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.listing-table tbody tr').forEach(row => {
+    const a = row.querySelector('a');
+    if (a) row.addEventListener('click', () => window.open(a.href, '_blank'));
+  });
+});
+</script>

@@ -167,11 +167,11 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="MathPhysCS CodeLab – Rong-KangZhang">
-<meta property="og:description" content="This page presents a synoptic index of expository study notes produced during my self-study of foundational and frontier topics in mathematics and theoretical physics. The notes are arranged by subject area and each hyperlinked entry provides a self-contained exposition aimed at advanced undergraduates or beginning graduate students who wish to master the material in a systematic manner. All resources are open-access: the web versions can be read online directly, while ancillary PDFs compiled via Overleaf are available for download. Both formats are version-controlled through GitHub/Quarto to ensure continuous updating and public traceability.">
+<meta property="og:description" content="A running index of my CodeLab experiments created while learning core and frontier topics in mathematics and physics. Each entry links to a self-contained, reproducible notebook (R / Python / Julia) that mixes exposition with runnable code: theory \(\rightarrow\) derivation \(\rightarrow\) plots. All notebooks are rendered live with Quarto, versioned on GitHub, and additionally compiled to PDF for offline reading.">
 <meta property="og:image" content="https://rongkang-zhang.github.io/homepage/codelab/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
 <meta name="twitter:title" content="MathPhysCS CodeLab – Rong-KangZhang">
-<meta name="twitter:description" content="This page presents a synoptic index of expository study notes produced during my self-study of foundational and frontier topics in mathematics and theoretical physics. The notes are arranged by subject area and each hyperlinked entry provides a self-contained exposition aimed at advanced undergraduates or beginning graduate students who wish to master the material in a systematic manner. All resources are open-access: the web versions can be read online directly, while ancillary PDFs compiled via Overleaf are available for download. Both formats are version-controlled through GitHub/Quarto to ensure continuous updating and public traceability.">
+<meta name="twitter:description" content="A running index of my CodeLab experiments created while learning core and frontier topics in mathematics and physics. Each entry links to a self-contained, reproducible notebook (R / Python / Julia) that mixes exposition with runnable code: theory \(\rightarrow\) derivation \(\rightarrow\) plots. All notebooks are rendered live with Quarto, versioned on GitHub, and additionally compiled to PDF for offline reading.">
 <meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/codelab/assets/pictures/profile-picture.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -495,7 +495,7 @@ window.Quarto = {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>This page presents a synoptic index of expository study notes produced during my self-study of foundational and frontier topics in mathematics and theoretical physics. The notes are arranged by subject area and each hyperlinked entry provides a self-contained exposition aimed at advanced undergraduates or beginning graduate students who wish to master the material in a systematic manner. All resources are open-access: the web versions can be read online directly, while ancillary PDFs compiled via Overleaf are available for download. Both formats are version-controlled through GitHub/Quarto to ensure continuous updating and public traceability.</p>
+    <p>A running index of my <em>CodeLab</em> experiments created while learning core and frontier topics in mathematics and physics. Each entry links to a self-contained, reproducible notebook (R / Python / Julia) that mixes exposition with runnable code: theory <span class="math inline">\(\rightarrow\)</span> derivation <span class="math inline">\(\rightarrow\)</span> plots. All notebooks are rendered live with Quarto, versioned on GitHub, and additionally compiled to PDF for offline reading.</p>
   </div>
 </div>
 
@@ -504,9 +504,36 @@ window.Quarto = {
 
 
 <blockquote class="blockquote">
-<p>The following section presents a synoptic index of all thematic areas. Each hyperlinked entry leads to the complete set of lecture notes hosted on this repository; ancillary PDFs generated via Overleaf are likewise available for download.<br>
-All materials are open-access and version-controlled through GitHub/Quarto.</p>
+<p>A live table of <strong>runnable experiments</strong> (R / Python / Julia / Haskell) that accompany my learning notes in mathematics &amp; physics.<br>
+Click any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.</p>
 </blockquote>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Navigate &amp; Run
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Click any row to open the live notebook.<br>
+<a href="https://mybinder.org/v2/gh/rongkang-zhang/homepage/HEAD?urlpath=lab"><img src="https://mybinder.org/badge_logo.svg" class="img-fluid" alt="Binder"></a><br>
+PDFs are auto-built on <a href="https://www.overleaf.com/read/your-project">Overleaf</a> and synced back to GitHub for full reproducibility.</p>
+</div>
+</div>
+<div id="lab-table">
+
+</div>
+<script>
+/* 让表格行可点击 = 直达 notebook */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.listing-table tbody tr').forEach(row => {
+    const a = row.querySelector('a');
+    if (a) row.addEventListener('click', () => window.open(a.href, '_blank'));
+  });
+});
+</script>
 
 
 
