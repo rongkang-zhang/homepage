@@ -1,0 +1,63 @@
+---
+title: "我的汇报"
+subtitle: "Quarto + revealjs 完整演示"
+author: "Your Name"
+date: last-modified
+format:
+  revealjs:
+    theme: sky                     # 可选：black/white/league/beige/serif/moon…
+    highlight-style: github        # 代码高亮主题
+    slide-number: c/t              # 当前页 / 总页数
+    progress: true                 # 顶部进度条
+    controls: true                 # 右下角方向键
+    center: true                   # 垂直居中
+    transition: slide              # 过渡效果：none/fade/slide/convex/concave/zoom
+    transition-speed: default      # default/fast/slow
+    background-transition: fade
+    pdfSeparateFragments: false    # 打印 PDF 时合并片段                 # 启用演讲者备注
+---
+
+## 第一页标题
+
+- 逐条出现 {.fragment}
+- 再一条 {.fragment}
+- 第三条（点击才出现）{.fragment}
+
+::: {.notes}
+这里写演讲者备注，按 S 键打开演讲者视图即可看到。
+:::
+
+## 代码示例
+
+## 数学公式
+
+行内公式 $e^{i\pi}+1=0$  
+块级公式：
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
+$$
+
+## 两栏布局
+
+:::: {.columns}
+::: {.column width="50%"}
+**左栏**  
+- 要点 1  
+- 要点 2  
+:::
+::: {.column width="50%"}
+**右栏**  
+- 要点 3  
+- 要点 4  
+:::
+::::
+
+## 结束页
+
+谢谢！  
+[邮箱](mailto:you@example.com) | [GitHub](https://github.com)
+
+## PDF 导出提示
+
+浏览器地址栏后加 `?print-pdf` 再 Ctrl+P → 选择“另存为 PDF”即可生成单页版幻灯片。
