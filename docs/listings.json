@@ -1,7 +1,27 @@
 [
   {
     "listing": "/solutions/index.html",
-    "items": []
+    "items": [
+      "/solutions/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/1/index.html"
+    ]
+  },
+  {
+    "listing": "/extemporaneous-talks/index.html",
+    "items": [
+      "/extemporaneous-talks/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/expository-notes/index.html",
+    "items": [
+      "/expository-notes/category-theory/index.html"
+    ]
   },
   {
     "listing": "/research/1/index.html",
@@ -17,21 +37,7 @@
     ]
   },
   {
-    "listing": "/expository-notes/index.html",
-    "items": [
-      "/expository-notes/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/extemporaneous-talks/index.html",
-    "items": [
-      "/extemporaneous-talks/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/1/index.html"
-    ]
+    "listing": "/solutions/category-theory/index.html",
+    "items": []
   }
 ]

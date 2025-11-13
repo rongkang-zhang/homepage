@@ -1,0 +1,22 @@
+---
+title: "Category Theory"
+subtitle: "Self-Worked Solutions on Category Theory"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+categories:
+  - Category Theory
+page-layout: full
+csl: ../../american-mathematical-society.csl
+listing:
+  contents: "*/index.qmd"
+  type: table
+  date-format: "YYYY-MM-DD"
+  categories: false
+  fields: [title, categories, file-modified, author]
+  filter-ui: [title, categories, file-modified, author]
+  sort: ["weight desc", "title asc", "file-modified desc"]
+  sort-ui: true
+  table-striped: true
+  page-size: 20
+---

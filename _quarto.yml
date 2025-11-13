@@ -47,6 +47,13 @@ website:
               href: extemporaneous-talks/index.html
             - text: Category theory
               href: extemporaneous-talks/category-theory/index.html
+      - text: Self-Worked<br>Solutions&nbsp;<small>▼</small>
+        icon: "bi-pencil-square"
+        menu:
+            - text: Overview
+              href: solutions/index.html
+            - text: Category theory
+              href: solutions/category-theory/index.html
       - text: Research&nbsp;<small>▼</small>
         icon: "bi-infinity"
         menu:
