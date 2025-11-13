@@ -8,4 +8,5 @@ categories: [Category Theory]
 page-layout: full
 bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl
+weight: 7
 ---

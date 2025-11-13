@@ -8,7 +8,7 @@ categories: [AdS/CFT Duality, Holographic Principle]
 page-layout: full
 bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl
-weight: 7
+weight: 8
 ---
 
 # Holographic Principle
