@@ -1,10 +1,12 @@
 ---
 title: "Motivation"
-subtitle: A Topos-Theoretic Bridge for Holographic Entanglement Entropy
+subtitle: "A Topos-Theoretic Bridge for Holographic Entanglement Entropy"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
-categories: [AdS/CFT Duality, Holographic Principle]
+categories:
+  - AdS/CFT Duality
+  - Holographic Principle
 page-layout: full
 bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl

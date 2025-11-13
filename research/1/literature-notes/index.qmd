@@ -1,6 +1,6 @@
 ---
 title: "Literature Notes"
-subtitle: A Topos-Theoretic Bridge for Holographic Entanglement Entropy
+subtitle: "A Topos-Theoretic Bridge for Holographic Entanglement Entropy"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
