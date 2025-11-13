@@ -60,20 +60,6 @@ website:
       - text: Conferences
         icon: "bi-calendar-event"
         href: conferences/index.html
-    right:
-      - icon: github
-        href: https://github.com/rongkang-zhang
-      - text: "{{< ai orcid >}}"
-        href: "https://orcid.org/my-orcid?orcid=0009-0002-1334-733X"
-      - text: 知乎
-        href: https://www.zhihu.com/people/shokatsu-ei
-      - icon: envelope
-        href: "mailto:rongkang2025@gmail.com"
-      - icon: globe
-        href: https://rongkang-zhang.github.io/homepage/
-      - text: Cookie
-        href: cookie.html
-        icon: shield-check
   page-footer:
     left: |
       <img src="/assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">

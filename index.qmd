@@ -16,9 +16,17 @@ about:
     - icon: github
       text: Github
       href: https://github.com/rongkang-zhang
+    - text: "{{< ai orcid >}} ORCiD"
+      href: https://orcid.org/0009-0002-1334-733X
     - icon: envelope
-      text: Reach me by email
+      text: Email
       href: "mailto:rongkang2025@gmail.com"
+    - icon: globe
+      text: Personal Website
+      href: https://rongkang-zhang.github.io/homepage/
+    - icon: shield-check
+      text: Cookie Policy
+      href: cookie.html
 ---
 
 > I'm multilingual, with proficiency in
