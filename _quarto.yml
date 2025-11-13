@@ -21,7 +21,7 @@ website:
     Grothendieck Toposes,
     Chiral Representation Theory,
     Holographic Entanglement Entropy
-  issue-url: https://github.com/rongkang-zhang/homepage/issues/new?labels=page-feedback&template=page_report.md
+  issue-url: https://github.com/rongkang-zhang/homepage/issues
   twitter-card: true
   open-graph: true
   image: assets/pictures/profile-picture.png
