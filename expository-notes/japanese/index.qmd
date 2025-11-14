@@ -1,10 +1,18 @@
 ---
 title: "Japanese"
 author: "Rong-Kang Zhang"
-format: html
+format:
+  html:
+    toc: true        # 启用目录
+    toc-expand: true # 全部展开目录
+    number-sections: true # 启用章节编号
+    number-depth: 3      # 只对1-3级标题编号(可选)
+    toc-depth: 3         # 目录显示1-3级标题(可选)
 ---
 
 # 五十音（ごじゅうおん）
+
+## 清音（せいおん）
 
 <style>
   table{border-collapse:collapse;margin:20px auto;font-family:'Hiragino Sans','Yu Gothic',sans-serif}
@@ -119,9 +127,9 @@ format: html
   </tr>
 </table>
 
-## 五十音（ごじゅうおん）の手書き体（てがきたい）
+### 清音（せいおん））の手書き体（てがきたい）
 
-![五十音（ごじゅうおん）の手書き体（てがきたい）](pictures/20251114-1.jpg)
+![清音（せいおん））の手書き体（てがきたい）](pictures/20251114-1.jpg)
 
 ## 濁音と半濁音（だくおん・はんだくおん）
 
@@ -224,3 +232,5 @@ format: html
     <td><div class="kana">ぽ/ポ</div><div class="romaji">po</div></td>
   </tr>
 </table>
+
+### 濁音と半濁音（だくおん・はんだくおん）の手書き体（てがきたい）
