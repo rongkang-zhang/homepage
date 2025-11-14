@@ -12,15 +12,16 @@
     ]
   },
   {
-    "listing": "/codelab/index.html",
+    "listing": "/expository-notes/index.html",
     "items": [
-      "/codelab/category-theory/index.html"
+      "/expository-notes/japanese/index.html",
+      "/expository-notes/category-theory/index.html"
     ]
   },
   {
-    "listing": "/expository-notes/index.html",
+    "listing": "/codelab/index.html",
     "items": [
-      "/expository-notes/category-theory/index.html"
+      "/codelab/category-theory/index.html"
     ]
   },
   {

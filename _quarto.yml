@@ -42,6 +42,8 @@ website:
               href: expository-notes/index.html
             - text: Category theory
               href: expository-notes/category-theory/index.html
+            - text: Japanese
+              href: expository-notes/japanese/index.html
       - text: Extemporaneous<br>Talks&nbsp;<small>▼</small>
         icon: "bi-lightning"
         menu:
