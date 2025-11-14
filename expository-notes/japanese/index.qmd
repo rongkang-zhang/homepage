@@ -1,5 +1,6 @@
 ---
 title: "Japanese"
+author: "Rong-Kang Zhang"
 format: html
 ---
 
@@ -17,7 +18,7 @@ format: html
 <table>
   <tr>
     <th></th>
-    <th>あ段（だん）</th>
+    <th>あ段（あだん）</th>
     <th>い段</th>
     <th>う段</th>
     <th>え段</th>
@@ -25,7 +26,7 @@ format: html
   </tr>
 
   <tr>
-    <th class="section-header">あ行（ぎょう）</th>
+    <th class="section-header">あ行（あぎょう）</th>
     <td><div class="kana">あ/ア</div><div class="romaji">a</div></td>
     <td><div class="kana">い/イ</div><div class="romaji">i</div></td>
     <td><div class="kana">う/ウ</div><div class="romaji">u</div></td>
@@ -90,7 +91,9 @@ format: html
   <tr>
     <th class="section-header">や行</th>
     <td><div class="kana">や/ヤ</div><div class="romaji">ya</div></td>
-    <td colspan="3" style="background:#f9f9f9"></td>
+    <td style="background:#f9f9f9"></td>
+    <td><div class="kana">ゆ/ユ</div><div class="romaji">yu</div></td>
+    <td style="background:#f9f9f9"></td>
     <td><div class="kana">よ/ヨ</div><div class="romaji">yo</div></td>
   </tr>
 
@@ -115,3 +118,7 @@ format: html
     <td colspan="5"><div class="kana">ん/ン</div><div class="romaji">nn</div></td>
   </tr>
 </table>
+
+## 五十音（ごじゅうおん）の手書き体（てがきたい）
+
+![五十音（ごじゅうおん）の手書き体（てがきたい）](pictures/20251114-1.jpg)
