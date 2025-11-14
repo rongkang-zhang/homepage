@@ -122,3 +122,105 @@ format: html
 ## 五十音（ごじゅうおん）の手書き体（てがきたい）
 
 ![五十音（ごじゅうおん）の手書き体（てがきたい）](pictures/20251114-1.jpg)
+
+## 濁音と半濁音（だくおん・はんだくおん）
+
+<style>
+  table{border-collapse:collapse;margin:20px auto;font-family:'Hiragino Sans','Yu Gothic',sans-serif}
+  th,td{border:1px solid #ddd;padding:10px;text-align:center;min-width:75px}
+  th{background-color:#f5f5f5;font-weight:bold}
+  .kana{font-size:22px;color:#333}
+  .romaji{font-size:13px;color:#666}
+  .section-header{background-color:#e8f4f8}
+</style>
+
+<table>
+  <tr>
+    <th>段</th>
+    <th>あ段</th>
+    <th>い段</th>
+    <th>う段</th>
+    <th>え段</th>
+    <th>お段</th>
+  </tr>
+
+  <!-- k 行 -->
+  <tr>
+    <th class="section-header">か行<br><span class="romaji">清音</span></th>
+    <td><div class="kana">か/カ</div><div class="romaji">ka</div></td>
+    <td><div class="kana">き/キ</div><div class="romaji">ki</div></td>
+    <td><div class="kana">く/ク</div><div class="romaji">ku</div></td>
+    <td><div class="kana">け/ケ</div><div class="romaji">ke</div></td>
+    <td><div class="kana">こ/コ</div><div class="romaji">ko</div></td>
+  </tr>
+  <tr>
+    <th class="section-header">が行<br><span class="romaji">浊音（だくおん）</span></th>
+    <td><div class="kana">が/ガ</div><div class="romaji">ga</div></td>
+    <td><div class="kana">ぎ/ギ</div><div class="romaji">gi</div></td>
+    <td><div class="kana">ぐ/グ</div><div class="romaji">gu</div></td>
+    <td><div class="kana">げ/ゲ</div><div class="romaji">ge</div></td>
+    <td><div class="kana">ご/ゴ</div><div class="romaji">go</div></td>
+  </tr>
+
+  <!-- s 行 -->
+  <tr>
+    <th class="section-header">さ行<br><span class="romaji">清音</span></th>
+    <td><div class="kana">さ/サ</div><div class="romaji">sa</div></td>
+    <td><div class="kana">し/シ</div><div class="romaji">shi</div></td>
+    <td><div class="kana">す/ス</div><div class="romaji">su</div></td>
+    <td><div class="kana">せ/セ</div><div class="romaji">se</div></td>
+    <td><div class="kana">そ/ソ</div><div class="romaji">so</div></td>
+  </tr>
+  <tr>
+    <th class="section-header">ざ行<br><span class="romaji">浊音（だくおん）</span></th>
+    <td><div class="kana">ざ/ザ</div><div class="romaji">za</div></td>
+    <td><div class="kana">じ/ジ</div><div class="romaji">ji</div></td>
+    <td><div class="kana">ず/ズ</div><div class="romaji">zu</div></td>
+    <td><div class="kana">ぜ/ゼ</div><div class="romaji">ze</div></td>
+    <td><div class="kana">ぞ/ゾ</div><div class="romaji">zo</div></td>
+  </tr>
+
+  <!-- t 行 -->
+  <tr>
+    <th class="section-header">た行<br><span class="romaji">清音</span></th>
+    <td><div class="kana">た/タ</div><div class="romaji">ta</div></td>
+    <td><div class="kana">ち/チ</div><div class="romaji">chi</div></td>
+    <td><div class="kana">つ/ツ</div><div class="romaji">tsu</div></td>
+    <td><div class="kana">て/テ</div><div class="romaji">te</div></td>
+    <td><div class="kana">と/ト</div><div class="romaji">to</div></td>
+  </tr>
+  <tr>
+    <th class="section-header">だ行<br><span class="romaji">浊音（だくおん）</span></th>
+    <td><div class="kana">だ/ダ</div><div class="romaji">da</div></td>
+    <td><div class="kana">ぢ/ヂ</div><div class="romaji">ji</div></td>
+    <td><div class="kana">づ/ヅ</div><div class="romaji">zu</div></td>
+    <td><div class="kana">で/デ</div><div class="romaji">de</div></td>
+    <td><div class="kana">ど/ド</div><div class="romaji">do</div></td>
+  </tr>
+
+  <!-- h 行 -->
+  <tr>
+    <th class="section-header">は行<br><span class="romaji">清音</span></th>
+    <td><div class="kana">は/ハ</div><div class="romaji">ha</div></td>
+    <td><div class="kana">ひ/ヒ</div><div class="romaji">hi</div></td>
+    <td><div class="kana">ふ/フ</div><div class="romaji">fu</div></td>
+    <td><div class="kana">へ/ヘ</div><div class="romaji">he</div></td>
+    <td><div class="kana">ほ/ホ</div><div class="romaji">ho</div></td>
+  </tr>
+  <tr>
+    <th class="section-header">ば行<br><span class="romaji">浊音（だくおん）</span></th>
+    <td><div class="kana">ば/バ</div><div class="romaji">ba</div></td>
+    <td><div class="kana">び/ビ</div><div class="romaji">bi</div></td>
+    <td><div class="kana">ぶ/ブ</div><div class="romaji">bu</div></td>
+    <td><div class="kana">べ/ベ</div><div class="romaji">be</div></td>
+    <td><div class="kana">ぼ/ボ</div><div class="romaji">bo</div></td>
+  </tr>
+  <tr>
+    <th class="section-header">ぱ行<br><span class="romaji">半浊音（はんだくおん）</span></th>
+    <td><div class="kana">ぱ/パ</div><div class="romaji">pa</div></td>
+    <td><div class="kana">ぴ/ピ</div><div class="romaji">pi</div></td>
+    <td><div class="kana">ぷ/プ</div><div class="romaji">pu</div></td>
+    <td><div class="kana">ぺ/ペ</div><div class="romaji">pe</div></td>
+    <td><div class="kana">ぽ/ポ</div><div class="romaji">po</div></td>
+  </tr>
+</table>
