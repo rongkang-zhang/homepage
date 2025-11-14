@@ -1,282 +1,117 @@
 ---
-title: "日语五十音图"
+title: "Japanese"
 format: html
 ---
 
+# 五十音（ごじゅうおん）
+
 <style>
-  table {
-    border-collapse: collapse;
-    margin: 20px auto;
-    font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-    min-width: 80px;
-  }
-  th {
-    background-color: #f5f5f5;
-    font-weight: bold;
-  }
-  .kana {
-    font-size: 24px;
-    color: #333;
-  }
-  .romaji {
-    font-size: 14px;
-    color: #666;
-  }
-  .section-header {
-    background-color: #e8f4f8;
-  }
+  table{border-collapse:collapse;margin:20px auto;font-family:'Hiragino Sans','Yu Gothic',sans-serif}
+  th,td{border:1px solid #ddd;padding:12px;text-align:center;min-width:80px}
+  th{background-color:#f5f5f5;font-weight:bold}
+  .kana{font-size:24px;color:#333}
+  .romaji{font-size:14px;color:#666}
+  .section-header{background-color:#e8f4f8}
 </style>
 
 <table>
-  <!-- 表头 -->
   <tr>
     <th></th>
-    <th>あ段</th>
-    <th>い段</th>
-    <th>う段</th>
-    <th>え段</th>
-    <th>お段</th>
-  </tr>
-  
-  <!-- あ行 -->
-  <tr>
-    <th class="section-header">あ行</th>
-    <td>
-      <div class="kana">あ/ア</div>
-      <div class="romaji">a</div>
-    </td>
-    <td>
-      <div class="kana">い/イ</div>
-      <div class="romaji">i</div>
-    </td>
-    <td>
-      <div class="kana">う/ウ</div>
-      <div class="romaji">u</div>
-    </td>
-    <td>
-      <div class="kana">え/エ</div>
-      <div class="romaji">e</div>
-    </td>
-    <td>
-      <div class="kana">お/オ</div>
-      <div class="romaji">o</div>
-    </td>
+    <th>あ段（あだん）</th>
+    <th>い段（いだん）</th>
+    <th>う段（うだん）</th>
+    <th>え段（えだん）</th>
+    <th>お段（おだん）</th>
   </tr>
 
-  <!-- か行 -->
   <tr>
-    <th class="section-header">か行</th>
-    <td>
-      <div class="kana">か/カ</div>
-      <div class="romaji">ka</div>
-    </td>
-    <td>
-      <div class="kana">き/キ</div>
-      <div class="romaji">ki</div>
-    </td>
-    <td>
-      <div class="kana">く/ク</div>
-      <div class="romaji">ku</div>
-    </td>
-    <td>
-      <div class="kana">け/ケ</div>
-      <div class="romaji">ke</div>
-    </td>
-    <td>
-      <div class="kana">こ/コ</div>
-      <div class="romaji">ko</div>
-    </td>
+    <th class="section-header">あ行（あぎょう）</th>
+    <td><div class="kana">あ/ア</div><div class="romaji">a</div></td>
+    <td><div class="kana">い/イ</div><div class="romaji">i</div></td>
+    <td><div class="kana">う/ウ</div><div class="romaji">u</div></td>
+    <td><div class="kana">え/エ</div><div class="romaji">e</div></td>
+    <td><div class="kana">お/オ</div><div class="romaji">o</div></td>
   </tr>
 
-  <!-- さ行 -->
   <tr>
-    <th class="section-header">さ行</th>
-    <td>
-      <div class="kana">さ/サ</div>
-      <div class="romaji">sa</div>
-    </td>
-    <td>
-      <div class="kana">し/シ</div>
-      <div class="romaji">shi</div>
-    </td>
-    <td>
-      <div class="kana">す/ス</div>
-      <div class="romaji">su</div>
-    </td>
-    <td>
-      <div class="kana">せ/セ</div>
-      <div class="romaji">se</div>
-    </td>
-    <td>
-      <div class="kana">そ/ソ</div>
-      <div class="romaji">so</div>
-    </td>
+    <th class="section-header">か行（かぎょう）</th>
+    <td><div class="kana">か/カ</div><div class="romaji">ka</div></td>
+    <td><div class="kana">き/キ</div><div class="romaji">ki</div></td>
+    <td><div class="kana">く/ク</div><div class="romaji">ku</div></td>
+    <td><div class="kana">け/ケ</div><div class="romaji">ke</div></td>
+    <td><div class="kana">こ/コ</div><div class="romaji">ko</div></td>
   </tr>
 
-  <!-- た行 -->
   <tr>
-    <th class="section-header">た行</th>
-    <td>
-      <div class="kana">た/タ</div>
-      <div class="romaji">ta</div>
-    </td>
-    <td>
-      <div class="kana">ち/チ</div>
-      <div class="romaji">chi</div>
-    </td>
-    <td>
-      <div class="kana">つ/ツ</div>
-      <div class="romaji">tsu</div>
-    </td>
-    <td>
-      <div class="kana">て/テ</div>
-      <div class="romaji">te</div>
-    </td>
-    <td>
-      <div class="kana">と/ト</div>
-      <div class="romaji">to</div>
-    </td>
+    <th class="section-header">さ行（さぎょう）</th>
+    <td><div class="kana">さ/サ</div><div class="romaji">sa</div></td>
+    <td><div class="kana">し/シ</div><div class="romaji">shi</div></td>
+    <td><div class="kana">す/ス</div><div class="romaji">su</div></td>
+    <td><div class="kana">せ/セ</div><div class="romaji">se</div></td>
+    <td><div class="kana">そ/ソ</div><div class="romaji">so</div></td>
   </tr>
 
-  <!-- な行 -->
   <tr>
-    <th class="section-header">な行</th>
-    <td>
-      <div class="kana">な/ナ</div>
-      <div class="romaji">na</div>
-    </td>
-    <td>
-      <div class="kana">に/ニ</div>
-      <div class="romaji">ni</div>
-    </td>
-    <td>
-      <div class="kana">ぬ/ヌ</div>
-      <div class="romaji">nu</div>
-    </td>
-    <td>
-      <div class="kana">ね/ネ</div>
-      <div class="romaji">ne</div>
-    </td>
-    <td>
-      <div class="kana">の/ノ</div>
-      <div class="romaji">no</div>
-    </td>
+    <th class="section-header">た行（たぎょう）</th>
+    <td><div class="kana">た/タ</div><div class="romaji">ta</div></td>
+    <td><div class="kana">ち/チ</div><div class="romaji">chi</div></td>
+    <td><div class="kana">つ/ツ</div><div class="romaji">tsu</div></td>
+    <td><div class="kana">て/テ</div><div class="romaji">te</div></td>
+    <td><div class="kana">と/ト</div><div class="romaji">to</div></td>
   </tr>
 
-  <!-- は行 -->
   <tr>
-    <th class="section-header">は行</th>
-    <td>
-      <div class="kana">は/ハ</div>
-      <div class="romaji">ha</div>
-    </td>
-    <td>
-      <div class="kana">ひ/ヒ</div>
-      <div class="romaji">hi</div>
-    </td>
-    <td>
-      <div class="kana">ふ/フ</div>
-      <div class="romaji">fu</div>
-    </td>
-    <td>
-      <div class="kana">へ/ヘ</div>
-      <div class="romaji">he</div>
-    </td>
-    <td>
-      <div class="kana">ほ/ホ</div>
-      <div class="romaji">ho</div>
-    </td>
+    <th class="section-header">な行（なぎょう）</th>
+    <td><div class="kana">な/ナ</div><div class="romaji">na</div></td>
+    <td><div class="kana">に/ニ</div><div class="romaji">ni</div></td>
+    <td><div class="kana">ぬ/ヌ</div><div class="romaji">nu</div></td>
+    <td><div class="kana">ね/ネ</div><div class="romaji">ne</div></td>
+    <td><div class="kana">の/ノ</div><div class="romaji">no</div></td>
   </tr>
 
-  <!-- ま行 -->
   <tr>
-    <th class="section-header">ま行</th>
-    <td>
-      <div class="kana">ま/マ</div>
-      <div class="romaji">ma</div>
-    </td>
-    <td>
-      <div class="kana">み/ミ</div>
-      <div class="romaji">mi</div>
-    </td>
-    <td>
-      <div class="kana">む/ム</div>
-      <div class="romaji">mu</div>
-    </td>
-    <td>
-      <div class="kana">め/メ</div>
-      <div class="romaji">me</div>
-    </td>
-    <td>
-      <div class="kana">も/モ</div>
-      <div class="romaji">mo</div>
-    </td>
+    <th class="section-header">は行（はぎょう）</th>
+    <td><div class="kana">は/ハ</div><div class="romaji">ha</div></td>
+    <td><div class="kana">ひ/ヒ</div><div class="romaji">hi</div></td>
+    <td><div class="kana">ふ/フ</div><div class="romaji">fu</div></td>
+    <td><div class="kana">へ/ヘ</div><div class="romaji">he</div></td>
+    <td><div class="kana">ほ/ホ</div><div class="romaji">ho</div></td>
   </tr>
 
-  <!-- や行 -->
   <tr>
-    <th class="section-header">や行</th>
-    <td>
-      <div class="kana">や/ヤ</div>
-      <div class="romaji">ya</div>
-    </td>
-    <td colspan="3" style="background-color: #f9f9f9;"></td>
-    <td>
-      <div class="kana">よ/ヨ</div>
-      <div class="romaji">yo</div>
-    </td>
+    <th class="section-header">ま行（まぎょう）</th>
+    <td><div class="kana">ま/マ</div><div class="romaji">ma</div></td>
+    <td><div class="kana">み/ミ</div><div class="romaji">mi</div></td>
+    <td><div class="kana">む/ム</div><div class="romaji">mu</div></td>
+    <td><div class="kana">め/メ</div><div class="romaji">me</div></td>
+    <td><div class="kana">も/モ</div><div class="romaji">mo</div></td>
   </tr>
 
-  <!-- ら行 -->
   <tr>
-    <th class="section-header">ら行</th>
-    <td>
-      <div class="kana">ら/ラ</div>
-      <div class="romaji">ra</div>
-    </td>
-    <td>
-      <div class="kana">り/リ</div>
-      <div class="romaji">ri</div>
-    </td>
-    <td>
-      <div class="kana">る/ル</div>
-      <div class="romaji">ru</div>
-    </td>
-    <td>
-      <div class="kana">れ/レ</div>
-      <div class="romaji">re</div>
-    </td>
-    <td>
-      <div class="kana">ろ/ロ</div>
-      <div class="romaji">ro</div>
-    </td>
+    <th class="section-header">や行（やぎょう）</th>
+    <td><div class="kana">や/ヤ</div><div class="romaji">ya</div></td>
+    <td colspan="3" style="background:#f9f9f9"></td>
+    <td><div class="kana">よ/ヨ</div><div class="romaji">yo</div></td>
   </tr>
 
-  <!-- わ行 -->
   <tr>
-    <th class="section-header">わ行</th>
-    <td>
-      <div class="kana">わ/ワ</div>
-      <div class="romaji">wa</div>
-    </td>
-    <td colspan="3" style="background-color: #f9f9f9;"></td>
-    <td>
-      <div class="kana">を/ヲ</div>
-      <div class="romaji">wo</div>
-    </td>
+    <th class="section-header">ら行（らぎょう）</th>
+    <td><div class="kana">ら/ラ</div><div class="romaji">ra</div></td>
+    <td><div class="kana">り/リ</div><div class="romaji">ri</div></td>
+    <td><div class="kana">る/ル</div><div class="romaji">ru</div></td>
+    <td><div class="kana">れ/レ</div><div class="romaji">re</div></td>
+    <td><div class="kana">ろ/ロ</div><div class="romaji">ro</div></td>
   </tr>
 
-  <!-- ん -->
   <tr>
-    <th class="section-header">特殊</th>
-    <td colspan="5">
-      <div class="kana">ん/ン</div>
-      <div class="romaji">nn</div>
-    </td>
+    <th class="section-header">わ行（わぎょう）</th>
+    <td><div class="kana">わ/ワ</div><div class="romaji">wa</div></td>
+    <td colspan="3" style="background:#f9f9f9"></td>
+    <td><div class="kana">を/ヲ</div><div class="romaji">wo</div></td>
+  </tr>
+
+  <tr>
+    <th class="section-header">特殊（とくしゅ）</th>
+    <td colspan="5"><div class="kana">ん/ン</div><div class="romaji">nn</div></td>
   </tr>
 </table>
