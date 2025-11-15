@@ -31,10 +31,13 @@ about:
 ---
 
 ::: {.callout-note}
-On this page you can learn about my  
+On this page you can learn about my<br>
 - [Research Interests](#interests)<br>
 - [Education and Degrees](#education) <br>
 - [Language Proficiency](#lang) 
+
+Here is my current research focus<br>
+- [Research - 1 - A Topos-Theoretic Bridge for Holographic Entanglement Entropy - Preliminaries](research/1/preliminaries/index.html)
 :::
 
 ---
