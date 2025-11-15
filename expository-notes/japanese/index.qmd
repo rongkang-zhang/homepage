@@ -234,3 +234,128 @@ format:
 </table>
 
 ### 濁音と半濁音（だくおん・はんだくおん）の手書き体（てがきたい）
+
+## 現代（げんだい）日本語（にほんご）の長音（ちょうおん）表記（ひょうき）
+
+::: {.panel-tabset}
+
+### ① あ段＋あ  
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>お<rt>o</rt>か<rt>ka</rt>あ<rt>a</rt>さ<rt>sa</rt>ん<rt>n</rt></ruby> | okaasan | 妈妈 |
+| <ruby>お<rt>o</rt>ば<rt>ba</rt>あ<rt>a</rt>さ<rt>sa</rt>ん<rt>n</rt></ruby> | obaasan | 奶奶 / 外婆 |
+| <ruby>さ<rt>sa</rt>よ<rt>yo</rt>う<rt>u</rt>な<rt>na</rt>ら<rt>ra</rt></ruby> | sayounara | 再见 |
+
+> **あ段一览**  
+> あ か さ た な は ま や ら わ が ざ だ ば ぱ
+
+---
+
+### ② い段＋い  
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>お<rt>o</rt>に<rt>ni</rt>い<rt>i</rt>さ<rt>sa</rt>ん<rt>n</rt></ruby> | oniisan | 哥哥 |
+| <ruby>い<rt>i</rt>い<rt>i</rt>え<rt>e</rt></ruby> | iie | 不 / 不是 |
+| <ruby>ち<rt>chi</rt>い<rt>i</rt>さ<rt>sa</rt>い<rt>i</rt></ruby> | chiisai | 小 |
+
+> **い段一览**  
+> い き し ち に ひ み り ぎ じ び ぴ
+
+---
+
+### ③ う段＋う  
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>く<rt>ku</rt>う<rt>u</rt>き<rt>ki</rt></ruby> | kuuki | 空气 |
+| <ruby>す<rt>su</rt>う<rt>u</rt>が<rt>ga</rt>く<rt>ku</rt></ruby> | suugaku | 数学 |
+| <ruby>つ<rt>tsu</rt>う<rt>u</rt>き<rt>ki</rt>ん<rt>n</rt></ruby> | tsuukin | 通勤 |
+
+> **う段一览**  
+> う く す つ ぬ ふ む ゆ る ぐ ず づ ぶ ぷ
+
+---
+
+### ④ え段＋い（极少数＋え）
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>せん<rt>sen</rt>せ<rt>se</rt>い<rt>i</rt></ruby> | sensei | 老师 |
+| <ruby>と<rt>to</rt>け<rt>ke</rt>い<rt>i</rt></ruby> | tokei | 钟 / 表 |
+| <ruby>お<rt>o</rt>ね<rt>ne</rt>え<rt>e</rt>さ<rt>sa</rt>ん<rt>n</rt></ruby> | oneesan | 姐姐（例外：え段＋え） |
+
+> **え段一览**  
+> え け せ て ね へ め れ げ ぜ で べ ぺ
+
+---
+
+### ⑤ お段＋う（极少数＋お）
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>お<rt>o</rt>と<rt>to</rt>う<rt>u</rt>さ<rt>sa</rt>ん<rt>n</rt></ruby> | otousan | 爸爸 |
+| <ruby>と<rt>to</rt>お<rt>o</rt>い<rt>i</rt></ruby> | tooi | 远（例外：お段＋お） |
+| <ruby>お<rt>o</rt>お<rt>o</rt>き<rt>ki</rt>い<rt>i</rt></ruby> | ookii | 大（例外：お段＋お） |
+
+> **お段一览**  
+> お こ そ と の ほ も よ ろ を ご ぞ ど ぼ ぽ
+
+---
+
+### ⑥ 外来語・擬音語：片仮名＋「ー」
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| ケーキ | kēki | 蛋糕 |
+| コーヒー | kōhī | 咖啡 |
+| スーパー | sūpā | 超市 |
+
+---
+
+### ⑦ 拗音＋う（ゃ／ゅ／ょ 后接 う）
+| 假名 | 罗马字 | 中文 |
+|---|---|---|
+| <ruby>り<rt>ryu</rt>ゅ<rt>u</rt>う<rt>u</rt></ruby> | ryuu | 龙 |
+| <ruby>ち<rt>chu</rt>ゅ<rt>u</rt>う<rt>u</rt>ご<rt>go</rt>く<rt>ku</rt></ruby> | chuugoku | 中国 |
+| <ruby>ひ<rt>hya</rt>ゃ<rt>ku</rt>く<rt>u</rt></ruby> | hyaku | 百 |
+
+:::
+
+---
+
+1. あ段＋あ  
+   （あ段：あ・か・さ・た・な・は・ま・や・ら・わ・が・ざ・だ・ば・ぱ）  
+   - おかあさん（okaasan）  
+   - おばあさん（obaasan）  
+   - さようなら（sayounara）
+
+2. い段＋い  
+   （い段：い・き・し・ち・に・ひ・み・り・ぎ・じ・び・ぴ）  
+   - おにいさん（oniisan）  
+   - いいえ（iie）  
+   - ちいさい（chiisai）
+
+3. う段＋う  
+   （う段：う・く・す・つ・ぬ・ふ・む・ゆ・る・ぐ・ず・づ・ぶ・ぷ）  
+   - くうき（kuuki）  
+   - すうがく（suugaku）  
+   - つうきん（tsuukin）
+
+4. え段＋い（少数＋え）  
+   （え段：え・け・せ・て・ね・へ・め・れ・げ・ぜ・で・べ・ぺ）  
+   - せんせい（sensei）  
+   - とけい（tokei）  
+   - おねえさん（oneesan） ← 例外＋え
+
+5. お段＋う（少数＋お）  
+   （お段：お・こ・そ・と・の・ほ・も・よ・ろ・を・ご・ぞ・ど・ぼ・ぽ）  
+   - おとうさん（otousan）  
+   - とおい（tooi） ← 例外＋お  
+   - おおきい（ookii） ← 例外＋お
+
+6. 外来語・擬音語：片仮名＋「ー」  
+   - ケーキ（keeki）  
+   - コーヒー（koohii）  
+   - スーパー（suupaa）
+
+7. 拗音＋う（ゃ／ゅ／ょ のあとに う）  
+   - りゅう（ryuu）  
+   - ちゅうごく（chuugoku）  
+   - ひゃく（hyaku）
+
