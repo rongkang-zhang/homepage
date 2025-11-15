@@ -1,6 +1,7 @@
 ---
 title: "Japanese"
 author: "Rong-Kang Zhang"
+date: last-modified
 format:
   html:
     toc: true        # 启用目录

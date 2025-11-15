@@ -13851,4 +13851,42 @@ a {
   );
 }
 
+
+/* 书写education and degrees的时候，自定义的div时间轴 */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--bs-primary);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+}
+
+.timeline-item::before {                 /* 圆点 */
+  content: "";
+  position: absolute;
+  left: -0.55rem;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--bs-primary);
+}
+
+.timeline-item .small {                   /* 关键词小字 */
+  font-size: 0.85rem;
+  color: var(--bs-secondary);
+}
+
+/* 时间轴暗色模式兼容 */
+[data-bs-theme="dark"] .timeline {
+  border-left-color: var(--bs-light);
+}
+[data-bs-theme="dark"] .timeline-item::before {
+  background: var(--bs-light);
+}
+
 // quarto-scss-analysis-annotation { "origin": null }
