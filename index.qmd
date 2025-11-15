@@ -2,6 +2,7 @@
 title: "Rong-Kang Zhang"
 subtitle: "Physics BSc | Into higher category theory and its emerging role in mathematical physics."
 author: "Rong-Kang Zhang"
+toc: true
 page-layout: full
 about:
   template: trestles
@@ -28,6 +29,52 @@ about:
       text: Cookie Policy
       href: cookie.html
 ---
+
+# Language
+
+::: {.callout-note}
+**CEFR Six-Level Scale**  
+A1 → A2 → B1 → B2 → C1 → C2 (Basic → Independent → Proficient)
+:::
+
+::: {.w-80}
+
+<!-- 中文 / Chinese -->
+**🇨🇳 Chinese (C2) • 中文（C2）**
+<div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #d9a441;">
+  <div class="progress-bar" style="width:100%;background:linear-gradient(90deg, #d9a441, #f3d97a);color:#002b5c;font-weight:bold;">Native</div>
+</div>
+<small><span class="badge text-bg-warning">Native</span> Native speaker level</small>
+
+<!-- 英语 / English -->
+**🇬🇧 English (C1) • English（C1）**
+<div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #00529b;">
+  <div class="progress-bar" style="width:85%;background:linear-gradient(90deg, #00529b, #2a75c2);color:#fff;font-weight:bold;">Advanced</div>
+</div>
+<small><span class="badge text-bg-primary">Advanced</span> Fluent in academic/business contexts</small>
+
+<!-- 俄语 / Russian -->
+**🇷🇺 Russian (B1) • Русский（B1）**
+<div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #3399ff;">
+  <div class="progress-bar" style="width:55%;background:linear-gradient(90deg, #3399ff, #66b3ff);color:#002b5c;font-weight:bold;">Intermediate</div>
+</div>
+<small><span class="badge text-bg-info">Intermediate</span> Travel & work-related conversations</small>
+
+<!-- 日语 / Japanese -->
+**🇯🇵 Japanese (B1) • 日本語（B1）**
+<div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #66b3ff;">
+  <div class="progress-bar" style="width:55%;background:linear-gradient(90deg, #66b3ff, #99ccff);color:#002b5c;font-weight:bold;">Intermediate</div>
+</div>
+<small><span class="badge text-bg-info">Intermediate</span> Daily conversation / JLPT N3</small>
+
+<!-- 意大利语 / Italian -->
+**🇮🇹 Italian (A2) • Italiano（A2）**
+<div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #99ccff;">
+  <div class="progress-bar" style="width:35%;background:linear-gradient(90deg, #99ccff, #c2e0ff);color:#002b5c;font-weight:bold;">Elementary</div>
+</div>
+<small><span class="badge text-bg-secondary">Elementary</span> Slow-paced daily / basic communication</small>
+
+:::
 
 > I'm multilingual, with proficiency in
 >
@@ -126,3 +173,290 @@ about:
 > * I wrote study notes on Zhihu, please refer to "Zhihu".
 
 Columns to be built, conference talks, upcoming conferences and planned visits, poster presentations, presentations and talks
+
+
+## Research Interests
+
+::: {.callout-note}
+基于六大主题，按子领域展开；进度条长度 ≈ 技术深度/投入时间。
+:::
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Higher Category Theory
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 90%; background-color: #003366;"></div>
+</div>
+<small>
+Symmetric monoidal&nbsp;$(\infty,n)$-cat<br>
+Grothendieck toposes<br>
+Extended TQFT<br>
+Higher algebraic stacks / Motivic homotopy<br>
+Categorical logic & Axiomatic cohesion<br>
+Cohesive higher toposes & Internal logic
+</small>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Operator Algebras
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 75%; background-color: #0059b3;"></div>
+</div>
+<small>
+von Neumann algebras<br>
+Algebraic QFT<br>
+Conformal field theory<br>
+Topological order
+</small>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Derived & Spectral Geometry
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 70%; background-color: #3399ff;"></div>
+</div>
+<small>
+Derived algebraic geometry<br>
+Spectral algebraic geometry
+</small>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Representation Theory
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 65%; background-color: #66b3ff;"></div>
+</div>
+<small>
+Chiral representation theory<br>
+Quantum geometric representation theory
+</small>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Holographic Duality
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 60%; background-color: #99ccff;"></div>
+</div>
+<small>
+Higher category in holography<br>
+HaPPY model<br>
+Holographic entanglement entropy<br>
+Quantum information in holography
+</small>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .border-0 .bg-light}
+#### 🇺🇸 Applied Category Theory
+<div class="progress" style="height:6px;">
+  <div class="progress-bar" style="width: 50%; background-color: #c2e0ff;"></div>
+</div>
+<small>
+Quantum error correction<br>
+Theoretical computer science<br>
+Theoretical physics
+</small>
+:::
+:::
+
+:::
+
+
+
+
+
+## Research Interests
+
+::: {.callout-note}
+Click to expand each area.
+:::
+
+<style>
+/* 1. 一级条目：加粗 + 大图标 */
+ul.research > li {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  list-style: none;
+  position: relative;
+  padding-left: 1.4rem;
+}
+ul.research > li::before {
+  content: "🔬";
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* 2. 二级条目：普通字体 + 小圆点 */
+ul.research ul {
+  margin-left: 0.8rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ccdcee;
+}
+ul.research ul li {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  list-style: disc;
+  color: #444;
+}
+</style>
+
+<ul class="research">
+  <li>Higher category theory
+    <ul>
+      <li>Symmetric monoidal $(\infty, n)$-categories</li>
+      <li>Grothendieck toposes</li>
+      <li>Extended TQFT</li>
+      <li>Higher algebraic stacks / Higher geometry / Motivic homotopy theory</li>
+      <li>Categorical logic</li>
+      <li>Axiomatic cohesion & cohesive higher toposes</li>
+      <li>Internal logic of higher toposes</li>
+    </ul>
+  </li>
+
+  <li>Operator algebras
+    <ul>
+      <li>von Neumann algebras</li>
+      <li>Algebraic quantum field theory</li>
+      <li>Conformal field theory</li>
+      <li>Topological order</li>
+    </ul>
+  </li>
+
+  <li>Derived algebraic geometry
+    <ul>
+      <li>Spectral algebraic geometry</li>
+    </ul>
+  </li>
+
+  <li>Representation theory
+    <ul>
+      <li>Chiral representation theory</li>
+      <li>Quantum geometric representation theory</li>
+    </ul>
+  </li>
+
+  <li>Holographic duality
+    <ul>
+      <li>Higher categories in holographic duality</li>
+      <li>HaPPY model</li>
+      <li>Holographic entanglement entropy</li>
+      <li>Quantum information in holographic duality</li>
+    </ul>
+  </li>
+
+  <li>Applied category theory
+    <ul>
+      <li>Quantum error correction</li>
+      <li>Theoretical computer science</li>
+      <li>Theoretical physics</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+## Research Interests
+
+::: {.callout-note}
+Click any heading to expand.
+:::
+
+<style>
+/* 1. 整块可折叠 */
+details.ri {
+  border: 1px solid #ccdcee;
+  border-radius: 4px;
+  padding: .6rem .8rem;
+  margin-bottom: .6rem;
+  background: #fafbfc;
+}
+details.ri summary {
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: #00529b;
+}
+details.ri ul {
+  margin: .4rem 0 0 1.2rem;
+  padding-left: .5rem;
+  border-left: 2px solid #e1e8f0;
+}
+details.ri li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+</style>
+
+<details class="ri">
+<summary>🔬 Higher category theory</summary>
+<ul>
+  <li>Symmetric monoidal $(\infty, n)$-categories</li>
+  <li>Grothendieck toposes</li>
+  <li>Extended TQFT</li>
+  <li>Higher algebraic stacks / Higher geometry / Motivic homotopy theory</li>
+  <li>Categorical logic</li>
+  <li>Axiomatic cohesion & cohesive higher toposes</li>
+  <li>Internal logic of higher toposes</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>🧮 Operator algebras</summary>
+<ul>
+  <li>von Neumann algebras</li>
+  <li>Algebraic quantum field theory</li>
+  <li>Conformal field theory</li>
+  <li>Topological order</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>📐 Derived algebraic geometry</summary>
+<ul>
+  <li>Spectral algebraic geometry</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>🎭 Representation theory</summary>
+<ul>
+  <li>Chiral representation theory</li>
+  <li>Quantum geometric representation theory</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>🌌 Holographic duality</summary>
+<ul>
+  <li>Higher categories in holographic duality</li>
+  <li>HaPPY model</li>
+  <li>Holographic entanglement entropy</li>
+  <li>Quantum information in holographic duality</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>🔗 Applied category theory</summary>
+<ul>
+  <li>Quantum error correction</li>
+  <li>Theoretical computer science</li>
+  <li>Theoretical physics</li>
+</ul>
+</details>
