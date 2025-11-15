@@ -3,16 +3,125 @@ title: "Preliminaries"
 subtitle: "A Topos-Theoretic Bridge for Holographic Entanglement Entropy"
 author: "Rong-Kang Zhang"
 date: last-modified
-toc: false
 categories: [AdS/CFT Duality, Holographic Principle]
 page-layout: full
 bibliography: ../../../refs.bib
 csl: ../../../american-mathematical-society.csl
 weight: 6
+toc: true
+toc-title: "Contents"
+toc-location: left
+anchor-sections: true      # 各级标题左侧出现段落锚点
+smooth-scroll: true        # 锚点跳转时平滑滚动
+highlight-style: dracula    # 代码高亮配色
+number-sections: true
+secnumdepth: 3        # 编号也到 subsubsection
+toc-depth: 5
+code-tools: true
+code-fold: true
+code-overflow: wrap
+eq-prefix: "Eq."
+fig-prefix: "Fig."
+tbl-prefix: "Tbl."
+thm-prefix: "Thm."
+crossref:
+  fig-title: "Figure"         # caption 前缀
+  tbl-title: "Table"
+  eq-title: "Equation"
+  thm-title: "Theorem"
+filters:
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua
+environments:                 # 把 div 转成 LaTeX 环境
+  framedshaded: framedshaded  # 左边是 div-class，右边是环境名
+  lrbox: lrbox
+  theorem: theorem
+  lemma: lemma
+  definition: definition
+  proposition: proposition
+  corollary: corollary
+  remark: remark
+  example: example
+  proof: proof
+tikz:
+  cache: false
+  save-tex: true  # Enable saving intermediate .tex files
+  tex-dir: tikz-tex  # Optional: Specify directory to save .tex files
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: false
+  css-class: "my-css-class"
 ---
+
+::: {.definition #def-small-category}
+A **small category** is a category $\mathcal{C}$ whose class of objects $\operatorname{Ob}(\mathcal{C})$ and class of morphisms $\operatorname{Mor}(\mathcal{C})$ are both sets (i.e. elements of the universe of sets with which we work). Thus one can safely form functor categories such as
+
+$$
+\widehat{\mathcal{C}}:=\operatorname{PSh}(\mathcal{C})=\left[\mathcal{C}^{\mathrm{op}}, \mathbf{S e t}\right]
+$$
+
+without running into size issues.
+:::
 
 # Holographic Principle
 
 The holographic principle was first articulated in the context of black-hole unitarity by 't Hooft (1993) [@thooft1993dimensional].
 
 # Holographic Duality
+
+## Topos and site
+
+:::{#def-adj .definition}
+An **adjunction** consists of a pair of functors $L \colon \mathcal{C} \rightleftarrows \mathcal{D} \colon R$ together with a natural isomorphism $\mathcal{D}(LA, B) \cong \mathcal{C}(A, RB)$.
+:::
+
+::: {.definition #def-group}
+A **group** is a set $G$ with a binary operation $\cdot$ satisfying:
+1. Associativity: $(a\cdot b)\cdot c=a\cdot(b\cdot c)$;
+2. Identity: $\exists e\in G$ such that $e\cdot a=a\cdot e=a$;
+3. Inverses: $\forall a\in G\ \exists a^{-1}\in G$ such that $a\cdot a^{-1}=a^{-1}\cdot a=e$.
+:::
+
+:::{#def-category .definition}
+A **category** $\mathcal{C}$ consists of the following data:
+1. A class $\text{ob}(\mathcal{C})$ whose elements are called *objects*;
+2. For every pair of objects $A, B \in \text{ob}(\mathcal{C})$, a set $\text{hom}_{\mathcal{C}}(A, B)$ 
+   (called *morphisms* from $A$ to $B$);
+3. For every triple of objects $A, B, C \in \text{ob}(\mathcal{C})$, a composition function:
+   $$\text{hom}_{\mathcal{C}}(A, B) \times \text{hom}_{\mathcal{C}}(B, C) \to \text{hom}_{\mathcal{C}}(A, C), 
+   \quad (f, g) \mapsto g \circ f$$
+satisfying three axioms:
+- (Disjointness) Morphism sets are disjoint (each morphism uniquely determines its domain and codomain);
+- (Associativity) For all $f \in \text{hom}(A,B)$, $g \in \text{hom}(B,C)$, $h \in \text{hom}(C,D)$, 
+  $(h \circ g) \circ f = h \circ (g \circ f)$;
+- (Identity) For every object $A$, there exists a unique *identity morphism* $\text{id}_A \in \text{hom}(A,A)$ 
+  such that $f \circ \text{id}_A = f$ (for all $f \in \text{hom}(A,B)$) and $\text{id}_A \circ g = g$ 
+  (for all $g \in \text{hom}(C,A)$).
+:::
+
+:::{#def-dual-category .definition}
+The **dual category** $\mathcal{C}^{\text{op}}$ of a category $\mathcal{C}$ has:
+- The same objects as $\mathcal{C}$ (i.e., $\text{ob}(\mathcal{C}^{\text{op}}) = \text{ob}(\mathcal{C})$);
+- Morphisms $\text{hom}_{\mathcal{C}^{\text{op}}}(A, B) = \text{hom}_{\mathcal{C}}(B, A)$ 
+  (all morphisms are reversed);
+- Composition $\circ_{\text{op}}$ defined by $f \circ_{\text{op}} g = g \circ f$ 
+  (where $\circ$ is composition in $\mathcal{C}$).
+:::
+
+:::{#def-natural-transformation .definition}
+Let $F, G: \mathcal{C} \to \mathcal{D}$ be two functors between categories $\mathcal{C}$ and $\mathcal{D}$. 
+A **natural transformation** $\eta: F \Rightarrow G$ consists of:
+1. For every object $X \in \text{ob}(\mathcal{C})$, a *component morphism* $\eta_X \in \text{hom}_{\mathcal{D}}(F(X), G(X))$;
+2. A commutativity condition: For every morphism $f \in \text{hom}_{\mathcal{C}}(X, Y)$ in $\mathcal{C}$, 
+   the diagram
+   $$\begin{CD}
+   F(X) @>{\eta_X}>> G(X) \\
+   @V{F(f)}VV @VV{G(f)}V \\
+   F(Y) @>{\eta_Y}>> G(Y)
+   \end{CD}$$
+   commutes (i.e., $\eta_Y \circ F(f) = G(f) \circ \eta_X$).
+:::
