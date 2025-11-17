@@ -1,0 +1,12 @@
+---
+title: "Learning"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+page-layout: full
+csl: ../american-mathematical-society.csl
+---
+
+| Overall Subject | Topics Covered and Learning Plan | Learning Reseources and 完成情况 |
+| --------------- | -------------- | ---------------------------- |
+| Language        | [Japanese](japanese/index.qmd)       | 《标准日本语》 完成第一单元，已掌握50音图       |

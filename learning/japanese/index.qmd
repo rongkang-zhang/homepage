@@ -1,0 +1,101 @@
+---
+title: "Japanese"
+subtitle: "Learning Plan on Japanese"
+author: "Rong-Kang Zhang"
+date: last-modified
+date-format: "YYYY-MM-DD"
+toc: false
+page-layout: full
+bibliography: ../../refs.bib
+csl: ../../american-mathematical-society.csl
+format:
+  html:
+    toc: true
+---
+
+
+## 50音默写打卡（3 遍/天，直到 12-07）
+<ul class="task-list">
+  <li><input type="checkbox">2025-11-17　Mon</li>
+  <li><input type="checkbox">2025-11-18　Tue</li>
+  <li><input type="checkbox">2025-11-19　Wed</li>
+  <!-- ……继续到 12-07，共 21 行…… -->
+  <li><input type="checkbox">2025-12-07　Sun</li>
+</ul>
+
+<style>
+  .check-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:.5rem; }
+  .check-grid label { font-size:.9rem; white-space:nowrap; }
+</style>
+
+<div class="check-grid form-check">
+  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-17</label>
+  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-18</label>
+  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-19</label>
+  <!-- ……继续到 12-07…… -->
+  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 12-07</label>
+</div>
+
+
+
+
+
+## Goal
+Master the complete 50音 table (ひらがな + カタカナ) by 07 Dec 2025.
+
+## Daily Rule
+- Write the **entire 50音 table from memory 3 times** (no looking at notes).  
+- Tick the box below **only after the 3rd copy is finished**.
+
+## Drill Calendar
+```{=html}
+<style>
+  .drill-calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: .5rem; font-family: system-ui, sans-serif; }
+  .drill-calendar label { display: flex; align-items: center; gap: .25rem; font-size: .9rem; }
+</style>
+```
+::: {.drill-calendar}
+- [ ] 2025-11-17  
+- [ ] 2025-11-18  
+- [ ] 2025-11-19  
+- [ ] 2025-11-20  
+- [ ] 2025-11-21  
+- [ ] 2025-11-22  
+- [ ] 2025-11-23  
+- [ ] 2025-11-24  
+- [ ] 2025-11-25  
+- [ ] 2025-11-26  
+- [ ] 2025-11-27  
+- [ ] 2025-11-28  
+- [ ] 2025-11-29  
+- [ ] 2025-11-30  
+- [ ] 2025-12-01  
+- [ ] 2025-12-02  
+- [ ] 2025-12-03  
+- [ ] 2025-12-04  
+- [ ] 2025-12-05  
+- [ ] 2025-12-06  
+- [ ] 2025-12-07  
+:::
+
+## Reflection area (optional)
+_Write a quick note after each session: what was hard, which 行 you always forget, etc._
+
+
+<script>
+/* 保存/恢复打卡状态到 localStorage */
+const key = 'japanese-50on-checklist';          // 存储键名
+const boxes = document.querySelectorAll('.drill-calendar input[type="checkbox"]');
+
+/* 页面加载时恢复 */
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = JSON.parse(localStorage.getItem(key) || '[]');
+  saved.forEach((v, i) => { if (boxes[i]) boxes[i].checked = v; });
+});
+
+/* 每次点击就保存 */
+boxes.forEach(box => box.addEventListener('change', () => {
+  const state = Array.from(boxes).map(b => b.checked);
+  localStorage.setItem(key, JSON.stringify(state));
+}));
+</script>
