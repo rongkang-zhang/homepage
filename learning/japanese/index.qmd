@@ -17,10 +17,9 @@ format:
     toc: true
 ---
 
-# Time Tracker
-
-<!-- 科技感蓝系 + 淡竖线 -->
+<!-- 科技感蓝系 + 淡竖线 + 手机端透明修复 -->
 <style>
+/* ===== 原有变量与表格样式不动 ===== */
 :root{
   --grad-start:#2575fc;
   --grad-end:#6a11cb;
@@ -28,7 +27,7 @@ format:
   --hover:rgba(37,117,252,.15);
   --text:#333;
   --bg:#fff;
-  --line:rgba(37,117,252,.15);   /* 淡蓝竖线 */
+  --line:rgba(37,117,252,.15);
 }
 @media (prefers-color-scheme:dark){
   :root{
@@ -77,8 +76,26 @@ format:
   background:var(--hover);
   transition:background .3s ease;
 }
+
+/* ===== 手机端透明修复（仅追加） ===== */
+/* 1. 加粗日期强制上色，防止透明 */
+.table-study tbody tr:nth-child(odd) strong {
+  color: var(--grad-start);
+  -webkit-text-fill-color: var(--grad-start);
+}
+/* 2. 复选框垂直居中 + 明确颜色 */
+.table-study input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin: 0 4px 0 0;
+  accent-color: var(--grad-start);
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
 </style>
 
+<!-- 以下是你的原版表格，内容未做任何修改 -->
 <table class="table-study">
   <thead>
     <tr>
@@ -216,3 +233,89 @@ format:
     </tr>
   </tbody>
 </table>
+
+- {{< fa heart-broken style="color: red; font-size: 2em;" >}} 心碎
+- {{< fa skull style="color: gray; font-size: 2em;" >}} 骷髅
+- {{< fa ghost style="color: silver; font-size: 2em;" >}} 幽灵
+- {{< fa moon style="color: midnightblue; font-size: 2em;" >}} 月亮
+- {{< fa cloud style="color: slategray; font-size: 2em;" >}} 乌云
+- {{< fa rain style="color: steelblue; font-size: 2em;" >}} 下雨
+- {{< fa thunderstorm style="color: indigo; font-size: 2em;" >}} 雷暴
+- {{< fa wind style="color: lightgray; font-size: 2em;" >}} 风
+- {{< fa snowflake style="color: skyblue; font-size: 2em;" >}} 雪花
+- {{< fa fog style="color: gainsboro; font-size: 2em;" >}} 雾
+- {{< fa smoke style="color: dimgray; font-size: 2em;" >}} 烟雾
+- {{< fa fire style="color: orange; font-size: 2em;" >}} 火焰
+- {{< fa dagger style="color: darkred; font-size: 2em;" >}} 匕首
+- {{< fa scythe style="color: black; font-size: 2em;" >}} 镰刀
+- {{< fa hourglass-end style="color: brown; font-size: 2em;" >}} 沙漏结束
+- {{< fa infinity style="color: purple; font-size: 2em;" >}} 无限
+- {{< fa circle-xmark style="color: red; font-size: 2em;" >}} 禁止
+- {{< fa triangle-exclamation style="color: yellow; font-size: 2em;" >}} 警告
+- {{< fa face-frown-open style="color: black; font-size: 2em;" >}} 皱眉
+- {{< fa face-sad-tear style="color: blue; font-size: 2em;" >}} 悲伤流泪
+- {{< fa face-skull style="color: gray; font-size: 2em;" >}} 骷髅脸
+- {{< fa mask style="color: black; font-size: 2em;" >}} 面具
+- {{< fa cemetery style="color: gray; font-size: 2em;" >}} 墓地
+- {{< fa tombstone style="color: gray; font-size: 2em;" >}} 墓碑
+- {{< fa cross style="color: brown; font-size: 2em;" >}} 十字架
+- {{< fa pentagram style="color: purple; font-size: 2em;" >}} 五角星
+- {{< fa magic style="color: purple; font-size: 2em;" >}} 魔法
+- {{< fa crystal-ball style="color: blue; font-size: 2em;" >}} 水晶球
+- {{< fa eye style="color: darkblue; font-size: 2em;" >}} 眼睛
+- {{< fa eye-slash style="color: darkgray; font-size: 2em;" >}} 闭眼
+
+
+- <span style="background: linear-gradient(45deg, red, orange); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa fire >}}</span> 渐变色火焰
+- <span style="background: linear-gradient(135deg, blue, purple); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa crystal-ball >}}</span> 渐变色水晶球
+
+- <span style="background: linear-gradient(45deg, #ff6b6b, #ff8e8e); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa heart-broken >}}</span> 心碎（红粉渐变）
+- <span style="background: linear-gradient(135deg, #888, #ccc); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa skull >}}</span> 骷髅（灰阶渐变）
+- <span style="background: linear-gradient(90deg, #b3e0ff, #e6f7ff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa ghost >}}</span> 幽灵（冰蓝渐变）
+- <span style="background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa moon >}}</span> 月亮（深空红蓝渐变）
+- <span style="background: linear-gradient(135deg, #666, #b3b3b3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa cloud >}}</span> 乌云（深灰浅灰渐变）
+- <span style="background: linear-gradient(45deg, #4a90e2, #5ac8fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa rain >}}</span> 下雨（蓝青渐变）
+- <span style="background: linear-gradient(135deg, #2c3e50, #4a688a); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa thunderstorm >}}</span> 雷暴（深靛蓝渐变）
+- <span style="background: linear-gradient(90deg, #e0e0e0, #f5f5f5); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa wind >}}</span> 风（灰白渐变）
+- <span style="background: linear-gradient(45deg, #87ceeb, #e0f7fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa snowflake >}}</span> 雪花（冰蓝白渐变）
+- <span style="background: linear-gradient(135deg, #d0d0d0, #f0f0f0); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa fog >}}</span> 雾（浅灰雾白渐变）
+- <span style="background: linear-gradient(45deg, #555, #999); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa smoke >}}</span> 烟雾（深灰银灰渐变）
+- <span style="background: linear-gradient(45deg, #ff4500, #ff8c00); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa fire >}}</span> 火焰（红橙渐变）
+- <span style="background: linear-gradient(135deg, #8b0000, #b22222); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa dagger >}}</span> 匕首（暗红渐变）
+- <span style="background: linear-gradient(90deg, #222, #444); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa scythe >}}</span> 镰刀（纯黑灰渐变）
+- <span style="background: linear-gradient(45deg, #8b4513, #d2b48c); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa hourglass-end >}}</span> 沙漏结束（棕木色渐变）
+- <span style="background: linear-gradient(135deg, #9400d3, #ba55d3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa infinity >}}</span> 无限（深紫浅紫渐变）
+- <span style="background: linear-gradient(45deg, #ff0000, #ff6347); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa circle-xmark >}}</span> 禁止（红橙警示渐变）
+- <span style="background: linear-gradient(135deg, #ffd700, #ffff66); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa triangle-exclamation >}}</span> 警告（金黄渐变）
+- <span style="background: linear-gradient(90deg, #333, #666); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa face-frown-open >}}</span> 皱眉（深灰渐变）
+- <span style="background: linear-gradient(45deg, #1e90ff, #87cefa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa face-sad-tear >}}</span> 悲伤流泪（天蓝渐变）
+- <span style="background: linear-gradient(135deg, #777, #aaa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa face-skull >}}</span> 骷髅脸（中灰渐变）
+- <span style="background: linear-gradient(90deg, #000, #333); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa mask >}}</span> 面具（纯黑渐变）
+- <span style="background: linear-gradient(45deg, #666, #999); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa cemetery >}}</span> 墓地（灰石色渐变）
+- <span style="background: linear-gradient(135deg, #555, #888); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa tombstone >}}</span> 墓碑（深灰石渐变）
+- <span style="background: linear-gradient(45deg, #8b4513, #a0522d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa cross >}}</span> 十字架（棕红渐变）
+- <span style="background: linear-gradient(135deg, #800080, #d8bfd8); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa pentagram >}}</span> 五角星（紫丁香渐变）
+- <span style="background: linear-gradient(90deg, #9932cc, #e6e6fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa magic >}}</span> 魔法（深紫浅紫渐变）
+- <span style="background: linear-gradient(45deg, #00bfff, #e0ffff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa crystal-ball >}}</span> 水晶球（冰蓝渐变）
+- <span style="background: linear-gradient(135deg, #00008b, #1e90ff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa eye >}}</span> 眼睛（深海蓝渐变）
+- <span style="background: linear-gradient(45deg, #666, #b3b3b3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa eye-slash >}}</span> 闭眼（灰阶渐变）
+
+- <span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa star >}}</span> 星星（宇宙主题）
+- <span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa rocket >}}</span> 火箭（科技主题）
+- <span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa satellite >}}</span> 卫星（太空主题）
+
+- <span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa fire >}}</span> 火焰（热情主题）
+- <span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa sun >}}</span> 太阳（能量主题）
+- <span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa volcano >}}</span> 火山（力量主题）
+
+- <span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span> 云朵（空灵主题）
+- <span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa paint-brush >}}</span> 画笔（艺术主题）
+- <span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa fairy >}}</span> 精灵（梦幻主题）
+
+- <span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa gem >}}</span> 宝石（奢华主题）
+- <span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa mask >}}</span> 面具（神秘主题）
+- <span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa vampire >}}</span> 吸血鬼（暗黑主题）
+
+- <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa fish-fins >}}</span> 鱼鳍（深海主题）
+- <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa submarine >}}</span> 潜水艇（探索主题）
+- <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa alien >}}</span> 外星人（科幻主题）

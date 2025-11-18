@@ -13894,4 +13894,50 @@ a {
   color: var(--grad-start);
 }
 
+/* 新的导航栏背景颜色 */
+
+/* 针对 Quarto 导航栏的渐变背景设置 */
+.navbar {
+  /* 核心：深空红蓝渐变背景（与你提供的月亮图标渐变一致） */
+  background-image: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c);
+  /* 确保渐变背景不重复、覆盖整个导航栏 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* 可选：添加轻微阴影增强层次感 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 导航栏文字颜色（确保在渐变背景上清晰可见） */
+.navbar .nav-link, /* 普通导航链接 */
+.navbar .navbar-brand, /* 网站标题 */
+.navbar .dropdown-toggle /* 下拉菜单触发按钮 */ {
+  color: white !important; /* 白色文字，!important 确保覆盖默认样式 */
+  font-weight: 500; /* 可选：文字加粗，提升可读性 */
+}
+
+/* 导航栏文字 hover 状态（鼠标悬浮时的颜色） */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover,
+.navbar .dropdown-toggle:hover {
+  color: #f0f0f0 !important; /* 浅灰色，避免纯白色过于刺眼 */
+}
+
+/* 下拉菜单背景（与导航栏渐变协调，可选深色） */
+.navbar .dropdown-menu {
+  background-color: #1a2a6c; /* 深蓝色背景，与渐变起点呼应 */
+  border: none; /* 去掉默认边框 */
+}
+
+/* 下拉菜单项文字颜色 */
+.navbar .dropdown-item {
+  color: white;
+}
+
+/* 下拉菜单项 hover 状态 */
+.navbar .dropdown-item:hover {
+  background-color: #b21f1f; /* 红色背景，与渐变中间色呼应 */
+  color: white;
+}
+
 // quarto-scss-analysis-annotation { "origin": null }

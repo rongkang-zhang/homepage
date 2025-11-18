@@ -317,15 +317,15 @@ cookieconsent.run({
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-overlay-max-width: 480px;
---cr-narrative-overlay-min-width: 260px;
---cr-narrative-sidebar-width: 1fr;
---cr-narrative-background-color-overlay: #d6e9ff;
---cr-section-background-color: #eef5ff;
---cr-narrative-font-size: 0.95rem;
---cr-narrative-outer-margin: 2rem;
---cr-narrative-text-color-overlay: #003366;
+          --cr-narrative-outer-margin: 2rem;
 --cr-narrative-border-radius: 16px;
+--cr-narrative-font-size: 0.95rem;
+--cr-narrative-background-color-overlay: #d6e9ff;
+--cr-narrative-text-color-overlay: #003366;
+--cr-narrative-sidebar-width: 1fr;
+--cr-narrative-overlay-min-width: 260px;
+--cr-section-background-color: #eef5ff;
+--cr-narrative-overlay-max-width: 480px;
 --cr-narrative-font-family: “LXGW WenKai”, sans-serif;
         }
       </style>
@@ -620,7 +620,7 @@ cookieconsent.run({
 <strong>Mood:</strong> <i class="fa-solid fa-face-smile" aria-label="face-smile"></i> calm</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-pan-to="50%,50%" data-scale-by=".5" data-focus-on="cr-intro">
+<div class="trigger new-trigger" data-focus-on="cr-intro" data-pan-to="50%,50%" data-scale-by=".5">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -636,7 +636,7 @@ cookieconsent.run({
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="1.5" data-pan-to="50%,50%" data-focus-on="cr-fig-trial">
+<div class="trigger new-trigger" data-focus-on="cr-fig-trial" data-scale-by="1.5" data-pan-to="50%,50%">
 <div class="narrative">
 <p>这段文字出现时触发 intro 层。</p>
 </div>
@@ -662,7 +662,7 @@ cookieconsent.run({
 <p>生成虚拟时间序列，并高亮关键代码行：</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-highlight="3-4" data-focus-on="code" data-transition="0.7s">
+<div class="trigger new-trigger" data-focus-on="code" data-transition="0.7s" data-highlight="3-4">
 <div class="narrative">
 
 </div>

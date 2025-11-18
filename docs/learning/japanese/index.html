@@ -47,9 +47,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-4e2d71fbb91e9d4d0026d38b48d99a3b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-46d52e1534ec99468bb36c6841e9965d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-4e2d71fbb91e9d4d0026d38b48d99a3b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-525b7c14b01b87c51458adf80e866a1c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-66a05639e7fbbe5324d1c45276f7ad56.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-525b7c14b01b87c51458adf80e866a1c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -427,12 +429,11 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#time-tracker" id="toc-time-tracker" class="nav-link active" data-scroll-target="#time-tracker"><span class="header-section-number">1</span> Time Tracker</a></li>
-  <li><a href="#check-off" id="toc-check-off" class="nav-link" data-scroll-target="#check-off"><span class="header-section-number">2</span> Check-off</a>
+  <li><a href="#check-off" id="toc-check-off" class="nav-link active" data-scroll-target="#check-off"><span class="header-section-number">1</span> Check-off</a>
   <ul>
-  <li><a href="#to-2025-12-07" id="toc-to-2025-12-07" class="nav-link" data-scroll-target="#to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</a>
+  <li><a href="#to-2025-12-07" id="toc-to-2025-12-07" class="nav-link" data-scroll-target="#to-2025-12-07"><span class="header-section-number">1.1</span> 2025-11-18 to 2025-12-07</a>
   <ul class="collapse">
-  <li><a href="#音ごじゅうおん默写2回日" id="toc-音ごじゅうおん默写2回日" class="nav-link" data-scroll-target="#音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</a></li>
+  <li><a href="#音ごじゅうおん默写2回日" id="toc-音ごじゅうおん默写2回日" class="nav-link" data-scroll-target="#音ごじゅうおん默写2回日"><span class="header-section-number">1.1.1</span> 50音（ごじゅうおん）默写（2回/日）</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -474,10 +475,9 @@ cookieconsent.run({
 </header>
 
 
-<section id="time-tracker" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Time Tracker</h1>
-<!-- 科技感蓝系 + 淡竖线 -->
+<!-- 科技感蓝系 + 淡竖线 + 手机端透明修复 -->
 <style>
+/* ===== 原有变量与表格样式不动 ===== */
 :root{
   --grad-start:#2575fc;
   --grad-end:#6a11cb;
@@ -485,7 +485,7 @@ cookieconsent.run({
   --hover:rgba(37,117,252,.15);
   --text:#333;
   --bg:#fff;
-  --line:rgba(37,117,252,.15);   /* 淡蓝竖线 */
+  --line:rgba(37,117,252,.15);
 }
 @media (prefers-color-scheme:dark){
   :root{
@@ -534,7 +534,25 @@ cookieconsent.run({
   background:var(--hover);
   transition:background .3s ease;
 }
+
+/* ===== 手机端透明修复（仅追加） ===== */
+/* 1. 加粗日期强制上色，防止透明 */
+.table-study tbody tr:nth-child(odd) strong {
+  color: var(--grad-start);
+  -webkit-text-fill-color: var(--grad-start);
+}
+/* 2. 复选框垂直居中 + 明确颜色 */
+.table-study input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin: 0 4px 0 0;
+  accent-color: var(--grad-start);
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
 </style>
+<!-- 以下是你的原版表格，内容未做任何修改 -->
 <table class="table-study">
 <thead>
 <tr>
@@ -881,13 +899,12 @@ Sun
 </tr>
 </tbody>
 </table>
-</section>
-<section id="check-off" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Check-off</h1>
-<section id="to-2025-12-07" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</h2>
-<section id="音ごじゅうおん默写2回日" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</h3>
+<section id="check-off" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Check-off</h1>
+<section id="to-2025-12-07" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="to-2025-12-07"><span class="header-section-number">1.1</span> 2025-11-18 to 2025-12-07</h2>
+<section id="音ごじゅうおん默写2回日" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="音ごじゅうおん默写2回日"><span class="header-section-number">1.1.1</span> 50音（ごじゅうおん）默写（2回/日）</h3>
 <!-- 纯打卡勾选 2025-11-18 → 2025-12-07  日期格式 2025-11-18 -->
 <table class="table-study">
 <thead>
@@ -988,6 +1005,85 @@ Sun
 </tr>
 </tbody>
 </table>
+<ul>
+<li><p><i class="fa-solid fa-heart-broken" aria-label="heart-broken"></i> 心碎</p></li>
+<li><p><i class="fa-solid fa-skull" aria-label="skull"></i> 骷髅</p></li>
+<li><p><i class="fa-solid fa-ghost" aria-label="ghost"></i> 幽灵</p></li>
+<li><p><i class="fa-solid fa-moon" aria-label="moon"></i> 月亮</p></li>
+<li><p><i class="fa-solid fa-cloud" aria-label="cloud"></i> 乌云</p></li>
+<li><p><i class="fa-solid fa-rain" aria-label="rain"></i> 下雨</p></li>
+<li><p><i class="fa-solid fa-thunderstorm" aria-label="thunderstorm"></i> 雷暴</p></li>
+<li><p><i class="fa-solid fa-wind" aria-label="wind"></i> 风</p></li>
+<li><p><i class="fa-solid fa-snowflake" aria-label="snowflake"></i> 雪花</p></li>
+<li><p><i class="fa-solid fa-fog" aria-label="fog"></i> 雾</p></li>
+<li><p><i class="fa-solid fa-smoke" aria-label="smoke"></i> 烟雾</p></li>
+<li><p><i class="fa-solid fa-fire" aria-label="fire"></i> 火焰</p></li>
+<li><p><i class="fa-solid fa-dagger" aria-label="dagger"></i> 匕首</p></li>
+<li><p><i class="fa-solid fa-scythe" aria-label="scythe"></i> 镰刀</p></li>
+<li><p><i class="fa-solid fa-hourglass-end" aria-label="hourglass-end"></i> 沙漏结束</p></li>
+<li><p><i class="fa-solid fa-infinity" aria-label="infinity"></i> 无限</p></li>
+<li><p><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i> 禁止</p></li>
+<li><p><i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> 警告</p></li>
+<li><p><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i> 皱眉</p></li>
+<li><p><i class="fa-solid fa-face-sad-tear" aria-label="face-sad-tear"></i> 悲伤流泪</p></li>
+<li><p><i class="fa-solid fa-face-skull" aria-label="face-skull"></i> 骷髅脸</p></li>
+<li><p><i class="fa-solid fa-mask" aria-label="mask"></i> 面具</p></li>
+<li><p><i class="fa-solid fa-cemetery" aria-label="cemetery"></i> 墓地</p></li>
+<li><p><i class="fa-solid fa-tombstone" aria-label="tombstone"></i> 墓碑</p></li>
+<li><p><i class="fa-solid fa-cross" aria-label="cross"></i> 十字架</p></li>
+<li><p><i class="fa-solid fa-pentagram" aria-label="pentagram"></i> 五角星</p></li>
+<li><p><i class="fa-solid fa-magic" aria-label="magic"></i> 魔法</p></li>
+<li><p><i class="fa-solid fa-crystal-ball" aria-label="crystal-ball"></i> 水晶球</p></li>
+<li><p><i class="fa-solid fa-eye" aria-label="eye"></i> 眼睛</p></li>
+<li><p><i class="fa-solid fa-eye-slash" aria-label="eye-slash"></i> 闭眼</p></li>
+<li><p><span style="background: linear-gradient(45deg, red, orange); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-fire" aria-label="fire"></i></span> 渐变色火焰</p></li>
+<li><p><span style="background: linear-gradient(135deg, blue, purple); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-crystal-ball" aria-label="crystal-ball"></i></span> 渐变色水晶球</p></li>
+<li><p><span style="background: linear-gradient(45deg, #ff6b6b, #ff8e8e); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-heart-broken" aria-label="heart-broken"></i></span> 心碎（红粉渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #888, #ccc); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-skull" aria-label="skull"></i></span> 骷髅（灰阶渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #b3e0ff, #e6f7ff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-ghost" aria-label="ghost"></i></span> 幽灵（冰蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-moon" aria-label="moon"></i></span> 月亮（深空红蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #666, #b3b3b3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span> 乌云（深灰浅灰渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #4a90e2, #5ac8fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-rain" aria-label="rain"></i></span> 下雨（蓝青渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #2c3e50, #4a688a); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-thunderstorm" aria-label="thunderstorm"></i></span> 雷暴（深靛蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #e0e0e0, #f5f5f5); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-wind" aria-label="wind"></i></span> 风（灰白渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #87ceeb, #e0f7fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-snowflake" aria-label="snowflake"></i></span> 雪花（冰蓝白渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #d0d0d0, #f0f0f0); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-fog" aria-label="fog"></i></span> 雾（浅灰雾白渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #555, #999); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-smoke" aria-label="smoke"></i></span> 烟雾（深灰银灰渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #ff4500, #ff8c00); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-fire" aria-label="fire"></i></span> 火焰（红橙渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #8b0000, #b22222); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-dagger" aria-label="dagger"></i></span> 匕首（暗红渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #222, #444); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-scythe" aria-label="scythe"></i></span> 镰刀（纯黑灰渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #8b4513, #d2b48c); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-hourglass-end" aria-label="hourglass-end"></i></span> 沙漏结束（棕木色渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #9400d3, #ba55d3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-infinity" aria-label="infinity"></i></span> 无限（深紫浅紫渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #ff0000, #ff6347); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i></span> 禁止（红橙警示渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #ffd700, #ffff66); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i></span> 警告（金黄渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #333, #666); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-face-frown-open" aria-label="face-frown-open"></i></span> 皱眉（深灰渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #1e90ff, #87cefa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-face-sad-tear" aria-label="face-sad-tear"></i></span> 悲伤流泪（天蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #777, #aaa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-face-skull" aria-label="face-skull"></i></span> 骷髅脸（中灰渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #000, #333); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-mask" aria-label="mask"></i></span> 面具（纯黑渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #666, #999); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-cemetery" aria-label="cemetery"></i></span> 墓地（灰石色渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #555, #888); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-tombstone" aria-label="tombstone"></i></span> 墓碑（深灰石渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #8b4513, #a0522d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-cross" aria-label="cross"></i></span> 十字架（棕红渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #800080, #d8bfd8); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-pentagram" aria-label="pentagram"></i></span> 五角星（紫丁香渐变）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #9932cc, #e6e6fa); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-magic" aria-label="magic"></i></span> 魔法（深紫浅紫渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #00bfff, #e0ffff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-crystal-ball" aria-label="crystal-ball"></i></span> 水晶球（冰蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #00008b, #1e90ff); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-eye" aria-label="eye"></i></span> 眼睛（深海蓝渐变）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #666, #b3b3b3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;"><i class="fa-solid fa-eye-slash" aria-label="eye-slash"></i></span> 闭眼（灰阶渐变）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-star" aria-label="star"></i></span> 星星（宇宙主题）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-rocket" aria-label="rocket"></i></span> 火箭（科技主题）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #0f172a, #7e22ce, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-satellite" aria-label="satellite"></i></span> 卫星（太空主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-fire" aria-label="fire"></i></span> 火焰（热情主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-sun" aria-label="sun"></i></span> 太阳（能量主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #141e30, #ff416c, #ffb703); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-volcano" aria-label="volcano"></i></span> 火山（力量主题）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span> 云朵（空灵主题）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-paint-brush" aria-label="paint-brush"></i></span> 画笔（艺术主题）</p></li>
+<li><p><span style="background: linear-gradient(90deg, #00f2fe, #4facfe, #92fe9d); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-fairy" aria-label="fairy"></i></span> 精灵（梦幻主题）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-gem" aria-label="gem"></i></span> 宝石（奢华主题）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-mask" aria-label="mask"></i></span> 面具（神秘主题）</p></li>
+<li><p><span style="background: linear-gradient(135deg, #2d3748, #4a044a, #d81b60); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-vampire" aria-label="vampire"></i></span> 吸血鬼（暗黑主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-fish-fins" aria-label="fish-fins"></i></span> 鱼鳍（深海主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-submarine" aria-label="submarine"></i></span> 潜水艇（探索主题）</p></li>
+<li><p><span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-alien" aria-label="alien"></i></span> 外星人（科幻主题）</p></li>
+</ul>
 
 
 </section>
