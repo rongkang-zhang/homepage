@@ -8,94 +8,120 @@ toc: false
 page-layout: full
 bibliography: ../../refs.bib
 csl: ../../american-mathematical-society.csl
+number-sections: true        # 总开关
+number-depth: 3              # 编号到几级标题（1=仅#，2=##，3=###）
 format:
   html:
     toc: true
 ---
 
+# 2025-11-18 to 2025-12-07
 
-## 50音默写打卡（3 遍/天，直到 12-07）
-<ul class="task-list">
-  <li><input type="checkbox">2025-11-17　Mon</li>
-  <li><input type="checkbox">2025-11-18　Tue</li>
-  <li><input type="checkbox">2025-11-19　Wed</li>
-  <!-- ……继续到 12-07，共 21 行…… -->
-  <li><input type="checkbox">2025-12-07　Sun</li>
-</ul>
-
-<style>
-  .check-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:.5rem; }
-  .check-grid label { font-size:.9rem; white-space:nowrap; }
-</style>
-
-<div class="check-grid form-check">
-  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-17</label>
-  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-18</label>
-  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 11-19</label>
-  <!-- ……继续到 12-07…… -->
-  <label class="form-check-label"><input class="form-check-input" type="checkbox"> 12-07</label>
-</div>
-
-
-
-
-
-## Goal
-Master the complete 50音 table (ひらがな + カタカナ) by 07 Dec 2025.
-
-## Daily Rule
-- Write the **entire 50音 table from memory 3 times** (no looking at notes).  
-- Tick the box below **only after the 3rd copy is finished**.
-
-## Drill Calendar
-```{=html}
-<style>
-  .drill-calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: .5rem; font-family: system-ui, sans-serif; }
-  .drill-calendar label { display: flex; align-items: center; gap: .25rem; font-size: .9rem; }
-</style>
-```
-::: {.drill-calendar}
-- [ ] 2025-11-17  
-- [ ] 2025-11-18  
-- [ ] 2025-11-19  
-- [ ] 2025-11-20  
-- [ ] 2025-11-21  
-- [ ] 2025-11-22  
-- [ ] 2025-11-23  
-- [ ] 2025-11-24  
-- [ ] 2025-11-25  
-- [ ] 2025-11-26  
-- [ ] 2025-11-27  
-- [ ] 2025-11-28  
-- [ ] 2025-11-29  
-- [ ] 2025-11-30  
-- [ ] 2025-12-01  
-- [ ] 2025-12-02  
-- [ ] 2025-12-03  
-- [ ] 2025-12-04  
-- [ ] 2025-12-05  
-- [ ] 2025-12-06  
-- [ ] 2025-12-07  
+## 50音（ごじゅうおん）默写（2回/日）
+::: {.drill #kana-drill}
+<div class="cal-grid"></div>
 :::
 
-## Reflection area (optional)
-_Write a quick note after each session: what was hard, which 行 you always forget, etc._
+## N3 高频词汇（Anki 闪卡 → 80 新词/日）
+::: {.drill #vocab-drill}
+<div class="cal-grid"></div>
+:::
 
+## N3 语法条目（每日 8 条 + 造句）
+::: {.drill #grammar-drill}
+<div class="cal-grid"></div>
+:::
+
+## 真题限时刷（2018–2024 / 共 7 套）
+::: {.drill #exam-drill}
+<div class="cal-grid"></div>
+:::
+
+## 闪卡复习状态（Anki → 0 积压）
+::: {.drill #anki-drill}
+<div class="cal-grid"></div>
+:::
 
 <script>
-/* 保存/恢复打卡状态到 localStorage */
-const key = 'japanese-50on-checklist';          // 存储键名
-const boxes = document.querySelectorAll('.drill-calendar input[type="checkbox"]');
+/* ---------- 通用日历 & 本地存储 ---------- */
+const start = new Date('2025-11-18');
+const days  = 20;
+const ids   = ['kana-drill','vocab-drill','grammar-drill','exam-drill','anki-drill'];
 
-/* 页面加载时恢复 */
-window.addEventListener('DOMContentLoaded', () => {
-  const saved = JSON.parse(localStorage.getItem(key) || '[]');
-  saved.forEach((v, i) => { if (boxes[i]) boxes[i].checked = v; });
+function makeCal(parentId){
+  const grid = document.querySelector(`#${parentId} .cal-grid`);
+  for(let i=0;i<days;i++){
+    const d=new Date(start); d.setDate(start.getDate()+i);
+    const label=document.createElement('label');
+    label.innerHTML=`<input type="checkbox"><span>${d.getMonth()+1}-${d.getDate()}</span>`;
+    grid.appendChild(label);
+  }
+}
+function save(id){
+  const boxes=[...document.querySelectorAll(`#${id} input[type="checkbox"]`)].map(b=>b.checked);
+  localStorage.setItem(id,JSON.stringify(boxes));
+}
+function load(id){
+  const boxes=document.querySelectorAll(`#${id} input[type="checkbox"]`);
+  const saved=JSON.parse(localStorage.getItem(id)||'[]');
+  saved.forEach((v,i)=>{if(boxes[i])boxes[i].checked=v;});
+}
+
+/* ---------- 一键设置多天已完成 ---------- */
+function manualCheckList(moduleId, dayIndexArray, checked = true) {
+  const allBoxes = document.querySelectorAll(`#${moduleId} input[type="checkbox"]`);
+  dayIndexArray.forEach(idx => {
+    if (allBoxes[idx]) allBoxes[idx].checked = checked;
+  });
+  save(moduleId);   // 立即写回 localStorage
+}
+
+/* ---------- 初始化 ---------- */
+ids.forEach(id=>{
+  makeCal(id);
+  load(id);
+  document.querySelector(`#${id}`).addEventListener('change',()=>save(id));
 });
 
-/* 每次点击就保存 */
-boxes.forEach(box => box.addEventListener('change', () => {
-  const state = Array.from(boxes).map(b => b.checked);
-  localStorage.setItem(key, JSON.stringify(state));
-}));
+/* ===== 示例：把 #kana-drill 的第 1、3、5 天设为已打卡 ===== */
+manualCheckList('kana-drill', [0,2,4], true);   // 索引从 0 开始
+// 如需取消，把 true 改成 false 即可
 </script>
+
+<style>
+.cal-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:.5rem;
+  font-size:.9rem;
+  font-family:system-ui,sans-serif;
+}
+.cal-grid label{
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.3rem .5rem;
+  border-radius:6px;
+  background:#fff;
+  border:1px solid #cdd6e4;
+  cursor:pointer;
+  transition:background .2s, border-color .2s;
+}
+.cal-grid label:hover{background:#f3f5f7;}
+
+/* 如需 ✅ 样式，取消下面注释即可 */
+/*
+.cal-grid input[type="checkbox"]{display:none;}
+.cal-grid input[type="checkbox"]+span::before{
+  content:"";
+  width:1.1em;height:1.1em;
+  border:1px solid #cdd6e4;
+  border-radius:3px;
+  margin-right:.4rem;
+}
+.cal-grid input[type="checkbox"]:checked+span::before{
+  background:#274c77 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M11.9 28.9l-11.9-11.9 5.7-5.7 6.2 6.2 14.4-14.4L32 8.8z"/></svg>') center/70% no-repeat;
+  border-color:#274c77;
+}
+*/
+</style>

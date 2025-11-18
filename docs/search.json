@@ -39,7 +39,7 @@
     "href": "learning/japanese/index.html",
     "title": "Japanese",
     "section": "",
-    "text": "2025-11-17　Mon\n\n\n2025-11-18　Tue\n\n\n2025-11-19　Wed\n\n\n\n2025-12-07　Sun\n\n\n\n\n 11-17  11-18  11-19   12-07"
+    "text": "全部完成\n\n\n全部取消\n\n\n\n/* ===== 手动补勾示例：把 #kana-drill 的第 3 天（索引 2）设为已打卡 ===== */ const targetId = ‘kana-drill’; // 想改哪个模块就换 ID const dayIndex = 2; // 第 3 天 → 索引 2 const targetBox = document.querySelectorAll(#${targetId} input[type=\"checkbox\"])[dayIndex]; if (targetBox) { targetBox.checked = true; // 打勾 save(targetId); // 立即写回 localStorage }"
   },
   {
     "objectID": "learning/japanese/index.html#音默写打卡3-遍天直到-12-07",
@@ -52,29 +52,71 @@
     "objectID": "learning/japanese/index.html#goal",
     "href": "learning/japanese/index.html#goal",
     "title": "Japanese",
-    "section": "Goal",
-    "text": "Goal\nMaster the complete 50音 table (ひらがな + カタカナ) by 07 Dec 2025."
+    "section": "",
+    "text": "Master the complete 50音 table (ひらがな + カタカナ) by 07 Dec 2025."
   },
   {
     "objectID": "learning/japanese/index.html#daily-rule",
     "href": "learning/japanese/index.html#daily-rule",
     "title": "Japanese",
-    "section": "Daily Rule",
-    "text": "Daily Rule\n\nWrite the entire 50音 table from memory 3 times (no looking at notes).\n\nTick the box below only after the 3rd copy is finished."
+    "section": "",
+    "text": "Write the entire 50音 table from memory 3 times (no looking at notes).\n\nTick the box below only after the 3rd copy is finished."
   },
   {
     "objectID": "learning/japanese/index.html#drill-calendar",
     "href": "learning/japanese/index.html#drill-calendar",
     "title": "Japanese",
-    "section": "Drill Calendar",
-    "text": "Drill Calendar\n\n\n\n2025-11-17\n\n2025-11-18\n\n2025-11-19\n\n2025-11-20\n\n2025-11-21\n\n2025-11-22\n\n2025-11-23\n\n2025-11-24\n\n2025-11-25\n\n2025-11-26\n\n2025-11-27\n\n2025-11-28\n\n2025-11-29\n\n2025-11-30\n\n2025-12-01\n\n2025-12-02\n\n2025-12-03\n\n2025-12-04\n\n2025-12-05\n\n2025-12-06\n\n2025-12-07"
+    "section": "",
+    "text": "2025-11-17\n\n2025-11-18\n\n2025-11-19\n\n2025-11-20\n\n2025-11-21\n\n2025-11-22\n\n2025-11-23\n\n2025-11-24\n\n2025-11-25\n\n2025-11-26\n\n2025-11-27\n\n2025-11-28\n\n2025-11-29\n\n2025-11-30\n\n2025-12-01\n\n2025-12-02\n\n2025-12-03\n\n2025-12-04\n\n2025-12-05\n\n2025-12-06\n\n2025-12-07"
   },
   {
     "objectID": "learning/japanese/index.html#reflection-area-optional",
     "href": "learning/japanese/index.html#reflection-area-optional",
     "title": "Japanese",
-    "section": "Reflection area (optional)",
-    "text": "Reflection area (optional)\nWrite a quick note after each session: what was hard, which 行 you always forget, etc."
+    "section": "",
+    "text": "Write a quick note after each session: what was hard, which 行 you always forget, etc."
+  },
+  {
+    "objectID": "learning/japanese/index.html#音默写打卡2-遍天直到-12-06",
+    "href": "learning/japanese/index.html#音默写打卡2-遍天直到-12-06",
+    "title": "Japanese",
+    "section": "",
+    "text": "2025-11-18 Tue  2025-11-19 Wed  2025-11-20 Thu  2025-11-21 Fri  2025-11-22 Sat  2025-11-23 Sun  2025-11-24 Mon  2025-11-25 Tue  2025-11-26 Wed  2025-11-27 Thu  2025-11-28 Fri  2025-11-29 Sat  2025-11-30 Sun  2025-12-01 Mon  2025-12-02 Tue  2025-12-03 Wed  2025-12-04 Thu  2025-12-05 Fri  2025-12-06 Sat"
+  },
+  {
+    "objectID": "learning/japanese/index.html#音默写2-遍日",
+    "href": "learning/japanese/index.html#音默写2-遍日",
+    "title": "Japanese",
+    "section": "0｜50 音默写（2 遍/日）",
+    "text": "0｜50 音默写（2 遍/日）"
+  },
+  {
+    "objectID": "learning/japanese/index.html#n3-高频词汇anki-闪卡-80-新词日",
+    "href": "learning/japanese/index.html#n3-高频词汇anki-闪卡-80-新词日",
+    "title": "Japanese",
+    "section": "1｜N3 高频词汇（Anki 闪卡 → 80 新词/日）",
+    "text": "1｜N3 高频词汇（Anki 闪卡 → 80 新词/日）"
+  },
+  {
+    "objectID": "learning/japanese/index.html#n3-语法条目每日-8-条-造句",
+    "href": "learning/japanese/index.html#n3-语法条目每日-8-条-造句",
+    "title": "Japanese",
+    "section": "2｜N3 语法条目（每日 8 条 + 造句）",
+    "text": "2｜N3 语法条目（每日 8 条 + 造句）"
+  },
+  {
+    "objectID": "learning/japanese/index.html#真题限时刷20182024-共-7-套",
+    "href": "learning/japanese/index.html#真题限时刷20182024-共-7-套",
+    "title": "Japanese",
+    "section": "3｜真题限时刷（2018–2024 / 共 7 套）",
+    "text": "3｜真题限时刷（2018–2024 / 共 7 套）"
+  },
+  {
+    "objectID": "learning/japanese/index.html#闪卡复习状态anki-0-积压",
+    "href": "learning/japanese/index.html#闪卡复习状态anki-0-积压",
+    "title": "Japanese",
+    "section": "",
+    "text": "全部完成\n\n\n全部取消\n\n\n\n/* ===== 手动补勾示例：把 #kana-drill 的第 3 天（索引 2）设为已打卡 ===== */ const targetId = ‘kana-drill’; // 想改哪个模块就换 ID const dayIndex = 2; // 第 3 天 → 索引 2 const targetBox = document.querySelectorAll(#${targetId} input[type=\"checkbox\"])[dayIndex]; if (targetBox) { targetBox.checked = true; // 打勾 save(targetId); // 立即写回 localStorage }"
   },
   {
     "objectID": "index.html",
@@ -334,5 +376,12 @@
     "title": "Category Theory",
     "section": "",
     "text": "Title\nCategories\nModified\nAuthor\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "learning/japanese/index.html#音ごじゅうおん默写2回日",
+    "href": "learning/japanese/index.html#音ごじゅうおん默写2回日",
+    "title": "Japanese",
+    "section": "",
+    "text": "2025-11-17\n\n2025-11-18\n\n2025-11-19\n\n2025-11-20\n\n2025-11-21\n\n2025-11-22\n\n2025-11-23\n\n2025-11-24\n\n2025-11-25\n\n2025-11-26\n\n2025-11-27\n\n2025-11-28\n\n2025-11-29\n\n2025-11-30\n\n2025-12-01\n\n2025-12-02\n\n2025-12-03\n\n2025-12-04\n\n2025-12-05\n\n2025-12-06\n\n2025-12-07"
   }
 ]

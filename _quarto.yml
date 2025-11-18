@@ -75,9 +75,13 @@ website:
       - text: Conferences
         icon: "bi-calendar-event"
         href: conferences/index.html
-      - text: Learning
+      - text: Learning&nbsp;<small>▼</small>
         icon: "bi-lamp"
-        href: learning/index.html
+        menu:
+            - text: Overview
+              href: learning/index.html
+            - text: Japanese
+              href: learning/japanese/index.html
   page-footer:
     left: |
       <img src="/assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">
