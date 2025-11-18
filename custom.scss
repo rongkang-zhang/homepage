@@ -794,3 +794,8 @@ a {
 [data-bs-theme="dark"] .timeline-item::before {
   background: var(--bs-light);
 }
+
+/* 时间记录表格样式修改，加粗日期颜色 = 表头渐变色起点，暗色下自动变深 */
+.table-study tbody tr:nth-child(odd) strong {
+  color: var(--grad-start);
+}

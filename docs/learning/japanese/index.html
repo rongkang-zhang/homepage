@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-225c17784b148023a4decdc16fa92fcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-34bae36c7ce9d72c2159c4b3ef515e5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-225c17784b148023a4decdc16fa92fcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4e2d71fbb91e9d4d0026d38b48d99a3b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-46d52e1534ec99468bb36c6841e9965d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-4e2d71fbb91e9d4d0026d38b48d99a3b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,11 +107,11 @@ cookieconsent.run({
 
 
 <meta property="og:title" content="Japanese – Rong-KangZhang">
-<meta property="og:description" content="Learning Plan on Japanese">
+<meta property="og:description" content="Time Tracker and Check-off for Japanese">
 <meta property="og:image" content="https://rongkang-zhang.github.io/homepage/learning/japanese/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
 <meta name="twitter:title" content="Japanese – Rong-KangZhang">
-<meta name="twitter:description" content="Learning Plan on Japanese">
+<meta name="twitter:description" content="Time Tracker and Check-off for Japanese">
 <meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/learning/japanese/assets/pictures/profile-picture.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -423,13 +423,13 @@ cookieconsent.run({
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#study-time-log" id="toc-study-time-log" class="nav-link active" data-scroll-target="#study-time-log"><span class="header-section-number">1</span> Study Time Log</a></li>
-  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist"><span class="header-section-number">2</span> Checklist</a>
-  <ul class="collapse">
+  <li><a href="#time-tracker" id="toc-time-tracker" class="nav-link active" data-scroll-target="#time-tracker"><span class="header-section-number">1</span> Time Tracker</a></li>
+  <li><a href="#check-off" id="toc-check-off" class="nav-link" data-scroll-target="#check-off"><span class="header-section-number">2</span> Check-off</a>
+  <ul>
   <li><a href="#to-2025-12-07" id="toc-to-2025-12-07" class="nav-link" data-scroll-target="#to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</a>
   <ul class="collapse">
   <li><a href="#音ごじゅうおん默写2回日" id="toc-音ごじゅうおん默写2回日" class="nav-link" data-scroll-target="#音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</a></li>
@@ -445,7 +445,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Japanese</h1>
-<p class="subtitle lead">Learning Plan on Japanese</p>
+<p class="subtitle lead">Time Tracker and Check-off for Japanese</p>
 </div>
 
 
@@ -474,78 +474,517 @@ cookieconsent.run({
 </header>
 
 
-<section id="study-time-log" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Study Time Log</h1>
-<table class="caption-top table">
+<section id="time-tracker" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Time Tracker</h1>
+<!-- 科技感蓝系 + 淡竖线 -->
+<style>
+:root{
+  --grad-start:#2575fc;
+  --grad-end:#6a11cb;
+  --stripe:rgba(37,117,252,.05);
+  --hover:rgba(37,117,252,.15);
+  --text:#333;
+  --bg:#fff;
+  --line:rgba(37,117,252,.15);   /* 淡蓝竖线 */
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --grad-start:#1e3c72;
+    --grad-end:#2a5298;
+    --stripe:rgba(30,60,114,.08);
+    --hover:rgba(42,82,152,.2);
+    --text:#e6e9f0;
+    --bg:#121826;
+    --line:rgba(106,170,251,.2);
+  }
+}
+.table-study{
+  width:100%;
+  border-collapse:collapse;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:.95rem;
+  text-align:center;
+  margin:1em 0;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 16px rgba(0,0,0,.1);
+  background:var(--bg);
+  color:var(--text);
+}
+.table-study thead{
+  background:linear-gradient(135deg,var(--grad-start) 0%,var(--grad-end) 100%);
+  color:#fff;
+  font-weight:600;
+  letter-spacing:.4px;
+  text-shadow:0 1px 1px rgba(0,0,0,.3);
+}
+.table-study th,
+.table-study td{
+  padding:10px 12px;
+  border-right:1px solid var(--line);
+}
+.table-study th:last-child,
+.table-study td:last-child{
+  border-right:none;
+}
+.table-study tbody tr:nth-child(even){
+  background:var(--stripe);
+}
+.table-study tbody tr:hover{
+  background:var(--hover);
+  transition:background .3s ease;
+}
+</style>
+<table class="table-study">
 <thead>
-<tr class="header">
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-<th>Sun</th>
+<tr>
+<th>
+Mon
+</th>
+<th>
+Tue
+</th>
+<th>
+Wed
+</th>
+<th>
+Thu
+</th>
+<th>
+Fri
+</th>
+<th>
+Sat
+</th>
+<th>
+Sun
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Nov 18</td>
-<td>Nov 19</td>
-<td>Nov 20</td>
-<td>Nov 21</td>
-<td>Nov 22</td>
-<td>Nov 23</td>
-<td>Nov 24</td>
+<!-- 2025-W47 11-18…11-24 -->
+<tr>
+<td>
+</td>
+<td>
+<strong>2025-11-18</strong>
+</td>
+<td>
+<strong>2025-11-19</strong>
+</td>
+<td>
+<strong>2025-11-20</strong>
+</td>
+<td>
+<strong>2025-11-21</strong>
+</td>
+<td>
+<strong>2025-11-22</strong>
+</td>
+<td>
+<strong>2025-11-23</strong>
+</td>
 </tr>
-<tr class="even">
-<td>1h</td>
-<td>2h</td>
-<td>3h</td>
-<td>4h</td>
-<td>5h</td>
-<td>6h</td>
-<td>7h</td>
+<tr>
+<td>
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W48 11-25…12-01 -->
+<tr>
+<td>
+<strong>2025-11-25</strong>
+</td>
+<td>
+<strong>2025-11-26</strong>
+</td>
+<td>
+<strong>2025-11-27</strong>
+</td>
+<td>
+<strong>2025-11-28</strong>
+</td>
+<td>
+<strong>2025-11-29</strong>
+</td>
+<td>
+<strong>2025-11-30</strong>
+</td>
+<td>
+<strong>2025-12-01</strong>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W49 12-02…12-08 -->
+<tr>
+<td>
+<strong>2025-12-02</strong>
+</td>
+<td>
+<strong>2025-12-03</strong>
+</td>
+<td>
+<strong>2025-12-04</strong>
+</td>
+<td>
+<strong>2025-12-05</strong>
+</td>
+<td>
+<strong>2025-12-06</strong>
+</td>
+<td>
+<strong>2025-12-07</strong>
+</td>
+<td>
+<strong>2025-12-08</strong>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W50 12-09…12-15 -->
+<tr>
+<td>
+<strong>2025-12-09</strong>
+</td>
+<td>
+<strong>2025-12-10</strong>
+</td>
+<td>
+<strong>2025-12-11</strong>
+</td>
+<td>
+<strong>2025-12-12</strong>
+</td>
+<td>
+<strong>2025-12-13</strong>
+</td>
+<td>
+<strong>2025-12-14</strong>
+</td>
+<td>
+<strong>2025-12-15</strong>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W51 12-16…12-22 -->
+<tr>
+<td>
+<strong>2025-12-16</strong>
+</td>
+<td>
+<strong>2025-12-17</strong>
+</td>
+<td>
+<strong>2025-12-18</strong>
+</td>
+<td>
+<strong>2025-12-19</strong>
+</td>
+<td>
+<strong>2025-12-20</strong>
+</td>
+<td>
+<strong>2025-12-21</strong>
+</td>
+<td>
+<strong>2025-12-22</strong>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W52 12-23…12-29 -->
+<tr>
+<td>
+<strong>2025-12-23</strong>
+</td>
+<td>
+<strong>2025-12-24</strong>
+</td>
+<td>
+<strong>2025-12-25</strong>
+</td>
+<td>
+<strong>2025-12-26</strong>
+</td>
+<td>
+<strong>2025-12-27</strong>
+</td>
+<td>
+<strong>2025-12-28</strong>
+</td>
+<td>
+<strong>2025-12-29</strong>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+</tr>
+<!-- 2025-W53 12-30…12-31（仅两天） -->
+<tr>
+<td>
+<strong>2025-12-30</strong>
+</td>
+<td>
+<strong>2025-12-31</strong>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+2h
+</td>
+<td>
+2h
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="checklist" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Checklist</h1>
+<section id="check-off" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Check-off</h1>
 <section id="to-2025-12-07" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</h2>
 <section id="音ごじゅうおん默写2回日" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-</colgroup>
+<!-- 纯打卡勾选 2025-11-18 → 2025-12-07  日期格式 2025-11-18 -->
+<table class="table-study">
 <thead>
-<tr class="header">
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-<th>Sun</th>
+<tr>
+<th>
+Mon
+</th>
+<th>
+Tue
+</th>
+<th>
+Wed
+</th>
+<th>
+Thu
+</th>
+<th>
+Fri
+</th>
+<th>
+Sat
+</th>
+<th>
+Sun
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><input type="checkbox" checked=""> Nov 18</td>
-<td><input type="checkbox"> Nov 19</td>
-<td><input type="checkbox" checked=""> Nov 20</td>
-<td><input type="checkbox"> Nov 21</td>
-<td><input type="checkbox" checked=""> Nov 22</td>
-<td><input type="checkbox"> Nov 23</td>
-<td><input type="checkbox" checked=""> Nov 24</td>
+<!-- 2025-W47 11-18…11-24 -->
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-11-18
+</td>
+<td>
+<input type="checkbox"> 2025-11-19
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-11-20
+</td>
+<td>
+<input type="checkbox"> 2025-11-21
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-11-22
+</td>
+<td>
+<input type="checkbox"> 2025-11-23
+</td>
+</tr>
+<!-- 2025-W48 11-25…12-01 -->
+<tr>
+<td>
+<input type="checkbox" checked=""> 2025-11-25
+</td>
+<td>
+<input type="checkbox"> 2025-11-26
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-11-27
+</td>
+<td>
+<input type="checkbox"> 2025-11-28
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-11-29
+</td>
+<td>
+<input type="checkbox"> 2025-11-30
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-12-01
+</td>
+</tr>
+<!-- 2025-W49 12-02…12-07 -->
+<tr>
+<td>
+<input type="checkbox" checked=""> 2025-12-02
+</td>
+<td>
+<input type="checkbox"> 2025-12-03
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-12-04
+</td>
+<td>
+<input type="checkbox"> 2025-12-05
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-12-06
+</td>
+<td>
+</td>
+<td>
+<input type="checkbox" checked=""> 2025-12-07
+</td>
 </tr>
 </tbody>
 </table>
