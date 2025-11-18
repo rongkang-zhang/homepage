@@ -13997,4 +13997,15 @@ $callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
   }
 }
 
+
+/* 为可点击行添加悬停效果，比如在listing中 */
+.listing-table .clickable-row {
+  cursor: pointer; /* 鼠标指针变为手型 */
+  transition: background-color 0.2s ease; /* 平滑过渡效果 */
+}
+
+.listing-table .clickable-row:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* 轻微的蓝色背景高亮 */
+}
+
 // quarto-scss-analysis-annotation { "origin": null }

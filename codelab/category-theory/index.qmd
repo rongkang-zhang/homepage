@@ -1,6 +1,8 @@
 ---
 title: "Category Theory"
 subtitle: "MathPhysCS CodeLab on Category Theory"
+author: "Rong-Kang Zhang"
+overall-category: "Mathematical Logic"  # 新增列
 format:
   closeread-html:
     toc: true

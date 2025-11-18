@@ -81,14 +81,7 @@
     "href": "codelab/index.html",
     "title": "MathPhysCS CodeLab",
     "section": "",
-    "text": "Note\n\n\n\nTip: You can pin important notes to the top by setting a weight (e.g., weight: 1) in their YAML header.\n\n\n\nA live table of runnable experiments (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.\nClick any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.\n\n\n\n\n\n\n\nNoteNavigate & Run\n\n\n\nClick any row to open the live notebook.\n\nPDFs are auto-built on Overleaf and synced back to GitHub for full reproducibility."
-  },
-  {
-    "objectID": "codelab/index.html#list-of-codelab-notebooks",
-    "href": "codelab/index.html#list-of-codelab-notebooks",
-    "title": "MathPhysCS CodeLab",
-    "section": "",
-    "text": "Note\n\n\n\nTip: You can pin important notes to the top by setting a weight (e.g., weight: 1) in their YAML header.\n\n\n\nA live table of runnable experiments (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.\nClick any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.\n\n\n\n\n\n\n\nNoteNavigate & Run\n\n\n\nClick any row to open the live notebook.\n\nPDFs are auto-built on Overleaf and synced back to GitHub for full reproducibility."
+    "text": "NoteNavigate & Run\n\n\n\n\nOpen Notebooks: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).\n\nOnline Execution: Launch the entire CodeLab environment via Binder (no local setup required):\n\nNote: Binder may take 1-2 minutes to load the environment.\n\nOffline Access: PDFs of all notebooks are auto-built on Overleaf and synced to GitHub after every update—ensure full reproducibility and offline reading.\n\nTable Columns:\n- Notebook Title: Name of the experiment (links to live notebook).\n- Last Updated: Timestamp of the latest revision (prioritize recent content).\n- Author: Contributor(s) to the notebook (for collaboration tracking).\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\noverall-category\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\nMathematical Logic\n\n\n2025-11-19\n\n\nRong-Kang Zhang\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "codelab/category-theory/index.html",

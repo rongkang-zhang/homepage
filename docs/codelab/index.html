@@ -49,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f2c165cd39f8a2f0d2775b850bd88dc3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-803d1d2a8b7c5cfa22097cf8df150d16.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f2c165cd39f8a2f0d2775b850bd88dc3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-55bcaa8a6b855d86c56b69a200648f2e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e03742a98412b5064c7231bc286a0233.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-55bcaa8a6b855d86c56b69a200648f2e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,9 +89,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-file-modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-overall-category','listing-file-modified','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-overall-category","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -524,25 +524,6 @@ window.Quarto = {
 </header>
 
 
-<section id="list-of-codelab-notebooks" class="level2">
-<h2 class="anchored" data-anchor-id="list-of-codelab-notebooks">List of CodeLab Notebooks</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>Tip: You can pin important notes to the top by setting a <code>weight</code> (e.g., <code>weight: 1</code>) in their YAML header.</em></p>
-</div>
-</div>
-<blockquote class="blockquote">
-<p>A live table of <strong>runnable experiments</strong> (R / Python / Julia / Haskell) that accompany my learning notes in mathematics &amp; physics.<br>
-Click any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.</p>
-</blockquote>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -553,27 +534,49 @@ Click any entry to open the notebook; PDFs are auto-built on Overleaf and synced
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Click any row to open the live notebook.<br>
+<ul>
+<li><strong>Open Notebooks</strong>: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).<br>
+</li>
+<li><strong>Online Execution</strong>: Launch the entire CodeLab environment via Binder (no local setup required):<br>
 <a href="https://mybinder.org/v2/gh/rongkang-zhang/homepage/HEAD?urlpath=lab"><img src="https://mybinder.org/badge_logo.svg" class="img-fluid" alt="Binder"></a><br>
-PDFs are auto-built on <a href="https://www.overleaf.com/read/your-project">Overleaf</a> and synced back to GitHub for full reproducibility.</p>
+<em>Note: Binder may take 1-2 minutes to load the environment.</em><br>
+</li>
+<li><strong>Offline Access</strong>: PDFs of all notebooks are auto-built on <a href="https://www.overleaf.com/read/your-project">Overleaf</a> and synced to GitHub after every update—ensure full reproducibility and offline reading.</li>
+</ul>
+<p><strong>Table Columns</strong>:<br>
+- <code>Notebook Title</code>: Name of the experiment (links to live notebook).<br>
+- <code>Last Updated</code>: Timestamp of the latest revision (prioritize recent content).<br>
+- <code>Author</code>: Contributor(s) to the notebook (for collaboration tracking).</p>
 </div>
-</div>
-<div id="lab-table">
-
 </div>
 <script>
-/* 让表格行可点击 = 直达 notebook */
+// 为表格行添加点击事件，使其可跳转，并添加悬停效果
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.listing-table tbody tr').forEach(row => {
-    const a = row.querySelector('a');
-    if (a) row.addEventListener('click', () => window.open(a.href, '_blank'));
+  // 更精确地选择表格，避免页面上其他表格被误影响
+  const table = document.querySelector('#lab-table + .listing-table');
+  if (!table) return; // 如果表格不存在，则退出
+
+  const rows = table.querySelectorAll('tbody tr');
+  rows.forEach(row => {
+    // 明确查找标题列中的链接，这通常是第一个 <a> 或者在特定列中
+    const titleLink = row.querySelector('td:first-child a'); 
+    if (titleLink) {
+      // 添加点击事件
+      row.addEventListener('click', (event) => {
+        // 防止点击链接本身时触发两次跳转
+        if (event.target.tagName !== 'A') {
+          window.open(titleLink.href, '_blank');
+        }
+      });
+      // 添加 CSS 类以提供视觉反馈（需要在 SCSS 中定义）
+      row.classList.add('clickable-row');
+    }
   });
 });
 </script>
 
 
 
-</section>
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
@@ -604,6 +607,10 @@ document.addEventListener('DOMContentLoaded', () => {
 </th>
 
 <th>
+overall-category
+</th>
+
+<th>
 Modified
 </th>
 
@@ -615,15 +622,18 @@ Modified
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1763004356000" data-listing-file-modified-sort="1763004356814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="980" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-date-sort="1763493780000" data-listing-file-modified-sort="1763493780827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="980" data-listing-title-sort="Category Theory" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../codelab/category-theory/index.html" class="title listing-title">Category Theory</a>
 </td>
 <td>
-<span class="listing-file-modified">2025-11-13</span>
+<span class="listing-overall-category">Mathematical Logic</span>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-file-modified">2025-11-19</span>
+</td>
+<td>
+<span class="listing-author">Rong-Kang Zhang</span>
 </td>
 
 </tr>
