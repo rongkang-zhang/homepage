@@ -15,113 +15,20 @@ format:
     toc: true
 ---
 
-# 2025-11-18 to 2025-12-07
+# Study Time Log
 
-## 50音（ごじゅうおん）默写（2回/日）
-::: {.drill #kana-drill}
-<div class="cal-grid"></div>
-:::
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|-----|-----|-----|-----|-----|-----|-----|
+| Nov 18 | Nov 19 | Nov 20 | Nov 21 | Nov 22 | Nov 23 | Nov 24 |
+| 1h | 2h | 3h | 4h | 5h | 6h | 7h |
 
-## N3 高频词汇（Anki 闪卡 → 80 新词/日）
-::: {.drill #vocab-drill}
-<div class="cal-grid"></div>
-:::
+# Checklist
 
-## N3 语法条目（每日 8 条 + 造句）
-::: {.drill #grammar-drill}
-<div class="cal-grid"></div>
-:::
+## 2025-11-18 to 2025-12-07
 
-## 真题限时刷（2018–2024 / 共 7 套）
-::: {.drill #exam-drill}
-<div class="cal-grid"></div>
-:::
+### 50音（ごじゅうおん）默写（2回/日）
 
-## 闪卡复习状态（Anki → 0 积压）
-::: {.drill #anki-drill}
-<div class="cal-grid"></div>
-:::
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|-----|-----|-----|-----|-----|-----|-----|
+| <input type="checkbox" checked> Nov 18 | <input type="checkbox"> Nov 19 | <input type="checkbox" checked> Nov 20 | <input type="checkbox"> Nov 21 | <input type="checkbox" checked> Nov 22 | <input type="checkbox"> Nov 23 | <input type="checkbox" checked> Nov 24 |
 
-<script>
-/* ---------- 通用日历 & 本地存储 ---------- */
-const start = new Date('2025-11-18');
-const days  = 20;
-const ids   = ['kana-drill','vocab-drill','grammar-drill','exam-drill','anki-drill'];
-
-function makeCal(parentId){
-  const grid = document.querySelector(`#${parentId} .cal-grid`);
-  for(let i=0;i<days;i++){
-    const d=new Date(start); d.setDate(start.getDate()+i);
-    const label=document.createElement('label');
-    label.innerHTML=`<input type="checkbox"><span>${d.getMonth()+1}-${d.getDate()}</span>`;
-    grid.appendChild(label);
-  }
-}
-function save(id){
-  const boxes=[...document.querySelectorAll(`#${id} input[type="checkbox"]`)].map(b=>b.checked);
-  localStorage.setItem(id,JSON.stringify(boxes));
-}
-function load(id){
-  const boxes=document.querySelectorAll(`#${id} input[type="checkbox"]`);
-  const saved=JSON.parse(localStorage.getItem(id)||'[]');
-  saved.forEach((v,i)=>{if(boxes[i])boxes[i].checked=v;});
-}
-
-/* ---------- 一键设置多天已完成 ---------- */
-function manualCheckList(moduleId, dayIndexArray, checked = true) {
-  const allBoxes = document.querySelectorAll(`#${moduleId} input[type="checkbox"]`);
-  dayIndexArray.forEach(idx => {
-    if (allBoxes[idx]) allBoxes[idx].checked = checked;
-  });
-  save(moduleId);   // 立即写回 localStorage
-}
-
-/* ---------- 初始化 ---------- */
-ids.forEach(id=>{
-  makeCal(id);
-  load(id);
-  document.querySelector(`#${id}`).addEventListener('change',()=>save(id));
-});
-
-/* ===== 示例：把 #kana-drill 的第 1、3、5 天设为已打卡 ===== */
-manualCheckList('kana-drill', [0,2,4], true);   // 索引从 0 开始
-// 如需取消，把 true 改成 false 即可
-</script>
-
-<style>
-.cal-grid{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:.5rem;
-  font-size:.9rem;
-  font-family:system-ui,sans-serif;
-}
-.cal-grid label{
-  display:flex;
-  align-items:center;
-  gap:.4rem;
-  padding:.3rem .5rem;
-  border-radius:6px;
-  background:#fff;
-  border:1px solid #cdd6e4;
-  cursor:pointer;
-  transition:background .2s, border-color .2s;
-}
-.cal-grid label:hover{background:#f3f5f7;}
-
-/* 如需 ✅ 样式，取消下面注释即可 */
-/*
-.cal-grid input[type="checkbox"]{display:none;}
-.cal-grid input[type="checkbox"]+span::before{
-  content:"";
-  width:1.1em;height:1.1em;
-  border:1px solid #cdd6e4;
-  border-radius:3px;
-  margin-right:.4rem;
-}
-.cal-grid input[type="checkbox"]:checked+span::before{
-  background:#274c77 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M11.9 28.9l-11.9-11.9 5.7-5.7 6.2 6.2 14.4-14.4L32 8.8z"/></svg>') center/70% no-repeat;
-  border-color:#274c77;
-}
-*/
-</style>
