@@ -81,7 +81,14 @@
     "href": "codelab/index.html",
     "title": "MathPhysCS CodeLab",
     "section": "",
-    "text": "A live table of runnable experiments (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.\nClick any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.\n\n\n\n\n\n\n\nNoteNavigate & Run\n\n\n\nClick any row to open the live notebook.\n\nPDFs are auto-built on Overleaf and synced back to GitHub for full reproducibility.\n\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\ncore-references\n\n\n\nCategories\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\n \n\n\n \n\n\n2025-11-13\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\nTip: You can pin important notes to the top by setting a weight (e.g., weight: 1) in their YAML header.\n\n\n\nA live table of runnable experiments (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.\nClick any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.\n\n\n\n\n\n\n\nNoteNavigate & Run\n\n\n\nClick any row to open the live notebook.\n\nPDFs are auto-built on Overleaf and synced back to GitHub for full reproducibility."
+  },
+  {
+    "objectID": "codelab/index.html#list-of-codelab-notebooks",
+    "href": "codelab/index.html#list-of-codelab-notebooks",
+    "title": "MathPhysCS CodeLab",
+    "section": "",
+    "text": "Note\n\n\n\nTip: You can pin important notes to the top by setting a weight (e.g., weight: 1) in their YAML header.\n\n\n\nA live table of runnable experiments (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.\nClick any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.\n\n\n\n\n\n\n\nNoteNavigate & Run\n\n\n\nClick any row to open the live notebook.\n\nPDFs are auto-built on Overleaf and synced back to GitHub for full reproducibility."
   },
   {
     "objectID": "codelab/category-theory/index.html",

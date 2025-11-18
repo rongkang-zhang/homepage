@@ -1,42 +1,59 @@
 ---
-title: "MathPhysCS CodeLab"
-author: "Rong-Kang Zhang"
-date: last-modified
-abstract: >
-  A running index of my <em>CodeLab</em> experiments created while
-  learning core and frontier topics in mathematics and physics.
-  Each entry links to a self-contained, reproducible notebook
-  (R / Python / Julia) that mixes exposition with runnable code:
-  theory $\rightarrow$ derivation $\rightarrow$ plots.
-  All notebooks are rendered live with Quarto, versioned on GitHub,
+# ------------------------------
+# 文档元数据 (Metadata)
+# ------------------------------
+title: "MathPhysCS CodeLab"          # 1. 页面主标题
+author: "Rong-Kang Zhang"            # 2. 作者姓名
+date: last-modified                  # 3. 自动使用文件最后修改时间作为页面日期
+abstract: >                          # 4. 摘要，描述页面用途和内容
+  A dynamic index of my <em>CodeLab</em> experiments created while delving into core and frontier topics in mathematics of computation and mathematics of machine learning.
+  Each entry links to a self-contained, reproducible notebook, where I primarily use Haskell alongside other practical category theory-focused programming languages (e.g., Idris, Agda, OCaml).
+  These notebooks integrate theoretical exposition with runnable code, demonstrating a complete workflow from theory to practice: theory $\rightarrow$ derivation $\rightarrow$ code implementation & visualization.
+  All notebooks are live-rendered with Quarto, version-controlled on GitHub,
   and additionally compiled to PDF for offline reading.
-page-layout: full
-toc: false
+
+# ------------------------------
+# 页面布局与样式 (Layout & Style)
+# ------------------------------
+page-layout: full                    # 5. 使用全屏宽度布局
+toc: false                           # 6. 不生成目录
+
+# ------------------------------
+# 核心功能：动态内容列表 (Listing)
+# ------------------------------
 listing:
-  contents: "*/index.qmd"
-  type: table
-  date-format: "YYYY-MM-DD"
-  categories: false
+  contents: "*/index.qmd"            # 7. 数据源：所有子目录下的 index.qmd 文件
+  type: table                        # 8. 列表类型：表格
+  date-format: "YYYY-MM-DD"          # 9. 日期显示格式：年-月-日
+  
+  # [兼容性调整] 使用 'fields' 来定义表格列
+  # 它不支持重命名，但兼容性最好
   fields:
-    - "title"
-    - "core-references"
-    - "categories"
-    - "file-modified"
-    - "author"
+    - title
+    - file-modified
+    - author
+    
+  # [修正点] 'filter-ui' 使用字段名列表（字符串数组）
   filter-ui:
-    - "title"
-    - "core-references"
-    - "categories"
-    - "file-modified"
-    - "author"
+    - title
+    - author
+    
+  # 定义默认的排序规则
   sort:
     - "weight asc"
     - "title asc"
     - "file-modified desc"
-  sort-ui: true
-  table-striped: true
-  page-size: 20
+    
+  sort-ui: true                      # 允许用户点击列标题进行排序
+  table-striped: true                # 表格添加斑马纹样式，提升可读性
+  page-size: 30                     # 表格分页，每页显示30条记录
 ---
+
+## List of CodeLab Notebooks
+
+::: {.callout-note}
+*Tip: You can pin important notes to the top by setting a `weight` (e.g., `weight: 1`) in their YAML header.*
+:::
 
 > A live table of **runnable experiments** (R / Python / Julia / Haskell) that accompany my learning notes in mathematics & physics.  
 > Click any entry to open the notebook; PDFs are auto-built on Overleaf and synced to GitHub for full reproducibility.

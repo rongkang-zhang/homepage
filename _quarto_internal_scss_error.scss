@@ -13940,4 +13940,61 @@ a {
   color: white;
 }
 
+
+/* {.callout-note}方框的背景颜色设置 */
+
+// 定义渐变颜色变量和文字颜色变量
+$callout-note-bg-color-1: #1a2a6c;
+$callout-note-bg-color-2: #b21f1f;
+$callout-note-bg-color-3: #1a2a6c;
+$callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
+
+// 定制 .callout-note 的整体样式
+.callout-note {
+  // 使用 SCSS 的变量和渐变函数设置背景
+  background-image: linear-gradient(45deg, $callout-note-bg-color-1, $callout-note-bg-color-2, $callout-note-bg-color-3) !important;
+  
+  // 去掉默认的左侧边框
+  border-left: none !important;
+  
+  // 确保提示框内的基础文字颜色
+  color: white !important;
+}
+
+// --- 关键修复：针对标题内的 "NOTE" 文字 ---
+// 使用更具体的选择器来确保优先级
+.callout-note .callout-title {
+  // 强制取消背景裁剪文字的效果
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  
+  // 强制设置文字颜色（备用）
+  color: $callout-note-text-color !important;
+  
+  // --- 最关键的一步 ---
+  // 覆盖 WebKit 浏览器的文字填充色，这是解决问题的核心
+  -webkit-text-fill-color: $callout-note-text-color !important;
+}
+
+// 有时 "NOTE" 文字会被一个 <strong> 标签包裹，我们也直接针对它设置
+.callout-note .callout-title strong {
+  color: $callout-note-text-color !important;
+  -webkit-text-fill-color: $callout-note-text-color !important;
+}
+
+// 确保提示框内其他元素的颜色正常
+.callout-note .callout-content {
+  color: white !important;
+}
+
+// 确保链接在渐变背景上也有良好的对比度
+.callout-note a {
+  color: #a8dfff !important; // 一个稍微亮一点的蓝色
+  text-decoration: underline;
+  
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
 // quarto-scss-analysis-annotation { "origin": null }
