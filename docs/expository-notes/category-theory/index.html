@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rong-Kang Zhang">
-<meta name="dcterms.date" content="2025-11-13">
+<meta name="dcterms.date" content="2025-11-19">
 <meta name="keywords" content="Natural Transformation, Functor, Adjoint Functor, Limits">
 
 <title>Category Theory – Rong-KangZhang</title>
@@ -103,9 +103,9 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-49a824ff064150fa59632921ab93e189.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-946410d4cdfb407244b6eeefd8cdeb00.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-60f722b659ed01dab9a8f83ab2e06c34.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-946410d4cdfb407244b6eeefd8cdeb00.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-cc9361cf6955dc95da1ed733e4386663.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-18dc047ad3255486ad6d365258315b81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-cc9361cf6955dc95da1ed733e4386663.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
@@ -555,7 +555,15 @@ window.Quarto = {
   <li><a href="#dual-categories-and-isomorphisms" id="toc-dual-categories-and-isomorphisms" class="nav-link" data-scroll-target="#dual-categories-and-isomorphisms"><span class="header-section-number">2.2</span> 2. Dual Categories and Isomorphisms</a></li>
   <li><a href="#natural-transformations-morphisms-of-functors" id="toc-natural-transformations-morphisms-of-functors" class="nav-link" data-scroll-target="#natural-transformations-morphisms-of-functors"><span class="header-section-number">2.3</span> 3. Natural Transformations (Morphisms of Functors)</a></li>
   <li><a href="#adjoint-functors-and-universal-properties" id="toc-adjoint-functors-and-universal-properties" class="nav-link" data-scroll-target="#adjoint-functors-and-universal-properties"><span class="header-section-number">2.4</span> 4. Adjoint Functors and Universal Properties</a></li>
-  <li><a href="#computer-science-applications" id="toc-computer-science-applications" class="nav-link" data-scroll-target="#computer-science-applications"><span class="header-section-number">2.5</span> 5. Computer Science Applications</a></li>
+  <li><a href="#computer-science-applications" id="toc-computer-science-applications" class="nav-link" data-scroll-target="#computer-science-applications"><span class="header-section-number">2.5</span> 5. Computer Science Applications</a>
+  <ul>
+  <li><a href="#definition-n-category" id="toc-definition-n-category" class="nav-link" data-scroll-target="#definition-n-category"><span class="header-section-number">2.5.1</span> Definition (n-category)</a></li>
+  <li><a href="#theorem-equivalent-characterizations-of--categories" id="toc-theorem-equivalent-characterizations-of--categories" class="nav-link" data-scroll-target="#theorem-equivalent-characterizations-of--categories"><span class="header-section-number">2.5.2</span> Theorem (Equivalent characterizations of ∞-categories)</a></li>
+  <li><a href="#lemma-n-category-structure-of-functor-categories" id="toc-lemma-n-category-structure-of-functor-categories" class="nav-link" data-scroll-target="#lemma-n-category-structure-of-functor-categories"><span class="header-section-number">2.5.3</span> Lemma (n-category structure of functor categories)</a></li>
+  <li><a href="#proposition-n-groupoids-and-homotopy-n-types" id="toc-proposition-n-groupoids-and-homotopy-n-types" class="nav-link" data-scroll-target="#proposition-n-groupoids-and-homotopy-n-types"><span class="header-section-number">2.5.4</span> Proposition (n-groupoids and homotopy n-types)</a></li>
+  <li><a href="#corollary-1-categories-as-special-cases-of--categories" id="toc-corollary-1-categories-as-special-cases-of--categories" class="nav-link" data-scroll-target="#corollary-1-categories-as-special-cases-of--categories"><span class="header-section-number">2.5.5</span> Corollary (1-categories as special cases of ∞-categories)</a></li>
+  <li><a href="#example-geometric-instance-of-an--groupoid" id="toc-example-geometric-instance-of-an--groupoid" class="nav-link" data-scroll-target="#example-geometric-instance-of-an--groupoid"><span class="header-section-number">2.5.6</span> Example (Geometric instance of an ∞-groupoid)</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div></nav>
@@ -592,7 +600,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 13, 2025</p>
+      <p class="date">November 19, 2025</p>
     </div>
   </div>
   
@@ -972,6 +980,69 @@ Consider <span class="math inline">\(P=p_1\cdots p_n+1\)</span>.<br>
 <p>The list data type (over a set <span class="math inline">\(X\)</span>) is an algebra for the endofunctor <span class="math inline">\(F(Y) = 1 + X \times Y\)</span> (where <span class="math inline">\(1\)</span> is the terminal object). The algebra structure maps <span class="math inline">\(\text{inl}(\star)\)</span> to the empty list and <span class="math inline">\(\text{inr}(x, y)\)</span> to the list <span class="math inline">\(x :: y\)</span> (cons operation).</p>
 </div>
 <p>See <strong>Ex. <span class="citation" data-cites="ex-list-algebra">(<a href="#ref-ex-list-algebra" role="doc-biblioref"><strong>ex-list-algebra?</strong></a>)</span></strong>.</p>
+<section id="definition-n-category" class="level3 definition" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="definition-n-category"><span class="header-section-number">2.5.1</span> Definition (n-category)</h3>
+<p>An <strong>n-category</strong> is an algebraic structure that generalizes ordinary categories (1-categories). In an n-category: - There are <strong>objects</strong> (0-morphisms). - For any two objects (a, b), there is an ((n-1))-category ((a, b)) whose objects are called <strong>1-morphisms</strong> from (a) to (b). - This structure continues recursively up to <strong>k-morphisms</strong> for (0 k n). - For (k &lt; n), all k-morphisms commute <strong>strictly</strong>; while composition of the highest-dimensional n-morphisms only requires <strong>weak commutativity</strong>, typically characterized by <strong>coherence isomorphisms</strong>.</p>
+<p>When (n = ), we obtain an <strong>∞-category</strong>.</p>
+</section>
+<section id="theorem-equivalent-characterizations-of--categories" class="level3 theorem" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="theorem-equivalent-characterizations-of--categories"><span class="header-section-number">2.5.2</span> Theorem (Equivalent characterizations of ∞-categories)</h3>
+<p>An <strong>∞-category</strong> () can be equivalently characterized by one of the following structures:</p>
+<ol type="1">
+<li><strong>As a quasi-category</strong>: A simplicial set satisfying the <strong>inner Kan condition</strong>. This is the primary model adopted by B. Lurie in his book <em>Higher Topos Theory</em>.</li>
+<li><strong>As a complete Segal space</strong>: A simplicial object of spaces satisfying the Segal condition and completeness condition.</li>
+<li><strong>As a Segal category</strong>: A weakened simplicial category where Segal maps are equivalences.</li>
+</ol>
+<p>These models are Quillen equivalent, thus all describing the same notion of “∞-category”.</p>
+</section>
+<section id="lemma-n-category-structure-of-functor-categories" class="level3 lemma" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="lemma-n-category-structure-of-functor-categories"><span class="header-section-number">2.5.3</span> Lemma (n-category structure of functor categories)</h3>
+<p>Let () and () be n-categories. Then all n-functors from () to () and their n-natural transformations form a new n-category, denoted (^) or ((, )), called the <strong>functor n-category</strong> or <strong>exponential n-category</strong>.</p>
+<p>This lemma ensures that the “mapping space” between n-categories is itself an n-category, forming the basis for constructions like adjunctions in higher category theory.</p>
+</section>
+<section id="proposition-n-groupoids-and-homotopy-n-types" class="level3 proposition" data-number="2.5.4">
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="proposition-n-groupoids-and-homotopy-n-types"><span class="header-section-number">2.5.4</span> Proposition (n-groupoids and homotopy n-types)</h3>
+<p>An <strong>n-groupoid</strong> is an n-category where all morphisms (in all dimensions) are equivalences.</p>
+<p>In homotopy theory, there is a deep connection between n-groupoids and <strong>homotopy n-types</strong>. Specifically, the homotopy n-type of a topological space is completely determined by its fundamental n-groupoid. This is the content of the <strong>Homotopy Hypothesis</strong>, which asserts: “The category of n-groupoids is equivalent to the category of homotopy n-types.”</p>
+</section>
+<section id="corollary-1-categories-as-special-cases-of--categories" class="level3 corollary" data-number="2.5.5">
+<h3 data-number="2.5.5" class="anchored" data-anchor-id="corollary-1-categories-as-special-cases-of--categories"><span class="header-section-number">2.5.5</span> Corollary (1-categories as special cases of ∞-categories)</h3>
+<p>Directly from the theorem “Equivalent characterizations of ∞-categories”, we deduce:</p>
+<p>Any ordinary 1-category () can be regarded as a special case of an ∞-category.</p>
+<p><strong>Proof sketch</strong>: Treat objects of () as 0-morphisms, 1-morphisms as 1-morphisms, and in all dimensions above 1, include only identity morphisms (or equivalently, no non-trivial morphisms). The resulting quasi-category is a discrete ∞-category that fully encodes the information of the original 1-category.</p>
+</section>
+<div class="proof remark">
+<p><span class="proof-title"><em>Remark</em> (Remark (On the importance of “weak” structures)). </span>A core distinction between higher category theory and ordinary category theory lies in the treatment of “commutativity”. In 1-categories, we talk about <strong>commutative diagrams</strong>, requiring equalities like (f g = h) to hold strictly.</p>
+<p>However, in higher-dimensional settings, strict commutativity is too restrictive—there are almost no interesting examples. Thus, the essence of higher category theory is to replace it with <strong>weak commutativity</strong>. This means we no longer require (f g) and (h) to be strictly equal, but instead allow a <strong>higher-dimensional morphism</strong> (e.g., a 2-morphism (: f g h)), which itself is an equivalence.</p>
+<p>This “weakening” idea is the soul of the subject, allowing us to use categorical language to describe flexible mathematical objects like space homotopies and algebraic deformations.</p>
+</div>
+<section id="example-geometric-instance-of-an--groupoid" class="level3 example" data-number="2.5.6">
+<h3 data-number="2.5.6" class="anchored" data-anchor-id="example-geometric-instance-of-an--groupoid"><span class="header-section-number">2.5.6</span> Example (Geometric instance of an ∞-groupoid)</h3>
+<p>A crucial example of an ∞-groupoid comes from topology:</p>
+<p><strong>Let (X) be a topological space.</strong></p>
+<p>We can construct an ∞-groupoid (_(X)), called the <strong>fundamental ∞-groupoid</strong> of (X), as follows: - <strong>0-morphisms (objects)</strong>: Points (x X). - <strong>1-morphisms</strong>: Paths (: x y) connecting points (x) and (y) in (X). - <strong>2-morphisms</strong>: Homotopies (H: ) between paths. - <strong>3-morphisms</strong>: Homotopies between homotopies, and so on…</p>
+<p>In this ∞-groupoid, all morphisms are homotopy equivalences, perfectly capturing all homotopy information of the space (X). When (X) is a single point, (_(X)) is the trivial ∞-category containing only identity morphisms.</p>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em> (Proof (Proposition: Homotopy interpretation of n-groupoids)). </span>We sketch the proof of the proposition “n-groupoids and homotopy n-types”.</p>
+<p><strong>(Sketch)</strong> Let () be an n-groupoid. We need to construct a topological space (B) (called the <strong>classifying space</strong> or <strong>geometric realization</strong> of ()) such that its homotopy n-type corresponds to ().</p>
+<ol type="1">
+<li><strong>Construction</strong>:
+<ul>
+<li>Start with the objects of (), treating each object as a point.</li>
+<li>For each 1-morphism (f: a b), attach an interval ([0,1]) with endpoints connected to (a) and (b).</li>
+<li>For each 2-morphism (: f g), attach a square ([0,1] ), gluing its boundary according to the source and target of ().</li>
+<li>Continue recursively, attaching a k-dimensional cube for each k-morphism and gluing according to its source and target.</li>
+</ul></li>
+<li><strong>Verification</strong>:
+<ul>
+<li>The fundamental groupoid (_1(B)) of the space (B) constructed this way is the 1-truncation of () (i.e., ignoring all morphisms above dimension 1).</li>
+<li>Higher homotopy groups (_k(B, x)) are given by equivalence classes of k-morphisms in () based at (x).</li>
+<li>Since () is an n-groupoid, all homotopy groups above dimension (n) are trivial, so (B) is a homotopy n-type.</li>
+</ul></li>
+</ol>
+<p>Conversely, the fundamental n-groupoid of any homotopy n-type is an n-groupoid. This establishes the equivalence between the two. ()</p>
+</div>
 
 
 <!-- -->
@@ -1982,13 +2053,126 @@ Lane, S. M. (1998), <em>Categories for the working mathematician</em>, Graduate 
 <span id="cb3-526"><a href="#cb3-526" aria-hidden="true" tabindex="-1"></a>and $\text{inr}(x, y)$ to the list $x :: y$ (cons operation).</span>
 <span id="cb3-527"><a href="#cb3-527" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb3-528"><a href="#cb3-528" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-529"><a href="#cb3-529" aria-hidden="true" tabindex="-1"></a>See **Ex. @ex-list-algebra**.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb3-529"><a href="#cb3-529" aria-hidden="true" tabindex="-1"></a>See **Ex. @ex-list-algebra**.</span>
+<span id="cb3-530"><a href="#cb3-530" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-531"><a href="#cb3-531" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-532"><a href="#cb3-532" aria-hidden="true" tabindex="-1"></a>::: {.definition}</span>
+<span id="cb3-533"><a href="#cb3-533" aria-hidden="true" tabindex="-1"></a><span class="fu">### Definition (n-category)</span></span>
+<span id="cb3-534"><a href="#cb3-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-535"><a href="#cb3-535" aria-hidden="true" tabindex="-1"></a>An **n-category** is an algebraic structure that generalizes ordinary categories (1-categories). In an n-category:</span>
+<span id="cb3-536"><a href="#cb3-536" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are **objects** (0-morphisms).</span>
+<span id="cb3-537"><a href="#cb3-537" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For any two objects <span class="sc">\(</span>a, b<span class="sc">\)</span>, there is an <span class="sc">\(</span>(n-1)<span class="sc">\)</span>-category <span class="sc">\(</span>\hom(a, b)<span class="sc">\)</span> whose objects are called **1-morphisms** from <span class="sc">\(</span>a<span class="sc">\)</span> to <span class="sc">\(</span>b<span class="sc">\)</span>.</span>
+<span id="cb3-538"><a href="#cb3-538" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This structure continues recursively up to **k-morphisms** for <span class="sc">\(</span>0 \leq k \leq n<span class="sc">\)</span>.</span>
+<span id="cb3-539"><a href="#cb3-539" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For <span class="sc">\(</span>k &lt; n<span class="sc">\)</span>, all k-morphisms commute **strictly**; while composition of the highest-dimensional n-morphisms only requires **weak commutativity**, typically characterized by **coherence isomorphisms**.</span>
+<span id="cb3-540"><a href="#cb3-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-541"><a href="#cb3-541" aria-hidden="true" tabindex="-1"></a>When <span class="sc">\(</span>n = \infty<span class="sc">\)</span>, we obtain an **∞-category**.</span>
+<span id="cb3-542"><a href="#cb3-542" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-543"><a href="#cb3-543" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-544"><a href="#cb3-544" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-545"><a href="#cb3-545" aria-hidden="true" tabindex="-1"></a>::: {.theorem}</span>
+<span id="cb3-546"><a href="#cb3-546" aria-hidden="true" tabindex="-1"></a><span class="fu">### Theorem (Equivalent characterizations of ∞-categories)</span></span>
+<span id="cb3-547"><a href="#cb3-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-548"><a href="#cb3-548" aria-hidden="true" tabindex="-1"></a>An **∞-category** <span class="sc">\(</span>\mathcal{C}<span class="sc">\)</span> can be equivalently characterized by one of the following structures:</span>
+<span id="cb3-549"><a href="#cb3-549" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-550"><a href="#cb3-550" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**As a quasi-category**: A simplicial set satisfying the **inner Kan condition**. This is the primary model adopted by B. Lurie in his book *Higher Topos Theory*.</span>
+<span id="cb3-551"><a href="#cb3-551" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**As a complete Segal space**: A simplicial object of spaces satisfying the Segal condition and completeness condition.</span>
+<span id="cb3-552"><a href="#cb3-552" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**As a Segal category**: A weakened simplicial category where Segal maps are equivalences.</span>
+<span id="cb3-553"><a href="#cb3-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-554"><a href="#cb3-554" aria-hidden="true" tabindex="-1"></a>These models are Quillen equivalent, thus all describing the same notion of "∞-category".</span>
+<span id="cb3-555"><a href="#cb3-555" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-556"><a href="#cb3-556" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-557"><a href="#cb3-557" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-558"><a href="#cb3-558" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-559"><a href="#cb3-559" aria-hidden="true" tabindex="-1"></a>::: {.lemma}</span>
+<span id="cb3-560"><a href="#cb3-560" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lemma (n-category structure of functor categories)</span></span>
+<span id="cb3-561"><a href="#cb3-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-562"><a href="#cb3-562" aria-hidden="true" tabindex="-1"></a>Let <span class="sc">\(</span>\mathcal{C}<span class="sc">\)</span> and <span class="sc">\(</span>\mathcal{D}<span class="sc">\)</span> be n-categories. Then all n-functors from <span class="sc">\(</span>\mathcal{C}<span class="sc">\)</span> to <span class="sc">\(</span>\mathcal{D}<span class="sc">\)</span> and their n-natural transformations form a new n-category, denoted <span class="sc">\(</span>\mathcal{D}^\mathcal{C}<span class="sc">\)</span> or <span class="sc">\(</span>\text{Fun}(\mathcal{C}, \mathcal{D})<span class="sc">\)</span>, called the **functor n-category** or **exponential n-category**.</span>
+<span id="cb3-563"><a href="#cb3-563" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-564"><a href="#cb3-564" aria-hidden="true" tabindex="-1"></a>This lemma ensures that the "mapping space" between n-categories is itself an n-category, forming the basis for constructions like adjunctions in higher category theory.</span>
+<span id="cb3-565"><a href="#cb3-565" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-566"><a href="#cb3-566" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-567"><a href="#cb3-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-568"><a href="#cb3-568" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-569"><a href="#cb3-569" aria-hidden="true" tabindex="-1"></a>::: {.proposition}</span>
+<span id="cb3-570"><a href="#cb3-570" aria-hidden="true" tabindex="-1"></a><span class="fu">### Proposition (n-groupoids and homotopy n-types)</span></span>
+<span id="cb3-571"><a href="#cb3-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-572"><a href="#cb3-572" aria-hidden="true" tabindex="-1"></a>An **n-groupoid** is an n-category where all morphisms (in all dimensions) are equivalences.</span>
+<span id="cb3-573"><a href="#cb3-573" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-574"><a href="#cb3-574" aria-hidden="true" tabindex="-1"></a>In homotopy theory, there is a deep connection between n-groupoids and **homotopy n-types**. Specifically, the homotopy n-type of a topological space is completely determined by its fundamental n-groupoid. This is the content of the **Homotopy Hypothesis**, which asserts: "The category of n-groupoids is equivalent to the category of homotopy n-types."</span>
+<span id="cb3-575"><a href="#cb3-575" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-576"><a href="#cb3-576" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-577"><a href="#cb3-577" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-578"><a href="#cb3-578" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-579"><a href="#cb3-579" aria-hidden="true" tabindex="-1"></a>::: {.corollary}</span>
+<span id="cb3-580"><a href="#cb3-580" aria-hidden="true" tabindex="-1"></a><span class="fu">### Corollary (1-categories as special cases of ∞-categories)</span></span>
+<span id="cb3-581"><a href="#cb3-581" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-582"><a href="#cb3-582" aria-hidden="true" tabindex="-1"></a>Directly from the theorem "Equivalent characterizations of ∞-categories", we deduce:</span>
+<span id="cb3-583"><a href="#cb3-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-584"><a href="#cb3-584" aria-hidden="true" tabindex="-1"></a>Any ordinary 1-category <span class="sc">\(</span>\mathcal{C}<span class="sc">\)</span> can be regarded as a special case of an ∞-category.</span>
+<span id="cb3-585"><a href="#cb3-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-586"><a href="#cb3-586" aria-hidden="true" tabindex="-1"></a>**Proof sketch**:</span>
+<span id="cb3-587"><a href="#cb3-587" aria-hidden="true" tabindex="-1"></a>Treat objects of <span class="sc">\(</span>\mathcal{C}<span class="sc">\)</span> as 0-morphisms, 1-morphisms as 1-morphisms, and in all dimensions above 1, include only identity morphisms (or equivalently, no non-trivial morphisms). The resulting quasi-category is a discrete ∞-category that fully encodes the information of the original 1-category.</span>
+<span id="cb3-588"><a href="#cb3-588" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-589"><a href="#cb3-589" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-590"><a href="#cb3-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-591"><a href="#cb3-591" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-592"><a href="#cb3-592" aria-hidden="true" tabindex="-1"></a>::: {.remark}</span>
+<span id="cb3-593"><a href="#cb3-593" aria-hidden="true" tabindex="-1"></a><span class="fu">### Remark (On the importance of "weak" structures)</span></span>
+<span id="cb3-594"><a href="#cb3-594" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-595"><a href="#cb3-595" aria-hidden="true" tabindex="-1"></a>A core distinction between higher category theory and ordinary category theory lies in the treatment of "commutativity". In 1-categories, we talk about **commutative diagrams**, requiring equalities like <span class="sc">\(</span>f \circ g = h<span class="sc">\)</span> to hold strictly.</span>
+<span id="cb3-596"><a href="#cb3-596" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-597"><a href="#cb3-597" aria-hidden="true" tabindex="-1"></a>However, in higher-dimensional settings, strict commutativity is too restrictive—there are almost no interesting examples. Thus, the essence of higher category theory is to replace it with **weak commutativity**. This means we no longer require \(f \circ g\) and \(h\) to be strictly equal, but instead allow a **higher-dimensional morphism** (e.g., a 2-morphism <span class="sc">\(</span>\alpha: f \circ g \Rightarrow h<span class="sc">\)</span>), which itself is an equivalence.</span>
+<span id="cb3-598"><a href="#cb3-598" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-599"><a href="#cb3-599" aria-hidden="true" tabindex="-1"></a>This "weakening" idea is the soul of the subject, allowing us to use categorical language to describe flexible mathematical objects like space homotopies and algebraic deformations.</span>
+<span id="cb3-600"><a href="#cb3-600" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-601"><a href="#cb3-601" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-602"><a href="#cb3-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-603"><a href="#cb3-603" aria-hidden="true" tabindex="-1"></a>::: {.example}</span>
+<span id="cb3-604"><a href="#cb3-604" aria-hidden="true" tabindex="-1"></a><span class="fu">### Example (Geometric instance of an ∞-groupoid)</span></span>
+<span id="cb3-605"><a href="#cb3-605" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-606"><a href="#cb3-606" aria-hidden="true" tabindex="-1"></a>A crucial example of an ∞-groupoid comes from topology:</span>
+<span id="cb3-607"><a href="#cb3-607" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-608"><a href="#cb3-608" aria-hidden="true" tabindex="-1"></a>**Let \(X\) be a topological space.**</span>
+<span id="cb3-609"><a href="#cb3-609" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-610"><a href="#cb3-610" aria-hidden="true" tabindex="-1"></a>We can construct an ∞-groupoid <span class="sc">\(</span>\Pi_\infty(X)<span class="sc">\)</span>, called the **fundamental ∞-groupoid** of <span class="sc">\(</span>X<span class="sc">\)</span>, as follows:</span>
+<span id="cb3-611"><a href="#cb3-611" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**0-morphisms (objects)**: Points <span class="sc">\(</span>x \in X<span class="sc">\)</span>.</span>
+<span id="cb3-612"><a href="#cb3-612" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**1-morphisms**: Paths <span class="sc">\(</span>\gamma: x \to y<span class="sc">\)</span> connecting points <span class="sc">\(</span>x<span class="sc">\)</span> and <span class="sc">\(</span>y<span class="sc">\)</span> in <span class="sc">\(</span>X<span class="sc">\)</span>.</span>
+<span id="cb3-613"><a href="#cb3-613" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**2-morphisms**: Homotopies <span class="sc">\(</span>H: \gamma \Rightarrow \delta<span class="sc">\)</span> between paths.</span>
+<span id="cb3-614"><a href="#cb3-614" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**3-morphisms**: Homotopies between homotopies, and so on...</span>
+<span id="cb3-615"><a href="#cb3-615" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-616"><a href="#cb3-616" aria-hidden="true" tabindex="-1"></a>In this ∞-groupoid, all morphisms are homotopy equivalences, perfectly capturing all homotopy information of the space <span class="sc">\(</span>X<span class="sc">\)</span>. When <span class="sc">\(</span>X<span class="sc">\)</span> is a single point, <span class="sc">\(</span>\Pi_\infty(X)<span class="sc">\)</span> is the trivial ∞-category containing only identity morphisms.</span>
+<span id="cb3-617"><a href="#cb3-617" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-618"><a href="#cb3-618" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-619"><a href="#cb3-619" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-620"><a href="#cb3-620" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-621"><a href="#cb3-621" aria-hidden="true" tabindex="-1"></a>::: {.proof}</span>
+<span id="cb3-622"><a href="#cb3-622" aria-hidden="true" tabindex="-1"></a><span class="fu">### Proof (Proposition: Homotopy interpretation of n-groupoids)</span></span>
+<span id="cb3-623"><a href="#cb3-623" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-624"><a href="#cb3-624" aria-hidden="true" tabindex="-1"></a>We sketch the proof of the proposition "n-groupoids and homotopy n-types".</span>
+<span id="cb3-625"><a href="#cb3-625" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-626"><a href="#cb3-626" aria-hidden="true" tabindex="-1"></a>**(Sketch)**</span>
+<span id="cb3-627"><a href="#cb3-627" aria-hidden="true" tabindex="-1"></a>Let <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span> be an n-groupoid. We need to construct a topological space <span class="sc">\(</span>B\mathcal{G}<span class="sc">\)</span> (called the **classifying space** or **geometric realization** of <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span>) such that its homotopy n-type corresponds to <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span>.</span>
+<span id="cb3-628"><a href="#cb3-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-629"><a href="#cb3-629" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Construction**:</span>
+<span id="cb3-630"><a href="#cb3-630" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Start with the objects of <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span>, treating each object as a point.</span>
+<span id="cb3-631"><a href="#cb3-631" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>For each 1-morphism <span class="sc">\(</span>f: a \to b<span class="sc">\)</span>, attach an interval <span class="sc">\(</span><span class="co">[</span><span class="ot">0,1</span><span class="co">]</span><span class="sc">\)</span> with endpoints connected to <span class="sc">\(</span>a<span class="sc">\)</span> and <span class="sc">\(</span>b<span class="sc">\)</span>.</span>
+<span id="cb3-632"><a href="#cb3-632" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>For each 2-morphism <span class="sc">\(</span>\alpha: f \Rightarrow g<span class="sc">\)</span>, attach a square <span class="sc">\(</span><span class="co">[</span><span class="ot">0,1</span><span class="co">]</span> \times <span class="co">[</span><span class="ot">0,1</span><span class="co">]</span><span class="sc">\)</span>, gluing its boundary according to the source and target of <span class="sc">\(</span>\alpha<span class="sc">\)</span>.</span>
+<span id="cb3-633"><a href="#cb3-633" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Continue recursively, attaching a k-dimensional cube for each k-morphism and gluing according to its source and target.</span>
+<span id="cb3-634"><a href="#cb3-634" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-635"><a href="#cb3-635" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Verification**:</span>
+<span id="cb3-636"><a href="#cb3-636" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The fundamental groupoid <span class="sc">\(</span>\Pi_1(B\mathcal{G})<span class="sc">\)</span> of the space <span class="sc">\(</span>B\mathcal{G}<span class="sc">\)</span> constructed this way is the 1-truncation of <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span> (i.e., ignoring all morphisms above dimension 1).</span>
+<span id="cb3-637"><a href="#cb3-637" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Higher homotopy groups <span class="sc">\(</span>\pi_k(B\mathcal{G}, x)<span class="sc">\)</span> are given by equivalence classes of k-morphisms in <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span> based at <span class="sc">\(</span>x<span class="sc">\)</span>.</span>
+<span id="cb3-638"><a href="#cb3-638" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Since <span class="sc">\(</span>\mathcal{G}<span class="sc">\)</span> is an n-groupoid, all homotopy groups above dimension <span class="sc">\(</span>n<span class="sc">\)</span> are trivial, so <span class="sc">\(</span>B\mathcal{G}<span class="sc">\)</span> is a homotopy n-type.</span>
+<span id="cb3-639"><a href="#cb3-639" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-640"><a href="#cb3-640" aria-hidden="true" tabindex="-1"></a>Conversely, the fundamental n-groupoid of any homotopy n-type is an n-groupoid. This establishes the equivalence between the two.</span>
+<span id="cb3-641"><a href="#cb3-641" aria-hidden="true" tabindex="-1"></a><span class="sc">\(</span>\square<span class="sc">\)</span></span>
+<span id="cb3-642"><a href="#cb3-642" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 13, 2025 · <a href="../../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="../../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 19, 2025 · <a href="../../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
 </div>   
     <div class="nav-footer-center">
 
