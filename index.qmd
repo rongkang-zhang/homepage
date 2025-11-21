@@ -186,6 +186,8 @@ Higher category theory • Operator algebras • Derived algebraic geometry • 
 
 # Language Proficiency and Certificates{#lang}
 
+> Rong-Kang ZHANG | 張容康 (ちょう · ようこう) | Жункан Чжан
+
 ## Overview
 
 ::: {.callout-note}
