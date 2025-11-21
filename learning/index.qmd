@@ -1,5 +1,6 @@
 ---
 title: "Learning"
+subtitle: "Topics to Learn and Progress"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
@@ -9,5 +10,5 @@ csl: ../american-mathematical-society.csl
 
 | Overall Subject | Topics Covered                 | Learning Resources and Completion Status                     |
 | --------------- | ------------------------------ | ------------------------------------------------------------ |
-| Language        | [Japanese](japanese/index.qmd) | • 标准日本语\_初级\_上<br>  • 标准日本语\_初级\_语法手册<br>  • 标准日本语\_初级\_上\_同步讲解与练习<br>  • 标准日本语\_初级\_同步测试卷<br/>  • 标准日本语\_初级\_词汇手册<br/>• 《标准日本语读解》初级（读解专项） |
+| Language        | [Japanese](japanese/index.qmd) | • |
 
