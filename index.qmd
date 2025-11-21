@@ -3,6 +3,10 @@ title: "Rong-Kang Zhang"
 subtitle: "Physics BSc | Into higher category theory and its emerging role in mathematical physics."
 author: "Rong-Kang Zhang"
 toc: true
+number-sections: true        # 总开关
+number-depth: 3              # 编号到几级标题（1=仅#，2=##，3=###）
+toc-depth: 4
+toc-expand: true # 全部展开目录
 page-layout: full
 about:
   template: trestles
@@ -34,7 +38,7 @@ about:
 On this page you can learn about my<br>
 - [Research Interests](#interests)<br>
 - [Education and Degrees](#education) <br>
-- [Language Proficiency](#lang) 
+- [Language Proficiency and Certificates](#lang) 
 
 Here is my current research focus<br>
 - [Research - 1 - A Topos-Theoretic Bridge for Holographic Entanglement Entropy - Preliminaries](research/1/preliminaries/index.html)
@@ -101,6 +105,17 @@ details.ri li {
 <summary>Derived algebraic geometry</summary>
 <ul>
   <li>Spectral algebraic geometry</li>
+  <li>Condensed mathematics</li>
+  <li>Arithmetic geometry</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>Algebraic topology</summary>
+<ul>
+  <li>Index theory</li>
+  <li>Topological modular forms</li>
+  <li>Quantum anomalies</li>
 </ul>
 </details>
 
@@ -128,6 +143,21 @@ details.ri li {
   <li>Quantum error correction</li>
   <li>Theoretical computer science</li>
   <li>Theoretical physics</li>
+  <li>Math of machine learning</li>
+  <li>Math of computation</li>
+  <li>Categorical quantum mechanics</li>
+  <li>Categorical quantum information</li>
+  <li>ZX-calculus</li>
+  <li>Categorical symmetry</li>
+  <li>Topos quantum theory</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>Artificial Intellegence</summary>
+<ul>
+  <li>Quantum artificial intellegence</li>
+  <li>Topos in artificial intellegence</li>
 </ul>
 </details>
 
@@ -154,7 +184,9 @@ Higher category theory • Operator algebras • Derived algebraic geometry • 
 
 ---
 
-# Language Proficiency {#lang}
+# Language Proficiency and Certificates{#lang}
+
+## Overview
 
 ::: {.callout-note}
 **CEFR Six-Level Scale**  
@@ -189,7 +221,7 @@ A1 → A2 → B1 → B2 → C1 → C2 (Basic → Independent → Proficient)
 <div class="progress" style="height:16px;font-size:0.9rem;margin-bottom:0.4rem;border:2px solid #66b3ff;">
   <div class="progress-bar" style="width:55%;background:linear-gradient(90deg, #66b3ff, #99ccff);color:#002b5c;font-weight:bold;">Intermediate</div>
 </div>
-<small><span class="badge text-bg-info">Intermediate</span> Daily conversation / JLPT N3</small>
+<small><span class="badge text-bg-info">Intermediate</span> Daily conversation<br>Certificates: JLPT-N1</small>
 
 <!-- 意大利语 / Italian -->
 **🇮🇹 Italian (A2) • Italiano（A2）**
@@ -199,6 +231,8 @@ A1 → A2 → B1 → B2 → C1 → C2 (Basic → Independent → Proficient)
 <small><span class="badge text-bg-secondary">Elementary</span> Slow-paced daily / basic communication</small>
 
 :::
+
+## Japanese Certificates
 
 ---
 
