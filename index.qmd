@@ -2,19 +2,31 @@
 title: "Rong-Kang Zhang"
 subtitle: "Physics BSc | Into higher category theory and its emerging role in mathematical physics."
 author: "Rong-Kang Zhang"
+date: last-modified
 toc: true
+toc-location: right        # 目录显示在左侧侧边栏（可选：top 顶部/ margin 页边距）
+toc-title: "Contents"            # 自定义目录标题
 number-sections: true        # 总开关
-number-depth: 3              # 编号到几级标题（1=仅#，2=##，3=###）
+number-depth: 4              # 编号到几级标题（1=仅#，2=##，3=###）
 toc-depth: 4
 toc-expand: true # 全部展开目录
 page-layout: full
+math: mathjax                # 启用 MathJax 渲染器（兼容性更强，支持复杂公式）
+code-block-style: github     # 代码块样式（github=GitHub 风格，可选：vs2015/monokai 等）
+highlight-style: tango       # 代码高亮主题（tango=鲜明色彩，可选：solarized-dark/zenburn 等）
+share-preview:
+  image: assets/pictures/profile-picture.png  # 分享预览图（建议尺寸：1200×630px）
+  title: "Rong-Kang Zhang's Academic Homepage"  # 分享标题
+  description: "Physics BSc | Higher Category Theory & Mathematical Physics"  # 分享描述
+csl: american-mathematical-society.csl  # APS 物理学会引用格式
+bibliography: refs.bib  # 参考文献数据库（BibTeX 格式文件）
 about:
   template: trestles
   image: assets/pictures/profile-picture.png
   links:
     - icon: pencil
       text: 知乎
-      href: https://www.zhihu.com/people/shokatsu-ei/posts
+      href: https://www.zhihu.com/people/shokatsu-ei
     - icon: twitter
       text: Twitter
       href: https://x.com/ShokatsuEi
@@ -24,7 +36,7 @@ about:
     - text: "{{< ai orcid >}} ORCiD"
       href: https://orcid.org/0009-0002-1334-733X
     - icon: envelope
-      text: Email
+      text: "Email: rongkang2025@gmail.com"
       href: "mailto:rongkang2025@gmail.com"
     - icon: globe
       text: Personal Website

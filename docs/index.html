@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rong-Kang Zhang">
-<meta name="dcterms.date" content="2025-11-21">
+<meta name="dcterms.date" content="2025-11-23">
 
 <title>Rong-Kang Zhang – Rong-KangZhang</title>
 <style>
@@ -41,14 +41,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e41caad1b6b9b62eb3087831f3b4c651.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-e41caad1b6b9b62eb3087831f3b4c651.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e41caad1b6b9b62eb3087831f3b4c651.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d44bdd9634a510d213a90139fc62ef3d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ce9bfccfe45dc2e07003371e3a33037a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d44bdd9634a510d213a90139fc62ef3d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2857457278e94c934c44fb2e710d3149.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c52224cefc312ba505a08a579edcd48b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2857457278e94c934c44fb2e710d3149.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -107,36 +107,7 @@ cookieconsent.run({
   
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Rong-Kang Zhang – Rong-KangZhang">
+  <meta property="og:title" content="Rong-Kang Zhang – Rong-KangZhang">
 <meta property="og:description" content="Physics BSc | Into higher category theory and its emerging role in mathematical physics.">
 <meta property="og:image" content="https://rongkang-zhang.github.io/homepage/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
@@ -148,9 +119,7 @@ window.Quarto = {
 <meta name="twitter:image-height" content="1176">
 <meta name="twitter:image-width" content="1095">
 <meta name="twitter:card" content="summary_large_image">
-</head>
-
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+</head><body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -312,7 +281,38 @@ window.Quarto = {
     } else {
       toggleColorMode(false);
     }
-  </script>
+  </script>mathjax
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -458,7 +458,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Contents</h2>
   <ul>
   <li><a href="#interests" id="toc-interests" class="nav-link active" data-scroll-target="#interests"><span class="header-section-number">1</span> Research Interests</a></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education"><span class="header-section-number">2</span> Education and Degrees</a></li>
@@ -490,13 +490,13 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 21, 2025</p>
+      <p class="date">November 23, 2025</p>
     </div>
   </div>
   </div>
 </header>
     <div class="about-links">
-  <a href="https://www.zhihu.com/people/shokatsu-ei/posts" class="about-link" rel="" target="">
+  <a href="https://www.zhihu.com/people/shokatsu-ei" class="about-link" rel="" target="">
     <i class="bi bi-pencil"></i>
      <span class="about-link-text">知乎</span>
   </a>
@@ -513,7 +513,7 @@ window.Quarto = {
   </a>
   <a href="mailto:rongkang2025@gmail.com" class="about-link" rel="" target="">
     <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
+     <span class="about-link-text">Email: rongkang2025@gmail.com</span>
   </a>
   <a href="https://rongkang-zhang.github.io/homepage/" class="about-link" rel="" target="">
     <i class="bi bi-globe"></i>
@@ -904,6 +904,7 @@ document.addEventListener('DOMContentLoaded', () => {
   box-shadow:0 2px 4px rgba(0,0,0,.25);
 }
 </style>
+
 
 
 </section>
@@ -1326,7 +1327,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="./assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 21, 2025 · <a href="./cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="./assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 23, 2025 · <a href="./cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
 </div>   
     <div class="nav-footer-center">
 
