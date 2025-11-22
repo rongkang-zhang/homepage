@@ -1903,9 +1903,9 @@ $title-banner-color: null !default;
 $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
-
-$btn-code-copy-color: #f8f8f2 !default;
-$btn-code-copy-color-active: #ffa07a !default;
+$code-block-bg: #f8f8f8 !default;
+$btn-code-copy-color: #8f5902 !default;
+$btn-code-copy-color-active: #204a87 !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -14056,6 +14056,24 @@ $callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
 
 .listing-table .clickable-row:hover {
   background-color: rgba(0, 123, 255, 0.1); /* 轻微的蓝色背景高亮 */
+}
+
+/* 首页中about中链接颜色修改 */
+/* 自定义 about 模块的链接文本颜色 */
+.about-links a {
+  color: #1a73e8 !important; /* 谷歌蓝，!important 确保覆盖默认样式 */
+  text-decoration: none; /* 可选：取消下划线 */
+}
+
+/* 自定义 about 模块的图标颜色（与链接颜色一致） */
+.about-links .icon {
+  color: #1a73e8 !important;
+}
+
+/* 可选：鼠标悬停时变色（增强交互） */
+.about-links a:hover {
+  color: #0d5bcd !important; /* 深一点的蓝色 */
+  text-decoration: underline; /* 可选：悬停时显示下划线 */
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
