@@ -51,13 +51,16 @@ listing:
   page-size: 30                     # 表格分页，每页显示30条记录
 ---
 
+<!-- 引入 Font Awesome 图标库 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 ::: {.callout-note appearance="simple" icon="true"}
 # Navigate & Run
 
 - **Open Notebooks**: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).  
 - **Online Execution**: Launch the entire CodeLab environment via Binder (no local setup required):  
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rongkang-zhang/homepage/HEAD?urlpath=lab)  
-> Note: Binder may take 1-2 minutes to load the environment.
+*Note: Binder may take 1-2 minutes to load the environment.*
 - **Offline Access**: PDFs of all notebooks are auto-built on [Overleaf](https://www.overleaf.com/read/your-project) and synced to GitHub after every update—ensure full reproducibility and offline reading.  
 
 **Table Columns**:  

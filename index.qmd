@@ -50,6 +50,9 @@ about:
       href: cookie.html
 ---
 
+<!-- 引入 Font Awesome 图标库 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 ::: {.callout-note}
 On this page you can learn about my<br>
 - [Research Interests](#interests)<br>
@@ -260,6 +263,66 @@ A1 → A2 → B1 → B2 → C1 → C2 (Basic → Independent → Proficient)
 :::
 
 ## Japanese Certificates
+
+# Programming & Tools
+
+::: {.panel}
+
+<ul class="vertical-list vertical-list--compact">
+  <li class="vertical-list__item vertical-list__item--alpha"><i class="fa-solid fa-code" style="margin-right: 0.5rem;"></i>Programming Languages
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--delta">Python (NumPy / Pandas / Matplotlib / Scikit-learn / SciPy)</li>
+      <li class="vertical-list__item vertical-list__item--delta">C++ (Research-focused applications)</li>
+      <li class="vertical-list__item vertical-list__item--delta">Haskell / Idris (Theoretical exploration)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--beta"><i class="fa-solid fa-brain" style="margin-right: 0.5rem;"></i>Deep Learning Frameworks
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--epsilon">PyTorch (Sony AI Preferred)</li>
+      <li class="vertical-list__item vertical-list__item--epsilon">TensorFlow / Keras (Model Building & Training)</li>
+      <li class="vertical-list__item vertical-list__item--epsilon">Hugging Face Transformers & Datasets</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--gamma"><i class="fa-solid fa-database" style="margin-right: 0.5rem;"></i>Data Processing
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--zeta">SQL (Data Extraction & Manipulation)</li>
+      <li class="vertical-list__item vertical-list__item--zeta">Apache Spark (Large-scale Data Processing)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--theta"><i class="fa-solid fa-cubes" style="margin-right: 0.5rem;"></i>MLOps & Deployment
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--delta">Docker & Kubernetes (Containerization & Orchestration)</li>
+      <li class="vertical-list__item vertical-list__item--delta">MLflow (Experiment Tracking & Model Registry)</li>
+      <li class="vertical-list__item vertical-list__item--delta">AWS / GCP (Cloud Services for ML)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--eta"><i class="fa-solid fa-layer-group" style="margin-right: 0.5rem;"></i>Generative AI & Multimodal
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--epsilon">Diffusers (Stable Diffusion, etc.)</li>
+      <li class="vertical-list__item vertical-list__item--epsilon">OpenCV (Computer Vision)</li>
+      <li class="vertical-list__item vertical-list__item--epsilon">NLTK / SpaCy (Natural Language Processing)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--alpha"><i class="fa-solid fa-calculator" style="margin-right: 0.5rem;"></i>Mathematical Tools
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--delta">SymPy (Symbolic Mathematics)</li>
+      <li class="vertical-list__item vertical-list__item--delta">PyMC3 / Stan (Probabilistic Programming)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--beta"><i class="fa-brands fa-git-alt" style="margin-right: 0.5rem;"></i>Version Control & Collaboration
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--epsilon">Git & GitHub (Team Collaboration & Code Management)</li>
+      <li class="vertical-list__item vertical-list__item--epsilon">Quarto / Jupyter (Reproducible Research)</li>
+    </ul>
+  </li>
+  <li class="vertical-list__item vertical-list__item--gamma"><i class="fa-solid fa-chart-line" style="margin-right: 0.5rem;"></i>Visualization
+    <ul class="vertical-list" style="margin-top: 0.5rem;">
+      <li class="vertical-list__item vertical-list__item--zeta">Matplotlib, Seaborn, Plotly</li>
+      <li class="vertical-list__item vertical-list__item--zeta">Tableau (Interactive Dashboard & Result Presentation)</li>
+    </ul>
+  </li>
+</ul>
+:::
 
 ---
 

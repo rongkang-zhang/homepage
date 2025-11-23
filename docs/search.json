@@ -95,7 +95,7 @@
     "href": "codelab/index.html",
     "title": "MathPhysCS CodeLab",
     "section": "",
-    "text": "NoteNavigate & Run\n\n\n\n\nOpen Notebooks: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).\n\nOnline Execution: Launch the entire CodeLab environment via Binder (no local setup required):\n\n&gt; Note: Binder may take 1-2 minutes to load the environment.\nOffline Access: PDFs of all notebooks are auto-built on Overleaf and synced to GitHub after every update—ensure full reproducibility and offline reading.\n\nTable Columns:\n- Notebook Title: Name of the experiment (links to live notebook).\n- Last Updated: Timestamp of the latest revision (prioritize recent content).\n- Author: Contributor(s) to the notebook (for collaboration tracking).\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\noverall-category\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\nMathematical Logic\n\n\n2025-11-19\n\n\nRong-Kang Zhang\n\n\n\n\n\n\nNo matching items"
+    "text": "NoteNavigate & Run\n\n\n\n\nOpen Notebooks: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).\n\nOnline Execution: Launch the entire CodeLab environment via Binder (no local setup required):\n\nNote: Binder may take 1-2 minutes to load the environment.\nOffline Access: PDFs of all notebooks are auto-built on Overleaf and synced to GitHub after every update—ensure full reproducibility and offline reading.\n\nTable Columns:\n- Notebook Title: Name of the experiment (links to live notebook).\n- Last Updated: Timestamp of the latest revision (prioritize recent content).\n- Author: Contributor(s) to the notebook (for collaboration tracking).\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\noverall-category\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\nMathematical Logic\n\n\n2025-11-19\n\n\nRong-Kang Zhang\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "codelab/category-theory/index.html",
@@ -320,5 +320,19 @@
     "title": "Category Theory",
     "section": "",
     "text": "Title\nCategories\nModified\nAuthor\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "codelab/index.html#technical-skills",
+    "href": "codelab/index.html#technical-skills",
+    "title": "MathPhysCS CodeLab",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nProgramming & Tools\n\n\nProgramming Languages\n\n\nPython (NumPy / Pandas / Matplotlib / Scikit-learn / SciPy)\n\n\nC++ (Research-focused applications)\n\n\nHaskell / Idris (Theoretical exploration)\n\n\n\n\nDeep Learning Frameworks\n\n\nPyTorch (Sony AI Preferred)\n\n\nTensorFlow / Keras (Model Building & Training)\n\n\nHugging Face Transformers & Datasets\n\n\n\n\nData Processing\n\n\nSQL (Data Extraction & Manipulation)\n\n\nApache Spark (Large-scale Data Processing)\n\n\n\n\nMLOps & Deployment\n\n\nDocker & Kubernetes (Containerization & Orchestration)\n\n\nMLflow (Experiment Tracking & Model Registry)\n\n\nAWS / GCP (Cloud Services for ML)\n\n\n\n\nGenerative AI & Multimodal\n\n\nDiffusers (Stable Diffusion, etc.)\n\n\nOpenCV (Computer Vision)\n\n\nNLTK / SpaCy (Natural Language Processing)\n\n\n\n\nMathematical Tools\n\n\nSymPy (Symbolic Mathematics)\n\n\nPyMC3 / Stan (Probabilistic Programming)\n\n\n\n\nVersion Control & Collaboration\n\n\nGit & GitHub (Team Collaboration & Code Management)\n\n\nQuarto / Jupyter (Reproducible Research)\n\n\n\n\nVisualization\n\n\nMatplotlib, Seaborn, Plotly\n\n\nTableau (Interactive Dashboard & Result Presentation)"
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Rong-Kang Zhang",
+    "section": "4.1 Technical Skills",
+    "text": "4.1 Technical Skills\n\n4.1.1 Programming & Tools\n\n\nProgramming Languages\n\n\nPython (NumPy / Pandas / Matplotlib / Scikit-learn / SciPy)\n\n\nC++ (Research-focused applications)\n\n\nHaskell / Idris (Theoretical exploration)\n\n\n\n\nDeep Learning Frameworks\n\n\nPyTorch (Sony AI Preferred)\n\n\nTensorFlow / Keras (Model Building & Training)\n\n\nHugging Face Transformers & Datasets\n\n\n\n\nData Processing\n\n\nSQL (Data Extraction & Manipulation)\n\n\nApache Spark (Large-scale Data Processing)\n\n\n\n\nMLOps & Deployment\n\n\nDocker & Kubernetes (Containerization & Orchestration)\n\n\nMLflow (Experiment Tracking & Model Registry)\n\n\nAWS / GCP (Cloud Services for ML)\n\n\n\n\nGenerative AI & Multimodal\n\n\nDiffusers (Stable Diffusion, etc.)\n\n\nOpenCV (Computer Vision)\n\n\nNLTK / SpaCy (Natural Language Processing)\n\n\n\n\nMathematical Tools\n\n\nSymPy (Symbolic Mathematics)\n\n\nPyMC3 / Stan (Probabilistic Programming)\n\n\n\n\nVersion Control & Collaboration\n\n\nGit & GitHub (Team Collaboration & Code Management)\n\n\nQuarto / Jupyter (Reproducible Research)\n\n\n\n\nVisualization\n\n\nMatplotlib, Seaborn, Plotly\n\n\nTableau (Interactive Dashboard & Result Presentation)"
   }
 ]
