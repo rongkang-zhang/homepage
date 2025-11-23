@@ -92,6 +92,7 @@ website:
 
 format:
   html:
+    math: katex                         # <-- 建议添加：使用 KaTeX 渲染数学公式 (默认且快速)
     theme:
       light: [cosmo, custom.scss]
       dark:  [darkly, custom.scss]

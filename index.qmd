@@ -3,6 +3,8 @@ title: "Rong-Kang Zhang"
 subtitle: "Physics BSc | Into higher category theory and its emerging role in mathematical physics."
 author: "Rong-Kang Zhang"
 date: last-modified
+lang: en                                 # <-- 建议添加：声明文档主要语言为英文
+encoding: UTF-8                          # <-- 建议添加：声明字符编码为 UTF-8
 toc: true
 toc-location: right        # 目录显示在左侧侧边栏（可选：top 顶部/ margin 页边距）
 toc-title: "Contents"            # 自定义目录标题
