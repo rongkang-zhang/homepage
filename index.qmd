@@ -39,6 +39,9 @@ about:
     - icon: code
       text: Kaggle
       href: https://www.kaggle.com/rongkangzhang
+    - icon: trophy
+      text: LeetCode
+      href: https://leetcode.com/u/Rongkang-Zhang/
     - icon: envelope
       text: "Email: rongkang2025@gmail.com"
       href: "mailto:rongkang2025@gmail.com"
