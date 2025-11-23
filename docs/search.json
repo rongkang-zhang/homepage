@@ -95,7 +95,7 @@
     "href": "codelab/index.html",
     "title": "MathPhysCS CodeLab",
     "section": "",
-    "text": "NoteNavigate & Run\n\n\n\n\nOpen Notebooks: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).\n\nOnline Execution: Launch the entire CodeLab environment via Binder (no local setup required):\n\nNote: Binder may take 1-2 minutes to load the environment.\n\nOffline Access: PDFs of all notebooks are auto-built on Overleaf and synced to GitHub after every update—ensure full reproducibility and offline reading.\n\nTable Columns:\n- Notebook Title: Name of the experiment (links to live notebook).\n- Last Updated: Timestamp of the latest revision (prioritize recent content).\n- Author: Contributor(s) to the notebook (for collaboration tracking).\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\noverall-category\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\nMathematical Logic\n\n\n2025-11-19\n\n\nRong-Kang Zhang\n\n\n\n\n\n\nNo matching items"
+    "text": "NoteNavigate & Run\n\n\n\n\nOpen Notebooks: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).\n\nOnline Execution: Launch the entire CodeLab environment via Binder (no local setup required):\n\n&gt; Note: Binder may take 1-2 minutes to load the environment.\nOffline Access: PDFs of all notebooks are auto-built on Overleaf and synced to GitHub after every update—ensure full reproducibility and offline reading.\n\nTable Columns:\n- Notebook Title: Name of the experiment (links to live notebook).\n- Last Updated: Timestamp of the latest revision (prioritize recent content).\n- Author: Contributor(s) to the notebook (for collaboration tracking).\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\noverall-category\n\n\n\nModified\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCategory Theory\n\n\nMathematical Logic\n\n\n2025-11-19\n\n\nRong-Kang Zhang\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "codelab/category-theory/index.html",
@@ -284,7 +284,7 @@
     "href": "learning/index.html",
     "title": "Learning",
     "section": "",
-    "text": "Overall Subject\nTopics Covered\nLearning Resources and Completion Status\n\n\n\n\nLinear Algebra\nLinear Algebra\n(To be added)\n\n\n\nMultilinear Algebra\n(To be added)\n\n\nLanguage\nJapanese\n・TRY！新日语能力考试 - 语法必备  ・N1 📚 In Progress  ・N2 ✅ Completed  ・N3 📋 Not Started  ・N4 📋 Not Started  ・N5 ✅ Completed"
+    "text": "Overall Subject\nTopics Covered\nLearning Resources and Completion Status\n\n\n\n\nLinear Algebra\nLinear Algebra\n(To be added)\n\n\n\nMultilinear Algebra\n(To be added)\n\n\nLanguage\nJapanese\n・TRY！新日语能力考试-语法必备  ・N1 📚 In Progress  ・N2 ✅ Completed  ・N3 📋 Not Started  ・N4 📋 Not Started  ・N5 ✅ Completed"
   },
   {
     "objectID": "research/1/index.html",

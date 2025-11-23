@@ -33,7 +33,7 @@ listing:
     - overall-category
     - file-modified
     - author
-    
+
   # [修正点] 'filter-ui' 使用字段名列表（字符串数组）
   filter-ui:
     - title
@@ -57,7 +57,7 @@ listing:
 - **Open Notebooks**: Click any row in the table below to open the live notebook (supports R / Python / Julia / Haskell).  
 - **Online Execution**: Launch the entire CodeLab environment via Binder (no local setup required):  
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rongkang-zhang/homepage/HEAD?urlpath=lab)  
-  *Note: Binder may take 1-2 minutes to load the environment.*  
+> Note: Binder may take 1-2 minutes to load the environment.
 - **Offline Access**: PDFs of all notebooks are auto-built on [Overleaf](https://www.overleaf.com/read/your-project) and synced to GitHub after every update—ensure full reproducibility and offline reading.  
 
 **Table Columns**:  

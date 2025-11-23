@@ -11,4 +11,4 @@ csl: ../american-mathematical-society.csl
 |-----------------|----------------------|----------------------------------------------------------------------------------------------------------|
 | Linear Algebra  | Linear Algebra       | (To be added)                                                                                             |
 |                 | Multilinear Algebra  | (To be added)                                                                                             |
-| Language        | [Japanese](japanese/index.qmd) | ・TRY！新日语能力考试 - 语法必备<br>&nbsp;&nbsp;・N1 📚 In Progress<br>&nbsp;&nbsp;・N2 ✅ Completed<br>&nbsp;&nbsp;・N3 📋 Not Started<br>&nbsp;&nbsp;・N4 📋 Not Started<br>&nbsp;&nbsp;・N5 ✅ Completed |
+| Language        | [Japanese](japanese/index.qmd) | ・TRY！新日语能力考试-语法必备<br>&nbsp;&nbsp;・N1 📚 In Progress<br>&nbsp;&nbsp;・N2 ✅ Completed<br>&nbsp;&nbsp;・N3 📋 Not Started<br>&nbsp;&nbsp;・N4 📋 Not Started<br>&nbsp;&nbsp;・N5 ✅ Completed |
