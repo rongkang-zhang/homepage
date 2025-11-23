@@ -36,6 +36,9 @@ about:
       href: https://github.com/rongkang-zhang
     - text: "{{< ai orcid >}} ORCiD"
       href: https://orcid.org/0009-0002-1334-733X
+    - icon: code
+      text: Kaggle
+      href: https://www.kaggle.com/rongkangzhang
     - icon: envelope
       text: "Email: rongkang2025@gmail.com"
       href: "mailto:rongkang2025@gmail.com"
@@ -171,6 +174,15 @@ details.ri li {
 <ul>
   <li>Quantum artificial intellegence</li>
   <li>Topos in artificial intellegence</li>
+</ul>
+</details>
+
+<details class="ri">
+<summary>Theoretical Computer Science</summary>
+<ul>
+  <li>Categorical logic</li>
+  <li>Topos theory</li>
+  <li>Type theory</li>
 </ul>
 </details>
 
