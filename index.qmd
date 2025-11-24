@@ -36,6 +36,10 @@ about:
       href: https://github.com/rongkang-zhang
     - text: "{{< ai orcid >}} ORCiD"
       href: https://orcid.org/0009-0002-1334-733X
+  # 新增 Mathstodon 链接（数学专属图标）
+    - icon: infinity
+      text: Mathstodon
+      href: https://mathstodon.xyz/@RongkangZhang
     - icon: code
       text: Kaggle
       href: https://www.kaggle.com/rongkangzhang
