@@ -1063,3 +1063,23 @@ $callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
     padding: 0.7rem 0.5rem;
   }
 }
+
+/* 为课程表格中的research单独设置的背景色 */
+/* 课程类型样式 */
+.japanese {
+  background-color: rgba($grape, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.bureaucracy {
+  background-color: rgba($seaweed, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.research {
+  background-color: rgba($grass-green, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}

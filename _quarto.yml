@@ -80,7 +80,7 @@ website:
         menu:
             - text: Schedule
               href: learning/schedule/index.html
-            - text: Overview
+            - text: Plan
               href: learning/index.html
             - text: Japanese
               href: learning/japanese/index.html

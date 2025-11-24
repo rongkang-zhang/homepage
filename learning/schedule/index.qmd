@@ -8,8 +8,6 @@ page-layout: full
 csl: ../../american-mathematical-society.csl
 ---
 
-# Schedule
-
 <div class="course-schedule">
   <table>
     <thead>
@@ -36,7 +34,17 @@ csl: ../../american-mathematical-society.csl
         <td class="japanese">Japanese</td>
       </tr>
       <tr>
-        <td>13:00 - 19:00</td>
+        <td>13:00 - 15:00</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+        <td class="research">Research</td>
+      </tr>
+      <tr>
+        <td>15:00 - 19:00</td>
         <td class="japanese">Japanese</td>
         <td class="japanese">Japanese</td>
         <td class="japanese">Japanese</td>

@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-subtitle: "Topics to Learn and Progress"
+title: "Plan"
+subtitle: "Learning Plan and Progress"
 author: "Rong-Kang Zhang"
 date: last-modified
 toc: false
