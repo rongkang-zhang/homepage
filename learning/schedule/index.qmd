@@ -1,0 +1,70 @@
+---
+title: "Schedule"
+subtitle: "Timetable for Learning"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+page-layout: full
+csl: ../../american-mathematical-society.csl
+---
+
+# Schedule
+
+<div class="course-schedule">
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>6:00 - 11:00</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+      </tr>
+      <tr>
+        <td>13:00 - 19:00</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+      </tr>
+      <tr>
+        <td>21:00 - 23:59</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+        <td class="bureaucracy">Bureaucracy</td>
+      </tr>
+      <tr>
+        <td>00:00 - 3:00</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+        <td class="japanese">Japanese</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

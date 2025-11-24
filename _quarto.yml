@@ -78,6 +78,8 @@ website:
       - text: Learning&nbsp;<small>▼</small>
         icon: "bi-lamp"
         menu:
+            - text: Schedule
+              href: learning/schedule/index.html
             - text: Overview
               href: learning/index.html
             - text: Japanese

@@ -1903,9 +1903,9 @@ $title-banner-color: null !default;
 $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
-$code-block-bg: #f8f8f8 !default;
-$btn-code-copy-color: #8f5902 !default;
-$btn-code-copy-color-active: #204a87 !default;
+
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -14074,6 +14074,88 @@ $callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
 .about-links a:hover {
   color: #0d5bcd !important; /* 深一点的蓝色 */
   text-decoration: underline; /* 可选：悬停时显示下划线 */
+}
+
+
+/* 课程表容器样式 */
+/* 课程表容器样式 */
+.course-schedule {
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 表格整体样式 */
+.course-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* 表头样式（渐变月亮配色） */
+.course-schedule th {
+  background: linear-gradient(135deg, $imperial-blue 0%, $teal-blue 100%);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 表格单元格样式 */
+.course-schedule td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* 时间列样式 */
+.course-schedule td:first-child {
+  background-color: $air-blue;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* 交替行背景色 */
+.course-schedule tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: rgba($canary, 0.1);
+}
+
+/* 悬停效果 */
+.course-schedule tbody tr:hover td:not(:first-child) {
+  background-color: rgba($coral, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 课程类型样式 */
+.japanese {
+  background-color: rgba($grape, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.bureaucracy {
+  background-color: rgba($seaweed, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .course-schedule {
+    font-size: 0.9rem;
+  }
+  
+  .course-schedule th,
+  .course-schedule td {
+    padding: 0.7rem 0.5rem;
+  }
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
