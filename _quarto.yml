@@ -72,6 +72,10 @@ website:
               href: research/index.html
             - text: 1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy
               href: research/1/index.html
+            - text: 2 - 20251124-Now<br>A Topos-Theoretic Bridge for<br>Geometric Quantum Control
+              href: research/2/index.html
+            - text: 3 - 20251124-Now<br>A Topos-Theoretic Bridge for<br>Quantum Machine Learning
+              href: research/3/index.html
       - text: Conferences
         icon: "bi-calendar-event"
         href: conferences/index.html

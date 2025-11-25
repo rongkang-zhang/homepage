@@ -12,6 +12,19 @@
     ]
   },
   {
+    "listing": "/research/2/index.html",
+    "items": [
+      "/research/2/abstract/index.html",
+      "/research/2/background/index.html",
+      "/research/2/motivation/index.html",
+      "/research/2/objectives/index.html",
+      "/research/2/methodology/index.html",
+      "/research/2/preliminaries/index.html",
+      "/research/2/literature-notes/index.html",
+      "/research/2/results/index.html"
+    ]
+  },
+  {
     "listing": "/extemporaneous-talks/index.html",
     "items": [
       "/extemporaneous-talks/category-theory/index.html"
@@ -41,6 +54,19 @@
       "/research/1/preliminaries/index.html",
       "/research/1/literature-notes/index.html",
       "/research/1/results/index.html"
+    ]
+  },
+  {
+    "listing": "/research/3/index.html",
+    "items": [
+      "/research/3/abstract/index.html",
+      "/research/3/background/index.html",
+      "/research/3/motivation/index.html",
+      "/research/3/objectives/index.html",
+      "/research/3/methodology/index.html",
+      "/research/3/preliminaries/index.html",
+      "/research/3/literature-notes/index.html",
+      "/research/3/results/index.html"
     ]
   },
   {

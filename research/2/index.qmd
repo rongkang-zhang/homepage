@@ -1,0 +1,30 @@
+---
+title: "A Topos-Theoretic Bridge for Geometric Quantum Control"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+categories:
+  - Topos Theory
+  - Holographic Entanglement Entropy
+page-layout: full
+csl: ../../american-mathematical-society.csl
+listing:
+  contents: "*/index.qmd"
+  type: table
+  date-format: "YYYY-MM-DD"
+  categories: false
+  fields: [title, file-modified, author]
+  filter-ui: [title, file-modified, author]
+  sort: ["weight asc", "title asc", "file-modified desc"]
+  sort-ui: true
+  table-striped: true
+  page-size: 20
+---
+
+* [Abstract](abstract/index.qmd)
+
+* [Background](background/index.qmd)
+
+* [Preliminaries](preliminaries/index.qmd)
+
+* [Literature Notes](literature-notes/index.qmd)
