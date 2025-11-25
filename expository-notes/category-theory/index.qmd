@@ -640,3 +640,805 @@ Let \(\mathcal{G}\) be an n-groupoid. We need to construct a topological space \
 Conversely, the fundamental n-groupoid of any homotopy n-type is an n-groupoid. This establishes the equivalence between the two.
 \(\square\)
 :::
+
+
+| 图标 | 图标名称 | 对应网站/用途 | Quarto 使用代码 |
+| :--- | :--- | :--- | :--- |
+| {{< ai academia >}} | academia | Academia.edu | `{{< ai academia >}}` |
+| {{< ai academia-square >}} | academia-square | Academia.edu (方形) | `{{< ai academia-square >}}` |
+| {{< ai acclaim >}} | acclaim | Acclaim | `{{< ai acclaim >}}` |
+| {{< ai acclaim-square >}} | acclaim-square | Acclaim (方形) | `{{< ai acclaim-square >}}` |
+| {{< ai acm >}} | acm | ACM Digital Library | `{{< ai acm >}}` |
+| {{< ai acm-square >}} | acm-square | ACM Digital Library (方形) | `{{< ai acm-square >}}` |
+| {{< ai acmdl >}} | acmdl | ACM Digital Library | `{{< ai acmdl >}}` |
+| {{< ai acmdl-square >}} | acmdl-square | ACM Digital Library (方形) | `{{< ai acmdl-square >}}` |
+| {{< ai ads >}} | ads | NASA ADS | `{{< ai ads >}}` |
+| {{< ai ads-square >}} | ads-square | NASA ADS (方形) | `{{< ai ads-square >}}` |
+| {{< ai africarxiv >}} | africarxiv | AfricArXiv | `{{< ai africarxiv >}}` |
+| {{< ai africarxiv-square >}} | africarxiv-square | AfricArXiv (方形) | `{{< ai africarxiv-square >}}` |
+| {{< ai altmetric >}} | altmetric | Altmetric | `{{< ai altmetric >}}` |
+| {{< ai altmetric-square >}} | altmetric-square | Altmetric (方形) | `{{< ai altmetric-square >}}` |
+| {{< ai aminer >}} | aminer | AMiner | `{{< ai aminer >}}` |
+| {{< ai aminer-square >}} | aminer-square | AMiner (方形) | `{{< ai aminer-square >}}` |
+| {{< ai annualreviews >}} | annualreviews | Annual Reviews | `{{< ai annualreviews >}}` |
+| {{< ai annualreviews-square >}} | annualreviews-square | Annual Reviews (方形) | `{{< ai annualreviews-square >}}` |
+| {{< ai archive >}} | archive | Archive.org | `{{< ai archive >}}` |
+| {{< ai archive-square >}} | archive-square | Archive.org (方形) | `{{< ai archive-square >}}` |
+| {{< ai arxiv >}} | arxiv | arXiv | `{{< ai arxiv >}}` |
+| {{< ai arxiv-square >}} | arxiv-square | arXiv (方形) | `{{< ai arxiv-square >}}` |
+| {{< ai arxivclassic >}} | arxivclassic | arXiv Classic | `{{< ai arxivclassic >}}` |
+| {{< ai arxivclassic-square >}} | arxivclassic-square | arXiv Classic (方形) | `{{< ai arxivclassic-square >}}` |
+| {{< ai authorea >}} | authorea | Authorea | `{{< ai authorea >}}` |
+| {{< ai authorea-square >}} | authorea-square | Authorea (方形) | `{{< ai authorea-square >}}` |
+| {{< ai biorxiv >}} | biorxiv | bioRxiv | `{{< ai biorxiv >}}` |
+| {{< ai biorxiv-square >}} | biorxiv-square | bioRxiv (方形) | `{{< ai biorxiv-square >}}` |
+| {{< ai book >}} | book | Book | `{{< ai book >}}` |
+| {{< ai book-square >}} | book-square | Book (方形) | `{{< ai book-square >}}` |
+| {{< ai bookchapter >}} | bookchapter | Book Chapter | `{{< ai bookchapter >}}` |
+| {{< ai bookchapter-square >}} | bookchapter-square | Book Chapter (方形) | `{{< ai bookchapter-square >}}` |
+| {{< ai blog >}} | blog | Blog | `{{< ai blog >}}` |
+| {{< ai blog-square >}} | blog-square | Blog (方形) | `{{< ai blog-square >}}` |
+| {{< ai cameraready >}} | cameraready | Camera Ready | `{{< ai cameraready >}}` |
+| {{< ai cameraready-square >}} | cameraready-square | Camera Ready (方形) | `{{< ai cameraready-square >}}` |
+| {{< ai ceur >}} | ceur | CEUR Workshop Proceedings | `{{< ai ceur >}}` |
+| {{< ai ceur-square >}} | ceur-square | CEUR Workshop Proceedings (方形) | `{{< ai ceur-square >}}` |
+| {{< ai ciencia-vitae >}} | ciencia-vitae | Ciencia Vitae | `{{< ai ciencia-vitae >}}` |
+| {{< ai ciencia-vitae-square >}} | ciencia-vitae-square | Ciencia Vitae (方形) | `{{< ai ciencia-vitae-square >}}` |
+| {{< ai chemrxiv >}} | chemrxiv | ChemRxiv | `{{< ai chemrxiv >}}` |
+| {{< ai chemrxiv-square >}} | chemrxiv-square | ChemRxiv (方形) | `{{< ai chemrxiv-square >}}` |
+| {{< ai clarivate >}} | clarivate | Clarivate Analytics | `{{< ai clarivate >}}` |
+| {{< ai clarivate-square >}} | clarivate-square | Clarivate Analytics (方形) | `{{< ai clarivate-square >}}` |
+| {{< ai closed-access >}} | closed-access | Closed Access | `{{< ai closed-access >}}` |
+| {{< ai closed-access-square >}} | closed-access-square | Closed Access (方形) | `{{< ai closed-access-square >}}` |
+| {{< ai cnki >}} | cnki | CNKI | `{{< ai cnki >}}` |
+| {{< ai cnki-square >}} | cnki-square | CNKI (方形) | `{{< ai cnki-square >}}` |
+| {{< ai conference >}} | conference | Conference | `{{< ai conference >}}` |
+| {{< ai conference-square >}} | conference-square | Conference (方形) | `{{< ai conference-square >}}` |
+| {{< ai conversation >}} | conversation | Conversation | `{{< ai conversation >}}` |
+| {{< ai conversation-square >}} | conversation-square | Conversation (方形) | `{{< ai conversation-square >}}` |
+| {{< ai coursera >}} | coursera | Coursera | `{{< ai coursera >}}` |
+| {{< ai coursera-square >}} | coursera-square | Coursera (方形) | `{{< ai coursera-square >}}` |
+| {{< ai crossref >}} | crossref | CrossRef | `{{< ai crossref >}}` |
+| {{< ai crossref-square >}} | crossref-square | CrossRef (方形) | `{{< ai crossref-square >}}` |
+| {{< ai cv >}} | cv | CV | `{{< ai cv >}}` |
+| {{< ai cv-square >}} | cv-square | CV (方形) | `{{< ai cv-square >}}` |
+| {{< ai data >}} | data | Data | `{{< ai data >}}` |
+| {{< ai data-square >}} | data-square | Data (方形) | `{{< ai data-square >}}` |
+| {{< ai datacite >}} | datacite | DataCite | `{{< ai datacite >}}` |
+| {{< ai datacite-square >}} | datacite-square | DataCite (方形) | `{{< ai datacite-square >}}` |
+| {{< ai dataset >}} | dataset | Dataset | `{{< ai dataset >}}` |
+| {{< ai dataset-square >}} | dataset-square | Dataset (方形) | `{{< ai dataset-square >}}` |
+| {{< ai dataverse >}} | dataverse | Dataverse | `{{< ai dataverse >}}` |
+| {{< ai dataverse-square >}} | dataverse-square | Dataverse (方形) | `{{< ai dataverse-square >}}` |
+| {{< ai dblp >}} | dblp | DBLP | `{{< ai dblp >}}` |
+| {{< ai dblp-square >}} | dblp-square | DBLP (方形) | `{{< ai dblp-square >}}` |
+| {{< ai degrees >}} | degrees | Degrees | `{{< ai degrees >}}` |
+| {{< ai degrees-square >}} | degrees-square | Degrees (方形) | `{{< ai degrees-square >}}` |
+| {{< ai depsy >}} | depsy | Depsy | `{{< ai depsy >}}` |
+| {{< ai depsy-square >}} | depsy-square | Depsy (方形) | `{{< ai depsy-square >}}` |
+| {{< ai doi >}} | doi | DOI | `{{< ai doi >}}` |
+| {{< ai doi-square >}} | doi-square | DOI (方形) | `{{< ai doi-square >}}` |
+| {{< ai dryad >}} | dryad | Dryad | `{{< ai dryad >}}` |
+| {{< ai dryad-square >}} | dryad-square | Dryad (方形) | `{{< ai dryad-square >}}` |
+| {{< ai elsevier >}} | elsevier | Elsevier | `{{< ai elsevier >}}` |
+| {{< ai elsevier-square >}} | elsevier-square | Elsevier (方形) | `{{< ai elsevier-square >}}` |
+| {{< ai fig >}} | fig | Figure | `{{< ai fig >}}` |
+| {{< ai fig-square >}} | fig-square | Figure (方形) | `{{< ai fig-square >}}` |
+| {{< ai figshare >}} | figshare | Figshare | `{{< ai figshare >}}` |
+| {{< ai figshare-square >}} | figshare-square | Figshare (方形) | `{{< ai figshare-square >}}` |
+| {{< ai font-awesome >}} | font-awesome | Font Awesome | `{{< ai font-awesome >}}` |
+| {{< ai font-awesome-alt >}} | font-awesome-alt | Font Awesome Alt | `{{< ai font-awesome-alt >}}` |
+| {{< ai frontiersin >}} | frontiersin | Frontiers in | `{{< ai frontiersin >}}` |
+| {{< ai frontiersin-square >}} | frontiersin-square | Frontiers in (方形) | `{{< ai frontiersin-square >}}` |
+| {{< ai funding >}} | funding | Funding | `{{< ai funding >}}` |
+| {{< ai funding-square >}} | funding-square | Funding (方形) | `{{< ai funding-square >}}` |
+| {{< ai genarxiv >}} | genarxiv | GenArXiv | `{{< ai genarxiv >}}` |
+| {{< ai genarxiv-square >}} | genarxiv-square | GenArXiv (方形) | `{{< ai genarxiv-square >}}` |
+| {{< ai geochron >}} | geochron | GeoChron | `{{< ai geochron >}}` |
+| {{< ai geochron-square >}} | geochron-square | GeoChron (方形) | `{{< ai geochron-square >}}` |
+| {{< ai github >}} | github | GitHub | `{{< ai github >}}` |
+| {{< ai github-alt >}} | github-alt | GitHub Alt | `{{< ai github-alt >}}` |
+| {{< ai github-square >}} | github-square | GitHub Square | `{{< ai github-square >}}` |
+| {{< ai google >}} | google | Google | `{{< ai google >}}` |
+| {{< ai google-scholar >}} | google-scholar | Google Scholar | `{{< ai google-scholar >}}` |
+| {{< ai google-scholar-square >}} | google-scholar-square | Google Scholar (方形) | `{{< ai google-scholar-square >}}` |
+| {{< ai hal >}} | hal | HAL | `{{< ai hal >}}` |
+| {{< ai hal-square >}} | hal-square | HAL (方形) | `{{< ai hal-square >}}` |
+| {{< ai hypothesis >}} | hypothesis | Hypothesis | `{{< ai hypothesis >}}` |
+| {{< ai hypothesis-square >}} | hypothesis-square | Hypothesis (方形) | `{{< ai hypothesis-square >}}` |
+| {{< ai ideas-repec >}} | ideas-repec | IDEAS/RePEc | `{{< ai ideas-repec >}}` |
+| {{< ai ideas-repec-square >}} | ideas-repec-square | IDEAS/RePEc (方形) | `{{< ai ideas-repec-square >}}` |
+| {{< ai ieee >}} | ieee | IEEE Xplore | `{{< ai ieee >}}` |
+| {{< ai ieee-square >}} | ieee-square | IEEE Xplore (方形) | `{{< ai ieee-square >}}` |
+| {{< ai impactstory >}} | impactstory | ImpactStory | `{{< ai impactstory >}}` |
+| {{< ai impactstory-square >}} | impactstory-square | ImpactStory (方形) | `{{< ai impactstory-square >}}` |
+| {{< ai inaturalist >}} | inaturalist | iNaturalist | `{{< ai inaturalist >}}` |
+| {{< ai inaturalist-square >}} | inaturalist-square | iNaturalist (方形) | `{{< ai inaturalist-square >}}` |
+| {{< ai inpn >}} | inpn | INPN | `{{< ai inpn >}}` |
+| {{< ai inpn-square >}} | inpn-square | INPN (方形) | `{{< ai inpn-square >}}` |
+| {{< ai inspire >}} | inspire | INSPIRE | `{{< ai inspire >}}` |
+| {{< ai inspire-square >}} | inspire-square | INSPIRE (方形) | `{{< ai inspire-square >}}` |
+| {{< ai isidore >}} | isidore | Isidore | `{{< ai isidore >}}` |
+| {{< ai isidore-square >}} | isidore-square | Isidore (方形) | `{{< ai isidore-square >}}` |
+| {{< ai jstage >}} | jstage | J-STAGE | `{{< ai jstage >}}` |
+| {{< ai jstage-square >}} | jstage-square | J-STAGE (方形) | `{{< ai jstage-square >}}` |
+| {{< ai jstor >}} | jstor | JSTOR | `{{< ai jstor >}}` |
+| {{< ai jstor-square >}} | jstor-square | JSTOR (方形) | `{{< ai jstor-square >}}` |
+| {{< ai lattes >}} | lattes | Lattes | `{{< ai lattes >}}` |
+| {{< ai lattes-square >}} | lattes-square | Lattes (方形) | `{{< ai lattes-square >}}` |
+| {{< ai license >}} | license | License | `{{< ai license >}}` |
+| {{< ai license-square >}} | license-square | License (方形) | `{{< ai license-square >}}` |
+| {{< ai linkedin >}} | linkedin | LinkedIn | `{{< ai linkedin >}}` |
+| {{< ai linkedin-square >}} | linkedin-square | LinkedIn Square | `{{< ai linkedin-square >}}` |
+| {{< ai manuscript >}} | manuscript | Manuscript | `{{< ai manuscript >}}` |
+| {{< ai manuscript-square >}} | manuscript-square | Manuscript (方形) | `{{< ai manuscript-square >}}` |
+| {{< ai mathoverflow >}} | mathoverflow | MathOverflow | `{{< ai mathoverflow >}}` |
+| {{< ai mathoverflow-square >}} | mathoverflow-square | MathOverflow (方形) | `{{< ai mathoverflow-square >}}` |
+| {{< ai medrxiv >}} | medrxiv | medRxiv | `{{< ai medrxiv >}}` |
+| {{< ai medrxiv-square >}} | medrxiv-square | medRxiv (方形) | `{{< ai medrxiv-square >}}` |
+| {{< ai mendeley >}} | mendeley | Mendeley | `{{< ai mendeley >}}` |
+| {{< ai mendeley-square >}} | mendeley-square | Mendeley (方形) | `{{< ai mendeley-square >}}` |
+| {{< ai microsoft >}} | microsoft | Microsoft | `{{< ai microsoft >}}` |
+| {{< ai moodle >}} | moodle | Moodle | `{{< ai moodle >}}` |
+| {{< ai moodle-square >}} | moodle-square | Moodle (方形) | `{{< ai moodle-square >}}` |
+| {{< ai mtmt >}} | mtmt | MTMT | `{{< ai mtmt >}}` |
+| {{< ai mtmt-square >}} | mtmt-square | MTMT (方形) | `{{< ai mtmt-square >}}` |
+| {{< ai nature >}} | nature | Nature | `{{< ai nature >}}` |
+| {{< ai nature-square >}} | nature-square | Nature (方形) | `{{< ai nature-square >}}` |
+| {{< ai nakala >}} | nakala | Nakala | `{{< ai nakala >}}` |
+| {{< ai nakala-square >}} | nakala-square | Nakala (方形) | `{{< ai nakala-square >}}` |
+| {{< ai npg >}} | npg | Nature Publishing Group | `{{< ai npg >}}` |
+| {{< ai npg-square >}} | npg-square | Nature Publishing Group (方形) | `{{< ai npg-square >}}` |
+| {{< ai obp >}} | obp | Open Book Publishers | `{{< ai obp >}}` |
+| {{< ai obp-square >}} | obp-square | Open Book Publishers (方形) | `{{< ai obp-square >}}` |
+| {{< ai open-access >}} | open-access | Open Access | `{{< ai open-access >}}` |
+| {{< ai open-access-square >}} | open-access-square | Open Access (方形) | `{{< ai open-access-square >}}` |
+| {{< ai open-data >}} | open-data | Open Data | `{{< ai open-data >}}` |
+| {{< ai open-data-square >}} | open-data-square | Open Data (方形) | `{{< ai open-data-square >}}` |
+| {{< ai open-materials >}} | open-materials | Open Materials | `{{< ai open-materials >}}` |
+| {{< ai open-materials-square >}} | open-materials-square | Open Materials (方形) | `{{< ai open-materials-square >}}` |
+| {{< ai openedition >}} | openedition | OpenEdition | `{{< ai openedition >}}` |
+| {{< ai openedition-square >}} | openedition-square | OpenEdition (方形) | `{{< ai openedition-square >}}` |
+| {{< ai orcid >}} | orcid | ORCID | `{{< ai orcid >}}` |
+| {{< ai orcid-square >}} | orcid-square | ORCID (方形) | `{{< ai orcid-square >}}` |
+| {{< ai osf >}} | osf | OSF | `{{< ai osf >}}` |
+| {{< ai osf-square >}} | osf-square | OSF (方形) | `{{< ai osf-square >}}` |
+| {{< ai overleaf >}} | overleaf | Overleaf | `{{< ai overleaf >}}` |
+| {{< ai overleaf-square >}} | overleaf-square | Overleaf (方形) | `{{< ai overleaf-square >}}` |
+| {{< ai paho >}} | paho | PAHO | `{{< ai paho >}}` |
+| {{< ai paho-square >}} | paho-square | PAHO (方形) | `{{< ai paho-square >}}` |
+| {{< ai peerj >}} | peerj | PeerJ | `{{< ai peerj >}}` |
+| {{< ai peerj-square >}} | peerj-square | PeerJ (方形) | `{{< ai peerj-square >}}` |
+| {{< ai philpapers >}} | philpapers | PhilPapers | `{{< ai philpapers >}}` |
+| {{< ai philpapers-square >}} | philpapers-square | PhilPapers (方形) | `{{< ai philpapers-square >}}` |
+| {{< ai piazza >}} | piazza | Piazza | `{{< ai piazza >}}` |
+| {{< ai piazza-square >}} | piazza-square | Piazza (方形) | `{{< ai piazza-square >}}` |
+| {{< ai plos >}} | plos | PLOS | `{{< ai plos >}}` |
+| {{< ai plos-square >}} | plos-square | PLOS (方形) | `{{< ai plos-square >}}` |
+| {{< ai poster >}} | poster | Poster | `{{< ai poster >}}` |
+| {{< ai poster-square >}} | poster-square | Poster (方形) | `{{< ai poster-square >}}` |
+| {{< ai preprint >}} | preprint | Preprint | `{{< ai preprint >}}` |
+| {{< ai preprint-square >}} | preprint-square | Preprint (方形) | `{{< ai preprint-square >}}` |
+| {{< ai preregistered >}} | preregistered | Preregistered | `{{< ai preregistered >}}` |
+| {{< ai preregistered-square >}} | preregistered-square | Preregistered (方形) | `{{< ai preregistered-square >}}` |
+| {{< ai proceedings >}} | proceedings | Proceedings | `{{< ai proceedings >}}` |
+| {{< ai proceedings-square >}} | proceedings-square | Proceedings (方形) | `{{< ai proceedings-square >}}` |
+| {{< ai protocols >}} | protocols | Protocols | `{{< ai protocols >}}` |
+| {{< ai protocols-square >}} | protocols-square | Protocols (方形) | `{{< ai protocols-square >}}` |
+| {{< ai psyarxiv >}} | psyarxiv | PsyArXiv | `{{< ai psyarxiv >}}` |
+| {{< ai psyarxiv-square >}} | psyarxiv-square | PsyArXiv (方形) | `{{< ai psyarxiv-square >}}` |
+| {{< ai publons >}} | publons | Publons | `{{< ai publons >}}` |
+| {{< ai publons-square >}} | publons-square | Publons (方形) | `{{< ai publons-square >}}` |
+| {{< ai pubmed >}} | pubmed | PubMed | `{{< ai pubmed >}}` |
+| {{< ai pubmed-square >}} | pubmed-square | PubMed (方形) | `{{< ai pubmed-square >}}` |
+| {{< ai pubmedcentral >}} | pubmedcentral | PubMed Central | `{{< ai pubmedcentral >}}` |
+| {{< ai pubmedcentral-square >}} | pubmedcentral-square | PubMed Central (方形) | `{{< ai pubmedcentral-square >}}` |
+| {{< ai pubpeer >}} | pubpeer | PubPeer | `{{< ai pubpeer >}}` |
+| {{< ai pubpeer-square >}} | pubpeer-square | PubPeer (方形) | `{{< ai pubpeer-square >}}` |
+| {{< ai pub >}} | pub | Publication | `{{< ai pub >}}` |
+| {{< ai pub-square >}} | pub-square | Publication (方形) | `{{< ai pub-square >}}` |
+| {{< ai pnas >}} | pnas | PNAS | `{{< ai pnas >}}` |
+| {{< ai pnas-square >}} | pnas-square | PNAS (方形) | `{{< ai pnas-square >}}` |
+| {{< ai researcherid >}} | researcherid | ResearcherID | `{{< ai researcherid >}}` |
+| {{< ai researcherid-square >}} | researcherid-square | ResearcherID (方形) | `{{< ai researcherid-square >}}` |
+| {{< ai researchgate >}} | researchgate | ResearchGate | `{{< ai researchgate >}}` |
+| {{< ai researchgate-square >}} | researchgate-square | ResearchGate (方形) | `{{< ai researchgate-square >}}` |
+| {{< ai ror >}} | ror | ROR | `{{< ai ror >}}` |
+| {{< ai ror-square >}} | ror-square | ROR (方形) | `{{< ai ror-square >}}` |
+| {{< ai rsc >}} | rsc | Royal Society of Chemistry | `{{< ai rsc >}}` |
+| {{< ai rsc-square >}} | rsc-square | Royal Society of Chemistry (方形) | `{{< ai rsc-square >}}` |
+| {{< ai sagepub >}} | sagepub | SAGE Publications | `{{< ai sagepub >}}` |
+| {{< ai sagepub-square >}} | sagepub-square | SAGE Publications (方形) | `{{< ai sagepub-square >}}` |
+| {{< ai sci-hub >}} | sci-hub | Sci-Hub | `{{< ai sci-hub >}}` |
+| {{< ai sci-hub-square >}} | sci-hub-square | Sci-Hub (方形) | `{{< ai sci-hub-square >}}` |
+| {{< ai scirate >}} | scirate | SciRate | `{{< ai scirate >}}` |
+| {{< ai scirate-square >}} | scirate-square | SciRate (方形) | `{{< ai scirate-square >}}` |
+| {{< ai scopus >}} | scopus | Scopus | `{{< ai scopus >}}` |
+| {{< ai scopus-square >}} | scopus-square | Scopus (方形) | `{{< ai scopus-square >}}` |
+| {{< ai science >}} | science | Science | `{{< ai science >}}` |
+| {{< ai science-square >}} | science-square | Science (方形) | `{{< ai science-square >}}` |
+| {{< ai sciencedirect >}} | sciencedirect | ScienceDirect | `{{< ai sciencedirect >}}` |
+| {{< ai sciencedirect-square >}} | sciencedirect-square | ScienceDirect (方形) | `{{< ai sciencedirect-square >}}` |
+| {{< ai semantic-scholar >}} | semantic-scholar | Semantic Scholar | `{{< ai semantic-scholar >}}` |
+| {{< ai semantic-scholar-square >}} | semantic-scholar-square | Semantic Scholar (方形) | `{{< ai semantic-scholar-square >}}` |
+| {{< ai slides >}} | slides | Slides | `{{< ai slides >}}` |
+| {{< ai slides-square >}} | slides-square | Slides (方形) | `{{< ai slides-square >}}` |
+| {{< ai springer >}} | springer | Springer | `{{< ai springer >}}` |
+| {{< ai springer-square >}} | springer-square | Springer (方形) | `{{< ai springer-square >}}` |
+| {{< ai springeropen >}} | springeropen | SpringerOpen | `{{< ai springeropen >}}` |
+| {{< ai springeropen-square >}} | springeropen-square | SpringerOpen (方形) | `{{< ai springeropen-square >}}` |
+| {{< ai stackoverflow >}} | stackoverflow | Stack Overflow | `{{< ai stackoverflow >}}` |
+| {{< ai stackoverflow-square >}} | stackoverflow-square | Stack Overflow (方形) | `{{< ai stackoverflow-square >}}` |
+| {{< ai ssrn >}} | ssrn | SSRN | `{{< ai ssrn >}}` |
+| {{< ai ssrn-square >}} | ssrn-square | SSRN (方形) | `{{< ai ssrn-square >}}` |
+| {{< ai tandfonline >}} | tandfonline | Taylor & Francis Online | `{{< ai tandfonline >}}` |
+| {{< ai tandfonline-square >}} | tandfonline-square | Taylor & Francis Online (方形) | `{{< ai tandfonline-square >}}` |
+| {{< ai taylorfrancis >}} | taylorfrancis | Taylor & Francis | `{{< ai taylorfrancis >}}` |
+| {{< ai taylorfrancis-square >}} | taylorfrancis-square | Taylor & Francis (方形) | `{{< ai taylorfrancis-square >}}` |
+| {{< ai theses >}} | theses | Theses | `{{< ai theses >}}` |
+| {{< ai theses-square >}} | theses-square | Theses (方形) | `{{< ai theses-square >}}` |
+| {{< ai thesis >}} | thesis | Thesis | `{{< ai thesis >}}` |
+| {{< ai thesis-square >}} | thesis-square | Thesis (方形) | `{{< ai thesis-square >}}` |
+| {{< ai video >}} | video | Video | `{{< ai video >}}` |
+| {{< ai video-square >}} | video-square | Video (方形) | `{{< ai video-square >}}` |
+| {{< ai wiley >}} | wiley | Wiley | `{{< ai wiley >}}` |
+| {{< ai wiley-square >}} | wiley-square | Wiley (方形) | `{{< ai wiley-square >}}` |
+| {{< ai webofscience >}} | webofscience | Web of Science | `{{< ai webofscience >}}` |
+| {{< ai webofscience-square >}} | webofscience-square | Web of Science (方形) | `{{< ai webofscience-square >}}` |
+| {{< ai zenodo >}} | zenodo | Zenodo | `{{< ai zenodo >}}` |
+| {{< ai zenodo-square >}} | zenodo-square | Zenodo (方形) | `{{< ai zenodo-square >}}` |
+| {{< ai zotero >}} | zotero | Zotero | `{{< ai zotero >}}` |
+| {{< ai zotero-square >}} | zotero-square | Zotero (方形) | `{{< ai zotero-square >}}` |
+
+# Default icons
+
+| 图标预览 | 图标名称 | 对应网站/用途 | 使用代码 |
+|----------|----------|---------------|----------|
+| {{< fa solid address-book >}} | address-book | 地址簿 | `{{< fa solid address-book >}}` |
+| {{< fa solid address-card >}} | address-card | 地址卡 | `{{< fa solid address-card >}}` |
+| {{< fa solid adjust >}} | adjust | 调整 | `{{< fa solid adjust >}}` |
+| {{< fa solid air-freshener >}} | air-freshener | 空气清新剂 | `{{< fa solid air-freshener >}}` |
+| {{< fa solid airplane >}} | airplane | 飞机 | `{{< fa solid airplane >}}` |
+| {{< fa solid alarm >}} | alarm | 闹钟 | `{{< fa solid alarm >}}` |
+| {{< fa solid align-center >}} | align-center | 居中对齐 | `{{< fa solid align-center >}}` |
+| {{< fa solid align-justify >}} | align-justify | 两端对齐 | `{{< fa solid align-justify >}}` |
+| {{< fa solid align-left >}} | align-left | 左对齐 | `{{< fa solid align-left >}}` |
+| {{< fa solid align-right >}} | align-right | 右对齐 | `{{< fa solid align-right >}}` |
+| {{< fa solid all-inclusive >}} | all-inclusive | 全包 | `{{< fa solid all-inclusive >}}` |
+| {{< fa solid anchor >}} | anchor | 锚 | `{{< fa solid anchor >}}` |
+| {{< fa solid angle-double-down >}} | angle-double-down | 双向下箭头 | `{{< fa solid angle-double-down >}}` |
+| {{< fa solid angle-double-left >}} | angle-double-left | 双向左箭头 | `{{< fa solid angle-double-left >}}` |
+| {{< fa solid angle-double-right >}} | angle-double-right | 双向右箭头 | `{{< fa solid angle-double-right >}}` |
+| {{< fa solid angle-double-up >}} | angle-double-up | 双向上箭头 | `{{< fa solid angle-double-up >}}` |
+| {{< fa solid angle-down >}} | angle-down | 向下箭头 | `{{< fa solid angle-down >}}` |
+| {{< fa solid angle-left >}} | angle-left | 向左箭头 | `{{< fa solid angle-left >}}` |
+| {{< fa solid angle-right >}} | angle-right | 向右箭头 | `{{< fa solid angle-right >}}` |
+| {{< fa solid angle-up >}} | angle-up | 向上箭头 | `{{< fa solid angle-up >}}` |
+| {{< fa solid angry >}} | angry | 生气 | `{{< fa solid angry >}}` |
+| {{< fa solid apple-alt >}} | apple-alt | 苹果（简化） | `{{< fa solid apple-alt >}}` |
+| {{< fa solid archive >}} | archive | 归档 | `{{< fa solid archive >}}` |
+| {{< fa solid arrow-alt-circle-down >}} | arrow-alt-circle-down | 圆形向下箭头 | `{{< fa solid arrow-alt-circle-down >}}` |
+| {{< fa solid arrow-alt-circle-left >}} | arrow-alt-circle-left | 圆形向左箭头 | `{{< fa solid arrow-alt-circle-left >}}` |
+| {{< fa solid arrow-alt-circle-right >}} | arrow-alt-circle-right | 圆形向右箭头 | `{{< fa solid arrow-alt-circle-right >}}` |
+| {{< fa solid arrow-alt-circle-up >}} | arrow-alt-circle-up | 圆形向上箭头 | `{{< fa solid arrow-alt-circle-up >}}` |
+| {{< fa solid arrow-circle-down >}} | arrow-circle-down | 圆形向下箭头（实心） | `{{< fa solid arrow-circle-down >}}` |
+| {{< fa solid arrow-circle-left >}} | arrow-circle-left | 圆形向左箭头（实心） | `{{< fa solid arrow-circle-left >}}` |
+| {{< fa solid arrow-circle-right >}} | arrow-circle-right | 圆形向右箭头（实心） | `{{< fa solid arrow-circle-right >}}` |
+| {{< fa solid arrow-circle-up >}} | arrow-circle-up | 圆形向上箭头（实心） | `{{< fa solid arrow-circle-up >}}` |
+| {{< fa solid arrow-down >}} | arrow-down | 向下箭头（实心） | `{{< fa solid arrow-down >}}` |
+| {{< fa solid arrow-left >}} | arrow-left | 向左箭头（实心） | `{{< fa solid arrow-left >}}` |
+| {{< fa solid arrow-right >}} | arrow-right | 向右箭头（实心） | `{{< fa solid arrow-right >}}` |
+| {{< fa solid arrow-up >}} | arrow-up | 向上箭头（实心） | `{{< fa solid arrow-up >}}` |
+| {{< fa solid arrows >}} | arrows | 双向箭头 | `{{< fa solid arrows >}}` |
+| {{< fa solid arrows-alt >}} | arrows-alt | 双向箭头（扩展） | `{{< fa solid arrows-alt >}}` |
+| {{< fa solid arrows-h >}} | arrows-h | 水平双向箭头 | `{{< fa solid arrows-h >}}` |
+| {{< fa solid arrows-v >}} | arrows-v | 垂直双向箭头 | `{{< fa solid arrows-v >}}` |
+| {{< fa solid artstation >}} | artstation | ArtStation（艺术平台） | `{{< fa solid artstation >}}` |
+| {{< fa solid assistive-listening-systems >}} | assistive-listening-systems | 助听系统 | `{{< fa solid assistive-listening-systems >}}` |
+| {{< fa solid asterisk >}} | asterisk | 星号 | `{{< fa solid asterisk >}}` |
+| {{< fa solid at >}} | at | @符号 | `{{< fa solid at >}}` |
+| {{< fa solid audio-description >}} | audio-description | 音频描述 | `{{< fa solid audio-description >}}` |
+| {{< fa solid autumn >}} | autumn | 秋天 | `{{< fa solid autumn >}}` |
+| {{< fa solid award >}} | award | 奖项 | `{{< fa solid award >}}` |
+| {{< fa solid baby >}} | baby | 婴儿 | `{{< fa solid baby >}}` |
+| {{< fa solid baby-carriage >}} | baby-carriage | 婴儿车 | `{{< fa solid baby-carriage >}}` |
+| {{< fa solid backspace >}} | backspace | 退格键 | `{{< fa solid backspace >}}` |
+| {{< fa solid backpack >}} | backpack | 背包 | `{{< fa solid backpack >}}` |
+| {{< fa solid balance-scale >}} | balance-scale | 天平 | `{{< fa solid balance-scale >}}` |
+| {{< fa solid ball-pool >}} | ball-pool | 球池 | `{{< fa solid ball-pool >}}` |
+| {{< fa solid ban >}} | ban | 禁止 | `{{< fa solid ban >}}` |
+| {{< fa solid band-aid >}} | band-aid | 创可贴 | `{{< fa solid band-aid >}}` |
+| {{< fa solid barcode >}} | barcode | 条形码 | `{{< fa solid barcode >}}` |
+| {{< fa solid bars >}} | bars | 菜单（ bars） | `{{< fa solid bars >}}` |
+| {{< fa solid baseball-ball >}} | baseball-ball | 棒球 | `{{< fa solid baseball-ball >}}` |
+| {{< fa solid basketball-ball >}} | basketball-ball | 篮球 | `{{< fa solid basketball-ball >}}` |
+| {{< fa solid bath >}} | bath | 浴缸 | `{{< fa solid bath >}}` |
+| {{< fa solid battery-empty >}} | battery-empty | 电池（空） | `{{< fa solid battery-empty >}}` |
+| {{< fa solid battery-full >}} | battery-full | 电池（满） | `{{< fa solid battery-full >}}` |
+| {{< fa solid battery-half >}} | battery-half | 电池（半满） | `{{< fa solid battery-half >}}` |
+| {{< fa solid battery-quarter >}} | battery-quarter | 电池（四分之一） | `{{< fa solid battery-quarter >}}` |
+| {{< fa solid battery-three-quarters >}} | battery-three-quarters | 电池（四分之三） | `{{< fa solid battery-three-quarters >}}` |
+| {{< fa solid bed >}} | bed | 床 | `{{< fa solid bed >}}` |
+| {{< fa solid beer >}} | beer | 啤酒 | `{{< fa solid beer >}}` |
+| {{< fa solid bell >}} | bell | 铃铛 | `{{< fa solid bell >}}` |
+| {{< fa solid bell-slash >}} | bell-slash | 铃铛（静音） | `{{< fa solid bell-slash >}}` |
+| {{< fa solid bicycle >}} | bicycle | 自行车 | `{{< fa solid bicycle >}}` |
+| {{< fa solid binoculars >}} | binoculars | 双筒望远镜 | `{{< fa solid binoculars >}}` |
+| {{< fa solid biohazard >}} | biohazard | 生物危害 | `{{< fa solid biohazard >}}` |
+| {{< fa solid bird >}} | bird | 鸟 | `{{< fa solid bird >}}` |
+| {{< fa solid birthday-cake >}} | birthday-cake | 生日蛋糕 | `{{< fa solid birthday-cake >}}` |
+| {{< fa solid bluetooth >}} | bluetooth | 蓝牙 | `{{< fa solid bluetooth >}}` |
+| {{< fa solid boat >}} | boat | 船 | `{{< fa solid boat >}}` |
+| {{< fa solid bone >}} | bone | 骨头 | `{{< fa solid bone >}}` |
+| {{< fa solid book >}} | book | 书 | `{{< fa solid book >}}` |
+| {{< fa solid book-open >}} | book-open | 打开的书 | `{{< fa solid book-open >}}` |
+| {{< fa solid bookmark >}} | bookmark | 书签 | `{{< fa solid bookmark >}}` |
+| {{< fa solid border-all >}} | border-all | 全部边框 | `{{< fa solid border-all >}}` |
+| {{< fa solid border-none >}} | border-none | 无边框 | `{{< fa solid border-none >}}` |
+| {{< fa solid bowling-ball >}} | bowling-ball | 保龄球 | `{{< fa solid bowling-ball >}}` |
+| {{< fa solid box >}} | box | 盒子 | `{{< fa solid box >}}` |
+| {{< fa solid box-open >}} | box-open | 打开的盒子 | `{{< fa solid box-open >}}` |
+| {{< fa solid braille >}} | braille | 盲文 | `{{< fa solid braille >}}` |
+| {{< fa solid briefcase >}} | briefcase | 公文包 | `{{< fa solid briefcase >}}` |
+| {{< fa solid broadcast-tower >}} | broadcast-tower | 广播塔 | `{{< fa solid broadcast-tower >}}` |
+| {{< fa solid brush >}} | brush | 刷子 | `{{< fa solid brush >}}` |
+| {{< fa solid bug >}} | bug | 虫子 | `{{< fa solid bug >}}` |
+| {{< fa solid building >}} | building | 建筑 | `{{< fa solid building >}}` |
+| {{< fa solid building-columns >}} | building-columns | 建筑（带柱子） | `{{< fa solid building-columns >}}` |
+| {{< fa solid bullhorn >}} | bullhorn | 扩音器 | `{{< fa solid bullhorn >}}` |
+| {{< fa solid bullseye >}} | bullseye | 靶心 | `{{< fa solid bullseye >}}` |
+| {{< fa solid bus >}} | bus | 公交车 | `{{< fa solid bus >}}` |
+| {{< fa solid cab >}} | cab | 出租车 | `{{< fa solid cab >}}` |
+| {{< fa solid calculator >}} | calculator | 计算器 | `{{< fa solid calculator >}}` |
+| {{< fa solid calendar >}} | calendar | 日历 | `{{< fa solid calendar >}}` |
+| {{< fa solid calendar-alt >}} | calendar-alt | 日历（简化） | `{{< fa solid calendar-alt >}}` |
+| {{< fa solid calendar-check >}} | calendar-check | 日历（带勾选） | `{{< fa solid calendar-check >}}` |
+| {{< fa solid calendar-day >}} | calendar-day | 日历（按天） | `{{< fa solid calendar-day >}}` |
+| {{< fa solid calendar-minus >}} | calendar-minus | 日历（减号） | `{{< fa solid calendar-minus >}}` |
+| {{< fa solid calendar-plus >}} | calendar-plus | 日历（加号） | `{{< fa solid calendar-plus >}}` |
+| {{< fa solid calendar-week >}} | calendar-week | 日历（按周） | `{{< fa solid calendar-week >}}` |
+| {{< fa solid camera >}} | camera | 相机 | `{{< fa solid camera >}}` |
+| {{< fa solid camera-retro >}} | camera-retro | 复古相机 | `{{< fa solid camera-retro >}}` |
+| {{< fa solid campground >}} | campground | 露营地 | `{{< fa solid campground >}}` |
+| {{< fa solid candle >}} | candle | 蜡烛 | `{{< fa solid candle >}}` |
+| {{< fa solid candy-cane >}} | candy-cane | 拐杖糖 | `{{< fa solid candy-cane >}}` |
+| {{< fa solid canister >}} | canister | 罐 | `{{< fa solid canister >}}` |
+| {{< fa solid caps-lock >}} | caps-lock | 大小写锁定 | `{{< fa solid caps-lock >}}` |
+| {{< fa solid car >}} | car | 汽车 | `{{< fa solid car >}}` |
+| {{< fa solid car-alt >}} | car-alt | 汽车（简化） | `{{< fa solid car-alt >}}` |
+| {{< fa solid car-battery >}} | car-battery | 汽车电池 | `{{< fa solid car-battery >}}` |
+| {{< fa solid caret-down >}} | caret-down | 插入符号（下） | `{{< fa solid caret-down >}}` |
+| {{< fa solid caret-left >}} | caret-left | 插入符号（左） | `{{< fa solid caret-left >}}` |
+| {{< fa solid caret-right >}} | caret-right | 插入符号（右） | `{{< fa solid caret-right >}}` |
+| {{< fa solid caret-up >}} | caret-up | 插入符号（上） | `{{< fa solid caret-up >}}` |
+| {{< fa solid cart-arrow-down >}} | cart-arrow-down | 购物车（向下箭头） | `{{< fa solid cart-arrow-down >}}` |
+| {{< fa solid cart-plus >}} | cart-plus | 购物车（加号） | `{{< fa solid cart-plus >}}` |
+| {{< fa solid cat >}} | cat | 猫 | `{{< fa solid cat >}}` |
+| {{< fa solid certificate >}} | certificate | 证书 | `{{< fa solid certificate >}}` |
+| {{< fa solid chair >}} | chair | 椅子 | `{{< fa solid chair >}}` |
+| {{< fa solid chalkboard >}} | chalkboard | 黑板 | `{{< fa solid chalkboard >}}` |
+| {{< fa solid cheese >}} | cheese | 奶酪 | `{{< fa solid cheese >}}` |
+| {{< fa solid chess >}} | chess | 国际象棋 | `{{< fa solid chess >}}` |
+| {{< fa solid chess-bishop >}} | chess-bishop | 国际象棋（主教） | `{{< fa solid chess-bishop >}}` |
+| {{< fa solid chess-board >}} | chess-board | 国际象棋棋盘 | `{{< fa solid chess-board >}}` |
+| {{< fa solid chess-king >}} | chess-king | 国际象棋（国王） | `{{< fa solid chess-king >}}` |
+| {{< fa solid chess-knight >}} | chess-knight | 国际象棋（骑士） | `{{< fa solid chess-knight >}}` |
+| {{< fa solid chess-pawn >}} | chess-pawn | 国际象棋（兵） | `{{< fa solid chess-pawn >}}` |
+| {{< fa solid chess-queen >}} | chess-queen | 国际象棋（皇后） | `{{< fa solid chess-queen >}}` |
+| {{< fa solid chess-rook >}} | chess-rook | 国际象棋（车） | `{{< fa solid chess-rook >}}` |
+| {{< fa solid child >}} | child | 小孩 | `{{< fa solid child >}}` |
+| {{< fa solid circle >}} | circle | 圆形 | `{{< fa solid circle >}}` |
+| {{< fa solid circle-check >}} | circle-check | 圆形（勾选） | `{{< fa solid circle-check >}}` |
+| {{< fa solid circle-notch >}} | circle-notch | 圆形（缺口） | `{{< fa solid circle-notch >}}` |
+| {{< fa solid circle-o >}} | circle-o | 圆形（空心） | `{{< fa solid circle-o >}}` |
+| {{< fa solid circle-of-fifths >}} | circle-of-fifths | 五度圈 | `{{< fa solid circle-of-fifths >}}` |
+| {{< fa solid circle-play >}} | circle-play | 圆形（播放） | `{{< fa solid circle-play >}}` |
+| {{< fa solid circle-plus >}} | circle-plus | 圆形（加号） | `{{< fa solid circle-plus >}}` |
+| {{< fa solid circle-question >}} | circle-question | 圆形（问号） | `{{< fa solid circle-question >}}` |
+| {{< fa solid circle-xmark >}} | circle-xmark | 圆形（叉号） | `{{< fa solid circle-xmark >}}` |
+| {{< fa solid clipboard >}} | clipboard | 剪贴板 | `{{< fa solid clipboard >}}` |
+| {{< fa solid clipboard-check >}} | clipboard-check | 剪贴板（勾选） | `{{< fa solid clipboard-check >}}` |
+| {{< fa solid clipboard-list >}} | clipboard-list | 剪贴板（列表） | `{{< fa solid clipboard-list >}}` |
+| {{< fa solid clock >}} | clock | 时钟 | `{{< fa solid clock >}}` |
+| {{< fa solid clone >}} | clone | 克隆 | `{{< fa solid clone >}}` |
+| {{< fa solid closed-captioning >}} | closed-captioning | 隐藏字幕 | `{{< fa solid closed-captioning >}}` |
+| {{< fa solid cloud >}} | cloud | 云 | `{{< fa solid cloud >}}` |
+| {{< fa solid cloud-download-alt >}} | cloud-download-alt | 云下载 | `{{< fa solid cloud-download-alt >}}` |
+| {{< fa solid cloud-upload-alt >}} | cloud-upload-alt | 云上传 | `{{< fa solid cloud-upload-alt >}}` |
+| {{< fa solid code >}} | code | 代码 | `{{< fa solid code >}}` |
+| {{< fa solid code-branch >}} | code-branch | 代码分支 | `{{< fa solid code-branch >}}` |
+| {{< fa solid coffee >}} | coffee | 咖啡 | `{{< fa solid coffee >}}` |
+| {{< fa solid cog >}} | cog | 齿轮 | `{{< fa solid cog >}}` |
+| {{< fa solid cogs >}} | cogs | 齿轮组 | `{{< fa solid cogs >}}` |
+| {{< fa solid coins >}} | coins | 硬币 | `{{< fa solid coins >}}` |
+| {{< fa solid column >}} | column | 列 | `{{< fa solid column >}}` |
+| {{< fa solid comment >}} | comment | 评论 | `{{< fa solid comment >}}` |
+| {{< fa solid comment-alt >}} | comment-alt | 评论（简化） | `{{< fa solid comment-alt >}}` |
+| {{< fa solid comment-dots >}} | comment-dots | 评论（点） | `{{< fa solid comment-dots >}}` |
+| {{< fa solid comments >}} | comments | 评论组 | `{{< fa solid comments >}}` |
+| {{< fa solid compass >}} | compass | 指南针 | `{{< fa solid compass >}}` |
+| {{< fa solid compress >}} | compress | 压缩 | `{{< fa solid compress >}}` |
+| {{< fa solid computer >}} | computer | 电脑 | `{{< fa solid computer >}}` |
+| {{< fa solid concrete >}} | concrete | 混凝土 | `{{< fa solid concrete >}}` |
+| {{< fa solid cone >}} | cone | 圆锥体 | `{{< fa solid cone >}}` |
+| {{< fa solid connectdevelop >}} | connectdevelop | ConnectDevelop | `{{< fa solid connectdevelop >}}` |
+| {{< fa solid cookie >}} | cookie | 饼干 | `{{< fa solid cookie >}}` |
+| {{< fa solid copy >}} | copy | 复制 | `{{< fa solid copy >}}` |
+| {{< fa solid copyright >}} | copyright | 版权 | `{{< fa solid copyright >}}` |
+| {{< fa solid couch >}} | couch | 沙发 | `{{< fa solid couch >}}` |
+| {{< fa solid cow >}} | cow | 牛 | `{{< fa solid cow >}}` |
+| {{< fa solid credit-card >}} | credit-card | 信用卡 | `{{< fa solid credit-card >}}` |
+| {{< fa solid crop >}} | crop | 裁剪 | `{{< fa solid crop >}}` |
+| {{< fa solid cross >}} | cross | 十字架 | `{{< fa solid cross >}}` |
+| {{< fa solid crosshairs >}} | crosshairs | 十字准星 | `{{< fa solid crosshairs >}}` |
+| {{< fa solid crown >}} | crown | 皇冠 | `{{< fa solid crown >}}` |
+| {{< fa solid cube >}} | cube | 立方体 | `{{< fa solid cube >}}` |
+| {{< fa solid cubes >}} | cubes | 立方体组 | `{{< fa solid cubes >}}` |
+| {{< fa solid cut >}} | cut | 剪切 | `{{< fa solid cut >}}` |
+| {{< fa solid cutlery >}} | cutlery | 餐具 | `{{< fa solid cutlery >}}` |
+| {{< fa solid dashboard >}} | dashboard | 仪表盘 | `{{< fa solid dashboard >}}` |
+| {{< fa solid database >}} | database | 数据库 | `{{< fa solid database >}}` |
+| {{< fa solid deaf >}} | deaf | 聋人 | `{{< fa solid deaf >}}` |
+| {{< fa solid desktop >}} | desktop | 桌面 | `{{< fa solid desktop >}}` |
+| {{< fa solid dev >}} | dev | 开发 | `{{< fa solid dev >}}` |
+| {{< fa solid diamond >}} | diamond | 钻石 | `{{< fa solid diamond >}}` |
+| {{< fa solid dice >}} | dice | 骰子 | `{{< fa solid dice >}}` |
+| {{< fa solid dice-d20 >}} | dice-d20 | 骰子（D20） | `{{< fa solid dice-d20 >}}` |
+| {{< fa solid dice-d6 >}} | dice-d6 | 骰子（D6） | `{{< fa solid dice-d6 >}}` |
+| {{< fa solid direction >}} | direction | 方向 | `{{< fa solid direction >}}` |
+| {{< fa solid disabled >}} | disabled | 禁用 | `{{< fa solid disabled >}}` |
+| {{< fa solid docker >}} | docker | Docker | `{{< fa solid docker >}}` |
+| {{< fa solid dog >}} | dog | 狗 | `{{< fa solid dog >}}` |
+| {{< fa solid dollar-sign >}} | dollar-sign | 美元符号 | `{{< fa solid dollar-sign >}}` |
+| {{< fa solid dot-circle >}} | dot-circle | 点圆形 | `{{< fa solid dot-circle >}}` |
+| {{< fa solid download >}} | download | 下载 | `{{< fa solid download >}}` |
+| {{< fa solid draggable >}} | draggable | 可拖拽 | `{{< fa solid draggable >}}` |
+| {{< fa solid dragon >}} | dragon | 龙 | `{{< fa solid dragon >}}` |
+| {{< fa solid draw-polygon >}} | draw-polygon | 绘制多边形 | `{{< fa solid draw-polygon >}}` |
+| {{< fa solid dribbble >}} | dribbble | Dribbble（设计平台） | `{{< fa solid dribbble >}}` |
+| {{< fa solid drum >}} | drum | 鼓 | `{{< fa solid drum >}}` |
+| {{< fa solid drumstick-bite >}} | drumstick-bite | 鸡腿 | `{{< fa solid drumstick-bite >}}` |
+| {{< fa solid dropbox >}} | dropbox | Dropbox（云存储） | `{{< fa solid dropbox >}}` |
+| {{< fa solid drown >}} | drown | 溺水 | `{{< fa solid drown >}}` |
+| {{< fa solid dvd >}} | dvd | DVD | `{{< fa solid dvd >}}` |
+| {{< fa solid edit >}} | edit | 编辑 | `{{< fa solid edit >}}` |
+| {{< fa solid eject >}} | eject | 弹出 | `{{< fa solid eject >}}` |
+| {{< fa solid egg >}} | egg | 鸡蛋 | `{{< fa solid egg >}}` |
+| {{< fa solid electricity >}} | electricity | 电 | `{{< fa solid electricity >}}` |
+| {{< fa solid elevator >}} | elevator | 电梯 | `{{< fa solid elevator >}}` |
+| {{< fa solid ellipsis-h >}} | ellipsis-h | 水平省略号 | `{{< fa solid ellipsis-h >}}` |
+| {{< fa solid ellipsis-v >}} | ellipsis-v | 垂直省略号 | `{{< fa solid ellipsis-v >}}` |
+| {{< fa solid envelope >}} | envelope | 信封 | `{{< fa solid envelope >}}` |
+| {{< fa solid envelope-open >}} | envelope-open | 打开的信封 | `{{< fa solid envelope-open >}}` |
+| {{< fa solid envelope-square >}} | envelope-square | 方形信封 | `{{< fa solid envelope-square >}}` |
+| {{< fa solid equalizer >}} | equalizer | 均衡器 | `{{< fa solid equalizer >}}` |
+| {{< fa solid eraser >}} | eraser | 橡皮擦 | `{{< fa solid eraser >}}` |
+| {{< fa solid euro-sign >}} | euro-sign | 欧元符号 | `{{< fa solid euro-sign >}}` |
+| {{< fa solid exchange-alt >}} | exchange-alt | 交换 | `{{< fa solid exchange-alt >}}` |
+| {{< fa solid exclamation >}} | exclamation | 感叹号 | `{{< fa solid exclamation >}}` |
+| {{< fa solid exclamation-circle >}} | exclamation-circle | 圆形感叹号 | `{{< fa solid exclamation-circle >}}` |
+| {{< fa solid exclamation-triangle >}} | exclamation-triangle | 三角形感叹号 | `{{< fa solid exclamation-triangle >}}` |
+| {{< fa solid expand >}} | expand | 展开 | `{{< fa solid expand >}}` |
+| {{< fa solid external-link >}} | external-link | 外部链接 | `{{< fa solid external-link >}}` |
+| {{< fa solid external-link-alt >}} | external-link-alt | 外部链接（简化） | `{{< fa solid external-link-alt >}}` |
+| {{< fa solid eye >}} | eye | 眼睛 | `{{< fa solid eye >}}` |
+| {{< fa solid eye-slash >}} | eye-slash | 眼睛（斜杠） | `{{< fa solid eye-slash >}}` |
+| {{< fa solid face-grin-stars >}} | face-grin-stars | 笑脸（星星眼） | `{{< fa solid face-grin-stars >}}` |
+| {{< fa solid face-laugh-beam >}} | face-laugh-beam | 笑脸（大笑） | `{{< fa solid face-laugh-beam >}}` |
+| {{< fa solid face-meh >}} | face-meh | 笑脸（平淡） | `{{< fa solid face-meh >}}` |
+| {{< fa solid face-smile >}} | face-smile | 笑脸（微笑） | `{{< fa solid face-smile >}}` |
+| {{< fa solid facebook >}} | facebook | Facebook（社交平台） | `{{< fa solid facebook >}}` |
+| {{< fa solid facebook-f >}} | facebook-f | Facebook（简化） | `{{< fa solid facebook-f >}}` |
+| {{< fa solid facebook-messenger >}} | facebook-messenger | Facebook Messenger（聊天工具） | `{{< fa solid facebook-messenger >}}` |
+| {{< fa solid factory >}} | factory | 工厂 | `{{< fa solid factory >}}` |
+| {{< fa solid fan >}} | fan | 风扇 | `{{< fa solid fan >}}` |
+| {{< fa solid fast-backward >}} | fast-backward | 快退 | `{{< fa solid fast-backward >}}` |
+| {{< fa solid fast-forward >}} | fast-forward | 快进 | `{{< fa solid fast-forward >}}` |
+| {{< fa solid fax >}} | fax | 传真 | `{{< fa solid fax >}}` |
+| {{< fa solid feather >}} | feather | 羽毛 | `{{< fa solid feather >}}` |
+| {{< fa solid feed >}} | feed | 饲料 | `{{< fa solid feed >}}` |
+| {{< fa solid female >}} | female | 女性 | `{{< fa solid female >}}` |
+| {{< fa solid ferry >}} | ferry | 渡轮 | `{{< fa solid ferry >}}` |
+| {{< fa solid file >}} | file | 文件 | `{{< fa solid file >}}` |
+| {{< fa solid file-alt >}} | file-alt | 文件（简化） | `{{< fa solid file-alt >}}` |
+| {{< fa solid file-archive >}} | file-archive | 归档文件 | `{{< fa solid file-archive >}}` |
+| {{< fa solid file-audio >}} | file-audio | 音频文件 | `{{< fa solid file-audio >}}` |
+| {{< fa solid file-code >}} | file-code | 代码文件 | `{{< fa solid file-code >}}` |
+| {{< fa solid file-excel >}} | file-excel | Excel文件 | `{{< fa solid file-excel >}}` |
+| {{< fa solid file-image >}} | file-image | 图片文件 | `{{< fa solid file-image >}}` |
+| {{< fa solid file-pdf >}} | file-pdf | PDF文件 | `{{< fa solid file-pdf >}}` |
+| {{< fa solid file-powerpoint >}} | file-powerpoint | PowerPoint文件 | `{{< fa solid file-powerpoint >}}` |
+| {{< fa solid file-signature >}} | file-signature | 签名文件 | `{{< fa solid file-signature >}}` |
+| {{< fa solid file-text >}} | file-text | 文本文件 | `{{< fa solid file-text >}}` |
+| {{< fa solid file-video >}} | file-video | 视频文件 | `{{< fa solid file-video >}}` |
+| {{< fa solid file-word >}} | file-word | Word文件 | `{{< fa solid file-word >}}` |
+| {{< fa solid fill-drip >}} | fill-drip | 填充（滴） | `{{< fa solid fill-drip >}}` |
+| {{< fa solid film >}} | film | 电影 | `{{< fa solid film >}}` |
+| {{< fa solid filter >}} | filter | 过滤器 | `{{< fa solid filter >}}` |
+| {{< fa solid fire >}} | fire | 火 | `{{< fa solid fire >}}` |
+| {{< fa solid fire-alt >}} | fire-alt | 火（简化） | `{{< fa solid fire-alt >}}` |
+| {{< fa solid fire-extinguisher >}} | fire-extinguisher | 灭火器 | `{{< fa solid fire-extinguisher >}}` |
+| {{< fa solid first-aid >}} | first-aid | 急救 | `{{< fa solid first-aid >}}` |
+| {{< fa solid fish >}} | fish | 鱼 | `{{< fa solid fish >}}` |
+| {{< fa solid flag >}} | flag | 旗帜 | `{{< fa solid flag >}}` |
+| {{< fa solid flag-checkered >}} | flag-checkered | 格子旗 | `{{< fa solid flag-checkered >}}` |
+| {{< fa solid flag-usa >}} | flag-usa | 美国国旗 | `{{< fa solid flag-usa >}}` |
+| {{< fa solid flask >}} | flask | 烧瓶 | `{{< fa solid flask >}}` |
+| {{< fa solid flight >}} | flight | 飞行 | `{{< fa solid flight >}}` |
+| {{< fa solid flipboard >}} | flipboard | Flipboard（新闻应用） | `{{< fa solid flipboard >}}` |
+| {{< fa solid float-left >}} | float-left | 左浮动 | `{{< fa solid float-left >}}` |
+| {{< fa solid float-right >}} | float-right | 右浮动 | `{{< fa solid float-right >}}` |
+| {{< fa solid floor-lamp >}} | floor-lamp | 落地灯 | `{{< fa solid floor-lamp >}}` |
+| {{< fa solid flower >}} | flower | 花 | `{{< fa solid flower >}}` |
+| {{< fa solid folder >}} | folder | 文件夹 | `{{< fa solid folder >}}` |
+| {{< fa solid folder-open >}} | folder-open | 打开的文件夹 | `{{< fa solid folder-open >}}` |
+| {{< fa solid font >}} | font | 字体 | `{{< fa solid font >}}` |
+| {{< fa solid football-ball >}} | football-ball | 足球 | `{{< fa solid football-ball >}}` |
+| {{< fa solid forklift >}} | forklift | 叉车 | `{{< fa solid forklift >}}` |
+| {{< fa solid form >}} | form | 表单 | `{{< fa solid form >}}` |
+| {{< fa solid forumbee >}} | forumbee | Forumbee（论坛平台） | `{{< fa solid forumbee >}}` |
+| {{< fa solid forward >}} | forward | 前进 | `{{< fa solid forward >}}` |
+| {{< fa solid frown >}} | frown | 皱眉 | `{{< fa solid frown >}}` |
+| {{< fa solid frown-open >}} | frown-open | 皱眉（开口） | `{{< fa solid frown-open >}}` |
+| {{< fa solid fuel-pump >}} | fuel-pump | 加油站 | `{{< fa solid fuel-pump >}}` |
+| {{< fa solid gamepad >}} | gamepad | 游戏手柄 | `{{< fa solid gamepad >}}` |
+| {{< fa solid gavel >}} | gavel | 法槌 | `{{< fa solid gavel >}}` |
+| {{< fa solid gem >}} | gem | 宝石 | `{{< fa solid gem >}}` |
+| {{< fa solid genderless >}} | genderless | 无性别 | `{{< fa solid genderless >}}` |
+| {{< fa solid get-pocket >}} | get-pocket | Pocket（稍后阅读工具） | `{{< fa solid get-pocket >}}` |
+| {{< fa solid gift >}} | gift | 礼物 | `{{< fa solid gift >}}` |
+| {{< fa solid glass-cheers >}} | glass-cheers | 干杯 | `{{< fa solid glass-cheers >}}` |
+| {{< fa solid glass-water >}} | glass-water | 水杯 | `{{< fa solid glass-water >}}` |
+| {{< fa solid globe >}} | globe | 地球 | `{{< fa solid globe >}}` |
+| {{< fa solid globe-americas >}} | globe-americas | 地球（美洲） | `{{< fa solid globe-americas >}}` |
+| {{< fa solid globe-asia >}} | globe-asia | 地球（亚洲） | `{{< fa solid globe-asia >}}` |
+| {{< fa solid globe-europe >}} | globe-europe | 地球（欧洲） | `{{< fa solid globe-europe >}}` |
+| {{< fa solid goat >}} | goat | 山羊 | `{{< fa solid goat >}}` |
+| {{< fa solid gopuram >}} | gopuram | 寺庙塔楼 | `{{< fa solid gopuram >}}` |
+| {{< fa solid graduation-cap >}} | graduation-cap | 毕业帽 | `{{< fa solid graduation-cap >}}` |
+| {{< fa solid grave >}} | grave | 坟墓 | `{{< fa solid grave >}}` |
+| {{< fa solid guitar >}} | guitar | 吉他 | `{{< fa solid guitar >}}` |
+| {{< fa solid hammer >}} | hammer | 锤子 | `{{< fa solid hammer >}}` |
+| {{< fa solid hand-holding-heart >}} | hand-holding-heart | 手捧心 | `{{< fa solid hand-holding-heart >}}` |
+| {{< fa solid hand-holding-usd >}} | hand-holding-usd | 手持美元 | `{{< fa solid hand-holding-usd >}}` |
+| {{< fa solid handshake >}} | handshake | 握手 | `{{< fa solid handshake >}}` |
+| {{< fa solid handshake-alt >}} | handshake-alt | 握手（简化） | `{{< fa solid handshake-alt >}}` |
+| {{< fa solid hard-hat >}} | hard-hat | 安全帽 | `{{< fa solid hard-hat >}}` |
+| {{< fa solid hash >}} | hash | #符号 | `{{< fa solid hash >}}` |
+| {{< fa solid headphones >}} | headphones | 耳机 | `{{< fa solid headphones >}}` |
+| {{< fa solid heart >}} | heart | 心 | `{{< fa solid heart >}}` |
+| {{< fa solid heart-broken >}} | heart-broken | 破碎的心 | `{{< fa solid heart-broken >}}` |
+| {{< fa solid heat >}} | heat | 热 | `{{< fa solid heat >}}` |
+| {{< fa solid helicopter >}} | helicopter | 直升机 | `{{< fa solid helicopter >}}` |
+| {{< fa solid highlighter >}} | highlighter | 荧光笔 | `{{< fa solid highlighter >}}` |
+| {{< fa solid hill-rockslide >}} | hill-rockslide | 山崩 | `{{< fa solid hill-rockslide >}}` |
+| {{< fa solid history >}} | history | 历史 | `{{< fa solid history >}}` |
+| {{< fa solid home >}} | home | 家 | `{{< fa solid home >}}` |
+| {{< fa solid hospital >}} | hospital | 医院 | `{{< fa solid hospital >}}` |
+| {{< fa solid hospital-user >}} | hospital-user | 医院用户 | `{{< fa solid hospital-user >}}` |
+| {{< fa solid hot-tub >}} | hot-tub | 热水浴缸 | `{{< fa solid hot-tub >}}` |
+| {{< fa solid hourglass >}} | hourglass | 沙漏 | `{{< fa solid hourglass >}}` |
+| {{< fa solid hourglass-end >}} | hourglass-end | 沙漏（结束） | `{{< fa solid hourglass-end >}}` |
+| {{< fa solid hourglass-half >}} | hourglass-half | 沙漏（一半） | `{{< fa solid hourglass-half >}}` |
+| {{< fa solid hourglass-start >}} | hourglass-start | 沙漏（开始） | `{{< fa solid hourglass-start >}}` |
+| {{< fa solid house-chimney >}} | house-chimney | 房子（烟囱） | `{{< fa solid house-chimney >}}` |
+| {{< fa solid house-chimney-user >}} | house-chimney-user | 房子（烟囱用户） | `{{< fa solid house-chimney-user >}}` |
+| {{< fa solid house-user >}} | house-user | 房子（用户） | `{{< fa solid house-user >}}` |
+| {{< fa solid html5 >}} | html5 | HTML5 | `{{< fa solid html5 >}}` |
+| {{< fa solid hubspot >}} | hubspot | HubSpot（营销平台） | `{{< fa solid hubspot >}}` |
+| {{< fa solid ice-cream >}} | ice-cream | 冰淇淋 | `{{< fa solid ice-cream >}}` |
+| {{< fa solid id-card >}} | id-card | 身份证 | `{{< fa solid id-card >}}` |
+| {{< fa solid id-card-alt >}} | id-card-alt | 身份证（简化） | `{{< fa solid id-card-alt >}}` |
+| {{< fa solid image >}} | image | 图片 | `{{< fa solid image >}}` |
+| {{< fa solid images >}} | images | 图片组 | `{{< fa solid images >}}` |
+| {{< fa solid inbox >}} | inbox | 收件箱 | `{{< fa solid inbox >}}` |
+| {{< fa solid indent >}} | indent | 缩进 | `{{< fa solid indent >}}` |
+| {{< fa solid industry >}} | industry | 工业 | `{{< fa solid industry >}}` |
+| {{< fa solid infinity >}} | infinity | 无限 | `{{< fa solid infinity >}}` |
+| {{< fa solid info >}} | info | 信息 | `{{< fa solid info >}}` |
+| {{< fa solid info-circle >}} | info-circle | 圆形信息 | `{{< fa solid info-circle >}}` |
+| {{< fa solid instagram >}} | instagram | Instagram（社交平台） | `{{< fa solid instagram >}}` |
+| {{< fa solid internet-explorer >}} | internet-explorer | Internet Explorer（浏览器） | `{{< fa solid internet-explorer >}}` |
+| {{< fa solid italic >}} | italic | 斜体 | `{{< fa solid italic >}}` |
+| {{< fa solid itunes >}} | itunes | iTunes | `{{< fa solid itunes >}}` |
+| {{< fa solid itunes-note >}} | itunes-note | iTunes（音符） | `{{< fa solid itunes-note >}}` |
+| {{< fa solid jaguar >}} | jaguar | 捷豹 | `{{< fa solid jaguar >}}` |
+| {{< fa solid jawbone >}} | jawbone | Jawbone（智能硬件品牌） | `{{< fa solid jawbone >}}` |
+| {{< fa solid jeddah >}} | jeddah | 吉达 | `{{< fa solid jeddah >}}` |
+| {{< fa solid jenkins >}} | jenkins | Jenkins（自动化工具） | `{{< fa solid jenkins >}}` |
+| {{< fa solid jersey >}} | jersey | 运动衫 | `{{< fa solid jersey >}}` |
+| {{< fa solid joomla >}} | joomla | Joomla（CMS平台） | `{{< fa solid joomla >}}` |
+| {{< fa solid journal-whills >}} | journal-whills | 期刊 | `{{< fa solid journal-whills >}}` |
+| {{< fa solid jupyter >}} | jupyter | Jupyter（数据分析工具） | `{{< fa solid jupyter >}}` |
+| {{< fa solid key >}} | key | 钥匙 | `{{< fa solid key >}}` |
+| {{< fa solid keyboard >}} | keyboard | 键盘 | `{{< fa solid keyboard >}}` |
+| {{< fa solid kickstarter >}} | kickstarter | Kickstarter（众筹平台） | `{{< fa solid kickstarter >}}` |
+| {{< fa solid kickstarter-k >}} | kickstarter-k | Kickstarter（简化） | `{{< fa solid kickstarter-k >}}` |
+| {{< fa solid ladder >}} | ladder | 梯子 | `{{< fa solid ladder >}}` |
+| {{< fa solid laptop >}} | laptop | 笔记本电脑 | `{{< fa solid laptop >}}` |
+| {{< fa solid laptop-code >}} | laptop-code | 笔记本电脑（代码） | `{{< fa solid laptop-code >}}` |
+| {{< fa solid laptop-house >}} | laptop-house | 笔记本电脑（家） | `{{< fa solid laptop-house >}}` |
+| {{< fa solid laptop-medical >}} | laptop-medical | 笔记本电脑（医疗） | `{{< fa solid laptop-medical >}}` |
+| {{< fa solid lastfm >}} | lastfm | Last.fm（音乐平台） | `{{< fa solid lastfm >}}` |
+| {{< fa solid lastfm-square >}} | lastfm-square | Last.fm（方形） | `{{< fa solid lastfm-square >}}` |
+| {{< fa solid laugh >}} | laugh | 笑 | `{{< fa solid laugh >}}` |
+| {{< fa solid layer-group >}} | layer-group | 图层组 | `{{< fa solid layer-group >}}` |
+| {{< fa solid leaf >}} | leaf | 叶子 | `{{< fa solid leaf >}}` |
+| {{< fa solid leanpub >}} | leanpub | Leanpub（电子书平台） | `{{< fa solid leanpub >}}` |
+| {{< fa solid left-right >}} | left-right | 左右 | `{{< fa solid left-right >}}` |
+| {{< fa solid lemon >}} | lemon | 柠檬 | `{{< fa solid lemon >}}` |
+| {{< fa solid less-than >}} | less-than | 小于号 | `{{< fa solid less-than >}}` |
+| {{< fa solid level-down-alt >}} | level-down-alt | 向下水平 | `{{< fa solid level-down-alt >}}` |
+| {{< fa solid level-up-alt >}} | level-up-alt | 向上水平 | `{{< fa solid level-up-alt >}}` |
+| {{< fa solid life-ring >}} | life-ring | 救生圈 | `{{< fa solid life-ring >}}` |
+| {{< fa solid lightbulb >}} | lightbulb | 灯泡 | `{{< fa solid lightbulb >}}` |
+| {{< fa solid link >}} | link | 链接 | `{{< fa solid link >}}` |
+| {{< fa solid link-slash >}} | link-slash | 链接（斜杠） | `{{< fa solid link-slash >}}` |
+| {{< fa solid linux >}} | linux | Linux | `{{< fa solid linux >}}` |
+| {{< fa solid list >}} | list | 列表 | `{{< fa solid list >}}` |
+| {{< fa solid list-alt >}} | list-alt | 列表（简化） | `{{< fa solid list-alt >}}` |
+| {{< fa solid list-check >}} | list-check | 列表（勾选） | `{{< fa solid list-check >}}` |
+| {{< fa solid list-ol >}} | list-ol | 有序列表 | `{{< fa solid list-ol >}}` |
+| {{< fa solid list-ul >}} | list-ul | 无序列表 | `{{< fa solid list-ul >}}` |
+| {{< fa solid location-arrow >}} | location-arrow | 定位箭头 | `{{< fa solid location-arrow >}}` |
+| {{< fa solid lock >}} | lock | 锁 | `{{< fa solid lock >}}` |
+| {{< fa solid lock-open >}} | lock-open | 打开的锁 | `{{< fa solid lock-open >}}` |
+| {{< fa solid log >}} | log | 日志 | `{{< fa solid log >}}` |
+| {{< fa solid login >}} | login | 登录 | `{{< fa solid login >}}` |
+| {{< fa solid logout >}} | logout | 登出 | `{{< fa solid logout >}}` |
+| {{< fa solid long-arrow-alt-down >}} | long-arrow-alt-down | 长向下箭头 | `{{< fa solid long-arrow-alt-down >}}` |
+| {{< fa solid long-arrow-alt-left >}} | long-arrow-alt-left | 长向左箭头 | `{{< fa solid long-arrow-alt-left >}}` |
+| {{< fa solid long-arrow-alt-right >}} | long-arrow-alt-right | 长向右箭头 | `{{< fa solid long-arrow-alt-right >}}` |
+| {{< fa solid long-arrow-alt-up >}} | long-arrow-alt-up | 长向上箭头 | `{{< fa solid long-arrow-alt-up >}}` |
+| {{< fa solid low-vision >}} | low-vision | 低视力 | `{{< fa solid low-vision >}}` |
+| {{< fa solid magnet >}} | magnet | 磁铁 | `{{< fa solid magnet >}}` |
+| {{< fa solid mail-bulk >}} | mail-bulk | 批量邮件 | `{{< fa solid mail-bulk >}}` |
+| {{< fa solid mailchimp >}} | mailchimp | Mailchimp（邮件营销平台） | `{{< fa solid mailchimp >}}` |
+| {{< fa solid male >}} | male | 男性 | `{{< fa solid male >}}` |
+| {{< fa solid map >}} | map | 地图 | `{{< fa solid map >}}` |
+| {{< fa solid map-location-dot >}} | map-location-dot | 地图（定位点） | `{{< fa solid map-location-dot >}}` |
+| {{< fa solid map-marked-alt >}} | map-marked-alt | 地图（标记） | `{{< fa solid map-marked-alt >}}` |
+| {{< fa solid map-marker-alt >}} | map-marker-alt | 地图标记 | `{{< fa solid map-marker-alt >}}` |
+| {{< fa solid map-pin >}} | map-pin | 地图钉 | `{{< fa solid map-pin >}}` |
+| {{< fa solid map-signs >}} | map-signs | 地图（标志） | `{{< fa solid map-signs >}}` |
+| {{< fa solid mars >}} | mars | 火星 | `{{< fa solid mars >}}` |
+| {{< fa solid mars-and-venus >}} | mars-and-venus | 火星和金星 | `{{< fa solid mars-and-venus >}}` |
+| {{< fa solid mars-double >}} | mars-double | 双火星 | `{{< fa solid mars-double >}}` |
+| {{< fa solid mask >}} | mask | 面具 | `{{< fa solid mask >}}` |
+| {{< fa solid maxcdn >}} | maxcdn | MaxCDN | `{{< fa solid maxcdn >}}` |
+| {{< fa solid meanpath >}} | meanpath | Meanpath | `{{< fa solid meanpath >}}` |
+| {{< fa solid medium >}} | medium | Medium（博客平台） | `{{< fa solid medium >}}` |
+| {{< fa solid medkit >}} | medkit | 医疗箱 | `{{< fa solid medkit >}}` |
+| {{< fa solid meetup >}} | meetup | Meetup（线下活动平台） | `{{< fa solid meetup >}}` |
+| {{< fa solid meh >}} | meh | 平淡 | `{{< fa solid meh >}}` |
+| {{< fa solid meh-blank >}} | meh-blank | 平淡（空白） | `{{< fa solid meh-blank >}}` |
+| {{< fa solid memory >}} | memory | 内存 | `{{< fa solid memory >}}` |
+| {{< fa solid menu >}} | menu | 菜单 | `{{< fa solid menu >}}` |
+| {{< fa solid mercury >}} | mercury | 水星 | `{{< fa solid mercury >}}` |
+| {{< fa solid meter-high >}} | meter-high | 高度计 | `{{< fa solid meter-high >}}` |
+| {{< fa solid meter-low >}} | meter-low | 低高度计 | `{{< fa solid meter-low >}}` |
+| {{< fa solid meter-square >}} | meter-square | 平方计 | `{{< fa solid meter-square >}}` |
+| {{< fa solid microchip >}} | microchip | 微芯片 | `{{< fa solid microchip >}}` |
+| {{< fa solid microphone >}} | microphone | 麦克风 | `{{< fa solid microphone >}}` |
+| {{< fa solid microphone-lines >}} | microphone-lines | 麦克风（线） | `{{< fa solid microphone-lines >}}` |
+| {{< fa solid microphone-slash >}} | microphone-slash | 麦克风（斜杠） | `{{< fa solid microphone-slash >}}` |
+| {{< fa solid microsoft >}} | microsoft | Microsoft | `{{< fa solid microsoft >}}` |
+| {{< fa solid minimize >}} | minimize | 最小化 | `{{< fa solid minimize >}}` |
+| {{< fa solid minus >}} | minus | 减号 | `{{< fa solid minus >}}` |
+| {{< fa solid minus-circle >}} | minus-circle | 圆形减号 | `{{< fa solid minus-circle >}}` |
+| {{< fa solid minus-square >}} | minus-square | 方形减号 | `{{< fa solid minus-square >}}` |
+| {{< fa solid mobile >}} | mobile | 手机 | `{{< fa solid mobile >}}` |
+| {{< fa solid mobile-alt >}} | mobile-alt | 手机（简化） | `{{< fa solid mobile-alt >}}` |
+| {{< fa solid mobile-screen >}} | mobile-screen | 手机屏幕 | `{{< fa solid mobile-screen >}}` |
+| {{< fa solid mobile-screen-button >}} | mobile-screen-button | 手机屏幕（按钮） | `{{< fa solid mobile-screen-button >}}` |
+| {{< fa solid modulo >}} | modulo | 模 | `{{< fa solid modulo >}}` |
+| {{< fa solid moon >}} | moon | 月亮 | `{{< fa solid moon >}}` |
+| {{< fa solid moon-stars >}} | moon-stars | 月亮星星 | `{{< fa solid moon-stars >}}` |
+| {{< fa solid mortar-pestle >}} | mortar-pestle | 研钵和杵 | `{{< fa solid mortar-pestle >}}` |
+| {{< fa solid motorcycle >}} | motorcycle | 摩托车 | `{{< fa solid motorcycle >}}` |
+| {{< fa solid mountain >}} | mountain | 山 | `{{< fa solid mountain >}}` |
+| {{< fa solid mountain-city >}} | mountain-city | 山城市 | `{{< fa solid mountain-city >}}` |
+| {{< fa solid mouse >}} | mouse | 鼠标 | `{{< fa solid mouse >}}` |
+| {{< fa solid mug-hot >}} | mug-hot | 热 mug | `{{< fa solid mug-hot >}}` |
+| {{< fa solid music >}} | music | 音乐 | `{{< fa solid music >}}` |
+| {{< fa solid nasa >}} | nasa | NASA | `{{< fa solid nasa >}}` |
+| {{< fa solid navicon >}} | navicon | 导航图标 | `{{< fa solid navicon >}}` |
+| {{< fa solid neuter >}} | neuter | 中性 | `{{< fa solid neuter >}}` |
+| {{< fa solid new >}} | new | 新 | `{{< fa solid new >}}` |
+| {{< fa solid newspaper >}} | newspaper | 报纸 | `{{< fa solid newspaper >}}` |
+| {{< fa solid node >}} | node | 节点 | `{{< fa solid node >}}` |
+| {{< fa solid node-js >}} | node-js | Node.js | `{{< fa solid node-js >}}` |
+| {{< fa solid noise >}} | noise | 噪音 | `{{< fa solid noise >}}` |
+| {{< fa solid not-equal >}} | not-equal | 不等于 | `{{< fa solid not-equal >}}` |
+| {{< fa solid notebook >}} | notebook | 笔记本 | `{{< fa solid notebook >}}` |
+| {{< fa solid notebook-alt >}} | notebook-alt | 笔记本（简化） | `{{< fa solid notebook-alt >}}` |
+| {{< fa solid notebook-medical >}} | notebook-medical | 医疗笔记本 | `{{< fa solid notebook-medical >}}` |
+| {{< fa solid nuclear >}} | nuclear | 核能 | `{{< fa solid nuclear >}}` |
+| {{< fa solid object-group >}} | object-group | 对象组 | `{{< fa solid object-group >}}` |
+| {{< fa solid object-ungroup >}} | object-ungroup | 对象取消组 | `{{< fa solid object-ungroup >}}` |
+| {{< fa solid odnoklassniki >}} | odnoklassniki | Odnoklassniki（社交平台） | `{{< fa solid odnoklassniki >}}` |
+| {{< fa solid odnoklassniki-square >}} | odnoklassniki-square | Odnoklassniki（方形） | `{{< fa solid odnoklassniki-square >}}` |
+| {{< fa solid oil-can >}} | oil-can | 油罐 | `{{< fa solid oil-can >}}` |
+| {{< fa solid old-republic >}} | old-republic | 旧共和国 | `{{< fa solid old-republic >}}` |
+| {{< fa solid olympics >}} | olympics | 奥运会 | `{{< fa solid olympics >}}` |
+| {{< fa solid om >}} | om | 欧姆 | `{{< fa solid om >}}` |
+| {{< fa solid opencart >}} | opencart | OpenCart（电商平台） | `{{< fa solid opencart >}}` |
+| {{< fa solid openid >}} | openid | OpenID | `{{< fa solid openid >}}` |
+| {{< fa solid opera >}} | opera | Opera（浏览器） | `{{< fa solid opera >}}` |
+| {{< fa solid option >}} | option | 选项 | `{{< fa solid option >}}` |
+| {{< fa solid outdent >}} | outdent | 减少缩进 | `{{< fa solid outdent >}}` |
+| {{< fa solid page-break >}} | page-break | 分页符 | `{{< fa solid page-break >}}` |
+| {{< fa solid paint-brush >}} | paint-brush | 画笔 | `{{< fa solid paint-brush >}}` |
+| {{< fa solid paint-roller >}} | paint-roller | 油漆滚筒 | `{{< fa solid paint-roller >}}` |
+| {{< fa solid palette >}} | palette | 调色板 | `{{< fa solid palette >}}` |
+| {{< fa solid paper-plane >}} | paper-plane | 纸飞机 | `{{< fa solid paper-plane >}}` |
+| {{< fa solid paper-plane-alt >}} | paper-plane-alt | 纸飞机（简化） | `{{< fa solid paper-plane-alt >}}` |
+| {{< fa solid paragraph >}} | paragraph | 段落 | `{{< fa solid paragraph >}}` |
+| {{< fa solid park >}} | park | 公园 | `{{< fa solid park >}}` |
+| {{< fa solid pause >}} | pause | 暂停 | `{{< fa solid pause >}}` |
+| {{< fa solid pause-circle >}} | pause-circle | 圆形暂停 | `{{< fa solid pause-circle >}}` |
+| {{< fa solid pencil >}} | pencil | 铅笔 | `{{< fa solid pencil >}}` |
+| {{< fa solid pencil-alt >}} | pencil-alt | 铅笔（简化） | `{{< fa solid pencil-alt >}}` |
+| {{< fa solid pencil-ruler >}} | pencil-ruler | 铅笔尺子 | `{{< fa solid pencil-ruler >}}` |
+| {{< fa solid people-arrows >}} | people-arrows | 人们箭头 | `{{< fa solid people-arrows >}}` |
+| {{< fa solid people-carry >}} | people-carry | 人们携带 | `{{< fa solid people-carry >}}` |
+| {{< fa solid percent >}} | percent | 百分比 | `{{< fa solid percent >}}` |
+| {{< fa solid perfect-square >}} | perfect-square | 完美平方 | `{{< fa solid perfect-square >}}` |
+| {{< fa solid phone >}} | phone | 电话 | `{{< fa solid phone >}}` |
+| {{< fa solid phone-alt >}} | phone-alt | 电话（简化） | `{{< fa solid phone-alt >}}` |
+| {{< fa solid phone-laptop >}} | phone-laptop | 电话笔记本电脑 | `{{< fa solid phone-laptop >}}` |
+| {{< fa solid phone-slash >}} | phone-slash | 电话（斜杠） | `{{< fa solid phone-slash >}}` |
+| {{< fa solid photo-film >}} | photo-film | 照片胶片 | `{{< fa solid photo-film >}}` |
+| {{< fa solid picture-o >}} | picture-o | 图片（空心） | `{{< fa solid picture-o >}}` |
+| {{< fa solid piggy-bank >}} | piggy-bank | 存钱罐 | `{{< fa solid piggy-bank >}}` |
+| {{< fa solid plane-departure >}} | plane-departure | 飞机起飞 | `{{< fa solid plane-departure >}}` |
+| {{< fa solid plane-arrival >}} | plane-arrival | 飞机到达 | `{{< fa solid plane-arrival >}}` |
+| {{< fa solid play >}} | play | 播放 | `{{< fa solid play >}}` |
+| {{< fa solid play-circle >}} | play-circle | 圆形播放 | `{{< fa solid play-circle >}}` |
+| {{< fa solid playstation >}} | playstation | PlayStation | `{{< fa solid playstation >}}` |
+| {{< fa solid plus >}} | plus | 加号 | `{{< fa solid plus >}}` |
+| {{< fa solid plus-circle >}} | plus-circle | 圆形加号 | `{{< fa solid plus-circle >}}` |
+| {{< fa solid plus-square >}} | plus-square | 方形加号 | `{{< fa solid plus-square >}}` |
+| {{< fa solid podcast >}} | podcast | 播客 | `{{< fa solid podcast >}}` |
+| {{< fa solid poo >}} | poo | 便便 | `{{< fa solid poo >}}` |
+| {{< fa solid poo-storm >}} | poo-storm | 便便风暴 | `{{< fa solid poo-storm >}}` |
+| {{< fa solid power-off >}} | power-off | 电源关闭 | `{{< fa solid power-off >}}` |
+| {{< fa solid print >}} | print | 打印 | `{{< fa solid print >}}` |
+| {{< fa solid prison >}} | prison | 监狱 | `{{< fa solid prison >}}` |
+| {{< fa solid problem >}} | problem | 问题 | `{{< fa solid problem >}}` |
+| {{< fa solid project-diagram >}} | project-diagram | 项目图表 | `{{< fa solid project-diagram >}}` |
+| {{< fa solid pulse >}} | pulse | 脉冲 | `{{< fa solid pulse >}}` |
+| {{< fa solid qrcode >}} | qrcode | 二维码 | `{{< fa solid qrcode >}}` |
+| {{< fa solid question >}} | question | 问号 | `{{< fa solid question >}}` |
+| {{< fa solid question-circle >}} | question-circle | 圆形问号 | `{{< fa solid question-circle >}}` |
+| {{< fa solid quote-left >}} | quote-left | 左引号 | `{{< fa solid quote-left >}}` |
+| {{< fa solid quote-right >}} | quote-right | 右引号 | `{{< fa solid quote-right >}}` |
+| {{< fa solid radio >}} | radio | 收音机 | `{{< fa solid radio >}}` |
+| {{< fa solid random >}} | random | 随机 | `{{< fa solid random >}}` |
+| {{< fa solid raspberry-pi >}} | raspberry-pi | 树莓派 | `{{< fa solid raspberry-pi >}}` |
+| {{< fa solid react >}} | react | React | `{{< fa solid react >}}` |
+| {{< fa solid readme >}} | readme | README | `{{< fa solid readme >}}` |
+| {{< fa solid receipt >}} | receipt | 收据 | `{{< fa solid receipt >}}` |
+| {{< fa solid record-vinyl >}} | record-vinyl | 黑胶唱片 | `{{< fa solid record-vinyl >}}` |
+| {{< fa solid recycle >}} | recycle | 回收 | `{{< fa solid recycle >}}` |
+| {{< fa solid red-river >}} | red-river | 红河 | `{{< fa solid red-river >}}` |
+| {{< fa solid registered >}} | registered | 注册 | `{{< fa solid registered >}}` |
+| {{< fa solid remove >}} | remove | 移除 | `{{< fa solid remove >}}` |
+| {{< fa solid repeat >}} | repeat | 重复 | `{{< fa solid repeat >}}` |
+| {{< fa solid reply >}} | reply | 回复 | `{{< fa solid reply >}}` |
+| {{< fa solid reply-all >}} | reply-all | 全部回复 | `{{< fa solid reply-all >}}` |
+| {{< fa solid repository >}} | repository | 仓库 | `{{< fa solid repository >}}` |
+| {{< fa solid repository-alt >}} | repository-alt | 仓库（简化） | `{{< fa solid repository-alt >}}` |
+| {{< fa solid request >}} | request | 请求 | `{{< fa solid request >}}` |
+| {{< fa solid resize >}} | resize | 调整大小 | `{{< fa solid resize >}}` |
+| {{< fa solid retweet >}} | retweet | 转发 | `{{< fa solid retweet >}}` |
+| {{< fa solid road >}} | road | 道路 | `{{< fa solid road >}}` |
+| {{< fa solid road-barrier >}} | road-barrier | 路障 | `{{< fa solid road-barrier >}}` |
+| {{< fa solid robot >}} | robot | 机器人 | `{{< fa solid robot >}}` |
+| {{< fa solid rocket >}} | rocket | 火箭 | `{{< fa solid rocket >}}` |
+| {{< fa solid rotate >}} | rotate | 旋转 | `{{< fa solid rotate >}}` |
+| {{< fa solid rotate-left >}} | rotate-left | 向左旋转 | `{{< fa solid rotate-left >}}` |
+| {{< fa solid rotate-right >}} | rotate-right | 向右旋转 | `{{< fa solid rotate-right >}}` |
+| {{< fa solid rss >}} | rss | RSS | `{{< fa solid rss >}}` |
+| {{< fa solid rss-square >}} | rss-square | RSS（方形） | `{{< fa solid rss-square >}}` |
+| {{< fa solid rub >}} | rub | 卢布 | `{{< fa solid rub >}}` |

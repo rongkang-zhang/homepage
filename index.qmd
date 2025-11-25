@@ -13,8 +13,13 @@ number-depth: 4              # 编号到几级标题（1=仅#，2=##，3=###）
 toc-depth: 4
 toc-expand: true # 全部展开目录
 page-layout: full
-code-block-style: github     # 代码块样式（github=GitHub 风格，可选：vs2015/monokai 等）
-highlight-style: tango       # 代码高亮主题（tango=鲜明色彩，可选：solarized-dark/zenburn 等）
+format:  # 新增：HTML 输出格式配置
+  html:
+    responsive: true  # 确保响应式设计启用（默认开启，显式声明更稳妥）
+    viewport: width=device-width, initial-scale=1.0  # 优化移动设备视口
+    toc-toggle: true  # 移动设备目录切换按钮
+    code-block-style: monokai   # 代码块样式移到 format.html 下（更规范）
+    highlight-style: dracula   # 代码高亮配色
 share-preview:
   image: assets/pictures/profile-picture.png  # 分享预览图（建议尺寸：1200×630px）
   title: "Rong-Kang Zhang's Academic Homepage"  # 分享标题
@@ -25,6 +30,8 @@ about:
   template: trestles
   image: assets/pictures/profile-picture.png
   links:
+    - text: "{{< ai arxiv >}} arXiv"
+      href: https://www.zhihu.com/people/shokatsu-ei
     - icon: pencil
       text: 知乎
       href: https://www.zhihu.com/people/shokatsu-ei
@@ -40,6 +47,9 @@ about:
     - icon: infinity
       text: Mathstodon
       href: https://mathstodon.xyz/@RongkangZhang
+    - icon: infinity
+      text: mathoverflow
+      href: https://math.stackexchange.com/users/1716992/rong-kang-zhang
     - icon: code
       text: Kaggle
       href: https://www.kaggle.com/rongkangzhang
@@ -71,6 +81,9 @@ Here is my current research focus<br>
 :::
 
 ---
+
+```{.haskell include="categoryDemo.hs"}
+```
 
 # Research Interests {#interests}
 
