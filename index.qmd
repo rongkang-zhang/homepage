@@ -20,6 +20,10 @@ format:  # 新增：HTML 输出格式配置
     toc-toggle: true  # 移动设备目录切换按钮
     code-block-style: monokai   # 代码块样式移到 format.html 下（更规范）
     highlight-style: dracula   # 代码高亮配色
+    mathjax: true  # 启用 MathJax 渲染数学公式（支持复杂公式、符号）
+    meta:
+      keywords: "higher category theory, mathematical physics, quantum field theory, Rong-Kang Zhang"  # 关键词（逗号分隔）
+      description: "Academic homepage of Rong-Kang Zhang, focusing on higher category theory and its applications in mathematical physics."  # 页面描述
 share-preview:
   image: assets/pictures/profile-picture.png  # 分享预览图（建议尺寸：1200×630px）
   title: "Rong-Kang Zhang's Academic Homepage"  # 分享标题
@@ -32,30 +36,29 @@ about:
   links:
     - text: "{{< ai arxiv >}} arXiv"
       href: https://www.zhihu.com/people/shokatsu-ei
-    - icon: pencil
-      text: 知乎
-      href: https://www.zhihu.com/people/shokatsu-ei
-    - icon: twitter
-      text: Twitter
-      href: https://x.com/ShokatsuEi
+    - text: "{{< ai orcid >}} ORCiD"
+      href: https://orcid.org/0009-0002-1334-733X
     - icon: github
       text: Github
       href: https://github.com/rongkang-zhang
-    - text: "{{< ai orcid >}} ORCiD"
-      href: https://orcid.org/0009-0002-1334-733X
-  # 新增 Mathstodon 链接（数学专属图标）
-    - icon: infinity
-      text: Mathstodon
-      href: https://mathstodon.xyz/@RongkangZhang
-    - icon: infinity
-      text: mathoverflow
-      href: https://math.stackexchange.com/users/1716992/rong-kang-zhang
     - icon: code
       text: Kaggle
       href: https://www.kaggle.com/rongkangzhang
     - icon: trophy
       text: LeetCode
       href: https://leetcode.com/u/Rongkang-Zhang/
+    - icon: infinity
+      text: Mathstodon
+      href: https://mathstodon.xyz/@RongkangZhang
+    - icon: infinity
+      text: MathOverflow
+      href: https://math.stackexchange.com/users/1716992/rong-kang-zhang
+    - icon: pencil
+      text: 知乎
+      href: https://www.zhihu.com/people/shokatsu-ei
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/ShokatsuEi
     - icon: envelope
       text: "Email: rongkang2025@gmail.com"
       href: "mailto:rongkang2025@gmail.com"
