@@ -36,25 +36,24 @@ about:
   links:
     - text: "{{< ai arxiv >}} arXiv"
       href: https://www.zhihu.com/people/shokatsu-ei
+    - text: "{{< fa solid book-atlas >}} INSPIRE-HEP"
+      href: https://orcid.org/0009-0002-1334-733X
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://www.zhihu.com/people/shokatsu-ei
     - text: "{{< ai orcid >}} ORCiD"
       href: https://orcid.org/0009-0002-1334-733X
     - icon: github
       text: Github
       href: https://github.com/rongkang-zhang
-    - icon: code
-      text: Kaggle
+    - text: "{{< fa solid chart-line >}} Kaggle"
       href: https://www.kaggle.com/rongkangzhang
-    - icon: trophy
-      text: LeetCode
+    - text: "{{< fa solid terminal >}} LeetCode"
       href: https://leetcode.com/u/Rongkang-Zhang/
-    - icon: infinity
-      text: Mathstodon
+    - text: "{{< fa solid infinity >}} Mathstodon"
       href: https://mathstodon.xyz/@RongkangZhang
-    - icon: infinity
-      text: MathOverflow
+    - text: "{{< fa solid square-root-variable >}} MathOverflow"
       href: https://math.stackexchange.com/users/1716992/rong-kang-zhang
-    - icon: pencil
-      text: 知乎
+    - text: "{{< fa solid pen-nib >}} 知乎"
       href: https://www.zhihu.com/people/shokatsu-ei
     - icon: twitter
       text: Twitter
