@@ -53,11 +53,13 @@ about:
       href: https://mathstodon.xyz/@RongkangZhang
     - text: "{{< fa solid square-root-variable >}} MathOverflow"
       href: https://math.stackexchange.com/users/1716992/rong-kang-zhang
-    - text: "{{< fa solid pen-nib >}} 知乎"
-      href: https://www.zhihu.com/people/shokatsu-ei
+    - text: "{{< fa solid sticky-note >}} ノート"
+      href: https://note.com/shokatsuei2025
     - icon: twitter
       text: Twitter
       href: https://x.com/ShokatsuEi
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://www.zhihu.com/people/shokatsu-ei
     - icon: envelope
       text: "Email: rongkang2025@gmail.com"
       href: "mailto:rongkang2025@gmail.com"
