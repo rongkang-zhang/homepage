@@ -76,6 +76,8 @@ website:
               href: research/2/index.html
             - text: 3 - 20251124-Now<br>A Topos-Theoretic Bridge for<br>Quantum Machine Learning
               href: research/3/index.html
+            - text: 4 - 20251126-Now<br>A Topos-Theoretic Bridge for<br>Non-invertible Symmetry
+              href: research/4/index.html
       - text: Conferences
         icon: "bi-calendar-event"
         href: conferences/index.html

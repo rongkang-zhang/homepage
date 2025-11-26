@@ -12,35 +12,16 @@
     ]
   },
   {
-    "listing": "/research/2/index.html",
+    "listing": "/research/3/index.html",
     "items": [
-      "/research/2/abstract/index.html",
-      "/research/2/background/index.html",
-      "/research/2/motivation/index.html",
-      "/research/2/objectives/index.html",
-      "/research/2/methodology/index.html",
-      "/research/2/preliminaries/index.html",
-      "/research/2/literature-notes/index.html",
-      "/research/2/results/index.html"
-    ]
-  },
-  {
-    "listing": "/extemporaneous-talks/index.html",
-    "items": [
-      "/extemporaneous-talks/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/codelab/index.html",
-    "items": [
-      "/codelab/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/expository-notes/index.html",
-    "items": [
-      "/expository-notes/japanese/index.html",
-      "/expository-notes/category-theory/index.html"
+      "/research/3/abstract/index.html",
+      "/research/3/background/index.html",
+      "/research/3/motivation/index.html",
+      "/research/3/objectives/index.html",
+      "/research/3/methodology/index.html",
+      "/research/3/preliminaries/index.html",
+      "/research/3/literature-notes/index.html",
+      "/research/3/results/index.html"
     ]
   },
   {
@@ -57,16 +38,48 @@
     ]
   },
   {
-    "listing": "/research/3/index.html",
+    "listing": "/expository-notes/index.html",
     "items": [
-      "/research/3/abstract/index.html",
-      "/research/3/background/index.html",
-      "/research/3/motivation/index.html",
-      "/research/3/objectives/index.html",
-      "/research/3/methodology/index.html",
-      "/research/3/preliminaries/index.html",
-      "/research/3/literature-notes/index.html",
-      "/research/3/results/index.html"
+      "/expository-notes/japanese/index.html",
+      "/expository-notes/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/codelab/index.html",
+    "items": [
+      "/codelab/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/extemporaneous-talks/index.html",
+    "items": [
+      "/extemporaneous-talks/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/research/2/index.html",
+    "items": [
+      "/research/2/abstract/index.html",
+      "/research/2/background/index.html",
+      "/research/2/motivation/index.html",
+      "/research/2/objectives/index.html",
+      "/research/2/methodology/index.html",
+      "/research/2/preliminaries/index.html",
+      "/research/2/literature-notes/index.html",
+      "/research/2/results/index.html"
+    ]
+  },
+  {
+    "listing": "/research/4/index.html",
+    "items": [
+      "/research/4/abstract/index.html",
+      "/research/4/background/index.html",
+      "/research/4/motivation/index.html",
+      "/research/4/objectives/index.html",
+      "/research/4/methodology/index.html",
+      "/research/4/preliminaries/index.html",
+      "/research/4/literature-notes/index.html",
+      "/research/4/results/index.html"
     ]
   },
   {
