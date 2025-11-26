@@ -35,6 +35,9 @@ website:
     background: "#023a75ff"
     foreground: "#ffffffff"
     left:
+      - text: Publications
+        icon: "bi-journal-text"
+        href: publications/index.html
       - text: Expository<br>Notes&nbsp;<small>▼</small>
         icon: "bi-file-earmark-text"
         menu:

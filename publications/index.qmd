@@ -1,0 +1,34 @@
+---
+title: "Publications"
+author: "Rong-Kang Zhang"
+date: last-modified
+abstract: >
+  This page records the conferences, workshops and summer/winter schools that I
+  have attended since my undergraduate years. The events cover a broad spectrum
+  of fundamental physics and mathematics—ranging from quantum gravity and
+  holography to non-equilibrium quantum dynamics and condensed-matter theory.
+  My roles have varied from participant to poster presenter, and the list
+  reflects my ongoing effort to broaden my academic horizon and to stay at the
+  forefront of interdisciplinary research.
+toc: false
+categories:
+  - "Quantum Gravity"
+  - "Cosmology"
+  - "Quantum Simulation"
+  - "Particle Physics"
+  - "Quantum Information"
+  - "String Theory"
+  - "Quantum Field Theory"
+  - "Holography"
+  - "Non-equilibrium Quantum Dynamics"
+  - "Condensed Matter Physics"
+  - "Atomic, Molecular, and Optical Physics"
+page-layout: full
+---
+
+| Title | arXiv Info (ID, Category, Date) | Status | Keywords | Abstract |
+|-------|--------------------------------|--------|----------|----------|
+| **A Topos-Theoretic Bridge for Holographic Entanglement Entropy** | [arXiv:24XX.XXXXX](https://arxiv.org/abs/24XX.XXXXX)<br>Categories: quant-ph, math-ph, gr-qc<br>First Posted: 2025-MM-DD<br>Version: v1 | Preprint (arXiv)<br>Submitted to: PRX Quantum | Holographic Entanglement Entropy, Topos Theory, Quantum Gravity, Category Theory | We develop a topos-theoretic framework to unify holographic entanglement entropy calculations with quantum information theory. By constructing a sheaf-theoretic representation of bulk-boundary correspondences, we show how topological invariants of the holographic dual can be extracted via topos-theoretic forcing, providing a novel mathematical foundation for quantum gravity phenomenology. |
+| **A Topos-Theoretic Bridge for Geometric Quantum Control** | [arXiv:24XX.XXXXX](https://arxiv.org/abs/24XX.XXXXX)<br>Categories: quant-ph, math.OC, cs.SY<br>First Posted: 2025-MM-DD<br>Version: v1 | Preprint (arXiv)<br>Submitted to: Journal of Mathematical Physics | Geometric Quantum Control, Topos Theory, Symplectic Geometry, Quantum Feedback | This work introduces a topos-theoretic approach to geometric quantum control by modeling quantum systems as sheaves over symplectic manifolds. We demonstrate that topos-theoretic localization enables robust control of quantum states under geometric perturbations, with applications to fault-tolerant quantum computing and quantum feedback networks. |
+| **A Topos-Theoretic Bridge for Quantum Machine Learning** | [arXiv:24XX.XXXXX](https://arxiv.org/abs/24XX.XXXXX)<br>Categories: cs.LG, quant-ph, math-ph<br>First Posted: 2025-MM-DD<br>Version: v1 | Preprint (arXiv)<br>Submitted to: NeurIPS | Quantum Machine Learning, Topos Theory, Neural Networks, Topological Representation Learning | We establish a topos-theoretic bridge between category theory and quantum machine learning, proposing a new class of topological quantum neural networks (TQNNs). These networks leverage sheaf cohomology to extract topological features from quantum data, achieving state-of-the-art performance on quantum phase classification tasks while maintaining interpretability via topos-theoretic invariants. |
+| **A Topos-Theoretic Bridge for Non-invertible Symmetry** | [arXiv:24XX.XXXXX](https://arxiv.org/abs/24XX.XXXXX)<br>Categories: quant-ph, math-ph, hep-th<br>First Posted: 2025-MM-DD<br>Version: v1 | Preprint (arXiv)<br>Submitted to: JHEP | Non-invertible Symmetry, Topos Theory, Quantum Field Theory, Topological Quantum Systems | We propose a topos-theoretic framework for describing non-invertible symmetries in quantum field theory, extending the categorical approach to include sheaf-theoretic representations of symmetry defects. Our construction unifies previous results on non-invertible duality and topological order, providing a rigorous mathematical foundation for analyzing symmetry-protected topological phases in higher-dimensional quantum systems. |
