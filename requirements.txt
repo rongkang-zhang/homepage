@@ -1,0 +1,3 @@
+# requirements.txt
+plotly==5.18.0  # 指定版本更稳定
+matplotlib==3.8.2  # 若用其他图表库可添加
