@@ -96,10 +96,15 @@ website:
   page-footer:
     left: |
       <img src="/assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;">
-      Made with [Quarto](https://quarto.org/) and managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/).<br>
-      © 2025 Rong-Kang Zhang · Last updated: {{< meta date >}} ·
-      <a href="/cookie-policy.html">Cookie Policy</a> ·
-      <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a>
+      Made with [Quarto](https://quarto.org/) · Powered by [GitHub Pages](https://pages.github.com/) · Managed via [Git](https://git-scm.com/) & [GitHub Desktop](https://desktop.github.com/)<br>
+      Technical tools: [MathJax](https://www.mathjax.org/) (typesetting) · [Font Awesome](https://fontawesome.com/) (icons) · [Algolia](https://www.algolia.com/) (search) · [TikZ](https://tikz.dev/) (diagrams)<br>
+      © 2025 Rong-Kang Zhang · All rights reserved · Last updated: {{< meta date >}}
+    border: true  # Quarto 支持的属性（添加顶部分隔线）
+# =====  Algolia 搜索：与 website 同级  =====
+algolia:
+  app-id: WI16XA3MU4
+  api-key: 952b9b7ce5a6945035ceb92de0e07317
+  index-name: homepage_crawler_pages
 
 format:
   html:

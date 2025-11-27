@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-592e977e5505a61f7314c1f6d8c0acca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-f271721ef384ca226c27a8df30eb1cf0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-592e977e5505a61f7314c1f6d8c0acca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dc30f79ac2eccaba2905ba9f93e704da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0b49dcb8523936ad7ddfab3d4abc62d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dc30f79ac2eccaba2905ba9f93e704da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +104,38 @@ cookieconsent.run({
 });
 </script> 
   
+<!-- Algolia 域名验证 Meta 标签 -->
+<meta name="algolia-site-verification" content="544890BC86AD4E84">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Publications – Rong-KangZhang">
 <meta property="og:description" content="This page records the conferences, workshops and summer/winter schools that I have attended since my undergraduate years. The events cover a broad spectrum of fundamental physics and mathematics—ranging from quantum gravity and holography to non-equilibrium quantum dynamics and condensed-matter theory. My roles have varied from participant to poster presenter, and the list reflects my ongoing effort to broaden my academic horizon and to stay at the forefront of interdisciplinary research.">
@@ -542,6 +573,7 @@ cookieconsent.run({
 
 
 
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -965,7 +997,7 @@ cookieconsent.run({
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> and managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a>.<br> © 2025 Rong-Kang Zhang · Last updated: November 26, 2025 · <a href="../cookie-policy.html">Cookie Policy</a> · <a href="javascript:window.CookieConsentApi.showDialog()">Change cookie preferences</a></p>
+<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> · Powered by <a href="https://pages.github.com/">GitHub Pages</a> · Managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a><br> Technical tools: <a href="https://www.mathjax.org/">MathJax</a> (typesetting) · <a href="https://fontawesome.com/">Font Awesome</a> (icons) · <a href="https://www.algolia.com/">Algolia</a> (search) · <a href="https://tikz.dev/">TikZ</a> (diagrams)<br> © 2025 Rong-Kang Zhang · All rights reserved · Last updated: November 26, 2025</p>
 </div>   
     <div class="nav-footer-center">
 

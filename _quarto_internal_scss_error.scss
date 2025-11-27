@@ -1912,6 +1912,7 @@ $btn-code-copy-color-active: #50fa7b !default;
 $code-copy-selector: "div.code-copy-outer-scaffold:hover > " !default;
 $code-white-space: pre-wrap !default;
 $tbl-cap-location: top !default;
+$footer-border: true !default;
 $sidebar-bg: if(variable-exists(body-bg), $body-bg, #fff) !default;
 $navbar-fg: #ffffffff !default;
 $navbar-bg: #023a75ff !default;
