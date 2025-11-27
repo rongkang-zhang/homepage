@@ -22,8 +22,14 @@ format:  # 新增：HTML 输出格式配置
     highlight-style: dracula   # 代码高亮配色
     mathjax: true  # 启用 MathJax 渲染数学公式（支持复杂公式、符号）
     meta:
-      keywords: "higher category theory, mathematical physics, quantum field theory, Rong-Kang Zhang"  # 关键词（逗号分隔）
-      description: "Academic homepage of Rong-Kang Zhang, focusing on higher category theory and its applications in mathematical physics."  # 页面描述
+      keywords: "higher category theory, mathematical physics, quantum field theory, Rong-Kang Zhang"  # 原有
+      description: "Academic homepage of Rong-Kang Zhang, focusing on higher category theory and its applications in mathematical physics."  # 原有
+      author: "Rong-Kang Zhang"  # 新增
+      robots: "index, follow"  # 新增
+      og:title: "Rong-Kang Zhang - Higher Category Theory & Mathematical Physics"  # 新增（Open Graph社交分享标题）
+      og:type: "website"  # 新增（标记页面类型）
+      og:url: "https://rongkang-zhang.github.io/homepage/"  # 新增（页面永久链接）
+      og:image: "https://rongkang-zhang.github.io/homepage/assets/pictures/profile-picture.png"  # 新增（社交分享预览图）
 share-preview:
   image: assets/pictures/profile-picture.png  # 分享预览图（建议尺寸：1200×630px）
   title: "Rong-Kang Zhang's Academic Homepage"  # 分享标题
