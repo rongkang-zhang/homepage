@@ -105,35 +105,6 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="Publications – Rong-KangZhang">
 <meta property="og:description" content="This page records the conferences, workshops and summer/winter schools that I have attended since my undergraduate years. The events cover a broad spectrum of fundamental physics and mathematics—ranging from quantum gravity and holography to non-equilibrium quantum dynamics and condensed-matter theory. My roles have varied from participant to poster presenter, and the list reflects my ongoing effort to broaden my academic horizon and to stay at the forefront of interdisciplinary research.">
@@ -568,7 +539,6 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-
 
 
 

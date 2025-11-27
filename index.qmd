@@ -92,9 +92,6 @@ Here is my current research focus<br>
 
 ---
 
-```{.haskell include="categoryDemo.hs"}
-```
-
 # Research Interests {#interests}
 
 <style>

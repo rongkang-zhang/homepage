@@ -116,11 +116,23 @@ format:
     html-math-method:
       method: mathjax
       url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      # 配置MathJax参数（AMS自动编号、宏定义等）
+      options:
+        tex:
+          tags: "ams" # 启用AMS公式编号规则（自动为equation环境编号）
+          macros: # 可自定义常用数学宏（可选，如物理/数学符号简写）
+            \R: "\\mathbb{R}"
+            \C: "\\mathbb{C}"
+            \cat: "\\mathbf{Cat}"
     filters:
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua
+    include-in-header:
+      - text: |
+          <!-- Algolia 域名验证 Meta 标签 -->
+          <meta name="algolia-site-verification" content="544890BC86AD4E84" />
     # 回到顶部按钮 + 平滑滚动（全站生效）
     include-after-body:
       text: |

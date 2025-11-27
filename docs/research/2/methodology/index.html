@@ -125,35 +125,6 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="Methodology – Rong-KangZhang">
 <meta property="og:description" content="A Topos-Theoretic Bridge for Holographic Entanglement Entropy">
@@ -538,14 +509,13 @@ window.Quarto = {
 <p>The holographic principle was first articulated in the context of black-hole unitarity by ’t Hooft (1993) <span class="citation" data-cites="thooft1993dimensional">(<a href="#ref-thooft1993dimensional" role="doc-biblioref">Hooft 1993</a>)</span>.</p>
 </section>
 <section id="holographic-duality" class="level1">
-<h1>Holographic Duality</h1>
 
 
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Holographic Duality</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-thooft1993dimensional" class="csl-entry" role="listitem">
 Hooft, G. ’t (1993), <span>“<a href="https://arxiv.org/abs/gr-qc/9310026">Dimensional reduction in quantum gravity</a>.”</span>
 </div>

@@ -107,35 +107,6 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="Japanese – Rong-KangZhang">
 <meta property="og:description" content="Time Tracker and Check-off for Japanese">
@@ -1134,7 +1105,6 @@ Sun
 <li><p><span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-submarine" aria-label="submarine"></i></span> 潜水艇（探索主题）</p></li>
 <li><p><span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-alien" aria-label="alien"></i></span> 外星人（科幻主题）</p></li>
 </ul>
-
 
 
 </section>
