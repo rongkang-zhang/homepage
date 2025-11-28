@@ -80,6 +80,10 @@ about:
 <!-- 引入 Font Awesome 图标库 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+:::{.callout-important appearance="simple"}
+A formalizable, computable, generalizable, classifiable, and bridgeable framework for mathematics, physics, and computer science grounded in higher category theory.
+:::
+
 ::: {.callout-note}
 On this page you can learn about my<br>
 - [Research Interests](#interests)<br>

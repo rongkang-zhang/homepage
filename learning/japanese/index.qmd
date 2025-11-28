@@ -319,3 +319,68 @@ format:
 - <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa fish-fins >}}</span> 鱼鳍（深海主题）
 - <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa submarine >}}</span> 潜水艇（探索主题）
 - <span style="background: linear-gradient(45deg, #050a30, #007bff, #20c997); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa alien >}}</span> 外星人（科幻主题）
+
+
+
+- <span style="background: linear-gradient(45deg, #D4AF37, #FFD700, #B8860B); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa crown >}}</span> 复古鎏金（宫廷史诗感）  
+- <span style="background: linear-gradient(135deg, #FFC300, #FFB347, #FF6B35); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa satellite-dish >}}</span> 科技钛金（未来金属感）  
+- <span style="background: linear-gradient(90deg, #E6C200, #D4AF37, #AA8800); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa gem >}}</span> 哑光金（低调高级感）  
+- <span style="background: linear-gradient(45deg, #FFB6C1, #FF69B4, #C71585); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa ring >}}</span> 玫瑰金（优雅轻奢感）  
+- <span style="background: linear-gradient(135deg, #F5F5DC, #FFE4B5, #DEB887); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa wine-glass >}}</span> 香槟金（温润典雅感）  
+- <span style="background: linear-gradient(90deg, #FFD700, #F0E68C, #DAA520); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa trophy >}}</span> 奥运金（亮泽活力感）  
+- <span style="background: linear-gradient(45deg, #B8860B, #DAA520, #FF8C00); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa compass >}}</span> 古铜金（复古工具感）  
+
+- <span style="background: linear-gradient(135deg, #FFFFFF, #E0E0E0, #C0C0C0); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa snowflake >}}</span> 镜面银（冷冽反光感）  
+- <span style="background: linear-gradient(45deg, #808080, #A9A9A9, #D3D3D3); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa moon >}}</span> 深空银（宇宙金属感）  
+- <span style="background: linear-gradient(90deg, #B0C4DE, #778899, #4682B4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa rocket >}}</span> 科技银蓝（未来工业感）  
+- <span style="background: linear-gradient(135deg, #DCDCDC, #C0C0C0, #A9A9A9); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa cube >}}</span> 哑光银（磨砂质感）  
+- <span style="background: linear-gradient(45deg, #F0FFFF, #E0FFFF, #B0E0E6); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa ice-cream >}}</span> 冰晶银（通透清冷感）  
+- <span style="background: linear-gradient(90deg, #C0C0C0, #87CEEB, #B0C4DE); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa diamond >}}</span> 铂金（冷调贵气感）  
+- <span style="background: linear-gradient(135deg, #696969, #708090, #778899); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa robot >}}</span> 枪灰银（硬核工业感）  
+
+- <span style="background: linear-gradient(45deg, #D4AF37, #C0C0C0, #FFD700); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa chess-king >}}</span> 帝王金银（权力史诗感）  
+- <span style="background: linear-gradient(135deg, #FFC300, #A9A9A9, #B8860B); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa monument >}}</span> 古迹金银（历史厚重感）  
+- <span style="background: linear-gradient(90deg, #FFD700, #E0E0E0, #DAA520); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa palace >}}</span> 宫廷金银（典雅奢华感）  
+- <span style="background: linear-gradient(45deg, #B8860B, #C0C0C0, #FFC300); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa scroll >}}</span> 古籍烫金（书卷史诗感）  
+- <span style="background: linear-gradient(135deg, #FFB6C1, #D3D3D3, #FF69B4); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa gem >}}</span> 玫瑰金铂（现代轻奢感）  
+
+- <span style="background: linear-gradient(45deg, #0A2463, #D8C3A5, #8E2800); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa book-open >}}</span> Grothendieck藏青鎏金（学术史诗感）  
+- <span style="background: linear-gradient(135deg, #0B0C10, #1F2833, #66FCF1, #45A29E); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa galaxy >}}</span> 宇宙星云（深空科幻感）  
+- <span style="background: linear-gradient(90deg, #9FA8DA, #B39DDB, #D1C4E9); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa leaf >}}</span> 莫兰迪蓝紫（温柔高级感）  
+- <span style="background: linear-gradient(45deg, #FF00FF, #00FFFF, #0000FF); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa microchip >}}</span> 赛博朋克粉蓝（未来科技感）  
+- <span style="background: linear-gradient(135deg, #2E8B57, #3CB371, #90EE90); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa tree >}}</span> 复古油画绿（自然典雅感）  
+- <span style="background: linear-gradient(90deg, #FF4500, #FF8C00, #FFD700); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa sun >}}</span> 日落橙金（温暖治愈感）  
+- <span style="background: linear-gradient(45deg, #00F260, #0575E6, #64F38C); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa aurora >}}</span> 极光渐变（梦幻空灵感）  
+- <span style="background: linear-gradient(135deg, #1E90FF, #00CED1, #20B2AA); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa water >}}</span> 深海蓝绿（静谧深邃感）  
+- <span style="background: linear-gradient(90deg, #8B4513, #CD853F, #D2B48C); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa mountain >}}</span> 大地棕金（自然厚重感）  
+- <span style="background: linear-gradient(45deg, #4B0082, #9370DB, #D8BFD8); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2em;">{{< fa lavender >}}</span> 薰衣草紫（浪漫典雅感）
+
+
+金色 × 银色 专区
+--------------------------------------------------
+1) 香槟金 → 冷银
+<span style="background: linear-gradient(135deg, #ffd166 0%, #c49000 45%, #e6e6ff 55%, #8a94a7 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+2) 玫瑰金 → 亮铂
+<span style="background: linear-gradient(45deg, #fad0c4 0%, #f1a7f1 50%, #dfe9f3 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+3) 钛金 → 深空银
+<span style="background: linear-gradient(135deg, #ffb75e 0%, #ed8f03 45%, #bdc3c7 55%, #2c3e50 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+
+其他高颜值渐变（继续云）
+--------------------------------------------------
+4) 薄荷奶昔
+<span style="background: linear-gradient(90deg, #d4fc79 0%, #96e6a1 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+5) 暮光蓝紫
+<span style="background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+6) 霓虹粉橙
+<span style="background: linear-gradient(45deg, #ff084a 0%, #ffb199 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+7) 极地冰绿
+<span style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>
+
+8) 彗星尾
+<span style="background: linear-gradient(90deg, #fceabb 0%, #f8b500 30%, #795548 70%, #2c3e50 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;">{{< fa cloud >}}</span>

@@ -1083,3 +1083,136 @@ $callout-note-text-color: #00ccff; // 亮蓝色，你可以根据喜好修改
   border-radius: 8px;
   font-weight: 500;
 }
+
+/* 用来书写研究终极目标的 */
+/* 用来书写研究终极目标的 - 宇宙星云渐变风格 */
+// 定义宇宙星云渐变变量（与你选中的图标渐变一致）
+$callout-important-bg-1: #0B0C10;    // 深空黑
+$callout-important-bg-2: #1F2833;    // 深空灰
+$callout-important-bg-3: #66FCF1;    // 亮青蓝
+$callout-important-bg-4: #45A29E;    // 深青蓝
+$callout-important-text-color: #E6F7FF; // 浅蓝白文字（适配深色背景）
+$callout-important-title-color: #66FCF1; // 标题亮青蓝（与渐变亮色呼应）
+$callout-important-link-color: #A8DFFF; // 链接浅蓝
+$callout-important-link-hover: #FFFFFF; // 链接悬停白
+
+// 定制 .callout-important 的整体样式（参照 callout-note 结构）
+.callout-important {
+  // 核心：宇宙星云渐变背景
+  background-image: linear-gradient(135deg, 
+    $callout-important-bg-1, 
+    $callout-important-bg-2, 
+    $callout-important-bg-3, 
+    $callout-important-bg-4) !important;
+  
+  // 去掉默认左侧边框，保持渐变完整性（与 note 一致）
+  border-left: none !important;
+  border-radius: 12px !important; // 匹配网站统一圆角风格
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); // 深空阴影增强层次感
+  padding: 1.5rem 1.2rem !important; // 内边距放大，更舒展
+  
+  // 内部文字基础样式
+  color: $callout-important-text-color !important;
+  font-family: 'Fira Sans', 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  // 宇宙主题装饰（右上角小星球图标）
+  &::after {
+    content: "🌌";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+// --- 关键修复：标题内 "IMPORTANT" 文字颜色 ---
+.callout-important .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-important-title-color !important;
+  -webkit-text-fill-color: $callout-important-title-color !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba($callout-important-bg-3, 0.3); // 亮色分隔线
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+// 标题内图标颜色（与标题文字一致）
+.callout-important .callout-title strong {
+  color: $callout-important-title-color !important;
+  -webkit-text-fill-color: $callout-important-title-color !important;
+}
+
+// 标题内图标放大（增强视觉焦点）
+.callout-important .callout-icon {
+  color: $callout-important-title-color !important;
+  font-size: 1.3rem !important;
+  margin-right: 0.5rem;
+}
+
+// 列表项样式优化（宇宙主题标记）
+.callout-important ul {
+  padding-left: 1.8rem;
+  margin: 1rem 0;
+}
+.callout-important li {
+  margin: 0.9rem 0;
+  position: relative;
+  list-style-type: none;
+  font-size: 1.05rem;
+}
+.callout-important li::before {
+  content: "✨"; // 星星标记，贴合宇宙主题
+  color: $callout-important-bg-3;
+  position: absolute;
+  left: -1.8rem;
+  top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+// 链接样式（适配宇宙渐变背景，保证对比度）
+.callout-important a {
+  color: $callout-important-link-color !important;
+  text-decoration: underline dotted;
+  font-weight: 600;
+  
+  &:hover {
+    color: $callout-important-link-hover !important;
+    text-decoration: underline solid;
+    background: rgba($callout-important-bg-3, 0.1);
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+  }
+}
+
+// 深色模式适配（增强对比度，保持渐变质感）
+[data-bs-theme="dark"] .callout-important {
+  background-image: linear-gradient(135deg, 
+    darken($callout-important-bg-1, 10%), 
+    darken($callout-important-bg-2, 10%), 
+    lighten($callout-important-bg-3, 5%), 
+    lighten($callout-important-bg-4, 5%)) !important;
+  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: $callout-important-text-color !important;
+}
+
+[data-bs-theme="dark"] .callout-important .callout-title {
+  color: lighten($callout-important-title-color, 10%) !important;
+  -webkit-text-fill-color: lighten($callout-important-title-color, 10%) !important;
+  border-bottom-color: rgba($callout-important-bg-3, 0.4);
+}
+
+[data-bs-theme="dark"] .callout-important a {
+  color: lighten($callout-important-link-color, 10%) !important;
+  
+  &:hover {
+    color: $callout-important-link-hover !important;
+    background: rgba($callout-important-bg-3, 0.2);
+  }
+}
