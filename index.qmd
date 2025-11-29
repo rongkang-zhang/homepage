@@ -80,8 +80,10 @@ about:
 <!-- 引入 Font Awesome 图标库 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+# Research Interests
+
 :::{.callout-important appearance="simple"}
-A formalizable, computable, generalizable, classifiable, and bridgeable framework for mathematics, physics, and computer science grounded in higher category theory.
+A **formalizable**, *computable*, generalizable, classifiable, and bridgeable framework for mathematics, physics, and computer science grounded in higher category theory.
 :::
 
 ::: {.callout-note}
@@ -92,6 +94,62 @@ On this page you can learn about my<br>
 
 Here is my current research focus<br>
 - [Research - 1 - A Topos-Theoretic Bridge for Holographic Entanglement Entropy - Preliminaries](research/1/preliminaries/index.html)
+:::
+
+::: {.callout-tip .simple}
+Practical techniques for formalizing categorical constructions in proof assistants include leveraging inductive type systems to encode higher-dimensional structures and using homotopy type theory to capture equivalence relations between morphisms.
+:::
+
+::: {.callout-hint .simple}
+Intuitions from topological quantum field theories may inform the development of more robust generalizations of categorical composition, particularly in contexts where locality and functoriality are central.
+:::
+
+::: {.callout-info .simple}
+Recent advances in computational category theory have enabled the implementation of automated reasoning tools for n-categories, facilitating the verification of complex coherence conditions in physical models.
+:::
+
+::: {.callout-warning .simple}
+Care must be taken when translating abstract categorical results to computational frameworks, as issues of decidability and computational complexity may arise for higher-dimensional structures.
+:::
+
+::: {.callout-caution .simple}
+Over-reliance on syntactic encodings of category theory can obscure geometric intuitions, highlighting the need for hybrid approaches that integrate formal syntax with semantic visualization.
+:::
+
+::: {.callout-danger .simple}
+Inconsistencies may emerge when combining foundational frameworks (e.g., ZFC vs. homotopy type theory) for categorical modeling, requiring careful attention to metatheoretic assumptions.
+:::
+
+::: {.callout-error .simple}
+Common pitfalls in classifying categorical structures include misapplying equivalence criteria for higher morphisms and overlooking non-trivial coherence constraints in n-functorial compositions.
+:::
+
+::: {.callout-success .simple}
+The integration of higher category theory with quantum circuit design has yielded promising results for classifying topological phases of matter, demonstrating practical utility of abstract formalisms.
+:::
+
+::: {.callout-check .simple}
+Key milestones in this research direction include the formalization of 2-functorial quantum gates and the classification of braided monoidal structures in low-dimensional topological systems.
+:::
+
+::: {.callout-done .simple}
+Completed work includes the development of a computational toolchain for verifying functoriality of quantum operations and the characterization of monoidal equivalences between circuit models.
+:::
+
+::: {.callout-example .simple}
+A concrete illustration of these methods is the construction of a 3-category encoding the compositional structure of fault-tolerant quantum error correction protocols, where 3-morphisms represent error recovery strategies.
+:::
+
+::: {.callout-exercise .simple}
+Propose a generalization of the Yoneda lemma to (∞,1)-categories that accounts for higher-dimensional natural transformations, and discuss its implications for classifying representable functors in physical contexts.
+:::
+
+::: {.callout-question .simple}
+How might the theory of derivators be adapted to provide a more computationally tractable framework for modeling higher categorical structures in artificial intelligence systems?
+:::
+
+::: {.callout-solution .simple}
+A potential resolution involves using derivator-generated homotopy theories to bridge abstract categorical semantics with concrete computational models, enabling the transfer of coherence results to algorithmic implementations.
 :::
 
 ---

@@ -14312,4 +14312,891 @@ $callout-important-link-hover: #FFFFFF; // 链接悬停白
   }
 }
 
+/* ==================== 14种Callout环境样式 - 渐变主题 ==================== */
+
+// 1. Callout Tip (薰衣草紫)
+$callout-tip-bg-1: #4B0082;
+$callout-tip-bg-2: #9370DB;
+$callout-tip-bg-3: #D8BFD8;
+$callout-tip-text: #F8F0FF;
+$callout-tip-title: #D8BFD8;
+$callout-tip-link: #E6E6FA;
+$callout-tip-link-hover: #FFFFFF;
+
+.callout-tip {
+  background-image: linear-gradient(45deg, $callout-tip-bg-1, $callout-tip-bg-2, $callout-tip-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-tip-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "💜";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-tip .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-tip-title !important;
+  -webkit-text-fill-color: $callout-tip-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-tip-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-tip .callout-icon {
+  color: $callout-tip-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-tip a {
+  color: $callout-tip-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-tip-link-hover !important;
+    background: rgba($callout-tip-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 2. Callout Hint (极光渐变)
+$callout-hint-bg-1: #00F260;
+$callout-hint-bg-2: #0575E6;
+$callout-hint-bg-3: #64F38C;
+$callout-hint-text: #F0FFF4;
+$callout-hint-title: #64F38C;
+$callout-hint-link: #B3FFC6;
+$callout-hint-link-hover: #FFFFFF;
+
+.callout-hint {
+  background-image: linear-gradient(45deg, $callout-hint-bg-1, $callout-hint-bg-2, $callout-hint-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-hint-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🌌";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-hint .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-hint-title !important;
+  -webkit-text-fill-color: $callout-hint-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-hint-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-hint .callout-icon {
+  color: $callout-hint-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-hint a {
+  color: $callout-hint-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-hint-link-hover !important;
+    background: rgba($callout-hint-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 3. Callout Info (深海蓝绿)
+$callout-info-bg-1: #1E90FF;
+$callout-info-bg-2: #00CED1;
+$callout-info-bg-3: #20B2AA;
+$callout-info-text: #E6F7FF;
+$callout-info-title: #00CED1;
+$callout-info-link: #B3E5FC;
+$callout-info-link-hover: #FFFFFF;
+
+.callout-info {
+  background-image: linear-gradient(135deg, $callout-info-bg-1, $callout-info-bg-2, $callout-info-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-info-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🌊";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-info .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-info-title !important;
+  -webkit-text-fill-color: $callout-info-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-info-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-info .callout-icon {
+  color: $callout-info-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-info a {
+  color: $callout-info-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-info-link-hover !important;
+    background: rgba($callout-info-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 4. Callout Warning (日落橙金)
+$callout-warning-bg-1: #FF4500;
+$callout-warning-bg-2: #FF8C00;
+$callout-warning-bg-3: #FFD700;
+$callout-warning-text: #FFF8E1;
+$callout-warning-title: #FFD700;
+$callout-warning-link: #FFE0B2;
+$callout-warning-link-hover: #FFFFFF;
+
+.callout-warning {
+  background-image: linear-gradient(90deg, $callout-warning-bg-1, $callout-warning-bg-2, $callout-warning-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-warning-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "☀️";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-warning .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-warning-title !important;
+  -webkit-text-fill-color: $callout-warning-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-warning-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-warning .callout-icon {
+  color: $callout-warning-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-warning a {
+  color: $callout-warning-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-warning-link-hover !important;
+    background: rgba($callout-warning-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 5. Callout Caution (赛博朋克粉蓝)
+$callout-caution-bg-1: #FF00FF;
+$callout-caution-bg-2: #00FFFF;
+$callout-caution-bg-3: #0000FF;
+$callout-caution-text: #F0F8FF;
+$callout-caution-title: #00FFFF;
+$callout-caution-link: #B3FFFF;
+$callout-caution-link-hover: #FFFFFF;
+
+.callout-caution {
+  background-image: linear-gradient(45deg, $callout-caution-bg-1, $callout-caution-bg-2, $callout-caution-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-caution-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "💻";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-caution .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-caution-title !important;
+  -webkit-text-fill-color: $callout-caution-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-caution-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-caution .callout-icon {
+  color: $callout-caution-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-caution a {
+  color: $callout-caution-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-caution-link-hover !important;
+    background: rgba($callout-caution-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 6. Callout Danger (玫瑰金铂)
+$callout-danger-bg-1: #FFB6C1;
+$callout-danger-bg-2: #D3D3D3;
+$callout-danger-bg-3: #FF69B4;
+$callout-danger-text: #FFF0F5;
+$callout-danger-title: #FF69B4;
+$callout-danger-link: #FFCCE5;
+$callout-danger-link-hover: #FFFFFF;
+
+.callout-danger {
+  background-image: linear-gradient(135deg, $callout-danger-bg-1, $callout-danger-bg-2, $callout-danger-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-danger-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "💎";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-danger .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-danger-title !important;
+  -webkit-text-fill-color: $callout-danger-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-danger-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-danger .callout-icon {
+  color: $callout-danger-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-danger a {
+  color: $callout-danger-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-danger-link-hover !important;
+    background: rgba($callout-danger-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 7. Callout Error (复古鎏金)
+$callout-error-bg-1: #D4AF37;
+$callout-error-bg-2: #FFD700;
+$callout-error-bg-3: #B8860B;
+$callout-error-text: #FFF8DC;
+$callout-error-title: #FFD700;
+$callout-error-link: #FFE4B5;
+$callout-error-link-hover: #FFFFFF;
+
+.callout-error {
+  background-image: linear-gradient(45deg, $callout-error-bg-1, $callout-error-bg-2, $callout-error-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-error-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "👑";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-error .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-error-title !important;
+  -webkit-text-fill-color: $callout-error-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-error-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-error .callout-icon {
+  color: $callout-error-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-error a {
+  color: $callout-error-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-error-link-hover !important;
+    background: rgba($callout-error-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 8. Callout Success (科技钛金)
+$callout-success-bg-1: #FFC300;
+$callout-success-bg-2: #FFB347;
+$callout-success-bg-3: #FF6B35;
+$callout-success-text: #FFF9E6;
+$callout-success-title: #FFC300;
+$callout-success-link: #FFE082;
+$callout-success-link-hover: #FFFFFF;
+
+.callout-success {
+  background-image: linear-gradient(135deg, $callout-success-bg-1, $callout-success-bg-2, $callout-success-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-success-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "📡";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-success .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-success-title !important;
+  -webkit-text-fill-color: $callout-success-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-success-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-success .callout-icon {
+  color: $callout-success-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-success a {
+  color: $callout-success-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-success-link-hover !important;
+    background: rgba($callout-success-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 9. Callout Check (玫瑰金)
+$callout-check-bg-1: #FFB6C1;
+$callout-check-bg-2: #FF69B4;
+$callout-check-bg-3: #C71585;
+$callout-check-text: #FFEBF0;
+$callout-check-title: #FF69B4;
+$callout-check-link: #FFC2D1;
+$callout-check-link-hover: #FFFFFF;
+
+.callout-check {
+  background-image: linear-gradient(45deg, $callout-check-bg-1, $callout-check-bg-2, $callout-check-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-check-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "💍";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-check .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-check-title !important;
+  -webkit-text-fill-color: $callout-check-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-check-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-check .callout-icon {
+  color: $callout-check-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-check a {
+  color: $callout-check-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-check-link-hover !important;
+    background: rgba($callout-check-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 10. Callout Done (深空银)
+$callout-done-bg-1: #808080;
+$callout-done-bg-2: #A9A9A9;
+$callout-done-bg-3: #D3D3D3;
+$callout-done-text: #F5F5F5;
+$callout-done-title: #D3D3D3;
+$callout-done-link: #E0E0E0;
+$callout-done-link-hover: #FFFFFF;
+
+.callout-done {
+  background-image: linear-gradient(45deg, $callout-done-bg-1, $callout-done-bg-2, $callout-done-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-done-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🌙";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-done .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-done-title !important;
+  -webkit-text-fill-color: $callout-done-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-done-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-done .callout-icon {
+  color: $callout-done-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-done a {
+  color: $callout-done-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-done-link-hover !important;
+    background: rgba($callout-done-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 11. Callout Example (科技银蓝)
+$callout-example-bg-1: #B0C4DE;
+$callout-example-bg-2: #778899;
+$callout-example-bg-3: #4682B4;
+$callout-example-text: #F0F8FF;
+$callout-example-title: #B0C4DE;
+$callout-example-link: #CFE0F7;
+$callout-example-link-hover: #FFFFFF;
+
+.callout-example {
+  background-image: linear-gradient(90deg, $callout-example-bg-1, $callout-example-bg-2, $callout-example-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-example-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🚀";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-example .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-example-title !important;
+  -webkit-text-fill-color: $callout-example-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-example-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-example .callout-icon {
+  color: $callout-example-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-example a {
+  color: $callout-example-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-example-link-hover !important;
+    background: rgba($callout-example-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 12. Callout Exercise (铂金)
+$callout-exercise-bg-1: #C0C0C0;
+$callout-exercise-bg-2: #87CEEB;
+$callout-exercise-bg-3: #B0C4DE;
+$callout-exercise-text: #F8F8FF;
+$callout-exercise-title: #87CEEB;
+$callout-exercise-link: #D1E7FF;
+$callout-exercise-link-hover: #FFFFFF;
+
+.callout-exercise {
+  background-image: linear-gradient(90deg, $callout-exercise-bg-1, $callout-exercise-bg-2, $callout-exercise-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-exercise-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "💎";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-exercise .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-exercise-title !important;
+  -webkit-text-fill-color: $callout-exercise-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-exercise-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-exercise .callout-icon {
+  color: $callout-exercise-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-exercise a {
+  color: $callout-exercise-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-exercise-link-hover !important;
+    background: rgba($callout-exercise-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 13. Callout Question (枪灰银)
+$callout-question-bg-1: #696969;
+$callout-question-bg-2: #708090;
+$callout-question-bg-3: #778899;
+$callout-question-text: #F5F5F5;
+$callout-question-title: #778899;
+$callout-question-link: #E0E0E0;
+$callout-question-link-hover: #FFFFFF;
+
+.callout-question {
+  background-image: linear-gradient(135deg, $callout-question-bg-1, $callout-question-bg-2, $callout-question-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-question-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🤖";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-question .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-question-title !important;
+  -webkit-text-fill-color: $callout-question-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-question-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-question .callout-icon {
+  color: $callout-question-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-question a {
+  color: $callout-question-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-question-link-hover !important;
+    background: rgba($callout-question-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// 14. Callout Solution (补充：莫兰迪蓝紫)
+$callout-solution-bg-1: #9FA8DA;
+$callout-solution-bg-2: #B39DDB;
+$callout-solution-bg-3: #D1C4E9;
+$callout-solution-text: #F8F0FF;
+$callout-solution-title: #B39DDB;
+$callout-solution-link: #E6E6FA;
+$callout-solution-link-hover: #FFFFFF;
+
+.callout-solution {
+  background-image: linear-gradient(90deg, $callout-solution-bg-1, $callout-solution-bg-2, $callout-solution-bg-3) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-solution-text !important;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  
+  &::after {
+    content: "🔍";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+.callout-solution .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-solution-title !important;
+  -webkit-text-fill-color: $callout-solution-title !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba($callout-solution-title, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.callout-solution .callout-icon {
+  color: $callout-solution-title !important;
+  font-size: 1.3rem !important;
+}
+
+.callout-solution a {
+  color: $callout-solution-link !important;
+  text-decoration: underline dotted;
+  &:hover {
+    color: $callout-solution-link-hover !important;
+    background: rgba($callout-solution-title, 0.1);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+/* ==================== 深色模式适配 ==================== */
+[data-bs-theme="dark"] {
+  // Tip
+  .callout-tip {
+    background-image: linear-gradient(45deg, darken($callout-tip-bg-1,10%), darken($callout-tip-bg-2,10%), lighten($callout-tip-bg-3,5%)) !important;
+  }
+  
+  // Hint
+  .callout-hint {
+    background-image: linear-gradient(45deg, darken($callout-hint-bg-1,10%), darken($callout-hint-bg-2,10%), lighten($callout-hint-bg-3,5%)) !important;
+  }
+  
+  // Info
+  .callout-info {
+    background-image: linear-gradient(135deg, darken($callout-info-bg-1,10%), darken($callout-info-bg-2,10%), lighten($callout-info-bg-3,5%)) !important;
+  }
+  
+  // Warning
+  .callout-warning {
+    background-image: linear-gradient(90deg, darken($callout-warning-bg-1,10%), darken($callout-warning-bg-2,10%), lighten($callout-warning-bg-3,5%)) !important;
+  }
+  
+  // Caution
+  .callout-caution {
+    background-image: linear-gradient(45deg, darken($callout-caution-bg-1,10%), darken($callout-caution-bg-2,10%), lighten($callout-caution-bg-3,5%)) !important;
+  }
+  
+  // Danger
+  .callout-danger {
+    background-image: linear-gradient(135deg, darken($callout-danger-bg-1,10%), darken($callout-danger-bg-2,10%), lighten($callout-danger-bg-3,5%)) !important;
+  }
+  
+  // Error
+  .callout-error {
+    background-image: linear-gradient(45deg, darken($callout-error-bg-1,10%), darken($callout-error-bg-2,10%), lighten($callout-error-bg-3,5%)) !important;
+  }
+  
+  // Success
+  .callout-success {
+    background-image: linear-gradient(135deg, darken($callout-success-bg-1,10%), darken($callout-success-bg-2,10%), lighten($callout-success-bg-3,5%)) !important;
+  }
+  
+  // Check
+  .callout-check {
+    background-image: linear-gradient(45deg, darken($callout-check-bg-1,10%), darken($callout-check-bg-2,10%), lighten($callout-check-bg-3,5%)) !important;
+  }
+  
+  // Done
+  .callout-done {
+    background-image: linear-gradient(45deg, darken($callout-done-bg-1,10%), darken($callout-done-bg-2,10%), lighten($callout-done-bg-3,5%)) !important;
+  }
+  
+  // Example
+  .callout-example {
+    background-image: linear-gradient(90deg, darken($callout-example-bg-1,10%), darken($callout-example-bg-2,10%), lighten($callout-example-bg-3,5%)) !important;
+  }
+  
+  // Exercise
+  .callout-exercise {
+    background-image: linear-gradient(90deg, darken($callout-exercise-bg-1,10%), darken($callout-exercise-bg-2,10%), lighten($callout-exercise-bg-3,5%)) !important;
+  }
+  
+  // Question
+  .callout-question {
+    background-image: linear-gradient(135deg, darken($callout-question-bg-1,10%), darken($callout-question-bg-2,10%), lighten($callout-question-bg-3,5%)) !important;
+  }
+  
+  // Solution
+  .callout-solution {
+    background-image: linear-gradient(90deg, darken($callout-solution-bg-1,10%), darken($callout-solution-bg-2,10%), lighten($callout-solution-bg-3,5%)) !important;
+  }
+}
+
 // quarto-scss-analysis-annotation { "origin": null }
