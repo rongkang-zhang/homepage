@@ -43,7 +43,7 @@ about:
     - text: "{{< ai arxiv >}} arXiv"
       href: https://www.zhihu.com/people/shokatsu-ei
     - text: "{{< fa solid book-atlas >}} INSPIRE-HEP"
-      href: https://orcid.org/0009-0002-1334-733X
+      href: https://inspirehep.net/authors/3088928
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://www.zhihu.com/people/shokatsu-ei
     - text: "{{< ai orcid >}} ORCiD"
