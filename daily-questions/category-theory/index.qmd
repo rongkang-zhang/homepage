@@ -1,0 +1,21 @@
+---
+title: "Daily Question for Category Theory"
+author: "Rong-Kang Zhang"
+date: last-modified
+toc: false
+categories:
+  - Category Theory
+page-layout: full
+csl: ../../american-mathematical-society.csl
+listing:
+  contents: "*/index.qmd"
+  type: table
+  date-format: "YYYY-MM-DD"
+  categories: false
+  fields: [title, file-modified, author]
+  filter-ui: [title, file-modified, author]
+  sort: ["weight asc", "title asc", "file-modified desc"]
+  sort-ui: true
+  table-striped: true
+  page-size: 20
+---

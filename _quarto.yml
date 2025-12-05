@@ -38,6 +38,13 @@ website:
       - text: Publications
         icon: "bi-journal-text"
         href: publications/index.html
+      - text: Daily<br>Questions&nbsp;<small>▼</small>
+        icon: "bi-question-circle"
+        menu:
+            - text: Overview
+              href: daily-questions/index.html
+            - text: Category theory
+              href: daily-questions/category-theory/index.html
       - text: Expository<br>Notes&nbsp;<small>▼</small>
         icon: "bi-file-earmark-text"
         menu:

@@ -44,9 +44,24 @@
     ]
   },
   {
+    "listing": "/daily-questions/category-theory/index.html",
+    "items": [
+      "/daily-questions/category-theory/20251208/index.html",
+      "/daily-questions/category-theory/20251209/index.html"
+    ]
+  },
+  {
     "listing": "/codelab/index.html",
     "items": [
       "/codelab/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/daily-questions/index.html",
+    "items": [
+      "/daily-questions/category-theory/index.html",
+      "/daily-questions/category-theory/20251209/index.html",
+      "/daily-questions/category-theory/20251208/index.html"
     ]
   },
   {
