@@ -80,6 +80,10 @@ about:
 <!-- 引入 Font Awesome 图标库 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<div style="margin: 1.5rem 0; padding: 1.2rem; border-top: 1px solid #444; background: #1a1a1a; text-align: center; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <script type="text/javascript" id="clstr_globe" src="https://clustrmaps.com/globe.js?d=Pg7-pX-BFXtUqWXRXISRMWn9J6zSBr6D5VCwEVFEm2w"></script>
+</div>
+
 # Research Interests
 
 :::{.callout-important appearance="simple"}
