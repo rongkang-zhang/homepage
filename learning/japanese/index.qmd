@@ -95,6 +95,361 @@ format:
 }
 </style>
 
+### 日语学习资源 & 阅读状态
+- 一看就会的日语句型 📋 Not Started
+- 人人读日语-这样阅读最有效 📋 Not Started
+- 新标准日语句型表达辞典 📋 Not Started
+- 新编日语外来语袖珍词典 📋 Not Started
+- 新编日语语法教程 📋 Not Started
+- 日语语法原来这么有趣 📋 Not Started
+- 标准日语语法 📋 Not Started
+- 零起点掌握标准日本语发音 📋 Not Started
+
+- TRY！新日语能力考试-语法必备
+  - N1 ✅ Completed
+  - N2 ✅ Completed
+  - N3 📚 In Progress
+  - N4 📋 Not Started
+  - N5 ✅ Completed
+
+- いろどり-生活的日本语
+  - 入门 📋 Not Started
+  - 初级-1 📋 Not Started
+  - 初级-2 📋 Not Started
+
+- 大家的日语
+  - 中级
+    - 1
+      - 大家的日语-中级-1 📋 Not Started
+      - 学习辅导用书 📋 Not Started
+      - 标准习题集 📋 Not Started
+      - 词汇练习册 📋 Not Started
+    - 2
+      - 大家的日语-中级-2 📋 Not Started
+      - 学习辅导用书 📋 Not Started
+      - 标准习题集 📋 Not Started
+  - 初级
+    - 写作 📋 Not Started
+    - 1
+      - 听力 📋 Not Started
+      - 大家的日语-初级-1 📋 Not Started
+      - 学习辅导用书 📋 Not Started
+      - 标准习题册 📋 Not Started
+      - 阅读 📋 Not Started
+    - 2
+      - 句型练习册 📋 Not Started
+      - 大家的日语-初级-2 📋 Not Started
+      - 学习辅导用书 📋 Not Started
+      - 标准习题集 📋 Not Started
+
+- 宝书
+  - 橙宝书
+    - N3 📋 Not Started
+  - 红宝书
+    - 大全集 📋 Not Started
+    - 考前对策
+      - N1 📋 Not Started
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5、N4 📋 Not Started
+    - 词汇分类记忆
+      - N1 📋 Not Started
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N4+N5 📋 Not Started
+    - 详解+练习
+      - N1 📋 Not Started
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5、N4 📋 Not Started
+    - 速记
+      - N1 📋 Not Started
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5、N4 📋 Not Started
+  - 红蓝宝书
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+    - N5、N4 📋 Not Started
+  - 绿宝书
+    - N3 📋 Not Started
+  - 蓝宝书
+    - 1000日语句型随身带 📋 Not Started
+    - 大全集 📋 Not Started
+    - 考前对策
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5、N4 📋 Not Started
+    - 详解+练习
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5+N4 📋 Not Started
+    - 速记
+      - N1 📋 Not Started
+      - N2 📋 Not Started
+      - N3 📋 Not Started
+      - N5、N4 📋 Not Started
+
+- 新完全マスター
+  - N1
+    - Chinese
+      - 听力 📚 In Progress
+      - 模拟题 📋 Not Started
+      - 汉字 ✅ Completed
+      - 词汇 📚 In Progress
+      - 语法 ✅ Completed
+      - 阅读 📚 In Progress
+    - Japanese
+      - 文法 📚 In Progress
+  - N2
+    - Chinese
+      - 听力 ✅ Completed
+      - 汉字 ✅ Completed
+      - 自学手册-听力 📋 Not Started
+      - 词汇 ✅ Completed
+      - 语法 ✅ Completed
+      - 阅读 📚 In Progress
+    - Japanese
+      - 文法 ✅ Completed
+      - 聴解 ✅ Completed
+      - 語彙 ✅ Completed
+      - 読解 📚 In Progress
+  - N3
+    - Chinese
+      - 听力 📋 Not Started
+      - 模拟题 📋 Not Started
+      - 汉字 📋 Not Started
+      - 词汇 📋 Not Started
+      - 语法 📋 Not Started
+      - 阅读 📋 Not Started
+    - Japanese
+      - 語彙 📋 Not Started
+  - N4
+    - Chinese
+      - 模拟题 📋 Not Started
+      - 语法 📋 Not Started
+    - Japanese
+      - 文法 📋 Not Started
+      - 聴解 📌 On Hold
+      - 読解 📋 Not Started
+  - N5
+    - Chinese
+      - 模拟题 📋 Not Started
+
+- 新编日语
+  - 1 📋 Not Started
+  - 2 📋 Not Started
+  - 3 📋 Not Started
+  - 4 📋 Not Started
+  - 习题集
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+  - 同步辅导与练习
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+  - 同步辅导教程
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+  - 学习参考
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+
+- 日本語総まとめ
+  - 短期集中-初级日本语文法 📋 Not Started
+  - N1
+    - 文法 📋 Not Started
+    - 漢字 📋 Not Started
+    - 聴解 📋 Not Started
+    - 語彙 📋 Not Started
+    - 読解 📋 Not Started
+  - N2
+    - 問題集 📋 Not Started
+    - 文法-1 📋 Not Started
+    - 文法 📋 Not Started
+    - 漢字 📋 Not Started
+    - 聴解 📋 Not Started
+    - 語彙-1 📋 Not Started
+    - 語彙 📋 Not Started
+  - N3
+    - 文法 📋 Not Started
+    - 漢字 📋 Not Started
+    - 語彙 📋 Not Started
+    - 読解-1 📋 Not Started
+    - 読解 📋 Not Started
+  - N4
+    - 文法-読解-聴解 📋 Not Started
+    - 漢字-語彙 📋 Not Started
+  - N5
+    - 漢字-語彙-文法-読解-聴解 📋 Not Started
+
+- 日语教程
+  - 1 📋 Not Started
+  - 2 📋 Not Started
+  - 3 📋 Not Started
+  - 4 📋 Not Started
+  - 5 📋 Not Started
+  - 6 📋 Not Started
+  - 练习册
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+    - 5 📋 Not Started
+    - 6 📋 Not Started
+  - 辅导手册
+    - 1 📋 Not Started
+    - 2 📋 Not Started
+    - 3 📋 Not Started
+    - 4 📋 Not Started
+    - 5 📋 Not Started
+    - 6 📋 Not Started
+
+- 日语新起点
+  - 初级-上册 📋 Not Started
+  - 初级-下册 📋 Not Started
+
+- 日语泛读教程
+  - 1 📋 Not Started
+  - 2 📋 Not Started
+  - 3 📋 Not Started
+  - 4 📋 Not Started
+  - 教学参考书 📋 Not Started
+
+- 日语泛读教程-1
+  - 上 📋 Not Started
+  - 下 📋 Not Started
+
+- 日语综合教程
+  - 第一册 📋 Not Started
+  - 第七册 📋 Not Started
+  - 第三册 📋 Not Started
+  - 第二册 📋 Not Started
+  - 第五册 📋 Not Started
+  - 第八册 📋 Not Started
+  - 第六册 📋 Not Started
+  - 第四册 📋 Not Started
+  - 学习参考
+    - 第二册 📋 Not Started
+  - 课文翻译与练习答案
+    - 第七、八册 📋 Not Started
+    - 第五、六册 📋 Not Started
+
+- 标准日本语
+  - 5000词汇背诵手册-初级+中级 📋 Not Started
+  - 中级
+    - 句型归纳与例解 📋 Not Started
+    - 同步测试卷 📋 Not Started
+    - 同步练习 📋 Not Started
+    - 自测训练 📋 Not Started
+    - 课文详解精练 📋 Not Started
+    - 辅导练习册 📋 Not Started
+    - 上
+      - 同步辅导与练习 📋 Not Started
+      - 标准日本语-中级-上 📋 Not Started
+    - 下
+      - 同步辅导与练习 📋 Not Started
+      - 标准日本语-中级-下 📋 Not Started
+      - 词汇循环速记手抄本 📋 Not Started
+  - 初级
+    - 一课一练 📋 Not Started
+    - 句型手册 📋 Not Started
+    - 同步导学与测试 📋 Not Started
+    - 同步测试卷 📋 Not Started
+    - 同步练习 📋 Not Started
+    - 词汇例解 📋 Not Started
+    - 词汇手册 📋 Not Started
+    - 语法手册 📋 Not Started
+    - 上
+      - 一课一练 📋 Not Started
+      - 同步测试卷 📋 Not Started
+      - 同步讲解与练习 📋 Not Started
+      - 同步辅导与强化训练 📋 Not Started
+      - 同步辅导与考级模拟真题 📋 Not Started
+      - 标准日本语-初级-上 📋 Not Started
+      - 辅导练习册 📋 Not Started
+    - 下
+      - 同步测试卷 📋 Not Started
+      - 标准日本语-初级-下 📋 Not Started
+      - 自学辅导与同步训练 📋 Not Started
+      - 自学辅导及同步训练 📋 Not Started
+      - 课文详解精练 📋 Not Started
+  - 高级
+    - 同步测试卷 📋 Not Started
+    - 词汇循环速记手抄本 📋 Not Started
+    - 上
+      - 标准日本语-高级-上 📋 Not Started
+    - 下
+      - 标准日本语-高级-下 📋 Not Started
+
+- 标准日本语-场景会话-地道表达
+  - 常用动词 📋 Not Started
+  - 常用敬语 📋 Not Started
+
+- 综合日语
+  - 第一册 📋 Not Started
+  - 第三册 📋 Not Started
+  - 第二册 📋 Not Started
+  - 第四册 📋 Not Started
+  - 学习手册
+    - 第一册 📋 Not Started
+    - 第三册 📋 Not Started
+    - 第二册 📋 Not Started
+  - 教学参考书
+    - 第一册 📋 Not Started
+    - 第二册 📋 Not Started
+  - 教师用书
+    - 第一册 📋 Not Started
+    - 第三册 📋 Not Started
+    - 第二册 📋 Not Started
+    - 第四册 📋 Not Started
+  - 练习册
+    - 第一册 📋 Not Started
+    - 第三册 📋 Not Started
+    - 第二册 📋 Not Started
+    - 第四册 📋 Not Started
+
+- 读览日本-日语泛读精粹
+  - 一 📋 Not Started
+  - 二 📋 Not Started
+
+- 非凡-新日本语能力考试
+  - 全真模拟试题
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+    - N4 📋 Not Started
+    - N5 📋 Not Started
+  - 听解
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+  - 文字词汇
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+    - N5 📋 Not Started
+  - 语法-归纳整理+全解全练
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+    - N4 📋 Not Started
+    - N5 📋 Not Started
+  - 读解
+    - N1 📋 Not Started
+    - N2 📋 Not Started
+    - N3 📋 Not Started
+    - N4 📋 Not Started
+    - N5 📋 Not Started
+
 <!-- 以下是你的原版表格，内容未做任何修改 -->
 <table class="table-study">
   <thead>
