@@ -1039,7 +1039,7 @@ $theme-name: null !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from user-defined SCSS" }
 
-
+/*-- scss:defaults，自定义颜色变量 --*/
 $imperial-blue: #023A75;
 $grape: #B38CB4;
 $brick: #FC440F;
@@ -1050,8 +1050,8 @@ $canary: #FFFD82;
 $air-blue: #6CA6C1;
 $teal-blue: #437C90;
 $seaweed: #177E89;
-
-$navbar-background: $imperial-blue;
+$white: #ffffff;         // 白色（核心缺失变量）
+$black: #000000;         // 黑色（核心缺失变量）
 
 /*  导航栏/链接/数学等所有变量先一次性声明 */
 $navbar-height: 60px;
@@ -1062,52 +1062,59 @@ $grass-mint: #26c6da;
 $grass-lavender: #ab47bc;
 $grass-silver: #b0bec5;
 
-/*  深色模式仅覆盖「已存在变量」或写普通 CSS，深色模式下的导航栏设置  */
-[data-bs-theme="dark"] .navbar {
-  background: linear-gradient(135deg, darken($imperial-blue,10%) 0%, darken($teal-blue,10%) 100%);
+// ========== 水平列表样式（优化版：适配深色模式+交互效果） ==========
+.horizontal-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap; // 小屏幕自动换行
+  gap: 0.5rem;     // 替换margin-right，间距更均匀
+
+  // 列表项核心样式
+  &__item {
+    font-weight: bold;
+    padding: 0.3rem 0.8rem; // 增大内边距，提升点击体验
+    border-radius: 0.75rem;
+    transition: all 0.2s ease; // 统一过渡动画
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // 轻微阴影增强立体感
+
+    // 不同颜色变体（统一嵌套层级）
+    &--orange { background-color: $orange; color: $white; }
+    &--yellow { background-color: $yellow; color: $black; }
+    &--blue { background-color: $air-blue; color: $black; }
+    &--imperial-blue { background-color: $imperial-blue; color: $white; }
+    &--grape { background-color: $grape; color: $black; }
+    &--coral { background-color: $coral; color: $black; }
+    &--canary { background-color: $canary; color: $black; }
+    &--seaweed { background-color: $seaweed; color: $white; }
+    &--teal { background-color: $teal-blue; color: $white; }
+
+    // 悬停交互效果
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
-.horizontal-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    &__item {
-        margin-right: 0.5rem;
-        font-weight: bold;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.75rem;
-        &--orange {
-            background-color: $orange;
-            color: white;
-        }
-        &--yellow {
-            background-color: $yellow;
-        }
-        &--blue {
-            background-color: $air-blue;
-        }
-        &--imperial-blue {
-            background-color: $imperial-blue;
-            color: white;
-        }
-        &--grape {
-            background-color: $grape;
-        }
-        &--coral {
-            background-color: $coral;
-        }
-        &--canary {
-            background-color: $canary;
-        }
-        &--seaweed {
-            background-color: $seaweed;
-            color: white;
-        }
-        &--teal {
-            background-color: $teal-blue;
-            color: white;
-        }
+// ========== 深色模式适配（独立层级，避免嵌套过深） ==========
+[data-bs-theme="dark"] {
+  .horizontal-list__item {
+    filter: brightness(0.9); // 降低亮度适配深色背景
+
+    &:hover {
+      filter: brightness(1.05); // 悬停时略微提亮
     }
+
+    // 亮色背景项调整文字颜色，保证对比度
+    &--yellow, 
+    &--blue, 
+    &--grape, 
+    &--coral, 
+    &--canary {
+      color: $white; // 深色模式下统一改为白色文字
+    }
+  }
 }
 
 .wide-grid {
@@ -1116,11 +1123,66 @@ $grass-silver: #b0bec5;
     margin: 0 auto;    /* Center the grid */
   }
 
-/* 下面都是navbar导航栏的格式设置 */
+.navbar .dropdown-menu {
+    min-width: 11rem; /* 略缩小到11rem（176px），避免过宽的空白 */
+    border-radius: 0.5rem; /* 稍大的圆角（8px），更柔和 */
+    border: none;
+    /* 优化阴影：更细腻的多层阴影，模拟悬浮感 */
+    box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* 增加内边距，避免内容贴边 */
+    padding: 0.5rem 0;
+    /* 动画：下拉显示更顺滑 */
+    animation: fadeIn 0.2s ease-in-out;
+    /* 避免遮挡其他元素 */
+    z-index: 1050; /* Bootstrap 默认z-index，确保层级 */
+}
+
+/* 下拉菜单显示动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px); /* 轻微上移进入 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 可选：下拉菜单分割线优化（如果有） */
+.navbar .dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); /* 浅分割线 */
+}
+
+/* 可选：激活态下拉项样式（如果需要） */
+.navbar .dropdown-item.active {
+    background-color: $imperial-blue; /* 复用自定义变量 */
+    color: white;
+}
+
+/* 对导航栏进行的一系列优化 */
+/* 缩小导航栏内边距，节省空间 */
+.navbar {
+    padding: 0.25rem 1rem; /* 默认0.5rem 1rem，上下减半 */
+}
+/* 导航项间距缩小 */
+.navbar .nav-item {
+    margin-right: 0.3rem; /* 默认0.75rem，缩小0.25rem */
+}
+/* 响应式：小屏幕更早折叠导航栏 */
+@media (max-width: 992px) { /* Bootstrap lg断点 */
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+}
 
 /* 使得鼠标放置到navbar导航栏中对应栏目的时候，下拉菜单自动显示 */
-
-/* custom.scss 末尾追加 */
 .navbar .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -1131,21 +1193,19 @@ $grass-silver: #b0bec5;
 }
 
 /* 改字体、字号、字重 */
-
-/* 下拉菜单整体 */
+/* 下拉菜单字体（优化后更协调） */
 .navbar .dropdown-menu {
-  font-family: "Fira Sans", sans-serif;   /* 自定义字体 */
-  font-size: 0.9rem;                      /* 比导航栏小一点 */
-  font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.8rem; /* 比主导航小0.05rem，形成层级 */
+    font-weight: 400;
+    line-height: 1.5; /* 行高，提升下拉项可读性 */
 }
 
-/* 改文字颜色 + 悬停背景 */
-
+/* 改链接文字颜色 + 悬停背景 */
 /* 单条链接 */
 .navbar .dropdown-item {
   color: #2c3e50;                 /* 正常文字色 */
   padding: 0.4rem 1.2rem;         /* 上下宽松一点 */
-
   &:hover, &:focus {
     color: #ffffff;               /* 悬停文字变白 */
     background-color: $imperial-blue; /* 用你自己定义的 SCSS 变量 */
@@ -1153,7 +1213,6 @@ $grass-silver: #b0bec5;
 }
 
 /*  改下拉框宽度、圆角、阴影 */
-
 .navbar .dropdown-menu {
   min-width: 12rem;        /* 默认 160 px，可再加大 */
   border-radius: 0.375rem; /* 圆角 */
@@ -1162,32 +1221,27 @@ $grass-silver: #b0bec5;
 }
 
 /* navbar导航栏中的下拉菜单设置为圆角之后，鼠标放到子栏目时圆角消失，使得保持显示为圆角 */
-
 /* 下拉框整体圆角 */
 .navbar .dropdown-menu {
   border-radius: 0.375rem;
   overflow: hidden;            /* 关键：把子项的染色区域裁成圆角 */
 }
-
 /* 第一个子项 */
 .navbar .dropdown-item:first-child {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
 }
-
 /* 最后一个子项 */
 .navbar .dropdown-item:last-child {
   border-bottom-left-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
-
 /* 悬停时继续保留这些圆角 */
 .navbar .dropdown-item:first-child:hover,
 .navbar .dropdown-item:first-child:focus {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
 }
-
 .navbar .dropdown-item:last-child:hover,
 .navbar .dropdown-item:last-child:focus {
   border-bottom-left-radius: 0.375rem;
@@ -1205,6 +1259,8 @@ $grass-silver: #b0bec5;
   white-space: nowrap;
   box-shadow: 0 1px 2px rgba(0,0,0,.05); /* 极浅阴影更精致 */
 }
+
+/* ---- 更新 ---- */
 
 /* ---- 用来表示参加过的会议的Type, Role时所使用的方框标签---- */
 
