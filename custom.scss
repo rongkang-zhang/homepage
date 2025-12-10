@@ -63,9 +63,11 @@ $dropdown-font-size: 0.7rem; // 下拉菜单字号（进一步缩小）
   .nav-item {
     margin-right: 0.3rem; /* 缩小间距（默认0.75rem） */
 
-    // 下拉菜单 hover 自动显示
-    &.dropdown:hover .dropdown-menu {
-      display: block;
+    // 仅在桌面端生效：下拉菜单 hover 自动显示
+    @media (min-width: 992px) {
+      &.dropdown:hover .dropdown-menu {
+        display: block;
+      }
     }
 
     // 顶级下拉链接可点击
@@ -146,16 +148,67 @@ $dropdown-font-size: 0.7rem; // 下拉菜单字号（进一步缩小）
     margin: 0.5rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.05); // 浅分割线，不突兀
   }
+
+  // 汉堡按钮样式优化（新增：保证点击交互正常）
+  .navbar-toggler {
+    border: none; // 去掉默认边框
+    padding: 0.25rem 0.5rem; // 适配缩小的导航栏高度
+    font-size: $navbar-font-size;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(2, 58, 117, 0.25); // 聚焦态外轮廓，提升可访问性
+      outline: none;
+    }
+    // 汉堡按钮图标颜色适配
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(2, 58, 117, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  // 移动端折叠菜单样式（新增：保证展开后显示正常）
+  .navbar-collapse {
+    // 折叠菜单展开后的布局
+    &.show {
+      margin-top: 0.5rem; // 与汉堡按钮拉开间距
+      padding: 0.5rem 0; // 内边距，提升视觉体验
+      width: 100%; // 占满导航栏宽度
+    }
+  }
 }
 
 // 响应式：小屏幕更早折叠导航栏（Bootstrap lg断点）
 @media (max-width: 992px) {
+  .navbar-expand-lg {
+    // 恢复Bootstrap原生折叠逻辑，移除!important强制隐藏
+    .navbar-collapse {
+      display: none; // 仅默认隐藏，允许JS动态修改
+    }
+    .navbar-toggler {
+      display: block; // 显示汉堡按钮，移除!important
+      font-size: $navbar-font-size; // 折叠按钮字号同步缩小
+    }
+
+    // 移动端下拉菜单适配（新增：避免溢出）
+    .dropdown-menu {
+      width: 100%; // 移动端下拉菜单占满宽度
+      margin-top: 0.25rem; // 与上级链接拉开间距
+    }
+
+    // 移动端导航项适配
+    .nav-item {
+      margin-right: 0; // 取消右侧间距
+      margin-bottom: 0.25rem; // 纵向间距
+    }
+  }
+}
+
+// 桌面端恢复原生导航逻辑
+@media (min-width: 993px) {
   .navbar-expand-lg .navbar-collapse {
-    display: none !important;
+    display: flex !important; // 桌面端强制显示
+    flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
-    display: block !important;
-    font-size: $navbar-font-size; // 折叠按钮字号同步缩小
+    display: none !important; // 桌面端隐藏汉堡按钮
   }
 }
 
@@ -241,6 +294,10 @@ $dropdown-font-size: 0.7rem; // 下拉菜单字号（进一步缩小）
     .nav-link {
       color: rgba(255, 255, 255, 0.9); // 主导航文字半透白
     }
+    // 深色模式汉堡按钮图标适配
+    .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
     .dropdown-menu {
       background-color: rgba(30, 30, 30, 0.95); // 下拉菜单深色背景
       .dropdown-item {
@@ -253,6 +310,11 @@ $dropdown-font-size: 0.7rem; // 下拉菜单字号（进一步缩小）
       .dropdown-divider {
         border-top-color: rgba(255, 255, 255, 0.1); // 分割线浅白
       }
+    }
+    // 深色模式折叠菜单适配
+    .navbar-collapse.show {
+      background-color: rgba(15, 15, 15, 0.8); // 折叠菜单背景加深
+      border-radius: 0.5rem; // 圆角适配
     }
   }
 }
