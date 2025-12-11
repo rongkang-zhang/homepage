@@ -30,9 +30,9 @@ $grass-silver: #b0bec5;  // 银灰色
 $navbar-height: 60px;    // 导航栏高度
 $navbar-font-size: 0.75rem; // 主导航字号
 $dropdown-font-size: 0.7rem; // 下拉菜单字号
-// 汉堡按钮相关变量（修复：直接用字符串格式的颜色值）
-$toggler-color: "023A75"; // 帝国蓝（去掉#，适配SVG）
-$toggler-hover-color: "012a58"; // 深帝国蓝
+// 汉堡按钮相关变量（修改为白色）
+$toggler-color: "ffffff"; // 白色（去掉#，适配SVG）
+$toggler-hover-color: "f0f0f0"; // 浅白色
 $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
 
 
@@ -54,45 +54,51 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
   font-family: "Fira Sans", sans-serif;
   position: relative;
   z-index: 1060;
+  // 确保导航栏背景与折叠面板一致
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
 
-  // 汉堡按钮核心样式（修复：移除escape-svg，直接写SVG颜色）
+  // 汉堡按钮核心样式（修改为白色）
   .navbar-toggler {
-    border-color: rgba(#023A75, 0.2); // 直接用颜色值，不依赖变量转义
+    border-color: rgba(#ffffff, 0.3); // 白色边框
     padding: 0.25rem 0.5rem;
     font-size: $navbar-font-size;
-    color: #023A75; // 直接写颜色值
+    color: #ffffff !important; // 白色文字
     &:hover, &:focus {
-      color: #012a58; // 深帝国蓝
-      border-color: rgba(#012a58, 0.3);
+      color: #f0f0f0 !important; // 浅白色hover
+      border-color: rgba(#ffffff, 0.5);
       outline: none;
-      box-shadow: 0 0 0 0.2rem rgba(#023A75, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(#ffffff, 0.25);
     }
-    // 修复：汉堡图标背景图片（直接写SVG，不使用escape-svg）
+    // 汉堡图标改为白色SVG
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23023A75' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
   }
 
-  // 折叠面板样式（核心修复：继承导航栏红蓝渐变背景）
+  // 折叠面板样式（优化衔接效果）
   .navbar-collapse {
     z-index: 1050;
     @media (max-width: 992px) {
       position: absolute;
-      top: 100%;
+      top: 100%; // 紧贴导航栏底部
       left: 0;
       right: 0;
-      // 替换纯白色为导航栏同款红蓝渐变背景
+      // 与导航栏完全一致的渐变背景
       background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
+      // 去掉顶部圆角，让衔接更自然
       border-radius: 0 0 0.5rem 0.5rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       padding: 0.5rem 1rem;
-      // 强制文字为白色，确保渐变背景上可见
+      // 消除可能的间距
+      margin-top: 0 !important;
+      border-top: none !important;
+      // 强制文字为白色
       color: white !important;
       // 子元素文字继承白色
       .nav-link, .dropdown-item {
         color: white !important;
       }
-      // 深色模式折叠面板适配（深色系红蓝渐变）
+      // 深色模式折叠面板适配
       [data-bs-theme="dark"] & {
         background: linear-gradient(45deg, #0d1117, #8b1616, #0d1117) !important;
       }
@@ -197,7 +203,7 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     @media (max-width: 992px) {
       padding: 0.5rem 1rem;
       border-radius: 0.25rem !important;
-      // 移动端下拉项悬浮样式优化（适配渐变背景）
+      // 移动端下拉项悬浮样式优化
       &:hover {
         background-color: rgba(255,255,255,0.2) !important;
       }
@@ -210,17 +216,18 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     @media (max-width: 992px) {
       margin: 0.25rem 0;
-      // 移动端分割线适配白色文字
       border-top-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
 
-// 响应式折叠逻辑（兼容Bootstrap原生）
+// 响应式折叠逻辑
 @media (max-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: wrap;
     justify-content: space-between;
+    // 确保导航栏完全包裹内容
+    overflow: visible;
   }
 }
 
@@ -294,18 +301,19 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
   // 深色模式导航栏适配
   .navbar {
     background-color: rgba(15, 23, 42, 0.95) !important;
+    // 深色模式导航栏渐变背景
+    background: linear-gradient(45deg, #0d1117, #8b1616, #0d1117) !important;
     .nav-link {
       color: rgba(255, 255, 255, 0.9);
       &:hover {
         color: $white;
       }
     }
-    // 深色模式汉堡按钮
+    // 深色模式汉堡按钮（保持白色）
     .navbar-toggler {
       border-color: rgba($white, 0.2);
       color: rgba($white, 0.9);
       .navbar-toggler-icon {
-        // 修复：深色模式汉堡图标直接写白色SVG
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
       &:hover {
