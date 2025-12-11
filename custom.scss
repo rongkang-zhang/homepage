@@ -73,7 +73,7 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     }
   }
 
-  // 折叠面板样式
+  // 折叠面板样式（核心修复：继承导航栏红蓝渐变背景）
   .navbar-collapse {
     z-index: 1050;
     @media (max-width: 992px) {
@@ -81,12 +81,20 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
       top: 100%;
       left: 0;
       right: 0;
-      background-color: $white;
+      // 替换纯白色为导航栏同款红蓝渐变背景
+      background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
       border-radius: 0 0 0.5rem 0.5rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       padding: 0.5rem 1rem;
+      // 强制文字为白色，确保渐变背景上可见
+      color: white !important;
+      // 子元素文字继承白色
+      .nav-link, .dropdown-item {
+        color: white !important;
+      }
+      // 深色模式折叠面板适配（深色系红蓝渐变）
       [data-bs-theme="dark"] & {
-        background-color: rgba(30, 30, 30, 0.95);
+        background: linear-gradient(45deg, #0d1117, #8b1616, #0d1117) !important;
       }
     }
   }
@@ -189,6 +197,10 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     @media (max-width: 992px) {
       padding: 0.5rem 1rem;
       border-radius: 0.25rem !important;
+      // 移动端下拉项悬浮样式优化（适配渐变背景）
+      &:hover {
+        background-color: rgba(255,255,255,0.2) !important;
+      }
     }
   }
 
@@ -198,6 +210,8 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     @media (max-width: 992px) {
       margin: 0.25rem 0;
+      // 移动端分割线适配白色文字
+      border-top-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
@@ -298,10 +312,6 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
         color: $white;
         border-color: rgba($white, 0.3);
       }
-    }
-    // 深色模式折叠面板
-    .navbar-collapse {
-      background-color: rgba(15, 23, 42, 0.95);
     }
     // 深色模式下拉菜单
     .dropdown-menu {
