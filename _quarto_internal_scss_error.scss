@@ -1383,14 +1383,36 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
 /* ==============================================
    6. 动画定义 (Animation Definitions)
    ============================================== */
+// 动画参数变量（可移至全局变量区，如1.全局变量定义后）
+$fadein-offset-y: 5px;       // 垂直位移距离
+$fadein-start-opacity: 0;    // 起始透明度
+$fadein-end-opacity: 1;      // 结束透明度
+$fadein-middle-opacity: 0.5; // 中间过渡透明度（可选）
+
+// 淡入动画（核心）
 @keyframes fadeIn {
   from {
-    opacity: 0;
-    transform: translateY(5px);
+    opacity: $fadein-start-opacity;
+    transform: translateY($fadein-offset-y);
+  }
+  50% {
+    opacity: $fadein-middle-opacity;
   }
   to {
-    opacity: 1;
+    opacity: $fadein-end-opacity;
     transform: translateY(0);
+  }
+}
+
+// 淡出动画（配套退出动效）
+@keyframes fadeOut {
+  from {
+    opacity: $fadein-end-opacity;
+    transform: translateY(0);
+  }
+  to {
+    opacity: $fadein-start-opacity;
+    transform: translateY($fadein-offset-y);
   }
 }
 
