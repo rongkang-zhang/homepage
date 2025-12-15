@@ -506,23 +506,19 @@ window.Quarto = {
 
 
 
-<!-- 学术风格标题（保留原 text 类样式，替换文字） -->
+<!-- 学术风格标题（移除内联样式，统一由CSS管理） -->
 
 <div class="text">
 
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: 3px;">Rong-Kang Zhang</h1>
+  <h1>Rong-Kang Zhang</h1>
 
-  <p style="font-size: 1.2rem; opacity: 0.8; letter-spacing: 1px;">
-
-    Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy
-
-  </p>
+  <p>Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy</p>
 
 </div>
 
 
 
-<!-- 亮/暗模式适配（不修改粒子核心逻辑，仅调整颜色） -->
+<!-- 亮/暗模式适配（仅调整颜色，不影响核心逻辑） -->
 
 <script>
 
@@ -534,17 +530,17 @@ document.addEventListener('quarto-theme-change', function(e) {
 
   
 
-  // 适配标题颜色
+  // 适配标题颜色（与CSS的data-theme联动）
 
   if (text) {
 
-    text.style.color = isDarkMode ? '#fff' : '#023a75ff';
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
 
   }
 
   
 
-  // 适配粒子颜色（仅修改颜色，不影响鼠标交互）
+  // 适配粒子颜色
 
   if (window.particle && particle.y) {
 
@@ -562,10 +558,24 @@ document.addEventListener('quarto-theme-change', function(e) {
 
 });
 
+
+
+// 初始化时强制触发一次主题适配（避免首次加载颜色错误）
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark' || 
+
+                     window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+
+});
+
 </script>
 <script>
 
-// 粒子插件（完全保留原文件逻辑，仅修复关键错误）
+// 粒子插件（优化：粒子更多更小 + 推动更柔和）
 
 const particle = {
 
@@ -579,17 +589,13 @@ const particle = {
 
               o = 1;
 
-        // 修复：确保 Canvas 绘制尺寸与显示尺寸一致
-
         let a = t.width = window.innerWidth * o,
 
             c = t.height = window.innerHeight * o;
 
-        const i = .05 * a,
+        const i = .07 * a, // 粒子连接距离（优化：比之前稍紧凑，配合更多粒子）
 
-              s = .1 * a,
-
-              // 修复：默认参数兼容写法（保留原逻辑，避免 ES6 语法问题）
+              s = .18 * a,  // 鼠标影响范围（优化：比之前稍小，推动更温和）
 
               d = function(e) { return Math.random() * (e || 1); },
 
@@ -611,7 +617,9 @@ const particle = {
 
               },
 
-              y = new Array(400).fill({}).map(() => ({
+              // 粒子数量（优化：200→280，稍微多一点但不拥挤）
+
+              y = new Array(280).fill({}).map(() => ({
 
                   x: .5 * a + Math.cos(d(r)) * d(.5 * a),
 
@@ -619,17 +627,17 @@ const particle = {
 
                   angle: d(r),
 
-                  speed: d(.15),
+                  speed: d(.12), // 初始速度（优化：比之前稍慢，更平稳）
 
-                  normalSpeed: d(.15),
+                  normalSpeed: d(.12),
 
-                  oscAmplitudeX: d(2),
+                  oscAmplitudeX: d(1.5), // 振动幅度（优化：1.5→1.2，运动更平缓）
 
-                  oscSpeedX: .001 + d(.008),
+                  oscSpeedX: .001 + d(.006), // 振动速度（优化：稍慢）
 
-                  oscAmplitudeY: d(2),
+                  oscAmplitudeY: d(1.5),
 
-                  oscSpeedY: .001 + d(.008),
+                  oscSpeedY: .001 + d(.006),
 
                   connectDistance: d(i),
 
@@ -653,13 +661,13 @@ const particle = {
 
                       (e.y > c || e.y < 0) && (e.angle = -e.angle);
 
-                      d() < .005 && (e.oscAmplitudeX = d(2));
+                      d() < .005 && (e.oscAmplitudeX = d(1.5));
 
-                      d() < .005 && (e.oscSpeedX = .001 + d(.008));
+                      d() < .005 && (e.oscSpeedX = .001 + d(.006));
 
-                      d() < .005 && (e.oscAmplitudeY = d(2));
+                      d() < .005 && (e.oscAmplitudeY = d(1.5));
 
-                      d() < .005 && (e.oscSpeedY = .001 + d(.008));
+                      d() < .005 && (e.oscSpeedY = .001 + d(.006));
 
                       e.x = Math.max(-.01, Math.min(e.x, a + .01));
 
@@ -675,7 +683,7 @@ const particle = {
 
                           const n = m(e.x, e.y, t.x, t.y);
 
-                          return e.speed = h(e.speed, e.speed + .05 / e.connectDistance * n, .2), {
+                          return e.speed = h(e.speed, e.speed + .03 / e.connectDistance * n, .2), { // 粒子间速度影响（优化：.05→.03，更柔和）
 
                               p1: e,
 
@@ -691,7 +699,21 @@ const particle = {
 
                           const o = Math.sin(p * e.p1.oscSpeedX);
 
-                          n.beginPath(), n.globalAlpha = e.opacity, n.moveTo(e.p1.x, e.p1.y), n.lineTo(e.p2.x, e.p2.y), n.strokeStyle = `rgb(${Math.floor(e.color.r * o)},${Math.floor(.5 * e.color.g + .5 * e.color.g * o)},${e.color.b})`, n.lineWidth = 4 * e.opacity, n.stroke(), n.closePath();
+                          n.beginPath(), 
+
+                          n.globalAlpha = e.opacity * 0.8; // 透明度（优化：×0.8，视觉更小）
+
+                          n.moveTo(e.p1.x, e.p1.y), 
+
+                          n.lineTo(e.p2.x, e.p2.y), 
+
+                          n.strokeStyle = `rgb(${Math.floor(e.color.r * o)},${Math.floor(.5 * e.color.g + .5 * e.color.g * o)},${e.color.b})`, 
+
+                          n.lineWidth = 2 * e.opacity; // 线条宽度（优化：4→2，视觉更小）
+
+                          n.stroke(), 
+
+                          n.closePath();
 
                       });
 
@@ -703,7 +725,7 @@ const particle = {
 
         g();
 
-        // 修复：鼠标坐标获取（用 clientX/clientY，兼容所有场景）
+        // 鼠标交互（优化：推动速度.3→.18，更慢更柔和）
 
         window.addEventListener("mousemove", e => {
 
@@ -719,7 +741,7 @@ const particle = {
 
                     e.angle = ((e, t, n, o) => Math.atan2(o - t, n - e))(t, n, e.x, e.y);
 
-                    const a = .1 * (s - o);
+                    const a = .18 * (s - o); // 推动速度（核心优化：更慢）
 
                     e.speed = h(e.speed, a, .2);
 
@@ -728,6 +750,8 @@ const particle = {
             });
 
         });
+
+        // 窗口大小适配
 
         window.addEventListener("resize", e => {
 
@@ -743,7 +767,7 @@ const particle = {
 
 
 
-// 页面加载完成后初始化（ID 为 my_canvas，与 HTML 一致）
+// 页面加载完成后初始化（ID：my_canvas，与HTML一致）
 
 document.addEventListener("DOMContentLoaded", function() {
 

@@ -596,23 +596,21 @@ window.Quarto = {
 <div id="particle-container">
   <canvas id="my_canvas"></canvas>
 </div>
-<!-- 学术风格标题（保留原 text 类样式，替换文字） -->
+<!-- 学术风格标题（移除内联样式，统一由CSS管理） -->
 <div class="text">
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: 3px;">Rong-Kang Zhang</h1>
-  <p style="font-size: 1.2rem; opacity: 0.8; letter-spacing: 1px;">
-    Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy
-  </p>
+  <h1>Rong-Kang Zhang</h1>
+  <p>Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy</p>
 </div>
-<!-- 亮/暗模式适配（不修改粒子核心逻辑，仅调整颜色） -->
+<!-- 亮/暗模式适配（仅调整颜色，不影响核心逻辑） -->
 <script>
 document.addEventListener('quarto-theme-change', function(e) {
   const isDarkMode = e.detail.mode === 'dark';
   const text = document.querySelector('.text');
-  // 适配标题颜色
+  // 适配标题颜色（与CSS的data-theme联动）
   if (text) {
-    text.style.color = isDarkMode ? '#fff' : '#023a75ff';
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
   }
-  // 适配粒子颜色（仅修改颜色，不影响鼠标交互）
+  // 适配粒子颜色
   if (window.particle && particle.y) {
     particle.y.forEach(p => {
       p.color = isDarkMode 
@@ -620,6 +618,12 @@ document.addEventListener('quarto-theme-change', function(e) {
         : { r: 66, g: 165, b: 245 };
     });
   }
+});
+// 初始化时强制触发一次主题适配（避免首次加载颜色错误）
+document.addEventListener('DOMContentLoaded', function() {
+  const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark' || 
+                     window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
 });
 </script>
 <script>
