@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* 1. 删除 overflow: hidden; 允许页面正常滚动 */
+    /* 2. 移除强制黑色背景，让 Quarto 主题控制背景（适配亮/暗模式） */
+}
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    /* 关键优化：粒子层作为背景，不影响滚动和交互 */
+    position: fixed; /* 固定在视口，不随滚动移动 */
+    top: 0;
+    left: 0;
+    z-index: -1; /* 置于所有内容下方 */
+    pointer-events: none; /* 不阻挡鼠标点击/滚动（核心！） */
+}
+.text {
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* 文字在粒子上方 */
+    text-align: center; /* 标题居中更美观 */
+}

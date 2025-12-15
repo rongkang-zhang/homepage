@@ -119,6 +119,9 @@ format:
     theme:
       light: [cosmo, custom.scss]
       dark:  [darkly, custom.scss]
+    # 加载 CSS 文件（顺序：先自定义样式，再特效样式，避免冲突）
+    css:
+      - assets/particle-effects/css/index.css  # 粒子特效 CSS
     toc: true
     toc-location: right           # 目录放右侧，正文更宽
     code-overflow: wrap       # 长代码自动折行，避免横向滚动条
@@ -145,6 +148,10 @@ format:
       - text: |
           <!-- Algolia 域名验证 Meta 标签 -->
           <meta name="algolia-site-verification" content="544890BC86AD4E84" />
+    include-before-body:
+      - particle-partial.html  # 先加载粒子容器（canvas）
+      - assets/particle-effects/js/particle-core.js  # 后加载粒子 JS（确保 DOM 存在）
+    # 你的现有其他配置（如 toc、fig-cap-location 等，保持不变）
     # 回到顶部按钮 + 平滑滚动（全站生效）
     include-after-body:
       text: |

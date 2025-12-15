@@ -168,6 +168,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../assets/particle-effects/css/index.css">
 <meta property="og:title" content="Daily Question – Rong-KangZhang">
 <meta property="og:description" content="This page presents a synoptic index of expository study notes produced during my self-study of foundational and frontier topics in mathematics and theoretical physics. The notes are arranged by subject area and each hyperlinked entry provides a self-contained exposition aimed at advanced undergraduates or beginning graduate students who wish to master the material in a systematic manner. All resources are open-access: the web versions can be read online directly, while ancillary PDFs compiled via Overleaf are available for download. Both formats are version-controlled through GitHub/Quarto to ensure continuous updating and public traceability.">
 <meta property="og:image" content="https://rongkang-zhang.github.io/homepage/daily-questions/assets/pictures/profile-picture.png">
@@ -526,6 +527,262 @@ window.Quarto = {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
+<!-- 粒子 Canvas 容器（ID 为 my_canvas，与 JS 一致） -->
+
+<div id="particle-container">
+
+  <canvas id="my_canvas"></canvas>
+
+</div>
+
+
+
+<!-- 学术风格标题（保留原 text 类样式，替换文字） -->
+
+<div class="text">
+
+  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: 3px;">Rong-Kang Zhang</h1>
+
+  <p style="font-size: 1.2rem; opacity: 0.8; letter-spacing: 1px;">
+
+    Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy
+
+  </p>
+
+</div>
+
+
+
+<!-- 亮/暗模式适配（不修改粒子核心逻辑，仅调整颜色） -->
+
+<script>
+
+document.addEventListener('quarto-theme-change', function(e) {
+
+  const isDarkMode = e.detail.mode === 'dark';
+
+  const text = document.querySelector('.text');
+
+  
+
+  // 适配标题颜色
+
+  if (text) {
+
+    text.style.color = isDarkMode ? '#fff' : '#023a75ff';
+
+  }
+
+  
+
+  // 适配粒子颜色（仅修改颜色，不影响鼠标交互）
+
+  if (window.particle && particle.y) {
+
+    particle.y.forEach(p => {
+
+      p.color = isDarkMode 
+
+        ? { r: 255, g: 255, b: 255 }
+
+        : { r: 66, g: 165, b: 245 };
+
+    });
+
+  }
+
+});
+
+</script>
+<script>
+
+// 粒子插件（完全保留原文件逻辑，仅修复关键错误）
+
+const particle = {
+
+    init: function(e) {
+
+        const t = document.getElementById(e);
+
+        if (!t) return;
+
+        const n = t.getContext("2d"),
+
+              o = 1;
+
+        // 修复：确保 Canvas 绘制尺寸与显示尺寸一致
+
+        let a = t.width = window.innerWidth * o,
+
+            c = t.height = window.innerHeight * o;
+
+        const i = .05 * a,
+
+              s = .1 * a,
+
+              // 修复：默认参数兼容写法（保留原逻辑，避免 ES6 语法问题）
+
+              d = function(e) { return Math.random() * (e || 1); },
+
+              l = Math.PI,
+
+              r = 2 * l;
+
+        let p = new Date;
+
+        const h = (e, t, n) => (1 - n) * e + n * t,
+
+              m = (e, t, n, o) => {
+
+                  const a = e - n,
+
+                        c = t - o;
+
+                  return Math.sqrt(a * a + c * c);
+
+              },
+
+              y = new Array(400).fill({}).map(() => ({
+
+                  x: .5 * a + Math.cos(d(r)) * d(.5 * a),
+
+                  y: .5 * c + Math.sin(d(r)) * d(.5 * c),
+
+                  angle: d(r),
+
+                  speed: d(.15),
+
+                  normalSpeed: d(.15),
+
+                  oscAmplitudeX: d(2),
+
+                  oscSpeedX: .001 + d(.008),
+
+                  oscAmplitudeY: d(2),
+
+                  oscSpeedY: .001 + d(.008),
+
+                  connectDistance: d(i),
+
+                  color: { r: 255, g: 255, b: 255 }
+
+              })),
+
+              g = () => {
+
+                  p = new Date;
+
+                  y.forEach(e => {
+
+                      e.x += (Math.cos(e.angle) + Math.cos(p * e.oscSpeedX) * e.oscAmplitudeX) * e.speed;
+
+                      e.y += (Math.sin(e.angle) + Math.cos(p * e.oscSpeedY) * e.oscAmplitudeY) * e.speed;
+
+                      e.speed = h(e.speed, e.normalSpeed * o, .1);
+
+                      (e.x > a || e.x < 0) && (e.angle = l - e.angle);
+
+                      (e.y > c || e.y < 0) && (e.angle = -e.angle);
+
+                      d() < .005 && (e.oscAmplitudeX = d(2));
+
+                      d() < .005 && (e.oscSpeedX = .001 + d(.008));
+
+                      d() < .005 && (e.oscAmplitudeY = d(2));
+
+                      d() < .005 && (e.oscSpeedY = .001 + d(.008));
+
+                      e.x = Math.max(-.01, Math.min(e.x, a + .01));
+
+                      e.y = Math.max(-.01, Math.min(e.y, c + .01));
+
+                  });
+
+                  n.clearRect(0, 0, a, c);
+
+                  y.map(e => {
+
+                      y.filter(t => e != t && !(m(e.x, e.y, t.x, t.y) > e.connectDistance)).map(t => {
+
+                          const n = m(e.x, e.y, t.x, t.y);
+
+                          return e.speed = h(e.speed, e.speed + .05 / e.connectDistance * n, .2), {
+
+                              p1: e,
+
+                              p2: t,
+
+                              color: e.color,
+
+                              opacity: Math.floor(100 / e.connectDistance * (e.connectDistance - n)) / 100
+
+                          };
+
+                      }).forEach((e, t) => {
+
+                          const o = Math.sin(p * e.p1.oscSpeedX);
+
+                          n.beginPath(), n.globalAlpha = e.opacity, n.moveTo(e.p1.x, e.p1.y), n.lineTo(e.p2.x, e.p2.y), n.strokeStyle = `rgb(${Math.floor(e.color.r * o)},${Math.floor(.5 * e.color.g + .5 * e.color.g * o)},${e.color.b})`, n.lineWidth = 4 * e.opacity, n.stroke(), n.closePath();
+
+                      });
+
+                  });
+
+                  window.requestAnimationFrame(g);
+
+              };
+
+        g();
+
+        // 修复：鼠标坐标获取（用 clientX/clientY，兼容所有场景）
+
+        window.addEventListener("mousemove", e => {
+
+            const t = e.clientX * o,
+
+                  n = e.clientY * o;
+
+            y.forEach(e => {
+
+                const o = m(t, n, e.x, e.y);
+
+                if (o < s && o > 0) {
+
+                    e.angle = ((e, t, n, o) => Math.atan2(o - t, n - e))(t, n, e.x, e.y);
+
+                    const a = .1 * (s - o);
+
+                    e.speed = h(e.speed, a, .2);
+
+                }
+
+            });
+
+        });
+
+        window.addEventListener("resize", e => {
+
+            a = t.width = window.innerWidth * o;
+
+            c = t.height = window.innerHeight * o;
+
+        });
+
+    }
+
+};
+
+
+
+// 页面加载完成后初始化（ID 为 my_canvas，与 HTML 一致）
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    particle.init("my_canvas");
+
+});
+
+</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">

@@ -1,0 +1,34 @@
+<!-- 粒子 Canvas 容器（ID 为 my_canvas，与 JS 一致） -->
+<div id="particle-container">
+  <canvas id="my_canvas"></canvas>
+</div>
+
+<!-- 学术风格标题（保留原 text 类样式，替换文字） -->
+<div class="text">
+  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: 3px;">Rong-Kang Zhang</h1>
+  <p style="font-size: 1.2rem; opacity: 0.8; letter-spacing: 1px;">
+    Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy
+  </p>
+</div>
+
+<!-- 亮/暗模式适配（不修改粒子核心逻辑，仅调整颜色） -->
+<script>
+document.addEventListener('quarto-theme-change', function(e) {
+  const isDarkMode = e.detail.mode === 'dark';
+  const text = document.querySelector('.text');
+  
+  // 适配标题颜色
+  if (text) {
+    text.style.color = isDarkMode ? '#fff' : '#023a75ff';
+  }
+  
+  // 适配粒子颜色（仅修改颜色，不影响鼠标交互）
+  if (window.particle && particle.y) {
+    particle.y.forEach(p => {
+      p.color = isDarkMode 
+        ? { r: 255, g: 255, b: 255 }
+        : { r: 66, g: 165, b: 245 };
+    });
+  }
+});
+</script>
