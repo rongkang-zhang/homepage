@@ -1,68 +1,60 @@
-/* 全局重置 */
+/* 全局重置：仅基础重置，不影响Quarto原有布局 */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* 新增：避免盒模型问题 */
+    box-sizing: border-box;
 }
 
-/* 页面基础样式 */
+/* 页面基础样式：保留Quarto主题控制 */
 body {
-    /* 保留原有配置，由Quarto主题控制背景/滚动 */
+    position: relative; /* 确保子元素定位参考正确 */
 }
 
-/* 粒子Canvas样式（核心） */
-canvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: fixed; /* 固定在视口，不随滚动移动 */
-    top: 0;
-    left: 0;
-    z-index: -1; /* 置于所有内容下方 */
-    pointer-events: none; /* 不阻挡鼠标交互 */
+/* 粒子Canvas样式：核心优化，确保在所有内容最底层 */
+#my_canvas { /* 精准选中粒子Canvas，避免影响mathBackground */
+    width: 100vw !important;
+    height: 100vh !important;
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: -999 !important; /* 极低层级，不遮挡任何内容 */
+    pointer-events: none !important; /* 不阻挡鼠标交互 */
+    opacity: 1 !important; /* 粒子透明度按需调整 */
 }
 
-/* 粒子层标题样式（手动添加的标题） */
-.text {
-    color: #fff;
-    letter-spacing: 2px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* 文字在粒子上方 */
-    text-align: center;
-    width: 100%; /* 新增：适配小屏幕 */
-    padding: 0 20px; /* 新增：避免文字溢出 */
+/* 关键：仅隐藏手动添加的重复居中.text标题（核心解决重复问题） */
+/* 若已删除particle-partial.html中的.text容器，可删除此规则 */
+#particle-container .text {
+    display: none !important; /* 只隐藏粒子容器内的居中标题 */
 }
 
-/* 标题响应式样式（移除外联，统一管理） */
-.text h1 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem); /* 自适应屏幕宽度 */
-    margin-bottom: 1rem;
-    letter-spacing: 3px;
-    font-weight: 600; /* 新增：标题加粗更醒目 */
-}
-
-/* 副标题响应式样式 */
-.text p {
-    font-size: clamp(1rem, 2vw, 1.2rem); /* 自适应屏幕宽度 */
-    opacity: 0.8;
-    letter-spacing: 1px;
-    line-height: 1.5; /* 新增：行高更易读 */
-}
-
-/* 关键：隐藏Quarto自动生成的标题/描述（避免重复） */
-#quarto-header .title, 
-.quarto-website-description,
-.quarto-title-block { /* 兜底：覆盖所有Quarto默认标题容器 */
+/* 精准隐藏Quarto自动生成的「页面主体居中标题块」（不影响左侧/导航栏） */
+/* 仅隐藏正文区域的自动标题，保留about区域和导航栏 */
+main .quarto-title-block,
+main .quarto-website-description,
+main #quarto-header .title {
     display: none !important;
 }
 
-/* 兼容亮暗模式的标题颜色（优先级高于基础样式） */
+/* 兼容亮暗模式：若保留.text需用，删除则注释 */
 [data-theme="light"] .text {
     color: #023a75ff !important;
 }
 [data-theme="dark"] .text {
     color: #fff !important;
+}
+
+/* 保护左侧about区域的标题/描述不被隐藏 */
+.about-title,
+.about-description,
+.about-links {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* 保护导航栏标题不被隐藏 */
+.navbar-brand,
+#quarto-header nav .title {
+    display: inline-block !important;
 }
