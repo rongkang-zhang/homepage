@@ -530,18 +530,6 @@ window.Quarto = {
 
 
 
-<!-- 学术风格标题（移除内联样式，统一由CSS管理） -->
-
-<div class="text">
-
-  <h1>Rong-Kang Zhang</h1>
-
-  <p>Higher Category Theory · Grothendieck Toposes · Holographic Entanglement Entropy</p>
-
-</div>
-
-
-
 <!-- 亮/暗模式适配（仅调整颜色，不影响核心逻辑） -->
 
 <script>
@@ -597,8 +585,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-<script>
-
 // 粒子插件（优化：粒子更多更小 + 推动更柔和）
 
 const particle = {
@@ -629,9 +615,9 @@ const particle = {
 
         let p = new Date;
 
-        const h = (e, t, n) => (1 - n) * e + n * t,
+        const h = (e, t, n) =&gt; (1 - n) * e + n * t,
 
-              m = (e, t, n, o) => {
+              m = (e, t, n, o) =&gt; {
 
                   const a = e - n,
 
@@ -643,7 +629,7 @@ const particle = {
 
               // 粒子数量（优化：200→280，稍微多一点但不拥挤）
 
-              y = new Array(280).fill({}).map(() => ({
+              y = new Array(280).fill({}).map(() =&gt; ({
 
                   x: .5 * a + Math.cos(d(r)) * d(.5 * a),
 
@@ -669,11 +655,11 @@ const particle = {
 
               })),
 
-              g = () => {
+              g = () =&gt; {
 
                   p = new Date;
 
-                  y.forEach(e => {
+                  y.forEach(e =&gt; {
 
                       e.x += (Math.cos(e.angle) + Math.cos(p * e.oscSpeedX) * e.oscAmplitudeX) * e.speed;
 
@@ -681,17 +667,17 @@ const particle = {
 
                       e.speed = h(e.speed, e.normalSpeed * o, .1);
 
-                      (e.x > a || e.x < 0) && (e.angle = l - e.angle);
+                      (e.x &gt; a || e.x &lt; 0) &amp;&amp; (e.angle = l - e.angle);
 
-                      (e.y > c || e.y < 0) && (e.angle = -e.angle);
+                      (e.y &gt; c || e.y &lt; 0) &amp;&amp; (e.angle = -e.angle);
 
-                      d() < .005 && (e.oscAmplitudeX = d(1.5));
+                      d() &lt; .005 &amp;&amp; (e.oscAmplitudeX = d(1.5));
 
-                      d() < .005 && (e.oscSpeedX = .001 + d(.006));
+                      d() &lt; .005 &amp;&amp; (e.oscSpeedX = .001 + d(.006));
 
-                      d() < .005 && (e.oscAmplitudeY = d(1.5));
+                      d() &lt; .005 &amp;&amp; (e.oscAmplitudeY = d(1.5));
 
-                      d() < .005 && (e.oscSpeedY = .001 + d(.006));
+                      d() &lt; .005 &amp;&amp; (e.oscSpeedY = .001 + d(.006));
 
                       e.x = Math.max(-.01, Math.min(e.x, a + .01));
 
@@ -701,9 +687,9 @@ const particle = {
 
                   n.clearRect(0, 0, a, c);
 
-                  y.map(e => {
+                  y.map(e =&gt; {
 
-                      y.filter(t => e != t && !(m(e.x, e.y, t.x, t.y) > e.connectDistance)).map(t => {
+                      y.filter(t =&gt; e != t &amp;&amp; !(m(e.x, e.y, t.x, t.y) &gt; e.connectDistance)).map(t =&gt; {
 
                           const n = m(e.x, e.y, t.x, t.y);
 
@@ -719,7 +705,7 @@ const particle = {
 
                           };
 
-                      }).forEach((e, t) => {
+                      }).forEach((e, t) =&gt; {
 
                           const o = Math.sin(p * e.p1.oscSpeedX);
 
@@ -751,19 +737,19 @@ const particle = {
 
         // 鼠标交互（优化：推动速度.3→.18，更慢更柔和）
 
-        window.addEventListener("mousemove", e => {
+        window.addEventListener("mousemove", e =&gt; {
 
             const t = e.clientX * o,
 
                   n = e.clientY * o;
 
-            y.forEach(e => {
+            y.forEach(e =&gt; {
 
                 const o = m(t, n, e.x, e.y);
 
-                if (o < s && o > 0) {
+                if (o &lt; s &amp;&amp; o &gt; 0) {
 
-                    e.angle = ((e, t, n, o) => Math.atan2(o - t, n - e))(t, n, e.x, e.y);
+                    e.angle = ((e, t, n, o) =&gt; Math.atan2(o - t, n - e))(t, n, e.x, e.y);
 
                     const a = .18 * (s - o); // 推动速度（核心优化：更慢）
 
@@ -777,7 +763,7 @@ const particle = {
 
         // 窗口大小适配
 
-        window.addEventListener("resize", e => {
+        window.addEventListener("resize", e =&gt; {
 
             a = t.width = window.innerWidth * o;
 
@@ -798,8 +784,6 @@ document.addEventListener("DOMContentLoaded", function() {
     particle.init("my_canvas");
 
 });
-
-</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">

@@ -632,7 +632,7 @@ const particle = {
         let a = t.width = window.innerWidth * o,
             c = t.height = window.innerHeight * o;
         const i = .07 * a, // 粒子连接距离（优化：比之前稍紧凑，配合更多粒子）
-              s = .18 * a,  // 鼠标影响范围（优化：比之前稍小，推动更温和）
+              s = 0.1 * a,  // 鼠标影响范围：原0.18×65%=0.117
               d = function(e) { return Math.random() * (e || 1); },
               l = Math.PI,
               r = 2 * l;
@@ -643,8 +643,8 @@ const particle = {
                         c = t - o;
                   return Math.sqrt(a * a + c * c);
               },
-              // 粒子数量（优化：200→280，稍微多一点但不拥挤）
-              y = new Array(280).fill({}).map(() => ({
+              // 粒子数量：从280调整为330（核心修改点，增加粒子密度）
+              y = new Array(330).fill({}).map(() => ({
                   x: .5 * a + Math.cos(d(r)) * d(.5 * a),
                   y: .5 * c + Math.sin(d(r)) * d(.5 * c),
                   angle: d(r),
@@ -697,7 +697,7 @@ const particle = {
                   window.requestAnimationFrame(g);
               };
         g();
-        // 鼠标交互（优化：推动速度.3→.18，更慢更柔和）
+        // 鼠标交互（推动速度系数.18完全保留原值，未做任何修改）
         window.addEventListener("mousemove", e => {
             const t = e.clientX * o,
                   n = e.clientY * o;
@@ -705,7 +705,7 @@ const particle = {
                 const o = m(t, n, e.x, e.y);
                 if (o < s && o > 0) {
                     e.angle = ((e, t, n, o) => Math.atan2(o - t, n - e))(t, n, e.x, e.y);
-                    const a = .18 * (s - o); // 推动速度（核心优化：更慢）
+                    const a = .18 * (s - o); // 推动速度系数保持原值，未修改
                     e.speed = h(e.speed, a, .2);
                 }
             });
