@@ -57,21 +57,21 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
   // 确保导航栏背景与折叠面板一致
   background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
 
-  // 汉堡按钮核心样式（修改为白色）
+  // 汉堡按钮核心样式（修复后）
   .navbar-toggler {
-    border-color: rgba(#ffffff, 0.3); // 白色边框
+    border-color: rgba(212, 175, 55, 0.3); // 鎏金边框（直接写RGB，避免SCSS解析错误）
     padding: 0.25rem 0.5rem;
     font-size: $navbar-font-size;
-    color: #ffffff !important; // 白色文字
+    color: #D4AF37 !important; // 鎏金文字（直接写色值）
     &:hover, &:focus {
-      color: #f0f0f0 !important; // 浅白色hover
-      border-color: rgba(#ffffff, 0.5);
+      color: #FFD700 !important; // 亮金hover文字
+      border-color: rgba(255, 215, 0, 0.5);
       outline: none;
-      box-shadow: 0 0 0 0.2rem rgba(#ffffff, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(184, 134, 11, 0.25);
     }
-    // 汉堡图标改为白色SVG
+    // 汉堡图标改为纯鎏金SVG（避免内部渐变触发文件解析错误）
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFD700' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
   }
 
