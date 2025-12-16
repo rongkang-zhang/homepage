@@ -36,3 +36,54 @@ csl: ../american-mathematical-society.csl
     <li class="horizontal-list__item horizontal-list__item--teal">N2（精通）</li>
     <li class="horizontal-list__item horizontal-list__item--orange">N1（精通+）</li>
 </ul>
+
+## Mathematical Logic - Category Theory Resources
+
+<!-- 1级：Mathematical Logic（无div，纯details/summary） -->
+<details class="level-1">
+  <summary>Mathematical Logic</summary>
+  The foundational discipline studying formal reasoning, proof systems, and the structure of mathematical languages—with deep synergies with category theory as a unifying framework for abstract mathematical structures.
+  
+  <!-- 2级：Category Theory -->
+  <details class="level-2">
+    <summary>Category Theory</summary>
+    An abstract branch of algebra that formalizes mathematical relationships using "categories" (collections of objects and morphisms/arrows), providing a universal language for connecting logic, algebra, topology, and computer science.
+    
+    <!-- 3级：Textbooks -->
+    <details class="level-3">
+      <summary>Textbooks</summary>
+      Curated, peer-reviewed textbooks for learning category theory—prioritizing rigorous yet accessible resources for graduate students and researchers in mathematical logic.
+      
+      <!-- 4级：English -->
+      <details class="level-4">
+        <summary>English</summary>
+        High-quality English-language textbooks that balance theoretical rigor with practical applications, tailored to readers with a background in mathematical logic.
+        
+        <!-- 5级：Categories for the Working Mathematician -->
+        <details class="level-5">
+          <summary>Categories for the Working Mathematician</summary>
+          The definitive classic by Saunders Mac Lane (1971, 2nd ed. 1998)—the gold standard reference for category theory in mathematical practice, with a focus on applications to logic and algebra.
+          
+          <!-- 6级：Book Review -->
+          <details class="level-6">
+            <summary>Review of "Categories for the Working Mathematician"</summary>
+            Saunders Mac Lane’s <strong>Categories for the Working Mathematician</strong> remains unparalleled as a foundational text for category theory, even 50 years after its first publication. Unlike introductory texts that prioritize intuition over formalism, Mac Lane strikes a masterful balance between abstract theory and practical relevance—explicitly designed for "working mathematicians" who need to apply category theory to research in mathematical logic, algebraic topology, or universal algebra.
+            
+            Key strengths include:
+            <ul>
+              <li>Clear, concise exposition of core concepts (functors, natural transformations, adjunctions) with concrete examples from mathematical logic—avoiding the overly abstract prose that plagues lesser texts.</li>
+              <li>A structured progression from basic category theory to advanced topics (monads, limits, Yoneda’s lemma) that directly connect to proof theory and model theory in mathematical logic.</li>
+              <li>Challenging yet meaningful exercises that reinforce theoretical understanding without trivial drill work—ideal for graduate students in logic programs.</li>
+            </ul>
+            
+            Minor critiques: The text assumes a solid background in abstract algebra (group theory, rings), making it less accessible to absolute beginners, and the 1998 second edition retains some dated notation. However, these flaws are insignificant compared to its enduring value as a reference for logic researchers.
+            
+            Recommended for: Graduate students in mathematical logic, researchers in categorical logic, and mathematicians seeking a unifying framework for cross-disciplinary work.
+            
+            Official Reference: <a href="https://link.springer.com/book/10.1007/978-1-4757-4721-8">Springer Link (2nd Edition, 1998)</a>
+          </details>
+        </details>
+      </details>
+    </details>
+  </details>
+</details>

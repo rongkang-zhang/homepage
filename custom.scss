@@ -2326,3 +2326,243 @@ $callout-solution-link-hover: #FFFFFF;
     background-image: linear-gradient(90deg, darken($callout-solution-bg-1,10%), darken($callout-solution-bg-2,10%), lighten($callout-solution-bg-3,5%)) !important;
   }
 }
+
+/* ==================== 16级折叠列表样式 - custom.scss ==================== */
+// 变量定义
+$gradient-level1: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c);
+$gradient-level2: linear-gradient(135deg, #0B0C10, #1F2833, #66FCF1, #45A29E);
+$gradient-level3: linear-gradient(45deg, #00F260, #0575E6, #64F38C);
+$gradient-level4: linear-gradient(135deg, #1E90FF, #00CED1, #20B2AA);
+$gradient-level5: linear-gradient(90deg, #FF4500, #FF8C00, #FFD700);
+$gradient-level6: linear-gradient(45deg, #FF00FF, #00FFFF, #0000FF);
+
+$text-level1: #FFFFFF;    $text-content1: rgba(255,255,255,0.9);
+$text-level2: #66FCF1;    $text-content2: rgba(102,252,241,0.9);
+$text-level3: #64F38C;    $text-content3: rgba(100,243,140,0.9);
+$text-level4: #00CED1;    $text-content4: rgba(0,206,209,0.9);
+$text-level5: #FFD700;    $text-content5: rgba(255,215,0,0.9);
+$text-level6: #00FFFF;    $text-content6: rgba(0,255,255,0.9);
+
+$font-size-level1: 1.3em; $font-content1: 1.15em;
+$font-size-level2: 1.2em; $font-content2: 1.05em;
+$font-size-level3: 1.1em; $font-content3: 1em;
+$font-size-level4: 1.05em;$font-content4: 0.95em;
+$font-size-level5: 1em;   $font-content5: 0.9em;
+$font-size-level6: 0.95em;$font-content6: 0.85em;
+
+$font-weight-level1: 800;
+$font-weight-level2: 700;
+$font-weight-level3: 700;
+$font-weight-level4: 600;
+$font-weight-level5: 600;
+$font-weight-level6: 600;
+
+// 基础重置（关键：移除div依赖）
+details {
+  all: unset;
+  display: block;
+  margin: 0.8em 0;
+  padding: 1.2rem 1rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--content-color);
+  font-size: var(--content-fs);
+}
+
+// 1-6级样式（无div，直接作用于details/summary）
+details.level-1 {
+  --content-color: $text-content1;
+  --content-fs: $font-content1;
+  background: $gradient-level1;
+  margin-left: 0;
+  
+  summary {
+    color: $text-level1;
+    font-size: $font-size-level1;
+    font-weight: $font-weight-level1;
+    &::before { border-color: $text-level1; }
+  }
+}
+
+details.level-2 {
+  --content-color: $text-content2;
+  --content-fs: $font-content2;
+  background: $gradient-level2;
+  margin-left: 2em;
+  
+  summary {
+    color: $text-level2;
+    font-size: $font-size-level2;
+    font-weight: $font-weight-level2;
+    &::before { border-color: $text-level2; }
+  }
+}
+
+details.level-3 {
+  --content-color: $text-content3;
+  --content-fs: $font-content3;
+  background: $gradient-level3;
+  margin-left: 4em;
+  
+  summary {
+    color: $text-level3;
+    font-size: $font-size-level3;
+    font-weight: $font-weight-level3;
+    &::before { border-color: $text-level3; }
+  }
+}
+
+details.level-4 {
+  --content-color: $text-content4;
+  --content-fs: $font-content4;
+  background: $gradient-level4;
+  margin-left: 6em;
+  
+  summary {
+    color: $text-level4;
+    font-size: $font-size-level4;
+    font-weight: $font-weight-level4;
+    &::before { border-color: $text-level4; }
+  }
+}
+
+details.level-5 {
+  --content-color: $text-content5;
+  --content-fs: $font-content5;
+  background: $gradient-level5;
+  margin-left: 8em;
+  
+  summary {
+    color: $text-level5;
+    font-size: $font-size-level5;
+    font-weight: $font-weight-level5;
+    &::before { border-color: $text-level5; }
+  }
+}
+
+details.level-6 {
+  --content-color: $text-content6;
+  --content-fs: $font-content6;
+  background: $gradient-level6;
+  margin-left: 10em;
+  
+  summary {
+    color: $text-level6;
+    font-size: $font-size-level6;
+    font-weight: $font-weight-level6;
+    &::before { border-color: $text-level6; }
+  }
+}
+
+// 三角标样式（核心：无div依赖）
+summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+  transition: transform 0.2s ease;
+  list-style: none !important;
+  margin-bottom: 0.5rem; // 替代div的margin-top，分隔标题和内容
+
+  // 隐藏原生三角标
+  &::-webkit-details-marker { display: none !important; }
+  &::marker { display: none !important; content: '' !important; }
+
+  // 自定义三角标
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+}
+
+// 所有级别展开时三角标旋转
+details[open] summary::before {
+  transform: rotate(45deg) !important;
+}
+
+// 内容样式（直接作用于details内的元素，无div）
+details p, details ul, details li {
+  margin: 0.6rem 0;
+}
+
+details strong {
+  font-weight: 700;
+  text-decoration: underline wavy 1px;
+  padding: 0 2px;
+}
+
+details ul {
+  list-style: disc inside;
+  padding: 0 0 0 10px;
+}
+
+details li {
+  padding-left: 8px;
+  border-left: 2px solid rgba(255,255,255,0.3);
+}
+
+details a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  padding: 2px 0;
+  transition: all 0.2s ease;
+}
+
+details a:hover {
+  border-bottom-color: #fff;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+// 交互效果
+summary:hover {
+  transform: scale(1.01);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+details:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+// 展开动画（直接作用于details内的内容）
+details[open] :not(summary) {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// 响应式适配
+@media (max-width: 768px) {
+  details.level-1 { margin-left: 0 !important; }
+  details.level-2 { margin-left: 1em !important; }
+  details.level-3 { margin-left: 2em !important; }
+  details.level-4 { margin-left: 3em !important; }
+  details.level-5 { margin-left: 4em !important; }
+  details.level-6 { margin-left: 5em !important; }
+
+  summary::before { width: 8px; height: 8px; }
+  summary { font-size: 0.9em !important; gap: 8px; }
+  details { padding: 0.9rem 0.8rem !important; line-height: 1.6 !important; font-size: 0.9em !important; }
+}
