@@ -49,12 +49,380 @@ main #quarto-header .title {
 .about-title,
 .about-description,
 .about-links {
-    display: block !important;
+    display: flex !important; /* 强制Flex布局 */
+    flex-wrap: wrap !important; /* 强制换行（核心修复） */
+    gap: 12px 16px !important; /* 纵向12px、横向16px间距，解决拥挤 */
+    padding: 16px !important; /* 内边距，避免贴边 */
+    width: 100% !important; /* 占满父容器宽度 */
     opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important; /* 确保在粒子层上方 */
+    box-sizing: border-box !important;
+}
+
+/* ========== 核心升级：渐变顺序调整（新增2种前置 + 薰衣草紫后置） ========== */
+/* 统一所有Links项的外层a标签 */
+.about-links a {
+    display: inline-flex !important;
+    align-items: center !important; /* 图标+文字垂直居中 */
+    gap: 8px !important; /* 图标与文字间距，统一视觉 */
+    padding: 8px 12px !important; /* 按钮式内边距，舒展不拥挤 */
+    margin: 0 !important; /* 清空默认margin，用gap控制间距 */
+    border-radius: 12px !important; /* 与Callout统一圆角 */
+    text-decoration: none !important;
+    font-size: 14px !important; /* 统一字体大小 */
+    line-height: 1.4 !important; /* 统一行高 */
+    white-space: nowrap !important; /* 单条Link文字不折行 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* 与Callout统一阴影 */
+    font-family: 'Fira Sans', sans-serif !important; /* 与Callout统一字体 */
+    position: relative !important;
+    overflow: hidden !important; /* 裁剪渐变溢出 */
+    transition: all 0.3s ease !important; /* 顺滑过渡 */
+}
+
+/* 16种渐变循环顺序：新增2种前置 + 原有14种顺序调整（薰衣草紫后置） */
+/* 第1位：新增 - 导航栏同款（深空红蓝渐变） */
+.about-links a:nth-child(16n+1) {
+    background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
+    color: #FFFFFF !important; /* 白色文字适配深色渐变 */
+}
+/* 第2位：新增 - callout-important同款（宇宙星云渐变） */
+.about-links a:nth-child(16n+2) {
+    background: linear-gradient(135deg, #0B0C10, #1F2833, #66FCF1, #45A29E) !important;
+    color: #E6F7FF !important; /* 浅蓝白文字适配星云渐变 */
+}
+/* 第3-15位：原有13种渐变（顺序不变，仅调整nth-child序号） */
+/* Hint - 极光渐变（原第2位 → 现第3位） */
+.about-links a:nth-child(16n+3) {
+    background: linear-gradient(45deg, #00F260, #0575E6, #64F38C) !important;
+    color: #F0FFF4 !important;
+}
+/* Info - 深海蓝绿（原第3位 → 现第4位） */
+.about-links a:nth-child(16n+4) {
+    background: linear-gradient(135deg, #1E90FF, #00CED1, #20B2AA) !important;
+    color: #E6F7FF !important;
+}
+/* Warning - 日落橙金（原第4位 → 现第5位） */
+.about-links a:nth-child(16n+5) {
+    background: linear-gradient(90deg, #FF4500, #FF8C00, #FFD700) !important;
+    color: #FFF8E1 !important;
+}
+/* Caution - 赛博朋克粉蓝（原第5位 → 现第6位） */
+.about-links a:nth-child(16n+6) {
+    background: linear-gradient(45deg, #FF00FF, #00FFFF, #0000FF) !important;
+    color: #F0F8FF !important;
+}
+/* Danger - 玫瑰金铂（原第6位 → 现第7位） */
+.about-links a:nth-child(16n+7) {
+    background: linear-gradient(135deg, #FFB6C1, #D3D3D3, #FF69B4) !important;
+    color: #FFF0F5 !important;
+}
+/* Error - 复古鎏金（原第7位 → 现第8位） */
+.about-links a:nth-child(16n+8) {
+    background: linear-gradient(45deg, #D4AF37, #FFD700, #B8860B) !important;
+    color: #FFF8DC !important;
+}
+/* Success - 科技钛金（原第8位 → 现第9位） */
+.about-links a:nth-child(16n+9) {
+    background: linear-gradient(135deg, #FFC300, #FFB347, #FF6B35) !important;
+    color: #FFF9E6 !important;
+}
+/* Check - 玫瑰金（原第9位 → 现第10位） */
+.about-links a:nth-child(16n+10) {
+    background: linear-gradient(45deg, #FFB6C1, #FF69B4, #C71585) !important;
+    color: #FFEBF0 !important;
+}
+/* Done - 深空银（原第10位 → 现第11位） */
+.about-links a:nth-child(16n+11) {
+    background: linear-gradient(45deg, #808080, #A9A9A9, #D3D3D3) !important;
+    color: #F5F5F5 !important;
+}
+/* Example - 科技银蓝（原第11位 → 现第12位） */
+.about-links a:nth-child(16n+12) {
+    background: linear-gradient(90deg, #B0C4DE, #778899, #4682B4) !important;
+    color: #F0F8FF !important;
+}
+/* Exercise - 铂金（原第12位 → 现第13位） */
+.about-links a:nth-child(16n+13) {
+    background: linear-gradient(90deg, #C0C0C0, #87CEEB, #B0C4DE) !important;
+    color: #F8F8FF !important;
+}
+/* Question - 枪灰银（原第13位 → 现第14位） */
+.about-links a:nth-child(16n+14) {
+    background: linear-gradient(135deg, #696969, #708090, #778899) !important;
+    color: #F5F5F5 !important;
+}
+/* Solution - 莫兰迪蓝紫（原第14位 → 现第15位） */
+.about-links a:nth-child(16n+15) {
+    background: linear-gradient(90deg, #9FA8DA, #B39DDB, #D1C4E9) !important;
+    color: #F8F0FF !important;
+}
+/* 第16位：原有 - 薰衣草紫（原第1位 → 现最后1位） */
+.about-links a:nth-child(16n+16) {
+    background: linear-gradient(45deg, #4B0082, #9370DB, #D8BFD8) !important;
+    color: #F8F0FF !important;
+}
+
+/* 统一所有图标元素（不管是icon:xxx还是{{< fa >}}生成的） */
+.about-links a i,
+.about-links a span[class*="fa-"],
+.about-links a [class^="icon-"] {
+    width: 16px !important; /* 强制统一图标宽度 */
+    height: 16px !important; /* 强制统一图标高度 */
+    display: inline-block !important;
+    font-size: 16px !important; /* 统一图标字号 */
+    margin: 0 !important; /* 清空图标默认边距 */
+    text-align: center !important; /* 图标居中 */
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1)) !important; /* 图标轻微阴影增强质感 */
+}
+
+/* 悬停效果升级：渐变反转 + 阴影增强 + 轻微上浮 */
+.about-links a:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+    /* 反转渐变方向，增强交互感 */
+    background-position: 100% 0 !important;
+}
+
+/* ========== 深色模式适配（同步调整顺序） ========== */
+[data-bs-theme="dark"] {
+    /* 第1位：深空红蓝（深色版） */
+    .about-links a:nth-child(16n+1) {
+        background: linear-gradient(45deg, #15235c, #a11c1c, #15235c) !important;
+        color: #F0F0F0 !important; /* 浅白文字更柔和 */
+    }
+    /* 第2位：宇宙星云（深色版） */
+    .about-links a:nth-child(16n+2) {
+        background: linear-gradient(135deg, #08090d, #1a232e, #76fcf4, #4aa89f) !important;
+        color: #F8F8FF !important; /* 纯白文字提升可读性 */
+    }
+    /* 第3-15位：原有13种渐变的深色版（顺序同步调整） */
+    /* Hint - 极光渐变（深色版） */
+    .about-links a:nth-child(16n+3) {
+        background: linear-gradient(45deg, #00e058, #0469d1, #71f597) !important;
+    }
+    /* Info - 深海蓝绿（深色版） */
+    .about-links a:nth-child(16n+4) {
+        background: linear-gradient(135deg, #1c80e0, #00b9c0, #1da89f) !important;
+    }
+    /* Warning - 日落橙金（深色版） */
+    .about-links a:nth-child(16n+5) {
+        background: linear-gradient(90deg, #e63d00, #e67e00, #e6c800) !important;
+    }
+    /* Caution - 赛博朋克粉蓝（深色版） */
+    .about-links a:nth-child(16n+6) {
+        background: linear-gradient(45deg, #e600e6, #00e6e6, #0000e6) !important;
+    }
+    /* Danger - 玫瑰金铂（深色版） */
+    .about-links a:nth-child(16n+7) {
+        background: linear-gradient(135deg, #e6a7b8, #c0c0c0, #e65ea0) !important;
+    }
+    /* Error - 复古鎏金（深色版） */
+    .about-links a:nth-child(16n+8) {
+        background: linear-gradient(45deg, #c09c30, #e6c800, #a07809) !important;
+    }
+    /* Success - 科技钛金（深色版） */
+    .about-links a:nth-child(16n+9) {
+        background: linear-gradient(135deg, #e6b000, #e6a340, #e6602e) !important;
+    }
+    /* Check - 玫瑰金（深色版） */
+    .about-links a:nth-child(16n+10) {
+        background: linear-gradient(45deg, #e6a7b8, #e65ea0, #b01278) !important;
+    }
+    /* Done - 深空银（深色版） */
+    .about-links a:nth-child(16n+11) {
+        background: linear-gradient(45deg, #737373, #999999, #e0e0e0) !important;
+    }
+    /* Example - 科技银蓝（深色版） */
+    .about-links a:nth-child(16n+12) {
+        background: linear-gradient(90deg, #a0b0d0, #6d7d8e, #3e74a2) !important;
+    }
+    /* Exercise - 铂金（深色版） */
+    .about-links a:nth-child(16n+13) {
+        background: linear-gradient(90deg, #b0b0b0, #7bc6d8, #a0b0d0) !important;
+    }
+    /* Question - 枪灰银（深色版） */
+    .about-links a:nth-child(16n+14) {
+        background: linear-gradient(135deg, #5f5f5f, #667788, #6d7d8e) !important;
+    }
+    /* Solution - 莫兰迪蓝紫（深色版） */
+    .about-links a:nth-child(16n+15) {
+        background: linear-gradient(90deg, #8f98c8, #a38dc8, #c1b4d8) !important;
+    }
+    /* 第16位：薰衣草紫（深色版） */
+    .about-links a:nth-child(16n+16) {
+        background: linear-gradient(45deg, #420073, #8464c4, #e1c9e1) !important;
+    }
+}
+
+/* 响应式适配：小屏自动缩小间距，确保换行正常 */
+@media (max-width: 768px) {
+    .about-links {
+        gap: 8px 12px !important; /* 移动端缩小间距 */
+        padding: 12px !important;
+    }
+    .about-links a {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+        border-radius: 8px !important; /* 移动端缩小圆角 */
+    }
+    .about-links a i,
+    .about-links a span[class*="fa-"],
+    .about-links a [class^="icon-"] {
+        width: 14px !important;
+        height: 14px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* 导航栏、callout-note、callout-important 原有样式（完全保留） */
+.navbar {
+  background-image: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .dropdown-toggle {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover,
+.navbar .dropdown-toggle:hover {
+  color: #f0f0f0 !important;
+}
+.navbar .dropdown-menu {
+  background-color: #1a2a6c;
+  border: none;
+}
+.navbar .dropdown-item {
+  color: white;
+}
+.navbar .dropdown-item:hover {
+  background-color: #b21f1f;
+  color: white;
+}
+
+// 定义callout-note变量
+$callout-note-bg-color-1: #1a2a6c;
+$callout-note-bg-color-2: #b21f1f;
+$callout-note-bg-color-3: #1a2a6c;
+$callout-note-text-color: #00ccff;
+.callout-note {
+  background-image: linear-gradient(45deg, $callout-note-bg-color-1, $callout-note-bg-color-2, $callout-note-bg-color-3) !important;
+  border-left: none !important;
+  color: white !important;
+}
+.callout-note .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-note-text-color !important;
+  -webkit-text-fill-color: $callout-note-text-color !important;
+}
+.callout-note .callout-title strong {
+  color: $callout-note-text-color !important;
+  -webkit-text-fill-color: $callout-note-text-color !important;
+}
+.callout-note .callout-content {
+  color: white !important;
+}
+.callout-note a {
+  color: #a8dfff !important;
+  text-decoration: underline;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+// 定义callout-important变量
+$callout-important-bg-1: #0B0C10;
+$callout-important-bg-2: #1F2833;
+$callout-important-bg-3: #66FCF1;
+$callout-important-bg-4: #45A29E;
+$callout-important-text-color: #E6F7FF;
+$callout-important-title-color: #66FCF1;
+$callout-important-link-color: #A8DFFF;
+$callout-important-link-hover: #FFFFFF;
+.callout-important {
+  background-image: linear-gradient(135deg, 
+    $callout-important-bg-1, 
+    $callout-important-bg-2, 
+    $callout-important-bg-3, 
+    $callout-important-bg-4) !important;
+  border-left: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 1.2rem !important;
+  color: $callout-important-text-color !important;
+  font-family: 'Fira Sans', 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  &::after {
+    content: "🌌";
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+.callout-important .callout-title {
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: $callout-important-title-color !important;
+  -webkit-text-fill-color: $callout-important-title-color !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba($callout-important-bg-3, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.callout-important .callout-title strong {
+  color: $callout-important-title-color !important;
+  -webkit-text-fill-color: $callout-important-title-color !important;
+}
+.callout-important .callout-icon {
+  color: $callout-important-title-color !important;
+  font-size: 1.3rem !important;
+  margin-right: 0.5rem;
+}
+.callout-important ul {
+  padding-left: 1.8rem;
+  margin: 1rem 0;
+}
+.callout-important li {
+  margin: 0.9rem 0;
+  position: relative;
+  list-style-type: none;
+  font-size: 1.05rem;
+}
+.callout-important li::before {
+  content: "✨";
+  color: $callout-important-bg-3;
+  position: absolute;
+  left: -1.8rem;
+  top: 0.2rem;
+  font-size: 0.9rem;
+}
+.callout-important a {
+  color: $callout-important-link-color !important;
+  text-decoration: underline dotted;
+  font-weight: 600;
+  &:hover {
+    color: $callout-important-link-hover !important;
+    text-decoration: underline solid;
+    background: rgba($callout-important-bg-3, 0.1);
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+  }
 }
 
 /* 保护导航栏标题不被隐藏 */
 .navbar-brand,
 #quarto-header nav .title {
-    display: inline-block !important;
+  display: inline-block !important;
 }
