@@ -2327,37 +2327,57 @@ $callout-solution-link-hover: #FFFFFF;
   }
 }
 
-/* ==================== 16级折叠列表样式 - custom.scss ==================== */
-// 变量定义
+/* ==================== 10级折叠列表样式 - custom.scss ==================== */
+// 全局基础变量
+$mobile-breakpoint: 768px;
+
+// 1-10级渐变背景
 $gradient-level1: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c);
 $gradient-level2: linear-gradient(135deg, #0B0C10, #1F2833, #66FCF1, #45A29E);
 $gradient-level3: linear-gradient(45deg, #00F260, #0575E6, #64F38C);
 $gradient-level4: linear-gradient(135deg, #1E90FF, #00CED1, #20B2AA);
 $gradient-level5: linear-gradient(90deg, #FF4500, #FF8C00, #FFD700);
 $gradient-level6: linear-gradient(45deg, #FF00FF, #00FFFF, #0000FF);
+$gradient-level7: linear-gradient(135deg, #8A2BE2, #FF69B4, #9370DB);
+$gradient-level8: linear-gradient(45deg, #006400, #90EE90, #32CD32);
+$gradient-level9: linear-gradient(135deg, #8B4513, #DAA520, #FFD700);
+$gradient-level10: linear-gradient(45deg, #708090, #B0C4DE, #F0F8FF);
 
-$text-level1: #FFFFFF;    $text-content1: rgba(255,255,255,0.9);
-$text-level2: #66FCF1;    $text-content2: rgba(102,252,241,0.9);
-$text-level3: #64F38C;    $text-content3: rgba(100,243,140,0.9);
-$text-level4: #00CED1;    $text-content4: rgba(0,206,209,0.9);
-$text-level5: #FFD700;    $text-content5: rgba(255,215,0,0.9);
-$text-level6: #00FFFF;    $text-content6: rgba(0,255,255,0.9);
+// 标题色/内容色
+$text-level1: #FFFFFF;    $text-level2: #F8F9FA;    $text-level3: #FFFFFF;
+$text-level4: #F8F9FA;    $text-level5: #FFFFFF;    $text-level6: #F8F9FA;
+$text-level7: #FFFFFF;    $text-level8: #F8F9FA;    $text-level9: #FFFFFF;
+$text-level10: #F8F9FA;
 
-$font-size-level1: 1.3em; $font-content1: 1.15em;
-$font-size-level2: 1.2em; $font-content2: 1.05em;
-$font-size-level3: 1.1em; $font-content3: 1em;
-$font-size-level4: 1.05em;$font-content4: 0.95em;
-$font-size-level5: 1em;   $font-content5: 0.9em;
-$font-size-level6: 0.95em;$font-content6: 0.85em;
+$text-content1: rgba(255,255,255,0.95); $text-content2: rgba(255,255,255,0.9);
+$text-content3: rgba(255,255,255,0.95); $text-content4: rgba(255,255,255,0.9);
+$text-content5: rgba(255,255,255,0.95); $text-content6: rgba(255,255,255,0.9);
+$text-content7: rgba(255,255,255,0.95); $text-content8: rgba(255,255,255,0.9);
+$text-content9: rgba(255,255,255,0.95); $text-content10: rgba(255,255,255,0.9);
 
-$font-weight-level1: 800;
-$font-weight-level2: 700;
-$font-weight-level3: 700;
-$font-weight-level4: 600;
-$font-weight-level5: 600;
-$font-weight-level6: 600;
+// 字体/行高变量
+$font-size-level1: 1.3em;  $font-content1: 1.15em; $line-height1: 1.8;
+$font-size-level2: 1.2em;  $font-content2: 1.05em; $line-height2: 1.75;
+$font-size-level3: 1.1em;  $font-content3: 1em;    $line-height3: 1.7;
+$font-size-level4: 1.05em; $font-content4: 0.95em; $line-height4: 1.65;
+$font-size-level5: 1em;    $font-content5: 0.9em;  $line-height5: 1.6;
+$font-size-level6: 0.95em; $font-content6: 0.85em; $line-height6: 1.55;
+$font-size-level7: 0.9em;  $font-content7: 0.8em;  $line-height7: 1.5;
+$font-size-level8: 0.85em; $font-content8: 0.78em; $line-height8: 1.48;
+$font-size-level9: 0.8em;  $font-content9: 0.75em; $line-height9: 1.45;
+$font-size-level10: 0.75em;$font-content10: 0.72em;$line-height10: 1.42;
 
-// 基础重置（关键：移除div依赖）
+$font-weight-level1: 800; $font-weight-level2: 700; $font-weight-level3: 700;
+$font-weight-level4: 600; $font-weight-level5: 600; $font-weight-level6: 600;
+$font-weight-level7: 500; $font-weight-level8: 500; $font-weight-level9: 500;
+$font-weight-level10: 500;
+
+$shadow-opacity1: 0.5; $shadow-opacity2: 0.7; $shadow-opacity3: 0.4;
+$shadow-opacity4: 0.6; $shadow-opacity5: 0.5; $shadow-opacity6: 0.7;
+$shadow-opacity7: 0.6; $shadow-opacity8: 0.4; $shadow-opacity9: 0.5;
+$shadow-opacity10: 0.6;
+
+// 基础样式（直接命中details，无容器前缀）
 details {
   all: unset;
   display: block;
@@ -2367,27 +2387,41 @@ details {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   font-family: 'Fira Sans', sans-serif;
-  line-height: 1.7;
-  background-size: cover;
+  font-display: swap;
+  line-height: var(--line-height, 1.7);
+  background-size: 200% 200%;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: local;
   color: var(--content-color);
   font-size: var(--content-fs);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  border: 1px solid rgba(255,255,255,0.1);
+  animation: gradientFlow 8s ease infinite alternate;
 }
 
-// 1-6级样式（无div，直接作用于details/summary）
+// 展开状态提亮
+details[open] {
+  filter: brightness(1.05);
+}
+
+// 1-10级样式（直接命中details.level-X）
 details.level-1 {
   --content-color: $text-content1;
   --content-fs: $font-content1;
+  --line-height: $line-height1;
   background: $gradient-level1;
   margin-left: 0;
+  border-width: 2px;
   
   summary {
     color: $text-level1;
     font-size: $font-size-level1;
     font-weight: $font-weight-level1;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity1);
     &::before { border-color: $text-level1; }
   }
 }
@@ -2395,13 +2429,16 @@ details.level-1 {
 details.level-2 {
   --content-color: $text-content2;
   --content-fs: $font-content2;
+  --line-height: $line-height2;
   background: $gradient-level2;
   margin-left: 2em;
+  border-color: rgba(102,252,241,0.2);
   
   summary {
     color: $text-level2;
     font-size: $font-size-level2;
     font-weight: $font-weight-level2;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity2);
     &::before { border-color: $text-level2; }
   }
 }
@@ -2409,13 +2446,16 @@ details.level-2 {
 details.level-3 {
   --content-color: $text-content3;
   --content-fs: $font-content3;
+  --line-height: $line-height3;
   background: $gradient-level3;
   margin-left: 4em;
+  border-color: rgba(100,243,140,0.2);
   
   summary {
     color: $text-level3;
     font-size: $font-size-level3;
     font-weight: $font-weight-level3;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity3);
     &::before { border-color: $text-level3; }
   }
 }
@@ -2423,13 +2463,16 @@ details.level-3 {
 details.level-4 {
   --content-color: $text-content4;
   --content-fs: $font-content4;
+  --line-height: $line-height4;
   background: $gradient-level4;
   margin-left: 6em;
+  border-color: rgba(0,206,209,0.2);
   
   summary {
     color: $text-level4;
     font-size: $font-size-level4;
     font-weight: $font-weight-level4;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity4);
     &::before { border-color: $text-level4; }
   }
 }
@@ -2437,13 +2480,16 @@ details.level-4 {
 details.level-5 {
   --content-color: $text-content5;
   --content-fs: $font-content5;
+  --line-height: $line-height5;
   background: $gradient-level5;
   margin-left: 8em;
+  border-color: rgba(255,215,0,0.2);
   
   summary {
     color: $text-level5;
     font-size: $font-size-level5;
     font-weight: $font-weight-level5;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity5);
     &::before { border-color: $text-level5; }
   }
 }
@@ -2451,18 +2497,89 @@ details.level-5 {
 details.level-6 {
   --content-color: $text-content6;
   --content-fs: $font-content6;
+  --line-height: $line-height6;
   background: $gradient-level6;
   margin-left: 10em;
+  border-color: rgba(0,255,255,0.2);
   
   summary {
     color: $text-level6;
     font-size: $font-size-level6;
     font-weight: $font-weight-level6;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity6);
     &::before { border-color: $text-level6; }
   }
 }
 
-// 三角标样式（核心：无div依赖）
+details.level-7 {
+  --content-color: $text-content7;
+  --content-fs: $font-content7;
+  --line-height: $line-height7;
+  background: $gradient-level7;
+  margin-left: 12em;
+  border-color: rgba(255,105,180,0.2);
+  
+  summary {
+    color: $text-level7;
+    font-size: $font-size-level7;
+    font-weight: $font-weight-level7;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity7);
+    &::before { border-color: $text-level7; }
+  }
+}
+
+details.level-8 {
+  --content-color: $text-content8;
+  --content-fs: $font-content8;
+  --line-height: $line-height8;
+  background: $gradient-level8;
+  margin-left: 14em;
+  border-color: rgba(144,238,144,0.2);
+  
+  summary {
+    color: $text-level8;
+    font-size: $font-size-level8;
+    font-weight: $font-weight-level8;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity8);
+    &::before { border-color: $text-level8; }
+  }
+}
+
+details.level-9 {
+  --content-color: $text-content9;
+  --content-fs: $font-content9;
+  --line-height: $line-height9;
+  background: $gradient-level9;
+  margin-left: 16em;
+  border-color: rgba(218,165,32,0.2);
+  
+  summary {
+    color: $text-level9;
+    font-size: $font-size-level9;
+    font-weight: $font-weight-level9;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity9);
+    &::before { border-color: $text-level9; }
+  }
+}
+
+details.level-10 {
+  --content-color: $text-content10;
+  --content-fs: $font-content10;
+  --line-height: $line-height10;
+  background: $gradient-level10;
+  margin-left: 18em;
+  border-color: rgba(176,196,222,0.2);
+  
+  summary {
+    color: $text-level10;
+    font-size: $font-size-level10;
+    font-weight: $font-weight-level10;
+    text-shadow: 0 1px 3px rgba(0,0,0,$shadow-opacity10);
+    &::before { border-color: $text-level10; }
+  }
+}
+
+// 三角标样式
 summary {
   cursor: pointer;
   display: flex;
@@ -2471,13 +2588,11 @@ summary {
   user-select: none;
   transition: transform 0.2s ease;
   list-style: none !important;
-  margin-bottom: 0.5rem; // 替代div的margin-top，分隔标题和内容
+  margin-bottom: 0.5rem;
 
-  // 隐藏原生三角标
   &::-webkit-details-marker { display: none !important; }
   &::marker { display: none !important; content: '' !important; }
 
-  // 自定义三角标
   &::before {
     content: '';
     display: inline-block;
@@ -2486,17 +2601,30 @@ summary {
     border-right: 2px solid;
     border-bottom: 2px solid;
     transform: rotate(-45deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, scale 0.2s ease;
     flex-shrink: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.8);
+    outline-offset: 4px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.2);
+  }
+
+  &:hover::before {
+    transform: rotate(-45deg) scale(1.1);
   }
 }
 
-// 所有级别展开时三角标旋转
 details[open] summary::before {
   transform: rotate(45deg) !important;
 }
+details[open] summary:hover::before {
+  transform: rotate(45deg) scale(1.1) !important;
+}
 
-// 内容样式（直接作用于details内的元素，无div）
+// 内容样式
 details p, details ul, details li {
   margin: 0.6rem 0;
 }
@@ -2505,6 +2633,7 @@ details strong {
   font-weight: 700;
   text-decoration: underline wavy 1px;
   padding: 0 2px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 details ul {
@@ -2523,19 +2652,20 @@ details a {
   border-bottom: 2px solid rgba(255,255,255,0.5);
   padding: 2px 0;
   transition: all 0.2s ease;
-}
-
-details a:hover {
-  border-bottom-color: #fff;
-  background: rgba(255,255,255,0.1);
-  border-radius: 4px;
-  padding: 2px 6px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  
+  &:hover {
+    border-bottom-color: #fff;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
 }
 
 // 交互效果
 summary:hover {
   transform: scale(1.01);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
 }
 
 details:hover {
@@ -2543,26 +2673,73 @@ details:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-// 展开动画（直接作用于details内的内容）
+// 展开/收起动画
+details :not(summary) {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
 details[open] :not(summary) {
   animation: fadeIn 0.4s ease-in-out;
 }
+details:not([open]) :not(summary) {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
 
+// 动画定义
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+// 暗黑/亮色模式适配
+@media (prefers-color-scheme: light) {
+  details {
+    filter: contrast(1.02);
+  }
+  details.level-1 { --content-color: rgba(255,255,255,0.98); }
+}
+
+@media (prefers-color-scheme: dark) {
+  details {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  summary {
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;
+  }
+}
+
 // 响应式适配
-@media (max-width: 768px) {
+@media (max-width: $mobile-breakpoint) {
   details.level-1 { margin-left: 0 !important; }
   details.level-2 { margin-left: 1em !important; }
   details.level-3 { margin-left: 2em !important; }
   details.level-4 { margin-left: 3em !important; }
   details.level-5 { margin-left: 4em !important; }
   details.level-6 { margin-left: 5em !important; }
+  details.level-7 { margin-left: 6em !important; }
+  details.level-8 { margin-left: 7em !important; }
+  details.level-9 { margin-left: 8em !important; }
+  details.level-10 { margin-left: 9em !important; }
 
   summary::before { width: 8px; height: 8px; }
-  summary { font-size: 0.9em !important; gap: 8px; }
-  details { padding: 0.9rem 0.8rem !important; line-height: 1.6 !important; font-size: 0.9em !important; }
+  
+  summary { 
+    font-size: 0.9em !important; 
+    gap: 8px; 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4) !important;
+  }
+  
+  details { 
+    padding: 0.9rem 0.8rem !important; 
+    line-height: 1.6 !important; 
+    font-size: 0.9em !important;
+    animation: none;
+  }
 }
