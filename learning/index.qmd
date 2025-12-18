@@ -41,6 +41,71 @@ og-description: "A detailed collection of learning materials (textbooks, course 
     <li class="horizontal-list__item horizontal-list__item--seaweed">📖 Review（已复习）</li>
 </ul>
 
+<!-- 尝试使用酷炫的文字 -->
+<!-- 1. 内嵌特效CSS（仅作用于当前页面，不污染全局） -->
+<style>
+/* 给特效文字容器加专属类名，避免和其他样式冲突 */
+.neon-text-container {
+  /* 取消全屏，适配段落布局：仅占内容宽度，垂直居中 */
+  display: inline-flex; /* 行内弹性布局，跟随段落流 */
+  align-items: center;
+  gap: 8px; /* 字符间距（替代原letter-spacing，更灵活） */
+  font-size: 36px; /* 调整字体大小（适配段落） */
+  font-weight: bold;
+  margin: 20px 0; /* 和上下文字拉开距离 */
+}
+
+/* 特效字符样式 */
+.neon-text {
+  color: #111; /* 初始深灰 */
+  filter: blur(1px); /* 降低模糊度，适配段落（原5px太夸张） */
+  animation: neon-animate 2.5s linear infinite;
+}
+
+/* 逐字符延迟（按需调整数量，比如你有6个字符就写6个） */
+.neon-text:nth-child(1) { animation-delay: 0s; }
+.neon-text:nth-child(2) { animation-delay: 0.25s; }
+.neon-text:nth-child(3) { animation-delay: 0.5s; }
+.neon-text:nth-child(4) { animation-delay: 0.75s; }
+.neon-text:nth-child(5) { animation-delay: 1s; }
+.neon-text:nth-child(6) { animation-delay: 1.25s; }
+.neon-text:nth-child(7) { animation-delay: 1.5s; }
+.neon-text:nth-child(8) { animation-delay: 1.75s; }
+.neon-text:nth-child(9) { animation-delay: 2s; }
+.neon-text:nth-child(10) { animation-delay: 2.25s; }
+
+/* 核心发光动画（保留原逻辑，可改颜色） */
+@keyframes neon-animate {
+  0%, 100% {
+    color: #fff;
+    filter: blur(2px);
+    /* 改发光颜色为你的主题色（比如原绿色→蓝色） */
+    text-shadow: 0 0 10px #42a5f5, 0 0 20px #42a5f5, 0 0 30px #42a5f5,
+                 0 0 40px #42a5f5, 0 0 100px #42a5f5;
+  }
+  5%, 95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+</style>
+
+<!-- 2. 目标文字：每个字符用<span class="neon-text">包裹 -->
+<div class="neon-text-container">
+  <span class="neon-text">R</span>
+  <span class="neon-text">e</span>
+  <span class="neon-text">s</span>
+  <span class="neon-text">e</span>
+  <span class="neon-text">a</span>
+  <span class="neon-text">r</span>
+  <span class="neon-text">c</span>
+  <span class="neon-text">h</span>
+</div>
+
+
+
+
 ### 学习计划与进度总表
 | Overall Subject | Topics Covered       | Learning Resources and Completion Status                                                                 |
 |-----------------|----------------------|----------------------------------------------------------------------------------------------------------|
