@@ -2874,3 +2874,19 @@ img[src*="profile-picture.png"] { // 按图片路径精准匹配，永不失效
 [data-bs-theme="dark"] img[src*="profile-picture.png"] {
   box-shadow: 0 4px 8px rgba(0,0,0,0.4) !important;
 }
+
+/* 给首页链接设置更快的脉动 */
+.navbar a#home-link {
+  animation: pulse 3s infinite ease-in-out;
+}
+/* 给Research链接设置更柔和的脉动 */
+.navbar a#research-link {
+  animation: pulse 5s infinite ease-in-out;
+  /* 更小的缩放比例 */
+  @keyframes pulse-research {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  animation-name: pulse-research;
+}

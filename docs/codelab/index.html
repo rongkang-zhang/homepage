@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rong-Kang Zhang">
-<meta name="dcterms.date" content="2025-11-23">
+<meta name="dcterms.date" content="2025-12-18">
 
 <title>MathPhysCS CodeLab – Rong-KangZhang</title>
 <style>
@@ -49,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f8143389322ee2889777554f7059e8d6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-ea656a94f81009f8ceefdbf55b7ac8ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f8143389322ee2889777554f7059e8d6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-90ced9b92b8993671554ee852939c809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d3a01121a6417d17df43571e5c08760e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-90ced9b92b8993671554ee852939c809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -815,7 +815,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 23, 2025</p>
+      <p class="date">December 18, 2025</p>
     </div>
   </div>
   
@@ -1375,7 +1375,7 @@ Modified
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> · Powered by <a href="https://pages.github.com/">GitHub Pages</a> · Managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a><br> Technical tools: <a href="https://www.mathjax.org/">MathJax</a> (typesetting) · <a href="https://fontawesome.com/">Font Awesome</a> (icons) · <a href="https://www.algolia.com/">Algolia</a> (search) · <a href="https://tikz.dev/">TikZ</a> (diagrams) · <a href="https://clustrmaps.com/">ClustrMaps</a> (visitor analytics)<br> © 2025 Rong-Kang Zhang · All rights reserved · Last updated: November 23, 2025</p>
+<p><img src="../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> · Powered by <a href="https://pages.github.com/">GitHub Pages</a> · Managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a><br> Technical tools: <a href="https://www.mathjax.org/">MathJax</a> (typesetting) · <a href="https://fontawesome.com/">Font Awesome</a> (icons) · <a href="https://www.algolia.com/">Algolia</a> (search) · <a href="https://tikz.dev/">TikZ</a> (diagrams) · <a href="https://clustrmaps.com/">ClustrMaps</a> (visitor analytics)<br> © 2025 Rong-Kang Zhang · All rights reserved · Last updated: December 18, 2025</p>
 </div>   
     <div class="nav-footer-center">
 
@@ -1425,7 +1425,7 @@ Modified
   letter-spacing: 0.5px;
 }
 .back-to-top i {
-  font-size: 1.8rem;   /* 再放大一圈 */
+  font-size: 1.8rem;   /* 图标放大 */
 }
 </style>
 <script>
@@ -1437,6 +1437,201 @@ toTop.addEventListener('click', e => {
   e.preventDefault();
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
+</script>
+<!-- ========== 1. 呼吸脉动动画：全局定义 + 精细配置 ========== -->
+<style>
+/* ---------------- 基础脉动动画定义（可全局复用） ---------------- */
+/* 核心动画：缩放变化 + 发光变化（双重脉动，更高级） */
+@keyframes pulse {
+  0% { 
+    transform: scale(1); /* 初始缩放 */
+    box-shadow: 0 0 0 rgba(66, 165, 245, 0); /* 初始无发光 */
+  }
+  50% { 
+    transform: scale(1.05); /* 峰值缩放（可调整） */
+    box-shadow: 0 0 20px rgba(66, 165, 245, 0.5); /* 峰值发光 */
+  }
+  100% { 
+    transform: scale(1); /* 恢复初始 */
+    box-shadow: 0 0 0 rgba(66, 165, 245, 0); /* 恢复无发光 */
+  }
+}
+
+/* ---------------- 导航栏链接脉动（核心定制） ---------------- */
+/* 基础样式：默认暂停动画，仅hover时播放 */
+.navbar a {
+  animation: pulse 4s infinite ease-in-out; /* 4秒循环，缓动曲线 */
+  animation-play-state: paused; /* 默认暂停 */
+  position: relative; /* 为发光效果提供定位上下文 */
+  z-index: 1; /* 确保导航链接层级正常 */
+  transition: all 0.2s ease; /* 基础过渡 */
+}
+
+/* hover时触发脉动 + 文字高亮（增强反馈） */
+.navbar a:hover {
+  animation-play-state: running; /* 播放脉动动画 */
+  color: #42a5f5 !important; /* hover文字变色（适配主题） */
+  text-shadow: 0 0 8px rgba(66, 165, 245, 0.4); /* 文字轻微发光 */
+}
+
+/* 暗黑模式下导航栏链接脉动适配 */
+[data-theme="dark"] .navbar a {
+  animation: pulse 4s infinite ease-in-out;
+  animation-play-state: paused;
+}
+[data-theme="dark"] .navbar a:hover {
+  animation-play-state: running;
+  color: #8ab4f8 !important; /* 暗黑模式文字色 */
+  text-shadow: 0 0 8px rgba(138, 180, 248, 0.4); /* 暗黑模式发光 */
+  box-shadow: 0 0 15px rgba(138, 180, 248, 0.3); /* 暗黑模式按钮发光 */
+}
+
+/* 导航栏活跃链接（当前页面）的脉动强化 */
+.navbar a.active {
+  animation-play-state: running !important; /* 活跃链接持续脉动 */
+  animation-duration: 3s !important; /* 活跃链接脉动更快 */
+  color: #42a5f5 !important;
+}
+[data-theme="dark"] .navbar a.active {
+  color: #8ab4f8 !important;
+}
+
+/* ---------------- 回到顶部按钮脉动 ---------------- */
+.back-to-top.show {
+  animation: pulse 3s infinite ease-in-out; /* 3秒循环，比导航栏快一点 */
+  transition: all 0.3s ease-in-out;
+}
+/* hover时强化回到顶部按钮的脉动 */
+.back-to-top:hover {
+  animation-duration: 2s; /* hover时脉动加速 */
+  box-shadow: 0 0 25px rgba(66, 165, 245, 0.6); /* 强化发光 */
+}
+
+/* ---------------- 玻璃卡片脉动（可选） ---------------- */
+.glass-card {
+  animation: pulse 6s infinite ease-in-out; /* 慢速脉动，不刺眼 */
+  animation-play-state: paused; /* 默认暂停 */
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  animation-play-state: running; /* hover触发 */
+  box-shadow: 0 0 20px rgba(66, 165, 245, 0.3);
+}
+[data-theme="dark"] .glass-card:hover {
+  box-shadow: 0 0 20px rgba(138, 180, 248, 0.3);
+}
+
+/* ========== 2. 自定义光标交互：精细配置 ========== */
+/* 基础光标样式 */
+.custom-cursor {
+  width: 24px; /* 光标大小（可调整） */
+  height: 24px;
+  border-radius: 50%; /* 圆形（改为8px则为方形，50% 0为椭圆） */
+  background: rgba(66, 165, 245, 0.4); /* 基础背景色+透明度 */
+  border: 1px solid rgba(255, 255, 255, 0.6); /* 边框 */
+  pointer-events: none; /* 关键：不遮挡点击事件 */
+  position: fixed;
+  z-index: 9999; /* 最高层级，不被任何元素遮挡 */
+  transition: 
+    transform 0.2s ease, /* 缩放过渡 */
+    background 0.2s ease, /* 背景色过渡 */
+    box-shadow 0.2s ease; /* 发光过渡 */
+  mix-blend-mode: overlay; /* 混合模式，适配所有背景 */
+  opacity: 1; /* 初始透明度 */
+}
+
+/* 暗黑模式光标适配 */
+[data-theme="dark"] .custom-cursor {
+  background: rgba(138, 180, 248, 0.4); /* 暗黑模式背景色 */
+  border-color: rgba(255, 255, 255, 0.4); /* 暗黑模式边框色 */
+}
+
+/* 光标悬停交互：不同元素的差异化反馈 */
+/* 悬停在导航栏链接上 */
+.navbar a:hover ~ .custom-cursor {
+  transform: scale(1.8); /* 放大倍数 */
+  background: rgba(66, 165, 245, 0.6); /* 加深背景 */
+  box-shadow: 0 0 15px rgba(66, 165, 245, 0.8); /* 发光效果 */
+}
+/* 悬停在回到顶部按钮上 */
+.back-to-top:hover ~ .custom-cursor {
+  transform: scale(2); /* 更大的放大倍数 */
+  background: rgba(23, 126, 137, 0.7); /* 按钮渐变的第二种颜色 */
+  box-shadow: 0 0 20px rgba(23, 126, 137, 0.9);
+}
+/* 悬停在玻璃卡片上 */
+.glass-card:hover ~ .custom-cursor {
+  transform: scale(1.5); /* 中等放大倍数 */
+  background: rgba(66, 165, 245, 0.5);
+  box-shadow: 0 0 12px rgba(66, 165, 245, 0.6);
+}
+/* 悬停在普通链接/按钮上 */
+a:not(.navbar a):hover ~ .custom-cursor, 
+button:not(.back-to-top):hover ~ .custom-cursor {
+  transform: scale(1.6);
+  background: rgba(66, 165, 245, 0.5);
+  box-shadow: 0 0 10px rgba(66, 165, 245, 0.7);
+}
+
+/* 可选：隐藏原生光标（需测试兼容性） */
+/* body { cursor: none; } */
+</style>
+
+<!-- ========== 自定义光标交互：JS逻辑（精细控制） ========== -->
+<script>
+// 1. 创建自定义光标元素并添加到页面
+const customCursor = document.createElement('div');
+customCursor.className = 'custom-cursor';
+document.body.appendChild(customCursor);
+
+// 2. 鼠标移动跟随：带轻微延迟，更自然
+window.addEventListener('mousemove', (e) => {
+  // 使用requestAnimationFrame确保流畅性（GPU加速）
+  requestAnimationFrame(() => {
+    // 让光标中心对齐鼠标（关键：减去宽高的一半）
+    const cursorX = e.clientX - customCursor.offsetWidth / 2;
+    const cursorY = e.clientY - customCursor.offsetHeight / 2;
+    // 赋值给光标样式
+    customCursor.style.left = `${cursorX}px`;
+    customCursor.style.top = `${cursorY}px`;
+  });
+});
+
+// 3. 窗口大小变化：重置光标位置，避免偏移
+window.addEventListener('resize', () => {
+  const centerX = window.innerWidth / 2 - customCursor.offsetWidth / 2;
+  const centerY = window.innerHeight / 2 - customCursor.offsetHeight / 2;
+  customCursor.style.left = `${centerX}px`;
+  customCursor.style.top = `${centerY}px`;
+});
+
+// 4. 页面状态处理：避免光标异常
+// 页面失焦（切标签/最小化）：隐藏光标
+window.addEventListener('blur', () => {
+  customCursor.style.opacity = 0;
+  customCursor.style.transform = 'scale(0.8)';
+});
+// 页面聚焦：恢复光标
+window.addEventListener('focus', () => {
+  customCursor.style.opacity = 1;
+  customCursor.style.transform = 'scale(1)';
+});
+
+// 5. 鼠标按下/松开：光标反馈（模拟按压感）
+window.addEventListener('mousedown', () => {
+  customCursor.style.transform = 'scale(0.8)';
+  customCursor.style.background = 'rgba(66, 165, 245, 0.7)';
+});
+window.addEventListener('mouseup', () => {
+  customCursor.style.transform = 'scale(1)';
+  customCursor.style.background = ''; // 恢复默认
+});
+
+// 6. 移动端适配：隐藏自定义光标（移动端无鼠标）
+const isMobile = /iPhone|iPad|iPod|Android|Windows Phone/.test(navigator.userAgent);
+if (isMobile) {
+  customCursor.style.display = 'none';
+}
 </script>
 
 
