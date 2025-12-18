@@ -13992,18 +13992,21 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
   color: #ffffff !important; /* 确保文字颜色 */
 }
 
+// 新增：鎏金渐变变量（适配玻璃拟态/科技感）
+$grad-tech-accent: linear-gradient(90deg, #D4AF37, #FFD700, #B8860B) !important;
+
 /* 下划线伪元素：独立定义，提高优先级 */
 .navbar-nav .nav-link::after {
-  content: '' !important; /* 强制显示伪元素 */
+  content: '' !important;
   position: absolute !important;
-  bottom: 4px !important; /* 下划线位置 */
+  bottom: 4px !important;
   left: 0 !important;
-  width: 0 !important; /* 默认隐藏 */
-  height: 2px !important; /* 下划线粗细 */
-  background-color: #FFD700 !important; /* 鎏金下划线 */
-  transition: width 0.3s ease !important; /* 动画过渡 */
-  z-index: 11 !important; /* 高于链接本身，避免遮挡 */
-  pointer-events: none !important; /* 不影响点击 */
+  width: 0 !important;
+  height: 2px !important;
+  background: $grad-tech-accent !important; // 鎏金渐变下划线
+  transition: width 0.3s ease !important;
+  z-index: 11 !important;
+  pointer-events: none !important;
 }
 
 /* 悬停效果：下划线展开 + 样式高亮 */
@@ -15939,6 +15942,33 @@ details:not([open]) :not(summary) {
     width: 100% !important;
     bottom: 2px !important;
   }
+}
+
+//防止图片被粒子特效覆盖
+// 1. 先精准匹配图片（优先用图片URL匹配，避免类名变化）
+img[src*="profile-picture.png"] { // 按图片路径精准匹配，永不失效
+  position: relative !important;  // 强制非static定位
+  z-index: 9999 !important;      // 最高优先级，突破所有堆叠上下文
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+  /* 兜底：若仍被覆盖，改用absolute定位（需保留top/left防止偏移） */
+  // position: absolute !important;
+  // top: 0 !important;
+  // left: 0 !important;
+}
+
+// 2. 强制提升about区域所有元素的层级（包括图片父容器）
+.trestles-about,  // trestles模板about容器
+.about-section,   // 通用about容器
+#about-container { // 若有id则加
+  position: relative !important;
+  z-index: 100 !important; // 确保父容器层级高于所有潜在低层级上下文
+  overflow: visible !important; // 取消overflow:hidden，避免截断图片
+  transform: none !important;   // 取消transform，避免创建新堆叠上下文
+}
+
+// 3. 保留原有暗色模式适配
+[data-bs-theme="dark"] img[src*="profile-picture.png"] {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4) !important;
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
