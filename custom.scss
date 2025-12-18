@@ -882,71 +882,75 @@ $navbar-height: 60px;          // 栏高 50 px
   border-bottom: 2px solid $orange;   // 1 px 太细，2 px 存在感更好
 }
 
-/*-- 导航栏悬停效果 --*/
-/*-- 导航栏悬停 + 激活 下划线动画 组合版（修复激活态下划线） --*/
-/* 4. 普通态：基础样式 + 过渡动画 */
+/*-- 导航栏悬停 + 激活 下划线动画（修复显示问题） --*/
+/* 核心：导航链接基础样式，确保下划线伪元素可显示 */
 .navbar-nav .nav-link {
   border-radius: 1rem;
   padding: .45rem 1rem;
-  transition: all .25s ease-in-out; /* 统一过渡动画 */
-  box-shadow: 0 0 0 0 transparent;
-  position: relative; /* 为下划线伪元素定位 */
-  display: inline-block; /* 适配缩放 */
-  overflow: visible !important; /* 关键：取消overflow隐藏，防止下划线被裁 */
-  z-index: 1; /* 确保链接层级 */
-  
-  /* 下划线基础样式（整合到这里，不用单独写） */
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 4px; /* 下划线位置微调 */
-    left: 0;
-    width: 0;
-    height: 2px; /* 下划线粗细 */
-    background-color: #FFD700; /* 鎏金下划线 */
-    transition: width 0.3s ease; /* 下划线展开动画 */
-    z-index: 2; /* 确保下划线不被遮挡 */
-    pointer-events: none; /* 不影响点击交互 */
-  }
+  transition: all .25s ease-in-out !important;
+  box-shadow: 0 0 0 0 transparent !important;
+  position: relative !important; /* 伪元素定位基础 */
+  display: inline-block !important; /* 确保伪元素宽度正确 */
+  overflow: visible !important; /* 强制不裁剪下划线 */
+  z-index: 10 !important; /* 提高层级，避免被遮挡 */
+  color: #ffffff !important; /* 确保文字颜色 */
 }
 
-/* 5. 悬停：下划线展开 + 阴影 + 轻微缩放 */
+/* 下划线伪元素：独立定义，提高优先级 */
+.navbar-nav .nav-link::after {
+  content: '' !important; /* 强制显示伪元素 */
+  position: absolute !important;
+  bottom: 4px !important; /* 下划线位置 */
+  left: 0 !important;
+  width: 0 !important; /* 默认隐藏 */
+  height: 2px !important; /* 下划线粗细 */
+  background-color: #FFD700 !important; /* 鎏金下划线 */
+  transition: width 0.3s ease !important; /* 动画过渡 */
+  z-index: 11 !important; /* 高于链接本身，避免遮挡 */
+  pointer-events: none !important; /* 不影响点击 */
+}
+
+/* 悬停效果：下划线展开 + 样式高亮 */
 .navbar-nav .nav-link:hover {
-  background: rgba(white,.15);
-  box-shadow: 0 4px 8px rgba(0,0,0,.12); /* 阴影突出 */
-  transform: scale(1.03); /* 轻微缩放 */
-  color: #FFD700 !important; /* 鎏金文字高亮 */
-  &::after {
-    width: 100%; /* hover时下划线展开 */
-  }
+  background: rgba(255,255,255,.15) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,.12) !important;
+  transform: scale(1.03) !important;
+  color: #FFD700 !important; /* 鎏金文字 */
 }
 
-/* 6. 活跃页：下划线常驻 + 高亮样式（核心修复：激活态下划线显示） */
+/* 悬停时下划线展开 */
+.navbar-nav .nav-link:hover::after {
+  width: 100% !important; /* 强制展开 */
+}
+
+/* 活跃页：下划线常驻显示 */
 .navbar-nav .nav-link.active,
-.navbar-nav .nav-link[aria-current="page"] { /* 兼容Quarto的aria-current标记 */
-  color: white !important;
-  background: rgba(white,.1);
-  box-shadow: 0 0 0 2px $orange inset;
-  &::after {
-    width: 100% !important; /* 激活时下划线常驻展开 */
-    opacity: 1 !important;
-  }
+.navbar-nav .nav-link[aria-current="page"] {
+  color: #ffffff !important;
+  background: rgba(255,255,255,.1) !important;
+  box-shadow: 0 0 0 2px #FF8600 inset !important; /* 使用定义的$orange值 */
 }
 
-/* 9. 深色模式适配：调整下划线/阴影颜色 */
-[data-bs-theme="dark"] .navbar-nav .nav-link {
-  &::after {
-    background-color: #F67E7D; /* 深色模式下用珊瑚色下划线 */
-  }
-  &:hover {
-    background: rgba(255,255,255,.1); /* 深色模式背景透明度调整 */
-    color: #F67E7D !important; /* 深色模式hover文字用珊瑚色 */
-  }
-  &.active, &[aria-current="page"] {
-    &::after {
-      background-color: #F67E7D !important; /* 深色模式激活态下划线颜色 */
-    }
-  }
+/* 活跃页下划线常驻 */
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link[aria-current="page"]::after {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+/* 深色模式适配 */
+[data-bs-theme="dark"] .navbar-nav .nav-link::after {
+  background-color: #F67E7D !important; /* 珊瑚色下划线 */
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link:hover {
+  background: rgba(255,255,255,.1) !important;
+  color: #F67E7D !important;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link.active::after,
+[data-bs-theme="dark"] .navbar-nav .nav-link[aria-current="page"]::after {
+  background-color: #F67E7D !important;
 }
 
 /*-- 导航栏下拉菜单效果的调整 --*/
@@ -1138,32 +1142,32 @@ div.csl-entry a[href^="http"]:after {
 
 /* 新的导航栏背景颜色 */
 
-/* 针对 Quarto 导航栏的渐变背景设置 */
+/* 导航栏基础样式 - 整合背景与文字颜色，避免冲突 */
 .navbar {
-  /* 核心：深空红蓝渐变背景（与你提供的月亮图标渐变一致） */
-  background-image: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c);
-  /* 确保渐变背景不重复、覆盖整个导航栏 */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* 可选：添加轻微阴影增强层次感 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  position: relative !important;
+  z-index: 1000 !important; /* 确保导航栏层级最高 */
+  overflow: visible !important; /* 防止导航栏本身裁剪子元素 */
 }
 
-/* 导航栏文字颜色（确保在渐变背景上清晰可见） */
-.navbar .nav-link, /* 普通导航链接 */
-.navbar .navbar-brand, /* 网站标题 */
-.navbar .dropdown-toggle /* 下拉菜单触发按钮 */ {
-  color: white !important; /* 白色文字，!important 确保覆盖默认样式 */
-  font-weight: 500; /* 可选：文字加粗，提升可读性 */
+/* 导航栏文字基础颜色 - 不覆盖hover样式 */
+.navbar .navbar-brand,
+.navbar .dropdown-toggle {
+  color: #ffffff !important;
+  font-weight: 500 !important;
 }
 
-/* 导航栏文字 hover 状态（鼠标悬浮时的颜色） */
-.navbar .nav-link:hover,
+/* 导航栏品牌/下拉按钮hover */
 .navbar .navbar-brand:hover,
 .navbar .dropdown-toggle:hover {
-  color: #f0f0f0 !important; /* 浅灰色，避免纯白色过于刺眼 */
+  color: #f0f0f0 !important;
 }
+
+/* 注意：导航链接的颜色/hover已在下方下划线样式中定义，此处不再重复 */
 
 /* 下拉菜单背景（与导航栏渐变协调，可选深色） */
 .navbar .dropdown-menu {
@@ -2807,22 +2811,36 @@ details:not([open]) :not(summary) {
   }
 }
 
-// 移动端导航适配（仅在992px以下生效），导航栏下划线
+/* 移动端导航适配（992px以下）- 修复下划线显示 */
 @media (max-width: 992px) {
-  /* 移动端导航链接取消缩放/阴影，仅保留下划线 */
+  /* 移动端导航链接：取消缩放/阴影，保留下划线 */
   .navbar-nav .nav-link:hover {
     transform: none !important;
     box-shadow: none !important;
     background: rgba(255,255,255,.1) !important;
     color: #FFD700 !important;
   }
+  
+  /* 移动端下划线位置微调 + 确保hover展开 */
+  .navbar-nav .nav-link::after {
+    bottom: 2px !important;
+  }
+  
+  /* 移动端hover时下划线强制展开 */
+  .navbar-nav .nav-link:hover::after {
+    width: 100% !important;
+  }
+  
   /* 移动端下拉项取消缩放/阴影 */
   .navbar .dropdown-item:hover {
     transform: none !important;
     box-shadow: none !important;
   }
-  // 移动端导航链接下划线位置微调
-  .navbar-nav .nav-link::after {
+  
+  /* 移动端活跃页下划线常驻 */
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link[aria-current="page"]::after {
+    width: 100% !important;
     bottom: 2px !important;
   }
 }
