@@ -1,11 +1,32 @@
 ---
-title: "Progress"
-subtitle: "Learning Plan and Progress"
+# 核心基础信息
+title: "Overview"
+subtitle: "Learning - Overview"
 author: "Rong-Kang Zhang"
+affiliation: "nSeminar"
+email: "rongkang2025@gmail.com"
+twitter: "@ShokatsuEi"
+github: "rongkang-zhang"
 date: last-modified
+lang: en  # 默认语言设置为英文
+description: "This webpage records the textbooks, course resources used for my learning of various subjects, as well as my personal evaluations and summaries."
+keywords: "Category Theory, Japanese"
+
+# 页面布局与目录配置
 toc: false
 page-layout: full
 csl: ../american-mathematical-society.csl
+
+# 代码/图表/公式渲染配置
+code-block-border: true  # 代码块显示边框（适配数学伪代码）
+code-copy: true          # 代码块添加复制按钮
+fig-align: center        # 图表默认居中对齐
+fig-cap-location: bottom # 图表标题置于底部（符合学术规范）
+
+# SEO与社交媒体预览配置
+title-tag: "Rong-Kang Zhang - Learning Resources & Summaries"
+og-title: "Rong-Kang Zhang's Learning Overview: Textbooks, Resources & Evaluations"
+og-description: "A detailed collection of learning materials (textbooks, course resources) for various subjects, paired with personal evaluations and summaries, with a focus on Category Theory and Japanese learning."
 ---
 
 <!-- 学习进度状态标签（使用优化后的水平列表样式） -->

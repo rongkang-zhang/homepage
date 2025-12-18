@@ -1095,6 +1095,7 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
   font-family: "Fira Sans", sans-serif;
   position: relative;
   z-index: 1060;
+  overflow: visible; // 新增这行，防止伪元素被裁剪
   // 确保导航栏背景与折叠面板一致
   background: linear-gradient(45deg, #1a2a6c, #b21f1f, #1a2a6c) !important;
 
@@ -1146,15 +1147,11 @@ $toggler-dark-color: "ffffff"; // 深色模式汉堡图标颜色
     }
   }
 
-  // 主导航链接样式
+  // 主导航链接样式（仅保留基础字体样式，其余移到下方统一定义）
   .nav-link {
     font-size: $navbar-font-size;
     font-weight: 400;
     line-height: 1.4;
-    @media (max-width: 992px) {
-      padding: 0.5rem 0;
-      display: block;
-    }
   }
 
   // 导航项间距调整
@@ -13982,23 +13979,70 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
 }
 
 /*-- 导航栏悬停效果 --*/
-/*-- 4. 普通态：圆角药丸 + 微阴影 --*/
+/*-- 导航栏悬停 + 激活 下划线动画 组合版（修复激活态下划线） --*/
+/* 4. 普通态：基础样式 + 过渡动画 */
 .navbar-nav .nav-link {
   border-radius: 1rem;
   padding: .45rem 1rem;
-  transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; /* 统一过渡动画 */
   box-shadow: 0 0 0 0 transparent;
+  position: relative; /* 为下划线伪元素定位 */
+  display: inline-block; /* 适配缩放 */
+  overflow: visible !important; /* 关键：取消overflow隐藏，防止下划线被裁 */
+  z-index: 1; /* 确保链接层级 */
+  
+  /* 下划线基础样式（整合到这里，不用单独写） */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 4px; /* 下划线位置微调 */
+    left: 0;
+    width: 0;
+    height: 2px; /* 下划线粗细 */
+    background-color: #FFD700; /* 鎏金下划线 */
+    transition: width 0.3s ease; /* 下划线展开动画 */
+    z-index: 2; /* 确保下划线不被遮挡 */
+    pointer-events: none; /* 不影响点击交互 */
+  }
 }
-/*-- 5. 悬停：背景高亮 + 阴影抬起 --*/
+
+/* 5. 悬停：下划线展开 + 阴影 + 轻微缩放 */
 .navbar-nav .nav-link:hover {
   background: rgba(white,.15);
-  box-shadow: 0 4px 8px rgba(0,0,0,.12);
+  box-shadow: 0 4px 8px rgba(0,0,0,.12); /* 阴影突出 */
+  transform: scale(1.03); /* 轻微缩放 */
+  color: #FFD700 !important; /* 鎏金文字高亮 */
+  &::after {
+    width: 100%; /* hover时下划线展开 */
+  }
 }
-/*-- 6. 活跃页：橙色底线 + 白字 --*/
-.navbar-nav .nav-link.active {
+
+/* 6. 活跃页：下划线常驻 + 高亮样式（核心修复：激活态下划线显示） */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link[aria-current="page"] { /* 兼容Quarto的aria-current标记 */
   color: white !important;
   background: rgba(white,.1);
   box-shadow: 0 0 0 2px $orange inset;
+  &::after {
+    width: 100% !important; /* 激活时下划线常驻展开 */
+    opacity: 1 !important;
+  }
+}
+
+/* 9. 深色模式适配：调整下划线/阴影颜色 */
+[data-bs-theme="dark"] .navbar-nav .nav-link {
+  &::after {
+    background-color: #F67E7D; /* 深色模式下用珊瑚色下划线 */
+  }
+  &:hover {
+    background: rgba(255,255,255,.1); /* 深色模式背景透明度调整 */
+    color: #F67E7D !important; /* 深色模式hover文字用珊瑚色 */
+  }
+  &.active, &[aria-current="page"] {
+    &::after {
+      background-color: #F67E7D !important; /* 深色模式激活态下划线颜色 */
+    }
+  }
 }
 
 /*-- 导航栏下拉菜单效果的调整 --*/
@@ -14012,15 +14056,47 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
 }
 @keyframes fadeIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
 
-/*-- 8. 下拉项：左右 padding 放大 & 彩色悬停 --*/
-.dropdown-item {
+/*-- 8. 下拉菜单项：同款悬浮效果（缩放幅度更小） --*/
+.navbar .dropdown-item {
   padding: .4rem 1.2rem;
   border-radius: .25rem;
-  transition: background .2s;
+  transition: all .25s ease-in-out; /* 过渡动画 */
+  position: relative; /* 下划线定位 */
+  overflow: hidden; /* 防止下划线溢出 */
 }
-.dropdown-item:hover {
+
+/* 下拉项hover：背景色 + 下划线 + 轻微缩放 + 阴影 */
+.navbar .dropdown-item:hover {
   background: $air-blue;
-  color: white;
+  color: white !important;
+  transform: scale(1.02); /* 下拉项缩放幅度更小 */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* 轻微阴影 */
+}
+
+/* 下拉项下划线动画 */
+.navbar .dropdown-item::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 1.2rem; /* 匹配下拉项padding-left */
+  width: 0;
+  height: 1.5px;
+  background-color: white; /* 下拉项下划线用白色 */
+  transition: width 0.3s ease;
+  z-index: 1; // 确保不被遮挡
+}
+
+.navbar .dropdown-item:hover::after {
+  width: calc(100% - 2.4rem); /* 减去左右padding */
+  // 移动端适配
+  @media (max-width: 992px) {
+    width: calc(100% - 2rem); // 匹配移动端下拉项的padding
+  }
+}
+
+/* 深色模式下拉项下划线适配 */
+[data-bs-theme="dark"] .navbar .dropdown-item::after {
+  background-color: #F67E7D; /* 深色模式下拉项下划线同步 */
 }
 
 /*-- 9. 搜索框圆角 + 聚焦高亮 --*/
@@ -14111,19 +14187,6 @@ div.csl-entry a[href^="http"]:after {
   color: var(--nav-text-hover) !important;
   background: var(--nav-accent-bg);
   box-shadow: 0 2px 6px rgba(0,0,0,.08);
-}
-
-/* 链接颜色设置 */
-
-:root {
-  color-scheme: light dark;   /* 启用系统颜色模式检测 */
-}
-
-a {
-  color: light-dark(
-    #007bff,   /* 浅色模式：鲜艳蓝色（对比度7.8:1） */
-    #4caf50    /* 深色模式：明亮绿色（对比度8.5:1） */
-  );
 }
 
 
@@ -15837,6 +15900,26 @@ details:not([open]) :not(summary) {
     line-height: 1.6 !important; 
     font-size: 0.9em !important;
     animation: none;
+  }
+}
+
+// 移动端导航适配（仅在992px以下生效），导航栏下划线
+@media (max-width: 992px) {
+  /* 移动端导航链接取消缩放/阴影，仅保留下划线 */
+  .navbar-nav .nav-link:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: rgba(255,255,255,.1) !important;
+    color: #FFD700 !important;
+  }
+  /* 移动端下拉项取消缩放/阴影 */
+  .navbar .dropdown-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  // 移动端导航链接下划线位置微调
+  .navbar-nav .nav-link::after {
+    bottom: 2px !important;
   }
 }
 

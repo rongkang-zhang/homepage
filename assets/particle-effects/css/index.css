@@ -29,14 +29,6 @@ body {
     display: none !important; /* 只隐藏粒子容器内的居中标题 */
 }
 
-/* 精准隐藏Quarto自动生成的「页面主体居中标题块」（不影响左侧/导航栏） */
-/* 仅隐藏正文区域的自动标题，保留about区域和导航栏 */
-main .quarto-title-block,
-main .quarto-website-description,
-main #quarto-header .title {
-    display: none !important;
-}
-
 /* 兼容亮暗模式：若保留.text需用，删除则注释 */
 [data-theme="light"] .text {
     color: #023a75ff !important;
