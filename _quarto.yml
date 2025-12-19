@@ -94,10 +94,10 @@ website:
       - text: Learning&nbsp;<small>▼</small>
         icon: "bi-lamp"
         menu:
+            - text: Overview
+              href: learning/index.html
             - text: Schedule
               href: learning/schedule/index.html
-            - text: Progress
-              href: learning/index.html
             - text: Japanese
               href: learning/japanese/index.html
   page-footer:

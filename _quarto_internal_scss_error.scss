@@ -2124,13 +2124,13 @@ $title-banner-color: null !default;
 $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
-$code-block-bg: #282a36 !default;
-$btn-code-copy-color: #6272a4 !default;
-$btn-code-copy-color-active: #50fa7b !default;
+
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
-$code-copy-selector: "div.code-copy-outer-scaffold:hover > " !default;
+$code-copy-selector: "" !default;
 $code-white-space: pre-wrap !default;
 $tbl-cap-location: top !default;
 $footer-border: true !default;
