@@ -15987,26 +15987,28 @@ img[src*="profile-picture.png"] { // 按图片路径精准匹配，永不失效
   animation-name: pulse-research;
 }
 
-/* qmd文件YAML配置的文章主标题 - 斯宾塞体 */
+/* 标题和副标题样式设置 */
+
+/* 主标题：比#64748B更亮，#75859F（浅灰蓝，双背景通用） */
 .title {
-  /* 优先使用已注册的斯宾塞体，备用字体保证兼容性 */
   font-family: 'SpenserianFont', Georgia, serif;
-  font-size: 2.2rem; /* 主标题字号 */
-  font-weight: 600; /* 适度加粗 */
-  color: #2c3e50; /* 浅色模式：深色调凸显标题 */
-  margin: 2rem 0 1rem; /* 上下间距，避免与其他元素拥挤 */
-  line-height: 1.3; /* 行高优化，提升可读性 */
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #75859F; /* 亮度更高，视觉更通透 */
+  margin: 2rem 0 1rem;
+  line-height: 1.3;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
-/* qmd文件YAML配置的文章副标题 - 斯宾塞体+斜体 */
+/* 副标题：保留原有颜色#94A3B8 */
 .subtitle {
   font-family: 'SpenserianFont', 'Times New Roman', serif;
-  font-size: 1.5rem; /* 副标题字号略小于主标题 */
-  font-style: italic; /* 斜体核心属性，实现副标题样式要求 */
-  font-weight: 400; /* 常规字重，区分主标题 */
-  color: #6c757d; /* 浅色模式：浅色调，不抢主标题风头 */
-  margin: -0.8rem 0 2rem; /* 向上贴近主标题，向下与正文拉开间距 */
-  line-height: 1.5; /* 行高优化 */
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #94A3B8; /* 不修改副标题样式 */
+  margin: -0.8rem 0 2rem;
+  line-height: 1.5;
 }
 
 // quarto-scss-analysis-annotation { "origin": null }
