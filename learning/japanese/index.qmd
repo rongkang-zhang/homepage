@@ -32,6 +32,16 @@ accordion:
       body: "Use 'quarto preview' to see your site in real time."
 ---
 
+::: {add-from=demo-code.py start-line=2 end-line=7 code-line-numbers="true"}
+```{.python}
+```
+:::
+
+::: {add-from=demo-code.py code-filename="demo-code.py"}
+```{.python code-fold="true" code-summary="Click to expand Python code"}
+```
+:::
+
 # Quarto Accordion Extension Demo
 This is a simple demo of the accordion extension for Quarto HTML pages.
 
