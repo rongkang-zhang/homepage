@@ -32,6 +32,16 @@ accordion:
       body: "Use 'quarto preview' to see your site in real time."
 ---
 
+# Animate.css 动画演示
+## 1. 基础弹跳动画（短代码）
+{{< animate bounce "Hello, Quarto Animate!" >}}
+
+## 2. 自定义参数的渐变动画
+{{< animate fadeInUp "这是带自定义参数的渐变动画" delay=1s duration=3s repeat=2 >}}
+
+## 3. 无限重复的震动动画
+{{< animate shakeX "无限震动的文本" repeat=infinite >}}
+
 ::: {add-from=demo-code.py start-line=2 end-line=7 code-line-numbers="true"}
 ```{.python}
 ```

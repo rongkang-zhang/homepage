@@ -86,6 +86,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-dark-77ed7b29cc45b3ff57be9450ca7ce68c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../../site_libs/bootstrap/bootstrap-198c4bcfe5f9130e52ea71968472a714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/add-code-files-1.0.0/add-code-files.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/animate-4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{--animate-duration:3s;--animate-delay:2s;--animate-repeat:1}</style>
 <link href="../../site_libs/quarto-contrib/accordion/accordion.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
@@ -536,18 +538,24 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto-accordion-extension-demo" id="toc-quarto-accordion-extension-demo" class="nav-link active" data-scroll-target="#quarto-accordion-extension-demo"><span class="header-section-number">1</span> Quarto Accordion Extension Demo</a>
+  <li><a href="#animate.css-动画演示" id="toc-animate.css-动画演示" class="nav-link active" data-scroll-target="#animate.css-动画演示"><span class="header-section-number">1</span> Animate.css 动画演示</a>
   <ul>
-  <li><a href="#日语学习资源-阅读状态" id="toc-日语学习资源-阅读状态" class="nav-link" data-scroll-target="#日语学习资源-阅读状态"><span class="header-section-number">1.0.1</span> 日语学习资源 &amp; 阅读状态</a></li>
+  <li><a href="#基础弹跳动画短代码" id="toc-基础弹跳动画短代码" class="nav-link" data-scroll-target="#基础弹跳动画短代码"><span class="header-section-number">1.1</span> 1. 基础弹跳动画（短代码）</a></li>
+  <li><a href="#自定义参数的渐变动画" id="toc-自定义参数的渐变动画" class="nav-link" data-scroll-target="#自定义参数的渐变动画"><span class="header-section-number">1.2</span> 2. 自定义参数的渐变动画</a></li>
+  <li><a href="#无限重复的震动动画" id="toc-无限重复的震动动画" class="nav-link" data-scroll-target="#无限重复的震动动画"><span class="header-section-number">1.3</span> 3. 无限重复的震动动画</a></li>
   </ul></li>
-  <li><a href="#check-off" id="toc-check-off" class="nav-link" data-scroll-target="#check-off"><span class="header-section-number">2</span> Check-off</a>
+  <li><a href="#quarto-accordion-extension-demo" id="toc-quarto-accordion-extension-demo" class="nav-link" data-scroll-target="#quarto-accordion-extension-demo"><span class="header-section-number">2</span> Quarto Accordion Extension Demo</a>
   <ul>
-  <li><a href="#to-2025-12-07" id="toc-to-2025-12-07" class="nav-link" data-scroll-target="#to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</a>
+  <li><a href="#日语学习资源-阅读状态" id="toc-日语学习资源-阅读状态" class="nav-link" data-scroll-target="#日语学习资源-阅读状态"><span class="header-section-number">2.0.1</span> 日语学习资源 &amp; 阅读状态</a></li>
+  </ul></li>
+  <li><a href="#check-off" id="toc-check-off" class="nav-link" data-scroll-target="#check-off"><span class="header-section-number">3</span> Check-off</a>
+  <ul>
+  <li><a href="#to-2025-12-07" id="toc-to-2025-12-07" class="nav-link" data-scroll-target="#to-2025-12-07"><span class="header-section-number">3.1</span> 2025-11-18 to 2025-12-07</a>
   <ul class="collapse">
-  <li><a href="#音ごじゅうおん默写2回日" id="toc-音ごじゅうおん默写2回日" class="nav-link" data-scroll-target="#音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</a></li>
+  <li><a href="#音ごじゅうおん默写2回日" id="toc-音ごじゅうおん默写2回日" class="nav-link" data-scroll-target="#音ごじゅうおん默写2回日"><span class="header-section-number">3.1.1</span> 50音（ごじゅうおん）默写（2回/日）</a></li>
   </ul></li>
-  <li><a href="#金色-银色-专区" id="toc-金色-银色-专区" class="nav-link" data-scroll-target="#金色-银色-专区"><span class="header-section-number">2.2</span> 金色 × 银色 专区</a></li>
-  <li><a href="#其他高颜值渐变继续云" id="toc-其他高颜值渐变继续云" class="nav-link" data-scroll-target="#其他高颜值渐变继续云"><span class="header-section-number">2.3</span> 其他高颜值渐变（继续云）</a></li>
+  <li><a href="#金色-银色-专区" id="toc-金色-银色-专区" class="nav-link" data-scroll-target="#金色-银色-专区"><span class="header-section-number">3.2</span> 金色 × 银色 专区</a></li>
+  <li><a href="#其他高颜值渐变继续云" id="toc-其他高颜值渐变继续云" class="nav-link" data-scroll-target="#其他高颜值渐变继续云"><span class="header-section-number">3.3</span> 其他高颜值渐变（继续云）</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div></nav>
@@ -856,6 +864,19 @@ document.addEventListener("DOMContentLoaded", function() {
 </header>
 
 
+<section id="animate.css-动画演示" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Animate.css 动画演示</h1>
+<section id="基础弹跳动画短代码" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="基础弹跳动画短代码"><span class="header-section-number">1.1</span> 1. 基础弹跳动画（短代码）</h2>
+<p><span class="animate__animated animate__bounce animate__delay-2s animate__repeat-1" style="display: inline-block;animation-duration:3s">Hello, Quarto Animate!</span></p>
+</section>
+<section id="自定义参数的渐变动画" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="自定义参数的渐变动画"><span class="header-section-number">1.2</span> 2. 自定义参数的渐变动画</h2>
+<p><span class="animate__animated animate__fadeInUp animate__delay-1s animate__repeat-2" style="display: inline-block;animation-duration:3s">这是带自定义参数的渐变动画</span></p>
+</section>
+<section id="无限重复的震动动画" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="无限重复的震动动画"><span class="header-section-number">1.3</span> 3. 无限重复的震动动画</h2>
+<p><span class="animate__animated animate__shakeX animate__delay-2s animate__infinite" style="display: inline-block;animation-duration:3s">无限震动的文本</span></p>
 <div data-add-from="demo-code.py" data-start-line="2" data-end-line="7" data-code-line-numbers="true">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python" style="counter-reset: source-line 1;"><span id="cb1-2"><a href="#cb1-2"></a><span class="kw">def</span> greet(name):</span>
 <span id="cb1-3"><a href="#cb1-3"></a>    <span class="co">"""简单的问候函数（测试add-code-files拓展）"""</span></span>
@@ -880,8 +901,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Loop count: </span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<section id="quarto-accordion-extension-demo" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Quarto Accordion Extension Demo</h1>
+</section>
+</section>
+<section id="quarto-accordion-extension-demo" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Quarto Accordion Extension Demo</h1>
 <p>This is a simple demo of the accordion extension for Quarto HTML pages.</p>
 <p></p><div id="accordion-faq" class="accordion quarto-accordion">
 <div class="accordion-item">
@@ -1006,8 +1029,8 @@ document.addEventListener("DOMContentLoaded", function() {
   appearance: checkbox;
 }
 </style>
-<section id="日语学习资源-阅读状态" class="level3" data-number="1.0.1">
-<h3 data-number="1.0.1" class="anchored" data-anchor-id="日语学习资源-阅读状态"><span class="header-section-number">1.0.1</span> 日语学习资源 &amp; 阅读状态</h3>
+<section id="日语学习资源-阅读状态" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="日语学习资源-阅读状态"><span class="header-section-number">2.0.1</span> 日语学习资源 &amp; 阅读状态</h3>
 <ul>
 <li><p>一看就会的日语句型 📋 Not Started</p></li>
 <li><p>人人读日语-这样阅读最有效 📋 Not Started</p></li>
@@ -1855,12 +1878,12 @@ Sun
 </table>
 </section>
 </section>
-<section id="check-off" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Check-off</h1>
-<section id="to-2025-12-07" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="to-2025-12-07"><span class="header-section-number">2.1</span> 2025-11-18 to 2025-12-07</h2>
-<section id="音ごじゅうおん默写2回日" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="音ごじゅうおん默写2回日"><span class="header-section-number">2.1.1</span> 50音（ごじゅうおん）默写（2回/日）</h3>
+<section id="check-off" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Check-off</h1>
+<section id="to-2025-12-07" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="to-2025-12-07"><span class="header-section-number">3.1</span> 2025-11-18 to 2025-12-07</h2>
+<section id="音ごじゅうおん默写2回日" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="音ごじゅうおん默写2回日"><span class="header-section-number">3.1.1</span> 50音（ごじゅうおん）默写（2回/日）</h3>
 <!-- 纯打卡勾选 2025-11-18 → 2025-12-07  日期格式 2025-11-18 -->
 <table class="table-study">
 <thead>
@@ -2096,16 +2119,16 @@ Sun
 </ul>
 </section>
 </section>
-<section id="金色-银色-专区" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="金色-银色-专区"><span class="header-section-number">2.2</span> 金色 × 银色 专区</h2>
+<section id="金色-银色-专区" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="金色-银色-专区"><span class="header-section-number">3.2</span> 金色 × 银色 专区</h2>
 <ol type="1">
 <li><p>香槟金 → 冷银 <span style="background: linear-gradient(135deg, #ffd166 0%, #c49000 45%, #e6e6ff 55%, #8a94a7 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span></p></li>
 <li><p>玫瑰金 → 亮铂 <span style="background: linear-gradient(45deg, #fad0c4 0%, #f1a7f1 50%, #dfe9f3 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span></p></li>
 <li><p>钛金 → 深空银 <span style="background: linear-gradient(135deg, #ffb75e 0%, #ed8f03 45%, #bdc3c7 55%, #2c3e50 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span></p></li>
 </ol>
 </section>
-<section id="其他高颜值渐变继续云" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="其他高颜值渐变继续云"><span class="header-section-number">2.3</span> 其他高颜值渐变（继续云）</h2>
+<section id="其他高颜值渐变继续云" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="其他高颜值渐变继续云"><span class="header-section-number">3.3</span> 其他高颜值渐变（继续云）</h2>
 <ol start="4" type="1">
 <li><p>薄荷奶昔 <span style="background: linear-gradient(90deg, #d4fc79 0%, #96e6a1 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span></p></li>
 <li><p>暮光蓝紫 <span style="background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 2.5em;"><i class="fa-solid fa-cloud" aria-label="cloud"></i></span></p></li>
