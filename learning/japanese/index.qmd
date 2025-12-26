@@ -15,7 +15,29 @@ toc-expand: true # 全部展开目录
 format:
   html:
     toc: true
+# Define accordion groups (minimal configuration)
+accordion:
+  # Group 1: Basic single accordion item (FAQ)
+  - accordion-faq:
+    - header: "Q1: What is Quarto?"
+      body: "Quarto is an open-source tool for creating scientific and technical documents, supporting Markdown, code, and visualizations."
+  
+  # Group 2: Multiple accordion items (tutorial steps)
+  - accordion-basic-steps:
+    - header: "Step 1: Install Quarto"
+      body: "Download Quarto from quarto.org and install it on your computer."
+    - header: "Step 2: Create a new project"
+      body: "Run 'quarto create project website my-site' in terminal."
+    - header: "Step 3: Preview the site"
+      body: "Use 'quarto preview' to see your site in real time."
 ---
+
+# Quarto Accordion Extension Demo
+This is a simple demo of the accordion extension for Quarto HTML pages.
+
+{{< accordion accordion-faq >}}
+
+{{< accordion accordion-basic-steps >}}
 
 <!-- 科技感蓝系 + 淡竖线 + 手机端透明修复 -->
 <style>
