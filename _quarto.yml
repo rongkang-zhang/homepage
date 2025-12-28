@@ -148,7 +148,6 @@ format:
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/shafayetShafee/add-code-files/add-code-files.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/mcanouil/animate/animate-shortcodes.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/gwbrck/apa_and_amp/apa_and.lua
-      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/gadenbuie/auto-dark/auto-dark.lua
     include-in-header:
       - text: |
           <!-- Algolia 域名验证 Meta 标签 -->
