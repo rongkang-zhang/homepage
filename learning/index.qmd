@@ -33,6 +33,48 @@ canonical: "https://rongkang-zhang.github.io/homepage/learning/index.html"  # �
 robots: "index, follow"
 ---
 
+# {{< badge current Core Research >}} Higher Category Theory
+## {{< badge current Active Theory >}} Grothendieck Toposes
+## {{< badge future Forthcoming >}} Chiral Representation Theory
+## {{< badge future Planned Research >}} Holographic Entanglement Entropy
+
+## {{< badge current Latest Version >}} Expository Notes
+## {{< badge old Legacy Content >}} Classical Category Theory Basics
+## {{< badge future To Be Updated >}} Quantum Control & Topos Theory
+
+### {{< badge current Verified >}} Equivalence Conditions of Natural Transformations
+### {{< badge old Deprecated >}} Early Proof of Category Equivalence
+### {{< badge future Unfinished >}} Generalization of Higher-Dimensional Categories
+### {{< badge current Valid >}} Key Properties of Elementary Toposes
+### {{< badge future Pending >}} Topos-Theoretic Quantum Machine Learning
+
+# Current (✅ Green Badge) - 春绿色徽章
+{{< badge current Latest >}}
+{{< badge current Active >}}
+{{< badge current Valid >}}
+{{< badge current Completed >}}
+{{< badge current Updated >}}
+{{< badge current Confirmed >}}
+
+# Future (🚧 Red Badge) - 红色徽章
+{{< badge future Planned >}}
+{{< badge future In Progress >}}
+{{< badge future Unfinished >}}
+{{< badge future Coming Soon >}}
+{{< badge future To Add >}}
+{{< badge future Under Development >}}
+
+# Old (⚠️ Yellow Badge) - 黄色徽章
+{{< badge old Outdated >}}
+{{< badge old Deprecated >}}
+{{< badge old Legacy >}}
+{{< badge old Obsolete >}}
+{{< badge old Archived >}}
+
+The {{< badge current canonical >}} framework of Grothendieck Toposes discussed in this note is based on the standard definition, distinct from the {{< badge old simplified >}} version in early literature.
+This corollary's complete proof is {{< badge future pending >}}, and the sheaf-theoretic details will be supplemented in subsequent research.
+All results presented here are {{< badge current verified >}} and hold for all finite elementary toposes with no counterexamples found.
+
 <!-- 学习进度状态标签（使用优化后的水平列表样式） -->
 ### 学习进度状态说明
 <ul class="horizontal-list">

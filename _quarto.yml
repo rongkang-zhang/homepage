@@ -6,6 +6,18 @@ execute:
   freeze: auto                # 若代码未变，直接复用上次的输出
   cache: true                 # 单元级缓存，CI 更快
 
+# ====================== 你的徽章配置【已正确嵌入，就是这里】======================
+extensions:
+  badge:
+    - key: current
+      colour: springgreen
+    - key: future
+      class: bg-danger
+      href: https://github.com/mcanouil/quarto-badge
+    - key: old
+      class: bg-warning
+      href: https://github.com/mcanouil/quarto-badge/releases/tag/{{value}}
+
 project:
   type: website
   output-dir: docs
@@ -148,6 +160,7 @@ format:
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/shafayetShafee/add-code-files/add-code-files.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/mcanouil/animate/animate-shortcodes.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/gwbrck/apa_and_amp/apa_and.lua
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/mcanouil/badge/badge.lua
     include-in-header:
       - text: |
           <!-- Algolia 域名验证 Meta 标签 -->

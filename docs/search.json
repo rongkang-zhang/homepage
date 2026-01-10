@@ -495,5 +495,47 @@
     "title": "Category Theory",
     "section": "",
     "text": "Title\nCategories\nModified\nAuthor\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "learning/index.html#grothendieck-toposes",
+    "href": "learning/index.html#grothendieck-toposes",
+    "title": "Overview",
+    "section": "Active Grothendieck Toposes",
+    "text": "Active Grothendieck Toposes"
+  },
+  {
+    "objectID": "learning/index.html#chiral-representation-theory",
+    "href": "learning/index.html#chiral-representation-theory",
+    "title": "Overview",
+    "section": "Forthcoming Chiral Representation Theory",
+    "text": "Forthcoming Chiral Representation Theory"
+  },
+  {
+    "objectID": "learning/index.html#holographic-entanglement-entropy",
+    "href": "learning/index.html#holographic-entanglement-entropy",
+    "title": "Overview",
+    "section": "Planned Holographic Entanglement Entropy",
+    "text": "Planned Holographic Entanglement Entropy"
+  },
+  {
+    "objectID": "learning/index.html#expository-notes",
+    "href": "learning/index.html#expository-notes",
+    "title": "Overview",
+    "section": "Latest Expository Notes",
+    "text": "Latest Expository Notes"
+  },
+  {
+    "objectID": "learning/index.html#classical-category-theory-basics",
+    "href": "learning/index.html#classical-category-theory-basics",
+    "title": "Overview",
+    "section": "Legacy Classical Category Theory Basics",
+    "text": "Legacy Classical Category Theory Basics"
+  },
+  {
+    "objectID": "learning/index.html#quantum-control-topos-theory",
+    "href": "learning/index.html#quantum-control-topos-theory",
+    "title": "Overview",
+    "section": "To Quantum Control & Topos Theory",
+    "text": "To Quantum Control & Topos Theory\n\nVerified Equivalence Conditions of Natural Transformations\n\n\nDeprecated Early Proof of Category Equivalence\n\n\nUnfinished Generalization of Higher-Dimensional Categories\n\n\nValid Key Properties of Elementary Toposes\n\n\nPending Topos-Theoretic Quantum Machine Learning"
   }
 ]
