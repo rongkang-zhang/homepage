@@ -75,6 +75,44 @@ The {{< badge current canonical >}} framework of Grothendieck Toposes discussed 
 This corollary's complete proof is {{< badge future pending >}}, and the sheaf-theoretic details will be supplemented in subsequent research.
 All results presented here are {{< badge current verified >}} and hold for all finite elementary toposes with no counterexamples found.
 
+{{< bi alarm >}}
+
+{{< bi alarm-fill >}}
+
+{{< bi balloon-heart  size=5em color=#2ecaf9 >}}
+
+{{< bi emoji-sunglasses  size=5em color=#2ecaf9 label="Proud Happy Face" >}}
+
+{{< bi alarm-fill color=red >}}
+
+{{< bi twitch color=lightseagreen >}}
+
+{{< bi twitter color=cornflowerblue >}}
+
+{{< bi windows color=#E86033 >}}
+
+{{< bi ubuntu color=rgb(232,96,51) >}}
+
+{{< bi terminal-fill color=rgba(232,96,51,1) >}}
+
+{{< bi stars color=hsl(15,80%,56%) >}}
+
+{{< bi spotify color=hsla(15,80%,56%,360) >}}
+
+{{< bi incognito size=37px >}}
+
+{{< bi person-plus-fill size=3.1rem >}}
+
+{{< bi postcard-heart size=2.7em >}}
+
+{{< bi reddit size=9.8vw >}}
+
+{{< bi slack size=7.6vh >}}
+
+{{< bi book >}} {{< bi book-half >}} {{< bi journal-album >}} {{< bi file-text >}} {{< bi file-earmark-text >}} {{< bi pencil-square >}} {{< bi pen >}} {{< bi pen-tool >}} {{< bi clipboard-check >}} {{< bi scroll >}} {{< bi lightbulb >}} {{< bi brain >}} {{< bi flask >}} {{< bi microscope >}} {{< bi compass >}} {{< bi star >}} {{< bi star-fill >}} {{< bi bookmark >}} {{< bi bookmark-fill >}} {{< bi check-circle >}} {{< bi info-circle >}} {{< bi alert-circle >}} {{< bi search >}} {{< bi link >}} {{< bi download >}} {{< bi code >}} {{< bi terminal >}} {{< bi gradcap >}} {{< bi trophy >}} {{< bi library >}}
+
+{{< bi book size=1.8em color=springgreen >}} {{< bi book-half size=1.8em color=seagreen >}} {{< bi journal-album size=1.8em color=royalblue >}} {{< bi file-text size=1.8em color=cadetblue >}} {{< bi file-earmark-text size=1.8em color=teal >}} {{< bi pencil-square size=1.8em color=coral >}} {{< bi pen size=1.8em color=chocolate >}} {{< bi pen-tool size=1.8em color=sienna >}} {{< bi clipboard-check size=1.8em color=limegreen >}} {{< bi scroll size=1.8em color=tan >}} {{< bi lightbulb size=1.8em color=gold >}} {{< bi brain size=1.8em color=mediumpurple >}} {{< bi flask size=1.8em color=mediumslateblue >}} {{< bi microscope size=1.8em color=steelblue >}} {{< bi compass size=1.8em color=orangered >}} {{< bi star size=1.8em color=khaki >}} {{< bi star-fill size=1.8em color=goldenrod >}} {{< bi bookmark size=1.8em color=lightpink >}} {{< bi bookmark-fill size=1.8em color=hotpink >}} {{< bi check-circle size=1.8em color=emerald >}} {{< bi info-circle size=1.8em color=skyblue >}} {{< bi alert-circle size=1.8em color=orange >}} {{< bi search size=1.8em color=dimgray >}} {{< bi link size=1.8em color=indigo >}} {{< bi download size=1.8em color=forestgreen >}} {{< bi code size=1.8em color=rebeccapurple >}} {{< bi terminal size=1.8em color=#E86033 >}} {{< bi gradcap size=1.8em color=navy >}} {{< bi trophy size=1.8em color=darkorange >}} {{< bi library size=1.8em color=olivedrab >}} {{< bi math size=1.8em color=blueviolet >}} {{< bi calculator size=1.8em color=slategrey >}} {{< bi file-earmark-code size=1.8em color=darkmagenta >}} {{< bi database size=1.8em color=darkteal >}} {{< bi globe size=1.8em color=cyan >}} {{< bi rocket size=1.8em color=deeppink >}} {{< bi layers size=1.8em color=aquamarine >}} {{< bi bookmark-check size=1.8em color=chartreuse >}} {{< bi square-check size=1.8em color=lime >}} {{< bi file-earmark-arrow-down size=1.8em color=mediumseagreen >}} {{< bi highlighter size=1.8em color=#FF6B6B >}} {{< bi magnifying-glass size=1.8em color=#4ECDC4 >}} {{< bi briefcase size=1.8em color=#1A535C >}} {{< bi puzzle size=1.8em color=#FFE66D >}} {{< bi atom size=1.8em color=#7B68EE >}} {{< bi award size=1.8em color=#FFD700 >}} {{< bi book-journal-whills size=1.8em color=#8B4513 >}} {{< bi note-book size=1.8em color=#32CD32 >}} {{< bi clipboard-data size=1.8em color=#6A5ACD >}} {{< bi bar-chart size=1.8em color=#FF9F43 >}} {{< bi pie-chart size=1.8em color=#00B8A9 >}} {{< bi share size=1.8em color=#F8F3D4 >}} {{< bi send size=1.8em color=#F08A5D >}} {{< bi file-earmark-pdf size=1.8em color=#DC3545 >}} {{< bi file-earmark-excel size=1.8em color=#28A745 >}} {{< bi git size=1.8em color=#F1502F >}} {{< bi github size=1.8em color=#171515 >}} {{< bi file-plus size=1.8em color=#00CED1 >}} {{< bi folder-fill size=1.8em color=#FF7F50 >}} {{< bi alarm size=1.8em color=tomato >}} {{< bi alarm-fill size=1.8em color=crimson >}} {{< bi balloon-heart size=1.8em color=#ff69b4 >}} {{< bi emoji-sunglasses size=1.8em color=#2ecaf9 >}} {{< bi twitch size=1.8em color=#9146FF >}} {{< bi twitter size=1.8em color=cornflowerblue >}} {{< bi windows size=1.8em color=#E86033 >}} {{< bi ubuntu size=1.8em color=rgb(232,96,51) >}} {{< bi terminal-fill size=1.8em color=rgba(232,96,51,1) >}} {{< bi stars size=1.8em color=hsl(15,80%,56%) >}} {{< bi spotify size=1.8em color=hsla(120,70%,50%,1) >}} {{< bi incognito size=1.8em color=slateblue >}} {{< bi person-plus-fill size=1.8em color=mediumturquoise >}} {{< bi postcard-heart size=1.8em color=pink >}} {{< bi reddit size=1.8em color=#FF4500 >}} {{< bi slack size=1.8em color=#4A154B >}} {{< bi hand-thumbs-up-fill size=1.8em color=cornflowerblue >}}
+
 <!-- 学习进度状态标签（使用优化后的水平列表样式） -->
 ### 学习进度状态说明
 <ul class="horizontal-list">
