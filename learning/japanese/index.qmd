@@ -32,6 +32,9 @@ accordion:
       body: "Use 'quarto preview' to see your site in real time."
 ---
 
+::: {.youtube video_id=US4Zr1WKD-8 title="Category Theory for Beginner" collapse=false appearance=simple icon=true}
+:::
+
 # Animate.css 动画演示
 ## 1. 基础弹跳动画（短代码）
 {{< animate bounce "Hello, Quarto Animate!" >}}

@@ -163,6 +163,7 @@ format:
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/mcanouil/badge/badge.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/shafayetShafee/bsicons/bsicons.lua
       - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/shafayetShafee/code-fullscreen/code-fullscreen.lua
+      - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/shafayetShafee/collapse-social-embeds/collapse-social-embeds.lua
     include-in-header:
       - text: |
           <!-- Algolia 域名验证 Meta 标签 -->
