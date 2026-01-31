@@ -1,0 +1,89 @@
+---
+title: "Naive Set Theory"
+subtitle: "Naive Set Theory: Resources, Writings & Study Archive"
+author: "Rong-Kang Zhang"
+date: last-modified
+date-format: "YYYY-MM-DD"
+toc: true
+page-layout: full
+bibliography: ../../refs.bib
+csl: ../../american-mathematical-society.csl
+number-sections: true        # 总开关
+number-depth: 6              # 编号到几级标题（1=仅#，2=##，3=###）
+toc-depth: 6
+toc-expand: true # 全部展开目录
+format:
+  html:
+    toc: true
+---
+
+Resources, Personal Writings & Self-Study Notes on Naive Set Theory
+
+# Learning Resources
+
+## Textbooks
+
+## Videos
+
+# My Platform Writings on Naive Set Theory (Zhihu, Rednote, etc.)
+
+## Zhihu
+
+## Rednote
+
+## Mathlog
+
+# Learning Resources
+
+## Textbooks
+<!-- 此处添加教材相关内容，如： -->
+- 《Naive Set Theory》(Paul R. Halmos)：经典入门教材，侧重直观理解，适合自学
+- 《Set Theory: An Introduction to Independence Proofs》(Kenneth Kunen)：进阶教材，含公理体系细节
+
+## Videos
+### Berkeley MATH 135: Naive Set Theory (Full Series)
+> 推荐理由：伯克利大学MATH135课程合集（53条视频），涵盖数理逻辑导论、集合论基本概念、前五个公理等核心内容，讲师Antonio Montalban，适合系统性学习。
+
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1JVoDYxEb4&page=1" 
+        width="100%" 
+        height="450" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+</iframe>
+
+- 视频原链接：[伯克利MATH135集合论合集](https://www.bilibili.com/video/BV1JVoDYxEb4?spm_id_from=333.788.videopod.episodes)
+- 核心覆盖：公理体系、基本概念、数理逻辑基础
+
+# My Platform Writings on Naive Set Theory (Zhihu, Rednote & More)
+
+## Zhihu Articles
+<!-- 知乎平台发布的文章列表/链接 -->
+
+## Rednote Writings
+<!-- Rednote平台发布的文章列表/链接（确认平台名称后修改） -->
+
+## Mathlog Posts
+<!-- Mathlog平台发布的文章列表/链接 -->
+
+## Videos
+
+### Berkeley MATH 135: Naive Set Theory (Full Series)
+> 推荐理由：伯克利大学经典集合论课程，含53条视频，覆盖数理逻辑导论、集合论基本概念、前五个公理等核心内容，是朴素集合论入门的核心视频资源。
+
+<!-- 嵌入B站视频合集，适配全宽布局 -->
+<iframe src="https://player.bilibili.com/player.html?aid=1040345258&bvid=BV1JVoDYxEb4&cid=1434567890&page=1" 
+        width="100%" 
+        height="450" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+</iframe>
+
+- 视频链接：[伯克利MATH135集合论合集](https://www.bilibili.com/video/BV1JVoDYxEb4?spm_id_from=333.788.videopod.episodes)
+- 涵盖内容：01-数理逻辑导论、02-集合论基本概念、03-集合论前五个公理等（共53条）
+- 适用场景：基础理论学习、公理体系梳理

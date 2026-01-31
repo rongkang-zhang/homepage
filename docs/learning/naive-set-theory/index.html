@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rong-Kang Zhang">
-<meta name="dcterms.date" content="2025-11-13">
+<meta name="dcterms.date" content="2026-01-31">
 
-<title>Objectives – Rong-KangZhang</title>
+<title>Naive Set Theory – Rong-KangZhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,58 +22,38 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../assets/pictures/web-logo-7.png" rel="icon" type="image/png">
-<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-ea00d30dd9b950c7ecb6e17bc6ca0835.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-198c4bcfe5f9130e52ea71968472a714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-77ed7b29cc45b3ff57be9450ca7ce68c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-198c4bcfe5f9130e52ea71968472a714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/jquery-3.6.3/jquery-3.6.3.min.js"></script>
-<script src="../../../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.js" defer="true"></script>
-<link href="../../../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/collapse-social-embeds-1.1.0/collapse.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/pictures/web-logo-7.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-ea00d30dd9b950c7ecb6e17bc6ca0835.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-198c4bcfe5f9130e52ea71968472a714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-77ed7b29cc45b3ff57be9450ca7ce68c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-198c4bcfe5f9130e52ea71968472a714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/jquery-3.6.3/jquery-3.6.3.min.js"></script>
+<script src="../../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.js" defer="true"></script>
+<link href="../../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/collapse-social-embeds-1.1.0/collapse.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -161,14 +141,14 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../../assets/particle-effects/css/index.css">
-<meta property="og:title" content="Objectives – Rong-KangZhang">
-<meta property="og:description" content="A Topos-Theoretic Bridge for Holographic Entanglement Entropy">
-<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/research/1/objectives/assets/pictures/profile-picture.png">
+<link rel="stylesheet" href="../../assets/particle-effects/css/index.css">
+<meta property="og:title" content="Naive Set Theory – Rong-KangZhang">
+<meta property="og:description" content="Naive Set Theory: Resources, Writings &amp; Study Archive">
+<meta property="og:image" content="https://rongkang-zhang.github.io/homepage/learning/naive-set-theory/assets/pictures/profile-picture.png">
 <meta property="og:site_name" content="Rong-Kang<br>Zhang">
-<meta name="twitter:title" content="Objectives – Rong-KangZhang">
-<meta name="twitter:description" content="A Topos-Theoretic Bridge for Holographic Entanglement Entropy">
-<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/research/1/objectives/assets/pictures/profile-picture.png">
+<meta name="twitter:title" content="Naive Set Theory – Rong-KangZhang">
+<meta name="twitter:description" content="Naive Set Theory: Resources, Writings &amp; Study Archive">
+<meta name="twitter:image" content="https://rongkang-zhang.github.io/homepage/learning/naive-set-theory/assets/pictures/profile-picture.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -341,11 +321,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo light-content">
-    <img src="../../../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo dark-content">
+    <a href="../../" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo light-content">
+    <img src="../../assets/pictures/web-logo-7.png" alt="Site logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../../">
+    <a class="navbar-brand" href="../../">
     <span class="navbar-title">Rong-Kang<br>Zhang</span>
     </a>
   </div>
@@ -356,7 +336,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../publications/index.html"> <i class="bi bi-journal-text" role="img">
+    <a class="nav-link" href="../../publications/index.html"> <i class="bi bi-journal-text" role="img">
 </i> 
 <span class="menu-text">Publications</span></a>
   </li>  
@@ -368,11 +348,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-dailybrquestionsnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../daily-questions/index.html">
+    <a class="dropdown-item" href="../../daily-questions/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../daily-questions/category-theory/index.html">
+    <a class="dropdown-item" href="../../daily-questions/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
@@ -385,15 +365,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-expositorybrnotesnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../expository-notes/index.html">
+    <a class="dropdown-item" href="../../expository-notes/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../expository-notes/category-theory/index.html">
+    <a class="dropdown-item" href="../../expository-notes/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../expository-notes/japanese/index.html">
+    <a class="dropdown-item" href="../../expository-notes/japanese/index.html">
  <span class="dropdown-text">Japanese</span></a>
   </li>  
     </ul>
@@ -406,11 +386,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-extemporaneousbrtalksnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../extemporaneous-talks/index.html">
+    <a class="dropdown-item" href="../../extemporaneous-talks/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../extemporaneous-talks/category-theory/index.html">
+    <a class="dropdown-item" href="../../extemporaneous-talks/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
@@ -423,11 +403,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-self-workedbrsolutionsnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../solutions/index.html">
+    <a class="dropdown-item" href="../../solutions/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../solutions/category-theory/index.html">
+    <a class="dropdown-item" href="../../solutions/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
@@ -440,11 +420,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-codelabnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../codelab/index.html">
+    <a class="dropdown-item" href="../../codelab/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../codelab/category-theory/index.html">
+    <a class="dropdown-item" href="../../codelab/category-theory/index.html">
  <span class="dropdown-text">Category theory</span></a>
   </li>  
     </ul>
@@ -457,29 +437,29 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-researchnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../research/index.html">
+    <a class="dropdown-item" href="../../research/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/1/index.html">
+    <a class="dropdown-item" href="../../research/1/index.html">
  <span class="dropdown-text">1 - 20251110-Now<br>A Topos-Theoretic Bridge for<br>Holographic Entanglement Entropy</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/2/index.html">
+    <a class="dropdown-item" href="../../research/2/index.html">
  <span class="dropdown-text">2 - 20251124-Now<br>A Topos-Theoretic Bridge for<br>Geometric Quantum Control</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/3/index.html">
+    <a class="dropdown-item" href="../../research/3/index.html">
  <span class="dropdown-text">3 - 20251124-Now<br>A Topos-Theoretic Bridge for<br>Quantum Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/4/index.html">
+    <a class="dropdown-item" href="../../research/4/index.html">
  <span class="dropdown-text">4 - 20251126-Now<br>A Topos-Theoretic Bridge for<br>Non-invertible Symmetry</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
+    <a class="nav-link" href="../../conferences/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
 <span class="menu-text">Conferences</span></a>
   </li>  
@@ -491,19 +471,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-learningnbspsmall▼small">    
         <li>
-    <a class="dropdown-item" href="../../../learning/naive-set-theory/index.html">
+    <a class="dropdown-item" href="../../learning/naive-set-theory/index.html">
  <span class="dropdown-text">Naive Set Theory</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../learning/index.html">
+    <a class="dropdown-item" href="../../learning/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../learning/schedule/index.html">
+    <a class="dropdown-item" href="../../learning/schedule/index.html">
  <span class="dropdown-text">Schedule</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../learning/japanese/index.html">
+    <a class="dropdown-item" href="../../learning/japanese/index.html">
  <span class="dropdown-text">Japanese</span></a>
   </li>  
     </ul>
@@ -520,9 +500,45 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-resources" id="toc-learning-resources" class="nav-link active" data-scroll-target="#learning-resources"><span class="header-section-number">1</span> Learning Resources</a>
+  <ul>
+  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks"><span class="header-section-number">1.1</span> Textbooks</a></li>
+  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos"><span class="header-section-number">1.2</span> Videos</a></li>
+  </ul></li>
+  <li><a href="#my-platform-writings-on-naive-set-theory-zhihu-rednote-etc." id="toc-my-platform-writings-on-naive-set-theory-zhihu-rednote-etc." class="nav-link" data-scroll-target="#my-platform-writings-on-naive-set-theory-zhihu-rednote-etc."><span class="header-section-number">2</span> My Platform Writings on Naive Set Theory (Zhihu, Rednote, etc.)</a>
+  <ul>
+  <li><a href="#zhihu" id="toc-zhihu" class="nav-link" data-scroll-target="#zhihu"><span class="header-section-number">2.1</span> Zhihu</a></li>
+  <li><a href="#rednote" id="toc-rednote" class="nav-link" data-scroll-target="#rednote"><span class="header-section-number">2.2</span> Rednote</a></li>
+  <li><a href="#mathlog" id="toc-mathlog" class="nav-link" data-scroll-target="#mathlog"><span class="header-section-number">2.3</span> Mathlog</a></li>
+  </ul></li>
+  <li><a href="#learning-resources-1" id="toc-learning-resources-1" class="nav-link" data-scroll-target="#learning-resources-1"><span class="header-section-number">3</span> Learning Resources</a>
+  <ul>
+  <li><a href="#textbooks-1" id="toc-textbooks-1" class="nav-link" data-scroll-target="#textbooks-1"><span class="header-section-number">3.1</span> Textbooks</a></li>
+  <li><a href="#videos-1" id="toc-videos-1" class="nav-link" data-scroll-target="#videos-1"><span class="header-section-number">3.2</span> Videos</a>
+  <ul>
+  <li><a href="#berkeley-math-135-naive-set-theory-full-series" id="toc-berkeley-math-135-naive-set-theory-full-series" class="nav-link" data-scroll-target="#berkeley-math-135-naive-set-theory-full-series"><span class="header-section-number">3.2.1</span> Berkeley MATH 135: Naive Set Theory (Full Series)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#my-platform-writings-on-naive-set-theory-zhihu-rednote-more" id="toc-my-platform-writings-on-naive-set-theory-zhihu-rednote-more" class="nav-link" data-scroll-target="#my-platform-writings-on-naive-set-theory-zhihu-rednote-more"><span class="header-section-number">4</span> My Platform Writings on Naive Set Theory (Zhihu, Rednote &amp; More)</a>
+  <ul>
+  <li><a href="#zhihu-articles" id="toc-zhihu-articles" class="nav-link" data-scroll-target="#zhihu-articles"><span class="header-section-number">4.1</span> Zhihu Articles</a></li>
+  <li><a href="#rednote-writings" id="toc-rednote-writings" class="nav-link" data-scroll-target="#rednote-writings"><span class="header-section-number">4.2</span> Rednote Writings</a></li>
+  <li><a href="#mathlog-posts" id="toc-mathlog-posts" class="nav-link" data-scroll-target="#mathlog-posts"><span class="header-section-number">4.3</span> Mathlog Posts</a></li>
+  <li><a href="#videos-2" id="toc-videos-2" class="nav-link" data-scroll-target="#videos-2"><span class="header-section-number">4.4</span> Videos</a>
+  <ul>
+  <li><a href="#berkeley-math-135-naive-set-theory-full-series-1" id="toc-berkeley-math-135-naive-set-theory-full-series-1" class="nav-link" data-scroll-target="#berkeley-math-135-naive-set-theory-full-series-1"><span class="header-section-number">4.4.1</span> Berkeley MATH 135: Naive Set Theory (Full Series)</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <!-- 粒子 Canvas 容器（ID 为 my_canvas，与 JS 一致） -->
 
@@ -795,17 +811,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Objectives</h1>
-<p class="subtitle lead">A Topos-Theoretic Bridge for Holographic Entanglement Entropy</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">AdS/CFT Duality</div>
-    <div class="quarto-category">Holographic Principle</div>
-  </div>
-  </div>
+<h1 class="title">Naive Set Theory</h1>
+<p class="subtitle lead">Naive Set Theory: Resources, Writings &amp; Study Archive</p>
+</div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -817,7 +829,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 13, 2025</p>
+      <p class="date">2026-01-31</p>
     </div>
   </div>
   
@@ -829,23 +841,91 @@ document.addEventListener("DOMContentLoaded", function() {
 </header>
 
 
-<section id="holographic-principle" class="level1">
-<h1>Holographic Principle</h1>
-<p>The holographic principle was first articulated in the context of black-hole unitarity by ’t Hooft (1993) <span class="citation" data-cites="thooft1993dimensional">(<a href="#ref-thooft1993dimensional" role="doc-biblioref">Hooft 1993</a>)</span>.</p>
+<p>Resources, Personal Writings &amp; Self-Study Notes on Naive Set Theory</p>
+<section id="learning-resources" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Learning Resources</h1>
+<section id="textbooks" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="textbooks"><span class="header-section-number">1.1</span> Textbooks</h2>
 </section>
-<section id="holographic-duality" class="level1">
-<h1>Holographic Duality</h1>
-
+<section id="videos" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="videos"><span class="header-section-number">1.2</span> Videos</h2>
+</section>
+</section>
+<section id="my-platform-writings-on-naive-set-theory-zhihu-rednote-etc." class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> My Platform Writings on Naive Set Theory (Zhihu, Rednote, etc.)</h1>
+<section id="zhihu" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="zhihu"><span class="header-section-number">2.1</span> Zhihu</h2>
+</section>
+<section id="rednote" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="rednote"><span class="header-section-number">2.2</span> Rednote</h2>
+</section>
+<section id="mathlog" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="mathlog"><span class="header-section-number">2.3</span> Mathlog</h2>
+</section>
+</section>
+<section id="learning-resources-1" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Learning Resources</h1>
+<section id="textbooks-1" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="textbooks-1"><span class="header-section-number">3.1</span> Textbooks</h2>
+<!-- 此处添加教材相关内容，如： -->
+<ul>
+<li>《Naive Set Theory》(Paul R. Halmos)：经典入门教材，侧重直观理解，适合自学</li>
+<li>《Set Theory: An Introduction to Independence Proofs》(Kenneth Kunen)：进阶教材，含公理体系细节</li>
+</ul>
+</section>
+<section id="videos-1" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="videos-1"><span class="header-section-number">3.2</span> Videos</h2>
+<section id="berkeley-math-135-naive-set-theory-full-series" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="berkeley-math-135-naive-set-theory-full-series"><span class="header-section-number">3.2.1</span> Berkeley MATH 135: Naive Set Theory (Full Series)</h3>
+<blockquote class="blockquote">
+<p>推荐理由：伯克利大学MATH135课程合集（53条视频），涵盖数理逻辑导论、集合论基本概念、前五个公理等核心内容，讲师Antonio Montalban，适合系统性学习。</p>
+</blockquote>
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1JVoDYxEb4&amp;page=1" width="100%" height="450" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+<ul>
+<li>视频原链接：<a href="https://www.bilibili.com/video/BV1JVoDYxEb4?spm_id_from=333.788.videopod.episodes">伯克利MATH135集合论合集</a></li>
+<li>核心覆盖：公理体系、基本概念、数理逻辑基础</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="my-platform-writings-on-naive-set-theory-zhihu-rednote-more" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> My Platform Writings on Naive Set Theory (Zhihu, Rednote &amp; More)</h1>
+<section id="zhihu-articles" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="zhihu-articles"><span class="header-section-number">4.1</span> Zhihu Articles</h2>
+<!-- 知乎平台发布的文章列表/链接 -->
+</section>
+<section id="rednote-writings" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="rednote-writings"><span class="header-section-number">4.2</span> Rednote Writings</h2>
+<!-- Rednote平台发布的文章列表/链接（确认平台名称后修改） -->
+</section>
+<section id="mathlog-posts" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="mathlog-posts"><span class="header-section-number">4.3</span> Mathlog Posts</h2>
+<!-- Mathlog平台发布的文章列表/链接 -->
+</section>
+<section id="videos-2" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="videos-2"><span class="header-section-number">4.4</span> Videos</h2>
+<section id="berkeley-math-135-naive-set-theory-full-series-1" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="berkeley-math-135-naive-set-theory-full-series-1"><span class="header-section-number">4.4.1</span> Berkeley MATH 135: Naive Set Theory (Full Series)</h3>
+<blockquote class="blockquote">
+<p>推荐理由：伯克利大学经典集合论课程，含53条视频，覆盖数理逻辑导论、集合论基本概念、前五个公理等核心内容，是朴素集合论入门的核心视频资源。</p>
+</blockquote>
+<!-- 嵌入B站视频合集，适配全宽布局 -->
+<iframe src="https://player.bilibili.com/player.html?aid=1040345258&amp;bvid=BV1JVoDYxEb4&amp;cid=1434567890&amp;page=1" width="100%" height="450" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+<ul>
+<li>视频链接：<a href="https://www.bilibili.com/video/BV1JVoDYxEb4?spm_id_from=333.788.videopod.episodes">伯克利MATH135集合论合集</a></li>
+<li>涵盖内容：01-数理逻辑导论、02-集合论基本概念、03-集合论前五个公理等（共53条）</li>
+<li>适用场景：基础理论学习、公理体系梳理</li>
+</ul>
 
 
 
 </section>
+</section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-thooft1993dimensional" class="csl-entry" role="listitem">
-Hooft, G. ’t (1993), <span>“<a href="https://arxiv.org/abs/gr-qc/9310026">Dimensional reduction in quantum gravity</a>.”</span>
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1268,11 +1348,11 @@ Hooft, G. ’t (1993), <span>“<a href="https://arxiv.org/abs/gr-qc/9310026">Di
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../../../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> · Powered by <a href="https://pages.github.com/">GitHub Pages</a> · Managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a><br> Technical tools: <a href="https://www.mathjax.org/">MathJax</a> (typesetting) · <a href="https://fontawesome.com/">Font Awesome</a> (icons) · <a href="https://www.algolia.com/">Algolia</a> (search) · <a href="https://tikz.dev/">TikZ</a> (diagrams) · <a href="https://clustrmaps.com/">ClustrMaps</a> (visitor analytics)<br> © 2025 Rong-Kang Zhang · All rights reserved · Last updated: November 13, 2025</p>
+<p><img src="../../assets/pictures/web-logo-7.png" alt="Site logo" height="24" style="vertical-align:middle; margin-right:0.5em;"> Made with <a href="https://quarto.org/">Quarto</a> · Powered by <a href="https://pages.github.com/">GitHub Pages</a> · Managed via <a href="https://git-scm.com/">Git</a> &amp; <a href="https://desktop.github.com/">GitHub Desktop</a><br> Technical tools: <a href="https://www.mathjax.org/">MathJax</a> (typesetting) · <a href="https://fontawesome.com/">Font Awesome</a> (icons) · <a href="https://www.algolia.com/">Algolia</a> (search) · <a href="https://tikz.dev/">TikZ</a> (diagrams) · <a href="https://clustrmaps.com/">ClustrMaps</a> (visitor analytics)<br> © 2025 Rong-Kang Zhang · All rights reserved · Last updated: 2026-01-31</p>
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rongkang-zhang/homepage/issues" class="toc-action"><i class="bi bi-chat-right"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

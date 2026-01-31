@@ -106,6 +106,8 @@ website:
       - text: Learning&nbsp;<small>▼</small>
         icon: "bi-lamp"
         menu:
+            - text: Naive Set Theory
+              href: learning/naive-set-theory/index.html
             - text: Overview
               href: learning/index.html
             - text: Schedule

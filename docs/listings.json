@@ -38,22 +38,10 @@
     ]
   },
   {
-    "listing": "/extemporaneous-talks/index.html",
+    "listing": "/expository-notes/index.html",
     "items": [
-      "/extemporaneous-talks/category-theory/index.html"
-    ]
-  },
-  {
-    "listing": "/daily-questions/category-theory/index.html",
-    "items": [
-      "/daily-questions/category-theory/20251208/index.html",
-      "/daily-questions/category-theory/20251209/index.html"
-    ]
-  },
-  {
-    "listing": "/codelab/index.html",
-    "items": [
-      "/codelab/category-theory/index.html"
+      "/expository-notes/japanese/index.html",
+      "/expository-notes/category-theory/index.html"
     ]
   },
   {
@@ -65,10 +53,22 @@
     ]
   },
   {
-    "listing": "/expository-notes/index.html",
+    "listing": "/codelab/index.html",
     "items": [
-      "/expository-notes/japanese/index.html",
-      "/expository-notes/category-theory/index.html"
+      "/codelab/category-theory/index.html"
+    ]
+  },
+  {
+    "listing": "/daily-questions/category-theory/index.html",
+    "items": [
+      "/daily-questions/category-theory/20251208/index.html",
+      "/daily-questions/category-theory/20251209/index.html"
+    ]
+  },
+  {
+    "listing": "/extemporaneous-talks/index.html",
+    "items": [
+      "/extemporaneous-talks/category-theory/index.html"
     ]
   },
   {
