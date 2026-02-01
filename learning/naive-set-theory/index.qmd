@@ -1,6 +1,6 @@
 ---
 title: "Naive Set Theory"
-subtitle: "Naive Set Theory: Resources, Writings & Study Archive"
+subtitle: "Recommended & Adopted Learning Resources, Personal Writings and Study Archive on Naive Set Theory"
 author: "Rong-Kang Zhang"
 date: last-modified
 date-format: "YYYY-MM-DD"
@@ -8,16 +8,14 @@ toc: true
 page-layout: full
 bibliography: ../../refs.bib
 csl: ../../american-mathematical-society.csl
-number-sections: true        # 总开关
-number-depth: 6              # 编号到几级标题（1=仅#，2=##，3=###）
+number-sections: true
+number-depth: 6
 toc-depth: 6
-toc-expand: true # 全部展开目录
+toc-expand: true
 format:
   html:
     toc: true
 ---
-
-Resources, Personal Writings & Self-Study Notes on Naive Set Theory
 
 # Learning Resources
 
