@@ -1,6 +1,6 @@
 ---
-title: "Naive Set Theory / 素朴集合論（そぼくしゅうごうろん） / Наивная теория множеств"
-subtitle: "Recommended & Adopted Learning Resources (Online Courses & Textbooks) with My Reviews, Personal Writings and Study Archive on Naive Set Theory"
+title: "Naive Set Theory / 素朴集合論（そぼくしゅうごうろん） / Наивная теория множеств / Teoria ingenua degli insiemi"
+subtitle: "Recommended & Adopted Learning Resources (Online Courses & Textbooks) with Personal Reviews, Personal Writings and Study Archive on Naive Set Theory"
 author: "Rong-Kang Zhang"
 date: last-modified
 date-format: "YYYY-MM-DD"
