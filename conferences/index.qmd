@@ -2,14 +2,22 @@
 title: "Conferences, Workshops & Schools Attended"
 author: "Rong-Kang Zhang"
 date: last-modified
-abstract: >
-  This page records the conferences, workshops and summer/winter schools that I
-  have attended since my undergraduate years. The events cover a broad spectrum
+abstract: |
+  This page records the academic conferences, workshops and summer/winter schools that I
+  have attended since my sophomore year. The events cover a broad spectrum
   of fundamental physics and mathematics—ranging from quantum gravity and
   holography to non-equilibrium quantum dynamics and condensed-matter theory.
-  My roles have varied from participant to poster presenter, and the list
-  reflects my ongoing effort to broaden my academic horizon and to stay at the
-  forefront of interdisciplinary research.
+  I have taken on various roles across these activities, from regular participant to poster presenter.
+  This list reflects my continuous effort to broaden my academic horizons, engage with frontier ideas,
+  and maintain an active presence in interdisciplinary research.
+
+  It should be noted that participating in these academic events during my undergraduate years took up a great deal of my in-class and after-class study time;
+  at the same time, the uncertainty about the direction of my academic pursuits and the confusion in
+  choosing my ideal research field also affected my learning state,
+  which eventually led to a decline in my undergraduate academic performance in the later stage.
+  However, after graduation, I have carried out extensive and intensive self-study
+  on undergraduate and graduate-level mathematics and physics. Up to now, I have a solid and excellent grasp of the relevant knowledge foundation,
+  even though this cannot be reflected in my undergraduate academic transcript.
 toc: false
 categories:
   - "Quantum Gravity"
