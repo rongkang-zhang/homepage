@@ -34,6 +34,52 @@ format:
     code-line-number-color: "#666"  # 行号文字颜色
 ---
 
+# Recommended Learning Resources
+
+## Textbooks
+
+### Textbooks in English
+
+- **An Introduction to Naive Set Theory and Its Applications**
+  - Author: Shashi Mohan Srivastava
+  - Publisher: Springer Nature Singapore (2024), University Texts in the Mathematical Sciences series
+  - Review
+    - Content & Coverage
+    - Accuracy & Rigor
+    - Clarity & Exposition
+    - Exercises & Problems
+    - Proofs & Examples
+    - Target Audience & Suitability
+    - Comparison & Contribution
+    - Presentation & Usability
+
+- **Naive Set Theory**
+  *Paul R. Halmos*
+  经典入门教材，语言精炼，适合零基础理解集合论核心概念与公理框架。
+
+- **Set Theory: An Introduction to Independence Proofs**
+  *Kenneth Kunen*
+  偏公理集合论与相容性证明，适合深入学习强迫法与模型论基础。
+
+- **Elements of Set Theory**
+  *Herbert B. Enderton*
+  逻辑严谨、叙述清晰，适合系统性学习并配合习题训练。
+
+- **Naive Set Theory**
+  *Paul R. Halmos*
+  素朴集合论标准入门，极简且深刻。
+
+- **Set Theory and Logic**
+  *Robert R. Stoll*
+  兼顾集合论与基础逻辑，适合本科生打基础。
+
+### Advanced Level（进阶）
+- **Set Theory**
+  *Thomas Jech*
+  公理集合论百科全书，覆盖几乎所有高级主题。
+  - 优点：内容极全，可作手册查阅
+  - 缺点：难度高，不适合纯新手
+
 # 尝试粘贴代码块查看编译显示效果
 
 ```python
@@ -90,9 +136,7 @@ R = \{ x \mid x \notin x \}
 \]
 ```
 
-# Learning Resources
 
-## Textbooks
 
 ## Videos
 
