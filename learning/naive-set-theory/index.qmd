@@ -19,7 +19,76 @@ description: >
 format:
   html:
     toc: true
+    page-navigation: true
+    code-block-bg: true  # 代码块加背景色
+    code-copy: true      # 代码块显示「复制」按钮
+    # 可选：补充代码块字体/行高（优化阅读）
+    code-font-size: 14px
+    code-line-height: 1.6
+    # 更多实用参数
+    code-line-numbers: true  # 显示代码行号（适合长代码）
+    code-overflow: wrap      # 代码过长时自动换行（默认是 scroll，滚动条）
+    code-border: true        # 给代码块加边框（强化视觉区分）
+    code-font: "Consolas"    # 自定义代码字体（适合编程/数学代码）
+    # 行号样式（可选）
+    code-line-number-color: "#666"  # 行号文字颜色
 ---
+
+# 尝试粘贴代码块查看编译显示效果
+
+```python
+# 验证外延公理（Axiom of Extensionality）
+def are_sets_equal(set1, set2):
+    """
+    判定两个集合是否满足外延公理
+    :param set1: 第一个集合
+    :param set2: 第二个集合
+    :return: 布尔值，True 表示相等
+    """
+    # 集合相等的充要条件：互为子集
+    return set1.issubset(set2) and set2.issubset(set1)
+
+# 测试案例
+set_X = {1, 2, 3}
+set_Y = {3, 2, 1}
+set_Z = {1, 2, 4}
+
+print(f"X = Y? {are_sets_equal(set_X, set_Y)}")  # True（外延公理成立）
+print(f"X = Z? {are_sets_equal(set_X, set_Z)}")  # False
+```
+
+```plaintext
+# 计算两个集合的交集
+Function SetIntersection(setA, setB):
+    Initialize empty set result
+    For each element in setA:
+        If element is in setB:
+            Add element to result
+    Return result
+
+# 示例：计算 {1,2,3} ∩ {2,3,4}
+A = {1, 2, 3}
+B = {2, 3, 4}
+print(SetIntersection(A, B))  # 输出 {2, 3}
+```
+
+```latex
+% 罗素悖论：定义集合 R = {x | x ∉ x}
+% 推导矛盾：若 R ∈ R，则 R ∉ R；若 R ∉ R，则 R ∈ R
+\[
+R = \{ x \mid x \notin x \}
+\]
+
+% 空集的定义
+\[
+\emptyset = \{ x \mid x \neq x \}
+\]
+
+% 幂集的定义
+\[
+\mathcal{P}(A) = \{ X \mid X \subseteq A \}
+\]
+```
 
 # Learning Resources
 

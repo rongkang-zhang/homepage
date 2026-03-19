@@ -2130,9 +2130,10 @@ $btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
-$code-copy-selector: "div.code-copy-outer-scaffold:hover > " !default;
+$code-copy-selector: "" !default;
 $code-white-space: pre-wrap !default;
 $tbl-cap-location: top !default;
+$code-block-bg: true !default;
 $footer-border: true !default;
 $sidebar-bg: if(variable-exists(body-bg), $body-bg, #fff) !default;
 $navbar-fg: #ffffffff !default;
