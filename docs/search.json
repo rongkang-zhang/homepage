@@ -445,7 +445,7 @@
     "href": "learning/naive-set-theory/index.html#textbooks",
     "title": "Naive Set Theory / 素朴集合論（そぼくしゅうごうろん） / Наивная теория множеств / Teoria ingenua degli insiemi",
     "section": "1.1 Textbooks",
-    "text": "1.1 Textbooks\n\n1.1.1 Textbooks in English\n\nAn Introduction to Naive Set Theory and Its Applications\n\nAuthor: Shashi Mohan Srivastava\nPublisher: Springer Nature Singapore (2024), University Texts in the Mathematical Sciences series\nReview\n\nContent & Coverage\nAccuracy & Rigor\nClarity & Exposition\nExercises & Problems\nProofs & Examples\nTarget Audience & Suitability\nComparison & Contribution\nPresentation & Usability\n\n\nNaive Set Theory Paul R. Halmos 经典入门教材，语言精炼，适合零基础理解集合论核心概念与公理框架。\nSet Theory: An Introduction to Independence Proofs Kenneth Kunen 偏公理集合论与相容性证明，适合深入学习强迫法与模型论基础。\nElements of Set Theory Herbert B. Enderton 逻辑严谨、叙述清晰，适合系统性学习并配合习题训练。\nNaive Set Theory Paul R. Halmos 素朴集合论标准入门，极简且深刻。\nSet Theory and Logic Robert R. Stoll 兼顾集合论与基础逻辑，适合本科生打基础。\n\n\n\n1.1.2 Advanced Level（进阶）\n\nSet Theory Thomas Jech 公理集合论百科全书，覆盖几乎所有高级主题。\n\n优点：内容极全，可作手册查阅\n缺点：难度高，不适合纯新手"
+    "text": "1.1 Textbooks\n\n1.1.1 Textbooks in English\n\nAn Introduction to Naive Set Theory and Its Applications\n\nAuthor: Shashi Mohan Srivastava\nPublisher: Springer Nature Singapore (2024), University Texts in the Mathematical Sciences series\nReview\n\nContent & Coverage\nAccuracy & Rigor\nClarity & Exposition\nExercises & Problems\nProofs & Examples\nTarget Audience & Suitability\nComparison & Contribution\nPresentation & Usability"
   },
   {
     "objectID": "learning/naive-set-theory/index.html#videos",
@@ -614,5 +614,12 @@
     "title": "Category Theory",
     "section": "",
     "text": "Title\nCategories\nModified\nAuthor\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "learning/naive-set-theory/index.html#online-courses",
+    "href": "learning/naive-set-theory/index.html#online-courses",
+    "title": "Naive Set Theory / 素朴集合論（そぼくしゅうごうろん） / Наивная теория множеств / Teoria ingenua degli insiemi",
+    "section": "1.2 Online Courses",
+    "text": "1.2 Online Courses\n\n1.2.1 Online Courses in English\n\n1.2.1.1 Set Theory (MATH 32000), University of Bristol - Prof. Philip Welch - 37h\n\nCourse Website: https://people.maths.bris.ac.uk/~mapdw/STsolutions.html\nOn Bilibili (Chinese Video Platform)\n\n\n\n\nNaive Set Theory Paul R. Halmos 经典入门教材，语言精炼，适合零基础理解集合论核心概念与公理框架。\nSet Theory: An Introduction to Independence Proofs Kenneth Kunen 偏公理集合论与相容性证明，适合深入学习强迫法与模型论基础。\nElements of Set Theory Herbert B. Enderton 逻辑严谨、叙述清晰，适合系统性学习并配合习题训练。\nNaive Set Theory Paul R. Halmos 素朴集合论标准入门，极简且深刻。\nSet Theory and Logic Robert R. Stoll 兼顾集合论与基础逻辑，适合本科生打基础。\n\n\n\n\n1.2.2 Advanced Level（进阶）\n\nSet Theory Thomas Jech 公理集合论百科全书，覆盖几乎所有高级主题。\n\n优点：内容极全，可作手册查阅\n缺点：难度高，不适合纯新手"
   }
 ]

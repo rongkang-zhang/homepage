@@ -11,7 +11,8 @@ csl: ../../american-mathematical-society.csl
 number-sections: true
 number-depth: 6
 toc-depth: 6
-toc-expand: true
+# 下面的这一行会使得目录的呈现方式是可以滚动的嵌入页面
+# toc-expand: true
 description: >
   A curated collection of recommended and adopted learning resources (including online courses and textbooks)
   for Naive Set Theory, accompanied by personal reviews of each resource. Also features personal writings
@@ -52,6 +53,26 @@ format:
     - Target Audience & Suitability
     - Comparison & Contribution
     - Presentation & Usability
+
+## Online Courses
+
+### Online Courses in English
+
+#### Set Theory (MATH 32000), University of Bristol - Prof. Philip Welch - 37h
+
+- Course Website: <https://people.maths.bris.ac.uk/~mapdw/STsolutions.html>
+
+- On Bilibili (Chinese Video Platform)
+
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1dd4y1w7mG&page=1" 
+        width="100%" 
+        height="450" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+</iframe>
 
 - **Naive Set Theory**
   *Paul R. Halmos*
