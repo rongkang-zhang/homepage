@@ -1,0 +1,93 @@
+---
+title: "Linear Algebra"
+subtitle: "Expository Study Notes on Linear Algbera"
+author: "Rong-Kang Zhang"
+core-references: "Mac Lane 1998"
+date: last-modified
+weight: 7
+abstract: >
+  These notes follow a textbook-style roadmap through category theory,
+  moving from concrete definitions to abstract machinery and onward to cross-domain applications.
+  I open with the core anatomy of a category: objects, hom-sets, associative composition
+  and identity arrows; emphasis is placed on locally-small categories and the dual-category
+  trick that instantly doubles one's supply of examples.
+  Functors enter next as structure-preserving translations between categories,
+  preparing the ground for natural transformations—"maps of functors" whose
+  commutative-diagram discipline is illustrated with explicit calculations.
+  The Yoneda Lemma is then derived step-by-step, showing how every fobject
+  lives vicariously through its representable functor and why "proof by
+  probing" becomes a legitimate strategy.
+  With this embedding tool in hand I explore limits and colimits
+  (products, equalizers, pull-/push-outs) and spell out their universal
+  properties diagram-by-diagram; adjoint functors appear soon after as
+  "optimal solution providers", exemplified by free groups and the
+  Stone–Čech compactification.
+  A final chapter bridges to computer science: algebraic data types as
+  algebras for endofunctors, concurrent processes as coalgebras, and
+  how monadic composition captures side effects—culminating in the
+  Beck-style monadicity theorem.
+  Throughout, definitions, theorems and exercises alternate with
+  motivational remarks, mirroring the rhythm of a lecture course and
+  keeping the abstract landscape navigable.
+categories:
+  - Mathematical Logic
+  - Category Theory
+keywords:                 # 推荐：一行一个，版本控制 diff 更清晰
+  - Natural Transformation
+  - Functor
+  - Adjoint Functor
+  - Limits
+toc: true
+toc-title: "Contents"
+toc-location: left
+anchor-sections: true      # 各级标题左侧出现段落锚点
+smooth-scroll: true        # 锚点跳转时平滑滚动
+highlight-style: dracula    # 代码高亮配色
+number-sections: true
+secnumdepth: 3        # 编号也到 subsubsection
+toc-depth: 5
+code-tools: true
+code-fold: true
+code-overflow: wrap
+bibliography: ../../refs.bib
+csl: ../../american-mathematical-society.csl
+eq-prefix: "Eq."
+fig-prefix: "Fig."
+tbl-prefix: "Tbl."
+thm-prefix: "Thm."
+crossref:
+  fig-title: "Figure"         # caption 前缀
+  tbl-title: "Table"
+  eq-title: "Equation"
+  thm-title: "Theorem"
+filters:
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/latex-environment/latex-environment.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/pandoc-ext/diagram/diagram.lua          # 关键：启用 diagram 过滤器
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/danmackinlay/tikz/tikz.lua
+  - E:/apps-in-use/github-desktop/rongkang-zhang/homepage/_extensions/quarto-ext/include-code-files/include-code-files.lua
+environments:                 # 把 div 转成 LaTeX 环境
+  framedshaded: framedshaded  # 左边是 div-class，右边是环境名
+  lrbox: lrbox
+  theorem: theorem
+  lemma: lemma
+  definition: definition
+  proposition: proposition
+  corollary: corollary
+  remark: remark
+  example: example
+  proof: proof
+tikz:
+  cache: false
+  save-tex: true  # Enable saving intermediate .tex files
+  tex-dir: tikz-tex  # Optional: Specify directory to save .tex files
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: false
+  css-class: "my-css-class"
+---
+
+# Category Theory
+
+## Code Examples

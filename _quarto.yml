@@ -64,6 +64,8 @@ website:
               href: expository-notes/index.html
             - text: Category theory
               href: expository-notes/category-theory/index.html
+            - text: Linear Algebra
+              href: expository-notes/linear-algebra/index.html
             - text: Japanese
               href: expository-notes/japanese/index.html
       - text: Extemporaneous<br>Talks&nbsp;<small>▼</small>
