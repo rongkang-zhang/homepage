@@ -9,7 +9,7 @@
   font-family: "bootstrap-icons";
   src:
     url("1e21o67/bootstrap-icons.woff2") format("woff2"),
-    url("1e21o67/bootstrap-icons.woff") format("woff");
+    url("../webfonts/bootstrap-icons.woff") format("woff");
 }
 
 .bi::before,
